@@ -1,0 +1,704 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 20 Jun 2025 to 25 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.18854v1" target="_blank"><h2>Comparative analysis of machine learning techniques for feature
+  selection and classification of Fast Radio Bursts</h2></a><strong><u>Authors:</u></strong>  Ailton J. B. Júnior, Jéferson A. S. Fortunato, Leonardo J. Silvestre, Thonimar V. Alencar, Wiliam S. Hipólito-Ricaldi</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract)</br><p><strong><u>Abstract:</u></strong> Fast Radio Bursts (FRBs) are millisecond-duration radio transients of
+extragalactic origin, exhibiting a wide range of physical and observational
+properties. Distinguishing between repeating and non-repeating FRBs remains a
+key challenge in understanding their nature. In this work, we apply
+unsupervised machine learning techniques to classify FRBs based on both primary
+observables from the CHIME catalog and physically motivated derived features.
+We evaluate three hybrid pipelines combining dimensionality reduction with
+clustering: PCA + k-means, t-SNE + HDBSCAN, and t-SNE + Spectral Clustering. To
+identify optimal hyperparameters, we implement a comprehensive grid search
+using a custom scoring function that prioritizes recall while penalizing
+excessive cluster fragmentation and noise. Feature relevance is assessed using
+principal component loadings, mutual information with the known repeater label,
+and permutation-based F\textsubscript{2} score sensitivity. Our results
+demonstrate that the derived features including redshift, luminosity, and
+spectral properties, such as the spectral index and the spectral running,
+significantly enhance the classification performance. Finally, we identify a
+set of FRBs currently labeled as non-repeaters that consistently cluster with
+known repeaters across all methods, highlighting promising candidates for
+future follow-up observations and reinforcing the utility of unsupervised
+approaches in FRB population studies.</p></br><a href="http://arxiv.org/pdf/2506.19726v1" target="_blank"><h2>Geometric-Aware Variational Inference: Robust and Adaptive
+  Regularization with Directional Weight Uncertainty</h2></a><strong><u>Authors:</u></strong>  Carlos Stein Brito</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 19 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks require principled uncertainty quantification, yet
+existing variational inference methods often employ isotropic Gaussian
+approximations in weight space that poorly match the network's inherent
+geometry. We address this mismatch by introducing Concentration-Adapted
+Perturbations (CAP), a variational framework that models weight uncertainties
+directly on the unit hypersphere using von Mises-Fisher distributions. Building
+on recent work in radial-directional posterior decompositions and spherical
+weight constraints, CAP provides the first complete theoretical framework
+connecting directional statistics to practical noise regularization in neural
+networks. Our key contribution is an analytical derivation linking vMF
+concentration parameters to activation noise variance, enabling each layer to
+learn its optimal uncertainty level through a novel closed-form KL divergence
+regularizer. In experiments on CIFAR-10, CAP significantly improves model
+calibration - reducing Expected Calibration Error by 5.6x - while providing
+interpretable layer-wise uncertainty profiles. CAP requires minimal
+computational overhead and integrates seamlessly into standard architectures,
+offering a theoretically grounded yet practical approach to uncertainty
+quantification in deep learning.</p></br><a href="http://arxiv.org/pdf/2506.19351v1" target="_blank"><h2>In-Context Occam's Razor: How Transformers Prefer Simpler Hypotheses on
+  the Fly</h2></a><strong><u>Authors:</u></strong>  Puneesh Deora, Bhavya Vasudeva, Tina Behnia, Christos Thrampoulidis</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> 28 pages, 19 figures</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> In-context learning (ICL) enables transformers to adapt to new tasks through
+contextual examples without parameter updates. While existing research has
+typically studied ICL in fixed-complexity environments, practical language
+models encounter tasks spanning diverse complexity levels. This paper
+investigates how transformers navigate hierarchical task structures where
+higher-complexity categories can perfectly represent any pattern generated by
+simpler ones. We design well-controlled testbeds based on Markov chains and
+linear regression that reveal transformers not only identify the appropriate
+complexity level for each task but also accurately infer the corresponding
+parameters--even when the in-context examples are compatible with multiple
+complexity hypotheses. Notably, when presented with data generated by simpler
+processes, transformers consistently favor the least complex sufficient
+explanation. We theoretically explain this behavior through a Bayesian
+framework, demonstrating that transformers effectively implement an in-context
+Bayesian Occam's razor by balancing model fit against complexity penalties. We
+further ablate on the roles of model size, training mixture distribution,
+inference context length, and architecture. Finally, we validate this Occam's
+razor-like inductive bias on a pretrained GPT-4 model with Boolean-function
+tasks as case study, suggesting it may be inherent to transformers trained on
+diverse task distributions.</p></br><a href="http://arxiv.org/pdf/2506.19755v1" target="_blank"><h2>Cross-regularization: Adaptive Model Complexity through Validation
+  Gradients</h2></a><strong><u>Authors:</u></strong>  Carlos Stein Brito</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.ST, stat.ML, stat.TH</br><strong><u>Comments:</u></strong> 21 pages, 13 figures. Accepted at ICML 2025</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Model regularization requires extensive manual tuning to balance complexity
+against overfitting. Cross-regularization resolves this tradeoff by directly
+adapting regularization parameters through validation gradients during
+training. The method splits parameter optimization - training data guides
+feature learning while validation data shapes complexity controls - converging
+provably to cross-validation optima. When implemented through noise injection
+in neural networks, this approach reveals striking patterns: unexpectedly high
+noise tolerance and architecture-specific regularization that emerges
+organically during training. Beyond complexity control, the framework
+integrates seamlessly with data augmentation, uncertainty calibration and
+growing datasets while maintaining single-run efficiency through a simple
+gradient-based approach.</p></br><a href="http://arxiv.org/pdf/2506.18588v1" target="_blank"><h2>Optimization-Induced Dynamics of Lipschitz Continuity in Neural Networks</h2></a><strong><u>Authors:</u></strong>  Róisín Luo, James McDermott, Christian Gagné, Qiang Sun, Colm O'Riordan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Lipschitz continuity characterizes the worst-case sensitivity of neural
+networks to small input perturbations; yet its dynamics (i.e. temporal
+evolution) during training remains under-explored. We present a rigorous
+mathematical framework to model the temporal evolution of Lipschitz continuity
+during training with stochastic gradient descent (SGD). This framework
+leverages a system of stochastic differential equations (SDEs) to capture both
+deterministic and stochastic forces. Our theoretical analysis identifies three
+principal factors driving the evolution: (i) the projection of gradient flows,
+induced by the optimization dynamics, onto the operator-norm Jacobian of
+parameter matrices; (ii) the projection of gradient noise, arising from the
+randomness in mini-batch sampling, onto the operator-norm Jacobian; and (iii)
+the projection of the gradient noise onto the operator-norm Hessian of
+parameter matrices. Furthermore, our theoretical framework sheds light on such
+as how noisy supervision, parameter initialization, batch size, and mini-batch
+sampling trajectories, among other factors, shape the evolution of the
+Lipschitz continuity of neural networks. Our experimental results demonstrate
+strong agreement between the theoretical implications and the observed
+behaviors.</p></br><a href="http://arxiv.org/pdf/2506.18764v1" target="_blank"><h2>Neural Total Variation Distance Estimators for Changepoint Detection in
+  News Data</h2></a><strong><u>Authors:</u></strong>  Csaba Zsolnai, Niels Lörch, Julian Arnold</br><strong><u>Categories:</u></strong> cs.LG, cs.CL, cs.CY, cs.SI</br><strong><u>Comments:</u></strong> 16 pages, 3 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Detecting when public discourse shifts in response to major events is crucial
+for understanding societal dynamics. Real-world data is high-dimensional,
+sparse, and noisy, making changepoint detection in this domain a challenging
+endeavor. In this paper, we leverage neural networks for changepoint detection
+in news data, introducing a method based on the so-called learning-by-confusion
+scheme, which was originally developed for detecting phase transitions in
+physical systems. We train classifiers to distinguish between articles from
+different time periods. The resulting classification accuracy is used to
+estimate the total variation distance between underlying content distributions,
+where significant distances highlight changepoints. We demonstrate the
+effectiveness of this method on both synthetic datasets and real-world data
+from The Guardian newspaper, successfully identifying major historical events
+including 9/11, the COVID-19 pandemic, and presidential elections. Our approach
+requires minimal domain knowledge, can autonomously discover significant shifts
+in public discourse, and yields a quantitative measure of change in content,
+making it valuable for journalism, policy analysis, and crisis monitoring.</p></br><a href="http://arxiv.org/pdf/2506.18950v1" target="_blank"><h2>Online high-precision prediction method for injection molding product
+  weight by integrating time series/non-time series mixed features and feature
+  attention mechanism</h2></a><strong><u>Authors:</u></strong>  Maoyuan Li, Sihong Li, Guancheng Shen, Yun Zhang, Huamin Zhou</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> To address the challenges of untimely detection and online monitoring lag in
+injection molding quality anomalies, this study proposes a mixed feature
+attention-artificial neural network (MFA-ANN) model for high-precision online
+prediction of product weight. By integrating mechanism-based with data-driven
+analysis, the proposed architecture decouples time series data (e.g., melt flow
+dynamics, thermal profiles) from non-time series data (e.g., mold features,
+pressure settings), enabling hierarchical feature extraction. A self-attention
+mechanism is strategically embedded during cross-domain feature fusion to
+dynamically calibrate inter-modality feature weights, thereby emphasizing
+critical determinants of weight variability. The results demonstrate that the
+MFA-ANN model achieves a RMSE of 0.0281 with 0.5 g weight fluctuation
+tolerance, outperforming conventional benchmarks: a 25.1% accuracy improvement
+over non-time series ANN models, 23.0% over LSTM networks, 25.7% over SVR, and
+15.6% over RF models, respectively. Ablation studies quantitatively validate
+the synergistic enhancement derived from the integration of mixed feature
+modeling (contributing 22.4%) and the attention mechanism (contributing 11.2%),
+significantly enhancing the model's adaptability to varying working conditions
+and its resistance to noise. Moreover, critical sensitivity analyses further
+reveal that data resolution significantly impacts prediction reliability,
+low-fidelity sensor inputs degrade performance by 23.8% RMSE compared to
+high-precision measurements. Overall, this study provides an efficient and
+reliable solution for the intelligent quality control of injection molding
+processes.</p></br><a href="http://arxiv.org/pdf/2506.18288v1" target="_blank"><h2>Learning High-Quality Latent Representations for Anomaly Detection and
+  Signal Integrity Enhancement in High-Speed Signals</h2></a><strong><u>Authors:</u></strong>  Muhammad Usama, Hee-Deok Jang, Soham Shanbhag, Yoo-Chang Sung, Seung-Jun Bae, Dong Eui Chang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper addresses the dual challenge of improving anomaly detection and
+signal integrity in high-speed dynamic random access memory signals. To achieve
+this, we propose a joint training framework that integrates an autoencoder with
+a classifier to learn more distinctive latent representations by focusing on
+valid data features. Our approach is evaluated across three anomaly detection
+algorithms and consistently outperforms two baseline methods. Detailed ablation
+studies further support these findings. Furthermore, we introduce a signal
+integrity enhancement algorithm that improves signal integrity by an average of
+11.3%. The source code and data used in this study are available at
+https://github.com/Usama1002/learning-latent-representations.</p></br><a href="http://arxiv.org/pdf/2506.19144v1" target="_blank"><h2>Posterior Contraction for Sparse Neural Networks in Besov Spaces with
+  Intrinsic Dimensionality</h2></a><strong><u>Authors:</u></strong>  Kyeongwon Lee, Lizhen Lin, Jaewoo Park, Seonghyun Jeong</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> This work establishes that sparse Bayesian neural networks achieve optimal
+posterior contraction rates over anisotropic Besov spaces and their
+hierarchical compositions. These structures reflect the intrinsic
+dimensionality of the underlying function, thereby mitigating the curse of
+dimensionality. Our analysis shows that Bayesian neural networks equipped with
+either sparse or continuous shrinkage priors attain the optimal rates which are
+dependent on the intrinsic dimension of the true structures. Moreover, we show
+that these priors enable rate adaptation, allowing the posterior to contract at
+the optimal rate even when the smoothness level of the true function is
+unknown. The proposed framework accommodates a broad class of functions,
+including additive and multiplicative Besov functions as special cases. These
+results advance the theoretical foundations of Bayesian neural networks and
+provide rigorous justification for their practical effectiveness in
+high-dimensional, structured estimation problems.</p></br><a href="http://arxiv.org/pdf/2506.17718v1" target="_blank"><h2>Learning Time-Aware Causal Representation for Model Generalization in
+  Evolving Domains</h2></a><strong><u>Authors:</u></strong>  Zhuo He, Shuang Li, Wenze Song, Longhui Yuan, Jian Liang, Han Li, Kun Gai</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> ICML 2025</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Endowing deep models with the ability to generalize in dynamic scenarios is
+of vital significance for real-world deployment, given the continuous and
+complex changes in data distribution. Recently, evolving domain generalization
+(EDG) has emerged to address distribution shifts over time, aiming to capture
+evolving patterns for improved model generalization. However, existing EDG
+methods may suffer from spurious correlations by modeling only the dependence
+between data and targets across domains, creating a shortcut between
+task-irrelevant factors and the target, which hinders generalization. To this
+end, we design a time-aware structural causal model (SCM) that incorporates
+dynamic causal factors and the causal mechanism drifts, and propose
+\textbf{S}tatic-D\textbf{YN}amic \textbf{C}ausal Representation Learning
+(\textbf{SYNC}), an approach that effectively learns time-aware causal
+representations. Specifically, it integrates specially designed
+information-theoretic objectives into a sequential VAE framework which captures
+evolving patterns, and produces the desired representations by preserving
+intra-class compactness of causal factors both across and within domains.
+Moreover, we theoretically show that our method can yield the optimal causal
+predictor for each time domain. Results on both synthetic and real-world
+datasets exhibit that SYNC can achieve superior temporal generalization
+performance.</p></br><a href="http://arxiv.org/pdf/2506.18011v1" target="_blank"><h2>Probing the Embedding Space of Transformers via Minimal Token
+  Perturbations</h2></a><strong><u>Authors:</u></strong>  Eddie Conti, Alejandro Astruc, Alvaro Parafita, Axel Brando</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> IJCAI 2025 Workshop on Explainable Artificial Intelligence</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Understanding how information propagates through Transformer models is a key
+challenge for interpretability. In this work, we study the effects of minimal
+token perturbations on the embedding space. In our experiments, we analyze the
+frequency of which tokens yield to minimal shifts, highlighting that rare
+tokens usually lead to larger shifts. Moreover, we study how perturbations
+propagate across layers, demonstrating that input information is increasingly
+intermixed in deeper layers. Our findings validate the common assumption that
+the first layers of a model can be used as proxies for model explanations.
+Overall, this work introduces the combination of token perturbations and shifts
+on the embedding space as a powerful tool for model interpretability.</p></br><a href="http://arxiv.org/pdf/2506.18474v1" target="_blank"><h2>A Deep Convolutional Neural Network-Based Novel Class Balancing for
+  Imbalance Data Segmentation</h2></a><strong><u>Authors:</u></strong>  Atifa Kalsoom, M. A. Iftikhar, Amjad Ali, Zubair Shah, Shidin Balakrishnan, Hazrat Ali</br><strong><u>Categories:</u></strong> eess.IV, cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> This is preprint of the paper submitted to Scientific Reports journal</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Retinal fundus images provide valuable insights into the human eye's interior
+structure and crucial features, such as blood vessels, optic disk, macula, and
+fovea. However, accurate segmentation of retinal blood vessels can be
+challenging due to imbalanced data distribution and varying vessel thickness.
+In this paper, we propose BLCB-CNN, a novel pipeline based on deep learning and
+bi-level class balancing scheme to achieve vessel segmentation in retinal
+fundus images. The BLCB-CNN scheme uses a Convolutional Neural Network (CNN)
+architecture and an empirical approach to balance the distribution of pixels
+across vessel and non-vessel classes and within thin and thick vessels. Level-I
+is used for vessel/non-vessel balancing and Level-II is used for thick/thin
+vessel balancing. Additionally, pre-processing of the input retinal fundus
+image is performed by Global Contrast Normalization (GCN), Contrast Limited
+Adaptive Histogram Equalization (CLAHE), and gamma corrections to increase
+intensity uniformity as well as to enhance the contrast between vessels and
+background pixels. The resulting balanced dataset is used for
+classification-based segmentation of the retinal vascular tree. We evaluate the
+proposed scheme on standard retinal fundus images and achieve superior
+performance measures, including an area under the ROC curve of 98.23%, Accuracy
+of 96.22%, Sensitivity of 81.57%, and Specificity of 97.65%. We also
+demonstrate the method's efficacy through external cross-validation on STARE
+images, confirming its generalization ability.</p></br><a href="http://arxiv.org/pdf/2506.19465v1" target="_blank"><h2>Stylized Structural Patterns for Improved Neural Network Pre-training</h2></a><strong><u>Authors:</u></strong>  Farnood Salehi, Vandit Sharma, Amirhossein Askari Farsangi, Tunç Ozan Aydın</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> Modern deep learning models in computer vision require large datasets of real
+images, which are difficult to curate and pose privacy and legal concerns,
+limiting their commercial use. Recent works suggest synthetic data as an
+alternative, yet models trained with it often underperform. This paper proposes
+a two-step approach to bridge this gap. First, we propose an improved neural
+fractal formulation through which we introduce a new class of synthetic data.
+Second, we propose reverse stylization, a technique that transfers visual
+features from a small, license-free set of real images onto synthetic datasets,
+enhancing their effectiveness. We analyze the domain gap between our synthetic
+datasets and real images using Kernel Inception Distance (KID) and show that
+our method achieves a significantly lower distributional gap compared to
+existing synthetic datasets. Furthermore, our experiments across different
+tasks demonstrate the practical impact of this reduced gap. We show that
+pretraining the EDM2 diffusion model on our synthetic dataset leads to an 11%
+reduction in FID during image generation, compared to models trained on
+existing synthetic datasets, and a 20% decrease in autoencoder reconstruction
+error, indicating improved performance in data representation. Furthermore, a
+ViT-S model trained for classification on this synthetic data achieves over a
+10% improvement in ImageNet-100 accuracy. Our work opens up exciting
+possibilities for training practical models when sufficiently large real
+training sets are not available.</p></br><a href="http://arxiv.org/pdf/2506.19549v1" target="_blank"><h2>RCStat: A Statistical Framework for using Relative Contextualization in
+  Transformers</h2></a><strong><u>Authors:</u></strong>  Debabrata Mahapatra, Shubham Agarwal, Apoorv Saxena, Subrata Mitra</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Prior work on input-token importance in auto-regressive transformers has
+relied on Softmax-normalized attention weights, which obscure the richer
+structure of pre-Softmax query-key logits. We introduce RCStat, a statistical
+framework that harnesses raw attention logits via Relative Contextualization
+(RC), a random variable measuring contextual alignment between token segments,
+and derive an efficient upper bound for RC. We demonstrate two applications:
+(i) Key-Value compression, where RC-based thresholds drive adaptive key-value
+eviction for substantial cache reduction with minimal quality loss; and (ii)
+Attribution, where RC yields higher-fidelity token-, sentence-, and chunk-level
+explanations than post-Softmax methods. Across question answering,
+summarization, and attribution benchmarks, RCStat achieves significant
+empirical gains, delivering state-of-the-art compression and attribution
+performance without any model retraining.</p></br><a href="http://arxiv.org/pdf/2506.17364v2" target="_blank"><h2>AI-based Multimodal Biometrics for Detecting Smartphone Distractions:
+  Application to Online Learning</h2></a><strong><u>Authors:</u></strong>  Alvaro Becerra, Roberto Daza, Ruth Cobos, Aythami Morales, Mutlu Cukurova, Julian Fierrez</br><strong><u>Categories:</u></strong> cs.CY, cs.AI, cs.CV, cs.HC</br><strong><u>Comments:</u></strong> Accepted in EC-TEL25: 20th European Conference on Technology Enhanced Learning, Newcastle and Durham, UK, 15-19 September 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> This work investigates the use of multimodal biometrics to detect
+distractions caused by smartphone use during tasks that require sustained
+attention, with a focus on computer-based online learning. Although the methods
+are applicable to various domains, such as autonomous driving, we concentrate
+on the challenges learners face in maintaining engagement amid internal (e.g.,
+motivation), system-related (e.g., course design) and contextual (e.g.,
+smartphone use) factors. Traditional learning platforms often lack detailed
+behavioral data, but Multimodal Learning Analytics (MMLA) and biosensors
+provide new insights into learner attention. We propose an AI-based approach
+that leverages physiological signals and head pose data to detect phone use.
+Our results show that single biometric signals, such as brain waves or heart
+rate, offer limited accuracy, while head pose alone achieves 87%. A multimodal
+model combining all signals reaches 91% accuracy, highlighting the benefits of
+integration. We conclude by discussing the implications and limitations of
+deploying these models for real-time support in online learning environments.</p></br><a href="http://arxiv.org/pdf/2506.19246v1" target="_blank"><h2>Behavioral Anomaly Detection in Distributed Systems via Federated
+  Contrastive Learning</h2></a><strong><u>Authors:</u></strong>  Renzi Meng, Heyi Wang, Yumeng Sun, Qiyuan Wu, Lian Lian, Renhan Zhang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper addresses the increasingly prominent problem of anomaly detection
+in distributed systems. It proposes a detection method based on federated
+contrastive learning. The goal is to overcome the limitations of traditional
+centralized approaches in terms of data privacy, node heterogeneity, and
+anomaly pattern recognition. The proposed method combines the distributed
+collaborative modeling capabilities of federated learning with the feature
+discrimination enhancement of contrastive learning. It builds embedding
+representations on local nodes and constructs positive and negative sample
+pairs to guide the model in learning a more discriminative feature space.
+Without exposing raw data, the method optimizes a global model through a
+federated aggregation strategy. Specifically, the method uses an encoder to
+represent local behavior data in high-dimensional space. This includes system
+logs, operational metrics, and system calls. The model is trained using both
+contrastive loss and classification loss to improve its ability to detect
+fine-grained anomaly patterns. The method is evaluated under multiple typical
+attack types. It is also tested in a simulated real-time data stream scenario
+to examine its responsiveness. Experimental results show that the proposed
+method outperforms existing approaches across multiple performance metrics. It
+demonstrates strong detection accuracy and adaptability, effectively addressing
+complex anomalies in distributed environments. Through careful design of key
+modules and optimization of the training mechanism, the proposed method
+achieves a balance between privacy preservation and detection performance. It
+offers a feasible technical path for intelligent security management in
+distributed systems.</p></br><a href="http://arxiv.org/pdf/2506.17968v1" target="_blank"><h2>h-calibration: Rethinking Classifier Recalibration with Probabilistic
+  Error-Bounded Objective</h2></a><strong><u>Authors:</u></strong>  Wenjian Huang, Guiping Cao, Jiahao Xia, Jingkun Chen, Hao Wang, Jianguo Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV, math.PR, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks have demonstrated remarkable performance across numerous
+learning tasks but often suffer from miscalibration, resulting in unreliable
+probability outputs. This has inspired many recent works on mitigating
+miscalibration, particularly through post-hoc recalibration methods that aim to
+obtain calibrated probabilities without sacrificing the classification
+performance of pre-trained models. In this study, we summarize and categorize
+previous works into three general strategies: intuitively designed methods,
+binning-based methods, and methods based on formulations of ideal calibration.
+Through theoretical and practical analysis, we highlight ten common limitations
+in previous approaches. To address these limitations, we propose a
+probabilistic learning framework for calibration called h-calibration, which
+theoretically constructs an equivalent learning formulation for canonical
+calibration with boundedness. On this basis, we design a simple yet effective
+post-hoc calibration algorithm. Our method not only overcomes the ten
+identified limitations but also achieves markedly better performance than
+traditional methods, as validated by extensive experiments. We further analyze,
+both theoretically and experimentally, the relationship and advantages of our
+learning objective compared to traditional proper scoring rule. In summary, our
+probabilistic framework derives an approximately equivalent differentiable
+objective for learning error-bounded calibrated probabilities, elucidating the
+correspondence and convergence properties of computational statistics with
+respect to theoretical bounds in canonical calibration. The theoretical
+effectiveness is verified on standard post-hoc calibration benchmarks by
+achieving state-of-the-art performance. This research offers valuable reference
+for learning reliable likelihood in related fields.</p></br><a href="http://arxiv.org/pdf/2506.18791v1" target="_blank"><h2>Focus Your Attention: Towards Data-Intuitive Lightweight Vision
+  Transformers</h2></a><strong><u>Authors:</u></strong>  Suyash Gaurav, Muhammad Farhan Humayun, Jukka Heikkonen, Jatin Chaudhary</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The evolution of Vision Transformers has led to their widespread adaptation
+to different domains. Despite large-scale success, there remain significant
+challenges including their reliance on extensive computational and memory
+resources for pre-training on huge datasets as well as difficulties in
+task-specific transfer learning. These limitations coupled with energy
+inefficiencies mainly arise due to the computation-intensive self-attention
+mechanism. To address these issues, we propose a novel Super-Pixel Based Patch
+Pooling (SPPP) technique that generates context-aware, semantically rich, patch
+embeddings to effectively reduce the architectural complexity and improve
+efficiency. Additionally, we introduce the Light Latent Attention (LLA) module
+in our pipeline by integrating latent tokens into the attention mechanism
+allowing cross-attention operations to significantly reduce the time and space
+complexity of the attention module. By leveraging the data-intuitive patch
+embeddings coupled with dynamic positional encodings, our approach adaptively
+modulates the cross-attention process to focus on informative regions while
+maintaining the global semantic structure. This targeted attention improves
+training efficiency and accelerates convergence. Notably, the SPPP module is
+lightweight and can be easily integrated into existing transformer
+architectures. Extensive experiments demonstrate that our proposed architecture
+provides significant improvements in terms of computational efficiency while
+achieving comparable results with the state-of-the-art approaches, highlighting
+its potential for energy-efficient transformers suitable for edge deployment.
+(The code is available on our GitHub repository:
+https://github.com/zser092/Focused-Attention-ViT).</p></br><a href="http://arxiv.org/pdf/2506.17874v1" target="_blank"><h2>DRO-Augment Framework: Robustness by Synergizing Wasserstein
+  Distributionally Robust Optimization and Data Augmentation</h2></a><strong><u>Authors:</u></strong>  Jiaming Hu, Debarghya Mukherjee, Ioannis Ch. Paschalidis</br><strong><u>Categories:</u></strong> stat.ML, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> 26 pages,3 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), data augmentation (title, abstract)</br><p><strong><u>Abstract:</u></strong> In many real-world applications, ensuring the robustness and stability of
+deep neural networks (DNNs) is crucial, particularly for image classification
+tasks that encounter various input perturbations. While data augmentation
+techniques have been widely adopted to enhance the resilience of a trained
+model against such perturbations, there remains significant room for
+improvement in robustness against corrupted data and adversarial attacks
+simultaneously. To address this challenge, we introduce DRO-Augment, a novel
+framework that integrates Wasserstein Distributionally Robust Optimization
+(W-DRO) with various data augmentation strategies to improve the robustness of
+the models significantly across a broad spectrum of corruptions. Our method
+outperforms existing augmentation methods under severe data perturbations and
+adversarial attack scenarios while maintaining the accuracy on the clean
+datasets on a range of benchmark datasets, including but not limited to
+CIFAR-10-C, CIFAR-100-C, MNIST, and Fashion-MNIST. On the theoretical side, we
+establish novel generalization error bounds for neural networks trained using a
+computationally efficient, variation-regularized loss function closely related
+to the W-DRO problem.</p></br><a href="http://arxiv.org/pdf/2506.17931v1" target="_blank"><h2>IDAL: Improved Domain Adaptive Learning for Natural Images Dataset</h2></a><strong><u>Authors:</u></strong>  Ravi Kant Gupta, Shounak Das, Amit Sethi</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted in ICPR'24 (International Conference on Pattern Recognition)</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), multi-modal (abstract), domain adaptation (abstract)</br><p><strong><u>Abstract:</u></strong> We present a novel approach for unsupervised domain adaptation (UDA) for
+natural images. A commonly-used objective for UDA schemes is to enhance domain
+alignment in representation space even if there is a domain shift in the input
+space. Existing adversarial domain adaptation methods may not effectively align
+different domains of multimodal distributions associated with classification
+problems. Our approach has two main features. Firstly, its neural architecture
+uses the deep structure of ResNet and the effective separation of scales of
+feature pyramidal network (FPN) to work with both content and style features.
+Secondly, it uses a combination of a novel loss function and judiciously
+selected existing loss functions to train the network architecture. This
+tailored combination is designed to address challenges inherent to natural
+images, such as scale, noise, and style shifts, that occur on top of a
+multi-modal (multi-class) distribution. The combined loss function not only
+enhances model accuracy and robustness on the target domain but also speeds up
+training convergence. Our proposed UDA scheme generalizes better than
+state-of-the-art for CNN-based methods on Office-Home, Office-31, and
+VisDA-2017 datasets and comaparable for DomainNet dataset.</p></br><a href="http://arxiv.org/pdf/2506.17859v1" target="_blank"><h2>In-Context Learning Strategies Emerge Rationally</h2></a><strong><u>Authors:</u></strong>  Daniel Wurgaft, Ekdeep Singh Lubana, Core Francisco Park, Hidenori Tanaka, Gautam Reddy, Noah D. Goodman</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Preprint</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Recent work analyzing in-context learning (ICL) has identified a broad set of
+strategies that describe model behavior in different experimental conditions.
+We aim to unify these findings by asking why a model learns these disparate
+strategies in the first place. Specifically, we start with the observation that
+when trained to learn a mixture of tasks, as is popular in the literature, the
+strategies learned by a model for performing ICL can be captured by a family of
+Bayesian predictors: a memorizing predictor, which assumes a discrete prior on
+the set of seen tasks, and a generalizing predictor, wherein the prior matches
+the underlying task distribution. Adopting the lens of rational analysis from
+cognitive science, where a learner's behavior is explained as an optimal
+adaptation to data given computational constraints, we develop a hierarchical
+Bayesian framework that almost perfectly predicts Transformer next token
+predictions throughout training without assuming access to its weights. Under
+this framework, pretraining is viewed as a process of updating the posterior
+probability of different strategies, and its inference-time behavior as a
+posterior-weighted average over these strategies' predictions. Our framework
+draws on common assumptions about neural network learning dynamics, which make
+explicit a tradeoff between loss and complexity among candidate strategies:
+beyond how well it explains the data, a model's preference towards implementing
+a strategy is dictated by its complexity. This helps explain well-known ICL
+phenomena, while offering novel predictions: e.g., we show a superlinear trend
+in the timescale for transition to memorization as task diversity is increased.
+Overall, our work advances an explanatory and predictive account of ICL
+grounded in tradeoffs between strategy loss and complexity.</p></br><a href="http://arxiv.org/pdf/2506.19732v1" target="_blank"><h2>Who Does What in Deep Learning? Multidimensional Game-Theoretic
+  Attribution of Function of Neural Units</h2></a><strong><u>Authors:</u></strong>  Shrey Dixit, Kayson Fakhar, Fatemeh Hadaeghi, Patrick Mineault, Konrad P. Kording, Claus C. Hilgetag</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Neural networks now generate text, images, and speech with billions of
+parameters, producing a need to know how each neural unit contributes to these
+high-dimensional outputs. Existing explainable-AI methods, such as SHAP,
+attribute importance to inputs, but cannot quantify the contributions of neural
+units across thousands of output pixels, tokens, or logits. Here we close that
+gap with Multiperturbation Shapley-value Analysis (MSA), a model-agnostic
+game-theoretic framework. By systematically lesioning combinations of units,
+MSA yields Shapley Modes, unit-wise contribution maps that share the exact
+dimensionality of the model's output. We apply MSA across scales, from
+multi-layer perceptrons to the 56-billion-parameter Mixtral-8x7B and Generative
+Adversarial Networks (GAN). The approach demonstrates how regularisation
+concentrates computation in a few hubs, exposes language-specific experts
+inside the LLM, and reveals an inverted pixel-generation hierarchy in GANs.
+Together, these results showcase MSA as a powerful approach for interpreting,
+editing, and compressing deep neural networks.</p></br><a href="http://arxiv.org/pdf/2506.18204v2" target="_blank"><h2>Multimodal Fusion SLAM with Fourier Attention</h2></a><strong><u>Authors:</u></strong>  Youjie Zhou, Guofeng Mei, Yiming Wang, Yi Wan, Fabio Poiesi</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Accepted in IEEE RAL</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Visual SLAM is particularly challenging in environments affected by noise,
+varying lighting conditions, and darkness. Learning-based optical flow
+algorithms can leverage multiple modalities to address these challenges, but
+traditional optical flow-based visual SLAM approaches often require significant
+computational resources.To overcome this limitation, we propose FMF-SLAM, an
+efficient multimodal fusion SLAM method that utilizes fast Fourier transform
+(FFT) to enhance the algorithm efficiency. Specifically, we introduce a novel
+Fourier-based self-attention and cross-attention mechanism to extract features
+from RGB and depth signals. We further enhance the interaction of multimodal
+features by incorporating multi-scale knowledge distillation across modalities.
+We also demonstrate the practical feasibility of FMF-SLAM in real-world
+scenarios with real time performance by integrating it with a security robot by
+fusing with a global positioning module GNSS-RTK and global Bundle Adjustment.
+Our approach is validated using video sequences from TUM, TartanAir, and our
+real-world datasets, showcasing state-of-the-art performance under noisy,
+varying lighting, and dark conditions.Our code and datasets are available at
+https://github.com/youjie-zhou/FMF-SLAM.git.</p></br><a href="http://arxiv.org/pdf/2506.19387v1" target="_blank"><h2>NAADA: A Noise-Aware Attention Denoising Autoencoder for Dental
+  Panoramic Radiographs</h2></a><strong><u>Authors:</u></strong>  Khuram Naveed, Bruna Neves de Freitas, Ruben Pauwels</br><strong><u>Categories:</u></strong> eess.IV, cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> 10 pages, 8 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Convolutional denoising autoencoders (DAEs) are powerful tools for image
+restoration. However, they inherit a key limitation of convolutional neural
+networks (CNNs): they tend to recover low-frequency features, such as smooth
+regions, more effectively than high-frequency details. This leads to the loss
+of fine details, which is particularly problematic in dental radiographs where
+preserving subtle anatomical structures is crucial. While self-attention
+mechanisms can help mitigate this issue by emphasizing important features,
+conventional attention methods often prioritize features corresponding to
+cleaner regions and may overlook those obscured by noise. To address this
+limitation, we propose a noise-aware self-attention method, which allows the
+model to effectively focus on and recover key features even within noisy
+regions. Building on this approach, we introduce the noise-aware
+attention-enhanced denoising autoencoder (NAADA) network for enhancing noisy
+panoramic dental radiographs. Compared with the recent state of the art (and
+much heavier) methods like Uformer, MResDNN etc., our method improves the
+reconstruction of fine details, ensuring better image quality and diagnostic
+accuracy.</p></br><a href="http://arxiv.org/pdf/2506.18124v1" target="_blank"><h2>Bayesian Multiobject Tracking With Neural-Enhanced Motion and
+  Measurement Models</h2></a><strong><u>Authors:</u></strong>  Shaoxiu Wei, Mingchao Liang, Florian Meyer</br><strong><u>Categories:</u></strong> cs.LG, eess.SP, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Multiobject tracking (MOT) is an important task in applications including
+autonomous driving, ocean sciences, and aerospace surveillance. Traditional MOT
+methods are model-based and combine sequential Bayesian estimation with data
+association and an object birth model. More recent methods are fully
+data-driven and rely on the training of neural networks. Both approaches offer
+distinct advantages in specific settings. In particular, model-based methods
+are generally applicable across a wide range of scenarios, whereas data-driven
+MOT achieves superior performance in scenarios where abundant labeled data for
+training is available. A natural thought is whether a general framework can
+integrate the two approaches. This paper introduces a hybrid method that
+utilizes neural networks to enhance specific aspects of the statistical model
+in Bayesian MOT that have been identified as overly simplistic. By doing so,
+the performance of the prediction and update steps of Bayesian MOT is improved.
+To ensure tractable computation, our framework uses belief propagation to avoid
+high-dimensional operations combined with sequential Monte Carlo methods to
+perform low-dimensional operations efficiently. The resulting method combines
+the flexibility and robustness of model-based approaches with the capability to
+learn complex information from data of neural networks. We evaluate the
+performance of the proposed method based on the nuScenes autonomous driving
+dataset and demonstrate that it has state-of-the-art performance</p></br><a href="http://arxiv.org/pdf/2506.17618v1" target="_blank"><h2>Black Hole Spectroscopy with Conditional Variational Autoencoder</h2></a><strong><u>Authors:</u></strong>  Akash K Mishra</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.HE</br><strong><u>Comments:</u></strong> 10 pages, 5 figures, 1 table</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Gravitational waves provide a unique opportunity to test general relativity
+in the strong-field regime, enabling the extraction of key physical parameters
+from observational data. Traditional likelihood-based inference methods, while
+robust, become computationally expensive in high-dimensional parameter spaces,
+such as when incorporating multiple ringdown modes or beyond Kerr deviations.
+In this paper, we explore the implementation of a conditional variational
+autoencoder-based machine-learning framework for accelerated ringdown parameter
+estimation. As a first application, we use the neural network to infer the
+remnant properties of a final black hole under the Kerr hypothesis. We
+demonstrate the performance of this algorithm with simulated ringdown waveforms
+consistent with advanced LIGO sensitivity and compare with Bayesian analysis
+results. We further extend the framework beyond the Kerr paradigm by
+incorporating deviations predicted in braneworld gravity.</p></br><a href="http://arxiv.org/pdf/2506.17409v1" target="_blank"><h2>Adaptive Control Attention Network for Underwater Acoustic Localization
+  and Domain Adaptation</h2></a><strong><u>Authors:</u></strong>  Quoc Thinh Vo, Joe Woods, Priontu Chowdhury, David K. Han</br><strong><u>Categories:</u></strong> cs.SD, cs.LG, eess.AS, eess.SP</br><strong><u>Comments:</u></strong> This paper has been accepted for the 33rd European Signal Processing Conference (EUSIPCO) 2025 in Palermo, Italy</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), domain adaptation (title), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Localizing acoustic sound sources in the ocean is a challenging task due to
+the complex and dynamic nature of the environment. Factors such as high
+background noise, irregular underwater geometries, and varying acoustic
+properties make accurate localization difficult. To address these obstacles, we
+propose a multi-branch network architecture designed to accurately predict the
+distance between a moving acoustic source and a receiver, tested on real-world
+underwater signal arrays. The network leverages Convolutional Neural Networks
+(CNNs) for robust spatial feature extraction and integrates Conformers with
+self-attention mechanism to effectively capture temporal dependencies. Log-mel
+spectrogram and generalized cross-correlation with phase transform (GCC-PHAT)
+features are employed as input representations. To further enhance the model
+performance, we introduce an Adaptive Gain Control (AGC) layer, that adaptively
+adjusts the amplitude of input features, ensuring consistent energy levels
+across varying ranges, signal strengths, and noise conditions. We assess the
+model's generalization capability by training it in one domain and testing it
+in a different domain, using only a limited amount of data from the test domain
+for fine-tuning. Our proposed method outperforms state-of-the-art (SOTA)
+approaches in similar settings, establishing new benchmarks for underwater
+sound localization.</p></br><a href="http://arxiv.org/pdf/2506.19461v1" target="_blank"><h2>Iterative Quantum Feature Maps</h2></a><strong><u>Authors:</u></strong>  Nasa Matsumoto, Quoc Hoan Tran, Koki Chinzei, Yasuhiro Endo, Hirotaka Oshima</br><strong><u>Categories:</u></strong> quant-ph, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 13 pages, 12 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Quantum machine learning models that leverage quantum circuits as quantum
+feature maps (QFMs) are recognized for their enhanced expressive power in
+learning tasks. Such models have demonstrated rigorous end-to-end quantum
+speedups for specific families of classification problems. However, deploying
+deep QFMs on real quantum hardware remains challenging due to circuit noise and
+hardware constraints. Additionally, variational quantum algorithms often suffer
+from computational bottlenecks, particularly in accurate gradient estimation,
+which significantly increases quantum resource demands during training. We
+propose Iterative Quantum Feature Maps (IQFMs), a hybrid quantum-classical
+framework that constructs a deep architecture by iteratively connecting shallow
+QFMs with classically computed augmentation weights. By incorporating
+contrastive learning and a layer-wise training mechanism, IQFMs effectively
+reduces quantum runtime and mitigates noise-induced degradation. In tasks
+involving noisy quantum data, numerical experiments show that IQFMs outperforms
+quantum convolutional neural networks, without requiring the optimization of
+variational quantum parameters. Even for a typical classical image
+classification benchmark, a carefully designed IQFMs achieves performance
+comparable to that of classical neural networks. This framework presents a
+promising path to address current limitations and harness the full potential of
+quantum-enhanced machine learning.</p></br><a href="http://arxiv.org/pdf/2506.18396v1" target="_blank"><h2>ADNF-Clustering: An Adaptive and Dynamic Neuro-Fuzzy Clustering for
+  Leukemia Prediction</h2></a><strong><u>Authors:</u></strong>  Marco Aruta, Ciro Listone, Giuseppe Murano, Aniello Murano</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 6 pages, 1 figure, under review</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Leukemia diagnosis and monitoring rely increasingly on high-throughput image
+data, yet conventional clustering methods lack the flexibility to accommodate
+evolving cellular patterns and quantify uncertainty in real time. We introduce
+Adaptive and Dynamic Neuro-Fuzzy Clustering, a novel streaming-capable
+framework that combines Convolutional Neural Network-based feature extraction
+with an online fuzzy clustering engine. ADNF initializes soft partitions via
+Fuzzy C-Means, then continuously updates micro-cluster centers, densities, and
+fuzziness parameters using a Fuzzy Temporal Index (FTI) that measures entropy
+evolution. A topology refinement stage performs density-weighted merging and
+entropy-guided splitting to guard against over- and under-segmentation. On the
+C-NMC leukemia microscopy dataset, our tool achieves a silhouette score of
+0.51, demonstrating superior cohesion and separation over static baselines. The
+method's adaptive uncertainty modeling and label-free operation hold immediate
+potential for integration within the INFANT pediatric oncology network,
+enabling scalable, up-to-date support for personalized leukemia management.</p></br><a href="http://arxiv.org/pdf/2506.17840v1" target="_blank"><h2>Causal Spherical Hypergraph Networks for Modelling Social Uncertainty</h2></a><strong><u>Authors:</u></strong>  Anoushka Harit, Zhongtian Sun</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> Human social behaviour is governed by complex interactions shaped by
+uncertainty, causality, and group dynamics. We propose Causal Spherical
+Hypergraph Networks (Causal-SphHN), a principled framework for socially
+grounded prediction that jointly models higher-order structure, directional
+influence, and epistemic uncertainty. Our method represents individuals as
+hyperspherical embeddings and group contexts as hyperedges, capturing semantic
+and relational geometry. Uncertainty is quantified via Shannon entropy over von
+Mises-Fisher distributions, while temporal causal dependencies are identified
+using Granger-informed subgraphs. Information is propagated through an angular
+message-passing mechanism that respects belief dispersion and directional
+semantics. Experiments on SNARE (offline networks), PHEME (online discourse),
+and AMIGOS (multimodal affect) show that Causal-SphHN improves predictive
+accuracy, robustness, and calibration over strong baselines. Moreover, it
+enables interpretable analysis of influence patterns and social ambiguity. This
+work contributes a unified causal-geometric approach for learning under
+uncertainty in dynamic social environments.</p></br><a href="http://arxiv.org/pdf/2506.17824v1" target="_blank"><h2>Quantum-Hybrid Support Vector Machines for Anomaly Detection in
+  Industrial Control Systems</h2></a><strong><u>Authors:</u></strong>  Tyler Cultice, Md. Saif Hassan Onim, Annarita Giani, Himanshu Thapliyal</br><strong><u>Categories:</u></strong> quant-ph, cs.CR, cs.LG</br><strong><u>Comments:</u></strong> 12 pages, 6 tables, 10 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Sensitive data captured by Industrial Control Systems (ICS) play a large role
+in the safety and integrity of many critical infrastructures. Detection of
+anomalous or malicious data, or Anomaly Detection (AD), with machine learning
+is one of many vital components of cyberphysical security. Quantum kernel-based
+machine learning methods have shown promise in identifying complex anomalous
+behavior by leveraging the highly expressive and efficient feature spaces of
+quantum computing. This study focuses on the parameterization of Quantum Hybrid
+Support Vector Machines (QSVMs) using three popular datasets from
+Cyber-Physical Systems (CPS). The results demonstrate that QSVMs outperform
+traditional classical kernel methods, achieving 13.3% higher F1 scores.
+Additionally, this research investigates noise using simulations based on real
+IBMQ hardware, revealing a maximum error of only 0.98% in the QSVM kernels.
+This error results in an average reduction of 1.57% in classification metrics.
+Furthermore, the study found that QSVMs show a 91.023% improvement in
+kernel-target alignment compared to classical methods, indicating a potential
+"quantum advantage" in anomaly detection for critical infrastructures. This
+effort suggests that QSVMs can provide a substantial advantage in anomaly
+detection for ICS, ultimately enhancing the security and integrity of critical
+infrastructures.</p></br><a href="http://arxiv.org/pdf/2506.18046v1" target="_blank"><h2>TAB: Unified Benchmarking of Time Series Anomaly Detection Methods</h2></a><strong><u>Authors:</u></strong>  Xiangfei Qiu, Zhe Li, Wanghui Qiu, Shiyan Hu, Lekui Zhou, Xingjian Wu, Zhengyu Li, Chenjuan Guo, Aoying Zhou, Zhenli Sheng, Jilin Hu, Christian S. Jensen, Bin Yang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted by PVLDB2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Time series anomaly detection (TSAD) plays an important role in many domains
+such as finance, transportation, and healthcare. With the ongoing
+instrumentation of reality, more time series data will be available, leading
+also to growing demands for TSAD. While many TSAD methods already exist, new
+and better methods are still desirable. However, effective progress hinges on
+the availability of reliable means of evaluating new methods and comparing them
+with existing methods. We address deficiencies in current evaluation procedures
+related to datasets and experimental settings and protocols. Specifically, we
+propose a new time series anomaly detection benchmark, called TAB. First, TAB
+encompasses 29 public multivariate datasets and 1,635 univariate time series
+from different domains to facilitate more comprehensive evaluations on diverse
+datasets. Second, TAB covers a variety of TSAD methods, including Non-learning,
+Machine learning, Deep learning, LLM-based, and Time-series pre-trained
+methods. Third, TAB features a unified and automated evaluation pipeline that
+enables fair and easy evaluation of TSAD methods. Finally, we employ TAB to
+evaluate existing TSAD methods and report on the outcomes, thereby offering a
+deeper insight into the performance of these methods. Besides, all datasets and
+code are available at https://github.com/decisionintelligence/TAB.</p></br><a href="http://arxiv.org/pdf/2506.18285v1" target="_blank"><h2>Learning Causal Graphs at Scale: A Foundation Model Approach</h2></a><strong><u>Authors:</u></strong>  Naiyu Yin, Tian Gao, Yue Yu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Due to its human-interpretability and invariance properties, Directed Acyclic
+Graph (DAG) has been a foundational tool across various areas of AI research,
+leading to significant advancements. However, DAG learning remains highly
+challenging, due to its super-exponential growth in computational cost and
+identifiability issues, particularly in small-sample regimes. To address these
+two challenges, in this work we leverage the recent success of linear
+transformers and develop a foundation model approach for discovering multiple
+order-consistent DAGs across tasks. In particular, we propose Attention-DAG
+(ADAG), a novel attention-mechanism-based architecture for learning multiple
+linear Structural Equation Models (SEMs). ADAG learns the mapping from observed
+data to both graph structure and parameters via a nonlinear attention-based
+kernel, enabling efficient multi-task estimation of the underlying linear SEMs.
+By formulating the learning process across multiple tasks as a continuous
+optimization problem, the pre-trained ADAG model captures the common structural
+properties as a shared low-dimensional prior, thereby reducing the
+ill-posedness of downstream DAG learning tasks in small-sample regimes. We
+evaluate our proposed approach on benchmark synthetic datasets and find that
+ADAG achieves substantial improvements in both DAG learning accuracy and
+zero-shot inference efficiency. To the best of our knowledge, this is the first
+practical approach for pre-training a foundation model specifically designed
+for DAG learning, representing a step toward more efficient and generalizable
+down-stream applications in causal discovery.</p></br><a href="http://arxiv.org/pdf/2506.19031v1" target="_blank"><h2>When Diffusion Models Memorize: Inductive Biases in Probability Flow of
+  Minimum-Norm Shallow Neural Nets</h2></a><strong><u>Authors:</u></strong>  Chen Zeno, Hila Manor, Greg Ongie, Nir Weinberger, Tomer Michaeli, Daniel Soudry</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Accepted to the Forty-second International Conference on Machine Learning (ICML 2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> While diffusion models generate high-quality images via probability flow, the
+theoretical understanding of this process remains incomplete. A key question is
+when probability flow converges to training samples or more general points on
+the data manifold. We analyze this by studying the probability flow of shallow
+ReLU neural network denoisers trained with minimal $\ell^2$ norm. For
+intuition, we introduce a simpler score flow and show that for orthogonal
+datasets, both flows follow similar trajectories, converging to a training
+point or a sum of training points. However, early stopping by the diffusion
+time scheduler allows probability flow to reach more general manifold points.
+This reflects the tendency of diffusion models to both memorize training
+samples and generate novel points that combine aspects of multiple samples,
+motivating our study of such behavior in simplified settings. We extend these
+results to obtuse simplex data and, through simulations in the orthogonal case,
+confirm that probability flow converges to a training point, a sum of training
+points, or a manifold point. Moreover, memorization decreases when the number
+of training samples grows, as fewer samples accumulate near training points.</p></br><a href="http://arxiv.org/pdf/2506.18283v1" target="_blank"><h2>Quantifying Uncertainty in the Presence of Distribution Shifts</h2></a><strong><u>Authors:</u></strong>  Yuli Slavutsky, David M. Blei</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Neural networks make accurate predictions but often fail to provide reliable
+uncertainty estimates, especially under covariate distribution shifts between
+training and testing. To address this problem, we propose a Bayesian framework
+for uncertainty estimation that explicitly accounts for covariate shifts. While
+conventional approaches rely on fixed priors, the key idea of our method is an
+adaptive prior, conditioned on both training and new covariates. This prior
+naturally increases uncertainty for inputs that lie far from the training
+distribution in regions where predictive performance is likely to degrade. To
+efficiently approximate the resulting posterior predictive distribution, we
+employ amortized variational inference. Finally, we construct synthetic
+environments by drawing small bootstrap samples from the training data,
+simulating a range of plausible covariate shift using only the original
+dataset. We evaluate our method on both synthetic and real-world data. It
+yields substantially improved uncertainty estimates under distribution shifts.</p></br><a href="http://arxiv.org/pdf/2506.17768v1" target="_blank"><h2>Log-Normal Multiplicative Dynamics for Stable Low-Precision Training of
+  Large Networks</h2></a><strong><u>Authors:</u></strong>  Keigo Nishida, Eren Mehmet Kıral, Kenichi Bannai, Mohammad Emtiyaz Khan, Thomas Möllenhoff</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Code is available here:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Studies in neuroscience have shown that biological synapses follow a
+log-normal distribution whose transitioning can be explained by noisy
+multiplicative dynamics. Biological networks can function stably even under
+dynamically fluctuating conditions arising due to unreliable synaptic
+transmissions. Here we ask: Is it possible to design similar multiplicative
+training in artificial neural networks? To answer this question, we derive a
+Bayesian learning rule that assumes log-normal posterior distributions over
+weights which gives rise to a new Log-Normal Multiplicative Dynamics (LMD)
+algorithm. The algorithm uses multiplicative updates with both noise and
+regularization applied multiplicatively. The method is as easy to implement as
+Adam and only requires one additional vector to store. Our results show that
+LMD achieves stable and accurate training-from-scratch under low-precision
+forward operations for Vision Transformer and GPT-2. These results suggest that
+multiplicative dynamics, a biological feature, may enable stable low-precision
+inference and learning on future energy-efficient hardware.</p></br><a href="http://arxiv.org/pdf/2506.17634v1" target="_blank"><h2>Scalable Machine Learning Algorithms using Path Signatures</h2></a><strong><u>Authors:</u></strong>  Csaba Tóth</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.PR</br><strong><u>Comments:</u></strong> PhD thesis</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The interface between stochastic analysis and machine learning is a rapidly
+evolving field, with path signatures - iterated integrals that provide
+faithful, hierarchical representations of paths - offering a principled and
+universal feature map for sequential and structured data. Rooted in rough path
+theory, path signatures are invariant to reparameterization and well-suited for
+modelling evolving dynamics, long-range dependencies, and irregular sampling -
+common challenges in real-world time series and graph data.
+  This thesis investigates how to harness the expressive power of path
+signatures within scalable machine learning pipelines. It introduces a suite of
+models that combine theoretical robustness with computational efficiency,
+bridging rough path theory with probabilistic modelling, deep learning, and
+kernel methods. Key contributions include: Gaussian processes with signature
+kernel-based covariance functions for uncertainty-aware time series modelling;
+the Seq2Tens framework, which employs low-rank tensor structure in the weight
+space for scalable deep modelling of long-range dependencies; and graph-based
+models where expected signatures over graphs induce hypo-elliptic diffusion
+processes, offering expressive yet tractable alternatives to standard graph
+neural networks. Further developments include Random Fourier Signature
+Features, a scalable kernel approximation with theoretical guarantees, and
+Recurrent Sparse Spectrum Signature Gaussian Processes, which combine Gaussian
+processes, signature kernels, and random features with a principled forgetting
+mechanism for multi-horizon time series forecasting with adaptive context
+length.
+  We hope this thesis serves as both a methodological toolkit and a conceptual
+bridge, and provides a useful reference for the current state of the art in
+scalable, signature-based learning for sequential and structured data.</p></br><a href="http://arxiv.org/pdf/2506.19280v1" target="_blank"><h2>Emotion Detection on User Front-Facing App Interfaces for Enhanced
+  Schedule Optimization: A Machine Learning Approach</h2></a><strong><u>Authors:</u></strong>  Feiting Yang, Antoine Moevus, Steve Lévesque</br><strong><u>Categories:</u></strong> cs.AI, cs.HC, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Human-Computer Interaction (HCI) has evolved significantly to incorporate
+emotion recognition capabilities, creating unprecedented opportunities for
+adaptive and personalized user experiences. This paper explores the integration
+of emotion detection into calendar applications, enabling user interfaces to
+dynamically respond to users' emotional states and stress levels, thereby
+enhancing both productivity and engagement. We present and evaluate two
+complementary approaches to emotion detection: a biometric-based method
+utilizing heart rate (HR) data extracted from electrocardiogram (ECG) signals
+processed through Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU)
+neural networks to predict the emotional dimensions of Valence, Arousal, and
+Dominance; and a behavioral method analyzing computer activity through multiple
+machine learning models to classify emotions based on fine-grained user
+interactions such as mouse movements, clicks, and keystroke patterns. Our
+comparative analysis, from real-world datasets, reveals that while both
+approaches demonstrate effectiveness, the computer activity-based method
+delivers superior consistency and accuracy, particularly for mouse-related
+interactions, which achieved approximately 90\% accuracy. Furthermore, GRU
+networks outperformed LSTM models in the biometric approach, with Valence
+prediction reaching 84.38\% accuracy.</p></br><a href="http://arxiv.org/pdf/2506.18414v1" target="_blank"><h2>Latent Space Analysis for Melanoma Prevention</h2></a><strong><u>Authors:</u></strong>  Ciro Listone, Aniello Murano</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 11 pages, 4 figures, under review</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Melanoma represents a critical health risk due to its aggressive progression
+and high mortality, underscoring the need for early, interpretable diagnostic
+tools. While deep learning has advanced in skin lesion classification, most
+existing models provide only binary outputs, offering limited clinical insight.
+This work introduces a novel approach that extends beyond classification,
+enabling interpretable risk modelling through a Conditional Variational
+Autoencoder. The proposed method learns a structured latent space that captures
+semantic relationships among lesions, allowing for a nuanced, continuous
+assessment of morphological differences. An SVM is also trained on this
+representation effectively differentiating between benign nevi and melanomas,
+demonstrating strong and consistent performance. More importantly, the learned
+latent space supports visual and geometric interpretation of malignancy, with
+the spatial proximity of a lesion to known melanomas serving as a meaningful
+indicator of risk. This approach bridges predictive performance with clinical
+applicability, fostering early detection, highlighting ambiguous cases, and
+enhancing trust in AI-assisted diagnosis through transparent and interpretable
+decision-making.</p></br></body>

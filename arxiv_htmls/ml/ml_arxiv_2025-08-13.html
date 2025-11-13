@@ -1,0 +1,110 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 11 Aug 2025 to 13 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.09085v1" target="_blank"><h2>Dynamic Uncertainty-aware Multimodal Fusion for Outdoor Health
+  Monitoring</h2></a><strong><u>Authors:</u></strong>  Zihan Fang, Zheng Lin, Senkang Hu, Yihang Tao, Yiqin Deng, Xianhao Chen, Yuguang Fang</br><strong><u>Categories:</u></strong> cs.NI, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 14 pages, 10 figures</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Outdoor health monitoring is essential to detect early abnormal health status
+for safeguarding human health and safety. Conventional outdoor monitoring
+relies on static multimodal deep learning frameworks, which requires extensive
+data training from scratch and fails to capture subtle health status changes.
+Multimodal large language models (MLLMs) emerge as a promising alternative,
+utilizing only small datasets to fine-tune pre-trained information-rich models
+for enabling powerful health status monitoring. Unfortunately, MLLM-based
+outdoor health monitoring also faces significant challenges: I) sensor data
+contains input noise stemming from sensor data acquisition and fluctuation
+noise caused by sudden changes in physiological signals due to dynamic outdoor
+environments, thus degrading the training performance; ii) current transformer
+based MLLMs struggle to achieve robust multimodal fusion, as they lack a design
+for fusing the noisy modality; iii) modalities with varying noise levels hinder
+accurate recovery of missing data from fluctuating distributions. To combat
+these challenges, we propose an uncertainty-aware multimodal fusion framework,
+named DUAL-Health, for outdoor health monitoring in dynamic and noisy
+environments. First, to assess the impact of noise, we accurately quantify
+modality uncertainty caused by input and fluctuation noise with current and
+temporal features. Second, to empower efficient muitimodal fusion with
+low-quality modalities,we customize the fusion weight for each modality based
+on quantified and calibrated uncertainty. Third, to enhance data recovery from
+fluctuating noisy modalities, we align modality distributions within a common
+semantic space. Extensive experiments demonstrate that our DUAL-Health
+outperforms state-of-the-art baselines in detection accuracy and robustness.</p></br><a href="http://arxiv.org/pdf/2508.08679v1" target="_blank"><h2>MMIF-AMIN: Adaptive Loss-Driven Multi-Scale Invertible Dense Network for
+  Multimodal Medical Image Fusion</h2></a><strong><u>Authors:</u></strong>  Tao Luo, Weihua Xu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, 6 figures,conference</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), multimodal (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal medical image fusion (MMIF) aims to integrate images from
+different modalities to produce a comprehensive image that enhances medical
+diagnosis by accurately depicting organ structures, tissue textures, and
+metabolic information. Capturing both the unique and complementary information
+across multiple modalities simultaneously is a key research challenge in MMIF.
+To address this challenge, this paper proposes a novel image fusion method,
+MMIF-AMIN, which features a new architecture that can effectively extract these
+unique and complementary features. Specifically, an Invertible Dense Network
+(IDN) is employed for lossless feature extraction from individual modalities.
+To extract complementary information between modalities, a Multi-scale
+Complementary Feature Extraction Module (MCFEM) is designed, which incorporates
+a hybrid attention mechanism, convolutional layers of varying sizes, and
+Transformers. An adaptive loss function is introduced to guide model learning,
+addressing the limitations of traditional manually-designed loss functions and
+enhancing the depth of data mining. Extensive experiments demonstrate that
+MMIF-AMIN outperforms nine state-of-the-art MMIF methods, delivering superior
+results in both quantitative and qualitative analyses. Ablation experiments
+confirm the effectiveness of each component of the proposed method.
+Additionally, extending MMIF-AMIN to other image fusion tasks also achieves
+promising performance.</p></br><a href="http://arxiv.org/pdf/2508.09054v1" target="_blank"><h2>CVCM Track Circuits Pre-emptive Failure Diagnostics for Predictive
+  Maintenance Using Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Debdeep Mukherjee, Eduardo Di Santi, Clément Lefebvre, Nenad Mijatovic, Victor Martin, Thierry Josse, Jonathan Brown, Kenza Saiah</br><strong><u>Categories:</u></strong> cs.AI, cs.LG, 68T07, 68T05, I.2.6; I.5.1; I.5.4</br><strong><u>Comments:</u></strong> Peer-reviewed conference paper. Presented at ICROMA 2025 (International Conference on Railway Operations Modelling and Analysis), Dresden, Germany.this https URL8 pages, 6 figures, 1 table</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Track circuits are critical for railway operations, acting as the main
+signalling sub-system to locate trains. Continuous Variable Current Modulation
+(CVCM) is one such technology. Like any field-deployed, safety-critical asset,
+it can fail, triggering cascading disruptions. Many failures originate as
+subtle anomalies that evolve over time, often not visually apparent in
+monitored signals. Conventional approaches, which rely on clear signal changes,
+struggle to detect them early. Early identification of failure types is
+essential to improve maintenance planning, minimising downtime and revenue
+loss. Leveraging deep neural networks, we propose a predictive maintenance
+framework that classifies anomalies well before they escalate into failures.
+Validated on 10 CVCM failure cases across different installations, the method
+is ISO-17359 compliant and outperforms conventional techniques, achieving
+99.31% overall accuracy with detection within 1% of anomaly onset. Through
+conformal prediction, we provide uncertainty estimates, reaching 99% confidence
+with consistent coverage across classes. Given CVCMs global deployment, the
+approach is scalable and adaptable to other track circuits and railway systems,
+enhancing operational reliability.</p></br><a href="http://arxiv.org/pdf/2508.08966v1" target="_blank"><h2>Integrating attention into explanation frameworks for language and
+  vision transformers</h2></a><strong><u>Authors:</u></strong>  Marte Eggen, Jacob Lysnæs-Larsen, Inga Strümke</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The attention mechanism lies at the core of the transformer architecture,
+providing an interpretable model-internal signal that has motivated a growing
+interest in attention-based model explanations. Although attention weights do
+not directly determine model outputs, they reflect patterns of token influence
+that can inform and complement established explainability techniques. This work
+studies the potential of utilising the information encoded in attention weights
+to provide meaningful model explanations by integrating them into explainable
+AI (XAI) frameworks that target fundamentally different aspects of model
+behaviour. To this end, we develop two novel explanation methods applicable to
+both natural language processing and computer vision tasks. The first
+integrates attention weights into the Shapley value decomposition by redefining
+the characteristic function in terms of pairwise token interactions via
+attention weights, thus adapting this widely used game-theoretic solution
+concept to provide attention-driven attributions for local explanations. The
+second incorporates attention weights into token-level directional derivatives
+defined through concept activation vectors to measure concept sensitivity for
+global explanations. Our empirical evaluations on standard benchmarks and in a
+comparison study with widely used explanation methods show that attention
+weights can be meaningfully incorporated into the studied XAI frameworks,
+highlighting their value in enriching transformer explainability.</p></br><a href="http://arxiv.org/pdf/2508.09060v1" target="_blank"><h2>Developing a Transferable Federated Network Intrusion Detection System</h2></a><strong><u>Authors:</u></strong>  Abu Shafin Mohammad Mahdee Jameel, Shreya Ghosh, Aly El Gamal</br><strong><u>Categories:</u></strong> cs.CR, cs.LG, cs.NI, eess.SP</br><strong><u>Comments:</u></strong> Currently under review</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Intrusion Detection Systems (IDS) are a vital part of a network-connected
+device. In this paper, we develop a deep learning based intrusion detection
+system that is deployed in a distributed setup across devices connected to a
+network. Our aim is to better equip deep learning models against unknown
+attacks using knowledge from known attacks. To this end, we develop algorithms
+to maximize the number of transferability relationships. We propose a
+Convolutional Neural Network (CNN) model, along with two algorithms that
+maximize the number of relationships observed. One is a two step data
+pre-processing stage, and the other is a Block-Based Smart Aggregation (BBSA)
+algorithm. The proposed system succeeds in achieving superior transferability
+performance while maintaining impressive local detection rates. We also show
+that our method is generalizable, exhibiting transferability potential across
+datasets and even with different backbones. The code for this work can be found
+at https://github.com/ghosh64/tabfidsv2.</p></br></body>

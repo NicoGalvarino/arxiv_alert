@@ -1,0 +1,158 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 28 Jul 2025 to 30 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.21682v1" target="_blank"><h2>Probabilistic cosmological inference on HI tomographic data</h2></a><strong><u>Authors:</u></strong>  Sambatra Andrianomena</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> 13 pages, 9 figures, 2 tables, Accepted for publication in Astrophysics and Space Science</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> We explore the possibility of retrieving cosmological information from 21-cm
+tomographic data at intermediate redshift. The first step in our approach
+consists of training an encoder, composed of several three dimensional
+convolutional layers, to cast the neutral hydrogen 3D data into a lower
+dimension latent space. Once pre-trained, the featurizer is able to generate 3D
+grid representations which, in turn, will be mapped onto cosmology
+($\Omega_{\rm m}$, $\sigma_{8}$) via likelihood-free inference. For the latter,
+which is framed as a density estimation problem, we consider a Bayesian
+approximation method which exploits the capacity of Masked Autoregressive Flow
+to estimate the posterior. It is found that the representations learned by the
+deep encoder are separable in latent space. Results show that the neural
+density estimator, trained on the latent codes, is able to constrain cosmology
+with a precision of $R^2 \ge 0.91$ on all parameters and that most of the
+ground truth of the instances in the test set fall within $1\sigma$
+uncertainty. It is established that the posterior uncertainty from the density
+estimator is reasonably calibrated. We also investigate the robustness of the
+feature extractor by using it to compress out-of-distribution dataset, that is
+either from a different simulation or from the same simulation but at different
+redshift. We find that, while trained on the latent codes corresponding to
+different types of out-of-distribution dataset, the probabilistic model is
+still reasonably capable of constraining cosmology, with $R^2 \ge 0.80$ in
+general. This highlights both the predictive power of the density estimator
+considered in this work and the meaningfulness of the latent codes retrieved by
+the encoder. We believe that the approach prescribed in this proof of concept
+will be of great use when analyzing 21-cm data from various surveys in the near
+future.</p></br><a href="http://arxiv.org/pdf/2507.21640v1" target="_blank"><h2>GUARD-CAN: Graph-Understanding and Recurrent Architecture for CAN
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Hyeong Seon Kim, Huy Kang Kim</br><strong><u>Categories:</u></strong> cs.CR, cs.AI</br><strong><u>Comments:</u></strong> Comments:12 pages, 3 figures, 3 tables; accepted to the 26th World Conference on Information Security Applications (WISA 2025)</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Modern in-vehicle networks face various cyber threats due to the lack of
+encryption and authentication in the Controller Area Network (CAN). To address
+this security issue, this paper presents GUARD-CAN, an anomaly detection
+framework that combines graph-based representation learning with time-series
+modeling. GUARD-CAN splits CAN messages into fixed-length windows and converts
+each window into a graph that preserves message order. To detect anomalies in
+the timeaware and structure-aware context at the same window, GUARD-CAN takes
+advantage of the overcomplete Autoencoder (AE) and Graph Convolutional Network
+(GCN) to generate graph embedding vectors. The model groups these vectors into
+sequences and feeds them into the Gated Recurrent Unit (GRU) to detect temporal
+anomaly patterns across the graphs. GUARD-CAN performs anomaly detection at
+both the sequence level and the window level, and this allows multi-perspective
+performance evaluation. The model also verifies the importance of window size
+selection through an analysis based on Shannon entropy. As a result, GUARD-CAN
+shows that the proposed model detects four types of CAN attacks (flooding,
+fuzzing, replay and spoofing attacks) effectively without relying on complex
+feature engineering.</p></br><a href="http://arxiv.org/pdf/2507.21199v1" target="_blank"><h2>Advancing Compositional LLM Reasoning with Structured Task Relations in
+  Interactive Multimodal Communications</h2></a><strong><u>Authors:</u></strong>  Xinye Cao, Hongcan Guo, Guoshun Nan, Jiaoyang Cui, Haoting Qian, Yihan Lin, Yilin Peng, Diyang Zhang, Yanzhao Hou, Huici Wu, Xiaofeng Tao, Tony Q. S. Quek</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.DC, cs.HC</br><strong><u>Comments:</u></strong> Accepted by IEEE JSAC. This work has been submitted to the IEEE for possible publication</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Interactive multimodal applications (IMAs), such as route planning in the
+Internet of Vehicles, enrich users' personalized experiences by integrating
+various forms of data over wireless networks. Recent advances in large language
+models (LLMs) utilize mixture-of-experts (MoE) mechanisms to empower multiple
+IMAs, with each LLM trained individually for a specific task that presents
+different business workflows. In contrast to existing approaches that rely on
+multiple LLMs for IMAs, this paper presents a novel paradigm that accomplishes
+various IMAs using a single compositional LLM over wireless networks. The two
+primary challenges include 1) guiding a single LLM to adapt to diverse IMA
+objectives and 2) ensuring the flexibility and efficiency of the LLM in
+resource-constrained mobile environments. To tackle the first challenge, we
+propose ContextLoRA, a novel method that guides an LLM to learn the rich
+structured context among IMAs by constructing a task dependency graph. We
+partition the learnable parameter matrix of neural layers for each IMA to
+facilitate LLM composition. Then, we develop a step-by-step fine-tuning
+procedure guided by task relations, including training, freezing, and masking
+phases. This allows the LLM to learn to reason among tasks for better
+adaptation, capturing the latent dependencies between tasks. For the second
+challenge, we introduce ContextGear, a scheduling strategy to optimize the
+training procedure of ContextLoRA, aiming to minimize computational and
+communication costs through a strategic grouping mechanism. Experiments on
+three benchmarks show the superiority of the proposed ContextLoRA and
+ContextGear. Furthermore, we prototype our proposed paradigm on a real-world
+wireless testbed, demonstrating its practical applicability for various IMAs.
+We will release our code to the community.</p></br><a href="http://arxiv.org/pdf/2507.21531v1" target="_blank"><h2>Hierarchical Stochastic Differential Equation Models for Latent Manifold
+  Learning in Neural Time Series</h2></a><strong><u>Authors:</u></strong>  Pedram Rajaei, Maryam Ostadsharif Memar, Navid Ziaei, Behzad Nazari, Ali Yousefi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The manifold hypothesis suggests that high-dimensional neural time series lie
+on a low-dimensional manifold shaped by simpler underlying dynamics. To uncover
+this structure, latent dynamical variable models such as state-space models,
+recurrent neural networks, neural ordinary differential equations, and Gaussian
+Process Latent Variable Models are widely used. We propose a novel hierarchical
+stochastic differential equation (SDE) model that balances computational
+efficiency and interpretability, addressing key limitations of existing
+methods. Our model assumes the trajectory of a manifold can be reconstructed
+from a sparse set of samples from the manifold trajectory. The latent space is
+modeled using Brownian bridge SDEs, with points - specified in both time and
+value - sampled from a multivariate marked point process. These Brownian
+bridges define the drift of a second set of SDEs, which are then mapped to the
+observed data. This yields a continuous, differentiable latent process capable
+of modeling arbitrarily complex time series as the number of manifold points
+increases. We derive training and inference procedures and show that the
+computational cost of inference scales linearly with the length of the
+observation data. We then validate our model on both synthetic data and neural
+recordings to demonstrate that it accurately recovers the underlying manifold
+structure and scales effectively with data dimensionality.</p></br><a href="http://arxiv.org/pdf/2507.21246v1" target="_blank"><h2>On Explaining Visual Captioning with Hybrid Markov Logic Networks</h2></a><strong><u>Authors:</u></strong>  Monika Shah, Somdeb Sarkhel, Deepak Venugopal</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), neural network (abstract), multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Deep Neural Networks (DNNs) have made tremendous progress in multimodal tasks
+such as image captioning. However, explaining/interpreting how these models
+integrate visual information, language information and knowledge representation
+to generate meaningful captions remains a challenging problem. Standard metrics
+to measure performance typically rely on comparing generated captions with
+human-written ones that may not provide a user with a deep insights into this
+integration. In this work, we develop a novel explanation framework that is
+easily interpretable based on Hybrid Markov Logic Networks (HMLNs) - a language
+that can combine symbolic rules with real-valued functions - where we
+hypothesize how relevant examples from the training data could have influenced
+the generation of the observed caption. To do this, we learn a HMLN
+distribution over the training instances and infer the shift in distributions
+over these instances when we condition on the generated sample which allows us
+to quantify which examples may have been a source of richer information to
+generate the observed caption. Our experiments on captions generated for
+several state-of-the-art captioning models using Amazon Mechanical Turk
+illustrate the interpretability of our explanations, and allow us to compare
+these models along the dimension of explainability.</p></br><a href="http://arxiv.org/pdf/2507.21876v1" target="_blank"><h2>Estimating cluster masses: a comparative study between machine learning
+  and maximum likelihood</h2></a><strong><u>Authors:</u></strong>  Raeed Mundow, Adi Nusser</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> 10 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We compare an autoencoder convolutional neural network (AE-CNN) with a
+conventional maximum-likelihood estimator (MLE) for inferring cluster virial
+masses, $M_v$, directly from the galaxy distribution around clusters, without
+identifying members or interlopers. The AE-CNN is trained on mock galaxy
+catalogues, whereas the MLE assumes that clusters of similar mass share the
+same phase-space galaxy profile. Conceptually, the MLE returns an unbiased
+estimate of $\log M_v$ at fixed true mass, whereas the AE-CNN approximates the
+posterior mean, so the true $\log M_v$ is unbiased at fixed estimate. Using
+MDPL2 mock clusters with redshift space number density as input, the AE-CNN
+attains an rms scatter of $0.10\,\textrm{dex}$ between predicted and true $\log
+M_v$, compared with $0.16\,\textrm{dex}$ for the MLE. With inputs based on mean
+peculiar velocities, binned in redshift space or observed distance, the AE-CNN
+achieves scatters of $0.12\,\textrm{dex}$ and $0.16\,\textrm{dex}$,
+respectively, despite strong inhomogeneous Malmquist bias.</p></br><a href="http://arxiv.org/pdf/2507.21799v1" target="_blank"><h2>Unlocking Interpretability for RF Sensing: A Complex-Valued White-Box
+  Transformer</h2></a><strong><u>Authors:</u></strong>  Xie Zhang, Yina Wang, Chenshu Wu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The empirical success of deep learning has spurred its application to the
+radio-frequency (RF) domain, leading to significant advances in Deep Wireless
+Sensing (DWS). However, most existing DWS models function as black boxes with
+limited interpretability, which hampers their generalizability and raises
+concerns in security-sensitive physical applications. In this work, inspired by
+the remarkable advances of white-box transformers, we present RF-CRATE, the
+first mathematically interpretable deep network architecture for RF sensing,
+grounded in the principles of complex sparse rate reduction. To accommodate the
+unique RF signals, we conduct non-trivial theoretical derivations that extend
+the original real-valued white-box transformer to the complex domain. By
+leveraging the CR-Calculus framework, we successfully construct a fully
+complex-valued white-box transformer with theoretically derived self-attention
+and residual multi-layer perceptron modules. Furthermore, to improve the
+model's ability to extract discriminative features from limited wireless data,
+we introduce Subspace Regularization, a novel regularization strategy that
+enhances feature diversity, resulting in an average performance improvement of
+19.98% across multiple sensing tasks. We extensively evaluate RF-CRATE against
+seven baselines with multiple public and self-collected datasets involving
+different RF signals. The results show that RF-CRATE achieves performance on
+par with thoroughly engineered black-box models, while offering full
+mathematical interpretability. More importantly, by extending CRATE to the
+complex domain, RF-CRATE yields substantial improvements, achieving an average
+classification gain of 5.08% and reducing regression error by 10.34% across
+diverse sensing tasks compared to CRATE. RF-CRATE is fully open-sourced at:
+https://github.com/rfcrate/RF_CRATE.</p></br></body>

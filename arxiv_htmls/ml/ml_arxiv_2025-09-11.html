@@ -1,0 +1,162 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 09 Sep 2025 to 11 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.08338v1" target="_blank"><h2>Retrieval-Augmented VLMs for Multimodal Melanoma Diagnosis</h2></a><strong><u>Authors:</u></strong>  Jihyun Moon, Charmgil Hong</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Medical Image Computing and Computer-Assisted Intervention (MICCAI) ISIC Skin Image Analysis Workshop (MICCAI ISIC) 2025; 10 pages</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate and early diagnosis of malignant melanoma is critical for improving
+patient outcomes. While convolutional neural networks (CNNs) have shown promise
+in dermoscopic image analysis, they often neglect clinical metadata and require
+extensive preprocessing. Vision-language models (VLMs) offer a multimodal
+alternative but struggle to capture clinical specificity when trained on
+general-domain data. To address this, we propose a retrieval-augmented VLM
+framework that incorporates semantically similar patient cases into the
+diagnostic prompt. Our method enables informed predictions without fine-tuning
+and significantly improves classification accuracy and error correction over
+conventional baselines. These results demonstrate that retrieval-augmented
+prompting provides a robust strategy for clinical decision support.</p></br><a href="http://arxiv.org/pdf/2509.08515v1" target="_blank"><h2>Variational Rank Reduction Autoencoders for Generative</h2></a><strong><u>Authors:</u></strong>  Alicia Tierz, Jad Mounayer, Beatriz Moya, Francisco Chinesta</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Generative thermal design for complex geometries is fundamental in many areas
+of engineering, yet it faces two main challenges: the high computational cost
+of high-fidelity simulations and the limitations of conventional generative
+models. Approaches such as autoencoders (AEs) and variational autoencoders
+(VAEs) often produce unstructured latent spaces with discontinuities, which
+restricts their capacity to explore designs and generate physically consistent
+solutions.
+  To address these limitations, we propose a hybrid framework that combines
+Variational Rank-Reduction Autoencoders (VRRAEs) with Deep Operator Networks
+(DeepONets). The VRRAE introduces a truncated SVD within the latent space,
+leading to continuous, interpretable, and well-structured representations that
+mitigate posterior collapse and improve geometric reconstruction. The DeepONet
+then exploits this compact latent encoding in its branch network, together with
+spatial coordinates in the trunk network, to predict temperature gradients
+efficiently and accurately.
+  This hybrid approach not only enhances the quality of generated geometries
+and the accuracy of gradient prediction, but also provides a substantial
+advantage in inference efficiency compared to traditional numerical solvers.
+Overall, the study underscores the importance of structured latent
+representations for operator learning and highlights the potential of combining
+generative models and operator networks in thermal design and broader
+engineering applications.</p></br><a href="http://arxiv.org/pdf/2509.08717v1" target="_blank"><h2>Explainability of CNN Based Classification Models for Acoustic Signal</h2></a><strong><u>Authors:</u></strong>  Zubair Faruqui, Mackenzie S. McIntire, Rahul Dubey, Jay McEntee</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> Accepted in IEEE ICTAI 2025</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (title), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Explainable Artificial Intelligence (XAI) has emerged as a critical tool for
+interpreting the predictions of complex deep learning models. While XAI has
+been increasingly applied in various domains within acoustics, its use in
+bioacoustics, which involves analyzing audio signals from living organisms,
+remains relatively underexplored. In this paper, we investigate the
+vocalizations of a bird species with strong geographic variation throughout its
+range in North America. Audio recordings were converted into spectrogram images
+and used to train a deep Convolutional Neural Network (CNN) for classification,
+achieving an accuracy of 94.8\%. To interpret the model's predictions, we
+applied both model-agnostic (LIME, SHAP) and model-specific (DeepLIFT,
+Grad-CAM) XAI techniques. These techniques produced different but complementary
+explanations, and when their explanations were considered together, they
+provided more complete and interpretable insights into the model's
+decision-making. This work highlights the importance of using a combination of
+XAI techniques to improve trust and interoperability, not only in broader
+acoustics signal analysis but also argues for broader applicability in
+different domain specific tasks.</p></br><a href="http://arxiv.org/pdf/2509.08617v1" target="_blank"><h2>Towards Interpretable Deep Neural Networks for Tabular Data</h2></a><strong><u>Authors:</u></strong>  Khawla Elhadri, Jörg Schlötterer, Christin Seifert</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (title)</br><p><strong><u>Abstract:</u></strong> Tabular data is the foundation of many applications in fields such as finance
+and healthcare. Although DNNs tailored for tabular data achieve competitive
+predictive performance, they are blackboxes with little interpretability. We
+introduce XNNTab, a neural architecture that uses a sparse autoencoder (SAE) to
+learn a dictionary of monosemantic features within the latent space used for
+prediction. Using an automated method, we assign human-interpretable semantics
+to these features. This allows us to represent predictions as linear
+combinations of semantically meaningful components. Empirical evaluations
+demonstrate that XNNTab attains performance on par with or exceeding that of
+state-of-the-art, black-box neural models and classical machine learning
+approaches while being fully interpretable.</p></br><a href="http://arxiv.org/pdf/2509.07373v1" target="_blank"><h2>SBS: Enhancing Parameter-Efficiency of Neural Representations for Neural
+  Networks via Spectral Bias Suppression</h2></a><strong><u>Authors:</u></strong>  Qihu Xie, Yuan Li, Yi Kang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted by ICONIP 2025</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Implicit neural representations have recently been extended to represent
+convolutional neural network weights via neural representation for neural
+networks, offering promising parameter compression benefits. However, standard
+multi-layer perceptrons used in neural representation for neural networks
+exhibit a pronounced spectral bias, hampering their ability to reconstruct
+high-frequency details effectively. In this paper, we propose SBS, a
+parameter-efficient enhancement to neural representation for neural networks
+that suppresses spectral bias using two techniques: (1) a unidirectional
+ordering-based smoothing that improves kernel smoothness in the output space,
+and (2) unidirectional ordering-based smoothing aware random fourier features
+that adaptively modulate the frequency bandwidth of input encodings based on
+layer-wise parameter count. Extensive evaluations on various ResNet models with
+datasets CIFAR-10, CIFAR-100, and ImageNet, demonstrate that SBS achieves
+significantly better reconstruction accuracy with less parameters compared to
+SOTA.</p></br><a href="http://arxiv.org/pdf/2509.08350v1" target="_blank"><h2>Chordless cycle filtrations for dimensionality detection in complex
+  networks via topological data analysis</h2></a><strong><u>Authors:</u></strong>  Aina Ferrà Marcús, Robert Jankowski, Meritxell Vila Miñana, Carles Casacuberta, M. Ángeles Serrano</br><strong><u>Categories:</u></strong> physics.soc-ph, cs.LG, math.AT, 55N31</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Many complex networks, ranging from social to biological systems, exhibit
+structural patterns consistent with an underlying hyperbolic geometry.
+Revealing the dimensionality of this latent space can disentangle the
+structural complexity of communities, impact efficient network navigation, and
+fundamentally shape connectivity and system behavior. We introduce a novel
+topological data analysis weighting scheme for graphs, based on chordless
+cycles, aimed at estimating the dimensionality of networks in a data-driven
+way. We further show that the resulting descriptors can effectively estimate
+network dimensionality using a neural network architecture trained in a
+synthetic graph database constructed for this purpose, which does not need
+retraining to transfer effectively to real-world networks. Thus, by combining
+cycle-aware filtrations, algebraic topology, and machine learning, our approach
+provides a robust and effective method for uncovering the hidden geometry of
+complex networks and guiding accurate modeling and low-dimensional embedding.</p></br><a href="http://arxiv.org/pdf/2509.07569v1" target="_blank"><h2>uGMM-NN: Univariate Gaussian Mixture Model Neural Network</h2></a><strong><u>Authors:</u></strong>  Zakeria Sharif Ali</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 10 pages, 2 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), multimodal (abstract), multimodality (abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces the Univariate Gaussian Mixture Model Neural Network
+(uGMM-NN), a novel neural architecture that embeds probabilistic reasoning
+directly into the computational units of deep networks. Unlike traditional
+neurons, which apply weighted sums followed by fixed nonlinearities, each
+uGMM-NN node parameterizes its activations as a univariate Gaussian mixture,
+with learnable means, variances, and mixing coefficients. This design enables
+richer representations by capturing multimodality and uncertainty at the level
+of individual neurons, while retaining the scalability of standard feedforward
+networks. We demonstrate that uGMM-NN can achieve competitive discriminative
+performance compared to conventional multilayer perceptrons, while additionally
+offering a probabilistic interpretation of activations. The proposed framework
+provides a foundation for integrating uncertainty-aware components into modern
+neural architectures, opening new directions for both discriminative and
+generative modeling.</p></br><a href="http://arxiv.org/pdf/2509.08457v1" target="_blank"><h2>Gaussian Process Regression -- Neural Network Hybrid with Optimized
+  Redundant Coordinates</h2></a><strong><u>Authors:</u></strong>  Sergei Manzhos, Manabu Ihara</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recently, a Gaussian Process Regression - neural network (GPRNN) hybrid
+machine learning method was proposed, which is based on additive-kernel GPR in
+redundant coordinates constructed by rules [J. Phys. Chem. A 127 (2023) 7823].
+The method combined the expressive power of an NN with the robustness of linear
+regression, in particular, with respect to overfitting when the number of
+neurons is increased beyond optimal. We introduce opt-GPRNN, in which the
+redundant coordinates of GPRNN are optimized with a Monte Carlo algorithm and
+show that when combined with optimization of redundant coordinates, GPRNN
+attains the lowest test set error with much fewer terms / neurons and retains
+the advantage of avoiding overfitting when the number of neurons is increased
+beyond optimal value. The method, opt-GPRNN possesses an expressive power
+closer to that of a multilayer NN and could obviate the need for deep NNs in
+some applications. With optimized redundant coordinates, a dimensionality
+reduction regime is also possible. Examples of application to machine learning
+an interatomic potential and materials informatics are given.</p></br><a href="http://arxiv.org/pdf/2509.07756v1" target="_blank"><h2>Spectral and Rhythm Feature Performance Evaluation for Category and
+  Class Level Audio Classification with Deep Convolutional Neural Networks</h2></a><strong><u>Authors:</u></strong>  Friedrich Wolf-Monheim</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.CV, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Next to decision tree and k-nearest neighbours algorithms deep convolutional
+neural networks (CNNs) are widely used to classify audio data in many domains
+like music, speech or environmental sounds. To train a specific CNN various
+spectral and rhythm features like mel-scaled spectrograms, mel-frequency
+cepstral coefficients (MFCC), cyclic tempograms, short-time Fourier transform
+(STFT) chromagrams, constant-Q transform (CQT) chromagrams and chroma energy
+normalized statistics (CENS) chromagrams can be used as digital image input
+data for the neural network. The performance of these spectral and rhythm
+features for audio category level as well as audio class level classification
+is investigated in detail with a deep CNN and the ESC-50 dataset with 2,000
+labeled environmental audio recordings using an end-to-end deep learning
+pipeline. The evaluated metrics accuracy, precision, recall and F1 score for
+multiclass classification clearly show that the mel-scaled spectrograms and the
+mel-frequency cepstral coefficients (MFCC) perform significantly better then
+the other spectral and rhythm features investigated in this research for audio
+classification tasks using deep CNNs.</p></br><a href="http://arxiv.org/pdf/2509.08194v1" target="_blank"><h2>Prescribe-then-Select: Adaptive Policy Selection for Contextual
+  Stochastic Optimization</h2></a><strong><u>Authors:</u></strong>  Caio de Prospero Iglesias, Kimberly Villalobos Carballo, Dimitris Bertsimas</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> We address the problem of policy selection in contextual stochastic
+optimization (CSO), where covariates are available as contextual information
+and decisions must satisfy hard feasibility constraints. In many CSO settings,
+multiple candidate policies--arising from different modeling paradigms--exhibit
+heterogeneous performance across the covariate space, with no single policy
+uniformly dominating. We propose Prescribe-then-Select (PS), a modular
+framework that first constructs a library of feasible candidate policies and
+then learns a meta-policy to select the best policy for the observed
+covariates. We implement the meta-policy using ensembles of Optimal Policy
+Trees trained via cross-validation on the training set, making policy choice
+entirely data-driven. Across two benchmark CSO problems--single-stage
+newsvendor and two-stage shipment planning--PS consistently outperforms the
+best single policy in heterogeneous regimes of the covariate space and
+converges to the dominant policy when such heterogeneity is absent. All the
+code to reproduce the results can be found at
+https://anonymous.4open.science/r/Prescribe-then-Select-TMLR.</p></br></body>

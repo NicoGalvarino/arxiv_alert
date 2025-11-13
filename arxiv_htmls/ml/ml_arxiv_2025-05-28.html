@@ -1,0 +1,325 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 26 May 2025 to 28 May 2025</em></font><a href="http://arxiv.org/pdf/2505.20765v1" target="_blank"><h2>Robust and Explainable Detector of Time Series Anomaly via Augmenting
+  Multiclass Pseudo-Anomalies</h2></a><strong><u>Authors:</u></strong>  Kohei Obata, Yasuko Matsubara, Yasushi Sakurai</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted by KDD 2025</br><p><strong><u>Abstract:</u></strong> Unsupervised anomaly detection in time series has been a pivotal research
+area for decades. Current mainstream approaches focus on learning normality, on
+the assumption that all or most of the samples in the training set are normal.
+However, anomalies in the training set (i.e., anomaly contamination) can be
+misleading. Recent studies employ data augmentation to generate
+pseudo-anomalies and learn the boundary separating the training samples from
+the augmented samples. Although this approach mitigates anomaly contamination
+if augmented samples mimic unseen real anomalies, it suffers from several
+limitations. (1) Covering a wide range of time series anomalies is challenging.
+(2) It disregards augmented samples that resemble normal samples (i.e., false
+anomalies). (3) It places too much trust in the labels of training and
+augmented samples. In response, we propose RedLamp, which employs diverse data
+augmentations to generate multiclass pseudo-anomalies and learns the multiclass
+boundary. Such multiclass pseudo-anomalies cover a wide variety of time series
+anomalies. We conduct multiclass classification using soft labels, which
+prevents the model from being overconfident and ensures its robustness against
+contaminated/false anomalies. The learned latent space is inherently
+explainable as it is trained to separate pseudo-anomalies into multiclasses.
+Extensive experiments demonstrate the effectiveness of RedLamp in anomaly
+detection and its robustness against anomaly contamination.</p></br><a href="http://arxiv.org/pdf/2505.20697v1" target="_blank"><h2>Generating Hypotheses of Dynamic Causal Graphs in Neuroscience:
+  Leveraging Generative Factor Models of Observed Time Series</h2></a><strong><u>Authors:</u></strong>  Zachary C. Brown, David Carlson</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.AP, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The field of hypothesis generation promises to reduce costs in neuroscience
+by narrowing the range of interventional studies needed to study various
+phenomena. Existing machine learning methods can generate scientific hypotheses
+from complex datasets, but many approaches assume causal relationships are
+static over time, limiting their applicability to systems with dynamic,
+state-dependent behavior, such as the brain. While some techniques attempt
+dynamic causal discovery through factor models, they often restrict
+relationships to linear patterns or impose other simplifying assumptions. We
+propose a novel method that models dynamic graphs as a conditionally weighted
+superposition of static graphs, where each static graph can capture nonlinear
+relationships. This approach enables the detection of complex, time-varying
+interactions between variables beyond linear limitations. Our method improves
+f1-scores of predicted dynamic causal patterns by roughly 22-28% on average
+over baselines in some of our experiments, with some improvements reaching well
+over 60%. A case study on real brain data demonstrates our method's ability to
+uncover relationships linked to specific behavioral states, offering valuable
+insights into neural dynamics.</p></br><a href="http://arxiv.org/pdf/2505.21441v1" target="_blank"><h2>Autoencoding Random Forests</h2></a><strong><u>Authors:</u></strong>  Binh Duc Vu, Jan Kapar, Marvin Wright, David S. Watson</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 10 pages main text, 25 pages total. 5 figures main text, 9 figures total</br><p><strong><u>Abstract:</u></strong> We propose a principled method for autoencoding with random forests. Our
+strategy builds on foundational results from nonparametric statistics and
+spectral graph theory to learn a low-dimensional embedding of the model that
+optimally represents relationships in the data. We provide exact and
+approximate solutions to the decoding problem via constrained optimization,
+split relabeling, and nearest neighbors regression. These methods effectively
+invert the compression pipeline, establishing a map from the embedding space
+back to the input space using splits learned by the ensemble's constituent
+trees. The resulting decoders are universally consistent under common
+regularity assumptions. The procedure works with supervised or unsupervised
+models, providing a window into conditional or joint distributions. We
+demonstrate various applications of this autoencoder, including powerful new
+tools for visualization, compression, clustering, and denoising. Experiments
+illustrate the ease and utility of our method in a wide range of settings,
+including tabular, image, and genomic data.</p></br><a href="http://arxiv.org/pdf/2505.20536v1" target="_blank"><h2>Covariate-Adjusted Deep Causal Learning for Heterogeneous Panel Data
+  Models</h2></a><strong><u>Authors:</u></strong>  Guanhao Zhou, Yuefeng Han, Xiufan Yu</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, econ.EM, stat.ME</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This paper studies the task of estimating heterogeneous treatment effects in
+causal panel data models, in the presence of covariate effects. We propose a
+novel Covariate-Adjusted Deep Causal Learning (CoDEAL) for panel data models,
+that employs flexible model structures and powerful neural network
+architectures to cohesively deal with the underlying heterogeneity and
+nonlinearity of both panel units and covariate effects. The proposed CoDEAL
+integrates nonlinear covariate effect components (parameterized by a
+feed-forward neural network) with nonlinear factor structures (modeled by a
+multi-output autoencoder) to form a heterogeneous causal panel model. The
+nonlinear covariate component offers a flexible framework for capturing the
+complex influences of covariates on outcomes. The nonlinear factor analysis
+enables CoDEAL to effectively capture both cross-sectional and temporal
+dependencies inherent in the data panel. This latent structural information is
+subsequently integrated into a customized matrix completion algorithm, thereby
+facilitating more accurate imputation of missing counterfactual outcomes.
+Moreover, the use of a multi-output autoencoder explicitly accounts for
+heterogeneity across units and enhances the model interpretability of the
+latent factors. We establish theoretical guarantees on the convergence of the
+estimated counterfactuals, and demonstrate the compelling performance of the
+proposed method using extensive simulation studies and a real data application.</p></br><a href="http://arxiv.org/pdf/2505.20634v1" target="_blank"><h2>Explaining Concept Shift with Interpretable Feature Attribution</h2></a><strong><u>Authors:</u></strong>  Ruiqi Lyu, Alistair Turcan, Bryan Wilder</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Regardless the amount of data a machine learning (ML) model is trained on,
+there will inevitably be data that differs from their training set, lowering
+model performance. Concept shift occurs when the distribution of labels
+conditioned on the features changes, making even a well-tuned ML model to have
+learned a fundamentally incorrect representation. Identifying these shifted
+features provides unique insight into how one dataset differs from another,
+considering the difference may be across a scientifically relevant dimension,
+such as time, disease status, population, etc. In this paper, we propose
+SGShift, a model for detecting concept shift in tabular data and attributing
+reduced model performance to a sparse set of shifted features. SGShift models
+concept shift with a Generalized Additive Model (GAM) and performs subsequent
+feature selection to identify shifted features. We propose further extensions
+of SGShift by incorporating knockoffs to control false discoveries and an
+absorption term to account for models with poor fit to the data. We conduct
+extensive experiments in synthetic and real data across various ML models and
+find SGShift can identify shifted features with AUC $>0.9$ and recall $>90\%$,
+often 2 or 3 times as high as baseline methods.</p></br><a href="http://arxiv.org/pdf/2505.21012v1" target="_blank"><h2>Federated Instrumental Variable Analysis via Federated Generalized
+  Method of Moments</h2></a><strong><u>Authors:</u></strong>  Geetika, Somya Tyagi, Bapi Chatterjee</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.OC, stat.ML</br><strong><u>Comments:</u></strong> 28 pages, 3 figures, 1 table</br><p><strong><u>Abstract:</u></strong> Instrumental variables (IV) analysis is an important applied tool for areas
+such as healthcare and consumer economics. For IV analysis in high-dimensional
+settings, the Generalized Method of Moments (GMM) using deep neural networks
+offers an efficient approach. With non-i.i.d. data sourced from scattered
+decentralized clients, federated learning is a popular paradigm for training
+the models while promising data privacy. However, to our knowledge, no
+federated algorithm for either GMM or IV analysis exists to date. In this work,
+we introduce federated instrumental variables analysis (FedIV) via federated
+generalized method of moments (FedGMM). We formulate FedGMM as a federated
+zero-sum game defined by a federated non-convex non-concave minimax
+optimization problem, which is solved using federated gradient descent ascent
+(FedGDA) algorithm. One key challenge arises in theoretically characterizing
+the federated local optimality. To address this, we present properties and
+existence results of clients' local equilibria via FedGDA limit points.
+Thereby, we show that the federated solution consistently estimates the local
+moment conditions of every participating client. The proposed algorithm is
+backed by extensive experiments to demonstrate the efficacy of our approach.</p></br><a href="http://arxiv.org/pdf/2505.21119v1" target="_blank"><h2>Universal Value-Function Uncertainties</h2></a><strong><u>Authors:</u></strong>  Moritz A. Zanger, Max Weltevrede, Yaniv Oren, Pascal R. Van der Vaart, Caroline Horsch, Wendelin Böhmer, Matthijs T. J. Spaan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Estimating epistemic uncertainty in value functions is a crucial challenge
+for many aspects of reinforcement learning (RL), including efficient
+exploration, safe decision-making, and offline RL. While deep ensembles provide
+a robust method for quantifying value uncertainty, they come with significant
+computational overhead. Single-model methods, while computationally favorable,
+often rely on heuristics and typically require additional propagation
+mechanisms for myopic uncertainty estimates. In this work we introduce
+universal value-function uncertainties (UVU), which, similar in spirit to
+random network distillation (RND), quantify uncertainty as squared prediction
+errors between an online learner and a fixed, randomly initialized target
+network. Unlike RND, UVU errors reflect policy-conditional value uncertainty,
+incorporating the future uncertainties any given policy may encounter. This is
+due to the training procedure employed in UVU: the online network is trained
+using temporal difference learning with a synthetic reward derived from the
+fixed, randomly initialized target network. We provide an extensive theoretical
+analysis of our approach using neural tangent kernel (NTK) theory and show that
+in the limit of infinite network width, UVU errors are exactly equivalent to
+the variance of an ensemble of independent universal value functions.
+Empirically, we show that UVU achieves equal performance to large ensembles on
+challenging multi-task offline RL settings, while offering simplicity and
+substantial computational savings.</p></br><a href="http://arxiv.org/pdf/2505.20561v1" target="_blank"><h2>Beyond Markovian: Reflective Exploration via Bayes-Adaptive RL for LLM
+  Reasoning</h2></a><strong><u>Authors:</u></strong>  Shenao Zhang, Yaqing Wang, Yinxiao Liu, Tianqi Liu, Peter Grabowski, Eugene Ie, Zhaoran Wang, Yunxuan Li</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Large Language Models (LLMs) trained via Reinforcement Learning (RL) have
+exhibited strong reasoning capabilities and emergent reflective behaviors, such
+as backtracking and error correction. However, conventional Markovian RL
+confines exploration to the training phase to learn an optimal deterministic
+policy and depends on the history contexts only through the current state.
+Therefore, it remains unclear whether reflective reasoning will emerge during
+Markovian RL training, or why they are beneficial at test time. To remedy this,
+we recast reflective exploration within the Bayes-Adaptive RL framework, which
+explicitly optimizes the expected return under a posterior distribution over
+Markov decision processes. This Bayesian formulation inherently incentivizes
+both reward-maximizing exploitation and information-gathering exploration via
+belief updates. Our resulting algorithm, BARL, instructs the LLM to stitch and
+switch strategies based on the observed outcomes, offering principled guidance
+on when and how the model should reflectively explore. Empirical results on
+both synthetic and mathematical reasoning tasks demonstrate that BARL
+outperforms standard Markovian RL approaches at test time, achieving superior
+token efficiency with improved exploration effectiveness. Our code is available
+at https://github.com/shenao-zhang/BARL.</p></br><a href="http://arxiv.org/pdf/2505.21228v1" target="_blank"><h2>Is Hyperbolic Space All You Need for Medical Anomaly Detection?</h2></a><strong><u>Authors:</u></strong>  Alvaro Gonzalez-Jimenez, Simone Lionetti, Ludovic Amruthalingam, Philippe Gottfrois, Fabian Gröger, Marc Pouly, Alexander A. Navarini</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Provisionally Accepted at MICCAI 2025</br><p><strong><u>Abstract:</u></strong> Medical anomaly detection has emerged as a promising solution to challenges
+in data availability and labeling constraints. Traditional methods extract
+features from different layers of pre-trained networks in Euclidean space;
+however, Euclidean representations fail to effectively capture the hierarchical
+relationships within these features, leading to suboptimal anomaly detection
+performance. We propose a novel yet simple approach that projects feature
+representations into hyperbolic space, aggregates them based on confidence
+levels, and classifies samples as healthy or anomalous. Our experiments
+demonstrate that hyperbolic space consistently outperforms Euclidean-based
+frameworks, achieving higher AUROC scores at both image and pixel levels across
+multiple medical benchmark datasets. Additionally, we show that hyperbolic
+space exhibits resilience to parameter variations and excels in few-shot
+scenarios, where healthy images are scarce. These findings underscore the
+potential of hyperbolic space as a powerful alternative for medical anomaly
+detection. The project website can be found at
+https://hyperbolic-anomalies.github.io</p></br><a href="http://arxiv.org/pdf/2505.21391v1" target="_blank"><h2>Finite Sample Analysis of Linear Temporal Difference Learning with
+  Arbitrary Features</h2></a><strong><u>Authors:</u></strong>  Zixuan Xie, Xinyu Liu, Rohan Chandra, Shangtong Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Linear TD($\lambda$) is one of the most fundamental reinforcement learning
+algorithms for policy evaluation. Previously, convergence rates are typically
+established under the assumption of linearly independent features, which does
+not hold in many practical scenarios. This paper instead establishes the first
+$L^2$ convergence rates for linear TD($\lambda$) operating under arbitrary
+features, without making any algorithmic modification or additional
+assumptions. Our results apply to both the discounted and average-reward
+settings. To address the potential non-uniqueness of solutions resulting from
+arbitrary features, we develop a novel stochastic approximation result
+featuring convergence rates to the solution set instead of a single point.</p></br><a href="http://arxiv.org/pdf/2505.21468v1" target="_blank"><h2>Causal Posterior Estimation</h2></a><strong><u>Authors:</u></strong>  Simon Dirmeier, Antonietta Mira</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We present Causal Posterior Estimation (CPE), a novel method for Bayesian
+inference in simulator models, i.e., models where the evaluation of the
+likelihood function is intractable or too computationally expensive, but where
+one can simulate model outputs given parameter values. CPE utilizes a
+normalizing flow-based (NF) approximation to the posterior distribution which
+carefully incorporates the conditional dependence structure induced by the
+graphical representation of the model into the neural network. Thereby it is
+possible to improve the accuracy of the approximation. We introduce both
+discrete and continuous NF architectures for CPE and propose a constant-time
+sampling procedure for the continuous case which reduces the computational
+complexity of drawing samples to O(1) as for discrete NFs. We show, through an
+extensive experimental evaluation, that by incorporating the conditional
+dependencies induced by the graphical model directly into the neural network,
+rather than learning them from data, CPE is able to conduct highly accurate
+posterior inference either outperforming or matching the state of the art in
+the field.</p></br><a href="http://arxiv.org/pdf/2505.21046v1" target="_blank"><h2>A domain adaptation neural network for digital twin-supported fault
+  diagnosis</h2></a><strong><u>Authors:</u></strong>  Zhenling Chen, Haiwei Fu, Zhiguo Zeng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.RO, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> Preprint accepted by ICCAD 2025 at Barcelona</br><p><strong><u>Abstract:</u></strong> Digital twins offer a promising solution to the lack of sufficient labeled
+data in deep learning-based fault diagnosis by generating simulated data for
+model training. However, discrepancies between simulation and real-world
+systems can lead to a significant drop in performance when models are applied
+in real scenarios. To address this issue, we propose a fault diagnosis
+framework based on Domain-Adversarial Neural Networks (DANN), which enables
+knowledge transfer from simulated (source domain) to real-world (target domain)
+data. We evaluate the proposed framework using a publicly available robotics
+fault diagnosis dataset, which includes 3,600 sequences generated by a digital
+twin model and 90 real sequences collected from physical systems. The DANN
+method is compared with commonly used lightweight deep learning models such as
+CNN, TCN, Transformer, and LSTM. Experimental results show that incorporating
+domain adaptation significantly improves the diagnostic performance. For
+example, applying DANN to a baseline CNN model improves its accuracy from
+70.00% to 80.22% on real-world test data, demonstrating the effectiveness of
+domain adaptation in bridging the sim-to-real gap.</p></br><a href="http://arxiv.org/pdf/2505.21074v1" target="_blank"><h2>Red-Teaming Text-to-Image Systems by Rule-based Preference Modeling</h2></a><strong><u>Authors:</u></strong>  Yichuan Cao, Yibo Miao, Xiao-Shan Gao, Yinpeng Dong</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR, cs.CV, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Text-to-image (T2I) models raise ethical and safety concerns due to their
+potential to generate inappropriate or harmful images. Evaluating these models'
+security through red-teaming is vital, yet white-box approaches are limited by
+their need for internal access, complicating their use with closed-source
+models. Moreover, existing black-box methods often assume knowledge about the
+model's specific defense mechanisms, limiting their utility in real-world
+commercial API scenarios. A significant challenge is how to evade unknown and
+diverse defense mechanisms. To overcome this difficulty, we propose a novel
+Rule-based Preference modeling Guided Red-Teaming (RPG-RT), which iteratively
+employs LLM to modify prompts to query and leverages feedback from T2I systems
+for fine-tuning the LLM. RPG-RT treats the feedback from each iteration as a
+prior, enabling the LLM to dynamically adapt to unknown defense mechanisms.
+Given that the feedback is often labeled and coarse-grained, making it
+difficult to utilize directly, we further propose rule-based preference
+modeling, which employs a set of rules to evaluate desired or undesired
+feedback, facilitating finer-grained control over the LLM's dynamic adaptation
+process. Extensive experiments on nineteen T2I systems with varied safety
+mechanisms, three online commercial API services, and T2V models verify the
+superiority and practicality of our approach.</p></br><a href="http://arxiv.org/pdf/2505.21285v1" target="_blank"><h2>Learnable Kernel Density Estimation for Graphs</h2></a><strong><u>Authors:</u></strong>  Xudong Wang, Ziheng Sun, Chris Ding, Jicong Fan</br><strong><u>Categories:</u></strong> cs.LG, stat.ML, I.2; I.5.1; I.5.2</br><strong><u>Comments:</u></strong> Under Review</br><p><strong><u>Abstract:</u></strong> This work proposes a framework LGKDE that learns kernel density estimation
+for graphs. The key challenge in graph density estimation lies in effectively
+capturing both structural patterns and semantic variations while maintaining
+theoretical guarantees. Combining graph kernels and kernel density estimation
+(KDE) is a standard approach to graph density estimation, but has
+unsatisfactory performance due to the handcrafted and fixed features of
+kernels. Our method LGKDE leverages graph neural networks to represent each
+graph as a discrete distribution and utilizes maximum mean discrepancy to learn
+the graph metric for multi-scale KDE, where all parameters are learned by
+maximizing the density of graphs relative to the density of their well-designed
+perturbed counterparts. The perturbations are conducted on both node features
+and graph spectra, which helps better characterize the boundary of normal
+density regions. Theoretically, we establish consistency and convergence
+guarantees for LGKDE, including bounds on the mean integrated squared error,
+robustness, and complexity. We validate LGKDE by demonstrating its
+effectiveness in recovering the underlying density of synthetic graph
+distributions and applying it to graph anomaly detection across diverse
+benchmark datasets. Extensive empirical evaluation shows that LGKDE
+demonstrates superior performance compared to state-of-the-art baselines on
+most benchmark datasets.</p></br><a href="http://arxiv.org/pdf/2505.20666v1" target="_blank"><h2>Continuous-Time Attention: PDE-Guided Mechanisms for Long-Sequence
+  Transformers</h2></a><strong><u>Authors:</u></strong>  Yukun Zhang, Xueqing Zhou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We propose a novel framework, Continuous_Time Attention, which infuses
+partial differential equations (PDEs) into the Transformer's attention
+mechanism to address the challenges of extremely long input sequences. Instead
+of relying solely on a static attention matrix, we allow attention weights to
+evolve over a pseudo_time dimension via diffusion, wave, or reaction_diffusion
+dynamics. This mechanism systematically smooths local noise, enhances
+long_range dependencies, and stabilizes gradient flow. Theoretically, our
+analysis shows that PDE_based attention leads to better optimization landscapes
+and polynomial rather than exponential decay of distant interactions.
+Empirically, we benchmark our method on diverse experiments_demonstrating
+consistent gains over both standard and specialized long sequence Transformer
+variants. Our findings highlight the potential of PDE_based formulations to
+enrich attention mechanisms with continuous_time dynamics and global coherence.</p></br><a href="http://arxiv.org/pdf/2505.21288v1" target="_blank"><h2>GSAT: Graph Structure Attention Networks</h2></a><strong><u>Authors:</u></strong>  Farshad Noravesh, Reza Haffari, Layki Soon, Arghya Pal</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 16 pages</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have emerged as a powerful tool for processing
+data represented in graph structures, achieving remarkable success across a
+wide range of applications. However, to further improve the performance on
+graph classification benchmarks, structural representation of each node that
+encodes rich local topological information in the neighbourhood of nodes is an
+important type of feature that is often overlooked in the modeling. The
+consequence of neglecting the structural information has resulted high number
+of layers to connect messages from distant nodes which by itself produces other
+problems such as oversmoothing. In the present paper, we leverage these
+structural information that are modeled by anonymous random walks (ARWs) and
+introduce graph structure attention network (GSAT) which is a generalization of
+graph attention network(GAT) to integrate the original attribute and the
+structural representation to enforce the model to automatically find patterns
+for attending to different edges in the node neighbourhood to enrich graph
+representation. Our experiments show GSAT slightly improves SOTA on some graph
+classification benchmarks.</p></br><a href="http://arxiv.org/pdf/2505.21427v1" target="_blank"><h2>Policy Induction: Predicting Startup Success via Explainable
+  Memory-Augmented In-Context Learning</h2></a><strong><u>Authors:</u></strong>  Xianling Mu, Joseph Ternasky, Fuat Alican, Yigit Ihlamur</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Early-stage startup investment is a high-risk endeavor characterized by
+scarce data and uncertain outcomes. Traditional machine learning approaches
+often require large, labeled datasets and extensive fine-tuning, yet remain
+opaque and difficult for domain experts to interpret or improve. In this paper,
+we propose a transparent and data-efficient investment decision framework
+powered by memory-augmented large language models (LLMs) using in-context
+learning (ICL). Central to our method is a natural language policy embedded
+directly into the LLM prompt, enabling the model to apply explicit reasoning
+patterns and allowing human experts to easily interpret, audit, and iteratively
+refine the logic. We introduce a lightweight training process that combines
+few-shot learning with an in-context learning loop, enabling the LLM to update
+its decision policy iteratively based on structured feedback. With only minimal
+supervision and no gradient-based optimization, our system predicts startup
+success far more accurately than existing benchmarks. It is over 20x more
+precise than random chance, which succeeds 1.9% of the time. It is also 7.1x
+more precise than the typical 5.6% success rate of top-tier venture capital
+(VC) firms.</p></br><a href="http://arxiv.org/pdf/2505.21317v1" target="_blank"><h2>A Cross Modal Knowledge Distillation & Data Augmentation Recipe for
+  Improving Transcriptomics Representations through Morphological Features</h2></a><strong><u>Authors:</u></strong>  Ihab Bendidi, Yassir El Mesbahi, Alisandra K. Denton, Karush Suri, Kian Kenyon-Dean, Auguste Genovesio, Emmanuel Noutahi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> ICML 2025 Main Proceedings</br><p><strong><u>Abstract:</u></strong> Understanding cellular responses to stimuli is crucial for biological
+discovery and drug development. Transcriptomics provides interpretable,
+gene-level insights, while microscopy imaging offers rich predictive features
+but is harder to interpret. Weakly paired datasets, where samples share
+biological states, enable multimodal learning but are scarce, limiting their
+utility for training and multimodal inference. We propose a framework to
+enhance transcriptomics by distilling knowledge from microscopy images. Using
+weakly paired data, our method aligns and binds modalities, enriching gene
+expression representations with morphological information. To address data
+scarcity, we introduce (1) Semi-Clipped, an adaptation of CLIP for cross-modal
+distillation using pretrained foundation models, achieving state-of-the-art
+results, and (2) PEA (Perturbation Embedding Augmentation), a novel
+augmentation technique that enhances transcriptomics data while preserving
+inherent biological information. These strategies improve the predictive power
+and retain the interpretability of transcriptomics, enabling rich unimodal
+representations for complex biological tasks.</p></br><a href="http://arxiv.org/pdf/2505.20872v1" target="_blank"><h2>In Context Learning with Vision Transformers: Case Study</h2></a><strong><u>Authors:</u></strong>  Antony Zhao, Alex Proshkin, Fergal Hennessy, Francesco Crivelli</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, I.2.6; I.2.10; I.4.8</br><strong><u>Comments:</u></strong> 12 pages, 16 figures. UC Berkeley research project</br><p><strong><u>Abstract:</u></strong> Large transformer models have been shown to be capable of performing
+in-context learning. By using examples in a prompt as well as a query, they are
+capable of performing tasks such as few-shot, one-shot, or zero-shot learning
+to output the corresponding answer to this query. One area of interest to us is
+that these transformer models have been shown to be capable of learning the
+general class of certain functions, such as linear functions and small 2-layer
+neural networks, on random data (Garg et al, 2023). We aim to extend this to
+the image space to analyze their capability to in-context learn more complex
+functions on the image space, such as convolutional neural networks and other
+methods.</p></br><a href="http://arxiv.org/pdf/2505.21180v1" target="_blank"><h2>Latent label distribution grid representation for modeling uncertainty</h2></a><strong><u>Authors:</u></strong>  ShuNing Sun, YinSong Xiong, Yu Zhang, Zhuoran Zheng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Under review</br><p><strong><u>Abstract:</u></strong> Although \textbf{L}abel \textbf{D}istribution \textbf{L}earning (LDL) has
+promising representation capabilities for characterizing the polysemy of an
+instance, the complexity and high cost of the label distribution annotation
+lead to inexact in the construction of the label space. The existence of a
+large number of inexact labels generates a label space with uncertainty, which
+misleads the LDL algorithm to yield incorrect decisions. To alleviate this
+problem, we model the uncertainty of label distributions by constructing a
+\textbf{L}atent \textbf{L}abel \textbf{D}istribution \textbf{G}rid (LLDG) to
+form a low-noise representation space. Specifically, we first construct a label
+correlation matrix based on the differences between labels, and then expand
+each value of the matrix into a vector that obeys a Gaussian distribution, thus
+building a LLDG to model the uncertainty of the label space. Finally, the LLDG
+is reconstructed by the LLDG-Mixer to generate an accurate label distribution.
+Note that we enforce a customized low-rank scheme on this grid, which assumes
+that the label relations may be noisy and it needs to perform noise-reduction
+with the help of a Tucker reconstruction technique. Furthermore, we attempt to
+evaluate the effectiveness of the LLDG by considering its generation as an
+upstream task to achieve the classification of the objects. Extensive
+experimental results show that our approach performs competitively on several
+benchmarks.</p></br></body>

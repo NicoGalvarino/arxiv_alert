@@ -1,0 +1,1114 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 12 Jun 2025 to 16 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.11178v1" target="_blank"><h2>BrainMAP: Multimodal Graph Learning For Efficient Brain Disease
+  Localization</h2></a><strong><u>Authors:</u></strong>  Nguyen Linh Dan Le, Jing Ren, Ciyuan Peng, Chengyao Xie, Bowen Li, Feng Xia</br><strong><u>Categories:</u></strong> cs.CV, cs.LG, cs.NE</br><strong><u>Comments:</u></strong> 6 pages, 5 figures</br><p><strong><u>Abstract:</u></strong> Recent years have seen a surge in research focused on leveraging graph
+learning techniques to detect neurodegenerative diseases. However, existing
+graph-based approaches typically lack the ability to localize and extract the
+specific brain regions driving neurodegenerative pathology within the full
+connectome. Additionally, recent works on multimodal brain graph models often
+suffer from high computational complexity, limiting their practical use in
+resource-constrained devices. In this study, we present BrainMAP, a novel
+multimodal graph learning framework designed for precise and computationally
+efficient identification of brain regions affected by neurodegenerative
+diseases. First, BrainMAP utilizes an atlas-driven filtering approach guided by
+the AAL atlas to pinpoint and extract critical brain subgraphs. Unlike recent
+state-of-the-art methods, which model the entire brain network, BrainMAP
+achieves more than 50% reduction in computational overhead by concentrating on
+disease-relevant subgraphs. Second, we employ an advanced multimodal fusion
+process comprising cross-node attention to align functional magnetic resonance
+imaging (fMRI) and diffusion tensor imaging (DTI) data, coupled with an
+adaptive gating mechanism to blend and integrate these modalities dynamically.
+Experimental results demonstrate that BrainMAP outperforms state-of-the-art
+methods in computational efficiency, without compromising predictive accuracy.</p></br><a href="http://arxiv.org/pdf/2506.10378v1" target="_blank"><h2>Discovering Hierarchical Latent Capabilities of Language Models via
+  Causal Representation Learning</h2></a><strong><u>Authors:</u></strong>  Jikai Jin, Vasilis Syrgkanis, Sham Kakade, Hanlin Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Faithful evaluation of language model capabilities is crucial for deriving
+actionable insights that can inform model development. However, rigorous causal
+evaluations in this domain face significant methodological challenges,
+including complex confounding effects and prohibitive computational costs
+associated with extensive retraining. To tackle these challenges, we propose a
+causal representation learning framework wherein observed benchmark performance
+is modeled as a linear transformation of a few latent capability factors.
+Crucially, these latent factors are identified as causally interrelated after
+appropriately controlling for the base model as a common confounder. Applying
+this approach to a comprehensive dataset encompassing over 1500 models
+evaluated across six benchmarks from the Open LLM Leaderboard, we identify a
+concise three-node linear causal structure that reliably explains the observed
+performance variations. Further interpretation of this causal structure
+provides substantial scientific insights beyond simple numerical rankings:
+specifically, we reveal a clear causal direction starting from general
+problem-solving capabilities, advancing through instruction-following
+proficiency, and culminating in mathematical reasoning ability. Our results
+underscore the essential role of carefully controlling base model variations
+during evaluation, a step critical to accurately uncovering the underlying
+causal relationships among latent model capabilities.</p></br><a href="http://arxiv.org/pdf/2506.10282v1" target="_blank"><h2>Graph-MLLM: Harnessing Multimodal Large Language Models for Multimodal
+  Graph Learning</h2></a><strong><u>Authors:</u></strong>  Jiajin Liu, Dongzhe Fan, Jiacheng Shen, Chuanhao Ji, Daochen Zha, Qiaoyu Tan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 16 pages, 4 figures</br><p><strong><u>Abstract:</u></strong> Multimodal Large Language Models (MLLMs) have demonstrated remarkable
+capabilities in representing and understanding diverse modalities. However,
+they typically focus on modality alignment in a pairwise manner while
+overlooking structural relationships across data points. Integrating
+multimodality with structured graph information (i.e., multimodal graphs, MMGs)
+is essential for real-world applications such as social networks, healthcare,
+and recommendation systems. Existing MMG learning methods fall into three
+paradigms based on how they leverage MLLMs: Encoder, Aligner, and Predictor.
+MLLM-as-Encoder focuses on enhancing graph neural networks (GNNs) via
+multimodal feature fusion; MLLM-as-Aligner aligns multimodal attributes in
+language or hidden space to enable LLM-based graph reasoning; MLLM-as-Predictor
+treats MLLMs as standalone reasoners with in-context learning or fine-tuning.
+Despite their advances, the MMG field lacks a unified benchmark to fairly
+evaluate across these approaches, making it unclear what progress has been
+made. To bridge this gap, we present Graph-MLLM, a comprehensive benchmark for
+multimodal graph learning by systematically evaluating these three paradigms
+across six datasets with different domains. Through extensive experiments, we
+observe that jointly considering the visual and textual attributes of the nodes
+benefits graph learning, even when using pre-trained text-to-image alignment
+models (e.g., CLIP) as encoders. We also find that converting visual attributes
+into textual descriptions further improves performance compared to directly
+using visual inputs. Moreover, we observe that fine-tuning MLLMs on specific
+MMGs can achieve state-of-the-art results in most scenarios, even without
+explicit graph structure information. We hope that our open-sourced library
+will facilitate rapid, equitable evaluation and inspire further innovative
+research in this field.</p></br><a href="http://arxiv.org/pdf/2506.11869v1" target="_blank"><h2>How do Probabilistic Graphical Models and Graph Neural Networks Look at
+  Network Data?</h2></a><strong><u>Authors:</u></strong>  Michela Lapenna, Caterina De Bacco</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG, math-ph, math.MP</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Graphs are a powerful data structure for representing relational data and are
+widely used to describe complex real-world systems. Probabilistic Graphical
+Models (PGMs) and Graph Neural Networks (GNNs) can both leverage
+graph-structured data, but their inherent functioning is different. The
+question is how do they compare in capturing the information contained in
+networked datasets? We address this objective by solving a link prediction task
+and we conduct three main experiments, on both synthetic and real networks: one
+focuses on how PGMs and GNNs handle input features, while the other two
+investigate their robustness to noisy features and increasing heterophily of
+the graph. PGMs do not necessarily require features on nodes, while GNNs cannot
+exploit the network edges alone, and the choice of input features matters. We
+find that GNNs are outperformed by PGMs when input features are low-dimensional
+or noisy, mimicking many real scenarios where node attributes might be scalar
+or noisy. Then, we find that PGMs are more robust than GNNs when the
+heterophily of the graph is increased. Finally, to assess performance beyond
+prediction tasks, we also compare the two frameworks in terms of their
+computational complexity and interpretability.</p></br><a href="http://arxiv.org/pdf/2506.11465v1" target="_blank"><h2>RollingQ: Reviving the Cooperation Dynamics in Multimodal Transformer</h2></a><strong><u>Authors:</u></strong>  Haotian Ni, Yake Wei, Hang Liu, Gong Chen, Chong Peng, Hao Lin, Di Hu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> Accepted by ICML 2025</br><p><strong><u>Abstract:</u></strong> Multimodal learning faces challenges in effectively fusing information from
+diverse modalities, especially when modality quality varies across samples.
+Dynamic fusion strategies, such as attention mechanism in Transformers, aim to
+address such challenge by adaptively emphasizing modalities based on the
+characteristics of input data. However, through amounts of carefully designed
+experiments, we surprisingly observed that the dynamic adaptability of
+widely-used self-attention models diminishes. Model tends to prefer one
+modality regardless of data characteristics. This bias triggers a
+self-reinforcing cycle that progressively overemphasizes the favored modality,
+widening the distribution gap in attention keys across modalities and
+deactivating attention mechanism's dynamic properties. To revive adaptability,
+we propose a simple yet effective method Rolling Query (RollingQ), which
+balances attention allocation by rotating the query to break the
+self-reinforcing cycle and mitigate the key distribution gap. Extensive
+experiments on various multimodal scenarios validate the effectiveness of
+RollingQ and the restoration of cooperation dynamics is pivotal for enhancing
+the broader capabilities of widely deployed multimodal Transformers. The source
+code is available at https://github.com/GeWu-Lab/RollingQ_ICML2025.</p></br><a href="http://arxiv.org/pdf/2506.10613v1" target="_blank"><h2>Data Driven Diagnosis for Large Cyber-Physical-Systems with Minimal
+  Prior Information</h2></a><strong><u>Authors:</u></strong>  Henrik Sebastian Steude, Alexander Diedrich, Ingo Pill, Lukas Moddemann, Daniel Vranješ, Oliver Niggemann</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Diagnostic processes for complex cyber-physical systems often require
+extensive prior knowledge in the form of detailed system models or
+comprehensive training data. However, obtaining such information poses a
+significant challenge. To address this issue, we present a new diagnostic
+approach that operates with minimal prior knowledge, requiring only a basic
+understanding of subsystem relationships and data from nominal operations. Our
+method combines a neural network-based symptom generator, which employs
+subsystem-level anomaly detection, with a new graph diagnosis algorithm that
+leverages minimal causal relationship information between
+subsystems-information that is typically available in practice. Our experiments
+with fully controllable simulated datasets show that our method includes the
+true causal component in its diagnosis set for 82 p.c. of all cases while
+effectively reducing the search space in 73 p.c. of the scenarios. Additional
+tests on the real-world Secure Water Treatment dataset showcase the approach's
+potential for practical scenarios. Our results thus highlight our approach's
+potential for practical applications with large and complex cyber-physical
+systems where limited prior knowledge is available.</p></br><a href="http://arxiv.org/pdf/2506.11550v1" target="_blank"><h2>Improving Multimodal Learning Balance and Sufficiency through Data
+  Remixing</h2></a><strong><u>Authors:</u></strong>  Xiaoyu Ma, Hao Chen, Yongjian Deng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> ICML2025</br><p><strong><u>Abstract:</u></strong> Different modalities hold considerable gaps in optimization trajectories,
+including speeds and paths, which lead to modality laziness and modality clash
+when jointly training multimodal models, resulting in insufficient and
+imbalanced multimodal learning. Existing methods focus on enforcing the weak
+modality by adding modality-specific optimization objectives, aligning their
+optimization speeds, or decomposing multimodal learning to enhance unimodal
+learning. These methods fail to achieve both unimodal sufficiency and
+multimodal balance. In this paper, we, for the first time, address both
+concerns by proposing multimodal Data Remixing, including decoupling multimodal
+data and filtering hard samples for each modality to mitigate modality
+imbalance; and then batch-level reassembling to align the gradient directions
+and avoid cross-modal interference, thus enhancing unimodal learning
+sufficiency. Experimental results demonstrate that our method can be seamlessly
+integrated with existing approaches, improving accuracy by approximately
+6.50%$\uparrow$ on CREMAD and 3.41%$\uparrow$ on Kinetic-Sounds, without
+training set expansion or additional computational overhead during inference.
+The source code is available at
+\href{https://github.com/MatthewMaxy/Remix_ICML2025}{Data Remixing}.</p></br><a href="http://arxiv.org/pdf/2506.10586v1" target="_blank"><h2>Size-adaptive Hypothesis Testing for Fairness</h2></a><strong><u>Authors:</u></strong>  Antonio Ferrara, Francesco Cozzi, Alan Perotti, André Panisson, Francesco Bonchi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CY, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Determining whether an algorithmic decision-making system discriminates
+against a specific demographic typically involves comparing a single point
+estimate of a fairness metric against a predefined threshold. This practice is
+statistically brittle: it ignores sampling error and treats small demographic
+subgroups the same as large ones. The problem intensifies in intersectional
+analyses, where multiple sensitive attributes are considered jointly, giving
+rise to a larger number of smaller groups. As these groups become more
+granular, the data representing them becomes too sparse for reliable
+estimation, and fairness metrics yield excessively wide confidence intervals,
+precluding meaningful conclusions about potential unfair treatments.
+  In this paper, we introduce a unified, size-adaptive, hypothesis-testing
+framework that turns fairness assessment into an evidence-based statistical
+decision. Our contribution is twofold. (i) For sufficiently large subgroups, we
+prove a Central-Limit result for the statistical parity difference, leading to
+analytic confidence intervals and a Wald test whose type-I (false positive)
+error is guaranteed at level $\alpha$. (ii) For the long tail of small
+intersectional groups, we derive a fully Bayesian Dirichlet-multinomial
+estimator; Monte-Carlo credible intervals are calibrated for any sample size
+and naturally converge to Wald intervals as more data becomes available. We
+validate our approach empirically on benchmark datasets, demonstrating how our
+tests provide interpretable, statistically rigorous decisions under varying
+degrees of data availability and intersectionality.</p></br><a href="http://arxiv.org/pdf/2506.10412v1" target="_blank"><h2>Time-IMM: A Dataset and Benchmark for Irregular Multimodal Multivariate
+  Time Series</h2></a><strong><u>Authors:</u></strong>  Ching Chang, Jeehyun Hwang, Yidan Shi, Haixin Wang, Wen-Chih Peng, Tien-Fu Chen, Wei Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> This paper is currently under review</br><p><strong><u>Abstract:</u></strong> Time series data in real-world applications such as healthcare, climate
+modeling, and finance are often irregular, multimodal, and messy, with varying
+sampling rates, asynchronous modalities, and pervasive missingness. However,
+existing benchmarks typically assume clean, regularly sampled, unimodal data,
+creating a significant gap between research and real-world deployment. We
+introduce Time-IMM, a dataset specifically designed to capture cause-driven
+irregularity in multimodal multivariate time series. Time-IMM represents nine
+distinct types of time series irregularity, categorized into trigger-based,
+constraint-based, and artifact-based mechanisms. Complementing the dataset, we
+introduce IMM-TSF, a benchmark library for forecasting on irregular multimodal
+time series, enabling asynchronous integration and realistic evaluation.
+IMM-TSF includes specialized fusion modules, including a timestamp-to-text
+fusion module and a multimodality fusion module, which support both
+recency-aware averaging and attention-based integration strategies. Empirical
+results demonstrate that explicitly modeling multimodality on irregular time
+series data leads to substantial gains in forecasting performance. Time-IMM and
+IMM-TSF provide a foundation for advancing time series analysis under
+real-world conditions. The dataset is publicly available at
+https://www.kaggle.com/datasets/blacksnail789521/time-imm/data, and the
+benchmark library can be accessed at
+https://anonymous.4open.science/r/IMMTSF_NeurIPS2025.</p></br><a href="http://arxiv.org/pdf/2506.11898v1" target="_blank"><h2>Scalable Generalized Bayesian Online Neural Network Training for
+  Sequential Decision Making</h2></a><strong><u>Authors:</u></strong>  Gerardo Duran-Martin, Leandro Sánchez-Betancourt, Álvaro Cartea, Kevin Murphy</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We introduce scalable algorithms for online learning and generalized Bayesian
+inference of neural network parameters, designed for sequential decision making
+tasks. Our methods combine the strengths of frequentist and Bayesian filtering,
+which include fast low-rank updates via a block-diagonal approximation of the
+parameter error covariance, and a well-defined posterior predictive
+distribution that we use for decision making. More precisely, our main method
+updates a low-rank error covariance for the hidden layers parameters, and a
+full-rank error covariance for the final layer parameters. Although this
+characterizes an improper posterior, we show that the resulting posterior
+predictive distribution is well-defined. Our methods update all network
+parameters online, with no need for replay buffers or offline retraining. We
+show, empirically, that our methods achieve a competitive tradeoff between
+speed and accuracy on (non-stationary) contextual bandit problems and Bayesian
+optimization problems.</p></br><a href="http://arxiv.org/pdf/2506.10982v1" target="_blank"><h2>Rethinking Losses for Diffusion Bridge Samplers</h2></a><strong><u>Authors:</u></strong>  Sebastian Sanokowski, Lukas Gruber, Christoph Bartmann, Sepp Hochreiter, Sebastian Lehner</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Diffusion bridges are a promising class of deep-learning methods for sampling
+from unnormalized distributions. Recent works show that the Log Variance (LV)
+loss consistently outperforms the reverse Kullback-Leibler (rKL) loss when
+using the reparametrization trick to compute rKL-gradients. While the on-policy
+LV loss yields identical gradients to the rKL loss when combined with the
+log-derivative trick for diffusion samplers with non-learnable forward
+processes, this equivalence does not hold for diffusion bridges or when
+diffusion coefficients are learned. Based on this insight we argue that for
+diffusion bridges the LV loss does not represent an optimization objective that
+can be motivated like the rKL loss via the data processing inequality. Our
+analysis shows that employing the rKL loss with the log-derivative trick
+(rKL-LD) does not only avoid these conceptual problems but also consistently
+outperforms the LV loss. Experimental results with different types of diffusion
+bridges on challenging benchmarks show that samplers trained with the rKL-LD
+loss achieve better performance. From a practical perspective we find that
+rKL-LD requires significantly less hyperparameter optimization and yields more
+stable training behavior.</p></br><a href="http://arxiv.org/pdf/2506.10259v1" target="_blank"><h2>Meta-learning Representations for Learning from Multiple Annotators</h2></a><strong><u>Authors:</u></strong>  Atsutoshi Kumagai, Tomoharu Iwata, Taishi Nishiyama, Yasutoshi Ida, Yasuhiro Fujiwara</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 24 pages</br><p><strong><u>Abstract:</u></strong> We propose a meta-learning method for learning from multiple noisy
+annotators. In many applications such as crowdsourcing services, labels for
+supervised learning are given by multiple annotators. Since the annotators have
+different skills or biases, given labels can be noisy. To learn accurate
+classifiers, existing methods require many noisy annotated data. However,
+sufficient data might be unavailable in practice. To overcome the lack of data,
+the proposed method uses labeled data obtained in different but related tasks.
+The proposed method embeds each example in tasks to a latent space by using a
+neural network and constructs a probabilistic model for learning a
+task-specific classifier while estimating annotators' abilities on the latent
+space. This neural network is meta-learned to improve the expected test
+classification performance when the classifier is adapted to a given small
+amount of annotated data. This classifier adaptation is performed by maximizing
+the posterior probability via the expectation-maximization (EM) algorithm.
+Since each step in the EM algorithm is easily computed as a closed-form and is
+differentiable, the proposed method can efficiently backpropagate the loss
+through the EM algorithm to meta-learn the neural network. We show the
+effectiveness of our method with real-world datasets with synthetic noise and
+real-world crowdsourcing datasets.</p></br><a href="http://arxiv.org/pdf/2506.11882v1" target="_blank"><h2>An Explainable AI Framework for Dynamic Resource Management in Vehicular
+  Network Slicing</h2></a><strong><u>Authors:</u></strong>  Haochen Sun, Yifan Liu, Ahmed Al-Tahmeesschi, Swarna Chetty, Syed Ali Raza Zaidi, Avishek Nag, Hamed Ahmadi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> To appear in Proceedings of IEEE PIMRC 2025. 6 pages, 4 figures</br><p><strong><u>Abstract:</u></strong> Effective resource management and network slicing are essential to meet the
+diverse service demands of vehicular networks, including Enhanced Mobile
+Broadband (eMBB) and Ultra-Reliable and Low-Latency Communications (URLLC).
+This paper introduces an Explainable Deep Reinforcement Learning (XRL)
+framework for dynamic network slicing and resource allocation in vehicular
+networks, built upon a near-real-time RAN intelligent controller. By
+integrating a feature-based approach that leverages Shapley values and an
+attention mechanism, we interpret and refine the decisions of our
+reinforcementlearning agents, addressing key reliability challenges in
+vehicular communication systems. Simulation results demonstrate that our
+approach provides clear, real-time insights into the resource allocation
+process and achieves higher interpretability precision than a pure attention
+mechanism. Furthermore, the Quality of Service (QoS) satisfaction for URLLC
+services increased from 78.0% to 80.13%, while that for eMBB services improved
+from 71.44% to 73.21%.</p></br><a href="http://arxiv.org/pdf/2506.11641v1" target="_blank"><h2>Deep Symmetric Autoencoders from the Eckart-Young-Schmidt Perspective</h2></a><strong><u>Authors:</u></strong>  Simone Brivio, Nicola Rares Franco</br><strong><u>Categories:</u></strong> math.NA, cs.LG, cs.NA, 68T07, 47N40</br><strong><u>Comments:</u></strong> 28 pages, 10 figures</br><p><strong><u>Abstract:</u></strong> Deep autoencoders have become a fundamental tool in various machine learning
+applications, ranging from dimensionality reduction and reduced order modeling
+of partial differential equations to anomaly detection and neural machine
+translation. Despite their empirical success, a solid theoretical foundation
+for their expressiveness remains elusive, particularly when compared to
+classical projection-based techniques. In this work, we aim to take a step
+forward in this direction by presenting a comprehensive analysis of what we
+refer to as symmetric autoencoders, a broad class of deep learning
+architectures ubiquitous in the literature. Specifically, we introduce a formal
+distinction between different classes of symmetric architectures, analyzing
+their strengths and limitations from a mathematical perspective. For instance,
+we show that the reconstruction error of symmetric autoencoders with
+orthonormality constraints can be understood by leveraging the well-renowned
+Eckart-Young-Schmidt (EYS) theorem. As a byproduct of our analysis, we end up
+developing the EYS initialization strategy for symmetric autoencoders, which is
+based on an iterated application of the Singular Value Decomposition (SVD). To
+validate our findings, we conduct a series of numerical experiments where we
+benchmark our proposal against conventional deep autoencoders, discussing the
+importance of model design and initialization.</p></br><a href="http://arxiv.org/pdf/2506.11214v1" target="_blank"><h2>Complexity of normalized stochastic first-order methods with momentum
+  under heavy-tailed noise</h2></a><strong><u>Authors:</u></strong>  Chuan He, Zhaosong Lu, Defeng Sun, Zhanwang Deng</br><strong><u>Categories:</u></strong> math.OC, cs.AI, cs.CC, cs.LG, stat.ML, 49M05, 49M37, 90C25, 90C30</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> In this paper, we propose practical normalized stochastic first-order methods
+with Polyak momentum, multi-extrapolated momentum, and recursive momentum for
+solving unconstrained optimization problems. These methods employ dynamically
+updated algorithmic parameters and do not require explicit knowledge of
+problem-dependent quantities such as the Lipschitz constant or noise bound. We
+establish first-order oracle complexity results for finding approximate
+stochastic stationary points under heavy-tailed noise and weakly average
+smoothness conditions -- both of which are weaker than the commonly used
+bounded variance and mean-squared smoothness assumptions. Our complexity bounds
+either improve upon or match the best-known results in the literature.
+Numerical experiments are presented to demonstrate the practical effectiveness
+of the proposed methods.</p></br><a href="http://arxiv.org/pdf/2506.10526v1" target="_blank"><h2>A Visibility-based 21 cm Bispectrum Estimator for Radio-interferometric
+  Data</h2></a><strong><u>Authors:</u></strong>  Sukhdeep Singh Gill, Somnath Bharadwaj</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 16 pages, 8 figures. Comments are welcome</br><p><strong><u>Abstract:</u></strong> We present a fast and scalable estimator for the binned multi-frequency
+angular bispectrum (MABS) and the 3D bispectrum (BS) of the redshifted 21 cm
+signal from radio interferometric observations. The estimator operates on
+gridded visibilities and leverages the FFT-based acceleration to efficiently
+compute the MABS and the 3D BS covering all possible triangle configurations.
+We present the formalism and validate the estimator using simulated visibility
+data for a known input model BS, considering the Murchison Widefield Array
+(MWA) observations with a bandwidth of $30.72$ MHz centered at $154.25$ MHz. We
+consider two cases, namely, without flagging, and with flagging, which has
+exactly the same frequency channels flagged as the actual data. We obtain
+estimates of the BS for a wide range of triangle shapes covering the scales
+$0.003 ~\mathrm{Mpc}^{-1}\leq k_1 \leq 1.258 ~\mathrm{Mpc}^{-1}$. The estimated
+BS shows excellent agreement with analytical predictions based on the input
+model BS. We find that the deviations, which are below 20\% even in the
+presence of flagging, are mostly consistent with the expected statistical
+fluctuations. This work paves the way for reliable observational estimates of
+the 21 cm BS for the epoch of reionization, where the signal is predicted to be
+highly non-Gaussian.</p></br><a href="http://arxiv.org/pdf/2506.11512v1" target="_blank"><h2>Prioritizing Alignment Paradigms over Task-Specific Model Customization
+  in Time-Series LLMs</h2></a><strong><u>Authors:</u></strong>  Wei Li, Yunyao Cheng, Xinli Hao, Chaohong Ma, Yuxuan Liang, Bin Yang, Christian S. Jensen, Xiaofeng Meng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Recent advances in Large Language Models (LLMs) have enabled unprecedented
+capabilities for time-series reasoning in diverse real-world applications,
+including medical, financial, and spatio-temporal domains. However, existing
+approaches typically focus on task-specific model customization, such as
+forecasting and anomaly detection, while overlooking the data itself, referred
+to as time-series primitives, which are essential for in-depth reasoning. This
+position paper advocates a fundamental shift in approaching time-series
+reasoning with LLMs: prioritizing alignment paradigms grounded in the intrinsic
+primitives of time series data over task-specific model customization. This
+realignment addresses the core limitations of current time-series reasoning
+approaches, which are often costly, inflexible, and inefficient, by
+systematically accounting for intrinsic structure of data before task
+engineering. To this end, we propose three alignment paradigms: Injective
+Alignment, Bridging Alignment, and Internal Alignment, which are emphasized by
+prioritizing different aspects of time-series primitives: domain,
+characteristic, and representation, respectively, to activate time-series
+reasoning capabilities of LLMs to enable economical, flexible, and efficient
+reasoning. We further recommend that practitioners adopt an alignment-oriented
+method to avail this instruction to select an appropriate alignment paradigm.
+Additionally, we categorize relevant literature into these alignment paradigms
+and outline promising research directions.</p></br><a href="http://arxiv.org/pdf/2506.11584v1" target="_blank"><h2>A Comparative Analysis of Influence Signals for Data Debugging</h2></a><strong><u>Authors:</u></strong>  Nikolaos Myrtakis, Ioannis Tsamardinos, Vassilis Christophides</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted and presented at the Data-centric Machine Learning Research (DMLR) Workshop at ICML 2024</br><p><strong><u>Abstract:</u></strong> Improving the quality of training samples is crucial for improving the
+reliability and performance of ML models. In this paper, we conduct a
+comparative evaluation of influence-based signals for debugging training data.
+These signals can potentially identify both mislabeled and anomalous samples
+from a potentially noisy training set as we build the models and hence
+alleviate the need for dedicated glitch detectors. Although several
+influence-based signals (e.g., Self-Influence, Average Absolute Influence,
+Marginal Influence, GD-class) have been recently proposed in the literature,
+there are no experimental studies for assessing their power in detecting
+different glitch types (e.g., mislabeled and anomalous samples) under a common
+influence estimator (e.g., TraceIn) for different data modalities (image and
+tabular), and deep learning models (trained from scratch or foundation).
+Through extensive experiments, we show that signals like Self-Influence
+effectively detect mislabeled samples, but none of the existing signals can
+detect anomalies. Existing signals do not take into account the training
+dynamics, i.e., how the samples' influence on the model changes during
+training, while some signals fall into influence cancellation effects, i.e.,
+influence score is zero due to unsigned scores accumulation, resulting in
+misleading influence attribution.</p></br><a href="http://arxiv.org/pdf/2506.11357v1" target="_blank"><h2>Generalization Bound of Gradient Flow through Training Trajectory and
+  Data-dependent Kernel</h2></a><strong><u>Authors:</u></strong>  Yilan Chen, Zhichao Wang, Wei Huang, Andi Han, Taiji Suzuki, Arya Mazumdar</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Gradient-based optimization methods have shown remarkable empirical success,
+yet their theoretical generalization properties remain only partially
+understood. In this paper, we establish a generalization bound for gradient
+flow that aligns with the classical Rademacher complexity bounds for kernel
+methods-specifically those based on the RKHS norm and kernel trace-through a
+data-dependent kernel called the loss path kernel (LPK). Unlike static kernels
+such as NTK, the LPK captures the entire training trajectory, adapting to both
+data and optimization dynamics, leading to tighter and more informative
+generalization guarantees. Moreover, the bound highlights how the norm of the
+training loss gradients along the optimization trajectory influences the final
+generalization performance. The key technical ingredients in our proof combine
+stability analysis of gradient flow with uniform convergence via Rademacher
+complexity. Our bound recovers existing kernel regression bounds for
+overparameterized neural networks and shows the feature learning capability of
+neural networks compared to kernel methods. Numerical experiments on real-world
+datasets validate that our bounds correlate well with the true generalization
+gap.</p></br><a href="http://arxiv.org/pdf/2506.11683v1" target="_blank"><h2>On the performance of multi-fidelity and reduced-dimensional neural
+  emulators for inference of physiologic boundary conditions</h2></a><strong><u>Authors:</u></strong>  Chloe H. Choi, Andrea Zanoni, Daniele E. Schiavazzi, Alison L. Marsden</br><strong><u>Categories:</u></strong> stat.ML, cs.CE, cs.LG, math.ST, q-bio.QM, stat.TH</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Solving inverse problems in cardiovascular modeling is particularly
+challenging due to the high computational cost of running high-fidelity
+simulations. In this work, we focus on Bayesian parameter estimation and
+explore different methods to reduce the computational cost of sampling from the
+posterior distribution by leveraging low-fidelity approximations. A common
+approach is to construct a surrogate model for the high-fidelity simulation
+itself. Another is to build a surrogate for the discrepancy between high- and
+low-fidelity models. This discrepancy, which is often easier to approximate, is
+modeled with either a fully connected neural network or a nonlinear
+dimensionality reduction technique that enables surrogate construction in a
+lower-dimensional space. A third possible approach is to treat the discrepancy
+between the high-fidelity and surrogate models as random noise and estimate its
+distribution using normalizing flows. This allows us to incorporate the
+approximation error into the Bayesian inverse problem by modifying the
+likelihood function. We validate five different methods which are variations of
+the above on analytical test cases by comparing them to posterior distributions
+derived solely from high-fidelity models, assessing both accuracy and
+computational cost. Finally, we demonstrate our approaches on two
+cardiovascular examples of increasing complexity: a lumped-parameter Windkessel
+model and a patient-specific three-dimensional anatomy.</p></br><a href="http://arxiv.org/pdf/2506.11997v1" target="_blank"><h2>pLSTM: parallelizable Linear Source Transition Mark networks</h2></a><strong><u>Authors:</u></strong>  Korbinian Pöppel, Richard Freinschlag, Thomas Schmied, Wei Lin, Sepp Hochreiter</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Modern recurrent architectures, such as xLSTM and Mamba, have recently
+challenged the Transformer in language modeling. However, their structure
+constrains their applicability to sequences only or requires processing
+multi-dimensional data structures, such as images or molecular graphs, in a
+pre-defined sequential order. In contrast, Multi-Dimensional RNNs (MDRNNs) are
+well suited for data with a higher level structure, like 2D grids, trees, and
+directed acyclic graphs (DAGs). In this work, we extend the notion of
+multi-dimensionality to linear RNNs. We introduce parallelizable Linear Source
+Transition Mark networks (pLSTMs) using Source, Transition, and Mark gates that
+act on the line graph of a general DAG. This enables parallelization in analogy
+to parallel associative scans and the chunkwise-recurrent form of sequential
+linear RNNs, but for DAGs. For regular grids (1D and 2D), like images, this
+scheme can be efficiently implemented using einsum operations, concatenations,
+and padding in logarithmic time. pLSTMs tackle the vanishing/exploding
+activation/gradient problem for long distances in DAGs via two distinct modes:
+a directed propagation mode (P-mode) and a diffusive distribution mode
+(D-mode). To showcase the long-range capabilities of pLSTM, we introduce
+arrow-pointing extrapolation as a synthetic computer vision task that contains
+long-distance directional information. We demonstrate that pLSTMs generalize
+well to larger image sizes, whereas Transformers struggle to extrapolate. On
+established molecular graph and computer vision benchmarks, pLSTMs also show
+strong performance. Code and Datasets are available at:
+https://github.com/ml-jku/plstm_experiments.</p></br><a href="http://arxiv.org/pdf/2506.10842v1" target="_blank"><h2>Advanced fraud detection using machine learning models: enhancing
+  financial transaction security</h2></a><strong><u>Authors:</u></strong>  Nudrat Fariha, Md Nazmuddin Moin Khan, Md Iqbal Hossain, Syed Ali Reza, Joy Chakra Bortty, Kazi Sharmin Sultana, Md Shadidur Islam Jawad, Saniah Safat, Md Abdul Ahad, Maksuda Begum</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The rise of digital payments has accelerated the need for intelligent and
+scalable systems to detect fraud. This research presents an end-to-end,
+feature-rich machine learning framework for detecting credit card transaction
+anomalies and fraud using real-world data. The study begins by merging
+transactional, cardholder, merchant, and merchant category datasets from a
+relational database to create a unified analytical view. Through the feature
+engineering process, we extract behavioural signals such as average spending,
+deviation from historical patterns, transaction timing irregularities, and
+category frequency metrics. These features are enriched with temporal markers
+such as hour, day of week, and weekend indicators to expose all latent patterns
+that indicate fraudulent behaviours. Exploratory data analysis reveals
+contextual transaction trends across all the dataset features. Using the
+transactional data, we train and evaluate a range of unsupervised models:
+Isolation Forest, One Class SVM, and a deep autoencoder trained to reconstruct
+normal behavior. These models flag the top 1% of reconstruction errors as
+outliers. PCA visualizations illustrate each models ability to separate
+anomalies into a two-dimensional latent space. We further segment the
+transaction landscape using K-Means clustering and DBSCAN to identify dense
+clusters of normal activity and isolate sparse, suspicious regions.</p></br><a href="http://arxiv.org/pdf/2506.11901v1" target="_blank"><h2>A Neural Rejection System Against Universal Adversarial Perturbations in
+  Radio Signal Classification</h2></a><strong><u>Authors:</u></strong>  Lu Zhang, Sangarapillai Lambotharan, Gan Zheng, Fabio Roli</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Advantages of deep learning over traditional methods have been demonstrated
+for radio signal classification in the recent years. However, various
+researchers have discovered that even a small but intentional feature
+perturbation known as adversarial examples can significantly deteriorate the
+performance of the deep learning based radio signal classification. Among
+various kinds of adversarial examples, universal adversarial perturbation has
+gained considerable attention due to its feature of being data independent,
+hence as a practical strategy to fool the radio signal classification with a
+high success rate. Therefore, in this paper, we investigate a defense system
+called neural rejection system to propose against universal adversarial
+perturbations, and evaluate its performance by generating white-box universal
+adversarial perturbations. We show that the proposed neural rejection system is
+able to defend universal adversarial perturbations with significantly higher
+accuracy than the undefended deep neural network.</p></br><a href="http://arxiv.org/pdf/2506.10973v1" target="_blank"><h2>Principled Approaches for Extending Neural Architectures to Function
+  Spaces for Operator Learning</h2></a><strong><u>Authors:</u></strong>  Julius Berner, Miguel Liu-Schiaffini, Jean Kossaifi, Valentin Duruisseaux, Boris Bonev, Kamyar Azizzadenesheli, Anima Anandkumar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NA, math.FA, math.NA</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> A wide range of scientific problems, such as those described by
+continuous-time dynamical systems and partial differential equations (PDEs),
+are naturally formulated on function spaces. While function spaces are
+typically infinite-dimensional, deep learning has predominantly advanced
+through applications in computer vision and natural language processing that
+focus on mappings between finite-dimensional spaces. Such fundamental
+disparities in the nature of the data have limited neural networks from
+achieving a comparable level of success in scientific applications as seen in
+other fields. Neural operators are a principled way to generalize neural
+networks to mappings between function spaces, offering a pathway to replicate
+deep learning's transformative impact on scientific problems. For instance,
+neural operators can learn solution operators for entire classes of PDEs, e.g.,
+physical systems with different boundary conditions, coefficient functions, and
+geometries. A key factor in deep learning's success has been the careful
+engineering of neural architectures through extensive empirical testing.
+Translating these neural architectures into neural operators allows operator
+learning to enjoy these same empirical optimizations. However, prior neural
+operator architectures have often been introduced as standalone models, not
+directly derived as extensions of existing neural network architectures. In
+this paper, we identify and distill the key principles for constructing
+practical implementations of mappings between infinite-dimensional function
+spaces. Using these principles, we propose a recipe for converting several
+popular neural architectures into neural operators with minimal modifications.
+This paper aims to guide practitioners through this process and details the
+steps to make neural operators work in practice. Our code can be found at
+https://github.com/neuraloperator/NNs-to-NOs</p></br><a href="http://arxiv.org/pdf/2506.11743v1" target="_blank"><h2>Taxonomy of reduction matrices for Graph Coarsening</h2></a><strong><u>Authors:</u></strong>  Antonin Joly, Nicolas Keriven, Aline Roumy</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Graph coarsening aims to diminish the size of a graph to lighten its memory
+footprint, and has numerous applications in graph signal processing and machine
+learning. It is usually defined using a reduction matrix and a lifting matrix,
+which, respectively, allows to project a graph signal from the original graph
+to the coarsened one and back. This results in a loss of information measured
+by the so-called Restricted Spectral Approximation (RSA). Most coarsening
+frameworks impose a fixed relationship between the reduction and lifting
+matrices, generally as pseudo-inverses of each other, and seek to define a
+coarsening that minimizes the RSA. In this paper, we remark that the roles of
+these two matrices are not entirely symmetric: indeed, putting constraints on
+the lifting matrix alone ensures the existence of important objects such as the
+coarsened graph's adjacency matrix or Laplacian. In light of this, in this
+paper, we introduce a more general notion of reduction matrix, that is not
+necessarily the pseudo-inverse of the lifting matrix. We establish a taxonomy
+of ``admissible'' families of reduction matrices, discuss the different
+properties that they must satisfy and whether they admit a closed-form
+description or not. We show that, for a fixed coarsening represented by a fixed
+lifting matrix, the RSA can be further reduced simply by modifying the
+reduction matrix. We explore different examples, including some based on a
+constrained optimization process of the RSA. Since this criterion has also been
+linked to the performance of Graph Neural Networks, we also illustrate the
+impact of this choices on different node classification tasks on coarsened
+graphs.</p></br><a href="http://arxiv.org/pdf/2506.11982v1" target="_blank"><h2>Interpretable representation learning of quantum data enabled by
+  probabilistic variational autoencoders</h2></a><strong><u>Authors:</u></strong>  Paulin de Schoulepnikoff, Gorka Muñoz-Gil, Hendrik Poulsen Nautrup, Hans J. Briegel</br><strong><u>Categories:</u></strong> quant-ph, cond-mat.stat-mech, cs.LG</br><strong><u>Comments:</u></strong> Main text 10 pages, total document 16 pages, 10 figures</br><p><strong><u>Abstract:</u></strong> Interpretable machine learning is rapidly becoming a crucial tool for
+scientific discovery. Among existing approaches, variational autoencoders
+(VAEs) have shown promise in extracting the hidden physical features of some
+input data, with no supervision nor prior knowledge of the system at study.
+Yet, the ability of VAEs to create meaningful, interpretable representations
+relies on their accurate approximation of the underlying probability
+distribution of their input. When dealing with quantum data, VAEs must hence
+account for its intrinsic randomness and complex correlations. While VAEs have
+been previously applied to quantum data, they have often neglected its
+probabilistic nature, hindering the extraction of meaningful physical
+descriptors. Here, we demonstrate that two key modifications enable VAEs to
+learn physically meaningful latent representations: a decoder capable of
+faithfully reproduce quantum states and a probabilistic loss tailored to this
+task. Using benchmark quantum spin models, we identify regimes where standard
+methods fail while the representations learned by our approach remain
+meaningful and interpretable. Applied to experimental data from Rydberg atom
+arrays, the model autonomously uncovers the phase structure without access to
+prior labels, Hamiltonian details, or knowledge of relevant order parameters,
+highlighting its potential as an unsupervised and interpretable tool for the
+study of quantum systems.</p></br><a href="http://arxiv.org/pdf/2506.10914v1" target="_blank"><h2>Foundation Models for Causal Inference via Prior-Data Fitted Networks</h2></a><strong><u>Authors:</u></strong>  Yuchen Ma, Dennis Frauen, Emil Javurek, Stefan Feuerriegel</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Prior-data fitted networks (PFNs) have recently been proposed as a promising
+way to train tabular foundation models. PFNs are transformers that are
+pre-trained on synthetic data generated from a prespecified prior distribution
+and that enable Bayesian inference through in-context learning. In this paper,
+we introduce CausalFM, a comprehensive framework for training PFN-based
+foundation models in various causal inference settings. First, we formalize the
+construction of Bayesian priors for causal inference based on structural causal
+models (SCMs) in a principled way and derive necessary criteria for the
+validity of such priors. Building on this, we propose a novel family of prior
+distributions using causality-inspired Bayesian neural networks that enable
+CausalFM to perform Bayesian causal inference in various settings, including
+back-door, front-door, and instrumental variable adjustment. Finally, we
+instantiate CausalFM and explicitly train a foundation model for estimating
+conditional average treatment effects (CATEs) using back-door adjustment. We
+show that CausalFM performs competitively for CATE estimation using various
+synthetic and semi-synthetic benchmarks. In sum, our framework can be used as a
+general recipe to train foundation models for various causal inference
+settings. In contrast to the current state-of-the-art in causal inference,
+CausalFM offers a novel paradigm with the potential to fundamentally change how
+practitioners perform causal inference in medicine, economics, and other
+disciplines.</p></br><a href="http://arxiv.org/pdf/2506.11312v1" target="_blank"><h2>X-ray investigation of the remarkable galaxy group Nest200047</h2></a><strong><u>Authors:</u></strong>  Anwesh Majumder, A. Simionescu, T. Plšek, M. Brienza, E. Churazov, I. Khabibullin, F. Gastaldello, A. Botteon, H. Röttgering, M. Brüggen, N. Lyskova, K. Rajpurohit, R. A. Sunyaev, M. W. Wise</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.HE</br><strong><u>Comments:</u></strong> 21 pages, 15 figures. Accepted for publication in A&A</br><p><strong><u>Abstract:</u></strong> Galaxy groups are more susceptible to feedback from the central active
+galactic nuclei (AGN) due to their lower gravitational binding energy compared
+to clusters. This makes them ideal laboratories to study feedback effects on
+the overall energy and baryonic mass budget. We study the LOFAR-detected galaxy
+group Nest200047, where there is clear evidence of multiple generations of
+radio lobes from the AGN. Using 140 ks Chandra and 25 ks XMM-Newton data, we
+investigate thermodynamic properties of the the intragroup medium including any
+excess energy due to the central AGN. We also investigate X-ray properties of
+the central black hole and constrain the $2-10$ keV X-ray flux. We used
+spectral analysis techniques to measure various thermodynamic profiles across
+the whole field of view. We also used both imaging and spectral analysis to
+detect and estimate the energy deposited by potential shocks and cavities. Due
+to the faint emission from the object beyond the core, various background
+effects were considered. Nest200047 has significant excess entropy, and the AGN
+likely contributes to a part of it. There is an excess energy of $(5-6.5)
+\times 10^{60}$ erg within 400 kpc, exceeding the binding energy. The pressure
+profile indicates that gas is likely being ejected from the system, resulting
+in a baryon fraction of $\sim4\%$ inside $r_{500}$. From scaling relations, we
+estimate a black hole mass of $(1-4)\times 10^9 M_{\odot}$. An upper limit of
+$2.1 \times 10^{40}$ erg s$^{-1}$ was derived on the black hole bolometric
+luminosity, which is $\sim$2.5% of the Bondi accretion power. Nest200047 is
+likely part of a class of over-heated galaxy groups like ESO 3060170, AWM 4 and
+AWM 5. Such excessive heating may lead to high quenching of star formation.
+Moreover, the faint X-ray nuclear emission in Nest is likely due to the
+accretion energy being converted into jets rather than radiation.</p></br><a href="http://arxiv.org/pdf/2506.10332v1" target="_blank"><h2>Air in Your Neighborhood: Fine-Grained AQI Forecasting Using Mobile
+  Sensor Data</h2></a><strong><u>Authors:</u></strong>  Aaryam Sharma</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 10 pages, 7 figures. Code available atthis https URL</br><p><strong><u>Abstract:</u></strong> Air pollution has become a significant health risk in developing countries.
+While governments routinely publish air-quality index (AQI) data to track
+pollution, these values fail to capture the local reality, as sensors are often
+very sparse. In this paper, we address this gap by predicting AQI in 1 km^2
+neighborhoods, using the example of AirDelhi dataset. Using Spatio-temporal
+GNNs we surpass existing works by 71.654 MSE a 79% reduction, even on unseen
+coordinates. New insights about AQI such as the existence of strong repetitive
+short-term patterns and changing spatial relations are also discovered. The
+code is available on GitHub.</p></br><a href="http://arxiv.org/pdf/2506.11280v1" target="_blank"><h2>Semi-empirical constraints on the HI mass function of star-forming
+  galaxies and $Ω_{\rm HI}$ at $z\sim 0.37$ from interferometric surveys</h2></a><strong><u>Authors:</u></strong>  Francesco Sinigaglia, Alessandro Bianchetti, Giulia Rodighiero, Lucio Mayer, Miroslava Dessauges-Zavadsky, Ed Elson, Mattia Vaccari, Matt J. Jarvis</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 18 pages, 14 figures, 5 tables. Submitted to A&A</br><p><strong><u>Abstract:</u></strong> The HI mass function is a crucial tool to understand the evolution of the HI
+content in galaxies over cosmic times and to constrain both the baryon cycle in
+galaxy evolution and the reionization history of the Universe. We aim to derive
+semi-empirical constraints at $z\sim 0.37$ by combining literature results on
+the stellar mass function from optical surveys with recent findings on the
+$M_{\rm HI}-M_\star$ scaling relation derived via spectral stacking analysis
+applied to 21-cm line interferometric data from the MIGHTEE and CHILES surveys,
+conducted with MeerKAT and the VLA, respectively. We draw synthetic stellar
+mass samples directly from the publicly-available results underlying the
+analysis of the COSMOS2020 galaxy photometric sample. Afterwards, we convert
+$M_\star$ into $M_{\rm HI}$ using analytical fitting functions to the data
+points from HI stacking. We then fit a Schechter function to the median HIMF
+from all the samples via MCMC. We finally derive the posterior distribution for
+$\Omega_{\rm HI}$ by integrating the models for the HIMF built from the
+posteriors samples of the Schechter parameters. We find evolution of the HIMF
+at $z\sim 0.37$ with respect to results at $z\sim 0$ from the ALFALFA survey
+and at $z\sim 1$ from uGMRT data. Our results for $\Omega_{\rm HI}$ are in
+broad agreement with other literature results, and follow the trend on
+$\Omega_{\rm HI}$ as a function of redshift. The derived value $\Omega_{\rm
+HI}=\left(7.02^{+0.59}_{-0.52}\right)\times10^{-4}$ at $z\sim 0.37$ from the
+combined analysis deviates at $ \sim 2.9\sigma$ from the ALFALFA result at
+$z\sim 0$. We conclude that the HIMF and $\Omega_{\rm HI}$ constraints that we
+derive from state-of-the-art deep interferometric surveys suggest an evolution
+of the HIMF and of the cosmic HI density, supporting a picture of smooth
+transition of the HI content of galaxies from $z\sim 0$ to $z\sim 1$.</p></br><a href="http://arxiv.org/pdf/2506.11976v1" target="_blank"><h2>How Visual Representations Map to Language Feature Space in Multimodal
+  LLMs</h2></a><strong><u>Authors:</u></strong>  Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Effective multimodal reasoning depends on the alignment of visual and
+linguistic representations, yet the mechanisms by which vision-language models
+(VLMs) achieve this alignment remain poorly understood. We introduce a
+methodological framework that deliberately maintains a frozen large language
+model (LLM) and a frozen vision transformer (ViT), connected solely by training
+a linear adapter during visual instruction tuning. This design is fundamental
+to our approach: by keeping the language model frozen, we ensure it maintains
+its original language representations without adaptation to visual data.
+Consequently, the linear adapter must map visual features directly into the
+LLM's existing representational space rather than allowing the language model
+to develop specialized visual understanding through fine-tuning. Our
+experimental design uniquely enables the use of pre-trained sparse autoencoders
+(SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned
+with the unchanged language model and serve as a snapshot of the learned
+language feature-representations. Through systematic analysis of SAE
+reconstruction error, sparsity patterns, and feature SAE descriptions, we
+reveal the layer-wise progression through which visual representations
+gradually align with language feature representations, converging in
+middle-to-later layers. This suggests a fundamental misalignment between ViT
+outputs and early LLM layers, raising important questions about whether current
+adapter-based architectures optimally facilitate cross-modal representation
+learning.</p></br><a href="http://arxiv.org/pdf/2506.11935v1" target="_blank"><h2>MIGHTEE-HI: The direct detection of neutral hydrogen in galaxies at
+  $z>0.25$</h2></a><strong><u>Authors:</u></strong>  Matt J. Jarvis, Madalina N. Tudorache, I. Heywood, Anastasia A. Ponomareva, M. Baes, Natasha Maddox, Kristine Spekkens, Andreea Varasteanu, C. L. Hale, Mario G. Santos, R. G. Varadaraj, Elizabeth A. K. Adams, Alessandro Bianchetti, Barbara Catinella, Jacinta Delhaize, M. Maksymowicz-Maciata, Pavel E. Mancera Piña, Hengxing Pan, Amélie Saintonge, Gauri Sharma, O. Ivy Wong</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 18 pages, 11 figures, submitted to MNRAS</br><p><strong><u>Abstract:</u></strong> Atomic hydrogen constitutes the gas reservoir from which molecular gas and
+star formation in galaxies emerges. However, the weakness of the line means it
+has been difficult to directly detect in all but the very local Universe. Here
+we present results from the first search using the MeerKAT International Tiered
+Extragalactic Exploration (MIGHTEE) Survey for high-redshift ($z>0.25$) H{\sc
+i} emission from individual galaxies. By searching for 21-cm emission centered
+on the position and redshift of optically-selected emission-line galaxies we
+overcome difficulties that hinder untargeted searches. We detect 11 galaxies at
+$z>0.25$, forming the first sample of $z>0.25$ detections with an
+interferometer, with the highest redshift detection at $z = 0.3841$. We find
+they have much larger H{\sc i} masses than their low-redshift H{\sc i}-selected
+counterparts for a given stellar mass. This can be explained by the much larger
+cosmological volume probed at these high redshifts, and does not require any
+evolution of the H{\sc i} mass function. We make the first-ever measurement of
+the baryonic Tully-Fisher relation (bTFr) with H{\sc i} at $z>0.25$ and find
+consistency with the local bTFr, but with tentative evidence of a flattening in
+the relation at these redshifts for higher-mass objects. This may signify
+evolution, in line with predictions from hydrodynamic simulations, or that the
+molecular gas mass in these high-mass galaxies could be significant. This study
+paves the way for future studies of H{\sc i} beyond the local Universe, using
+both searches targeted at known objects and via pure H{\sc i} selection.</p></br><a href="http://arxiv.org/pdf/2506.11207v1" target="_blank"><h2>JWST lens model for A370: A very low dark matter fraction for a
+  brightest cluster galaxy and lensing properties for the Dragon arc</h2></a><strong><u>Authors:</u></strong>  Jose M. Diego, Fengwu Sun, Jose M. Palencia, Xiaojing Lin, Marceau Limousin, Rachel Gledhill, Anna Niemiec, Wenlei Chen, Rogier A. Windhorst, Mitchell F. Strubble, Tom Broadhurst</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> 8 pages, 7 figures</br><p><strong><u>Abstract:</u></strong> We present a new lens model for the $z=0.375$ galaxy cluster Abell 370 based
+on previously spectroscopically confirmed lensed galaxies and new lensed
+systems identified in JWST data, including recent data from the MAGNIF program.
+Based on the best models able to reproduce two radial arcs near the BCGs, we
+compare the stellar mass to the total mass from the lens model and find that
+the fraction of dark matter in the south BCG is consistent with $\Lambda$CDM
+while in the north BCG we find a very small amount of dark matter, more
+consistent with alternative models to $\Lambda$CDM. We discuss possible causes
+for this and conclude that additional data is needed to clarify the situation.
+We study the lensing properties, magnification, time delay and strength of the
+critical curve, along the Dragon arc, where previous studies have reported tens
+of alleged microlensing events from supergiant stars at $z=0.7251$. The new
+lens model is able to reproduce the distribution of microlensing events with
+great accuracy. Some of the microlensing events may be reinterpreted as
+long-period Cepheid in future observations. We consider this possibility and
+study in more detail the challenges for such detection from intervening
+microlenses.</p></br><a href="http://arxiv.org/pdf/2506.10549v1" target="_blank"><h2>Origin of Radio Emission in Three Nearby Ultraluminous Infrared Galaxies
+  with Signatures of Luminous Buried Active Galactic Nuclei</h2></a><strong><u>Authors:</u></strong>  Takayuki J. Hayashi, Yoshiaki Hagiwara, Masatoshi Imanishi</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.HE</br><strong><u>Comments:</u></strong> 19 pages, 4 figures, 6 tables, accepted for publication in ApJ</br><p><strong><u>Abstract:</u></strong> We report multifrequency Very Long Baseline Array (VLBA) observations at 2.3
+and 8.4GHz of three nearby ultraluminous infrared galaxies, identified via
+mid-infrared spectroscopic analyses as hosting deeply embedded active galactic
+nuclei (AGNs). Milliarcsecond-scale observations at both frequencies reveal
+compact continuum emission in IRAS F00188$-$0856 and IRAS F01298$-$0744,
+accounting for $\sim10$% of the flux density measured on arcsecond scales. The
+non-detection in IRAS F00091$-$0738 and the lower limit on the intrinsic 8.4
+GHz brightness temperature of $10^{6.1}$ K in IRAS F01298$-$0744 yield no
+conclusive evidence of AGN-driven radio emission, whereas the measurement of
+$10^{7.8}$ K in IRAS F00188$-$0856 confirms an AGN origin. Thus, the
+mid-infrared AGN classification remains robust, with at least one object
+exhibiting compact radio emission indicative of AGN activity. We further
+investigate the high-frequency spectral steepening observed in all three
+galaxies. In each case, this steepening arises from spectral aging in diffuse
+kpc-scale emission, which is resolved out by the VLBA observations. One
+possible explanation for the steepening of the sample is merger-induced
+particle acceleration. IRAS F00188$-$0856 exhibits a peaked radio spectrum,
+characteristic of a young radio source, with the high-frequency steepening
+attributable to this AGN activity. Consequently, the spectral steepening at
+high frequencies arises from particles accelerated by merger dynamics or AGN
+activity.</p></br><a href="http://arxiv.org/pdf/2506.10357v1" target="_blank"><h2>Optimus-3: Towards Generalist Multimodal Minecraft Agents with Scalable
+  Task Experts</h2></a><strong><u>Authors:</u></strong>  Zaijing Li, Yuquan Xie, Rui Shao, Gongwei Chen, Weili Guan, Dongmei Jiang, Liqiang Nie</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> 24 pages, 10 figures</br><p><strong><u>Abstract:</u></strong> Recently, agents based on multimodal large language models (MLLMs) have
+achieved remarkable progress across various domains. However, building a
+generalist agent with capabilities such as perception, planning, action,
+grounding, and reflection in open-world environments like Minecraft remains
+challenges: insufficient domain-specific data, interference among heterogeneous
+tasks, and visual diversity in open-world settings. In this paper, we address
+these challenges through three key contributions. 1) We propose a
+knowledge-enhanced data generation pipeline to provide scalable and
+high-quality training data for agent development. 2) To mitigate interference
+among heterogeneous tasks, we introduce a Mixture-of-Experts (MoE) architecture
+with task-level routing. 3) We develop a Multimodal Reasoning-Augmented
+Reinforcement Learning approach to enhance the agent's reasoning ability for
+visual diversity in Minecraft. Built upon these innovations, we present
+Optimus-3, a general-purpose agent for Minecraft. Extensive experimental
+results demonstrate that Optimus-3 surpasses both generalist multimodal large
+language models and existing state-of-the-art agents across a wide range of
+tasks in the Minecraft environment. Project page:
+https://cybertronagent.github.io/Optimus-3.github.io/</p></br><a href="http://arxiv.org/pdf/2506.11601v1" target="_blank"><h2>Unveiling a Population of Strong Galaxy-Galaxy Lensed Faint Dusty
+  Star-Forming Galaxies</h2></a><strong><u>Authors:</u></strong>  Ting-Kai Yang, Chian-Chou Chen, Zhen-Kai Gao, Bovornpratch Vijarnwannaluk, Adarsh Ranjan, Wei-Hao Wang, Caitlin M. Casey, Tomotsugu Goto, Jeyhan S. Kartaltepe, Chayan Mondal, James Pearson, Chris Sedgwick, Stephen Serjeant</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 15 pages, 8 figures. Submitted to the ApJL</br><p><strong><u>Abstract:</u></strong> The measurements of the number density of galaxy-galaxy strong lenses can be
+used to put statistical constraints on the foreground mass distributions. Dusty
+galaxies uncovered in submillimeter surveys are particularly useful in this
+regard because of the large volume probed by these surveys. Previous
+discoveries of strong galaxy-galaxy lensed dusty galaxies are predominantly the
+brightest in the sky discovered by Herschel, SPT, and Planck. However, models
+have also predicted a non-negligible fraction of strong galaxy-galaxy lensed
+faint dusty galaxies, which were difficult to confirm due to technical
+difficulties. Utilizing the deepest SCUBA-2 submillimeter survey, STUDIES, in
+both the COSMOS and the UDS fields, together with a red JWST color selection
+method, we discover a population of 13 strong galaxy-galaxy lensed faint dusty
+galaxies. The rich ancillary data allow us to confirm their strongly lensed
+nature via estimates of redshifts and lens modeling. Our systematic search has
+allowed us to construct the 450$\mu$m number counts of strongly lensed sources
+down to the flux levels about an order of magnitude fainter than previous
+measurements. The measured lensing fractions of $\sim$1% are consistent with
+predictions from models that also successfully produce the number density of
+the strong galaxy-galaxy lensed bright dusty galaxies. Future searches from
+Euclid and Roman are expected to discover orders of magnitude more strongly
+lensed faint dusty galaxies.</p></br><a href="http://arxiv.org/pdf/2506.10246v1" target="_blank"><h2>Search for Primordial Black Holes from the International Space Station
+  with the SQM-ISS detector</h2></a><strong><u>Authors:</u></strong>  Francesca Liberatori, Matteo Battisti, Marco Casolino, Laura Marcelli, Zbigniew Plebaniak, Enzo Reali</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE, physics.ins-det</br><strong><u>Comments:</u></strong> submitted to Particles 2025</br><p><strong><u>Abstract:</u></strong> In this paper we discuss the observational capabilities and sensitivity of
+the SQM-ISS detector to primordial black holes. The SQM-ISS experiment aims to
+detect slow, non relativistic massive particles within cosmic rays, using a
+detector on board the International Space Station. The device is designed to
+recognize the passage of highly penetrating and dense particles in a wide range
+of mass and charge states such as Strange Quark Matter (SQM). These particles,
+traveling at speeds typical of gravitationally bound objects in the galaxy -
+around 250 km/s - are also possible candidates of dark matter. The ability of
+SQM-ISS to identify penetrating, massive and slow-moving objects allows it also
+to be sensitive to the detection of primordial black holes. We discuss how
+black holes, traveling through the detector at velocities compatible with
+galactic orbital speeds, can be identified based on their interaction
+signatures.</p></br><a href="http://arxiv.org/pdf/2506.10518v1" target="_blank"><h2>Testing the local supervoid solution to the Hubble tension with direct
+  distance tracers</h2></a><strong><u>Authors:</u></strong>  Richard Stiskalek, Harry Desmond, Sergij Mazurenko, Indranil Banik</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> 14 pages, 7 figures. To be submitted to MNRAS</br><p><strong><u>Abstract:</u></strong> Several observational studies suggest that the local few hundred Mpc around
+the Local Group are significantly underdense based on source number counts in
+redshift space across much of the electromagnetic spectrum, particularly in
+near-infrared galaxy counts. This ``Keenan--Barger--Cowie (KBC) void'', ``Local
+Hole'', or ``local supervoid'', would have significant ramifications for the
+Hubble tension by generating outflows that masquerade as an enhanced local
+expansion rate. We evaluate models for the KBC void capable of resolving the
+Hubble tension with a background Planck cosmology. We fit these models to
+direct distances from the Tully--Fisher catalogue of the CosmicFlows-4
+compilation using a field-level forward model. Depending on the adopted void
+density profile, we find the derived velocity fields to prefer a void size of
+less than 70 Mpc, which is less than 10 per cent of the fiducial size found by
+Haslbauer et al. based on the KBC luminosity density data. The predicted local
+Hubble constant is $72.1^{+0.9}_{-0.8}$, $70.4^{+0.4}_{-0.4}$, or
+$70.2^{+0.5}_{-0.4}$ km/s/Mpc for an initial underdensity profile that is
+exponential, Gaussian, or Maxwell-Boltzmann, respectively. The latter two
+ameliorate the Hubble tension to within $3\sigma$ of the 4-anchor distance
+ladder approach of Breuval et al. giving $73.2 \pm 0.9$ km/s/Mpc. The
+exponential profile does achieve consistency with this measurement at just over
+$1\sigma$, but it is disfavoured by the Bayesian evidence. The preferred models
+produce bulk flow curves that disagree with recent estimates from
+CosmicFlows-4, despite the void models being flexible enough to match such
+estimates.</p></br><a href="http://arxiv.org/pdf/2506.11501v1" target="_blank"><h2>Diabetes Prediction and Management Using Machine Learning Approaches</h2></a><strong><u>Authors:</u></strong>  Mowafaq Salem Alzboon, Muhyeeddin Alqaraleh, Mohammad Subhi Al-Batah</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Diabetes has emerged as a significant global health issue, especially with
+the increasing number of cases in many countries. This trend Underlines the
+need for a greater emphasis on early detection and proactive management to
+avert or mitigate the severe health complications of this disease. Over recent
+years, machine learning algorithms have shown promising potential in predicting
+diabetes risk and are beneficial for practitioners. Objective: This study
+highlights the prediction capabilities of statistical and non-statistical
+machine learning methods over Diabetes risk classification in 768 samples from
+the Pima Indians Diabetes Database. It consists of the significant demographic
+and clinical features of age, body mass index (BMI) and blood glucose levels
+that greatly depend on the vulnerability against Diabetes. The experimentation
+assesses the various types of machine learning algorithms in terms of accuracy
+and effectiveness regarding diabetes prediction. These algorithms include
+Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, Naive
+Bayes, Support Vector Machine, Gradient Boosting and Neural Network Models. The
+results show that the Neural Network algorithm gained the highest predictive
+accuracy with 78,57 %, and then the Random Forest algorithm had the second
+position with 76,30 % accuracy. These findings show that machine learning
+techniques are not just highly effective. Still, they also can potentially act
+as early screening tools in predicting Diabetes within a data-driven fashion
+with valuable information on who is more likely to get affected. In addition,
+this study can help to realize the potential of machine learning for timely
+intervention over the longer term, which is a step towards reducing health
+outcomes and disease burden attributable to Diabetes on healthcare systems</p></br><a href="http://arxiv.org/pdf/2506.10768v1" target="_blank"><h2>Detectability of massive binary black holes with sub-mHz gravitational
+  wave missions</h2></a><strong><u>Authors:</u></strong>  Renjie Wang, Yumeng Xu, Gang Wang, Bin Hu, Rong-Gen Cai</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> 18 pages, 10 figures</br><p><strong><u>Abstract:</u></strong> Beyond LISA, proposed space-based gravitational wave (GW) missions aim to
+explore the sub-millihertz to microhertz frequency band, with one key objective
+being the detection of massive binary black hole (MBBH) mergers across cosmic
+distances. In this work, we investigate the detection and localization
+capabilities of future sub-mHz GW observatories for MBBH coalescences.
+Including the full galactic foreground noise, we find that signal-to-noise
+ratios (SNRs) can reach several thousand across a wide range of redshifts. We
+evaluate three representative orbital configurations--non-precessing and
+precessing with different inclination angles--and analyze their localization
+performance for various MBBH populations. In the non-precessing case, a
+two-hemisphere degeneracy arises when only the dominant (2,2) mode is
+considered, which is effectively resolved by including higher-order modes.
+These modes contribute to a more uniform performance across all configurations,
+thereby mitigating the prior advantage of precessing mission orbits. Sub-mHz
+missions operating in the [10 $\mu$Hz, 10 mHz] band partially overlap with
+LISA's range but provide enhanced sensitivity to lower-frequency GWs due to
+their longer interferometric baselines. This results in significantly improved
+localization of high-mass MBBHs, enhancing the prospects for multi-messenger
+astronomy and precision cosmology. Moreover, the high SNRs attainable with
+sub-mHz detectors could enable stringent tests of general relativity and
+alternative theories of gravity.</p></br><a href="http://arxiv.org/pdf/2506.10328v1" target="_blank"><h2>Towards Scalable SOAP Note Generation: A Weakly Supervised Multimodal
+  Framework</h2></a><strong><u>Authors:</u></strong>  Sadia Kamal, Tim Oates, Joy Wan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted at IEEE/CVF Computer Society Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)</br><p><strong><u>Abstract:</u></strong> Skin carcinoma is the most prevalent form of cancer globally, accounting for
+over $8 billion in annual healthcare expenditures. In clinical settings,
+physicians document patient visits using detailed SOAP (Subjective, Objective,
+Assessment, and Plan) notes. However, manually generating these notes is
+labor-intensive and contributes to clinician burnout. In this work, we propose
+a weakly supervised multimodal framework to generate clinically structured SOAP
+notes from limited inputs, including lesion images and sparse clinical text.
+Our approach reduces reliance on manual annotations, enabling scalable,
+clinically grounded documentation while alleviating clinician burden and
+reducing the need for large annotated data. Our method achieves performance
+comparable to GPT-4o, Claude, and DeepSeek Janus Pro across key clinical
+relevance metrics. To evaluate clinical quality, we introduce two novel metrics
+MedConceptEval and Clinical Coherence Score (CCS) which assess semantic
+alignment with expert medical concepts and input features, respectively.</p></br><a href="http://arxiv.org/pdf/2506.11363v1" target="_blank"><h2>FAUST XXVII: The circumbinary disk and the outflow of the L 1551 IRS 5
+  binary system</h2></a><strong><u>Authors:</u></strong>  Aurora Durán, Laurent Loinard, Pedro R. Rivera-Ortiz, Geovanni Cortés-Rangel, Eleonora Bianchi, Paola Caselli, Cecilia Ceccarelli, Claire J. Chandler, Claudio Codella, Nicolás Cuello, Marta De Simone, Tomoyuki Hanawa, Doug Johnstone, François Menard, Maria José Maureira, Anna Miotello, Linda Podio, Takeshi Sakai, Giovanni Sabatini, Leonardo Testi, Charlotte Vastel, Ziwei Zhang, Nami Sakai, Satoshi Yamamoto</br><strong><u>Categories:</u></strong> astro-ph.SR, astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Using continuum and $\text{C}^{18}\text{O}\:(2-1)$ line data obtained from
+the large ALMA program FAUST, we studied the structure of the protostellar
+binary system L1551 IRS5 at scales between 30 and 3,000 au to constrain its
+properties, from the circumstellar and circumbinary disks up to the envelope
+and outflow scales, which exhibits complex and entangled structures at the
+scales of its inner and outer envelopes, presumably caused by the influence of
+the central binary. Assuming a dust-to-gas ratio of 100, we calculated the
+dust+gas mass for the circumbinary disk and each circumstellar disk of the
+binary, obtaining 0.018 M$_{\odot}$, for the circumbinary disk, 0.004
+M$_{\odot}$, and 0.002 M$_{\odot}$, for the northern and southern circumstellar
+disk respectively. From the line emission, we retrieved the gas masses for each
+structure component. With the $\text{C}^{18}\text{O}\:(2-1)$ PV diagram along
+the circumbinary disk, we were able to constrain the centrifugal barrier,
+$r_{CB}=55$ au, update the specific angular momentum,
+$j\sim270$~au~km~s$^{-1}$. We built an analytical model that can be used to
+predict the influence of the morphology of the outflow and a few dynamic
+features that can reproduce the system emission, allowing us to explain and
+discern the outflow contribution from the complex emission due to the binary.
+Additionally, we inferred the density power law index, $\alpha=1.7$, and the
+envelope rotation velocity, $v_{c}=2$~km~s$^{-1}$. Finally, the observations
+gave us the physical constraints to obtain a coherent outflow model for L1551
+IRS5.</p></br><a href="http://arxiv.org/pdf/2506.10530v1" target="_blank"><h2>On the use and interpretation of signal-model indistinguishability
+  measures for gravitational-wave astronomy</h2></a><strong><u>Authors:</u></strong>  Jonathan E. Thompson, Charlie Hoy, Edward Fauchon-Jones, Mark Hannam</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> 22 pages, 11 figures</br><p><strong><u>Abstract:</u></strong> The difference ("mismatch") between two gravitational-wave (GW) signals is
+often used to estimate the signal-to-noise ratio (SNR) at which they will be
+distinguishable in a measurement or, alternatively, when the errors in a signal
+model will lead to biased measurements. It is well known that the standard
+approach to calculate this "indistinguishability SNR" is too conservative: a
+model may fail the criterion at a given SNR, but not necessarily incur a biased
+measurement of any individual parameters. This problem can be solved by taking
+into account errors orthogonal to the model space (which therefore do not
+induce a bias), and calculating indistinguishability SNRs for individual
+parameters, rather than the full $N$-dimensional parameter space. We illustrate
+this approach with the simple example of aligned-spin binary-black-hole
+signals, and calculate accurate estimates of the SNR at which each parameter
+measurement will be biased. In general biases occur at much higher SNRs than
+predicted from the standard mismatch calculation. Which parameters are most
+easily biased depends sensitively on the details of a given waveform model, and
+the location in parameter space, and in some cases the bias SNR is as high as
+the conservative estimate. We also illustrate how the parameter bias SNR can be
+used to robustly specify waveform accuracy requirements for future detectors.</p></br><a href="http://arxiv.org/pdf/2506.11815v1" target="_blank"><h2>Diffusion-Based Electrocardiography Noise Quantification via Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Tae-Seong Han, Jae-Wook Heo, Hakseung Kim, Cheol-Hui Lee, Hyub Huh, Eue-Keun Choi, Dong-Joo Kim</br><strong><u>Categories:</u></strong> eess.SP, cs.AI, cs.LG, eess.IV</br><strong><u>Comments:</u></strong> This manuscript contains 17 pages, 10 figures, and 3 tables</br><p><strong><u>Abstract:</u></strong> Electrocardiography (ECG) signals are often degraded by noise, which
+complicates diagnosis in clinical and wearable settings. This study proposes a
+diffusion-based framework for ECG noise quantification via reconstruction-based
+anomaly detection, addressing annotation inconsistencies and the limited
+generalizability of conventional methods. We introduce a distributional
+evaluation using the Wasserstein-1 distance ($W_1$), comparing the
+reconstruction error distributions between clean and noisy ECGs to mitigate
+inconsistent annotations. Our final model achieved robust noise quantification
+using only three reverse diffusion steps. The model recorded a macro-average
+$W_1$ score of 1.308 across the benchmarks, outperforming the next-best method
+by over 48%. External validations demonstrated strong generalizability,
+supporting the exclusion of low-quality segments to enhance diagnostic accuracy
+and enable timely clinical responses to signal degradation. The proposed method
+enhances clinical decision-making, diagnostic accuracy, and real-time ECG
+monitoring capabilities, supporting future advancements in clinical and
+wearable ECG applications.</p></br><a href="http://arxiv.org/pdf/2506.11790v1" target="_blank"><h2>Why Do Class-Dependent Evaluation Effects Occur with Time Series Feature
+  Attributions? A Synthetic Data Investigation</h2></a><strong><u>Authors:</u></strong>  Gregor Baer, Isel Grau, Chao Zhang, Pieter Van Gorp</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Evaluating feature attribution methods represents a critical challenge in
+explainable AI (XAI), as researchers typically rely on perturbation-based
+metrics when ground truth is unavailable. However, recent work demonstrates
+that these evaluation metrics can show different performance across predicted
+classes within the same dataset. These "class-dependent evaluation effects"
+raise questions about whether perturbation analysis reliably measures
+attribution quality, with direct implications for XAI method development and
+the trustworthiness of evaluation techniques. We investigate under which
+conditions these class-dependent effects arise by conducting controlled
+experiments with synthetic time series data where ground truth feature
+locations are known. We systematically vary feature types and class contrasts
+across binary classification tasks, then compare perturbation-based degradation
+scores with ground truth-based precision-recall metrics using multiple
+attribution methods. Our experiments demonstrate that class-dependent effects
+emerge with both evaluation approaches even in simple scenarios with temporally
+localized features, triggered by basic variations in feature amplitude or
+temporal extent between classes. Most critically, we find that
+perturbation-based and ground truth metrics frequently yield contradictory
+assessments of attribution quality across classes, with weak correlations
+between evaluation approaches. These findings suggest that researchers should
+interpret perturbation-based metrics with care, as they may not always align
+with whether attributions correctly identify discriminating features. These
+findings reveal opportunities to reconsider what attribution evaluation
+actually measures and to develop more comprehensive evaluation frameworks that
+capture multiple dimensions of attribution quality.</p></br><a href="http://arxiv.org/pdf/2506.11328v1" target="_blank"><h2>An Attention-based Spatio-Temporal Neural Operator for Evolving Physics</h2></a><strong><u>Authors:</u></strong>  Vispi Karkaria, Doksoo Lee, Yi-Ping Chen, Yue Yu, Wei Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.CE</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> In scientific machine learning (SciML), a key challenge is learning unknown,
+evolving physical processes and making predictions across spatio-temporal
+scales. For example, in real-world manufacturing problems like additive
+manufacturing, users adjust known machine settings while unknown environmental
+parameters simultaneously fluctuate. To make reliable predictions, it is
+desired for a model to not only capture long-range spatio-temporal interactions
+from data but also adapt to new and unknown environments; traditional machine
+learning models excel at the first task but often lack physical
+interpretability and struggle to generalize under varying environmental
+conditions. To tackle these challenges, we propose the Attention-based
+Spatio-Temporal Neural Operator (ASNO), a novel architecture that combines
+separable attention mechanisms for spatial and temporal interactions and adapts
+to unseen physical parameters. Inspired by the backward differentiation formula
+(BDF), ASNO learns a transformer for temporal prediction and extrapolation and
+an attention-based neural operator for handling varying external loads,
+enhancing interpretability by isolating historical state contributions and
+external forces, enabling the discovery of underlying physical laws and
+generalizability to unseen physical environments. Empirical results on SciML
+benchmarks demonstrate that ASNO outperforms over existing models, establishing
+its potential for engineering applications, physics discovery, and
+interpretable machine learning.</p></br><a href="http://arxiv.org/pdf/2506.11170v1" target="_blank"><h2>PromptTSS: A Prompting-Based Approach for Interactive Multi-Granularity
+  Time Series Segmentation</h2></a><strong><u>Authors:</u></strong>  Ching Chang, Ming-Chih Lo, Wen-Chih Peng, Tien-Fu Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> This paper is currently under review. The code will be made available upon acceptance</br><p><strong><u>Abstract:</u></strong> Multivariate time series data, collected across various fields such as
+manufacturing and wearable technology, exhibit states at multiple levels of
+granularity, from coarse-grained system behaviors to fine-grained, detailed
+events. Effectively segmenting and integrating states across these different
+granularities is crucial for tasks like predictive maintenance and performance
+optimization. However, existing time series segmentation methods face two key
+challenges: (1) the inability to handle multiple levels of granularity within a
+unified model, and (2) limited adaptability to new, evolving patterns in
+dynamic environments. To address these challenges, we propose PromptTSS, a
+novel framework for time series segmentation with multi-granularity states.
+PromptTSS uses a unified model with a prompting mechanism that leverages label
+and boundary information to guide segmentation, capturing both coarse- and
+fine-grained patterns while adapting dynamically to unseen patterns.
+Experiments show PromptTSS improves accuracy by 24.49% in multi-granularity
+segmentation, 17.88% in single-granularity segmentation, and up to 599.24% in
+transfer learning, demonstrating its adaptability to hierarchical states and
+evolving time series dynamics.</p></br><a href="http://arxiv.org/pdf/2506.10941v1" target="_blank"><h2>VINCIE: Unlocking In-context Image Editing from Video</h2></a><strong><u>Authors:</u></strong>  Leigang Qu, Feng Cheng, Ziyan Yang, Qi Zhao, Shanchuan Lin, Yichun Shi, Yicong Li, Wenjie Wang, Tat-Seng Chua, Lu Jiang</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.CL, cs.LG, cs.MM</br><strong><u>Comments:</u></strong> Project page:this https URL</br><p><strong><u>Abstract:</u></strong> In-context image editing aims to modify images based on a contextual sequence
+comprising text and previously generated images. Existing methods typically
+depend on task-specific pipelines and expert models (e.g., segmentation and
+inpainting) to curate training data. In this work, we explore whether an
+in-context image editing model can be learned directly from videos. We
+introduce a scalable approach to annotate videos as interleaved multimodal
+sequences. To effectively learn from this data, we design a block-causal
+diffusion transformer trained on three proxy tasks: next-image prediction,
+current segmentation prediction, and next-segmentation prediction.
+Additionally, we propose a novel multi-turn image editing benchmark to advance
+research in this area. Extensive experiments demonstrate that our model
+exhibits strong in-context image editing capabilities and achieves
+state-of-the-art results on two multi-turn image editing benchmarks. Despite
+being trained exclusively on videos, our model also shows promising abilities
+in multi-concept composition, story generation, and chain-of-editing
+applications.</p></br><a href="http://arxiv.org/pdf/2506.11772v1" target="_blank"><h2>CLIP Meets Diffusion: A Synergistic Approach to Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Byeongchan Lee, John Won, Seunghyun Lee, Jinwoo Shin</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Anomaly detection is a complex problem due to the ambiguity in defining
+anomalies, the diversity of anomaly types (e.g., local and global defect), and
+the scarcity of training data. As such, it necessitates a comprehensive model
+capable of capturing both low-level and high-level features, even with limited
+data. To address this, we propose CLIPFUSION, a method that leverages both
+discriminative and generative foundation models. Specifically, the CLIP-based
+discriminative model excels at capturing global features, while the
+diffusion-based generative model effectively captures local details, creating a
+synergistic and complementary approach. Notably, we introduce a methodology for
+utilizing cross-attention maps and feature maps extracted from diffusion models
+specifically for anomaly detection. Experimental results on benchmark datasets
+(MVTec-AD, VisA) demonstrate that CLIPFUSION consistently outperforms baseline
+methods, achieving outstanding performance in both anomaly segmentation and
+classification. We believe that our method underscores the effectiveness of
+multi-modal and multi-model fusion in tackling the multifaceted challenges of
+anomaly detection, providing a scalable solution for real-world applications.</p></br><a href="http://arxiv.org/pdf/2506.10918v1" target="_blank"><h2>Sequential-Parallel Duality in Prefix Scannable Models</h2></a><strong><u>Authors:</u></strong>  Morris Yau, Sharut Gupta, Valerie Engelmayer, Kazuki Irie, Stefanie Jegelka, Jacob Andreas</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Modern neural sequence models are designed to meet the dual mandate of
+parallelizable training and fast sequential inference. Recent developments have
+given rise to various models, such as Gated Linear Attention (GLA) and Mamba,
+that achieve such ``sequential-parallel duality.'' This raises a natural
+question: can we characterize the full class of neural sequence models that
+support near-constant-time parallel evaluation and linear-time, constant-space
+sequential inference? We begin by describing a broad class of such models --
+state space models -- as those whose state updates can be computed using the
+classic parallel prefix scan algorithm with a custom associative aggregation
+operator. We then define a more general class, Prefix-Scannable Models (PSMs),
+by relaxing the state aggregation operator to allow arbitrary (potentially
+non-associative) functions such as softmax attention. This generalization
+unifies many existing architectures, including element-wise RNNs (e.g., Mamba)
+and linear transformers (e.g., GLA, Mamba2, mLSTM), while also introducing new
+models with softmax-like operators that achieve O(1) amortized compute per
+token and log(N) memory for sequence length N. We empirically evaluate such
+models on illustrative small-scale language modeling and canonical synthetic
+tasks, including state tracking and associative recall. Empirically, we find
+that PSMs retain the expressivity of transformer-based architectures while
+matching the inference efficiency of state space models -- in some cases
+exhibiting better length generalization than either.</p></br><a href="http://arxiv.org/pdf/2506.11761v1" target="_blank"><h2>Using Deep Operators to Create Spatio-temporal Surrogates for Dynamical
+  Systems under Uncertainty</h2></a><strong><u>Authors:</u></strong>  Jichuan Tang, Patrick T. Brewick, Ryan G. McClarren, Christopher Sweet</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Spatio-temporal data, which consists of responses or measurements gathered at
+different times and positions, is ubiquitous across diverse applications of
+civil infrastructure. While SciML methods have made significant progress in
+tackling the issue of response prediction for individual time histories,
+creating a full spatial-temporal surrogate remains a challenge. This study
+proposes a novel variant of deep operator networks (DeepONets), namely the
+full-field Extended DeepONet (FExD), to serve as a spatial-temporal surrogate
+that provides multi-output response predictions for dynamical systems. The
+proposed FExD surrogate model effectively learns the full solution operator
+across multiple degrees of freedom by enhancing the expressiveness of the
+branch network and expanding the predictive capabilities of the trunk network.
+The proposed FExD surrogate is deployed to simultaneously capture the dynamics
+at several sensing locations along a testbed model of a cable-stayed bridge
+subjected to stochastic ground motions. The ensuing response predictions from
+the FExD are comprehensively compared against both a vanilla DeepONet and a
+modified spatio-temporal Extended DeepONet. The results demonstrate the
+proposed FExD can achieve both superior accuracy and computational efficiency,
+representing a significant advancement in operator learning for structural
+dynamics applications.</p></br><a href="http://arxiv.org/pdf/2506.11639v1" target="_blank"><h2>Recursive KalmanNet: Deep Learning-Augmented Kalman Filtering for State
+  Estimation with Consistent Uncertainty Quantification</h2></a><strong><u>Authors:</u></strong>  Hassan Mortada, Cyril Falcon, Yanis Kahil, Mathéo Clavaud, Jean-Philippe Michel</br><strong><u>Categories:</u></strong> eess.SP, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 5 pages, 3 figures. Accepted for publication in EUSIPCO 2025 proceedings</br><p><strong><u>Abstract:</u></strong> State estimation in stochastic dynamical systems with noisy measurements is a
+challenge. While the Kalman filter is optimal for linear systems with
+independent Gaussian white noise, real-world conditions often deviate from
+these assumptions, prompting the rise of data-driven filtering techniques. This
+paper introduces Recursive KalmanNet, a Kalman-filter-informed recurrent neural
+network designed for accurate state estimation with consistent error covariance
+quantification. Our approach propagates error covariance using the recursive
+Joseph's formula and optimizes the Gaussian negative log-likelihood.
+Experiments with non-Gaussian measurement white noise demonstrate that our
+model outperforms both the conventional Kalman filter and an existing
+state-of-the-art deep learning based estimator.</p></br><a href="http://arxiv.org/pdf/2506.10959v1" target="_blank"><h2>Understanding In-Context Learning on Structured Manifolds: Bridging
+  Attention to Kernel Methods</h2></a><strong><u>Authors:</u></strong>  Zhaiming Shen, Alexander Hsu, Rongjie Lai, Wenjing Liao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.ST, stat.TH</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> While in-context learning (ICL) has achieved remarkable success in natural
+language and vision domains, its theoretical understanding--particularly in the
+context of structured geometric data--remains unexplored. In this work, we
+initiate a theoretical study of ICL for regression of H\"older functions on
+manifolds. By establishing a novel connection between the attention mechanism
+and classical kernel methods, we derive generalization error bounds in terms of
+the prompt length and the number of training tasks. When a sufficient number of
+training tasks are observed, transformers give rise to the minimax regression
+rate of H\"older functions on manifolds, which scales exponentially with the
+intrinsic dimension of the manifold, rather than the ambient space dimension.
+Our result also characterizes how the generalization error scales with the
+number of training tasks, shedding light on the complexity of transformers as
+in-context algorithm learners. Our findings provide foundational insights into
+the role of geometry in ICL and novels tools to study ICL of nonlinear models.</p></br><a href="http://arxiv.org/pdf/2506.11456v1" target="_blank"><h2>Fast Bayesian Optimization of Function Networks with Partial Evaluations</h2></a><strong><u>Authors:</u></strong>  Poompol Buathong, Peter I. Frazier</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 16 pages, 8 figures, 1 table</br><p><strong><u>Abstract:</u></strong> Bayesian optimization of function networks (BOFN) is a framework for
+optimizing expensive-to-evaluate objective functions structured as networks,
+where some nodes' outputs serve as inputs for others. Many real-world
+applications, such as manufacturing and drug discovery, involve function
+networks with additional properties - nodes that can be evaluated independently
+and incur varying costs. A recent BOFN variant, p-KGFN, leverages this
+structure and enables cost-aware partial evaluations, selectively querying only
+a subset of nodes at each iteration. p-KGFN reduces the number of expensive
+objective function evaluations needed but has a large computational overhead:
+choosing where to evaluate requires optimizing a nested Monte Carlo-based
+acquisition function for each node in the network. To address this, we propose
+an accelerated p-KGFN algorithm that reduces computational overhead with only a
+modest loss in query efficiency. Key to our approach is generation of
+node-specific candidate inputs for each node in the network via one inexpensive
+global Monte Carlo simulation. Numerical experiments show that our method
+maintains competitive query efficiency while achieving up to a 16x speedup over
+the original p-KGFN algorithm.</p></br><a href="http://arxiv.org/pdf/2506.10664v1" target="_blank"><h2>Logarithmic Smoothing for Adaptive PAC-Bayesian Off-Policy Learning</h2></a><strong><u>Authors:</u></strong>  Maxime Haddouche, Otmane Sakhi</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Off-policy learning serves as the primary framework for learning optimal
+policies from logged interactions collected under a static behavior policy. In
+this work, we investigate the more practical and flexible setting of adaptive
+off-policy learning, where policies are iteratively refined and re-deployed to
+collect higher-quality data. Building on the success of PAC-Bayesian learning
+with Logarithmic Smoothing (LS) in static settings, we extend this framework to
+the adaptive scenario using tools from online PAC-Bayesian theory. Furthermore,
+we demonstrate that a principled adjustment to the LS estimator naturally
+accommodates multiple rounds of deployment and yields faster convergence rates
+under mild conditions. Our method matches the performance of leading offline
+approaches in static settings, and significantly outperforms them when
+intermediate policy deployments are allowed. Empirical evaluations across
+diverse scenarios highlight both the advantages of adaptive data collection and
+the strength of the PAC-Bayesian formulation.</p></br><a href="http://arxiv.org/pdf/2506.10617v1" target="_blank"><h2>Deep Learning-Based Digitization of Overlapping ECG Images with
+  Open-Source Python Code</h2></a><strong><u>Authors:</u></strong>  Reza Karbasi, Masoud Rahimi, Abdol-Hossein Vahabie, Hadi Moradi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This paper addresses the persistent challenge of accurately digitizing
+paper-based electrocardiogram (ECG) recordings, with a particular focus on
+robustly handling single leads compromised by signal overlaps-a common yet
+under-addressed issue in existing methodologies. We propose a two-stage
+pipeline designed to overcome this limitation. The first stage employs a U-Net
+based segmentation network, trained on a dataset enriched with overlapping
+signals and fortified with custom data augmentations, to accurately isolate the
+primary ECG trace. The subsequent stage converts this refined binary mask into
+a time-series signal using established digitization techniques, enhanced by an
+adaptive grid detection module for improved versatility across different ECG
+formats and scales. Our experimental results demonstrate the efficacy of our
+approach. The U-Net architecture achieves an IoU of 0.87 for the fine-grained
+segmentation task. Crucially, our proposed digitization method yields superior
+performance compared to a well-established baseline technique across both
+non-overlapping and challenging overlapping ECG samples. For non-overlapping
+signals, our method achieved a Mean Squared Error (MSE) of 0.0010 and a Pearson
+Correlation Coefficient (rho) of 0.9644, compared to 0.0015 and 0.9366,
+respectively, for the baseline. On samples with signal overlap, our method
+achieved an MSE of 0.0029 and a rho of 0.9641, significantly improving upon the
+baseline's 0.0178 and 0.8676. This work demonstrates an effective strategy to
+significantly enhance digitization accuracy, especially in the presence of
+signal overlaps, thereby laying a strong foundation for the reliable conversion
+of analog ECG records into analyzable digital data for contemporary research
+and clinical applications. The implementation is publicly available at this
+GitHub repository: https://github.com/masoudrahimi39/ECG-code.</p></br><a href="http://arxiv.org/pdf/2506.11637v1" target="_blank"><h2>Multivariate Time-series Transformer Embeddings for Light Curves</h2></a><strong><u>Authors:</u></strong>  Gabriel Chiong, Ignacio Becker, Pavlos Protopapas</br><strong><u>Categories:</u></strong> astro-ph.IM</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Astronomical surveys produce time-series data by observing stellar objects
+across multiple wavelength bands. Foundational transformer-based models, such
+as Astromer, encode each time-series as a sequence of embeddings of uniform
+dimensions. However, such models operate independently on each band at a single
+time and do not natively leverage information across telescope filters. We
+extend this framework by introducing a fusion mechanism that maps the
+collection of single-band embeddings to a unified sequence representation,
+enabling multiband modeling for downstream tasks. The challenge lies in
+devising a mechanism within the encoder to coordinate between data from
+different wavelengths, which are often recorded at asynchronous times. We
+pre-train multiband models on a subset of 600000 high signal-to-noise light
+curves from the MACHO survey and fine-tune them using the Alcock and ATLAS
+survey datasets. Experimental results show that both our proposed multiband
+architectures outperform the single-band models by approximately 10% in
+F1-score, with jointly pre-trained multiband encoders further improving
+performance over a collection of independently pre-trained single-band
+encoders. Furthermore, our experiments show that there are minimal differences
+in multiband performance when sampling individual band data asynchronously
+versus sampling all individual bands on the same set of time-steps. However,
+jointly pre-trained models can take more than twice the time to pre-train.
+These results demonstrate the trade-offs of the multiband approach where
+multivariate data are available.</p></br><a href="http://arxiv.org/pdf/2506.10559v1" target="_blank"><h2>From Images to Insights: Explainable Biodiversity Monitoring with Plain
+  Language Habitat Explanations</h2></a><strong><u>Authors:</u></strong>  Yutong Zhou, Masahiro Ryo</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.ET</br><strong><u>Comments:</u></strong> Code will be released at:this https URL</br><p><strong><u>Abstract:</u></strong> Explaining why the species lives at a particular location is important for
+understanding ecological systems and conserving biodiversity. However, existing
+ecological workflows are fragmented and often inaccessible to non-specialists.
+We propose an end-to-end visual-to-causal framework that transforms a species
+image into interpretable causal insights about its habitat preference. The
+system integrates species recognition, global occurrence retrieval,
+pseudo-absence sampling, and climate data extraction. We then discover causal
+structures among environmental features and estimate their influence on species
+occurrence using modern causal inference methods. Finally, we generate
+statistically grounded, human-readable causal explanations from structured
+templates and large language models. We demonstrate the framework on a bee and
+a flower species and report early results as part of an ongoing project,
+showing the potential of the multimodal AI assistant backed up by a recommended
+ecological modeling practice for describing species habitat in
+human-understandable language.</p></br><a href="http://arxiv.org/pdf/2506.11242v1" target="_blank"><h2>A Causal Lens for Learning Long-term Fair Policies</h2></a><strong><u>Authors:</u></strong>  Jacob Lear, Lu Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> This is an extension to the paper which was accepted to the 13th International Conference on Learning Representations</br><p><strong><u>Abstract:</u></strong> Fairness-aware learning studies the development of algorithms that avoid
+discriminatory decision outcomes despite biased training data. While most
+studies have concentrated on immediate bias in static contexts, this paper
+highlights the importance of investigating long-term fairness in dynamic
+decision-making systems while simultaneously considering instantaneous fairness
+requirements. In the context of reinforcement learning, we propose a general
+framework where long-term fairness is measured by the difference in the average
+expected qualification gain that individuals from different groups could
+obtain.Then, through a causal lens, we decompose this metric into three
+components that represent the direct impact, the delayed impact, as well as the
+spurious effect the policy has on the qualification gain. We analyze the
+intrinsic connection between these components and an emerging fairness notion
+called benefit fairness that aims to control the equity of outcomes in
+decision-making. Finally, we develop a simple yet effective approach for
+balancing various fairness notions.</p></br><a href="http://arxiv.org/pdf/2506.11777v1" target="_blank"><h2>Self-supervised Learning of Echocardiographic Video Representations via
+  Online Cluster Distillation</h2></a><strong><u>Authors:</u></strong>  Divyanshu Mishra, Mohammadreza Salehi, Pramit Saha, Olga Patey, Aris T. Papageorghiou, Yuki M. Asano, J. Alison Noble</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.CY, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Self-supervised learning (SSL) has achieved major advances in natural images
+and video understanding, but challenges remain in domains like echocardiography
+(heart ultrasound) due to subtle anatomical structures, complex temporal
+dynamics, and the current lack of domain-specific pre-trained models. Existing
+SSL approaches such as contrastive, masked modeling, and clustering-based
+methods struggle with high intersample similarity, sensitivity to low PSNR
+inputs common in ultrasound, or aggressive augmentations that distort
+clinically relevant features. We present DISCOVR (Distilled Image Supervision
+for Cross Modal Video Representation), a self-supervised dual branch framework
+for cardiac ultrasound video representation learning. DISCOVR combines a
+clustering-based video encoder that models temporal dynamics with an online
+image encoder that extracts fine-grained spatial semantics. These branches are
+connected through a semantic cluster distillation loss that transfers
+anatomical knowledge from the evolving image encoder to the video encoder,
+enabling temporally coherent representations enriched with fine-grained
+semantic understanding. Evaluated on six echocardiography datasets spanning
+fetal, pediatric, and adult populations, DISCOVR outperforms both specialized
+video anomaly detection methods and state-of-the-art video-SSL baselines in
+zero-shot and linear probing setups, and achieves superior segmentation
+transfer.</p></br></body>

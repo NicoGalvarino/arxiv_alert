@@ -1,0 +1,357 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 03 Jun 2025 to 05 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.03964v1" target="_blank"><h2>Causality-Aware Contrastive Learning for Robust Multivariate Time-Series
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  HyunGi Kim, Jisoo Mok, Dongjun Lee, Jaihyun Lew, Sungjae Kim, Sungroh Yoon</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted to ICML 2025</br><p><strong><u>Abstract:</u></strong> Utilizing the complex inter-variable causal relationships within multivariate
+time-series provides a promising avenue toward more robust and reliable
+multivariate time-series anomaly detection (MTSAD) but remains an underexplored
+area of research. This paper proposes Causality-Aware contrastive learning for
+RObust multivariate Time-Series (CAROTS), a novel MTSAD pipeline that
+incorporates the notion of causality into contrastive learning. CAROTS employs
+two data augmentors to obtain causality-preserving and -disturbing samples that
+serve as a wide range of normal variations and synthetic anomalies,
+respectively. With causality-preserving and -disturbing samples as positives
+and negatives, CAROTS performs contrastive learning to train an encoder whose
+latent space separates normal and abnormal samples based on causality.
+Moreover, CAROTS introduces a similarity-filtered one-class contrastive loss
+that encourages the contrastive learning process to gradually incorporate more
+semantically diverse samples with common causal relationships. Extensive
+experiments on five real-world and two synthetic datasets validate that the
+integration of causal relationships endows CAROTS with improved MTSAD
+capabilities. The code is available at https://github.com/kimanki/CAROTS.</p></br><a href="http://arxiv.org/pdf/2506.03244v1" target="_blank"><h2>Cosmic Outliers: Low-Spin Halos Explain the Abundance, Compactness, and
+  Redshift Evolution of the Little Red Dots</h2></a><strong><u>Authors:</u></strong>  Fabio Pacucci, Abraham Loeb</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO, astro-ph.HE</br><strong><u>Comments:</u></strong> Submitted to The Astrophysical Journal Letters. 11 pages, 5 figures</br><p><strong><u>Abstract:</u></strong> The Little Red Dots (LRDs) are high-redshift galaxies uncovered by JWST,
+characterized by small effective radii ($R_{\rm eff} \sim 80-300$ pc), number
+densities intermediate between typical galaxies and quasars, and a redshift
+distribution peaked at $z \sim 5$. We present a theoretical model in which the
+LRDs descend from dark matter halos in the extreme low-spin tail of the angular
+momentum distribution. Within this framework, we explain their three key
+observational signatures: (i) abundance, (ii) compactness, and (iii) redshift
+distribution. Our model focuses on observed, not modeled, properties; it is
+thus independent of whether they are powered primarily by a black hole or
+stars. We find that the assumption that the prototypical LRD at $z \sim 5$
+originates from halos in the lowest $\sim 1\%$ of the spin distribution is
+sufficient to reproduce both their observed number densities and physical
+sizes. The redshift evolution of their observability is driven by the interplay
+between the evolving compact disk fraction and cosmological surface brightness
+dimming. This effect leads to a well-defined "LRDs Era" at $4<z<8$, during
+which the LRDs are common and detectable; at $z<4$, they are bright but rare,
+while at $z>8$, they are common but faint. Finally, we test the predicted
+redshift trend against observational data, finding excellent agreement.
+Additional observational support comes from their excess small-scale clustering
+and spectral signatures of extreme core densities, both of which are expected
+outcomes of galaxy formation in low-spin halos. These findings suggest that the
+LRDs are not a fundamentally distinct population but the natural manifestation
+of galaxies forming in the rarest, lowest angular momentum environments.</p></br><a href="http://arxiv.org/pdf/2506.04100v1" target="_blank"><h2>Deep Neural Networks Hunting Ultra-Light Dark Matter</h2></a><strong><u>Authors:</u></strong>  Pavel Kůs, Diana López Nacir, Federico R. Urban</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.CO</br><strong><u>Comments:</u></strong> 34 pages, 28 figures</br><p><strong><u>Abstract:</u></strong> Ultra-light dark matter (ULDM) is a compelling candidate for cosmological
+dark matter. If ULDM interacts with ordinary matter, it can induce measurable,
+characteristic signals in pulsar-timing data because it causes the orbits of
+pulsars in binary systems to osculate. In this work, we investigate the
+potential of machine learning (ML) techniques to detect such ULDM signals. To
+this end, we construct three types of neural networks: an autoencoder, a binary
+classifier, and a multiclass classifier. We apply these methods to four
+theoretically well-motivated ULDM models: a linearly coupled scalar field, a
+quadratically coupled scalar field, a vector field and a tensor field. We show
+that the sensitivity achieved using ML methods is comparable to that of a
+semi-analytical Bayesian approach, which to date has only been applied to the
+linear scalar case. The ML approach is readily applicable to all four ULDM
+models and, in the case of the multiclass classifier, can distinguish between
+them. Our results, derived from simulated data, lay the foundation for future
+applications to real pulsar-timing observations.</p></br><a href="http://arxiv.org/pdf/2506.03672v1" target="_blank"><h2>Latent Guided Sampling for Combinatorial Optimization</h2></a><strong><u>Authors:</u></strong>  Sobihan Surendran, Adeline Fermanian, Sylvain Le Corff</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.OC</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Combinatorial Optimization problems are widespread in domains such as
+logistics, manufacturing, and drug discovery, yet their NP-hard nature makes
+them computationally challenging. Recent Neural Combinatorial Optimization
+methods leverage deep learning to learn solution strategies, trained via
+Supervised or Reinforcement Learning (RL). While promising, these approaches
+often rely on task-specific augmentations, perform poorly on
+out-of-distribution instances, and lack robust inference mechanisms. Moreover,
+existing latent space models either require labeled data or rely on pre-trained
+policies. In this work, we propose LGS-Net, a novel latent space model that
+conditions on problem instances, and introduce an efficient inference method,
+Latent Guided Sampling (LGS), based on Markov Chain Monte Carlo and Stochastic
+Approximation. We show that the iterations of our method form a
+time-inhomogeneous Markov Chain and provide rigorous theoretical convergence
+guarantees. Empirical results on benchmark routing tasks show that our method
+achieves state-of-the-art performance among RL-based approaches.</p></br><a href="http://arxiv.org/pdf/2506.02406v1" target="_blank"><h2>Random at First, Fast at Last: NTK-Guided Fourier Pre-Processing for
+  Tabular DL</h2></a><strong><u>Authors:</u></strong>  Renat Sergazinov, Jing Wu, Shao-An Yin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 16 pages, 3 figures, 1 table</br><p><strong><u>Abstract:</u></strong> While random Fourier features are a classic tool in kernel methods, their
+utility as a pre-processing step for deep learning on tabular data has been
+largely overlooked. Motivated by shortcomings in tabular deep learning
+pipelines - revealed through Neural Tangent Kernel (NTK) analysis - we revisit
+and repurpose random Fourier mappings as a parameter-free,
+architecture-agnostic transformation. By projecting each input into a fixed
+feature space via sine and cosine projections with frequencies drawn once at
+initialization, this approach circumvents the need for ad hoc normalization or
+additional learnable embeddings. We show within the NTK framework that this
+mapping (i) bounds and conditions the network's initial NTK spectrum, and (ii)
+introduces a bias that shortens the optimization trajectory, thereby
+accelerating gradient-based training. These effects pre-condition the network
+with a stable kernel from the outset. Empirically, we demonstrate that deep
+networks trained on Fourier-transformed inputs converge more rapidly and
+consistently achieve strong final performance, often with fewer epochs and less
+hyperparameter tuning. Our findings establish random Fourier pre-processing as
+a theoretically motivated, plug-and-play enhancement for tabular deep learning.</p></br><a href="http://arxiv.org/pdf/2506.04190v1" target="_blank"><h2>How to Use Graph Data in the Wild to Help Graph Anomaly Detection?</h2></a><strong><u>Authors:</u></strong>  Yuxuan Cao, Jiarong Xu, Chen Zhao, Jiaan Wang, Carl Yang, Chunping Wang, Yang Yang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted by SIGKDD2025</br><p><strong><u>Abstract:</u></strong> In recent years, graph anomaly detection has found extensive applications in
+various domains such as social, financial, and communication networks. However,
+anomalies in graph-structured data present unique challenges, including label
+scarcity, ill-defined anomalies, and varying anomaly types, making supervised
+or semi-supervised methods unreliable. Researchers often adopt unsupervised
+approaches to address these challenges, assuming that anomalies deviate
+significantly from the normal data distribution. Yet, when the available data
+is insufficient, capturing the normal distribution accurately and
+comprehensively becomes difficult. To overcome this limitation, we propose to
+utilize external graph data (i.e., graph data in the wild) to help anomaly
+detection tasks. This naturally raises the question: How can we use external
+data to help graph anomaly detection tasks? To answer this question, we propose
+a framework called Wild-GAD. It is built upon a unified database, UniWildGraph,
+which comprises a large and diverse collection of graph data with broad domain
+coverage, ample data volume, and a unified feature space. Further, we develop
+selection criteria based on representativity and diversity to identify the most
+suitable external data for anomaly detection task. Extensive experiments on six
+real-world datasets demonstrate the effectiveness of Wild-GAD. Compared to the
+baseline methods, our framework has an average 18% AUCROC and 32% AUCPR
+improvement over the best-competing methods.</p></br><a href="http://arxiv.org/pdf/2506.02651v1" target="_blank"><h2>Asymptotics of SGD in Sequence-Single Index Models and Single-Layer
+  Attention Networks</h2></a><strong><u>Authors:</u></strong>  Luca Arnaboldi, Bruno Loureiro, Ludovic Stephan, Florent Krzakala, Lenka Zdeborova</br><strong><u>Categories:</u></strong> stat.ML, cond-mat.dis-nn, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study the dynamics of stochastic gradient descent (SGD) for a class of
+sequence models termed Sequence Single-Index (SSI) models, where the target
+depends on a single direction in input space applied to a sequence of tokens.
+This setting generalizes classical single-index models to the sequential
+domain, encompassing simplified one-layer attention architectures. We derive a
+closed-form expression for the population loss in terms of a pair of sufficient
+statistics capturing semantic and positional alignment, and characterize the
+induced high-dimensional SGD dynamics for these coordinates. Our analysis
+reveals two distinct training phases: escape from uninformative initialization
+and alignment with the target subspace, and demonstrates how the sequence
+length and positional encoding influence convergence speed and learning
+trajectories. These results provide a rigorous and interpretable foundation for
+understanding how sequential structure in data can be beneficial for learning
+with attention-based models.</p></br><a href="http://arxiv.org/pdf/2506.04014v1" target="_blank"><h2>Time domain astrophysics with transient sources. Delay estimate via
+  Cross Correlation Function techniques</h2></a><strong><u>Authors:</u></strong>  W. Leone, L. Burderi, T. di Salvo, A. Anitra, A. Sanna, A. Riggio, R. Iaria, F. Fiore, F. Longo, M. Ďurišková, A. Tsvetkova, C. Maraventano, C. Miceli</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> Accepted under minor reviews on 29 May 2025</br><p><strong><u>Abstract:</u></strong> The timing analysis of transient events allows for investigating numerous
+still open areas of modern astrophysics. The article explores all the
+mathematical and physical tools required to estimate delays and associated
+errors between two Times of Arrival (ToA) lists, by exploiting Cross
+Correlation Function (CCF) techniques. The CCF permits the establishment of the
+delay between two observed signals and is defined on two continuous functions.
+A detector does not directly measure the intensity of the electromagnetic
+signal (interacting with its material) but rather detects each photon ToA
+through a probabilistic process. Since the CCF is defined on continuous
+functions, the crucial step is to obtain a continuous rate curve from a list of
+ToA. This step is treated in the article and the constructed rate functions are
+light curves that are continuous functions. This allows, in principle, the
+estimation of delays with any desired resolution. Due to the statistical nature
+of the measurement process, two independent detections of the same signal yield
+different photon times. Consequently, light curves derived from these lists
+differ due to Poisson fluctuations, leading the CCF between them to fluctuate
+around the true theoretical delay. This article describes a Monte Carlo
+technique that enables reliable delay estimation by providing a robust measure
+of the uncertainties induced by Poissonian fluctuations. GRB data are
+considered as they offer optimal test cases for the proposed techniques. The
+developed techniques provides a significant computational advantage and are
+useful analyzing of data characterized by low-count statistics (i.e., low
+photon count rates in c/s), as they allow overcoming the limitations associated
+with traditional fixed bin-size methods.</p></br><a href="http://arxiv.org/pdf/2506.02485v1" target="_blank"><h2>Generative AI for Predicting 2D and 3D Wildfire Spread: Beyond
+  Physics-Based Models and Traditional Deep Learning</h2></a><strong><u>Authors:</u></strong>  Haowen Xu, Sisi Zlatanova, Ruiyu Liang, Ismet Canbulat</br><strong><u>Categories:</u></strong> cs.AI, cs.CE</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Wildfires continue to inflict devastating human, environmental, and economic
+losses globally, as tragically exemplified by the 2025 Los Angeles wildfire and
+the urgent demand for more effective response strategies. While physics-based
+and deep learning models have advanced wildfire simulation, they face critical
+limitations in predicting and visualizing multimodal fire spread in real time,
+particularly in both 2D and 3D spatial domains using dynamically updated GIS
+data. These limitations hinder timely emergency response, infrastructure
+protection, and community safety. Generative AI has recently emerged as a
+transformative approach across research and industry. Models such as Generative
+Adversarial Networks (GANs), Variational Autoencoders (VAEs), Transformers, and
+diffusion-based architectures offer distinct advantages over traditional
+methods, including the integration of multimodal data, generation of diverse
+scenarios under uncertainty, and improved modeling of wildfire dynamics across
+spatial and temporal scales. This position paper advocates for the adoption of
+generative AI as a foundational framework for wildfire prediction. We explore
+how such models can enhance 2D fire spread forecasting and enable more
+realistic, scalable 3D simulations. Additionally, we employ a novel human-AI
+collaboration framework using large language models (LLMs) for automated
+knowledge extraction, literature synthesis, and bibliometric mapping. Looking
+ahead, we identify five key visions for integrating generative AI into wildfire
+management: multimodal approaches, AI foundation models, conversational AI
+systems, edge-computing-based scenario generation, and cognitive digital twins.
+We also address three major challenges accompanying these opportunities and
+propose potential solutions to support their implementation.</p></br><a href="http://arxiv.org/pdf/2506.03595v1" target="_blank"><h2>Purifying Shampoo: Investigating Shampoo's Heuristics by Decomposing its
+  Preconditioner</h2></a><strong><u>Authors:</u></strong>  Runa Eschenhagen, Aaron Defazio, Tsung-Hsien Lee, Richard E. Turner, Hao-Jun Michael Shi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The recent success of Shampoo in the AlgoPerf contest has sparked renewed
+interest in Kronecker-factorization-based optimization algorithms for training
+neural networks. Despite its success, Shampoo relies heavily on several
+heuristics such as learning rate grafting and stale preconditioning to achieve
+performance at-scale. These heuristics increase algorithmic complexity,
+necessitate further hyperparameter tuning, and lack theoretical justification.
+This paper investigates these heuristics from the angle of Frobenius norm
+approximation to full-matrix Adam and decouples the preconditioner's
+eigenvalues and eigenbasis updates. We show that grafting from Adam mitigates
+the staleness and mis-scaling of the preconditioner's eigenvalues and how
+correcting the eigenvalues directly can eliminate the need for learning rate
+grafting. To manage the error induced by infrequent eigenbasis computations, we
+propose an adaptive criterion for determining the eigenbasis computation
+frequency motivated by terminating a warm-started QR algorithm. This criterion
+decouples the update frequency of different preconditioner matrices and enables
+us to investigate the impact of approximation error on convergence. These
+practical techniques offer a principled angle towards removing Shampoo's
+heuristics and developing improved Kronecker-factorization-based training
+algorithms.</p></br><a href="http://arxiv.org/pdf/2506.02612v1" target="_blank"><h2>Simple, Good, Fast: Self-Supervised World Models Free of Baggage</h2></a><strong><u>Authors:</u></strong>  Jan Robine, Marc Höftmann, Stefan Harmeling</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Published as a conference paper at ICLR 2025. Code is available atthis https URL</br><p><strong><u>Abstract:</u></strong> What are the essential components of world models? How far do we get with
+world models that are not employing RNNs, transformers, discrete
+representations, and image reconstructions? This paper introduces SGF, a
+Simple, Good, and Fast world model that uses self-supervised representation
+learning, captures short-time dependencies through frame and action stacking,
+and enhances robustness against model errors through data augmentation. We
+extensively discuss SGF's connections to established world models, evaluate the
+building blocks in ablation studies, and demonstrate good performance through
+quantitative comparisons on the Atari 100k benchmark.</p></br><a href="http://arxiv.org/pdf/2506.03784v1" target="_blank"><h2>When Does Closeness in Distribution Imply Representational Similarity?
+  An Identifiability Perspective</h2></a><strong><u>Authors:</u></strong>  Beatrix M. G. Nielsen, Emanuele Marconato, Andrea Dittadi, Luigi Gresele</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> When and why representations learned by different deep neural networks are
+similar is an active research topic. We choose to address these questions from
+the perspective of identifiability theory, which suggests that a measure of
+representational similarity should be invariant to transformations that leave
+the model distribution unchanged. Focusing on a model family which includes
+several popular pre-training approaches, e.g., autoregressive language models,
+we explore when models which generate distributions that are close have similar
+representations. We prove that a small Kullback-Leibler divergence between the
+model distributions does not guarantee that the corresponding representations
+are similar. This has the important corollary that models arbitrarily close to
+maximizing the likelihood can still learn dissimilar representations, a
+phenomenon mirrored in our empirical observations on models trained on
+CIFAR-10. We then define a distributional distance for which closeness implies
+representational similarity, and in synthetic experiments, we find that wider
+networks learn distributions which are closer with respect to our distance and
+have more similar representations. Our results establish a link between
+closeness in distribution and representational similarity.</p></br><a href="http://arxiv.org/pdf/2506.02757v1" target="_blank"><h2>Investigating Mask-aware Prototype Learning for Tabular Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Ruiying Lu, Jinhan Liu, Chuan Du, Dandan Guo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 11 figures</br><p><strong><u>Abstract:</u></strong> Tabular anomaly detection, which aims at identifying deviant samples, has
+been crucial in a variety of real-world applications, such as medical disease
+identification, financial fraud detection, intrusion monitoring, etc. Although
+recent deep learning-based methods have achieved competitive performances,
+these methods suffer from representation entanglement and the lack of global
+correlation modeling, which hinders anomaly detection performance. To tackle
+the problem, we incorporate mask modeling and prototype learning into tabular
+anomaly detection. The core idea is to design learnable masks by disentangled
+representation learning within a projection space and extracting normal
+dependencies as explicit global prototypes. Specifically, the overall model
+involves two parts: (i) During encoding, we perform mask modeling in both the
+data space and projection space with orthogonal basis vectors for learning
+shared disentangled normal patterns; (ii) During decoding, we decode multiple
+masked representations in parallel for reconstruction and learn association
+prototypes to extract normal characteristic correlations. Our proposal derives
+from a distribution-matching perspective, where both projection space learning
+and association prototype learning are formulated as optimal transport
+problems, and the calibration distances are utilized to refine the anomaly
+scores. Quantitative and qualitative experiments on 20 tabular benchmarks
+demonstrate the effectiveness and interpretability of our model.</p></br><a href="http://arxiv.org/pdf/2506.02694v1" target="_blank"><h2>XicorAttention: Time Series Transformer Using Attention with Nonlinear
+  Correlation</h2></a><strong><u>Authors:</u></strong>  Daichi Kimura, Tomonori Izumitani, Hisashi Kashima</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Various Transformer-based models have been proposed for time series
+forecasting. These models leverage the self-attention mechanism to capture
+long-term temporal or variate dependencies in sequences. Existing methods can
+be divided into two approaches: (1) reducing computational cost of attention by
+making the calculations sparse, and (2) reshaping the input data to aggregate
+temporal features. However, existing attention mechanisms may not adequately
+capture inherent nonlinear dependencies present in time series data, leaving
+room for improvement. In this study, we propose a novel attention mechanism
+based on Chatterjee's rank correlation coefficient, which measures nonlinear
+dependencies between variables. Specifically, we replace the matrix
+multiplication in standard attention mechanisms with this rank coefficient to
+measure the query-key relationship. Since computing Chatterjee's correlation
+coefficient involves sorting and ranking operations, we introduce a
+differentiable approximation employing SoftSort and SoftRank. Our proposed
+mechanism, ``XicorAttention,'' integrates it into several state-of-the-art
+Transformer models. Experimental results on real-world datasets demonstrate
+that incorporating nonlinear correlation into the attention improves
+forecasting accuracy by up to approximately 9.1\% compared to existing models.</p></br><a href="http://arxiv.org/pdf/2506.03256v1" target="_blank"><h2>COSMOS-Web: Comprehensive Data Reduction for Wide-Area JWST NIRCam
+  Imaging</h2></a><strong><u>Authors:</u></strong>  Maximilien Franco, Caitlin M. Casey, Anton M. Koekemoer, Daizhong Liu, Micaela B. Bagley, Henry Joy McCracken, Jeyhan S. Kartaltepe, Hollis B. Akins, Olivier Ilbert, Marko Shuntov, Santosh Harish, Brant E. Robertson, Rafael C. Arango-Toro, Andrew J. Battisti, Nima Chartab, Nicole E. Drakos, Andreas L. Faisst, Carter Flayhart, Ghassem Gozaliasl, Michaela Hirschmann, Richard Massey, Jason Rhodes, Zahra Sattari, Diana Scognamiglio, John R. Weaver, Lilan Yang, Jorge A. Zavala, Edward M. Berman, Fabrizio Gentile, Steven Gillman, Arianna S. Long, Georgios Magdis, Jacqueline E. McCleary, Jed McKinney, Bahram Mobasher, Louise Paquereau, Armin Rest, David B. Sanders, Sune Toft, Si-Yue Yu</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.GA</br><strong><u>Comments:</u></strong> 22 pages, 11 figures, Submitted to ApJ</br><p><strong><u>Abstract:</u></strong> We present the data reduction methodology used for the COSMOS-Web survey JWST
+NIRCam data. Covering 0.54 deg^2 with four broadband filters (F115W, F150W,
+F277W, F444W) and a total exposure time of approximately 270 hours, COSMOS-Web
+represents the largest contiguous field surveyed during JWST Cycle 1, posing
+unique data reduction challenges due to its extensive scale. By combining the
+official JWST Calibration Pipeline with custom improvements for noise removal,
+background subtraction, and astrometric alignment, we achieve high fidelity
+science-ready mosaics. We detail the systematic approach employed in the three
+stages of the JWST Calibration Pipeline. The data, collected in three epochs
+from January 2023 to January 2024, encompass 152 visits and have been processed
+into 20 mosaic tiles to optimize computational efficiency and data processing.
+The final data products achieve 5 sigma depths of 26.7-28.3 AB mag in 0.15"
+apertures. The processed and calibrated datasets are made available to the
+public.</p></br><a href="http://arxiv.org/pdf/2506.03087v1" target="_blank"><h2>How Explanations Leak the Decision Logic: Stealing Graph Neural Networks
+  via Explanation Alignment</h2></a><strong><u>Authors:</u></strong>  Bin Ma, Yuyuan Feng, Minhua Lin, Enyan Dai</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have become essential tools for analyzing
+graph-structured data in domains such as drug discovery and financial analysis,
+leading to growing demands for model transparency. Recent advances in
+explainable GNNs have addressed this need by revealing important subgraphs that
+influence predictions, but these explanation mechanisms may inadvertently
+expose models to security risks. This paper investigates how such explanations
+potentially leak critical decision logic that can be exploited for model
+stealing. We propose {\method}, a novel stealing framework that integrates
+explanation alignment for capturing decision logic with guided data
+augmentation for efficient training under limited queries, enabling effective
+replication of both the predictive behavior and underlying reasoning patterns
+of target models. Experiments on molecular graph datasets demonstrate that our
+approach shows advantages over conventional methods in model stealing. This
+work highlights important security considerations for the deployment of
+explainable GNNs in sensitive domains and suggests the need for protective
+measures against explanation-based attacks. Our code is available at
+https://github.com/beanmah/EGSteal.</p></br><a href="http://arxiv.org/pdf/2506.03068v1" target="_blank"><h2>Causal Explainability of Machine Learning in Heart Failure Prediction
+  from Electronic Health Records</h2></a><strong><u>Authors:</u></strong>  Yina Hou, Shourav B. Rabbani, Liang Hong, Norou Diawara, Manar D. Samad</br><strong><u>Categories:</u></strong> stat.ML, cs.CY, cs.LG</br><strong><u>Comments:</u></strong> 4 figures</br><p><strong><u>Abstract:</u></strong> The importance of clinical variables in the prognosis of the disease is
+explained using statistical correlation or machine learning (ML). However, the
+predictive importance of these variables may not represent their causal
+relationships with diseases. This paper uses clinical variables from a heart
+failure (HF) patient cohort to investigate the causal explainability of
+important variables obtained in statistical and ML contexts. Due to inherent
+regression modeling, popular causal discovery methods strictly assume that the
+cause and effect variables are numerical and continuous. This paper proposes a
+new computational framework to enable causal structure discovery (CSD) and
+score the causal strength of mixed-type (categorical, numerical, binary)
+clinical variables for binary disease outcomes. In HF classification, we
+investigate the association between the importance rank order of three feature
+types: correlated features, features important for ML predictions, and causal
+features. Our results demonstrate that CSD modeling for nonlinear causal
+relationships is more meaningful than its linear counterparts. Feature
+importance obtained from nonlinear classifiers (e.g., gradient-boosting trees)
+strongly correlates with the causal strength of variables without
+differentiating cause and effect variables. Correlated variables can be causal
+for HF, but they are rarely identified as effect variables. These results can
+be used to add the causal explanation of variables important for ML-based
+prediction modeling.</p></br><a href="http://arxiv.org/pdf/2506.02568v1" target="_blank"><h2>MLaGA: Multimodal Large Language and Graph Assistant</h2></a><strong><u>Authors:</u></strong>  Dongzhe Fan, Yi Fang, Jiajin Liu, Djellel Difallah, Qiaoyu Tan</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Large Language Models (LLMs) have demonstrated substantial efficacy in
+advancing graph-structured data analysis. Prevailing LLM-based graph methods
+excel in adapting LLMs to text-rich graphs, wherein node attributes are text
+descriptions. However, their applications to multimodal graphs--where nodes are
+associated with diverse attribute types, such as texts and images--remain
+underexplored, despite their ubiquity in real-world scenarios. To bridge the
+gap, we introduce the Multimodal Large Language and Graph Assistant (MLaGA), an
+innovative model that adeptly extends LLM capabilities to facilitate reasoning
+over complex graph structures and multimodal attributes. We first design a
+structure-aware multimodal encoder to align textual and visual attributes
+within a unified space through a joint graph pre-training objective.
+Subsequently, we implement a multimodal instruction-tuning approach to
+seamlessly integrate multimodal features and graph structures into the LLM
+through lightweight projectors. Extensive experiments across multiple datasets
+demonstrate the effectiveness of MLaGA compared to leading baseline methods,
+achieving superior performance in diverse graph learning tasks under both
+supervised and transfer learning scenarios.</p></br><a href="http://arxiv.org/pdf/2506.02703v1" target="_blank"><h2>Data Leakage and Deceptive Performance: A Critical Examination of Credit
+  Card Fraud Detection Methodologies</h2></a><strong><u>Authors:</u></strong>  Khizar Hayat, Baptiste Magnier</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CY</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This study critically examines the methodological rigor in credit card fraud
+detection research, revealing how fundamental evaluation flaws can overshadow
+algorithmic sophistication. Through deliberate experimentation with improper
+evaluation protocols, we demonstrate that even simple models can achieve
+deceptively impressive results when basic methodological principles are
+violated. Our analysis identifies four critical issues plaguing current
+approaches: (1) pervasive data leakage from improper preprocessing sequences,
+(2) intentional vagueness in methodological reporting, (3) inadequate temporal
+validation for transaction data, and (4) metric manipulation through recall
+optimization at precision's expense. We present a case study showing how a
+minimal neural network architecture with data leakage outperforms many
+sophisticated methods reported in literature, achieving 99.9\% recall despite
+fundamental evaluation flaws. These findings underscore that proper evaluation
+methodology matters more than model complexity in fraud detection research. The
+study serves as a cautionary example of how methodological rigor must precede
+architectural sophistication, with implications for improving research
+practices across machine learning applications.</p></br><a href="http://arxiv.org/pdf/2506.02438v1" target="_blank"><h2>A Review of Various Datasets for Machine Learning Algorithm-Based
+  Intrusion Detection System: Advances and Challenges</h2></a><strong><u>Authors:</u></strong>  Sudhanshu Sekhar Tripathy, Bichitrananda Behera</br><strong><u>Categories:</u></strong> cs.CR, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> IDS aims to protect computer networks from security threats by detecting,
+notifying, and taking appropriate action to prevent illegal access and protect
+confidential information. As the globe becomes increasingly dependent on
+technology and automated processes, ensuring secured systems, applications, and
+networks has become one of the most significant problems of this era. The
+global web and digital technology have significantly accelerated the evolution
+of the modern world, necessitating the use of telecommunications and data
+transfer platforms. Researchers are enhancing the effectiveness of IDS by
+incorporating popular datasets into machine learning algorithms. IDS, equipped
+with machine learning classifiers, enhances security attack detection accuracy
+by identifying normal or abnormal network traffic. This paper explores the
+methods of capturing and reviewing intrusion detection systems (IDS) and
+evaluates the challenges existing datasets face. A deluge of research on
+machine learning (ML) and deep learning (DL) architecture-based intrusion
+detection techniques has been conducted in the past ten years on various
+cybersecurity datasets, including KDDCUP'99, NSL-KDD, UNSW-NB15, CICIDS-2017,
+and CSE-CIC-IDS2018. We conducted a literature review and presented an in-depth
+analysis of various intrusion detection methods that use SVM, KNN, DT, LR, NB,
+RF, XGBOOST, Adaboost, and ANN. We provide an overview of each technique,
+explaining the role of the classifiers and algorithms used. A detailed tabular
+analysis highlights the datasets used, classifiers employed, attacks detected,
+evaluation metrics, and conclusions drawn. This article offers a thorough
+review for future IDS research.</p></br></body>

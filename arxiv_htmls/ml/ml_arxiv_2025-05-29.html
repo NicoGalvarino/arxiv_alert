@@ -1,0 +1,346 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 27 May 2025 to 29 May 2025</em></font><a href="http://arxiv.org/pdf/2505.22527v1" target="_blank"><h2>Symplectic Generative Networks (SGNs): A Hamiltonian Framework for
+  Invertible Deep Generative Modeling</h2></a><strong><u>Authors:</u></strong>  Agnideep Aich, Ashit Aich, Bruce Wade</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 68T07, 37J39, 65P10, 62B10, 53D22, 94A17</br><strong><u>Comments:</u></strong> Submitted</br><p><strong><u>Abstract:</u></strong> We introduce the Symplectic Generative Network (SGN), a deep generative model
+that leverages Hamiltonian mechanics to construct an invertible,
+volume-preserving mapping between a latent space and the data space. By
+endowing the latent space with a symplectic structure and modeling data
+generation as the time evolution of a Hamiltonian system, SGN achieves exact
+likelihood evaluation without incurring the computational overhead of Jacobian
+determinant calculations. In this work, we provide a rigorous mathematical
+foundation for SGNs through a comprehensive theoretical framework that
+includes: (i) complete proofs of invertibility and volume preservation, (ii) a
+formal complexity analysis with theoretical comparisons to Variational
+Autoencoders and Normalizing Flows, (iii) strengthened universal approximation
+results with quantitative error bounds, (iv) an information-theoretic analysis
+based on the geometry of statistical manifolds, and (v) an extensive stability
+analysis with adaptive integration guarantees. These contributions highlight
+the fundamental advantages of SGNs and establish a solid foundation for future
+empirical investigations and applications to complex, high-dimensional data.</p></br><a href="http://arxiv.org/pdf/2505.22491v1" target="_blank"><h2>On the Surprising Effectiveness of Large Learning Rates under Standard
+  Width Scaling</h2></a><strong><u>Authors:</u></strong>  Moritz Haas, Sebastian Bordt, Ulrike von Luxburg, Leena Chennuru Vankadara</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The dominant paradigm for training large-scale vision and language models is
+He initialization and a single global learning rate (\textit{standard
+parameterization}, SP). Despite its practical success, standard parametrization
+remains poorly understood from a theoretical perspective: Existing
+infinite-width theory would predict instability under large learning rates and
+vanishing feature learning under stable learning rates. However, empirically
+optimal learning rates consistently decay much slower than theoretically
+predicted. By carefully studying neural network training dynamics, we
+demonstrate that this discrepancy is not fully explained by finite-width
+phenomena such as catapult effects or a lack of alignment between weights and
+incoming activations. We instead show that the apparent contradiction can be
+fundamentally resolved by taking the loss function into account: In contrast to
+Mean Squared Error (MSE) loss, we prove that under cross-entropy (CE) loss, an
+intermediate \textit{controlled divergence} regime emerges, where logits
+diverge but loss, gradients, and activations remain stable. Stable training
+under large learning rates enables persistent feature evolution at scale in all
+hidden layers, which is crucial for the practical success of SP. In experiments
+across optimizers (SGD, Adam), architectures (MLPs, GPT) and data modalities
+(vision, language), we validate that neural networks operate in this controlled
+divergence regime under CE loss but not under MSE loss. Our empirical evidence
+suggests that width-scaling considerations are surprisingly useful for
+predicting empirically optimal learning rate exponents. Finally, our analysis
+clarifies the effectiveness and limitations of recently proposed layerwise
+learning rate scalings for standard initialization.</p></br><a href="http://arxiv.org/pdf/2505.22356v1" target="_blank"><h2>Suitability Filter: A Statistical Framework for Classifier Evaluation in
+  Real-World Deployment Settings</h2></a><strong><u>Authors:</u></strong>  Angéline Pouget, Mohammad Yaghini, Stephan Rabanser, Nicolas Papernot</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CY, stat.ML</br><strong><u>Comments:</u></strong> Accepted to ICML 2025</br><p><strong><u>Abstract:</u></strong> Deploying machine learning models in safety-critical domains poses a key
+challenge: ensuring reliable model performance on downstream user data without
+access to ground truth labels for direct validation. We propose the suitability
+filter, a novel framework designed to detect performance deterioration by
+utilizing suitability signals -- model output features that are sensitive to
+covariate shifts and indicative of potential prediction errors. The suitability
+filter evaluates whether classifier accuracy on unlabeled user data shows
+significant degradation compared to the accuracy measured on the labeled test
+dataset. Specifically, it ensures that this degradation does not exceed a
+pre-specified margin, which represents the maximum acceptable drop in accuracy.
+To achieve reliable performance evaluation, we aggregate suitability signals
+for both test and user data and compare these empirical distributions using
+statistical hypothesis testing, thus providing insights into decision
+uncertainty. Our modular method adapts to various models and domains. Empirical
+evaluations across different classification tasks demonstrate that the
+suitability filter reliably detects performance deviations due to covariate
+shift. This enables proactive mitigation of potential failures in high-stakes
+applications.</p></br><a href="http://arxiv.org/pdf/2505.21722v1" target="_blank"><h2>Saddle-To-Saddle Dynamics in Deep ReLU Networks: Low-Rank Bias in the
+  First Saddle Escape</h2></a><strong><u>Authors:</u></strong>  Ioannis Bantzis, James B. Simon, Arthur Jacot</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> When a deep ReLU network is initialized with small weights, GD is at first
+dominated by the saddle at the origin in parameter space. We study the
+so-called escape directions, which play a similar role as the eigenvectors of
+the Hessian for strict saddles. We show that the optimal escape direction
+features a low-rank bias in its deeper layers: the first singular value of the
+$\ell$-th layer weight matrix is at least $\ell^{\frac{1}{4}}$ larger than any
+other singular value. We also prove a number of related results about these
+escape directions. We argue that this result is a first step in proving
+Saddle-to-Saddle dynamics in deep ReLU networks, where GD visits a sequence of
+saddles with increasing bottleneck rank.</p></br><a href="http://arxiv.org/pdf/2505.21972v1" target="_blank"><h2>Judging LLMs on a Simplex</h2></a><strong><u>Authors:</u></strong>  Patrick Vossler, Fan Xia, Yifan Mai, Jean Feng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 28 pages, 7 figures</br><p><strong><u>Abstract:</u></strong> Automated evaluation of free-form outputs from large language models (LLMs)
+is challenging because many distinct answers can be equally valid. A common
+practice is to use LLMs themselves as judges, but the theoretical properties of
+this approach are not yet well understood. We show that a geometric framework
+that represents both judges and candidates as points on a probability simplex
+can provide helpful insight on what is or is not identifiable using LLM judges.
+Our theoretical analysis uncovers a "phase transition" in ranking
+identifiability: for binary scoring systems, true rankings are identifiable
+even with weak judges under mild assumptions, while rankings become
+non-identifiable for three or more scoring levels even with infinite data,
+absent additional prior knowledge. This non-identifiability highlights how
+uncertainty in rankings stems from not only aleatoric uncertainty (i.e.,
+inherent stochasticity in the data) but also epistemic uncertainty regarding
+which assumptions hold, an aspect that has received limited attention until
+now. To integrate both types of uncertainty, we use Bayesian inference to
+encode assumptions as priors and conduct sensitivity analysis of ranking
+estimates and credible intervals. Empirical evaluations across multiple
+benchmarks demonstrate that Bayesian inference yields more accurate rankings
+and substantially improves coverage rates. These results underscore the
+importance of taking a more holistic approach to uncertainty quantification
+when using LLMs as judges.</p></br><a href="http://arxiv.org/pdf/2505.22492v1" target="_blank"><h2>Demystifying the Paradox of Importance Sampling with an Estimated
+  History-Dependent Behavior Policy in Off-Policy Evaluation</h2></a><strong><u>Authors:</u></strong>  Hongyi Zhou, Josiah P. Hanna, Jin Zhu, Ying Yang, Chengchun Shi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Accepted by ICML 2025</br><p><strong><u>Abstract:</u></strong> This paper studies off-policy evaluation (OPE) in reinforcement learning with
+a focus on behavior policy estimation for importance sampling. Prior work has
+shown empirically that estimating a history-dependent behavior policy can lead
+to lower mean squared error (MSE) even when the true behavior policy is
+Markovian. However, the question of why the use of history should lower MSE
+remains open. In this paper, we theoretically demystify this paradox by
+deriving a bias-variance decomposition of the MSE of ordinary importance
+sampling (IS) estimators, demonstrating that history-dependent behavior policy
+estimation decreases their asymptotic variances while increasing their
+finite-sample biases. Additionally, as the estimated behavior policy conditions
+on a longer history, we show a consistent decrease in variance. We extend these
+findings to a range of other OPE estimators, including the sequential IS
+estimator, the doubly robust estimator and the marginalized IS estimator, with
+the behavior policy estimated either parametrically or non-parametrically.</p></br><a href="http://arxiv.org/pdf/2505.22252v1" target="_blank"><h2>B-XAIC Dataset: Benchmarking Explainable AI for Graph Neural Networks
+  Using Chemical Data</h2></a><strong><u>Authors:</u></strong>  Magdalena Proszewska, Tomasz Danel, Dawid Rymarczyk</br><strong><u>Categories:</u></strong> cs.LG, cs.CE</br><strong><u>Comments:</u></strong> 26 pages, 16 figures, 5 tables</br><p><strong><u>Abstract:</u></strong> Understanding the reasoning behind deep learning model predictions is crucial
+in cheminformatics and drug discovery, where molecular design determines their
+properties. However, current evaluation frameworks for Explainable AI (XAI) in
+this domain often rely on artificial datasets or simplified tasks, employing
+data-derived metrics that fail to capture the complexity of real-world
+scenarios and lack a direct link to explanation faithfulness. To address this,
+we introduce B-XAIC, a novel benchmark constructed from real-world molecular
+data and diverse tasks with known ground-truth rationales for assigned labels.
+Through a comprehensive evaluation using B-XAIC, we reveal limitations of
+existing XAI methods for Graph Neural Networks (GNNs) in the molecular domain.
+This benchmark provides a valuable resource for gaining deeper insights into
+the faithfulness of XAI, facilitating the development of more reliable and
+interpretable models.</p></br><a href="http://arxiv.org/pdf/2505.22518v1" target="_blank"><h2>IGNIS: A Neural Network Framework for Robust Parameter Estimation in
+  Archimedean Copulas</h2></a><strong><u>Authors:</u></strong>  Agnideep Aich, Ashit Baran Aich, Bruce Wade</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 62H05, 62H12, 62F10, 68T07, 62-08</br><strong><u>Comments:</u></strong> Under review</br><p><strong><u>Abstract:</u></strong> Parameter estimation for Archimedean copulas remains a challenging problem,
+particularly for the recently developed A1 and A2 families that exhibit complex
+dependency structures. Traditional methods, such as the Method of Moments
+(MoM), Maximum Likelihood Estimation (MLE), and Maximum Pseudo-Likelihood
+(MPL), often struggle due to issues of non-monotonic relationship with
+dependency measures such as Kendall's tau (as in the case of A1) and numerical
+instability. In this paper, we present the IGNIS Network, a novel, unified
+neural framework that learns a direct mapping from observable dependency
+measures to copula parameters, thereby overcoming the limitations of classical
+approaches. Our approach is trained on simulated data spanning five Archimedean
+copula families including Clayton, Gumbel, Frank, A1, and A2, ensuring its
+general applicability across the entire family. Extensive simulation studies
+demonstrate that the IGNIS Network reduces estimation errors compared to MoM,
+while inherently enforcing parameter constraints through theory-guided
+post-processing. We further validate the practical utility of our method on
+diverse real-world datasets, including financial returns (AAPL-MSFT),
+healthcare metrics (CDC Diabetes indicators), and environmental measurements
+(PM2.5 air quality). Our results underscore the transformative potential of
+neural methods for robust and accurate dependence modeling in modern
+applications.</p></br><a href="http://arxiv.org/pdf/2505.22574v1" target="_blank"><h2>Attention-based Neural Network Emulators for Multi-Probe Data Vectors
+  Part III: Modeling The Next Generation Surveys</h2></a><strong><u>Authors:</u></strong>  Yijie Zhu, Evan Saraivanov, Joshua A. Kable, Artemis Sofia Giannakopoulou, Amritpal Nijjar, Vivian Miranda, Marco Bonici, Tim Eifler, Elisabeth Krause</br><strong><u>Categories:</u></strong> astro-ph.CO</br><strong><u>Comments:</u></strong> 27 pages, 24 figures, 11 tables</br><p><strong><u>Abstract:</u></strong> Machine learning can accelerate cosmological inferences that involve many
+sequential evaluations of computationally expensive data vectors. Previous
+works in this series have examined how machine learning architectures impact
+emulator accuracy and training time for optical shear and galaxy clustering
+2-point function. In this final manuscript, we explore neural network
+performance when emulating Cosmic Microwave Background temperature and
+polarization power spectra. We maximize the volume of applicability in the
+parameter space of our emulators within the standard $\Lambda$-cold-dark-matter
+model while ensuring that errors are below cosmic variance. Relative to
+standard multi-layer perceptron architectures, we find the
+dot-product-attention mechanism reduces the number of outliers among testing
+cosmologies, defined as the fraction of testing points with $\Delta \chi^2 >
+0.2$ relative to \textsc{CAMB} outputs, for a wide range of training set sizes.
+Such precision enables attention-based emulators to be directly applied to real
+data without requiring any additional correction via importance sampling.
+Combined with pre-processing techniques and optimized activation and loss
+functions, attention-based models can meet the precision criteria set by
+current and future CMB and lensing experiments. For each of Planck, Simons
+Observatory, CMB S4, and CMB HD, we find the fraction of outlier points to be
+less than $10\%$ with around $2\times10^5$ to $4\times10^5$ training data
+vectors. We further explore the applications of these methods to supernova
+distance, weak lensing, and galaxy clustering, as well as alternative
+architectures and pre-processing techniques.</p></br><a href="http://arxiv.org/pdf/2505.21792v1" target="_blank"><h2>Multimodal Federated Learning: A Survey through the Lens of Different FL
+  Paradigms</h2></a><strong><u>Authors:</u></strong>  Yuanzhe Peng, Jieming Bian, Lei Wang, Yin Huang, Jie Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Multimodal Federated Learning (MFL) lies at the intersection of two pivotal
+research areas: leveraging complementary information from multiple modalities
+to improve downstream inference performance and enabling distributed training
+to enhance efficiency and preserve privacy. Despite the growing interest in
+MFL, there is currently no comprehensive taxonomy that organizes MFL through
+the lens of different Federated Learning (FL) paradigms. This perspective is
+important because multimodal data introduces distinct challenges across various
+FL settings. These challenges, including modality heterogeneity, privacy
+heterogeneity, and communication inefficiency, are fundamentally different from
+those encountered in traditional unimodal or non-FL scenarios. In this paper,
+we systematically examine MFL within the context of three major FL paradigms:
+horizontal FL (HFL), vertical FL (VFL), and hybrid FL. For each paradigm, we
+present the problem formulation, review representative training algorithms, and
+highlight the most prominent challenge introduced by multimodal data in
+distributed settings. We also discuss open challenges and provide insights for
+future research. By establishing this taxonomy, we aim to uncover the novel
+challenges posed by multimodal data from the perspective of different FL
+paradigms and to offer a new lens through which to understand and advance the
+development of MFL.</p></br><a href="http://arxiv.org/pdf/2505.21791v1" target="_blank"><h2>Global Minimizers of $\ell^p$-Regularized Objectives Yield the Sparsest
+  ReLU Neural Networks</h2></a><strong><u>Authors:</u></strong>  Julia Nakhleh, Robert D. Nowak</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Overparameterized neural networks can interpolate a given dataset in many
+different ways, prompting the fundamental question: which among these solutions
+should we prefer, and what explicit regularization strategies will provably
+yield these solutions? This paper addresses the challenge of finding the
+sparsest interpolating ReLU network -- i.e., the network with the fewest
+nonzero parameters or neurons -- a goal with wide-ranging implications for
+efficiency, generalization, interpretability, theory, and model compression.
+Unlike post hoc pruning approaches, we propose a continuous, almost-everywhere
+differentiable training objective whose global minima are guaranteed to
+correspond to the sparsest single-hidden-layer ReLU networks that fit the data.
+This result marks a conceptual advance: it recasts the combinatorial problem of
+sparse interpolation as a smooth optimization task, potentially enabling the
+use of gradient-based training methods. Our objective is based on minimizing
+$\ell^p$ quasinorms of the weights for $0 < p < 1$, a classical
+sparsity-promoting strategy in finite-dimensional settings. However, applying
+these ideas to neural networks presents new challenges: the function class is
+infinite-dimensional, and the weights are learned using a highly nonconvex
+objective. We prove that, under our formulation, global minimizers correspond
+exactly to sparsest solutions. Our work lays a foundation for understanding
+when and how continuous sparsity-inducing objectives can be leveraged to
+recover sparse networks through training.</p></br><a href="http://arxiv.org/pdf/2505.22567v1" target="_blank"><h2>A black hole in a near-pristine galaxy 700 million years after the Big
+  Bang</h2></a><strong><u>Authors:</u></strong>  Roberto Maiolino, Hannah Uebler, Francesco D'Eugenio, Jan Scholtz, Ignas Juodzbalis, Michele Perna, Volker Bromm, Pratika Dayal, Sophie Koudmani, Boyuan Liu, Raffaella Schneider, Debora Sijacki, Rosa Valiante, Alessandro Trinca, Saiyang Zhang, Marta Volonteri, Kohei Inayoshi, Stefano Carniani, Kimihiko Nakajima, Yuki Isobe, Joris Witstok, Gareth C. Jones, Sandro Tacchella, Santiago Arribas, Andrew Bunker, Elisa Cataldi, Stephane Charlot, Giovanni Cresci, Mirko Curti, Andrew C. Fabian, Harley Katz, Nimisha Kumari, Nicolas Laporte, Giovanni Mazzolari, Brant Robertson, Fengwu Sun, Bruno Rodriguez Del Pino, Giacomo Venturi</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> Submitted, 16 pages, 9 figures, 1 table</br><p><strong><u>Abstract:</u></strong> The recent discovery of a large number of massive black holes within the
+first two billion years after the Big Bang, as well as their peculiar
+properties, have been largely unexpected based on the extrapolation of the
+properties of luminous quasars. These findings have prompted the development of
+several theoretical models for the early formation and growth of black holes,
+which are, however, difficult to differentiate. We report the metallicity
+measurement around a gravitationally lensed massive black hole at redshift
+7.04, hosted in a galaxy with very low dynamical mass. The weakness of the
+[OIII]5007 emission line relative to the narrow Hbeta emission indicates an
+extremely low chemical enrichment, less than 0.01 solar. We argue that such
+properties cannot be uncommon among accreting black holes around this early
+cosmic epoch. Explaining such a low chemical enrichment in a system that has
+developed a massive black hole is challenging for most theories. Models
+assuming heavy black hole seeds (such as Direct Collapse Black Holes) or
+super-Eddington accretion scenarios struggle to explain the observations,
+although they can potentially reproduce the observed properties in rare cases.
+Models invoking "primordial black holes" (i.e. putative black holes formed
+shortly after the Big Bang) may potentially explain the low chemical enrichment
+associated with this black hole.</p></br><a href="http://arxiv.org/pdf/2505.22161v1" target="_blank"><h2>Spectral indices in active galactic nuclei as seen by Apertif and LOFAR</h2></a><strong><u>Authors:</u></strong>  A. M. Kutkin, R. Morganti, T. A. Oosterloo, E. A. K. Adams, H. Dénes, J. van Leeuwen, M. J. Norden, E. Orru</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 7 pages, 6 figures, accepted for publication in A&A</br><p><strong><u>Abstract:</u></strong> We present two new radio continuum images obtained with Apertif at 1.4 GHz.
+The images, produced with a direction-dependent calibration pipeline, cover 136
+square degrees of the Lockman Hole and 24 square degrees of the ELAIS-N fields,
+with an average resolution of 17x12" and residual noise of 33 uJy/beam. With
+the improved depth of the images we found in total 63692 radio sources, many of
+which are detected for the first time at this frequency. With the addition of
+the previously published Apertif catalog for the Bootes field, we cross-match
+with the LOFAR deep-fields value-added catalogs at 150 MHz, resulting in a
+homogeneous sample of 10196 common sources with spectral index estimates, one
+of the largest to date. We analyze and discuss the correlations between
+spectral index, redshift, linear sources size, and radio luminosity, taking
+into account biases of flux-density-limited surveys. Our results suggest that
+the observed correlation between spectral index and redshift of active galactic
+nuclei can be attributed to the Malmquist bias reflecting an intrinsic relation
+between radio luminosity and the spectral index. We also find a correlation
+between spectral index and linear source size with more compact sources having
+steeper spectra.</p></br><a href="http://arxiv.org/pdf/2505.22600v1" target="_blank"><h2>Dust Budget Crisis in Little Red Dots</h2></a><strong><u>Authors:</u></strong>  Kejian Chen, Zhengrong Li, Kohei Inayoshi, Luis C. Ho</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 12 pages, 5 figures</br><p><strong><u>Abstract:</u></strong> Little red dots (LRDs), a population of active galactic nuclei (AGNs)
+recently identified by JWST, are characterized by their compact morphology and
+red optical continuum emission, which is often interpreted as evidence for
+significant dust extinction of $A_V \gtrsim 3$ mag. However, the dust-reddened
+AGN scenario is increasingly challenged by their faint near-to-far infrared
+emission and a potential "dust budget crisis" in cases when the host galaxy is
+either undetectably low-mass or absent. In this study, we re-evaluate the dust
+extinction level in LRDs by modeling the UV-to-infrared spectra for various
+extinction laws and a broad range of dusty distribution parameters. Comparing
+the predicted infrared fluxes with observational data from the JWST MIRI,
+Herschel, and ALMA, our analysis finds that the visual extinction is tightly
+constrained to $A_V \lesssim 1.0$ mag for A2744-45924 and $A_V \lesssim 1.5$
+mag for RUBIES-BLAGN-1 under the SMC extinction laws, with slightly weaker
+constraints for those with gray extinction in the UV range. The revised $A_V$
+values yield a radiative efficiencies of $10\%$ for the LRD population, easing
+the tension with the Soltan argument for the bulk AGN population at lower
+redshifts. Moreover, this moderate extinction (or dust-free) scenario, with
+reprocessed emission spectra testable by future far-infrared observatories,
+provides a paradigm shift in understanding their natures, environments, and
+evolutionary pathways of massive black holes in the early universe.</p></br><a href="http://arxiv.org/pdf/2505.21717v1" target="_blank"><h2>Scaling Up Liquid-Resistance Liquid-Capacitance Networks for Efficient
+  Sequence Modeling</h2></a><strong><u>Authors:</u></strong>  Mónika Farsang, Ramin Hasani, Radu Grosu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NE</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We present LrcSSM, a \textit{nonlinear} recurrent model that processes long
+sequences as fast as today's linear state-space layers. By forcing the
+state-transition matrix to be diagonal and learned at every step, the full
+sequence can be solved in parallel with a single prefix-scan, giving
+$\mathcal{O}(TD)$ time and memory and only $\mathcal{O}(\log T)$ sequential
+depth, for input-sequence length $T$ and a state dimension $D$. Moreover,
+LrcSSM offers a formal gradient-stability guarantee that other input-varying
+systems such as Liquid-S4 and Mamba do not provide. Lastly, for network depth
+$L$, as the forward and backward passes cost $\Theta(T\,D\,L)$ FLOPs, with its
+low sequential depth and parameter count $\Theta(D\,L)$, the model follows the
+compute-optimal scaling law regime ($\beta \approx 0.42$) recently observed for
+Mamba, outperforming quadratic-attention Transformers at equal compute while
+avoiding the memory overhead of FFT-based long convolutions. We show that on a
+series of long-range forecasting tasks, LrcSSM outperforms LRU, S5 and Mamba.</p></br><a href="http://arxiv.org/pdf/2505.21813v1" target="_blank"><h2>Optimizing Data Augmentation through Bayesian Model Selection</h2></a><strong><u>Authors:</u></strong>  Madi Matymov, Ba-Hien Tran, Michael Kampffmeyer, Markus Heinonen, Maurizio Filippone</br><strong><u>Categories:</u></strong> cs.LG, stat.ML, 62F15, 68T07 (Primary) 62M45, 62C10, 65C60 (Secondary)</br><strong><u>Comments:</u></strong> 26 pages, 3 figures</br><p><strong><u>Abstract:</u></strong> Data Augmentation (DA) has become an essential tool to improve robustness and
+generalization of modern machine learning. However, when deciding on DA
+strategies it is critical to choose parameters carefully, and this can be a
+daunting task which is traditionally left to trial-and-error or expensive
+optimization based on validation performance. In this paper, we counter these
+limitations by proposing a novel framework for optimizing DA. In particular, we
+take a probabilistic view of DA, which leads to the interpretation of
+augmentation parameters as model (hyper)-parameters, and the optimization of
+the marginal likelihood with respect to these parameters as a Bayesian model
+selection problem. Due to its intractability, we derive a tractable Evidence
+Lower BOund (ELBO), which allows us to optimize augmentation parameters jointly
+with model parameters. We provide extensive theoretical results on variational
+approximation quality, generalization guarantees, invariance properties, and
+connections to empirical Bayes. Through experiments on computer vision tasks,
+we show that our approach improves calibration and yields robust performance
+over fixed or no augmentation. Our work provides a rigorous foundation for
+optimizing DA through Bayesian principles with significant potential for robust
+machine learning.</p></br><a href="http://arxiv.org/pdf/2505.22633v1" target="_blank"><h2>Spatial Knowledge Graph-Guided Multimodal Synthesis</h2></a><strong><u>Authors:</u></strong>  Yida Xue, Zhen Bi, Jinnan Yang, Jungang Lou, Huajun Chen, Ningyu Zhang</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.CV, cs.LG, cs.MM</br><strong><u>Comments:</u></strong> Ongoing work</br><p><strong><u>Abstract:</u></strong> Recent advances in multimodal large language models (MLLMs) have
+significantly enhanced their capabilities; however, their spatial perception
+abilities remain a notable limitation. To address this challenge, multimodal
+data synthesis offers a promising solution. Yet, ensuring that synthesized data
+adhere to spatial common sense is a non-trivial task. In this work, we
+introduce SKG2Data, a novel multimodal synthesis approach guided by spatial
+knowledge graphs, grounded in the concept of knowledge-to-data generation.
+SKG2Data automatically constructs a Spatial Knowledge Graph (SKG) to emulate
+human-like perception of spatial directions and distances, which is
+subsequently utilized to guide multimodal data synthesis. Extensive experiments
+demonstrate that data synthesized from diverse types of spatial knowledge,
+including direction and distance, not only enhance the spatial perception and
+reasoning abilities of MLLMs but also exhibit strong generalization
+capabilities. We hope that the idea of knowledge-based data synthesis can
+advance the development of spatial intelligence.</p></br><a href="http://arxiv.org/pdf/2505.21918v1" target="_blank"><h2>Self-supervised Learning Method Using Transformer for Multi-dimensional
+  Sensor Data Processing</h2></a><strong><u>Authors:</u></strong>  Haruki Kai, Tsuyoshi Okita</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 25 pages, 4 figures</br><p><strong><u>Abstract:</u></strong> We developed a deep learning algorithm for human activity recognition using
+sensor signals as input. In this study, we built a pretrained language model
+based on the Transformer architecture, which is widely used in natural language
+processing. By leveraging this pretrained model, we aimed to improve
+performance on the downstream task of human activity recognition. While this
+task can be addressed using a vanilla Transformer, we propose an enhanced
+n-dimensional numerical processing Transformer that incorporates three key
+features: embedding n-dimensional numerical data through a linear layer,
+binning-based pre-processing, and a linear transformation in the output layer.
+We evaluated the effectiveness of our proposed model across five different
+datasets. Compared to the vanilla Transformer, our model demonstrated 10%-15%
+improvements in accuracy.</p></br><a href="http://arxiv.org/pdf/2505.21892v1" target="_blank"><h2>Almost Linear Convergence under Minimal Score Assumptions: Quantized
+  Transition Diffusion</h2></a><strong><u>Authors:</u></strong>  Xunpeng Huang, Yingyu Lin, Nikki Lijing Kuang, Hanze Dong, Difan Zou, Yian Ma, Tong Zhang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 37 pages, 3 figures, 3 tables</br><p><strong><u>Abstract:</u></strong> Continuous diffusion models have demonstrated remarkable performance in data
+generation across various domains, yet their efficiency remains constrained by
+two critical limitations: (1) the local adjacency structure of the forward
+Markov process, which restricts long-range transitions in the data space, and
+(2) inherent biases introduced during the simulation of time-inhomogeneous
+reverse denoising processes. To address these challenges, we propose Quantized
+Transition Diffusion (QTD), a novel approach that integrates data quantization
+with discrete diffusion dynamics. Our method first transforms the continuous
+data distribution $p_*$ into a discrete one $q_*$ via histogram approximation
+and binary encoding, enabling efficient representation in a structured discrete
+latent space. We then design a continuous-time Markov chain (CTMC) with Hamming
+distance-based transitions as the forward process, which inherently supports
+long-range movements in the original data space. For reverse-time sampling, we
+introduce a \textit{truncated uniformization} technique to simulate the reverse
+CTMC, which can provably provide unbiased generation from $q_*$ under minimal
+score assumptions. Through a novel KL dynamic analysis of the reverse CTMC, we
+prove that QTD can generate samples with $O(d\ln^2(d/\epsilon))$ score
+evaluations in expectation to approximate the $d$--dimensional target
+distribution $p_*$ within an $\epsilon$ error tolerance. Our method not only
+establishes state-of-the-art inference efficiency but also advances the
+theoretical foundations of diffusion-based generative modeling by unifying
+discrete and continuous diffusion paradigms.</p></br><a href="http://arxiv.org/pdf/2505.22364v1" target="_blank"><h2>Computing Optimal Transport Maps and Wasserstein Barycenters Using
+  Conditional Normalizing Flows</h2></a><strong><u>Authors:</u></strong>  Gabriele Visentin, Patrick Cheridito</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 65K99 (Primary) 68T07, 68T99 (Secondary)</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We present a novel method for efficiently computing optimal transport maps
+and Wasserstein barycenters in high-dimensional spaces. Our approach uses
+conditional normalizing flows to approximate the input distributions as
+invertible pushforward transformations from a common latent space. This makes
+it possible to directly solve the primal problem using gradient-based
+minimization of the transport cost, unlike previous methods that rely on dual
+formulations and complex adversarial optimization. We show how this approach
+can be extended to compute Wasserstein barycenters by solving a conditional
+variance minimization problem. A key advantage of our conditional architecture
+is that it enables the computation of barycenters for hundreds of input
+distributions, which was computationally infeasible with previous methods. Our
+numerical experiments illustrate that our approach yields accurate results
+across various high-dimensional tasks and compares favorably with previous
+state-of-the-art methods.</p></br></body>

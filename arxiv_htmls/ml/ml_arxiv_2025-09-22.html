@@ -1,0 +1,398 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 18 Sep 2025 to 22 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.15448v1" target="_blank"><h2>Hierarchical Self-Attention: Generalizing Neural Attention Mechanics to
+  Multi-Scale Problems</h2></a><strong><u>Authors:</u></strong>  Saeed Amizadeh, Sara Abdali, Yinheng Li, Kazuhito Koishida</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NE, stat.ML</br><strong><u>Comments:</u></strong> In The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</br><strong><u>Matching Keywords:</u></strong> multi-modal (abstract), multi-modality (abstract), transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformers and their attention mechanism have been revolutionary in the
+field of Machine Learning. While originally proposed for the language data,
+they quickly found their way to the image, video, graph, etc. data modalities
+with various signal geometries. Despite this versatility, generalizing the
+attention mechanism to scenarios where data is presented at different scales
+from potentially different modalities is not straightforward. The attempts to
+incorporate hierarchy and multi-modality within transformers are largely based
+on ad hoc heuristics, which are not seamlessly generalizable to similar
+problems with potentially different structures. To address this problem, in
+this paper, we take a fundamentally different approach: we first propose a
+mathematical construct to represent multi-modal, multi-scale data. We then
+mathematically derive the neural attention mechanics for the proposed construct
+from the first principle of entropy minimization. We show that the derived
+formulation is optimal in the sense of being the closest to the standard
+Softmax attention while incorporating the inductive biases originating from the
+hierarchical/geometric information of the problem. We further propose an
+efficient algorithm based on dynamic programming to compute our derived
+attention mechanism. By incorporating it within transformers, we show that the
+proposed hierarchical attention mechanism not only can be employed to train
+transformer models in hierarchical/multi-modal settings from scratch, but it
+can also be used to inject hierarchical information into classical, pre-trained
+transformer models post training, resulting in more efficient models in
+zero-shot manner.</p></br><a href="http://arxiv.org/pdf/2509.16058v1" target="_blank"><h2>Attention Schema-based Attention Control (ASAC): A Cognitive-Inspired
+  Approach for Attention Management in Transformers</h2></a><strong><u>Authors:</u></strong>  Krati Saxena, Federico Jurado Ruiz, Guido Manzi, Dianbo Liu, Alex Lamb</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), neural network (abstract), transfer learning (abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Attention mechanisms have become integral in AI, significantly enhancing
+model performance and scalability by drawing inspiration from human cognition.
+Concurrently, the Attention Schema Theory (AST) in cognitive science posits
+that individuals manage their attention by creating a model of the attention
+itself, effectively allocating cognitive resources. Inspired by AST, we
+introduce ASAC (Attention Schema-based Attention Control), which integrates the
+attention schema concept into artificial neural networks. Our initial
+experiments focused on embedding the ASAC module within transformer
+architectures. This module employs a Vector-Quantized Variational AutoEncoder
+(VQVAE) as both an attention abstractor and controller, facilitating precise
+attention management. By explicitly modeling attention allocation, our approach
+aims to enhance system efficiency. We demonstrate ASAC's effectiveness in both
+the vision and NLP domains, highlighting its ability to improve classification
+accuracy and expedite the learning process. Our experiments with vision
+transformers across various datasets illustrate that the attention controller
+not only boosts classification accuracy but also accelerates learning.
+Furthermore, we have demonstrated the model's robustness and generalization
+capabilities across noisy and out-of-distribution datasets. In addition, we
+have showcased improved performance in multi-task settings. Quick experiments
+reveal that the attention schema-based module enhances resilience to
+adversarial attacks, optimizes attention to improve learning efficiency, and
+facilitates effective transfer learning and learning from fewer examples. These
+promising results establish a connection between cognitive science and machine
+learning, shedding light on the efficient utilization of attention mechanisms
+in AI systems.</p></br><a href="http://arxiv.org/pdf/2509.15481v1" target="_blank"><h2>Solar Forecasting with Causality: A Graph-Transformer Approach to
+  Spatiotemporal Dependencies</h2></a><strong><u>Authors:</u></strong>  Yanan Niu, Demetri Psaltis, Christophe Moser, Luisa Lambertini</br><strong><u>Categories:</u></strong> cs.LG, cs.SI, I.2.6; I.5.4</br><strong><u>Comments:</u></strong> Accepted to CIKM 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), transformer (title, abstract), causality (title)</br><p><strong><u>Abstract:</u></strong> Accurate solar forecasting underpins effective renewable energy management.
+We present SolarCAST, a causally informed model predicting future global
+horizontal irradiance (GHI) at a target site using only historical GHI from
+site X and nearby stations S - unlike prior work that relies on sky-camera or
+satellite imagery requiring specialized hardware and heavy preprocessing. To
+deliver high accuracy with only public sensor data, SolarCAST models three
+classes of confounding factors behind X-S correlations using scalable neural
+components: (i) observable synchronous variables (e.g., time of day, station
+identity), handled via an embedding module; (ii) latent synchronous factors
+(e.g., regional weather patterns), captured by a spatio-temporal graph neural
+network; and (iii) time-lagged influences (e.g., cloud movement across
+stations), modeled with a gated transformer that learns temporal shifts. It
+outperforms leading time-series and multimodal baselines across diverse
+geographical conditions, and achieves a 25.9% error reduction over the top
+commercial forecaster, Solcast. SolarCAST offers a lightweight, practical, and
+generalizable solution for localized solar forecasting.</p></br><a href="http://arxiv.org/pdf/2509.15538v1" target="_blank"><h2>Geometric Integration for Neural Control Variates</h2></a><strong><u>Authors:</u></strong>  Daniel Meister, Takahiro Harada</br><strong><u>Categories:</u></strong> cs.GR, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Control variates are a variance-reduction technique for Monte Carlo
+integration. The principle involves approximating the integrand by a function
+that can be analytically integrated, and integrating using the Monte Carlo
+method only the residual difference between the integrand and the
+approximation, to obtain an unbiased estimate. Neural networks are universal
+approximators that could potentially be used as a control variate. However, the
+challenge lies in the analytic integration, which is not possible in general.
+In this manuscript, we study one of the simplest neural network models, the
+multilayered perceptron (MLP) with continuous piecewise linear activation
+functions, and its possible analytic integration. We propose an integration
+method based on integration domain subdivision, employing techniques from
+computational geometry to solve this problem in 2D. We demonstrate that an MLP
+can be used as a control variate in combination with our integration method,
+showing applications in the light transport simulation.</p></br><a href="http://arxiv.org/pdf/2509.15797v1" target="_blank"><h2>Transfer learning under latent space model</h2></a><strong><u>Authors:</u></strong>  Kuangnan Fang, Ruixuan Qin, Xinyan Fan</br><strong><u>Categories:</u></strong> stat.ME, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract), transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> Latent space model plays a crucial role in network analysis, and accurate
+estimation of latent variables is essential for downstream tasks such as link
+prediction. However, the large number of parameters to be estimated presents a
+challenge, especially when the latent space dimension is not exceptionally
+small. In this paper, we propose a transfer learning method that leverages
+information from networks with latent variables similar to those in the target
+network, thereby improving the estimation accuracy for the target. Given
+transferable source networks, we introduce a two-stage transfer learning
+algorithm that accommodates differences in node numbers between source and
+target networks. In each stage, we derive sufficient identification conditions
+and design tailored projected gradient descent algorithms for estimation.
+Theoretical properties of the resulting estimators are established. When the
+transferable networks are unknown, a detection algorithm is introduced to
+identify suitable source networks. Simulation studies and analyses of two real
+datasets demonstrate the effectiveness of the proposed methods.</p></br><a href="http://arxiv.org/pdf/2509.15991v1" target="_blank"><h2>Quantum Enhanced Anomaly Detection for ADS-B Data using Hybrid Deep
+  Learning</h2></a><strong><u>Authors:</u></strong>  Rani Naaman, Felipe Gohring de Magalhaes, Jean-Yves Ouattara, Gabriela Nicolescu</br><strong><u>Categories:</u></strong> quant-ph, cs.LG</br><strong><u>Comments:</u></strong> This is the author's version of the work accepted for publication in the IEEE-AIAA Digital Avionics Systems Conference (DASC) 2025. The final version will be available via IEEE Xplore</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The emerging field of Quantum Machine Learning (QML) has shown promising
+advantages in accelerating processing speed and effectively handling the high
+dimensionality associated with complex datasets. Quantum Computing (QC) enables
+more efficient data manipulation through the quantum properties of
+superposition and entanglement. In this paper, we present a novel approach
+combining quantum and classical machine learning techniques to explore the
+impact of quantum properties for anomaly detection in Automatic Dependent
+Surveillance-Broadcast (ADS-B) data. We compare the performance of a
+Hybrid-Fully Connected Quantum Neural Network (H-FQNN) with different loss
+functions and use a publicly available ADS-B dataset to evaluate the
+performance. The results demonstrate competitive performance in detecting
+anomalies, with accuracies ranging from 90.17% to 94.05%, comparable to the
+performance of a traditional Fully Connected Neural Network (FNN) model, which
+achieved accuracies between 91.50% and 93.37%.</p></br><a href="http://arxiv.org/pdf/2509.16186v1" target="_blank"><h2>Quantum Generative Adversarial Autoencoders: Learning latent
+  representations for quantum data generation</h2></a><strong><u>Authors:</u></strong>  Naipunnya Raj, Rajiv Sangle, Avinash Singh, Krishna Kumar Sabapathy</br><strong><u>Categories:</u></strong> quant-ph, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 27 pages, 28 figures, 4 tables, 1 algorithm</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> In this work, we introduce the Quantum Generative Adversarial Autoencoder
+(QGAA), a quantum model for generation of quantum data. The QGAA consists of
+two components: (a) Quantum Autoencoder (QAE) to compress quantum states, and
+(b) Quantum Generative Adversarial Network (QGAN) to learn the latent space of
+the trained QAE. This approach imparts the QAE with generative capabilities.
+The utility of QGAA is demonstrated in two representative scenarios: (a)
+generation of pure entangled states, and (b) generation of parameterized
+molecular ground states for H$_2$ and LiH. The average errors in the energies
+estimated by the trained QGAA are 0.02 Ha for H$_2$ and 0.06 Ha for LiH in
+simulations upto 6 qubits. These results illustrate the potential of QGAA for
+quantum state generation, quantum chemistry, and near-term quantum machine
+learning applications.</p></br><a href="http://arxiv.org/pdf/2509.15555v1" target="_blank"><h2>Hybrid Deep Learning-Federated Learning Powered Intrusion Detection
+  System for IoT/5G Advanced Edge Computing Network</h2></a><strong><u>Authors:</u></strong>  Rasil Baidar, Sasa Maric, Robert Abbas</br><strong><u>Categories:</u></strong> cs.CR, cs.LG, cs.NI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The exponential expansion of IoT and 5G-Advanced applications has enlarged
+the attack surface for DDoS, malware, and zero-day intrusions. We propose an
+intrusion detection system that fuses a convolutional neural network (CNN), a
+bidirectional LSTM (BiLSTM), and an autoencoder (AE) bottleneck within a
+privacy-preserving federated learning (FL) framework. The CNN-BiLSTM branch
+captures local and gated cross-feature interactions, while the AE emphasizes
+reconstruction-based anomaly sensitivity. Training occurs across edge devices
+without sharing raw data. On UNSW-NB15 (binary), the fused model attains AUC
+99.59 percent and F1 97.36 percent; confusion-matrix analysis shows balanced
+error rates with high precision and recall. Average inference time is
+approximately 0.0476 ms per sample on our test hardware, which is well within
+the less than 10 ms URLLC budget, supporting edge deployment. We also discuss
+explainability, drift tolerance, and FL considerations for compliant, scalable
+5G-Advanced IoT security.</p></br><a href="http://arxiv.org/pdf/2509.16068v1" target="_blank"><h2>Communications to Circulations: 3D Wind Field Retrieval and Real-Time
+  Prediction Using 5G GNSS Signals and Deep Learning</h2></a><strong><u>Authors:</u></strong>  Yuchen Ye, Hong Liang, Chaoxia Yuan, Mingyu Li, Aoqi Zhou, Chunqing Shang, Hua Cai, Peixi Liu, Kezuan Wang, Yifeng Zheng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07, I.2.1</br><strong><u>Comments:</u></strong> 31 pages,11 figures,1 table</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate atmospheric wind field information is crucial for various
+applications, including weather forecasting, aviation safety, and disaster risk
+reduction. However, obtaining high spatiotemporal resolution wind data remains
+challenging due to limitations in traditional in-situ observations and remote
+sensing techniques, as well as the computational expense and biases of
+numerical weather prediction (NWP) models. This paper introduces G-WindCast, a
+novel deep learning framework that leverages signal strength variations from 5G
+Global Navigation Satellite System (GNSS) signals to retrieve and forecast
+three-dimensional (3D) atmospheric wind fields. The framework utilizes Forward
+Neural Networks (FNN) and Transformer networks to capture complex, nonlinear,
+and spatiotemporal relationships between GNSS-derived features and wind
+dynamics. Our preliminary results demonstrate promising accuracy in both wind
+retrieval and short-term wind forecasting (up to 30 minutes lead time), with
+skill scores comparable to high-resolution NWP outputs in certain scenarios.
+The model exhibits robustness across different forecast horizons and pressure
+levels, and its predictions for wind speed and direction show superior
+agreement with observations compared to concurrent ERA5 reanalysis data.
+Furthermore, we show that the system can maintain excellent performance for
+localized forecasting even with a significantly reduced number of GNSS stations
+(e.g., around 100), highlighting its cost-effectiveness and scalability. This
+interdisciplinary approach underscores the transformative potential of
+exploiting non-traditional data sources and deep learning for advanced
+environmental monitoring and real-time atmospheric applications.</p></br><a href="http://arxiv.org/pdf/2509.15810v1" target="_blank"><h2>Instance Generation for Meta-Black-Box Optimization through Latent Space
+  Reverse Engineering</h2></a><strong><u>Authors:</u></strong>  Chen Wang, Zeyuan Ma, Zhiguang Cao, Yue-Jiao Gong</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> To relieve intensive human-expertise required to design optimization
+algorithms, recent Meta-Black-Box Optimization (MetaBBO) researches leverage
+generalization strength of meta-learning to train neural network-based
+algorithm design policies over a predefined training problem set, which
+automates the adaptability of the low-level optimizers on unseen problem
+instances. Currently, a common training problem set choice in existing MetaBBOs
+is well-known benchmark suites CoCo-BBOB. Although such choice facilitates the
+MetaBBO's development, problem instances in CoCo-BBOB are more or less limited
+in diversity, raising the risk of overfitting of MetaBBOs, which might further
+results in poor generalization. In this paper, we propose an instance
+generation approach, termed as \textbf{LSRE}, which could generate diverse
+training problem instances for MetaBBOs to learn more generalizable policies.
+LSRE first trains an autoencoder which maps high-dimensional problem features
+into a 2-dimensional latent space. Uniform-grid sampling in this latent space
+leads to hidden representations of problem instances with sufficient diversity.
+By leveraging a genetic-programming approach to search function formulas with
+minimal L2-distance to these hidden representations, LSRE reverse engineers a
+diversified problem set, termed as \textbf{Diverse-BBO}. We validate the
+effectiveness of LSRE by training various MetaBBOs on Diverse-BBO and observe
+their generalization performances on either synthetic or realistic scenarios.
+Extensive experimental results underscore the superiority of Diverse-BBO to
+existing training set choices in MetaBBOs. Further ablation studies not only
+demonstrate the effectiveness of design choices in LSRE, but also reveal
+interesting insights on instance diversity and MetaBBO's generalization.</p></br><a href="http://arxiv.org/pdf/2509.15578v1" target="_blank"><h2>Multimodal Learning for Fake News Detection in Short Videos Using
+  Linguistically Verified Data and Heterogeneous Modality Fusion</h2></a><strong><u>Authors:</u></strong>  Shanghong Li, Chiam Wen Qi Ruth, Hong Xu, Fang Liu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multi-modal (abstract)</br><p><strong><u>Abstract:</u></strong> The rapid proliferation of short video platforms has necessitated advanced
+methods for detecting fake news. This need arises from the widespread influence
+and ease of sharing misinformation, which can lead to significant societal
+harm. Current methods often struggle with the dynamic and multimodal nature of
+short video content. This paper presents HFN, Heterogeneous Fusion Net, a novel
+multimodal framework that integrates video, audio, and text data to evaluate
+the authenticity of short video content. HFN introduces a Decision Network that
+dynamically adjusts modality weights during inference and a Weighted
+Multi-Modal Feature Fusion module to ensure robust performance even with
+incomplete data. Additionally, we contribute a comprehensive dataset VESV
+(VEracity on Short Videos) specifically designed for short video fake news
+detection. Experiments conducted on the FakeTT and newly collected VESV
+datasets demonstrate improvements of 2.71% and 4.14% in Marco F1 over
+state-of-the-art methods. This work establishes a robust solution capable of
+effectively identifying fake news in the complex landscape of short video
+platforms, paving the way for more reliable and comprehensive approaches in
+combating misinformation.</p></br><a href="http://arxiv.org/pdf/2509.15400v1" target="_blank"><h2>Exploring multimodal implicit behavior learning for vehicle navigation
+  in simulated cities</h2></a><strong><u>Authors:</u></strong>  Eric Aislan Antonelo, Gustavo Claudio Karl Couto, Christian Möller</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.RO</br><strong><u>Comments:</u></strong> ENIAC conference</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multimodality (abstract)</br><p><strong><u>Abstract:</u></strong> Standard Behavior Cloning (BC) fails to learn multimodal driving decisions,
+where multiple valid actions exist for the same scenario. We explore Implicit
+Behavioral Cloning (IBC) with Energy-Based Models (EBMs) to better capture this
+multimodality. We propose Data-Augmented IBC (DA-IBC), which improves learning
+by perturbing expert actions to form the counterexamples of IBC training and
+using better initialization for derivative-free inference. Experiments in the
+CARLA simulator with Bird's-Eye View inputs demonstrate that DA-IBC outperforms
+standard IBC in urban driving tasks designed to evaluate multimodal behavior
+learning in a test environment. The learned energy landscapes are able to
+represent multimodal action distributions, which BC fails to achieve.</p></br><a href="http://arxiv.org/pdf/2509.15858v1" target="_blank"><h2>Optimizing Product Deduplication in E-Commerce with Multimodal
+  Embeddings</h2></a><strong><u>Authors:</u></strong>  Aysenur Kulunk, Berk Taskin, M. Furkan Eseoglu, H. Bahadir Sahin</br><strong><u>Categories:</u></strong> cs.IR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> In large scale e-commerce marketplaces, duplicate product listings frequently
+cause consumer confusion and operational inefficiencies, degrading trust on the
+platform and increasing costs. Traditional keyword-based search methodologies
+falter in accurately identifying duplicates due to their reliance on exact
+textual matches, neglecting semantic similarities inherent in product titles.
+To address these challenges, we introduce a scalable, multimodal product
+deduplication designed specifically for the e-commerce domain. Our approach
+employs a domain-specific text model grounded in BERT architecture in
+conjunction with MaskedAutoEncoders for image representations. Both of these
+architectures are augmented with dimensionality reduction techniques to produce
+compact 128-dimensional embeddings without significant information loss.
+Complementing this, we also developed a novel decider model that leverages both
+text and image vectors. By integrating these feature extraction mechanisms with
+Milvus, an optimized vector database, our system can facilitate efficient and
+high-precision similarity searches across extensive product catalogs exceeding
+200 million items with just 100GB of system RAM consumption. Empirical
+evaluations demonstrate that our matching system achieves a macro-average F1
+score of 0.90, outperforming third-party solutions which attain an F1 score of
+0.83. Our findings show the potential of combining domain-specific adaptations
+with state-of-the-art machine learning techniques to mitigate duplicate
+listings in large-scale e-commerce environments.</p></br><a href="http://arxiv.org/pdf/2509.15258v1" target="_blank"><h2>Generative AI Meets Wireless Sensing: Towards Wireless Foundation Model</h2></a><strong><u>Authors:</u></strong>  Zheng Yang, Guoxuan Chi, Chenshu Wu, Hanyu Liu, Yuchong Gao, Yunhao Liu, Jie Xu, Tony Xiao Han</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, eess.SP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), domain adaptation (abstract)</br><p><strong><u>Abstract:</u></strong> Generative Artificial Intelligence (GenAI) has made significant advancements
+in fields such as computer vision (CV) and natural language processing (NLP),
+demonstrating its capability to synthesize high-fidelity data and improve
+generalization. Recently, there has been growing interest in integrating GenAI
+into wireless sensing systems. By leveraging generative techniques such as data
+augmentation, domain adaptation, and denoising, wireless sensing applications,
+including device localization, human activity recognition, and environmental
+monitoring, can be significantly improved. This survey investigates the
+convergence of GenAI and wireless sensing from two complementary perspectives.
+First, we explore how GenAI can be integrated into wireless sensing pipelines,
+focusing on two modes of integration: as a plugin to augment task-specific
+models and as a solver to directly address sensing tasks. Second, we analyze
+the characteristics of mainstream generative models, such as Generative
+Adversarial Networks (GANs), Variational Autoencoders (VAEs), and diffusion
+models, and discuss their applicability and unique advantages across various
+wireless sensing tasks. We further identify key challenges in applying GenAI to
+wireless sensing and outline a future direction toward a wireless foundation
+model: a unified, pre-trained design capable of scalable, adaptable, and
+efficient signal understanding across diverse sensing tasks.</p></br><a href="http://arxiv.org/pdf/2509.14830v1" target="_blank"><h2>ProtoMedX: Towards Explainable Multi-Modal Prototype Learning for Bone
+  Health Classification</h2></a><strong><u>Authors:</u></strong>  Alvaro Lopez Pellicer, Andre Mariucci, Plamen Angelov, Marwan Bukhari, Jemma G. Kerns</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted ICCV 2025. Adaptation, Fairness, Explainability in AI Medical Imaging (PHAROS-AFE-AIMI Workshop). 8 pages, 5 figures, 4 tables</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), multi-modal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Bone health studies are crucial in medical practice for the early detection
+and treatment of Osteopenia and Osteoporosis. Clinicians usually make a
+diagnosis based on densitometry (DEXA scans) and patient history. The
+applications of AI in this field are ongoing research. Most successful methods
+rely on deep learning models that use vision alone (DEXA/X-ray imagery) and
+focus on prediction accuracy, while explainability is often disregarded and
+left to post hoc assessments of input contributions. We propose ProtoMedX, a
+multi-modal model that uses both DEXA scans of the lumbar spine and patient
+records. ProtoMedX's prototype-based architecture is explainable by design,
+which is crucial for medical applications, especially in the context of the
+upcoming EU AI Act, as it allows explicit analysis of model decisions,
+including incorrect ones. ProtoMedX demonstrates state-of-the-art performance
+in bone health classification while also providing explanations that can be
+visually understood by clinicians. Using a dataset of 4,160 real NHS patients,
+the proposed ProtoMedX achieves 87.58% accuracy in vision-only tasks and 89.8%
+in its multi-modal variant, both surpassing existing published methods.</p></br><a href="http://arxiv.org/pdf/2509.14925v1" target="_blank"><h2>Self-Explaining Reinforcement Learning for Mobile Network Resource
+  Allocation</h2></a><strong><u>Authors:</u></strong>  Konrad Nowosadko, Franco Ruggeri, Ahmad Terra</br><strong><u>Categories:</u></strong> cs.LG, cs.NI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Reinforcement Learning (RL) methods that incorporate deep neural networks
+(DNN), though powerful, often lack transparency. Their black-box characteristic
+hinders interpretability and reduces trustworthiness, particularly in critical
+domains. To address this challenge in RL tasks, we propose a solution based on
+Self-Explaining Neural Networks (SENNs) along with explanation extraction
+methods to enhance interpretability while maintaining predictive accuracy. Our
+approach targets low-dimensionality problems to generate robust local and
+global explanations of the model's behaviour. We evaluate the proposed method
+on the resource allocation problem in mobile networks, demonstrating that SENNs
+can constitute interpretable solutions with competitive performance. This work
+highlights the potential of SENNs to improve transparency and trust in
+AI-driven decision-making for low-dimensional tasks. Our approach strong
+performance on par with the existing state-of-the-art methods, while providing
+robust explanations.</p></br><a href="http://arxiv.org/pdf/2509.14868v2" target="_blank"><h2>DPANet: Dual Pyramid Attention Network for Multivariate Time Series
+  Forecasting</h2></a><strong><u>Authors:</u></strong>  Qianyang Li, Xingjun Zhang, Shaoxun Wang, Jia Wei</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Long-term time series forecasting (LTSF) is hampered by the challenge of
+modeling complex dependencies that span multiple temporal scales and frequency
+resolutions. Existing methods, including Transformer and MLP-based models,
+often struggle to capture these intertwined characteristics in a unified and
+structured manner. We propose the Dual Pyramid Attention Network (DPANet), a
+novel architecture that explicitly decouples and concurrently models temporal
+multi-scale dynamics and spectral multi-resolution periodicities. DPANet
+constructs two parallel pyramids: a Temporal Pyramid built on progressive
+downsampling, and a Frequency Pyramid built on band-pass filtering. The core of
+our model is the Cross-Pyramid Fusion Block, which facilitates deep,
+interactive information exchange between corresponding pyramid levels via
+cross-attention. This fusion proceeds in a coarse-to-fine hierarchy, enabling
+global context to guide local representation learning. Extensive experiments on
+public benchmarks show that DPANet achieves state-of-the-art performance,
+significantly outperforming prior models. Code is available at
+https://github.com/hit636/DPANet.</p></br><a href="http://arxiv.org/pdf/2509.14498v1" target="_blank"><h2>Data coarse graining can improve model performance</h2></a><strong><u>Authors:</u></strong>  Alex Nguyen, David J. Schwab, Vudtiwat Ngampruetikorn</br><strong><u>Categories:</u></strong> cond-mat.stat-mech, cond-mat.dis-nn, cs.LG, q-bio.NC, stat.ML</br><strong><u>Comments:</u></strong> 7 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Lossy data transformations by definition lose information. Yet, in modern
+machine learning, methods like data pruning and lossy data augmentation can
+help improve generalization performance. We study this paradox using a solvable
+model of high-dimensional, ridge-regularized linear regression under 'data
+coarse graining.' Inspired by the renormalization group in statistical physics,
+we analyze coarse-graining schemes that systematically discard features based
+on their relevance to the learning task. Our results reveal a nonmonotonic
+dependence of the prediction risk on the degree of coarse graining. A
+'high-pass' scheme--which filters out less relevant, lower-signal features--can
+help models generalize better. By contrast, a 'low-pass' scheme that integrates
+out more relevant, higher-signal features is purely detrimental. Crucially,
+using optimal regularization, we demonstrate that this nonmonotonicity is a
+distinct effect of data coarse graining and not an artifact of double descent.
+Our framework offers a clear, analytical explanation for why careful data
+augmentation works: it strips away less relevant degrees of freedom and
+isolates more predictive signals. Our results highlight a complex, nonmonotonic
+risk landscape shaped by the structure of the data, and illustrate how ideas
+from statistical physics provide a principled lens for understanding modern
+machine learning phenomena.</p></br><a href="http://arxiv.org/pdf/2509.15275v1" target="_blank"><h2>Partial Column Generation with Graph Neural Networks for Team Formation
+  and Routing</h2></a><strong><u>Authors:</u></strong>  Giacomo Dall'Olio, Rainer Kolisch, Yaoxin Wu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 30 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The team formation and routing problem is a challenging optimization problem
+with several real-world applications in fields such as airport, healthcare, and
+maintenance operations. To solve this problem, exact solution methods based on
+column generation have been proposed in the literature. In this paper, we
+propose a novel partial column generation strategy for settings with multiple
+pricing problems, based on predicting which ones are likely to yield columns
+with a negative reduced cost. We develop a machine learning model tailored to
+the team formation and routing problem that leverages graph neural networks for
+these predictions. Computational experiments demonstrate that applying our
+strategy enhances the solution method and outperforms traditional partial
+column generation approaches from the literature, particularly on hard
+instances solved under a tight time limit.</p></br><a href="http://arxiv.org/pdf/2509.14519v1" target="_blank"><h2>BEACON: Behavioral Malware Classification with Large Language Model
+  Embeddings and Deep Learning</h2></a><strong><u>Authors:</u></strong>  Wadduwage Shanika Perera, Haodi Jiang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Malware is becoming increasingly complex and widespread, making it essential
+to develop more effective and timely detection methods. Traditional static
+analysis often fails to defend against modern threats that employ code
+obfuscation, polymorphism, and other evasion techniques. In contrast,
+behavioral malware detection, which monitors runtime activities, provides a
+more reliable and context-aware solution. In this work, we propose BEACON, a
+novel deep learning framework that leverages large language models (LLMs) to
+generate dense, contextual embeddings from raw sandbox-generated behavior
+reports. These embeddings capture semantic and structural patterns of each
+sample and are processed by a one-dimensional convolutional neural network (1D
+CNN) for multi-class malware classification. Evaluated on the Avast-CTU Public
+CAPE Dataset, our framework consistently outperforms existing methods,
+highlighting the effectiveness of LLM-based behavioral embeddings and the
+overall design of BEACON for robust malware classification.</p></br><a href="http://arxiv.org/pdf/2509.15170v2" target="_blank"><h2>Watermarking and Anomaly Detection in Machine Learning Models for LORA
+  RF Fingerprinting</h2></a><strong><u>Authors:</u></strong>  Aarushi Mahajan, Wayne Burleson</br><strong><u>Categories:</u></strong> cs.CR, cs.AI, eess.SP</br><strong><u>Comments:</u></strong> IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), convolutional (abstract), anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Radio frequency fingerprint identification (RFFI) distinguishes wireless
+devices by the small variations in their analog circuits, avoiding heavy
+cryptographic authentication. While deep learning on spectrograms improves
+accuracy, models remain vulnerable to copying, tampering, and evasion. We
+present a stronger RFFI system combining watermarking for ownership proof and
+anomaly detection for spotting suspicious inputs. Using a ResNet-34 on log-Mel
+spectrograms, we embed three watermarks: a simple trigger, an adversarially
+trained trigger robust to noise and filtering, and a hidden gradient/weight
+signature. A convolutional Variational Autoencoders (VAE) with Kullback-Leibler
+(KL) warm-up and free-bits flags off-distribution queries. On the LoRa dataset,
+our system achieves 94.6% accuracy, 98% watermark success, and 0.94 AUROC,
+offering verifiable, tamper-resistant authentication.</p></br><a href="http://arxiv.org/pdf/2509.15980v1" target="_blank"><h2>Shedding Light on Depth: Explainability Assessment in Monocular Depth
+  Estimation</h2></a><strong><u>Authors:</u></strong>  Lorenzo Cirillo, Claudio Schiavella, Lorenzo Papa, Paolo Russo, Irene Amerini</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 8 pages, 3 figures, 2 tables. This paper has been accepted at the International Joint Conference on Neural Networks (IJCNN) 2025</br><strong><u>Matching Keywords:</u></strong> explainability (title, abstract), explainable (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Explainable artificial intelligence is increasingly employed to understand
+the decision-making process of deep learning models and create trustworthiness
+in their adoption. However, the explainability of Monocular Depth Estimation
+(MDE) remains largely unexplored despite its wide deployment in real-world
+applications. In this work, we study how to analyze MDE networks to map the
+input image to the predicted depth map. More in detail, we investigate
+well-established feature attribution methods, Saliency Maps, Integrated
+Gradients, and Attention Rollout on different computationally complex models
+for MDE: METER, a lightweight network, and PixelFormer, a deep network. We
+assess the quality of the generated visual explanations by selectively
+perturbing the most relevant and irrelevant pixels, as identified by the
+explainability methods, and analyzing the impact of these perturbations on the
+model's output. Moreover, since existing evaluation metrics can have some
+limitations in measuring the validity of visual explanations for MDE, we
+additionally introduce the Attribution Fidelity. This metric evaluates the
+reliability of the feature attribution by assessing their consistency with the
+predicted depth map. Experimental results demonstrate that Saliency Maps and
+Integrated Gradients have good performance in highlighting the most important
+input features for MDE lightweight and deep models, respectively. Furthermore,
+we show that Attribution Fidelity effectively identifies whether an
+explainability method fails to produce reliable visual maps, even in scenarios
+where conventional metrics might suggest satisfactory results.</p></br><a href="http://arxiv.org/pdf/2509.15593v1" target="_blank"><h2>SETrLUSI: Stochastic Ensemble Multi-Source Transfer Learning Using
+  Statistical Invariant</h2></a><strong><u>Authors:</u></strong>  Chunna Li, Yiwei Song, Yuanhai Shao</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> In transfer learning, a source domain often carries diverse knowledge, and
+different domains usually emphasize different types of knowledge. Different
+from handling only a single type of knowledge from all domains in traditional
+transfer learning methods, we introduce an ensemble learning framework with a
+weak mode of convergence in the form of Statistical Invariant (SI) for
+multi-source transfer learning, formulated as Stochastic Ensemble Multi-Source
+Transfer Learning Using Statistical Invariant (SETrLUSI). The proposed SI
+extracts and integrates various types of knowledge from both source and target
+domains, which not only effectively utilizes diverse knowledge but also
+accelerates the convergence process. Further, SETrLUSI incorporates stochastic
+SI selection, proportional source domain sampling, and target domain
+bootstrapping, which improves training efficiency while enhancing model
+stability. Experiments show that SETrLUSI has good convergence and outperforms
+related methods with a lower time cost.</p></br></body>

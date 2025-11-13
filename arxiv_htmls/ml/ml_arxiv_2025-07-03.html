@@ -1,0 +1,205 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 01 Jul 2025 to 03 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.01875v1" target="_blank"><h2>Towards Foundation Auto-Encoders for Time-Series Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Gastón García González, Pedro Casas, Emilio Martínez, Alicia Fernández</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Presented at ACM KDD 2024, MiLeTS 2024 Workshop, August 25, 2024, Barcelona, Spain</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), convolutional (abstract), anomaly detection (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We investigate a novel approach to time-series modeling, inspired by the
+successes of large pretrained foundation models. We introduce FAE (Foundation
+Auto-Encoders), a foundation generative-AI model for anomaly detection in
+time-series data, based on Variational Auto-Encoders (VAEs). By foundation, we
+mean a model pretrained on massive amounts of time-series data which can learn
+complex temporal patterns useful for accurate modeling, forecasting, and
+detection of anomalies on previously unseen datasets. FAE leverages VAEs and
+Dilated Convolutional Neural Networks (DCNNs) to build a generic model for
+univariate time-series modeling, which could eventually perform properly in
+out-of-the-box, zero-shot anomaly detection applications. We introduce the main
+concepts of FAE, and present preliminary results in different multi-dimensional
+time-series datasets from various domains, including a real dataset from an
+operational mobile ISP, and the well known KDD 2021 Anomaly Detection dataset.</p></br><a href="http://arxiv.org/pdf/2507.01924v1" target="_blank"><h2>Exploring a Hybrid Deep Learning Approach for Anomaly Detection in
+  Mental Healthcare Provider Billing: Addressing Label Scarcity through
+  Semi-Supervised Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Samirah Bakker, Yao Ma, Seyed Sahand Mohammadi Ziabari</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> The complexity of mental healthcare billing enables anomalies, including
+fraud. While machine learning methods have been applied to anomaly detection,
+they often struggle with class imbalance, label scarcity, and complex
+sequential patterns. This study explores a hybrid deep learning approach
+combining Long Short-Term Memory (LSTM) networks and Transformers, with
+pseudo-labeling via Isolation Forests (iForest) and Autoencoders (AE). Prior
+work has not evaluated such hybrid models trained on pseudo-labeled data in the
+context of healthcare billing. The approach is evaluated on two real-world
+billing datasets related to mental healthcare. The iForest LSTM baseline
+achieves the highest recall (0.963) on declaration-level data. On the
+operation-level data, the hybrid iForest-based model achieves the highest
+recall (0.744), though at the cost of lower precision. These findings highlight
+the potential of combining pseudo-labeling with hybrid deep learning in
+complex, imbalanced anomaly detection settings.</p></br><a href="http://arxiv.org/pdf/2507.01939v1" target="_blank"><h2>SpecCLIP: Aligning and Translating Spectroscopic Measurements for Stars</h2></a><strong><u>Authors:</u></strong>  Xiaosheng Zhao, Yang Huang, Guirong Xue, Xiao Kong, Jifeng Liu, Xiaoyu Tang, Timothy C. Beers, Yuan-Sen Ting, A-Li Luo</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.SR, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 26 pages, 6 figures, 5 tables. To be submitted to AAS Journals. Comments welcome</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> In recent years, large language models (LLMs) have transformed natural
+language understanding through vast datasets and large-scale parameterization.
+Inspired by this success, we present SpecCLIP, a foundation model framework
+that extends LLM-inspired methodologies to stellar spectral analysis. Stellar
+spectra, akin to structured language, encode rich physical and chemical
+information about stars. By training foundation models on large-scale spectral
+datasets, our goal is to learn robust and informative embeddings that support
+diverse downstream applications. As a proof of concept, SpecCLIP involves
+pre-training on two spectral types--LAMOST low-resolution and Gaia XP--followed
+by contrastive alignment using the CLIP (Contrastive Language-Image
+Pre-training) framework, adapted to associate spectra from different
+instruments. This alignment is complemented by auxiliary decoders that preserve
+spectrum-specific information and enable translation (prediction) between
+spectral types, with the former achieved by maximizing mutual information
+between embeddings and input spectra. The result is a cross-spectrum framework
+enabling intrinsic calibration and flexible applications across instruments. We
+demonstrate that fine-tuning these models on moderate-sized labeled datasets
+improves adaptability to tasks such as stellar-parameter estimation and
+chemical-abundance determination. SpecCLIP also enhances the accuracy and
+precision of parameter estimates benchmarked against external survey data.
+Additionally, its similarity search and cross-spectrum prediction capabilities
+offer potential for anomaly detection. Our results suggest that contrastively
+trained foundation models enriched with spectrum-aware decoders can advance
+precision stellar spectroscopy.</p></br><a href="http://arxiv.org/pdf/2507.01699v1" target="_blank"><h2>Variational Graph Convolutional Neural Networks</h2></a><strong><u>Authors:</u></strong>  Illia Oleksiienko, Juho Kanniainen, Alexandros Iosifidis</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> This work has been submitted to the IEEE for possible publication. 9 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), explainability (abstract), neural network (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Estimation of model uncertainty can help improve the explainability of Graph
+Convolutional Networks and the accuracy of the models at the same time.
+Uncertainty can also be used in critical applications to verify the results of
+the model by an expert or additional models. In this paper, we propose
+Variational Neural Network versions of spatial and spatio-temporal Graph
+Convolutional Networks. We estimate uncertainty in both outputs and layer-wise
+attentions of the models, which has the potential for improving model
+explainability. We showcase the benefits of these models in the social trading
+analysis and the skeleton-based human action recognition tasks on the Finnish
+board membership, NTU-60, NTU-120 and Kinetics datasets, where we show
+improvement in model accuracy in addition to estimated model uncertainties.</p></br><a href="http://arxiv.org/pdf/2507.00866v1" target="_blank"><h2>Template-Fitting Meets Deep Learning: Redshift Estimation Using
+  Physics-Guided Neural Networks</h2></a><strong><u>Authors:</u></strong>  Jonas Chris Ferrao, Dickson Dias, Pranav Naik, Glory D'Cruz, Anish Naik, Siya Khandeparkar, Manisha Gokuldas Fal Dessai</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract), multimodal (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate photometric redshift estimation is critical for observational
+cosmology, especially in large-scale surveys where spectroscopic measurements
+are impractical. Traditional approaches include template fitting and machine
+learning, each with distinct strengths and limitations. We present a hybrid
+method that integrates template fitting with deep learning using physics-guided
+neural networks. By embedding spectral energy distribution templates into the
+network architecture, our model encodes physical priors into the training
+process. The system employs a multimodal design, incorporating cross-attention
+mechanisms to fuse photometric and image data, along with Bayesian layers for
+uncertainty estimation. We evaluate our model on the publicly available PREML
+dataset, which includes approximately 400,000 galaxies from the Hyper
+Suprime-Cam PDR3 release, with 5-band photometry, multi-band imaging, and
+spectroscopic redshifts. Our approach achieves an RMS error of 0.0507, a
+3-sigma catastrophic outlier rate of 0.13%, and a bias of 0.0028. The model
+satisfies two of the three LSST photometric redshift requirements for redshifts
+below 3. These results highlight the potential of combining physically
+motivated templates with data-driven models for robust redshift estimation in
+upcoming cosmological surveys.</p></br><a href="http://arxiv.org/pdf/2507.01829v1" target="_blank"><h2>mGRADE: Minimal Recurrent Gating Meets Delay Convolutions for
+  Lightweight Sequence Modeling</h2></a><strong><u>Authors:</u></strong>  Tristan Torchet, Christian Metzner, Laura Kriener, Melika Payvand</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Edge devices for temporal processing demand models that capture both short-
+and long- range dynamics under tight memory constraints. While Transformers
+excel at sequence modeling, their quadratic memory scaling with sequence length
+makes them impractical for such settings. Recurrent Neural Networks (RNNs)
+offer constant memory but train sequentially, and Temporal Convolutional
+Networks (TCNs), though efficient, scale memory with kernel size. To address
+this, we propose mGRADE (mininally Gated Recurrent Architecture with Delay
+Embedding), a hybrid-memory system that integrates a temporal 1D-convolution
+with learnable spacings followed by a minimal gated recurrent unit (minGRU).
+This design allows the convolutional layer to realize a flexible delay
+embedding that captures rapid temporal variations, while the recurrent module
+efficiently maintains global context with minimal memory overhead. We validate
+our approach on two synthetic tasks, demonstrating that mGRADE effectively
+separates and preserves multi-scale temporal features. Furthermore, on
+challenging pixel-by-pixel image classification benchmarks, mGRADE consistently
+outperforms both pure convolutional and pure recurrent counterparts using
+approximately 20% less memory footprint, highlighting its suitability for
+memory-constrained temporal processing at the edge. This highlights mGRADE's
+promise as an efficient solution for memory-constrained multi-scale temporal
+processing at the edge.</p></br><a href="http://arxiv.org/pdf/2507.01271v1" target="_blank"><h2>PULSE: Practical Evaluation Scenarios for Large Multimodal Model
+  Unlearning</h2></a><strong><u>Authors:</u></strong>  Tatsuki Kawakami, Kazuki Egashira, Atsuyuki Miyai, Go Irie, Kiyoharu Aizawa</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> In recent years, unlearning techniques, which are methods for inducing a
+model to "forget" previously learned information, have attracted attention as a
+way to address privacy and copyright concerns in large language models (LLMs)
+and large multimodal models (LMMs). While several unlearning benchmarks have
+been established for LLMs, a practical evaluation framework for unlearning in
+LMMs has been less explored. Specifically, existing unlearning benchmark for
+LMMs considers only scenarios in which the model is required to unlearn
+fine-tuned knowledge through a single unlearning operation. In this study, we
+introduce PULSE protocol for realistic unlearning scenarios for LMMs by
+introducing two critical perspectives: (i) Pre-trained knowledge Unlearning for
+analyzing the effect across different knowledge acquisition phases and (ii)
+Long-term Sustainability Evaluation to address sequential requests. We then
+evaluate existing unlearning methods along these dimensions. Our results reveal
+that, although some techniques can successfully unlearn knowledge acquired
+through fine-tuning, they struggle to eliminate information learned during
+pre-training. Moreover, methods that effectively unlearn a batch of target data
+in a single operation exhibit substantial performance degradation when the same
+data are split and unlearned sequentially.</p></br><a href="http://arxiv.org/pdf/2507.01571v1" target="_blank"><h2>On the Effect of Ruleset Tuning and Data Imbalance on Explainable
+  Network Security Alert Classifications: a Case-Study on DeepCASE</h2></a><strong><u>Authors:</u></strong>  Koen T. W. Teuwen, Sam Baggen, Emmanuele Zambon, Luca Allodi</br><strong><u>Categories:</u></strong> cs.CR, cs.LG, cs.NI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Automation in Security Operations Centers (SOCs) plays a prominent role in
+alert classification and incident escalation. However, automated methods must
+be robust in the presence of imbalanced input data, which can negatively affect
+performance. Additionally, automated methods should make explainable decisions.
+In this work, we evaluate the effect of label imbalance on the classification
+of network intrusion alerts. As our use-case we employ DeepCASE, the
+state-of-the-art method for automated alert classification. We show that label
+imbalance impacts both classification performance and correctness of the
+classification explanations offered by DeepCASE. We conclude tuning the
+detection rules used in SOCs can significantly reduce imbalance and may benefit
+the performance and explainability offered by alert post-processing methods
+such as DeepCASE. Therefore, our findings suggest that traditional methods to
+improve the quality of input data can benefit automation.</p></br><a href="http://arxiv.org/pdf/2507.01327v1" target="_blank"><h2>Reasoner for Real-World Event Detection: Scaling Reinforcement Learning
+  via Adaptive Perplexity-Aware Sampling Strategy</h2></a><strong><u>Authors:</u></strong>  Xiaoyun Zhang, Jingqing Ruan, Xing Ma, Yawen Zhu, Jiansong Chen, Ke Zeng, Xunliang Cai</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 15 pages, 6 figures, submitted to EMNLP</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Detecting abnormal events in real-world customer service dialogues is highly
+challenging due to the complexity of business data and the dynamic nature of
+customer interactions. Moreover, models must demonstrate strong out-of-domain
+(OOD) generalization to enable rapid adaptation across different business
+scenarios and maximize commercial value. In this work, we propose a novel
+Adaptive Perplexity-Aware Reinforcement Learning (APARL) framework that
+leverages the advanced reasoning capabilities of large language models for
+abnormal event detection. APARL introduces a dual-loop dynamic curriculum
+learning architecture, enabling the model to progressively focus on more
+challenging samples as its proficiency increases. This design effectively
+addresses performance bottlenecks and significantly enhances OOD
+transferability. Extensive evaluations on food delivery dialogue tasks show
+that our model achieves significantly enhanced adaptability and robustness,
+attaining the highest F1 score with an average improvement of 17.19\%, and an
+average improvement of 9.59\% in OOD transfer tests. This method provides a
+superior solution for industrial deployment of anomaly detection models,
+contributing to improved operational efficiency and commercial benefits.</p></br><a href="http://arxiv.org/pdf/2507.01955v1" target="_blank"><h2>How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation
+  Models on Standard Computer Vision Tasks</h2></a><strong><u>Authors:</u></strong>  Rahul Ramachandran, Ali Garjani, Roman Bachmann, Andrei Atanov, Oğuzhan Fatih Kar, Amir Zamir</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Project page atthis https URL</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal foundation models, such as GPT-4o, have recently made remarkable
+progress, but it is not clear where exactly these models stand in terms of
+understanding vision. In this paper, we benchmark the performance of popular
+multimodal foundation models (GPT-4o, o4-mini, Gemini 1.5 Pro and Gemini 2.0
+Flash, Claude 3.5 Sonnet, Qwen2-VL, Llama 3.2) on standard computer vision
+tasks (semantic segmentation, object detection, image classification, depth and
+surface normal prediction) using established datasets (e.g., COCO, ImageNet and
+its variants, etc).
+  The main challenges to performing this are: 1) most models are trained to
+output text and cannot natively express versatile domains, such as segments or
+3D geometry, and 2) many leading models are proprietary and accessible only at
+an API level, i.e., there is no weight access to adapt them. We address these
+challenges by translating standard vision tasks into equivalent text-promptable
+and API-compatible tasks via prompt chaining to create a standardized
+benchmarking framework.
+  We observe that 1) the models are not close to the state-of-the-art
+specialist models at any task. However, 2) they are respectable generalists;
+this is remarkable as they are presumably trained on primarily image-text-based
+tasks. 3) They perform semantic tasks notably better than geometric ones. 4)
+While the prompt-chaining techniques affect performance, better models exhibit
+less sensitivity to prompt variations. 5) GPT-4o performs the best among
+non-reasoning models, securing the top position in 4 out of 6 tasks, 6)
+reasoning models, e.g. o3, show improvements in geometric tasks, and 7) a
+preliminary analysis of models with native image generation, like the latest
+GPT-4o, shows they exhibit quirks like hallucinations and spatial
+misalignments.</p></br><a href="http://arxiv.org/pdf/2507.01077v1" target="_blank"><h2>Good Enough to Learn: LLM-based Anomaly Detection in ECU Logs without
+  Reliable Labels</h2></a><strong><u>Authors:</u></strong>  Bogdan Bogdan, Arina Cazacu, Laura Vasilie</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 6 pages, 7 figures, 4 tables, accepted to IEEE Intelligent Vehicles Symposium (IV) 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection often relies on supervised or clustering approaches, with
+limited success in specialized domains like automotive communication systems
+where scalable solutions are essential. We propose a novel decoder-only Large
+Language Model (LLM) to detect anomalies in Electronic Control Unit (ECU)
+communication logs. Our approach addresses two key challenges: the lack of LLMs
+tailored for ECU communication and the complexity of inconsistent ground truth
+data. By learning from UDP communication logs, we formulate anomaly detection
+simply as identifying deviations in time from normal behavior. We introduce an
+entropy regularization technique that increases model's uncertainty in known
+anomalies while maintaining consistency in similar scenarios. Our solution
+offers three novelties: a decoder-only anomaly detection architecture, a way to
+handle inconsistent labeling, and an adaptable LLM for different ECU
+communication use cases. By leveraging the generative capabilities of
+decoder-only models, we present a new technique that addresses the high cost
+and error-prone nature of manual labeling through a more scalable system that
+is able to learn from a minimal set of examples, while improving detection
+accuracy in complex communication environments.</p></br></body>

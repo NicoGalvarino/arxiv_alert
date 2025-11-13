@@ -1,0 +1,365 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 25 May 2025 to 27 May 2025</em></font><a href="http://arxiv.org/pdf/2505.19470v1" target="_blank"><h2>Information-theoretic Generalization Analysis for VQ-VAEs: A Role of
+  Latent Variables</h2></a><strong><u>Authors:</u></strong>  Futoshi Futami, Masahiro Fujisawa</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Latent variables (LVs) play a crucial role in encoder-decoder models by
+enabling effective data compression, prediction, and generation. Although their
+theoretical properties, such as generalization, have been extensively studied
+in supervised learning, similar analyses for unsupervised models such as
+variational autoencoders (VAEs) remain insufficiently underexplored. In this
+work, we extend information-theoretic generalization analysis to
+vector-quantized (VQ) VAEs with discrete latent spaces, introducing a novel
+data-dependent prior to rigorously analyze the relationship among LVs,
+generalization, and data generation. We derive a novel generalization error
+bound of the reconstruction loss of VQ-VAEs, which depends solely on the
+complexity of LVs and the encoder, independent of the decoder. Additionally, we
+provide the upper bound of the 2-Wasserstein distance between the distributions
+of the true data and the generated data, explaining how the regularization of
+the LVs contributes to the data generation performance.</p></br><a href="http://arxiv.org/pdf/2505.20235v1" target="_blank"><h2>Variational Deep Learning via Implicit Regularization</h2></a><strong><u>Authors:</u></strong>  Jonathan Wenger, Beau Coker, Juraj Marusic, John P. Cunningham</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Modern deep learning models generalize remarkably well in-distribution,
+despite being overparametrized and trained with little to no explicit
+regularization. Instead, current theory credits implicit regularization imposed
+by the choice of architecture, hyperparameters and optimization procedure.
+However, deploying deep learning models out-of-distribution, in sequential
+decision-making tasks, or in safety-critical domains, necessitates reliable
+uncertainty quantification, not just a point estimate. The machinery of modern
+approximate inference -- Bayesian deep learning -- should answer the need for
+uncertainty quantification, but its effectiveness has been challenged by our
+inability to define useful explicit inductive biases through priors, as well as
+the associated computational burden. Instead, in this work we demonstrate, both
+theoretically and empirically, how to regularize a variational deep network
+implicitly via the optimization procedure, just as for standard deep learning.
+We fully characterize the inductive bias of (stochastic) gradient descent in
+the case of an overparametrized linear model as generalized variational
+inference and demonstrate the importance of the choice of parametrization.
+Finally, we show empirically that our approach achieves strong in- and
+out-of-distribution performance without tuning of additional hyperparameters
+and with minimal time and memory overhead over standard deep learning.</p></br><a href="http://arxiv.org/pdf/2505.19509v1" target="_blank"><h2>Benchmarking Multimodal Knowledge Conflict for Large Multimodal Models</h2></a><strong><u>Authors:</u></strong>  Yifan Jia, Kailin Jiang, Yuyang Liang, Qihan Ren, Yi Xin, Rui Yang, Fenze Feng, Mingcai Chen, Hengyang Lu, Haozhe Wang, Xiaoye Qu, Dongrui Liu, Lizhen Cui, Yuntao Du</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> The source code is available atthis https URL</br><p><strong><u>Abstract:</u></strong> Large Multimodal Models(LMMs) face notable challenges when encountering
+multimodal knowledge conflicts, particularly under retrieval-augmented
+generation(RAG) frameworks where the contextual information from external
+sources may contradict the model's internal parametric knowledge, leading to
+unreliable outputs. However, existing benchmarks fail to reflect such realistic
+conflict scenarios. Most focus solely on intra-memory conflicts, while
+context-memory and inter-context conflicts remain largely investigated.
+Furthermore, commonly used factual knowledge-based evaluations are often
+overlooked, and existing datasets lack a thorough investigation into conflict
+detection capabilities. To bridge this gap, we propose MMKC-Bench, a benchmark
+designed to evaluate factual knowledge conflicts in both context-memory and
+inter-context scenarios. MMKC-Bench encompasses three types of multimodal
+knowledge conflicts and includes 1,573 knowledge instances and 3,381 images
+across 23 broad types, collected through automated pipelines with human
+verification. We evaluate three representative series of LMMs on both model
+behavior analysis and conflict detection tasks. Our findings show that while
+current LMMs are capable of recognizing knowledge conflicts, they tend to favor
+internal parametric knowledge over external evidence. We hope MMKC-Bench will
+foster further research in multimodal knowledge conflict and enhance the
+development of multimodal RAG systems. The source code is available at
+https://github.com/MLLMKCBENCH/MLLMKC.</p></br><a href="http://arxiv.org/pdf/2505.19531v1" target="_blank"><h2>Minimalist Softmax Attention Provably Learns Constrained Boolean
+  Functions</h2></a><strong><u>Authors:</u></strong>  Jerry Yao-Chieh Hu, Xiwen Zhang, Maojiang Su, Zhao Song, Han Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study the computational limits of learning $k$-bit Boolean functions
+(specifically, $\mathrm{AND}$, $\mathrm{OR}$, and their noisy variants), using
+a minimalist single-head softmax-attention mechanism, where $k=\Theta(d)$
+relevant bits are selected from $d$ inputs. We show that these simple
+$\mathrm{AND}$ and $\mathrm{OR}$ functions are unsolvable with a single-head
+softmax-attention mechanism alone. However, with teacher forcing, the same
+minimalist attention is capable of solving them. These findings offer two key
+insights: Architecturally, solving these Boolean tasks requires only minimalist
+attention, without deep Transformer blocks or FFNs. Methodologically, one
+gradient descent update with supervision suffices and replaces the multi-step
+Chain-of-Thought (CoT) reasoning scheme of [Kim and Suzuki, ICLR 2025] for
+solving Boolean problems. Together, the bounds expose a fundamental gap between
+what this minimal architecture achieves under ideal supervision and what is
+provably impossible under standard training.</p></br><a href="http://arxiv.org/pdf/2505.20241v1" target="_blank"><h2>DreamPRM: Domain-Reweighted Process Reward Model for Multimodal
+  Reasoning</h2></a><strong><u>Authors:</u></strong>  Qi Cao, Ruiyi Wang, Ruiyi Zhang, Sai Ashish Somayajula, Pengtao Xie</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Reasoning has substantially improved the performance of large language models
+(LLMs) on complicated tasks. Central to the current reasoning studies, Process
+Reward Models (PRMs) offer a fine-grained evaluation of intermediate reasoning
+steps and guide the reasoning process. However, extending PRMs to multimodal
+large language models (MLLMs) introduces challenges. Since multimodal reasoning
+covers a wider range of tasks compared to text-only scenarios, the resulting
+distribution shift from the training to testing sets is more severe, leading to
+greater generalization difficulty. Training a reliable multimodal PRM,
+therefore, demands large and diverse datasets to ensure sufficient coverage.
+However, current multimodal reasoning datasets suffer from a marked quality
+imbalance, which degrades PRM performance and highlights the need for an
+effective data selection strategy. To address the issues, we introduce
+DreamPRM, a domain-reweighted training framework for multimodal PRMs which
+employs bi-level optimization. In the lower-level optimization, DreamPRM
+performs fine-tuning on multiple datasets with domain weights, allowing the PRM
+to prioritize high-quality reasoning signals and alleviating the impact of
+dataset quality imbalance. In the upper-level optimization, the PRM is
+evaluated on a separate meta-learning dataset; this feedback updates the domain
+weights through an aggregation loss function, thereby improving the
+generalization capability of trained PRM. Extensive experiments on multiple
+multimodal reasoning benchmarks covering both mathematical and general
+reasoning show that test-time scaling with DreamPRM consistently improves the
+performance of state-of-the-art MLLMs. Further comparisons reveal that
+DreamPRM's domain-reweighting strategy surpasses other data selection methods
+and yields higher accuracy gains than existing test-time scaling approaches.</p></br><a href="http://arxiv.org/pdf/2505.19320v1" target="_blank"><h2>PIGPVAE: Physics-Informed Gaussian Process Variational Autoencoders</h2></a><strong><u>Authors:</u></strong>  Michail Spitieris, Massimiliano Ruocco, Abdulmajid Murad, Alessandro Nocente</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 23 pages, 13 figures</br><p><strong><u>Abstract:</u></strong> Recent advances in generative AI offer promising solutions for synthetic data
+generation but often rely on large datasets for effective training. To address
+this limitation, we propose a novel generative model that learns from limited
+data by incorporating physical constraints to enhance performance.
+Specifically, we extend the VAE architecture by incorporating physical models
+in the generative process, enabling it to capture underlying dynamics more
+effectively. While physical models provide valuable insights, they struggle to
+capture complex temporal dependencies present in real-world data. To bridge
+this gap, we introduce a discrepancy term to account for unmodeled dynamics,
+represented within a latent Gaussian Process VAE (GPVAE). Furthermore, we apply
+regularization to ensure the generated data aligns closely with observed data,
+enhancing both the diversity and accuracy of the synthetic samples. The
+proposed method is applied to indoor temperature data, achieving
+state-of-the-art performance. Additionally, we demonstrate that PIGPVAE can
+produce realistic samples beyond the observed distribution, highlighting its
+robustness and usefulness under distribution shifts.</p></br><a href="http://arxiv.org/pdf/2505.20221v1" target="_blank"><h2>Gradient Flow Matching for Learning Update Dynamics in Neural Network
+  Training</h2></a><strong><u>Authors:</u></strong>  Xiao Shou, Yanna Ding, Jianxi Gao</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Training deep neural networks remains computationally intensive due to the
+itera2 tive nature of gradient-based optimization. We propose Gradient Flow
+Matching (GFM), a continuous-time modeling framework that treats neural network
+training as a dynamical system governed by learned optimizer-aware vector
+fields. By leveraging conditional flow matching, GFM captures the underlying
+update rules of optimizers such as SGD, Adam, and RMSprop, enabling smooth
+extrapolation of weight trajectories toward convergence. Unlike black-box
+sequence models, GFM incorporates structural knowledge of gradient-based
+updates into the learning objective, facilitating accurate forecasting of final
+weights from partial training sequences. Empirically, GFM achieves forecasting
+accuracy that is competitive with Transformer-based models and significantly
+outperforms LSTM and other classical baselines. Furthermore, GFM generalizes
+across neural architectures and initializations, providing a unified framework
+for studying optimization dynamics and accelerating convergence prediction.</p></br><a href="http://arxiv.org/pdf/2505.20029v1" target="_blank"><h2>Correlating instruction-tuning (in multimodal models) with
+  vision-language processing (in the brain)</h2></a><strong><u>Authors:</u></strong>  Subba Reddy Oota, Akshett Jindal, Ishani Mondal, Khushbu Pahwa, Satya Sai Srinath Namburi, Manish Shrivastava, Maneesh Singh, Bapi S. Raju, Manish Gupta</br><strong><u>Categories:</u></strong> q-bio.NC, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 30 pages, 22 figures, The Thirteenth International Conference on Learning Representations, ICLR-2025, Singapore.this https URL</br><p><strong><u>Abstract:</u></strong> Transformer-based language models, though not explicitly trained to mimic
+brain recordings, have demonstrated surprising alignment with brain activity.
+Progress in these models-through increased size, instruction-tuning, and
+multimodality-has led to better representational alignment with neural data.
+Recently, a new class of instruction-tuned multimodal LLMs (MLLMs) have
+emerged, showing remarkable zero-shot capabilities in open-ended multimodal
+vision tasks. However, it is unknown whether MLLMs, when prompted with natural
+instructions, lead to better brain alignment and effectively capture
+instruction-specific representations. To address this, we first investigate
+brain alignment, i.e., measuring the degree of predictivity of neural visual
+activity using text output response embeddings from MLLMs as participants
+engage in watching natural scenes. Experiments with 10 different instructions
+show that MLLMs exhibit significantly better brain alignment than vision-only
+models and perform comparably to non-instruction-tuned multimodal models like
+CLIP. We also find that while these MLLMs are effective at generating
+high-quality responses suitable to the task-specific instructions, not all
+instructions are relevant for brain alignment. Further, by varying
+instructions, we make the MLLMs encode instruction-specific visual concepts
+related to the input image. This analysis shows that MLLMs effectively capture
+count-related and recognition-related concepts, demonstrating strong alignment
+with brain activity. Notably, the majority of the explained variance of the
+brain encoding models is shared between MLLM embeddings of image captioning and
+other instructions. These results suggest that enhancing MLLMs' ability to
+capture task-specific information could lead to better differentiation between
+various types of instructions, and thereby improving their precision in
+predicting brain responses.</p></br><a href="http://arxiv.org/pdf/2505.19423v1" target="_blank"><h2>Surrogate-Assisted Evolutionary Reinforcement Learning Based on
+  Autoencoder and Hyperbolic Neural Network</h2></a><strong><u>Authors:</u></strong>  Bingdong Li, Mei Jiang, Hong Qian, Peng Yang, Wenjing Hong, Hong Qian, Ke Tang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Evolutionary Reinforcement Learning (ERL), training the Reinforcement
+Learning (RL) policies with Evolutionary Algorithms (EAs), have demonstrated
+enhanced exploration capabilities and greater robustness than using traditional
+policy gradient. However, ERL suffers from the high computational costs and low
+search efficiency, as EAs require evaluating numerous candidate policies with
+expensive simulations, many of which are ineffective and do not contribute
+meaningfully to the training. One intuitive way to reduce the ineffective
+evaluations is to adopt the surrogates. Unfortunately, existing ERL policies
+are often modeled as deep neural networks (DNNs) and thus naturally represented
+as high-dimensional vectors containing millions of weights, which makes the
+building of effective surrogates for ERL policies extremely challenging. This
+paper proposes a novel surrogate-assisted ERL that integrates Autoencoders (AE)
+and Hyperbolic Neural Networks (HNN). Specifically, AE compresses
+high-dimensional policies into low-dimensional representations while extracting
+key features as the inputs for the surrogate. HNN, functioning as a
+classification-based surrogate model, can learn complex nonlinear relationships
+from sampled data and enable more accurate pre-selection of the sampled
+policies without real evaluations. The experiments on 10 Atari and 4 Mujoco
+games have verified that the proposed method outperforms previous approaches
+significantly. The search trajectories guided by AE and HNN are also visually
+demonstrated to be more effective, in terms of both exploration and
+convergence. This paper not only presents the first learnable policy embedding
+and surrogate-modeling modules for high-dimensional ERL policies, but also
+empirically reveals when and why they can be successful.</p></br><a href="http://arxiv.org/pdf/2505.19561v1" target="_blank"><h2>Lego Sketch: A Scalable Memory-augmented Neural Network for Sketching
+  Data Streams</h2></a><strong><u>Authors:</u></strong>  Yuan Feng, Yukun Cao, Hairu Wang, Xike Xie, S Kevin Zhou</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> ICML 2025</br><p><strong><u>Abstract:</u></strong> Sketches, probabilistic structures for estimating item frequencies in
+infinite data streams with limited space, are widely used across various
+domains. Recent studies have shifted the focus from handcrafted sketches to
+neural sketches, leveraging memory-augmented neural networks (MANNs) to enhance
+the streaming compression capabilities and achieve better space-accuracy
+trade-offs.However, existing neural sketches struggle to scale across different
+data domains and space budgets due to inflexible MANN configurations. In this
+paper, we introduce a scalable MANN architecture that brings to life the {\it
+Lego sketch}, a novel sketch with superior scalability and accuracy. Much like
+assembling creations with modular Lego bricks, the Lego sketch dynamically
+coordinates multiple memory bricks to adapt to various space budgets and
+diverse data domains. Our theoretical analysis guarantees its high scalability
+and provides the first error bound for neural sketch. Furthermore, extensive
+experimental evaluations demonstrate that the Lego sketch exhibits superior
+space-accuracy trade-offs, outperforming existing handcrafted and neural
+sketches. Our code is available at https://github.com/FFY0/LegoSketch_ICML.</p></br><a href="http://arxiv.org/pdf/2505.19369v1" target="_blank"><h2>SETransformer: A Hybrid Attention-Based Architecture for Robust Human
+  Activity Recognition</h2></a><strong><u>Authors:</u></strong>  Yunbo Liu, Xukui Qin, Yifan Gao, Xiang Li, Chengwei Feng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Human Activity Recognition (HAR) using wearable sensor data has become a
+central task in mobile computing, healthcare, and human-computer interaction.
+Despite the success of traditional deep learning models such as CNNs and RNNs,
+they often struggle to capture long-range temporal dependencies and contextual
+relevance across multiple sensor channels. To address these limitations, we
+propose SETransformer, a hybrid deep neural architecture that combines
+Transformer-based temporal modeling with channel-wise squeeze-and-excitation
+(SE) attention and a learnable temporal attention pooling mechanism. The model
+takes raw triaxial accelerometer data as input and leverages global
+self-attention to capture activity-specific motion dynamics over extended time
+windows, while adaptively emphasizing informative sensor channels and critical
+time steps.
+  We evaluate SETransformer on the WISDM dataset and demonstrate that it
+significantly outperforms conventional models including LSTM, GRU, BiLSTM, and
+CNN baselines. The proposed model achieves a validation accuracy of 84.68\% and
+a macro F1-score of 84.64\%, surpassing all baseline architectures by a notable
+margin. Our results show that SETransformer is a competitive and interpretable
+solution for real-world HAR tasks, with strong potential for deployment in
+mobile and ubiquitous sensing applications.</p></br><a href="http://arxiv.org/pdf/2505.19616v1" target="_blank"><h2>Diagnosing and Mitigating Modality Interference in Multimodal Large
+  Language Models</h2></a><strong><u>Authors:</u></strong>  Rui Cai, Bangzheng Li, Xiaofei Wen, Muhao Chen, Zhe Zhao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Multimodal Large Language Models (MLLMs) have demonstrated impressive
+capabilities across tasks, yet they often exhibit difficulty in distinguishing
+task-relevant from irrelevant signals, particularly in tasks like Visual
+Question Answering (VQA), which can lead to susceptibility to misleading or
+spurious inputs. We refer to this broader limitation as the Cross-Modality
+Competency Problem: the model's inability to fairly evaluate all modalities.
+This vulnerability becomes more evident in modality-specific tasks such as
+image classification or pure text question answering, where models are expected
+to rely solely on one modality. In such tasks, spurious information from
+irrelevant modalities often leads to significant performance degradation. We
+refer to this failure as Modality Interference, which serves as a concrete and
+measurable instance of the cross-modality competency problem. We further design
+a perturbation-based causal diagnostic experiment to verify and quantify this
+problem. To mitigate modality interference, we propose a novel framework to
+fine-tune MLLMs, including perturbation-based data augmentations with both
+heuristic perturbations and adversarial perturbations via Projected Gradient
+Descent (PGD), and a consistency regularization strategy applied to model
+outputs with original and perturbed inputs. Experiments on multiple benchmark
+datasets (image-heavy, text-heavy, and VQA tasks) and multiple model families
+with different scales demonstrate significant improvements in robustness and
+cross-modality competency, indicating our method's effectiveness in boosting
+unimodal reasoning ability while enhancing performance on multimodal tasks.</p></br><a href="http://arxiv.org/pdf/2505.20229v1" target="_blank"><h2>From What to How: Attributing CLIP's Latent Components Reveals
+  Unexpected Semantic Reliance</h2></a><strong><u>Authors:</u></strong>  Maximilian Dreyer, Lorenz Hufe, Jim Berend, Thomas Wiegand, Sebastian Lapuschkin, Wojciech Samek</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 25 pages (10 pages manuscript, 4 pages references, 11 pages appendix)</br><p><strong><u>Abstract:</u></strong> Transformer-based CLIP models are widely used for text-image probing and
+feature extraction, making it relevant to understand the internal mechanisms
+behind their predictions. While recent works show that Sparse Autoencoders
+(SAEs) yield interpretable latent components, they focus on what these encode
+and miss how they drive predictions. We introduce a scalable framework that
+reveals what latent components activate for, how they align with expected
+semantics, and how important they are to predictions. To achieve this, we adapt
+attribution patching for instance-wise component attributions in CLIP and
+highlight key faithfulness limitations of the widely used Logit Lens technique.
+By combining attributions with semantic alignment scores, we can automatically
+uncover reliance on components that encode semantically unexpected or spurious
+concepts. Applied across multiple CLIP variants, our method uncovers hundreds
+of surprising components linked to polysemous words, compound nouns, visual
+typography and dataset artifacts. While text embeddings remain prone to
+semantic ambiguity, they are more robust to spurious correlations compared to
+linear classifiers trained on image embeddings. A case study on skin lesion
+detection highlights how such classifiers can amplify hidden shortcuts,
+underscoring the need for holistic, mechanistic interpretability. We provide
+code at https://github.com/maxdreyer/attributing-clip.</p></br><a href="http://arxiv.org/pdf/2505.19589v1" target="_blank"><h2>Model Agnostic Differentially Private Causal Inference</h2></a><strong><u>Authors:</u></strong>  Christiant Lebeda, Mathieu Even, Aurélien Bellet, Julie Josse</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Estimating causal effects from observational data is essential in fields such
+as medicine, economics and social sciences, where privacy concerns are
+paramount. We propose a general, model-agnostic framework for differentially
+private estimation of average treatment effects (ATE) that avoids strong
+structural assumptions on the data-generating process or the models used to
+estimate propensity scores and conditional outcomes. In contrast to prior work,
+which enforces differential privacy by directly privatizing these nuisance
+components and results in a privacy cost that scales with model complexity, our
+approach decouples nuisance estimation from privacy protection. This separation
+allows the use of flexible, state-of-the-art black-box models, while
+differential privacy is achieved by perturbing only predictions and aggregation
+steps within a fold-splitting scheme with ensemble techniques. We instantiate
+the framework for three classical estimators -- the G-formula, inverse
+propensity weighting (IPW), and augmented IPW (AIPW) -- and provide formal
+utility and privacy guarantees. Empirical results show that our methods
+maintain competitive performance under realistic privacy budgets. We further
+extend our framework to support meta-analysis of multiple private ATE
+estimates. Our results bridge a critical gap between causal inference and
+privacy-preserving data analysis.</p></br><a href="http://arxiv.org/pdf/2505.19465v1" target="_blank"><h2>Residual Cross-Attention Transformer-Based Multi-User CSI Feedback with
+  Deep Joint Source-Channel Coding</h2></a><strong><u>Authors:</u></strong>  Hengwei Zhang, Minghui Wu, Li Qiao, Ling Liu, Ziqi Han, Zhen Gao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This letter proposes a deep-learning (DL)-based multi-user channel state
+information (CSI) feedback framework for massive multiple-input multiple-output
+systems, where the deep joint source-channel coding (DJSCC) is utilized to
+improve the CSI reconstruction accuracy. Specifically, we design a multi-user
+joint CSI feedback framework, whereby the CSI correlation of nearby users is
+utilized to reduce the feedback overhead. Under the framework, we propose a new
+residual cross-attention transformer architecture, which is deployed at the
+base station to further improve the CSI feedback performance. Moreover, to
+tackle the "cliff-effect" of conventional bit-level CSI feedback approaches, we
+integrated DJSCC into the multi-user CSI feedback, together with utilizing a
+two-stage training scheme to adapt to varying uplink noise levels. Experimental
+results demonstrate the superiority of our methods in CSI feedback performance,
+with low network complexity and better scalability.</p></br><a href="http://arxiv.org/pdf/2505.19479v1" target="_blank"><h2>Revolutionizing Wildfire Detection with Convolutional Neural Networks: A
+  VGG16 Model Approach</h2></a><strong><u>Authors:</u></strong>  Lakshmi Aishwarya Malladi, Navarun Gupta, Ahmed El-Sayed, Xingguo Xiong</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Conference at ASEE 2025</br><p><strong><u>Abstract:</u></strong> Over 8,024 wildfire incidents have been documented in 2024 alone, affecting
+thousands of fatalities and significant damage to infrastructure and
+ecosystems. Wildfires in the United States have inflicted devastating losses.
+Wildfires are becoming more frequent and intense, which highlights how urgently
+efficient warning systems are needed to avoid disastrous outcomes. The goal of
+this study is to enhance the accuracy of wildfire detection by using
+Convolutional Neural Network (CNN) built on the VGG16 architecture. The D-FIRE
+dataset, which includes several kinds of wildfire and non-wildfire images, was
+employed in the study. Low-resolution images, dataset imbalance, and the
+necessity for real-time applicability are some of the main challenges. These
+problems were resolved by enriching the dataset using data augmentation
+techniques and optimizing the VGG16 model for binary classification. The model
+produced a low false negative rate, which is essential for reducing unexplored
+fires, despite dataset boundaries. In order to help authorities execute fast
+responses, this work shows that deep learning models such as VGG16 can offer a
+reliable, automated approach for early wildfire recognition. For the purpose of
+reducing the impact of wildfires, our future work will concentrate on
+connecting to systems with real-time surveillance networks and enlarging the
+dataset to cover more varied fire situations.</p></br><a href="http://arxiv.org/pdf/2505.19785v1" target="_blank"><h2>MedDreamer: Model-Based Reinforcement Learning with Latent Imagination
+  on Complex EHRs for Clinical Decision Support</h2></a><strong><u>Authors:</u></strong>  Qianyi Xu, Gousia Habib, Dilruk Perera, Mengling Feng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Timely and personalized treatment decisions are essential across a wide range
+of healthcare settings where patient responses vary significantly and evolve
+over time. Clinical data used to support these decisions are often irregularly
+sampled, sparse, and noisy. Existing decision support systems commonly rely on
+discretization and imputation, which can distort critical temporal dynamics and
+degrade decision quality. Moreover, they often overlook the clinical
+significance of irregular recording frequencies, filtering out patterns in how
+and when data is collected. Reinforcement Learning (RL) is a natural fit for
+clinical decision-making, enabling sequential, long-term optimization in
+dynamic, uncertain environments. However, most existing treatment
+recommendation systems are model-free and trained solely on offline data,
+making them sample-inefficient, sensitive to data quality, and poorly
+generalizable across tasks or cohorts. To address these limitations, we propose
+MedDreamer, a two-phase model-based RL framework for personalized treatment
+recommendation. MedDreamer uses a world model with an Adaptive Feature
+Integration (AFI) module to effectively model irregular, sparse clinical data.
+Through latent imagination, it simulates plausible patient trajectories to
+enhance learning, refining its policy using a mix of real and imagined
+experiences. This enables learning policies that go beyond suboptimal
+historical decisions while remaining grounded in clinical data. To our
+knowledge, this is the first application of latent imagination to irregular
+healthcare data. Evaluations on sepsis and mechanical ventilation (MV)
+treatment using two large-scale EHR datasets show that MedDreamer outperforms
+both model-free and model-based baselines in clinical outcomes and off-policy
+metrics.</p></br><a href="http://arxiv.org/pdf/2505.19547v1" target="_blank"><h2>STRAP: Spatio-Temporal Pattern Retrieval for Out-of-Distribution
+  Generalization</h2></a><strong><u>Authors:</u></strong>  Haoyu Zhang, Wentao Zhang, Hao Miao, Xinke Jiang, Yuchen Fang, Yifan Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Spatio-Temporal Graph Neural Networks (STGNNs) have emerged as a powerful
+tool for modeling dynamic graph-structured data across diverse domains.
+However, they often fail to generalize in Spatio-Temporal Out-of-Distribution
+(STOOD) scenarios, where both temporal dynamics and spatial structures evolve
+beyond the training distribution. To address this problem, we propose an
+innovative Spatio-Temporal Retrieval-Augmented Pattern Learning
+framework,STRAP, which enhances model generalization by integrating
+retrieval-augmented learning into the STGNN continue learning pipeline. The
+core of STRAP is a compact and expressive pattern library that stores
+representative spatio-temporal patterns enriched with historical, structural,
+and semantic information, which is obtained and optimized during the training
+phase. During inference, STRAP retrieves relevant patterns from this library
+based on similarity to the current input and injects them into the model via a
+plug-and-play prompting mechanism. This not only strengthens spatio-temporal
+representations but also mitigates catastrophic forgetting. Moreover, STRAP
+introduces a knowledge-balancing objective to harmonize new information with
+retrieved knowledge. Extensive experiments across multiple real-world streaming
+graph datasets show that STRAP consistently outperforms state-of-the-art STGNN
+baselines on STOOD tasks, demonstrating its robustness, adaptability, and
+strong generalization capability without task-specific fine-tuning.</p></br><a href="http://arxiv.org/pdf/2505.20017v1" target="_blank"><h2>Linear Bandits with Non-i.i.d. Noise</h2></a><strong><u>Authors:</u></strong>  Baptiste Abélès, Eugenio Clerico, Hamish Flynn, Gergely Neu</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study the linear stochastic bandit problem, relaxing the standard i.i.d.
+assumption on the observation noise. As an alternative to this restrictive
+assumption, we allow the noise terms across rounds to be sub-Gaussian but
+interdependent, with dependencies that decay over time. To address this
+setting, we develop new confidence sequences using a recently introduced
+reduction scheme to sequential probability assignment, and use these to derive
+a bandit algorithm based on the principle of optimism in the face of
+uncertainty. We provide regret bounds for the resulting algorithm, expressed in
+terms of the decay rate of the strength of dependence between observations.
+Among other results, we show that our bounds recover the standard rates up to a
+factor of the mixing time for geometrically mixing observation noise.</p></br><a href="http://arxiv.org/pdf/2505.19807v1" target="_blank"><h2>Density Ratio-Free Doubly Robust Proxy Causal Learning</h2></a><strong><u>Authors:</u></strong>  Bariscan Bozkurt, Houssam Zenati, Dimitri Meunier, Liyuan Xu, Arthur Gretton</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study the problem of causal function estimation in the Proxy Causal
+Learning (PCL) framework, where confounders are not observed but proxies for
+the confounders are available. Two main approaches have been proposed: outcome
+bridge-based and treatment bridge-based methods. In this work, we propose two
+kernel-based doubly robust estimators that combine the strengths of both
+approaches, and naturally handle continuous and high-dimensional variables. Our
+identification strategy builds on a recent density ratio-free method for
+treatment bridge-based PCL; furthermore, in contrast to previous approaches, it
+does not require indicator functions or kernel smoothing over the treatment
+variable. These properties make it especially well-suited for continuous or
+high-dimensional treatments. By using kernel mean embeddings, we have
+closed-form solutions and strong consistency guarantees. Our estimators
+outperform existing methods on PCL benchmarks, including a prior doubly robust
+method that requires both kernel smoothing and density ratio estimation.</p></br></body>

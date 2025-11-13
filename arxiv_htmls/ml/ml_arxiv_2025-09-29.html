@@ -1,0 +1,543 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 25 Sep 2025 to 29 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.21149v1" target="_blank"><h2>LAVA: Explainability for Unsupervised Latent Embeddings</h2></a><strong><u>Authors:</u></strong>  Ivan Stresec, Joana P. Gonçalves</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 28 pages, including references and appendix</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), explainability (title, abstract)</br><p><strong><u>Abstract:</u></strong> Unsupervised black-box models can be drivers of scientific discovery, but
+remain difficult to interpret. Crucially, discovery hinges on understanding the
+model output, which is often a multi-dimensional latent embedding rather than a
+well-defined target. While explainability for supervised learning usually seeks
+to uncover how input features are used to predict a target, its unsupervised
+counterpart should relate input features to the structure of the learned latent
+space. Adaptations of supervised model explainability for unsupervised learning
+provide either single-sample or dataset-wide summary explanations. However,
+without automated strategies of relating similar samples to one another guided
+by their latent proximity, explanations remain either too fine-grained or too
+reductive to be meaningful. This is especially relevant for manifold learning
+methods that produce no mapping function, leaving us only with the relative
+spatial organization of their embeddings. We introduce Locality-Aware Variable
+Associations (LAVA), a post-hoc model-agnostic method designed to explain local
+embedding organization through its relationship with the input features. To
+achieve this, LAVA represents the latent space as a series of localities
+(neighborhoods) described in terms of correlations between the original
+features, and then reveals reoccurring patterns of correlations across the
+entire latent space. Based on UMAP embeddings of MNIST and a single-cell kidney
+dataset, we show that LAVA captures relevant feature associations, with
+visually and biologically relevant local patterns shared among seemingly
+distant regions of the latent spaces.</p></br><a href="http://arxiv.org/pdf/2509.21943v1" target="_blank"><h2>Outlier Detection in Plantar Pressure: Human-Centered Comparison of
+  Statistical Parametric Mapping and Explainable Machine Learning</h2></a><strong><u>Authors:</u></strong>  Carlo Dindorf, Jonas Dully, Steven Simon, Dennis Perchthaler, Stephan Becker, Hannah Ehmann, Kjell Heitmann, Bernd Stetter, Christian Diers, Michael Fröhlich</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (abstract), explainable (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Plantar pressure mapping is essential in clinical diagnostics and sports
+science, yet large heterogeneous datasets often contain outliers from technical
+errors or procedural inconsistencies. Statistical Parametric Mapping (SPM)
+provides interpretable analyses but is sensitive to alignment and its capacity
+for robust outlier detection remains unclear. This study compares an SPM
+approach with an explainable machine learning (ML) approach to establish
+transparent quality-control pipelines for plantar pressure datasets. Data from
+multiple centers were annotated by expert consensus and enriched with synthetic
+anomalies resulting in 798 valid samples and 2000 outliers. We evaluated (i) a
+non-parametric, registration-dependent SPM approach and (ii) a convolutional
+neural network (CNN), explained using SHapley Additive exPlanations (SHAP).
+Performance was assessed via nested cross-validation; explanation quality via a
+semantic differential survey with domain experts. The ML model reached high
+accuracy and outperformed SPM, which misclassified clinically meaningful
+variations and missed true outliers. Experts perceived both SPM and SHAP
+explanations as clear, useful, and trustworthy, though SPM was assessed less
+complex. These findings highlight the complementary potential of SPM and
+explainable ML as approaches for automated outlier detection in plantar
+pressure data, and underscore the importance of explainability in translating
+complex model outputs into interpretable insights that can effectively inform
+decision-making.</p></br><a href="http://arxiv.org/pdf/2509.20978v1" target="_blank"><h2>FracAug: Fractional Augmentation boost Graph-level Anomaly Detection
+  under Limited Supervision</h2></a><strong><u>Authors:</u></strong>  Xiangyu Dong, Xingyi Zhang, Sibo Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph-level anomaly detection (GAD) is critical in diverse domains such as
+drug discovery, yet high labeling costs and dataset imbalance hamper the
+performance of Graph Neural Networks (GNNs). To address these issues, we
+propose FracAug, an innovative plug-in augmentation framework that enhances
+GNNs by generating semantically consistent graph variants and pseudo-labeling
+with mutual verification. Unlike previous heuristic methods, FracAug learns
+semantics within given graphs and synthesizes fractional variants, guided by a
+novel weighted distance-aware margin loss. This captures multi-scale topology
+to generate diverse, semantic-preserving graphs unaffected by data imbalance.
+Then, FracAug utilizes predictions from both original and augmented graphs to
+pseudo-label unlabeled data, iteratively expanding the training set. As a
+model-agnostic module compatible with various GNNs, FracAug demonstrates
+remarkable universality and efficacy: experiments across 14 GNNs on 12
+real-world datasets show consistent gains, boosting average AUROC, AUPRC, and
+F1-score by up to 5.72%, 7.23%, and 4.18%, respectively.</p></br><a href="http://arxiv.org/pdf/2509.22018v1" target="_blank"><h2>Exploring the Early Universe with Deep Learning</h2></a><strong><u>Authors:</u></strong>  Emmanuel de Salis, Massimo De Santis, Davide Piras, Sambit K. Giri, Michele Bianco, Nicolas Cerardi, Philipp Denzel, Merve Selcuk-Simsek, Kelley M. Hess, M. Carmen Toribio, Franz Kirsten, Hatem Ghorbel</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> EPIA 2025 preprint version, 12 pages, 3 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Hydrogen is the most abundant element in our Universe. The first generation
+of stars and galaxies produced photons that ionized hydrogen gas, driving a
+cosmological event known as the Epoch of Reionization (EoR). The upcoming
+Square Kilometre Array Observatory (SKAO) will map the distribution of neutral
+hydrogen during this era, aiding in the study of the properties of these
+first-generation objects. Extracting astrophysical information will be
+challenging, as SKAO will produce a tremendous amount of data where the
+hydrogen signal will be contaminated with undesired foreground contamination
+and instrumental systematics. To address this, we develop the latest deep
+learning techniques to extract information from the 2D power spectra of the
+hydrogen signal expected from SKAO. We apply a series of neural network models
+to these measurements and quantify their ability to predict the history of
+cosmic hydrogen reionization, which is connected to the increasing number and
+efficiency of early photon sources. We show that the study of the early
+Universe benefits from modern deep learning technology. In particular, we
+demonstrate that dedicated machine learning algorithms can achieve more than a
+$0.95$ $R^2$ score on average in recovering the reionization history. This
+enables accurate and precise cosmological and astrophysical inference of
+structure formation in the early Universe.</p></br><a href="http://arxiv.org/pdf/2509.22468v1" target="_blank"><h2>Learning the Neighborhood: Contrast-Free Multimodal Self-Supervised
+  Molecular Graph Pretraining</h2></a><strong><u>Authors:</u></strong>  Boshra Ariguib, Mathias Niepert, Andrei Manolache</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract), multimodal (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> High-quality molecular representations are essential for property prediction
+and molecular design, yet large labeled datasets remain scarce. While
+self-supervised pretraining on molecular graphs has shown promise, many
+existing approaches either depend on hand-crafted augmentations or complex
+generative objectives, and often rely solely on 2D topology, leaving valuable
+3D structural information underutilized. To address this gap, we introduce
+C-FREE (Contrast-Free Representation learning on Ego-nets), a simple framework
+that integrates 2D graphs with ensembles of 3D conformers. C-FREE learns
+molecular representations by predicting subgraph embeddings from their
+complementary neighborhoods in the latent space, using fixed-radius ego-nets as
+modeling units across different conformers. This design allows us to integrate
+both geometric and topological information within a hybrid Graph Neural Network
+(GNN)-Transformer backbone, without negatives, positional encodings, or
+expensive pre-processing. Pretraining on the GEOM dataset, which provides rich
+3D conformational diversity, C-FREE achieves state-of-the-art results on
+MoleculeNet, surpassing contrastive, generative, and other multimodal
+self-supervised methods. Fine-tuning across datasets with diverse sizes and
+molecule types further demonstrates that pretraining transfers effectively to
+new chemical domains, highlighting the importance of 3D-informed molecular
+representations.</p></br><a href="http://arxiv.org/pdf/2509.22623v1" target="_blank"><h2>A Theoretical Analysis of Discrete Flow Matching Generative Models</h2></a><strong><u>Authors:</u></strong>  Maojiang Su, Mingcheng Lu, Jerry Yao-Chieh Hu, Shang Wu, Zhao Song, Alex Reneau, Han Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We provide a theoretical analysis for end-to-end training Discrete Flow
+Matching (DFM) generative models. DFM is a promising discrete generative
+modeling framework that learns the underlying generative dynamics by training a
+neural network to approximate the transformative velocity field. Our analysis
+establishes a clear chain of guarantees by decomposing the final distribution
+estimation error. We first prove that the total variation distance between the
+generated and target distributions is controlled by the risk of the learned
+velocity field. We then bound this risk by analyzing its two primary sources:
+(i) Approximation Error, where we quantify the capacity of the Transformer
+architecture to represent the true velocity, and (ii) Estimation Error, where
+we derive statistical convergence rates that bound the error from training on a
+finite dataset. By composing these results, we provide the first formal proof
+that the distribution generated by a trained DFM model provably converges to
+the true data distribution as the training set size increases.</p></br><a href="http://arxiv.org/pdf/2509.21600v1" target="_blank"><h2>Automated and Interpretable Survival Analysis from Multimodal Data</h2></a><strong><u>Authors:</u></strong>  Mafalda Malafaia, Peter A. N. Bosman, Coen Rasch, Tanja Alderliesten</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 4 figures; 4 tables; 24 pages</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate and interpretable survival analysis remains a core challenge in
+oncology. With growing multimodal data and the clinical need for transparent
+models to support validation and trust, this challenge increases in complexity.
+We propose an interpretable multimodal AI framework to automate survival
+analysis by integrating clinical variables and computed tomography imaging. Our
+MultiFIX-based framework uses deep learning to infer survival-relevant features
+that are further explained: imaging features are interpreted via Grad-CAM,
+while clinical variables are modeled as symbolic expressions through genetic
+programming. Risk estimation employs a transparent Cox regression, enabling
+stratification into groups with distinct survival outcomes. Using the
+open-source RADCURE dataset for head and neck cancer, MultiFIX achieves a
+C-index of 0.838 (prediction) and 0.826 (stratification), outperforming the
+clinical and academic baseline approaches and aligning with known prognostic
+markers. These results highlight the promise of interpretable multimodal AI for
+precision oncology with MultiFIX.</p></br><a href="http://arxiv.org/pdf/2509.21666v1" target="_blank"><h2>DIM: Enforcing Domain-Informed Monotonicity in Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Joshua Salim, Jordan Yu, Xilei Zhao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> While deep learning models excel at predictive tasks, they often overfit due
+to their complex structure and large number of parameters, causing them to
+memorize training data, including noise, rather than learn patterns that
+generalize to new data. To tackle this challenge, this paper proposes a new
+regularization method, i.e., Enforcing Domain-Informed Monotonicity in Deep
+Neural Networks (DIM), which maintains domain-informed monotonic relationships
+in complex deep learning models to further improve predictions. Specifically,
+our method enforces monotonicity by penalizing violations relative to a linear
+baseline, effectively encouraging the model to follow expected trends while
+preserving its predictive power. We formalize this approach through a
+comprehensive mathematical framework that establishes a linear reference,
+measures deviations from monotonic behavior, and integrates these measurements
+into the training objective. We test and validate the proposed methodology
+using a real-world ridesourcing dataset from Chicago and a synthetically
+created dataset. Experiments across various neural network architectures show
+that even modest monotonicity constraints consistently enhance model
+performance. DIM enhances the predictive performance of deep neural networks by
+applying domain-informed monotonicity constraints to regularize model behavior
+and mitigate overfitting</p></br><a href="http://arxiv.org/pdf/2509.21059v1" target="_blank"><h2>Structure-Attribute Transformations with Markov Chain Boost Graph Domain
+  Adaptation</h2></a><strong><u>Authors:</u></strong>  Zhen Liu, Yongtao Zhang, Shaobo Ren, Yuxin You</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 11 pages,6 figures,Accepted by ACM CIKM'25</br><strong><u>Matching Keywords:</u></strong> domain adaptation (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Graph domain adaptation has gained significant attention in label-scarce
+scenarios across different graph domains. Traditional approaches to graph
+domain adaptation primarily focus on transforming node attributes over raw
+graph structures and aligning the distributions of the transformed node
+features across networks. However, these methods often struggle with the
+underlying structural heterogeneity between distinct graph domains, which leads
+to suboptimal distribution alignment. To address this limitation, we propose
+Structure-Attribute Transformation with Markov Chain (SATMC), a novel framework
+that sequentially aligns distributions across networks via both graph structure
+and attribute transformations. To mitigate the negative influence of
+domain-private information and further enhance the model's generalization,
+SATMC introduces a private domain information reduction mechanism and an
+empirical Wasserstein distance. Theoretical proofs suggest that SATMC can
+achieve a tighter error bound for cross-network node classification compared to
+existing graph domain adaptation methods. Extensive experiments on nine pairs
+of publicly available cross-domain datasets show that SATMC outperforms
+state-of-the-art methods in the cross-network node classification task. The
+code is available at https://github.com/GiantZhangYT/SATMC.</p></br><a href="http://arxiv.org/pdf/2509.20829v1" target="_blank"><h2>Explaining Grokking and Information Bottleneck through Neural Collapse
+  Emergence</h2></a><strong><u>Authors:</u></strong>  Keitaro Sakamoto, Issei Sato</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Code is available atthis https URL</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The training dynamics of deep neural networks often defy expectations, even
+as these models form the foundation of modern machine learning. Two prominent
+examples are grokking, where test performance improves abruptly long after the
+training loss has plateaued, and the information bottleneck principle, where
+models progressively discard input information irrelevant to the prediction
+task as training proceeds. However, the mechanisms underlying these phenomena
+and their relations remain poorly understood. In this work, we present a
+unified explanation of such late-phase phenomena through the lens of neural
+collapse, which characterizes the geometry of learned representations. We show
+that the contraction of population within-class variance is a key factor
+underlying both grokking and information bottleneck, and relate this measure to
+the neural collapse measure defined on the training set. By analyzing the
+dynamics of neural collapse, we show that distinct time scales between fitting
+the training set and the progression of neural collapse account for the
+behavior of the late-phase phenomena. Finally, we validate our theoretical
+findings on multiple datasets and architectures.</p></br><a href="http://arxiv.org/pdf/2509.21711v1" target="_blank"><h2>Multi-modal Bayesian Neural Network Surrogates with Conjugate Last-Layer
+  Estimation</h2></a><strong><u>Authors:</u></strong>  Ian Taylor, Juliane Mueller, Julie Bessac</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 35 pages including references and appendix, 5 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title), multi-modal (title, abstract)</br><p><strong><u>Abstract:</u></strong> As data collection and simulation capabilities advance, multi-modal learning,
+the task of learning from multiple modalities and sources of data, is becoming
+an increasingly important area of research. Surrogate models that learn from
+data of multiple auxiliary modalities to support the modeling of a highly
+expensive quantity of interest have the potential to aid outer loop
+applications such as optimization, inverse problems, or sensitivity analyses
+when multi-modal data are available. We develop two multi-modal Bayesian neural
+network surrogate models and leverage conditionally conjugate distributions in
+the last layer to estimate model parameters using stochastic variational
+inference (SVI). We provide a method to perform this conjugate SVI estimation
+in the presence of partially missing observations. We demonstrate improved
+prediction accuracy and uncertainty quantification compared to uni-modal
+surrogate models for both scalar and time series data.</p></br><a href="http://arxiv.org/pdf/2509.22282v1" target="_blank"><h2>Conditional Denoising Diffusion Autoencoders for Wireless Semantic
+  Communications</h2></a><strong><u>Authors:</u></strong>  Mehdi Letafati, Samad Ali, Matti Latva-aho</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Semantic communication (SemCom) systems aim to learn the mapping from
+low-dimensional semantics to high-dimensional ground-truth. While this is more
+akin to a "domain translation" problem, existing frameworks typically emphasize
+on channel-adaptive neural encoding-decoding schemes, lacking full exploration
+of signal distribution. Moreover, such methods so far have employed
+autoencoder-based architectures, where the encoding is tightly coupled to a
+matched decoder, causing scalability issues in practice. To address these gaps,
+diffusion autoencoder models are proposed for wireless SemCom. The goal is to
+learn a "semantic-to-clean" mapping, from the semantic space to the
+ground-truth probability distribution. A neural encoder at semantic transmitter
+extracts the high-level semantics, and a conditional diffusion model (CDiff) at
+the semantic receiver exploits the source distribution for signal-space
+denoising, while the received semantic latents are incorporated as the
+conditioning input to "steer" the decoding process towards the semantics
+intended by the transmitter. It is analytically proved that the proposed
+decoder model is a consistent estimator of the ground-truth data. Furthermore,
+extensive simulations over CIFAR-10 and MNIST datasets are provided along with
+design insights, highlighting the performance compared to legacy autoencoders
+and variational autoencoders (VAE). Simulations are further extended to the
+multi-user SemCom, identifying the dominating factors in a more realistic
+setup.</p></br><a href="http://arxiv.org/pdf/2509.22553v1" target="_blank"><h2>Linear Causal Representation Learning by Topological Ordering, Pruning,
+  and Disentanglement</h2></a><strong><u>Authors:</u></strong>  Hao Chen, Lin Liu, Yu Guang Wang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> causality (abstract)</br><p><strong><u>Abstract:</u></strong> Causal representation learning (CRL) has garnered increasing interests from
+the causal inference and artificial intelligence community, due to its
+capability of disentangling potentially complex data-generating mechanism into
+causally interpretable latent features, by leveraging the heterogeneity of
+modern datasets. In this paper, we further contribute to the CRL literature, by
+focusing on the stylized linear structural causal model over the latent
+features and assuming a linear mixing function that maps latent features to the
+observed data or measurements. Existing linear CRL methods often rely on
+stringent assumptions, such as accessibility to single-node interventional data
+or restrictive distributional constraints on latent features and exogenous
+measurement noise. However, these prerequisites can be challenging to satisfy
+in certain scenarios. In this work, we propose a novel linear CRL algorithm
+that, unlike most existing linear CRL methods, operates under weaker
+assumptions about environment heterogeneity and data-generating distributions
+while still recovering latent causal features up to an equivalence class. We
+further validate our new algorithm via synthetic experiments and an
+interpretability analysis of large language models (LLMs), demonstrating both
+its superiority over competing methods in finite samples and its potential in
+integrating causality into AI.</p></br><a href="http://arxiv.org/pdf/2509.20935v1" target="_blank"><h2>GALAX: Graph-Augmented Language Model for Explainable
+  Reinforcement-Guided Subgraph Reasoning in Precision Medicine</h2></a><strong><u>Authors:</u></strong>  Heming Zhang, Di Huang, Wenyu Li, Michael Province, Yixin Chen, Philip Payne, Fuhai Li</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> In precision medicine, quantitative multi-omic features, topological context,
+and textual biological knowledge play vital roles in identifying
+disease-critical signaling pathways and targets. Existing pipelines capture
+only part of these-numerical omics ignore topological context, text-centric
+LLMs lack quantitative grounded reasoning, and graph-only models underuse node
+semantics and the generalization of LLMs-limiting mechanistic interpretability.
+Although Process Reward Models (PRMs) aim to guide reasoning in LLMs, they
+remain limited by unreliable intermediate evaluation, and vulnerability to
+reward hacking with computational cost. These gaps motivate integrating
+quantitative multi-omic signals, topological structure with node annotations,
+and literature-scale text via LLMs, using subgraph reasoning as the principle
+bridge linking numeric evidence, topological knowledge and language context.
+Therefore, we propose GALAX (Graph Augmented LAnguage model with
+eXplainability), an innovative framework that integrates pretrained Graph
+Neural Networks (GNNs) into Large Language Models (LLMs) via reinforcement
+guided by a Graph Process Reward Model (GPRM), which generates disease-relevant
+subgraphs in a step-wise manner initiated by an LLM and iteratively evaluated
+by a pretrained GNN, enabling process-level supervision without explicit
+intermediate reasoning annotations. As an application, we also introduced
+Target-QA, a benchmark combining CRISPR-identified targets, multi-omic
+profiles, and biomedical graph knowledge across diverse cancer cell lines,
+which enables GNN pretraining for supervising step-wise graph construction and
+supports long-context reasoning over text-numeric graphs (TNGs), providing a
+scalable and biologically grounded framework for explainable,
+reinforcement-guided subgraph reasoning toward reliable and interpretable
+target and pathway discovery in precision medicine.</p></br><a href="http://arxiv.org/pdf/2509.22100v1" target="_blank"><h2>SHAKE-GNN: Scalable Hierarchical Kirchhoff-Forest Graph Neural Network</h2></a><strong><u>Authors:</u></strong>  Zhipu Cui, Johannes Lutzeyer</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have achieved remarkable success across a range
+of learning tasks. However, scaling GNNs to large graphs remains a significant
+challenge, especially for graph-level tasks. In this work, we introduce
+SHAKE-GNN, a novel scalable graph-level GNN framework based on a hierarchy of
+Kirchhoff Forests, a class of random spanning forests used to construct
+stochastic multi-resolution decompositions of graphs. SHAKE-GNN produces
+multi-scale representations, enabling flexible trade-offs between efficiency
+and performance. We introduce an improved, data-driven strategy for selecting
+the trade-off parameter and analyse the time-complexity of SHAKE-GNN.
+Experimental results on multiple large-scale graph classification benchmarks
+demonstrate that SHAKE-GNN achieves competitive performance while offering
+improved scalability.</p></br><a href="http://arxiv.org/pdf/2509.22460v1" target="_blank"><h2>GeoSketch: A Neural-Symbolic Approach to Geometric Multimodal Reasoning
+  with Auxiliary Line Construction and Affine Transformation</h2></a><strong><u>Authors:</u></strong>  Shichao Weng, Zhiqiang Wang, Yuhua Zhou, Rui Lu, Ting Liu, Zhiyang Teng, Xiaozhang Liu, Hanmeng Liu</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Geometric Problem Solving (GPS) poses a unique challenge for Multimodal Large
+Language Models (MLLMs), requiring not only the joint interpretation of text
+and diagrams but also iterative visuospatial reasoning. While existing
+approaches process diagrams as static images, they lack the capacity for
+dynamic manipulation - a core aspect of human geometric reasoning involving
+auxiliary line construction and affine transformations. We present GeoSketch, a
+neural-symbolic framework that recasts geometric reasoning as an interactive
+perception-reasoning-action loop. GeoSketch integrates: (1) a Perception module
+that abstracts diagrams into structured logic forms, (2) a Symbolic Reasoning
+module that applies geometric theorems to decide the next deductive step, and
+(3) a Sketch Action module that executes operations such as drawing auxiliary
+lines or applying transformations, thereby updating the diagram in a closed
+loop. To train this agent, we develop a two-stage pipeline: supervised
+fine-tuning on 2,000 symbolic-curated trajectories followed by reinforcement
+learning with dense, symbolic rewards to enhance robustness and strategic
+exploration. To evaluate this paradigm, we introduce the GeoSketch Benchmark, a
+high-quality set of 390 geometry problems requiring auxiliary construction or
+affine transformations. Experiments on strong MLLM baselines demonstrate that
+GeoSketch significantly improves stepwise reasoning accuracy and
+problem-solving success over static perception methods. By unifying
+hierarchical decision-making, executable visual actions, and symbolic
+verification, GeoSketch advances multimodal reasoning from static
+interpretation to dynamic, verifiable interaction, establishing a new
+foundation for solving complex visuospatial problems.</p></br><a href="http://arxiv.org/pdf/2509.22295v1" target="_blank"><h2>Aurora: Towards Universal Generative Multimodal Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Xingjian Wu, Jianxin Jin, Wanghui Qiu, Peng Chen, Yang Shu, Bin Yang, Chenjuan Guo</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Cross-domain generalization is very important in Time Series Forecasting
+because similar historical information may lead to distinct future trends due
+to the domain-specific characteristics. Recent works focus on building unimodal
+time series foundation models and end-to-end multimodal supervised models.
+Since domain-specific knowledge is often contained in modalities like texts,
+the former lacks the explicit utilization of them, thus hindering the
+performance. The latter is tailored for end-to-end scenarios and does not
+support zero-shot inference for cross-domain scenarios. In this work, we
+introduce Aurora, a Multimodal Time Series Foundation Model, which supports
+multimodal inputs and zero-shot inference. Pretrained on Corss-domain
+Multimodal Time Series Corpus, Aurora can adaptively extract and focus on key
+domain knowledge contained in corrsponding text or image modalities, thus
+possessing strong Cross-domain generalization capability. Through tokenization,
+encoding, and distillation, Aurora can extract multimodal domain knowledge as
+guidance and then utilizes a Modality-Guided Multi-head Self-Attention to
+inject them into the modeling of temporal representations. In the decoding
+phase, the multimodal representations are used to generate the conditions and
+prototypes of future tokens, contributing to a novel Prototype-Guided Flow
+Matching for generative probabilistic forecasting. Comprehensive experiments on
+well-recognized benchmarks, including TimeMMD, TSFM-Bench and ProbTS,
+demonstrate the consistent state-of-the-art performance of Aurora on both
+unimodal and multimodal scenarios.</p></br><a href="http://arxiv.org/pdf/2509.22038v1" target="_blank"><h2>Latent Diffusion : Multi-Dimension Stable Diffusion Latent Space
+  Explorer</h2></a><strong><u>Authors:</u></strong>  Zhihua Zhong, Xuanyang Huang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Latent space is one of the key concepts in generative AI, offering powerful
+means for creative exploration through vector manipulation. However, diffusion
+models like Stable Diffusion lack the intuitive latent vector control found in
+GANs, limiting their flexibility for artistic expression. This paper introduces
+\workname, a framework for integrating customizable latent space operations
+into the diffusion process. By enabling direct manipulation of conceptual and
+spatial representations, this approach expands creative possibilities in
+generative art. We demonstrate the potential of this framework through two
+artworks, \textit{Infinitepedia} and \textit{Latent Motion}, highlighting its
+use in conceptual blending and dynamic motion generation. Our findings reveal
+latent space structures with semantic and meaningless regions, offering
+insights into the geometry of diffusion models and paving the way for further
+explorations of latent space.</p></br><a href="http://arxiv.org/pdf/2509.22467v1" target="_blank"><h2>CausalKANs: interpretable treatment effect estimation with
+  Kolmogorov-Arnold networks</h2></a><strong><u>Authors:</u></strong>  Alejandro Almodóvar, Patricia A. Apellániz, Santiago Zazo, Juan Parras</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks achieve state-of-the-art performance in estimating
+heterogeneous treatment effects, but their opacity limits trust and adoption in
+sensitive domains such as medicine, economics, and public policy. Building on
+well-established and high-performing causal neural architectures, we propose
+causalKANs, a framework that transforms neural estimators of conditional
+average treatment effects (CATEs) into Kolmogorov--Arnold Networks (KANs). By
+incorporating pruning and symbolic simplification, causalKANs yields
+interpretable closed-form formulas while preserving predictive accuracy.
+Experiments on benchmark datasets demonstrate that causalKANs perform on par
+with neural baselines in CATE error metrics, and that even simple KAN variants
+achieve competitive performance, offering a favorable
+accuracy--interpretability trade-off. By combining reliability with analytic
+accessibility, causalKANs provide auditable estimators supported by closed-form
+expressions and interpretable plots, enabling trustworthy individualized
+decision-making in high-stakes settings. We release the code for
+reproducibility at https://github.com/aalmodovares/causalkans .</p></br><a href="http://arxiv.org/pdf/2509.20768v1" target="_blank"><h2>Measuring LLM Sensitivity in Transformer-based Tabular Data Synthesis</h2></a><strong><u>Authors:</u></strong>  Maria F. Davila R, Azizjon Turaev, Wolfram Wingerath</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Synthetic tabular data is used for privacy-preserving data sharing and
+data-driven model development. Its effectiveness, however, depends heavily on
+the used Tabular Data Synthesis (TDS) tool. Recent studies have shown that
+Transformer-based models outperform other state-of-the-art models such as
+Generative Adversarial Networks (GANs) and Diffusion models in terms of data
+quality. However, Transformer-based models also come with high computational
+costs, making them sometimes unfeasible for end users with prosumer hardware.
+This study presents a sensitivity assessment on how the choice of
+hyperparameters, such as number of layers or hidden dimension affects the
+quality of the resultant synthetic data and the computational performance. It
+is performed across two tools, GReaT and REaLTabFormer, evaluating 10 model
+setups that vary in architecture type and depth. We assess the sensitivity on
+three dimensions: runtime, machine learning (ML) utility, and similarity to
+real data distributions. Experiments were conducted on four real-world
+datasets. Our findings reveal that runtime is proportional to the number of
+hyperparameters, with shallower configurations completing faster. GReaT
+consistently achieves lower runtimes than REaLTabFormer, and only on the
+largest dataset they have comparable runtime. For small datasets, both tools
+achieve synthetic data with high utility and optimal similarity, but on larger
+datasets only REaLTabFormer sustains strong utility and similarity. As a
+result, REaLTabFormer with lightweight LLMs provides the best balance, since it
+preserves data quality while reducing computational requirements. Nonetheless,
+its runtime remains higher than that of GReaT and other TDS tools, suggesting
+that efficiency gains are possible but only up to a certain level.</p></br><a href="http://arxiv.org/pdf/2509.21002v1" target="_blank"><h2>Lossless Compression: A New Benchmark for Time Series Model Evaluation</h2></a><strong><u>Authors:</u></strong>  Meng Wan, Benxi Tian, Jue Wang, Cui Hui, Ningming Nie, Tiantian Liu, Zongguo Wang, Cao Rongqiang, Peng Shi, Yangang Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 24 pages</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> The evaluation of time series models has traditionally focused on four
+canonical tasks: forecasting, imputation, anomaly detection, and
+classification. While these tasks have driven significant progress, they
+primarily assess task-specific performance and do not rigorously measure
+whether a model captures the full generative distribution of the data. We
+introduce lossless compression as a new paradigm for evaluating time series
+models, grounded in Shannon's source coding theorem. This perspective
+establishes a direct equivalence between optimal compression length and the
+negative log-likelihood, providing a strict and unified information-theoretic
+criterion for modeling capacity. Then We define a standardized evaluation
+protocol and metrics. We further propose and open-source a comprehensive
+evaluation framework TSCom-Bench, which enables the rapid adaptation of time
+series models as backbones for lossless compression. Experiments across diverse
+datasets on state-of-the-art models, including TimeXer, iTransformer, and
+PatchTST, demonstrate that compression reveals distributional weaknesses
+overlooked by classic benchmarks. These findings position lossless compression
+as a principled task that complements and extends existing evaluation for time
+series modeling.</p></br><a href="http://arxiv.org/pdf/2509.21735v1" target="_blank"><h2>Uncovering Alzheimer's Disease Progression via SDE-based Spatio-Temporal
+  Graph Deep Learning on Longitudinal Brain Networks</h2></a><strong><u>Authors:</u></strong>  Houliang Zhou, Rong Zhou, Yangying Liu, Kanhao Zhao, Li Shen, Brian Y. Chen, Yu Zhang, Lifang He, Alzheimer's Disease Neuroimaging Initiative</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Identifying objective neuroimaging biomarkers to forecast Alzheimer's disease
+(AD) progression is crucial for timely intervention. However, this task remains
+challenging due to the complex dysfunctions in the spatio-temporal
+characteristics of underlying brain networks, which are often overlooked by
+existing methods. To address these limitations, we develop an interpretable
+spatio-temporal graph neural network framework to predict future AD
+progression, leveraging dual Stochastic Differential Equations (SDEs) to model
+the irregularly-sampled longitudinal functional magnetic resonance imaging
+(fMRI) data. We validate our approach on two independent cohorts, including the
+Open Access Series of Imaging Studies (OASIS-3) and the Alzheimer's Disease
+Neuroimaging Initiative (ADNI). Our framework effectively learns sparse
+regional and connective importance probabilities, enabling the identification
+of key brain circuit abnormalities associated with disease progression.
+Notably, we detect the parahippocampal cortex, prefrontal cortex, and parietal
+lobule as salient regions, with significant disruptions in the ventral
+attention, dorsal attention, and default mode networks. These abnormalities
+correlate strongly with longitudinal AD-related clinical symptoms. Moreover,
+our interpretability strategy reveals both established and novel neural
+systems-level and sex-specific biomarkers, offering new insights into the
+neurobiological mechanisms underlying AD progression. Our findings highlight
+the potential of spatio-temporal graph-based learning for early, individualized
+prediction of AD progression, even in the context of irregularly-sampled
+longitudinal imaging data.</p></br><a href="http://arxiv.org/pdf/2509.22043v1" target="_blank"><h2>Convexity-Driven Projection for Point Cloud Dimensionality Reduction</h2></a><strong><u>Authors:</u></strong>  Suman Sanyal</br><strong><u>Categories:</u></strong> cs.LG, stat.ML, 68T09, I.5.2; I.5.1</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (title, abstract)</br><p><strong><u>Abstract:</u></strong> We propose Convexity-Driven Projection (CDP), a boundary-free linear method
+for dimensionality reduction of point clouds that targets preserving
+detour-induced local non-convexity. CDP builds a $k$-NN graph, identifies
+admissible pairs whose Euclidean-to-shortest-path ratios are below a threshold,
+and aggregates their normalized directions to form a positive semidefinite
+non-convexity structure matrix. The projection uses the top-$k$ eigenvectors of
+the structure matrix. We give two verifiable guarantees. A pairwise
+a-posteriori certificate that bounds the post-projection distortion for each
+admissible pair, and an average-case spectral bound that links expected
+captured direction energy to the spectrum of the structure matrix, yielding
+quantile statements for typical distortion. Our evaluation protocol reports
+fixed- and reselected-pairs detour errors and certificate quantiles, enabling
+practitioners to check guarantees on their data.</p></br><a href="http://arxiv.org/pdf/2509.22516v1" target="_blank"><h2>TrueGradeAI: Retrieval-Augmented and Bias-Resistant AI for Transparent
+  and Explainable Digital Assessments</h2></a><strong><u>Authors:</u></strong>  Rakesh Thakur, Shivaansh Kaushik, Gauri Chopra, Harsh Rohilla</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces TrueGradeAI, an AI-driven digital examination framework
+designed to overcome the shortcomings of traditional paper-based assessments,
+including excessive paper usage, logistical complexity, grading delays, and
+evaluator bias. The system preserves natural handwriting by capturing stylus
+input on secure tablets and applying transformer-based optical character
+recognition for transcription. Evaluation is conducted through a
+retrieval-augmented pipeline that integrates faculty solutions, cache layers,
+and external references, enabling a large language model to assign scores with
+explicit, evidence-linked reasoning. Unlike prior tablet-based exam systems
+that primarily digitize responses, TrueGradeAI advances the field by
+incorporating explainable automation, bias mitigation, and auditable grading
+trails. By uniting handwriting preservation with scalable and transparent
+evaluation, the framework reduces environmental costs, accelerates feedback
+cycles, and progressively builds a reusable knowledge base, while actively
+working to mitigate grading bias and ensure fairness in assessment.</p></br><a href="http://arxiv.org/pdf/2509.21528v1" target="_blank"><h2>Preemptive Detection and Steering of LLM Misalignment via Latent
+  Reachability</h2></a><strong><u>Authors:</u></strong>  Sathwik Karnik, Somil Bansal</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Large language models (LLMs) are now ubiquitous in everyday tools, raising
+urgent safety concerns about their tendency to generate harmful content. The
+dominant safety approach -- reinforcement learning from human feedback (RLHF)
+-- effectively shapes model behavior during training but offers no safeguards
+at inference time, where unsafe continuations may still arise. We propose
+BRT-Align, a reachability-based framework that brings control-theoretic safety
+tools to LLM inference. BRT-Align models autoregressive generation as a
+dynamical system in latent space and learn a safety value function via backward
+reachability, estimating the worst-case evolution of a trajectory. This enables
+two complementary mechanisms: (1) a runtime monitor that forecasts unsafe
+completions several tokens in advance, and (2) a least-restrictive steering
+filter that minimally perturbs latent states to redirect generation away from
+unsafe regions. Experiments across multiple LLMs and toxicity benchmarks
+demonstrate that BRT-Align provides more accurate and earlier detection of
+unsafe continuations than baselines. Moreover, for LLM safety alignment,
+BRT-Align substantially reduces unsafe generations while preserving sentence
+diversity and coherence. Qualitative results further highlight emergent
+alignment properties: BRT-Align consistently produces responses that are less
+violent, less profane, less offensive, and less politically biased. Together,
+these findings demonstrate that reachability analysis provides a principled and
+practical foundation for inference-time LLM safety.</p></br><a href="http://arxiv.org/pdf/2509.21567v1" target="_blank"><h2>EEG-Based Consumer Behaviour Prediction: An Exploration from Classical
+  Machine Learning to Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Mohammad Parsa Afshar, Aryan Azimi</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Prediction of consumer behavior is one of the important purposes in
+marketing, cognitive neuroscience, and human-computer interaction. The
+electroencephalography (EEG) data can help analyze the decision process by
+providing detailed information about the brain's neural activity. In this
+research, a comparative approach is utilized for predicting consumer behavior
+by EEG data. In the first step, the features of the EEG data from the NeuMa
+dataset were extracted and cleaned. For the Graph Neural Network (GNN) models,
+the brain connectivity features were created. Different machine learning
+models, such as classical models and Graph Neural Networks, are used and
+compared. The GNN models with different architectures are implemented to have a
+comprehensive comparison; furthermore, a wide range of classical models, such
+as ensemble models, are applied, which can be very helpful to show the
+difference and performance of each model on the dataset. Although the results
+did not show a significant difference overall, the GNN models generally
+performed better in some basic criteria where classical models were not
+satisfactory. This study not only shows that combining EEG signal analysis and
+machine learning models can provide an approach to deeper understanding of
+consumer behavior, but also provides a comprehensive comparison between the
+machine learning models that have been widely used in previous studies in the
+EEG-based neuromarketing such as Support Vector Machine (SVM), and the models
+which are not used or rarely used in the field, like Graph Neural Networks.</p></br><a href="http://arxiv.org/pdf/2509.21670v1" target="_blank"><h2>MORPH: Shape-agnostic PDE Foundation Models</h2></a><strong><u>Authors:</u></strong>  Mahindra Singh Rautela, Alexander Most, Siddharth Mansingh, Bradley C. Love, Ayan Biswas, Diane Oyen, Earl Lawrence</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, physics.comp-ph</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), multimodal (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> We introduce MORPH, a shape-agnostic, autoregressive foundation model for
+partial differential equations (PDEs). MORPH is built on a convolutional vision
+transformer backbone that seamlessly handles heterogeneous spatiotemporal
+datasets of varying data dimensionality (1D--3D) at different resolutions,
+multiple fields with mixed scalar and vector components. The architecture
+combines (i) component-wise convolution, which jointly processes scalar and
+vector channels to capture local interactions, (ii) inter-field
+cross-attention, which models and selectively propagates information between
+different physical fields, (iii) axial attentions, which factorizes full
+spatiotemporal self-attention along individual spatial and temporal axes to
+reduce computational burden while retaining expressivity. We pretrain multiple
+model variants on a diverse collection of heterogeneous PDE datasets and
+evaluate transfer to a range of downstream prediction tasks. Using both
+full-model fine-tuning and parameter-efficient low-rank adapters (LoRA), MORPH
+outperforms models trained from scratch in both zero-shot and full-shot
+generalization. Across extensive evaluations, MORPH matches or surpasses strong
+baselines and recent state-of-the-art models. Collectively, these capabilities
+present a flexible and powerful backbone for learning from heterogeneous and
+multimodal nature of scientific observations, charting a path toward scalable
+and data-efficient scientific machine learning.</p></br><a href="http://arxiv.org/pdf/2509.21050v1" target="_blank"><h2>GeoRef: Referring Expressions in Geometry via Task Formulation,
+  Synthetic Supervision, and Reinforced MLLM-based Solutions</h2></a><strong><u>Authors:</u></strong>  Bing Liu, Wenqiang Yv, Xuzheng Yang, Shichang Wang, Junzhuo Liu, Peng Wang, Guoqing Wang, Yang Yang, Heng Tao Shen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> AI-driven geometric problem solving is a complex vision-language task that
+requires accurate diagram interpretation, mathematical reasoning, and robust
+cross-modal grounding. A foundational yet underexplored capability for this
+task is the ability to identify and interpret geometric elements based on
+natural language queries. To address this, we introduce the task of Referring
+Expression Comprehension (REC) for geometric problems, which evaluates whether
+models can localize points, shapes, and spatial relations in diagrams in
+response to textual prompts. We present GeoRef, a benchmark dataset constructed
+from existing geometric problem corpora, featuring diverse, high-quality
+annotations and queries. Due to the lack of annotated data for this task, we
+generate a large-scale synthetic training dataset using a structured geometric
+formal language, enabling broad coverage of geometric concepts and facilitating
+model adaptation. We explore two fine-tuning approaches: Supervised Fine-Tuning
+(SFT) and Group Relative Policy Optimization (GRPO). Our results show that GRPO
+significantly outperforms SFT by better aligning model behavior with
+task-specific rewards. Furthermore, we propose a verify-and-regenerate
+mechanism that detects incorrect predictions and re-infers answers using
+contextual reasoning history, further boosting accuracy. Notably, even
+state-of-the-art Multimodal Large Language Models (MLLMs) struggle with this
+task, underscoring the necessity of explicitly evaluating and strengthening
+geometric grounding as a prerequisite for robust geometric problem solving.
+Moreover, models trained on GeoRef demonstrate measurable improvements on
+downstream geometric reasoning tasks, highlighting the broader value of REC as
+a foundation for multimodal mathematical understanding.</p></br><a href="http://arxiv.org/pdf/2509.22484v1" target="_blank"><h2>A Machine Learning Pipeline for Multiple Sclerosis Biomarker Discovery:
+  Comparing explainable AI and Traditional Statistical Approaches</h2></a><strong><u>Authors:</u></strong>  Samuele Punzo, Silvia Giulia Galfrè, Francesco Massafra, Alessandro Maglione, Corrado Priami, Alina Sîrbu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Short paper presented at the 20th conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB2025)</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> We present a machine learning pipeline for biomarker discovery in Multiple
+Sclerosis (MS), integrating eight publicly available microarray datasets from
+Peripheral Blood Mononuclear Cells (PBMC). After robust preprocessing we
+trained an XGBoost classifier optimized via Bayesian search. SHapley Additive
+exPlanations (SHAP) were used to identify key features for model prediction,
+indicating thus possible biomarkers. These were compared with genes identified
+through classical Differential Expression Analysis (DEA). Our comparison
+revealed both overlapping and unique biomarkers between SHAP and DEA,
+suggesting complementary strengths. Enrichment analysis confirmed the
+biological relevance of SHAP-selected genes, linking them to pathways such as
+sphingolipid signaling, Th1/Th2/Th17 cell differentiation, and Epstein-Barr
+virus infection all known to be associated with MS. This study highlights the
+value of combining explainable AI (xAI) with traditional statistical methods to
+gain deeper insights into disease mechanism.</p></br></body>

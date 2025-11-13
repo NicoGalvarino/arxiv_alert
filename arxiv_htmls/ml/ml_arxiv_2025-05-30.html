@@ -1,0 +1,325 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 28 May 2025 to 30 May 2025</em></font><a href="http://arxiv.org/pdf/2505.23017v1" target="_blank"><h2>$K^2$VAE: A Koopman-Kalman Enhanced Variational AutoEncoder for
+  Probabilistic Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Xingjian Wu, Xiangfei Qiu, Hongfan Gao, Jilin Hu, Bin Yang, Chenjuan Guo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Probabilistic Time Series Forecasting (PTSF) plays a crucial role in
+decision-making across various fields, including economics, energy, and
+transportation. Most existing methods excell at short-term forecasting, while
+overlooking the hurdles of Long-term Probabilistic Time Series Forecasting
+(LPTSF). As the forecast horizon extends, the inherent nonlinear dynamics have
+a significant adverse effect on prediction accuracy, and make generative models
+inefficient by increasing the cost of each iteration. To overcome these
+limitations, we introduce $K^2$VAE, an efficient VAE-based generative model
+that leverages a KoopmanNet to transform nonlinear time series into a linear
+dynamical system, and devises a KalmanNet to refine predictions and model
+uncertainty in such linear system, which reduces error accumulation in
+long-term forecasting. Extensive experiments demonstrate that $K^2$VAE
+outperforms state-of-the-art methods in both short- and long-term PTSF,
+providing a more efficient and accurate solution.</p></br><a href="http://arxiv.org/pdf/2505.23720v1" target="_blank"><h2>COBRA: Contextual Bandit Algorithm for Ensuring Truthful Strategic
+  Agents</h2></a><strong><u>Authors:</u></strong>  Arun Verma, Indrajit Saha, Makoto Yokoo, Bryan Kian Hsiang Low</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> This paper proposes a contextual bandit algorithm that prevents strategic agents from misreporting while having approximate incentive compatibility and a sub-linear regret guarantee</br><p><strong><u>Abstract:</u></strong> This paper considers a contextual bandit problem involving multiple agents,
+where a learner sequentially observes the contexts and the agent's reported
+arms, and then selects the arm that maximizes the system's overall reward.
+Existing work in contextual bandits assumes that agents truthfully report their
+arms, which is unrealistic in many real-life applications. For instance,
+consider an online platform with multiple sellers; some sellers may
+misrepresent product quality to gain an advantage, such as having the platform
+preferentially recommend their products to online users. To address this
+challenge, we propose an algorithm, COBRA, for contextual bandit problems
+involving strategic agents that disincentivize their strategic behavior without
+using any monetary incentives, while having incentive compatibility and a
+sub-linear regret guarantee. Our experimental results also validate the
+different performance aspects of our proposed algorithm.</p></br><a href="http://arxiv.org/pdf/2505.23181v1" target="_blank"><h2>FreRA: A Frequency-Refined Augmentation for Contrastive Learning on Time
+  Series Classification</h2></a><strong><u>Authors:</u></strong>  Tian Tian, Chunyan Miao, Hangwei Qian</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.6</br><strong><u>Comments:</u></strong> KDD 2025</br><p><strong><u>Abstract:</u></strong> Contrastive learning has emerged as a competent approach for unsupervised
+representation learning. However, the design of an optimal augmentation
+strategy, although crucial for contrastive learning, is less explored for time
+series classification tasks. Existing predefined time-domain augmentation
+methods are primarily adopted from vision and are not specific to time series
+data. Consequently, this cross-modality incompatibility may distort the
+semantically relevant information of time series by introducing mismatched
+patterns into the data. To address this limitation, we present a novel
+perspective from the frequency domain and identify three advantages for
+downstream classification: global, independent, and compact. To fully utilize
+the three properties, we propose the lightweight yet effective Frequency
+Refined Augmentation (FreRA) tailored for time series contrastive learning on
+classification tasks, which can be seamlessly integrated with contrastive
+learning frameworks in a plug-and-play manner. Specifically, FreRA
+automatically separates critical and unimportant frequency components.
+Accordingly, we propose semantic-aware Identity Modification and
+semantic-agnostic Self-adaptive Modification to protect semantically relevant
+information in the critical frequency components and infuse variance into the
+unimportant ones respectively. Theoretically, we prove that FreRA generates
+semantic-preserving views. Empirically, we conduct extensive experiments on two
+benchmark datasets, including UCR and UEA archives, as well as five large-scale
+datasets on diverse applications. FreRA consistently outperforms ten leading
+baselines on time series classification, anomaly detection, and transfer
+learning tasks, demonstrating superior capabilities in contrastive
+representation learning and generalization in transfer learning scenarios
+across diverse datasets.</p></br><a href="http://arxiv.org/pdf/2505.23624v1" target="_blank"><h2>Towards Explainable Sequential Learning</h2></a><strong><u>Authors:</u></strong>  Giacomo Bergami, Emma Packer, Kirsty Scott, Silvia Del Din</br><strong><u>Categories:</u></strong> cs.DB, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This paper offers a hybrid explainable temporal data processing pipeline,
+DataFul Explainable MultivariatE coRrelatIonal Temporal Artificial inTElligence
+(EMeriTAte+DF), bridging numerical-driven temporal data classification with an
+event-based one through verified artificial intelligence principles, enabling
+human-explainable results. This was possible through a preliminary a posteriori
+explainable phase describing the numerical input data in terms of concurrent
+constituents with numerical payloads. This further required extending the
+event-based literature to design specification mining algorithms supporting
+concurrent constituents. Our previous and current solutions outperform
+state-of-the-art solutions for multivariate time series classifications, thus
+showcasing the effectiveness of the proposed methodology.</p></br><a href="http://arxiv.org/pdf/2505.23599v1" target="_blank"><h2>On Transferring Transferability: Towards a Theory for Size
+  Generalization</h2></a><strong><u>Authors:</u></strong>  Eitan Levin, Yuxin Ma, Mateo Díaz, Soledad Villar</br><strong><u>Categories:</u></strong> cs.LG, math.RT, math.ST, stat.ML, stat.TH</br><strong><u>Comments:</u></strong> 69 pages, 8 figures</br><p><strong><u>Abstract:</u></strong> Many modern learning tasks require models that can take inputs of varying
+sizes. Consequently, dimension-independent architectures have been proposed for
+domains where the inputs are graphs, sets, and point clouds. Recent work on
+graph neural networks has explored whether a model trained on low-dimensional
+data can transfer its performance to higher-dimensional inputs. We extend this
+body of work by introducing a general framework for transferability across
+dimensions. We show that transferability corresponds precisely to continuity in
+a limit space formed by identifying small problem instances with equivalent
+large ones. This identification is driven by the data and the learning task. We
+instantiate our framework on existing architectures, and implement the
+necessary changes to ensure their transferability. Finally, we provide design
+principles for designing new transferable models. Numerical experiments support
+our findings.</p></br><a href="http://arxiv.org/pdf/2505.23086v1" target="_blank"><h2>Equivariant Spherical Transformer for Efficient Molecular Modeling</h2></a><strong><u>Authors:</u></strong>  Junyi An, Xinyu Lu, Chao Qu, Yunfei Shi, Peijia Lin, Qianwei Tang, Licheng Xu, Fenglei Cao, Yuan Qi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 24 pages, 3 figures</br><p><strong><u>Abstract:</u></strong> SE(3)-equivariant Graph Neural Networks (GNNs) have significantly advanced
+molecular system modeling by employing group representations. However, their
+message passing processes, which rely on tensor product-based convolutions, are
+limited by insufficient non-linearity and incomplete group representations,
+thereby restricting expressiveness. To overcome these limitations, we introduce
+the Equivariant Spherical Transformer (EST), a novel framework that leverages a
+Transformer structure within the spatial domain of group representations after
+Fourier transform. We theoretically and empirically demonstrate that EST can
+encompass the function space of tensor products while achieving superior
+expressiveness. Furthermore, EST's equivariant inductive bias is guaranteed
+through a uniform sampling strategy for the Fourier transform. Our experiments
+demonstrate state-of-the-art performance by EST on various molecular
+benchmarks, including OC20 and QM9.</p></br><a href="http://arxiv.org/pdf/2505.23551v1" target="_blank"><h2>The Intracluster Light of Abell 3667: Unveiling an Optical Bridge in
+  LSST Precursor Data</h2></a><strong><u>Authors:</u></strong>  Anthony Englert, Ian Dell'Antonio, Mireia Montes</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> Submitted to ApJL</br><p><strong><u>Abstract:</u></strong> Intracluster light, the diffuse glow of stars stripped from galaxies during a
+cluster's formation, is an established tracer of a cluster's dynamical history.
+The upcoming Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST)
+is set to revolutionize studies of intracluster light by imaging the entire
+southern sky down to a limiting surface brightness $\mu \gtrsim
+30\text{mag}/\text{arcsec}^2$ by year ten. In this letter, we create a
+precursor LSST dataset (reaching the equivalent of year eight depth) using
+DECam observations of Abell 3667 and study its intracluster light. We have
+discovered a low surface brightness ($ \mu \gtrsim 26\text{mag}/\text{arcsec}^2
+$) optical bridge extending over $\sim 400\text{ kpc}$ which connects the two
+brightest galaxies (BCG1 and BCG2) in the cluster; the color and surface
+brightness of the bridge is consistent with formation via a major merger. The
+inner regions of BCG1 ($r < 200\text{ kpc}$) and BCG2 ($r < 50\text{ kpc}$) are
+consistent with formation via gradual stripping of satellite galaxies, but
+BCG2's outer profile appears disrupted by a recent merger. We hypothesize that
+the bridge is a relic of a recent first-pass between the two brightest galaxies
+and is composed of stars being stripped from BCG2. Future studies of
+intracluster light with LSST will discover new features such as the bridge in
+local clusters while enabling detailed studies of the stellar populations of
+these features with its six photometric bands.</p></br><a href="http://arxiv.org/pdf/2505.23106v1" target="_blank"><h2>Neural Interpretable PDEs: Harmonizing Fourier Insights with Attention
+  for Scalable and Interpretable Physics Discovery</h2></a><strong><u>Authors:</u></strong>  Ning Liu, Yue Yu</br><strong><u>Categories:</u></strong> cs.LG, cs.NA, math.NA</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Attention mechanisms have emerged as transformative tools in core AI domains
+such as natural language processing and computer vision. Yet, their largely
+untapped potential for modeling intricate physical systems presents a
+compelling frontier. Learning such systems often entails discovering operators
+that map between functional spaces using limited instances of function pairs --
+a task commonly framed as a severely ill-posed inverse PDE problem. In this
+work, we introduce Neural Interpretable PDEs (NIPS), a novel neural operator
+architecture that builds upon and enhances Nonlocal Attention Operators (NAO)
+in both predictive accuracy and computational efficiency. NIPS employs a linear
+attention mechanism to enable scalable learning and integrates a learnable
+kernel network that acts as a channel-independent convolution in Fourier space.
+As a consequence, NIPS eliminates the need to explicitly compute and store
+large pairwise interactions, effectively amortizing the cost of handling
+spatial interactions into the Fourier transform. Empirical evaluations
+demonstrate that NIPS consistently surpasses NAO and other baselines across
+diverse benchmarks, heralding a substantial leap in scalable, interpretable,
+and efficient physics learning. Our code and data accompanying this paper are
+available at https://github.com/fishmoon1234/Nonlocal-Attention-Operator.</p></br><a href="http://arxiv.org/pdf/2505.23091v1" target="_blank"><h2>Infi-MMR: Curriculum-based Unlocking Multimodal Reasoning via Phased
+  Reinforcement Learning in Multimodal Small Language Models</h2></a><strong><u>Authors:</u></strong>  Zeyu Liu, Yuhang Liu, Guanghao Zhu, Congkai Xie, Zhen Li, Jianbo Yuan, Xinyao Wang, Qing Li, Shing-Chi Cheung, Shengyu Zhang, Fei Wu, Hongxia Yang</br><strong><u>Categories:</u></strong> cs.AI, cs.CL</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Recent advancements in large language models (LLMs) have demonstrated
+substantial progress in reasoning capabilities, such as DeepSeek-R1, which
+leverages rule-based reinforcement learning to enhance logical reasoning
+significantly. However, extending these achievements to multimodal large
+language models (MLLMs) presents critical challenges, which are frequently more
+pronounced for Multimodal Small Language Models (MSLMs) given their typically
+weaker foundational reasoning abilities: (1) the scarcity of high-quality
+multimodal reasoning datasets, (2) the degradation of reasoning capabilities
+due to the integration of visual processing, and (3) the risk that direct
+application of reinforcement learning may produce complex yet incorrect
+reasoning processes. To address these challenges, we design a novel framework
+Infi-MMR to systematically unlock the reasoning potential of MSLMs through a
+curriculum of three carefully structured phases and propose our multimodal
+reasoning model Infi-MMR-3B. The first phase, Foundational Reasoning
+Activation, leverages high-quality textual reasoning datasets to activate and
+strengthen the model's logical reasoning capabilities. The second phase,
+Cross-Modal Reasoning Adaptation, utilizes caption-augmented multimodal data to
+facilitate the progressive transfer of reasoning skills to multimodal contexts.
+The third phase, Multimodal Reasoning Enhancement, employs curated,
+caption-free multimodal data to mitigate linguistic biases and promote robust
+cross-modal reasoning. Infi-MMR-3B achieves both state-of-the-art multimodal
+math reasoning ability (43.68% on MathVerse testmini, 27.04% on MathVision
+test, and 21.33% on OlympiadBench) and general reasoning ability (67.2% on
+MathVista testmini).</p></br><a href="http://arxiv.org/pdf/2505.23369v1" target="_blank"><h2>Dynamic Spectral Backpropagation for Efficient Neural Network Training</h2></a><strong><u>Authors:</u></strong>  Mannmohan Muthuraman</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Dynamic Spectral Backpropagation (DSBP) enhances neural network training
+under resource constraints by projecting gradients onto principal eigenvectors,
+reducing complexity and promoting flat minima. Five extensions are proposed,
+dynamic spectral inference, spectral architecture optimization, spectral meta
+learning, spectral transfer regularization, and Lie algebra inspired dynamics,
+to address challenges in robustness, fewshot learning, and hardware efficiency.
+Supported by a third order stochastic differential equation (SDE) and a PAC
+Bayes limit, DSBP outperforms Sharpness Aware Minimization (SAM), Low Rank
+Adaptation (LoRA), and Model Agnostic Meta Learning (MAML) on CIFAR 10, Fashion
+MNIST, MedMNIST, and Tiny ImageNet, as demonstrated through extensive
+experiments and visualizations. Future work focuses on scalability, bias
+mitigation, and ethical considerations.</p></br><a href="http://arxiv.org/pdf/2505.23768v1" target="_blank"><h2>Turbulence in Primordial Dark Matter Halos and Its Impact on the First
+  Star Formation</h2></a><strong><u>Authors:</u></strong>  Meng-Yuan Ho, Ke-Jung Chen, Pei-Cheng Tung</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 12 pages, 10 figures. Submitted to the AAS Journals</br><p><strong><u>Abstract:</u></strong> We present high-resolution simulations of the first star-forming clouds in 15
+minihalos with masses ranging from $\sim 10^5$ to $10^7\ \text{M}_{\odot}$ at
+redshifts $z \sim 17 - 20$, using the \texttt{GIZMO} code. Our simulations
+incorporate detailed primordial gas physics and adopt initial conditions from
+the state-of-the-art TNG cosmological simulations. To achieve the required
+resolution, we apply a particle-splitting technique that increases the
+resolution of the original TNG data by a factor of $\sim 10^5$, reaching gas
+and dark matter particle masses of $0.2\ \text{M}_{\odot}$ and $80\
+\text{M}_{\odot}$, respectively. This enables us to resolve gas accretion
+during the early assembly of minihalos and to capture the emergence of strong
+turbulent flows. We find that turbulence, driven by gas infall into the dark
+matter potential wells, is predominantly supersonic, with characteristic Mach
+numbers ranging from $1.8$ to $4.2$, increasing with halo mass. The supersonic
+turbulence effectively fragments the central gas cloud into multiple dense
+clumps, some of which form gravitationally bound cores and begin to collapse
+into the first stars. Our results suggest that supersonic turbulence is a
+common feature in minihalos and plays a key role in generating clumpy
+star-forming clouds, with important implications for the initial mass function
+of the first stars.</p></br><a href="http://arxiv.org/pdf/2505.22997v1" target="_blank"><h2>Theoretical Foundations of the Deep Copula Classifier: A Generative
+  Approach to Modeling Dependent Features</h2></a><strong><u>Authors:</u></strong>  Agnideep Aich, Ashit Baran Aich, Bruce Wade</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 62H30, 68T07, 62C12, 62G05</br><strong><u>Comments:</u></strong> Submitted</br><p><strong><u>Abstract:</u></strong> Traditional classifiers often assume feature independence or rely on overly
+simplistic relationships, leading to poor performance in settings where
+real-world dependencies matter. We introduce the Deep Copula Classifier (DCC),
+a generative model that separates the learning of each feature's marginal
+distribution from the modeling of their joint dependence structure via neural
+network-parameterized copulas. For each class, lightweight neural networks are
+used to flexibly and adaptively capture feature interactions, making DCC
+particularly effective when classification is driven by complex dependencies.
+We establish that DCC converges to the Bayes-optimal classifier under standard
+conditions and provide explicit convergence rates of O(n^{-r/(2r + d)}) for
+r-smooth copula densities. Beyond theoretical guarantees, we outline several
+practical extensions, including high-dimensional scalability through vine and
+factor copula architectures, semi-supervised learning via entropy
+regularization, and online adaptation using streaming gradient methods. By
+unifying statistical rigor with the representational power of neural networks,
+DCC offers a mathematically grounded and interpretable framework for
+dependency-aware classification.</p></br><a href="http://arxiv.org/pdf/2505.23320v1" target="_blank"><h2>Efficient Parameter Estimation for Bayesian Network Classifiers using
+  Hierarchical Linear Smoothing</h2></a><strong><u>Authors:</u></strong>  Connor Cooper, Geoffrey I. Webb, Daniel F. Schmidt</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 20 pages, 9 figures</br><p><strong><u>Abstract:</u></strong> Bayesian network classifiers (BNCs) possess a number of properties desirable
+for a modern classifier: They are easily interpretable, highly scalable, and
+offer adaptable complexity. However, traditional methods for learning BNCs have
+historically underperformed when compared to leading classification methods
+such as random forests. Recent parameter smoothing techniques using
+hierarchical Dirichlet processes (HDPs) have enabled BNCs to achieve
+performance competitive with random forests on categorical data, but these
+techniques are relatively inflexible, and require a complicated, specialized
+sampling process. In this paper, we introduce a novel method for parameter
+estimation that uses a log-linear regression to approximate the behaviour of
+HDPs. As a linear model, our method is remarkably flexible and simple to
+interpret, and can leverage the vast literature on learning linear models. Our
+experiments show that our method can outperform HDP smoothing while being
+orders of magnitude faster, remaining competitive with random forests on
+categorical data.</p></br><a href="http://arxiv.org/pdf/2505.23569v1" target="_blank"><h2>Maximum Likelihood Learning of Latent Dynamics Without Reconstruction</h2></a><strong><u>Authors:</u></strong>  Samo Hromadka, Kai Biegun, Lior Fox, James Heald, Maneesh Sahani</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We introduce a novel unsupervised learning method for time series data with
+latent dynamical structure: the recognition-parametrized Gaussian state space
+model (RP-GSSM). The RP-GSSM is a probabilistic model that learns Markovian
+Gaussian latents explaining statistical dependence between observations at
+different time steps, combining the intuition of contrastive methods with the
+flexible tools of probabilistic generative models. Unlike contrastive
+approaches, the RP-GSSM is a valid probabilistic model learned via maximum
+likelihood. Unlike generative approaches, the RP-GSSM has no need for an
+explicit network mapping from latents to observations, allowing it to focus
+model capacity on inference of latents. The model is both tractable and
+expressive: it admits exact inference thanks to its jointly Gaussian latent
+prior, while maintaining expressivity with an arbitrarily nonlinear neural
+network link between observations and latents. These qualities allow the
+RP-GSSM to learn task-relevant latents without ad-hoc regularization, auxiliary
+losses, or optimizer scheduling. We show how this approach outperforms
+alternatives on problems that include learning nonlinear stochastic dynamics
+from video, with or without background distractors. Our results position the
+RP-GSSM as a useful foundation model for a variety of downstream applications.</p></br><a href="http://arxiv.org/pdf/2505.23032v1" target="_blank"><h2>Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks</h2></a><strong><u>Authors:</u></strong>  Dongwoo Lee, Dong Bok Lee, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim, Hae Beom Lee</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted to ICML 2025</br><p><strong><u>Abstract:</u></strong> Scaling has been a major driver of recent advancements in deep learning.
+Numerous empirical studies have found that scaling laws often follow the
+power-law and proposed several variants of power-law functions to predict the
+scaling behavior at larger scales. However, existing methods mostly rely on
+point estimation and do not quantify uncertainty, which is crucial for
+real-world applications involving decision-making problems such as determining
+the expected performance improvements achievable by investing additional
+computational resources. In this work, we explore a Bayesian framework based on
+Prior-data Fitted Networks (PFNs) for neural scaling law extrapolation.
+Specifically, we design a prior distribution that enables the sampling of
+infinitely many synthetic functions resembling real-world neural scaling laws,
+allowing our PFN to meta-learn the extrapolation. We validate the effectiveness
+of our approach on real-world neural scaling laws, comparing it against both
+the existing point estimation methods and Bayesian approaches. Our method
+demonstrates superior performance, particularly in data-limited scenarios such
+as Bayesian active learning, underscoring its potential for reliable,
+uncertainty-aware extrapolation in practical applications.</p></br><a href="http://arxiv.org/pdf/2505.23614v1" target="_blank"><h2>Inference-time Scaling of Diffusion Models through Classical Search</h2></a><strong><u>Authors:</u></strong>  Xiangcheng Zhang, Haowei Lin, Haotian Ye, James Zou, Jianzhu Ma, Yitao Liang, Yilun Du</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Website atthis https URL</br><p><strong><u>Abstract:</u></strong> Classical search algorithms have long underpinned modern artificial
+intelligence. In this work, we tackle the challenge of inference-time control
+in diffusion models -- adapting generated outputs to meet diverse test-time
+objectives -- using principles from classical search. We propose a general
+framework that orchestrates local and global search to efficiently navigate the
+generative space. It employs a theoretically grounded local search via annealed
+Langevin MCMC and performs compute-efficient global exploration using
+breadth-first and depth-first tree search. We evaluate our approach on a range
+of challenging domains, including planning, offline reinforcement learning, and
+image generation. Across all tasks, we observe significant gains in both
+performance and efficiency. These results show that classical search provides a
+principled and practical foundation for inference-time scaling in diffusion
+models. Project page at diffusion-inference-scaling.github.io.</p></br><a href="http://arxiv.org/pdf/2505.22866v1" target="_blank"><h2>Scaling Offline RL via Efficient and Expressive Shortcut Models</h2></a><strong><u>Authors:</u></strong>  Nicolas Espinosa-Dice, Yiyi Zhang, Yiding Chen, Bradley Guo, Owen Oertell, Gokul Swamy, Kiante Brantley, Wen Sun</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.6</br><strong><u>Comments:</u></strong> 32 pages, 5 figures. Under review at NeurIPS 2025</br><p><strong><u>Abstract:</u></strong> Diffusion and flow models have emerged as powerful generative approaches
+capable of modeling diverse and multimodal behavior. However, applying these
+models to offline reinforcement learning (RL) remains challenging due to the
+iterative nature of their noise sampling processes, making policy optimization
+difficult. In this paper, we introduce Scalable Offline Reinforcement Learning
+(SORL), a new offline RL algorithm that leverages shortcut models - a novel
+class of generative models - to scale both training and inference. SORL's
+policy can capture complex data distributions and can be trained simply and
+efficiently in a one-stage training procedure. At test time, SORL introduces
+both sequential and parallel inference scaling by using the learned Q-function
+as a verifier. We demonstrate that SORL achieves strong performance across a
+range of offline RL tasks and exhibits positive scaling behavior with increased
+test-time compute. We release the code at
+nico-espinosadice.github.io/projects/sorl.</p></br><a href="http://arxiv.org/pdf/2505.23195v1" target="_blank"><h2>Less is More: Unlocking Specialization of Time Series Foundation Models
+  via Structured Pruning</h2></a><strong><u>Authors:</u></strong>  Lifan Zhao, Yanyan Shen, Zhaoyang Liu, Xue Wang, Jiaji Deng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Manuscript with fixed typos and figures</br><p><strong><u>Abstract:</u></strong> Scaling laws motivate the development of Time Series Foundation Models
+(TSFMs) that pre-train vast parameters and achieve remarkable zero-shot
+forecasting performance. Surprisingly, even after fine-tuning, TSFMs cannot
+consistently outperform smaller, specialized models trained on full-shot
+downstream data. A key question is how to realize effective adaptation of TSFMs
+for a target forecasting task. Through empirical studies on various TSFMs, the
+pre-trained models often exhibit inherent sparsity and redundancy in
+computation, suggesting that TSFMs have learned to activate task-relevant
+network substructures to accommodate diverse forecasting tasks. To preserve
+this valuable prior knowledge, we propose a structured pruning method to
+regularize the subsequent fine-tuning process by focusing it on a more relevant
+and compact parameter space. Extensive experiments on seven TSFMs and six
+benchmarks demonstrate that fine-tuning a smaller, pruned TSFM significantly
+improves forecasting performance compared to fine-tuning original models. This
+"prune-then-finetune" paradigm often enables TSFMs to achieve state-of-the-art
+performance and surpass strong specialized baselines.</p></br><a href="http://arxiv.org/pdf/2505.23706v1" target="_blank"><h2>Distributed Federated Learning for Vehicular Network Security: Anomaly
+  Detection Benefits and Multi-Domain Attack Threats</h2></a><strong><u>Authors:</u></strong>  Utku Demir, Yalin E. Sagduyu, Tugba Erpek, Hossein Jafari, Sastry Kompella, Mengran Xue</br><strong><u>Categories:</u></strong> cs.NI, cs.AI, cs.DC, cs.IT, eess.SP, math.IT</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> In connected and autonomous vehicles, machine learning for safety message
+classification has become critical for detecting malicious or anomalous
+behavior. However, conventional approaches that rely on centralized data
+collection or purely local training face limitations due to the large scale,
+high mobility, and heterogeneous data distributions inherent in inter-vehicle
+networks. To overcome these challenges, this paper explores Distributed
+Federated Learning (DFL), whereby vehicles collaboratively train deep learning
+models by exchanging model updates among one-hop neighbors and propagating
+models over multiple hops. Using the Vehicular Reference Misbehavior (VeReMi)
+Extension Dataset, we show that DFL can significantly improve classification
+accuracy across all vehicles compared to learning strictly with local data.
+Notably, vehicles with low individual accuracy see substantial accuracy gains
+through DFL, illustrating the benefit of knowledge sharing across the network.
+We further show that local training data size and time-varying network
+connectivity correlate strongly with the model's overall accuracy. We
+investigate DFL's resilience and vulnerabilities under attacks in multiple
+domains, namely wireless jamming and training data poisoning attacks. Our
+results reveal important insights into the vulnerabilities of DFL when
+confronted with multi-domain attacks, underlining the need for more robust
+strategies to secure DFL in vehicular networks.</p></br><a href="http://arxiv.org/pdf/2505.23496v1" target="_blank"><h2>Epistemic Errors of Imperfect Multitask Learners When Distributions
+  Shift</h2></a><strong><u>Authors:</u></strong>  Sabina J. Sloman, Michele Caprio, Samuel Kaski</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> When data are noisy, a statistical learner's goal is to resolve epistemic
+uncertainty about the data it will encounter at test-time, i.e., to identify
+the distribution of test (target) data. Many real-world learning settings
+introduce sources of epistemic uncertainty that can not be resolved on the
+basis of training (source) data alone: The source data may arise from multiple
+tasks (multitask learning), the target data may differ systematically from the
+source data tasks (distribution shift), and/or the learner may not arrive at an
+accurate characterization of the source data (imperfect learning). We introduce
+a principled definition of epistemic error, and provide a generic,
+decompositional epistemic error bound. Our error bound is the first to (i)
+consider epistemic error specifically, (ii) accommodate all the sources of
+epistemic uncertainty above, and (iii) separately attribute the error to each
+of multiple aspects of the learning procedure and environment. As corollaries
+of the generic result, we provide (i) epistemic error bounds specialized to the
+settings of Bayesian transfer learning and distribution shift within
+$\epsilon$-neighborhoods, and (ii) a set of corresponding generalization
+bounds. Finally, we provide a novel definition of negative transfer, and
+validate its insights in a synthetic experimental setting.</p></br></body>

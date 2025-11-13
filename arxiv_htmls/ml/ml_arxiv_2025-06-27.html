@@ -1,0 +1,386 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 24 Jun 2025 to 27 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.20693v1" target="_blank"><h2>E-ABIN: an Explainable module for Anomaly detection in BIological
+  Networks</h2></a><strong><u>Authors:</u></strong>  Ugo Lomoio, Tommaso Mazza, Pierangelo Veltri, Pietro Hiram Guzzi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> The increasing availability of large-scale omics data calls for robust
+analytical frameworks capable of handling complex gene expression datasets
+while offering interpretable results. Recent advances in artificial
+intelligence have enabled the identification of aberrant molecular patterns
+distinguishing disease states from healthy controls. Coupled with improvements
+in model interpretability, these tools now support the identification of genes
+potentially driving disease phenotypes. However, current approaches to gene
+anomaly detection often remain limited to single datasets and lack accessible
+graphical interfaces. Here, we introduce E-ABIN, a general-purpose, explainable
+framework for Anomaly detection in Biological Networks. E-ABIN combines
+classical machine learning and graph-based deep learning techniques within a
+unified, user-friendly platform, enabling the detection and interpretation of
+anomalies from gene expression or methylation-derived networks. By integrating
+algorithms such as Support Vector Machines, Random Forests, Graph Autoencoders
+(GAEs), and Graph Adversarial Attributed Networks (GAANs), E-ABIN ensures a
+high predictive accuracy while maintaining interpretability. We demonstrate the
+utility of E-ABIN through case studies of bladder cancer and coeliac disease,
+where it effectively uncovers biologically relevant anomalies and offers
+insights into disease mechanisms.</p></br><a href="http://arxiv.org/pdf/2506.20347v1" target="_blank"><h2>On the ability of Deep Neural Networks to Learn Granger Causality in
+  Multi-Variate Time Series Data</h2></a><strong><u>Authors:</u></strong>  Malik Shahid Sultan, Hernando Ombao</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), causality (title, abstract)</br><p><strong><u>Abstract:</u></strong> Granger Causality (GC) offers an elegant statistical framework to study the
+association between multivariate time series data. Linear Vector Autoregressive
+models (VAR) though have nice interpretation properties but have limited
+practical application due to underlying assumptions on the kind of associations
+that can be captured by these models. Numerous attempts have already been made
+in the literature that exploit the functional approximation power of Deep
+Neural Networks (DNNs) for the task of GC estimation. These methods however
+treat GC as a variable selection problem. We present a novel paradigm for
+approaching GC. We present this idea that GC is essentially linked with
+prediction and if a deep learning model is used to model the time series
+collectively or jointly, a well regularized model may learn the true granger
+causal structure from the data, given that there is enough training data. We
+propose to uncover the learned GC structure by comparing the model uncertainty
+or distribution of the residuals when the past of everything is used as
+compared to the one where a specific time series component is dropped from the
+model. We also compare the effect of input layer dropout on the ability of a
+neural network to learn granger causality from the data. We show that a well
+regularized model infact can learn the true GC structure from the data without
+explicitly adding terms in the loss function that guide the model to select
+variables or perform sparse regression.</p></br><a href="http://arxiv.org/pdf/2506.19894v1" target="_blank"><h2>Explaining deep neural network models for electricity price forecasting
+  with XAI</h2></a><strong><u>Authors:</u></strong>  Antoine Pesenti, Aidan OSullivan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (abstract), neural network (title)</br><p><strong><u>Abstract:</u></strong> Electricity markets are highly complex, involving lots of interactions and
+complex dependencies that make it hard to understand the inner workings of the
+market and what is driving prices. Econometric methods have been developed for
+this, white-box models, however, they are not as powerful as deep neural
+network models (DNN). In this paper, we use a DNN to forecast the price and
+then use XAI methods to understand the factors driving the price dynamics in
+the market. The objective is to increase our understanding of how different
+electricity markets work. To do that, we apply explainable methods such as SHAP
+and Gradient, combined with visual techniques like heatmaps (saliency maps) to
+analyse the behaviour and contributions of various features across five
+electricity markets. We introduce the novel concepts of SSHAP values and SSHAP
+lines to enhance the complex representation of high-dimensional tabular models.</p></br><a href="http://arxiv.org/pdf/2506.21278v1" target="_blank"><h2>Hyperspherical Variational Autoencoders Using Efficient Spherical Cauchy
+  Distribution</h2></a><strong><u>Authors:</u></strong>  Lukas Sablica, Kurt Hornik</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title, abstract), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a novel variational autoencoder (VAE) architecture that employs a
+spherical Cauchy (spCauchy) latent distribution. Unlike traditional Gaussian
+latent spaces or the widely used von Mises-Fisher (vMF) distribution, spCauchy
+provides a more natural hyperspherical representation of latent variables,
+better capturing directional data while maintaining flexibility. Its
+heavy-tailed nature prevents over-regularization, ensuring efficient latent
+space utilization while offering a more expressive representation.
+Additionally, spCauchy circumvents the numerical instabilities inherent to vMF,
+which arise from computing normalization constants involving Bessel functions.
+Instead, it enables a fully differentiable and efficient reparameterization
+trick via M\"obius transformations, allowing for stable and scalable training.
+The KL divergence can be computed through a rapidly converging power series,
+eliminating concerns of underflow or overflow associated with evaluation of
+ratios of hypergeometric functions. These properties make spCauchy a compelling
+alternative for VAEs, offering both theoretical advantages and practical
+efficiency in high-dimensional generative modeling.</p></br><a href="http://arxiv.org/pdf/2506.21140v1" target="_blank"><h2>DBConformer: Dual-Branch Convolutional Transformer for EEG Decoding</h2></a><strong><u>Authors:</u></strong>  Ziwei Wang, Hongbin Wang, Tianwang Jia, Xingyi He, Siyang Li, Dongrui Wu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), convolutional (title, abstract), explainable (abstract), neural network (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Electroencephalography (EEG)-based brain-computer interfaces (BCIs) transform
+spontaneous/evoked neural activity into control commands for external
+communication. While convolutional neural networks (CNNs) remain the mainstream
+backbone for EEG decoding, their inherently short receptive field makes it
+difficult to capture long-range temporal dependencies and global inter-channel
+relationships. Recent CNN-Transformer (Conformers) hybrids partially address
+this issue, but most adopt a serial design, resulting in suboptimal integration
+of local and global features, and often overlook explicit channel-wise
+modeling. To address these limitations, we propose DBConformer, a dual-branch
+convolutional Transformer network tailored for EEG decoding. It integrates a
+temporal Conformer to model long-range temporal dependencies and a spatial
+Conformer to extract inter-channel interactions, capturing both temporal
+dynamics and spatial patterns in EEG signals. A lightweight channel attention
+module further refines spatial representations by assigning data-driven
+importance to EEG channels. Extensive experiments on five motor imagery (MI)
+datasets and two seizure detection datasets under three evaluation settings
+demonstrate that DBConformer consistently outperforms 10 competitive baseline
+models, with over eight times fewer parameters than the high-capacity EEG
+Conformer baseline. Further, the visualization results confirm that the
+features extracted by DBConformer are physiologically interpretable and aligned
+with sensorimotor priors in MI. The superior performance and interpretability
+of DBConformer make it reliable for robust and explainable EEG decoding. Code
+is publicized at https://github.com/wzwvv/DBConformer.</p></br><a href="http://arxiv.org/pdf/2506.21382v1" target="_blank"><h2>Temporal-Aware Graph Attention Network for Cryptocurrency Transaction
+  Fraud Detection</h2></a><strong><u>Authors:</u></strong>  Zhi Zheng, Bochuan Zhou, Yuping Song</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Cryptocurrency transaction fraud detection faces the dual challenges of
+increasingly complex transaction patterns and severe class imbalance.
+Traditional methods rely on manual feature engineering and struggle to capture
+temporal and structural dependencies in transaction networks. This paper
+proposes an Augmented Temporal-aware Graph Attention Network (ATGAT) that
+enhances detection performance through three modules: (1) designing an advanced
+temporal embedding module that fuses multi-scale time difference features with
+periodic position encoding; (2) constructing a temporal-aware triple attention
+mechanism that jointly optimizes structural, temporal, and global context
+attention; (3) employing weighted BCE loss to address class imbalance.
+Experiments on the Elliptic++ cryptocurrency dataset demonstrate that ATGAT
+achieves an AUC of 0.9130, representing a 9.2% improvement over the best
+traditional method XGBoost, 12.0% over GCN, and 10.0% over standard GAT. This
+method not only validates the enhancement effect of temporal awareness and
+triple attention mechanisms on graph neural networks, but also provides
+financial institutions with more reliable fraud detection tools, with its
+design principles generalizable to other temporal graph anomaly detection
+tasks.</p></br><a href="http://arxiv.org/pdf/2506.20354v1" target="_blank"><h2>A foundation model with multi-variate parallel attention to generate
+  neuronal activity</h2></a><strong><u>Authors:</u></strong>  Francesco Carzaniga, Michael Hersche, Abu Sebastian, Kaspar Schindler, Abbas Rahimi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> The code is available atthis https URL. The SWEC iEEG dataset is available atthis https URL</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Learning from multi-variate time-series with heterogeneous channel
+configurations remains a fundamental challenge for deep neural networks (DNNs),
+particularly in clinical domains such as intracranial electroencephalography
+(iEEG), where channel setups vary widely across subjects. In this work, we
+introduce multi-variate parallel attention (MVPA), a novel self-attention
+mechanism that disentangles content, temporal, and spatial attention, enabling
+flexible, generalizable, and efficient modeling of time-series data with
+varying channel counts and configurations. We use MVPA to build MVPFormer, a
+generative foundation model for human electrophysiology, trained to predict the
+evolution of iEEG signals across diverse subjects. To support this and future
+effort by the community, we release the SWEC iEEG dataset, the largest publicly
+available iEEG dataset to date, comprising nearly 10,000 hours of recordings
+from heterogeneous clinical sources. MVPFormer leverages MVPA to achieve strong
+generalization across subjects, demonstrating expert-level performance in
+seizure detection and outperforming state-of-the-art Transformer baselines on
+our SWEC, the MAYO, and the FNUSA dataset. We further validate MVPA on standard
+time-series forecasting and classification tasks, where it matches or exceeds
+existing attention-based models. Together, our contributions establish MVPA as
+a general-purpose attention mechanism for heterogeneous time-series and
+MVPFormer as the first open-source, open-weights, and open-data iEEG foundation
+model with state-of-the-art clinical performance. The code is available at
+https://github.com/IBM/multi-variate-parallel-transformer. The SWEC iEEG
+dataset is available at
+https://mb-neuro.medical-blocks.ch/public_access/databases/ieeg/swec_ieeg.</p></br><a href="http://arxiv.org/pdf/2506.21146v1" target="_blank"><h2>Linearity-based neural network compression</h2></a><strong><u>Authors:</u></strong>  Silas Dobler, Florian Lemmerich</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In neural network compression, most current methods reduce unnecessary
+parameters by measuring importance and redundancy. To augment already highly
+optimized existing solutions, we propose linearity-based compression as a novel
+way to reduce weights in a neural network. It is based on the intuition that
+with ReLU-like activation functions, neurons that are almost always activated
+behave linearly, allowing for merging of subsequent layers. We introduce the
+theory underlying this compression and evaluate our approach experimentally.
+Our novel method achieves a lossless compression down to 1/4 of the original
+model size in over the majority of tested models. Applying our method on
+already importance-based pruned models shows very little interference between
+different types of compression, demonstrating the option of successful
+combination of techniques. Overall, our work lays the foundation for a new type
+of compression method that enables smaller and ultimately more efficient neural
+network models.</p></br><a href="http://arxiv.org/pdf/2506.20928v1" target="_blank"><h2>Active Learning for Manifold Gaussian Process Regression</h2></a><strong><u>Authors:</u></strong>  Yuanxing Cheng, Lulu Kang, Yiwei Wang, Chun Liu</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 62, G.3</br><strong><u>Comments:</u></strong> 13 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract), latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces an active learning framework for manifold Gaussian
+Process (GP) regression, combining manifold learning with strategic data
+selection to improve accuracy in high-dimensional spaces. Our method jointly
+optimizes a neural network for dimensionality reduction and a Gaussian process
+regressor in the latent space, supervised by an active learning criterion that
+minimizes global prediction error. Experiments on synthetic data demonstrate
+superior performance over randomly sequential learning. The framework
+efficiently handles complex, discontinuous functions while preserving
+computational tractability, offering practical value for scientific and
+engineering applications. Future work will focus on scalability and
+uncertainty-aware manifold learning.</p></br><a href="http://arxiv.org/pdf/2506.20685v1" target="_blank"><h2>Progressive Size-Adaptive Federated Learning: A Comprehensive Framework
+  for Heterogeneous Multi-Modal Data Systems</h2></a><strong><u>Authors:</u></strong>  Sajid Hussain, Muhammad Sohail, Nauman Ali Khan, Naima Iltaf, Ihtesham ul Islam</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), multimodal (abstract), multi-modal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Federated Learning (FL) has emerged as a transformative paradigm for
+distributed machine learning while preserving data privacy. However, existing
+approaches predominantly focus on model heterogeneity and aggregation
+techniques, largely overlooking the fundamental impact of dataset size
+characteristics on federated training dynamics. This paper introduces
+Size-Based Adaptive Federated Learning (SAFL), a novel progressive training
+framework that systematically organizes federated learning based on dataset
+size characteristics across heterogeneous multi-modal data. Our comprehensive
+experimental evaluation across 13 diverse datasets spanning 7 modalities
+(vision, text, time series, audio, sensor, medical vision, and multimodal)
+reveals critical insights: 1) an optimal dataset size range of 1000-1500
+samples for federated learning effectiveness; 2) a clear modality performance
+hierarchy with structured data (time series, sensor) significantly
+outperforming unstructured data (text, multimodal); and 3) systematic
+performance degradation for large datasets exceeding 2000 samples. SAFL
+achieves an average accuracy of 87.68% across all datasets, with structured
+data modalities reaching 99%+ accuracy. The framework demonstrates superior
+communication efficiency, reducing total data transfer to 7.38 GB across 558
+communications while maintaining high performance. Our real-time monitoring
+framework provides unprecedented insights into system resource utilization,
+network efficiency, and training dynamics. This work fills critical gaps in
+understanding how data characteristics should drive federated learning
+strategies, providing both theoretical insights and practical guidance for
+real-world FL deployments in neural network and learning systems.</p></br><a href="http://arxiv.org/pdf/2506.21550v1" target="_blank"><h2>mTSBench: Benchmarking Multivariate Time Series Anomaly Detection and
+  Model Selection at Scale</h2></a><strong><u>Authors:</u></strong>  Xiaona Zhou, Constantin Brif, Ismini Lourentzou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multivariate time series anomaly detection (MTS-AD) is critical in domains
+like healthcare, cybersecurity, and industrial monitoring, yet remains
+challenging due to complex inter-variable dependencies, temporal dynamics, and
+sparse anomaly labels. We introduce mTSBench, the largest benchmark to date for
+MTS-AD and unsupervised model selection, spanning 344 labeled time series
+across 19 datasets and 12 diverse application domains. mTSBench evaluates 24
+anomaly detection methods, including large language model (LLM)-based detectors
+for multivariate time series, and systematically benchmarks unsupervised model
+selection techniques under standardized conditions. Consistent with prior
+findings, our results confirm that no single detector excels across datasets,
+underscoring the importance of model selection. However, even state-of-the-art
+selection methods remain far from optimal, revealing critical gaps. mTSBench
+provides a unified evaluation suite to enable rigorous, reproducible
+comparisons and catalyze future advances in adaptive anomaly detection and
+robust model selection.</p></br><a href="http://arxiv.org/pdf/2506.20574v1" target="_blank"><h2>Benchmarking Unsupervised Strategies for Anomaly Detection in
+  Multivariate Time Series</h2></a><strong><u>Authors:</u></strong>  Laura Boggia, Rafael Teixeira de Lima, Bogdan Malaescu</br><strong><u>Categories:</u></strong> cs.LG, stat.ME</br><strong><u>Comments:</u></strong> Submitted to VLDB 2026 conference, currently under review</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in multivariate time series is an important problem across
+various fields such as healthcare, financial services, manufacturing or physics
+detector monitoring. Accurately identifying when unexpected errors or faults
+occur is essential, yet challenging, due to the unknown nature of anomalies and
+the complex interdependencies between time series dimensions. In this paper, we
+investigate transformer-based approaches for time series anomaly detection,
+focusing on the recently proposed iTransformer architecture. Our contributions
+are fourfold: (i) we explore the application of the iTransformer to time series
+anomaly detection, and analyse the influence of key parameters such as window
+size, step size, and model dimensions on performance; (ii) we examine methods
+for extracting anomaly labels from multidimensional anomaly scores and discuss
+appropriate evaluation metrics for such labels; (iii) we study the impact of
+anomalous data present during training and assess the effectiveness of
+alternative loss functions in mitigating their influence; and (iv) we present a
+comprehensive comparison of several transformer-based models across a diverse
+set of datasets for time series anomaly detection.</p></br><a href="http://arxiv.org/pdf/2506.19679v1" target="_blank"><h2>Extreme Learning Machines for Exoplanet Simulations: A Faster,
+  Lightweight Alternative to Deep Learning</h2></a><strong><u>Authors:</u></strong>  Tara P. A. Tahseen, Luís F. Simões, Kai Hou Yip, Nikolaos Nikolaou, João M. Mendonça, Ingo P. Waldmann</br><strong><u>Categories:</u></strong> astro-ph.EP, astro-ph.IM, cs.LG, physics.ao-ph</br><strong><u>Comments:</u></strong> 20 pages, 16 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Increasing resolution and coverage of astrophysical and climate data
+necessitates increasingly sophisticated models, often pushing the limits of
+computational feasibility. While emulation methods can reduce calculation
+costs, the neural architectures typically used--optimised via gradient
+descent--are themselves computationally expensive to train, particularly in
+terms of data generation requirements. This paper investigates the utility of
+the Extreme Learning Machine (ELM) as a lightweight, non-gradient-based machine
+learning algorithm for accelerating complex physical models.
+  We evaluate ELM surrogate models in two test cases with different data
+structures: (i) sequentially-structured data, and (ii) image-structured data.
+For test case (i), where the number of samples $N$ >> the dimensionality of
+input data $d$, ELMs achieve remarkable efficiency, offering a 100,000$\times$
+faster training time and a 40$\times$ faster prediction speed compared to a
+Bi-Directional Recurrent Neural Network (BIRNN), whilst improving upon BIRNN
+test performance. For test case (ii), characterised by $d >> N$ and image-based
+inputs, a single ELM was insufficient, but an ensemble of 50 individual ELM
+predictors achieves comparable accuracy to a benchmark Convolutional Neural
+Network (CNN), with a 16.4$\times$ reduction in training time, though costing a
+6.9$\times$ increase in prediction time. We find different sample efficiency
+characteristics between the test cases: in test case (i) individual ELMs
+demonstrate superior sample efficiency, requiring only 0.28% of the training
+dataset compared to the benchmark BIRNN, while in test case (ii) the ensemble
+approach requires 78% of the data used by the CNN to achieve comparable
+results--representing a trade-off between sample efficiency and model
+complexity.</p></br><a href="http://arxiv.org/pdf/2506.20204v1" target="_blank"><h2>Affective Priming Score: A Data-Driven Method to Detect Priming in
+  Sequential Datasets</h2></a><strong><u>Authors:</u></strong>  Eduardo Gutierrez Maestro, Hadi Banaee, Amy Loutfi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (title, abstract), sequential data (title)</br><p><strong><u>Abstract:</u></strong> Affective priming exemplifies the challenge of ambiguity in affective
+computing. While the community has largely addressed this issue from a
+label-based perspective, identifying data points in the sequence affected by
+the priming effect, the impact of priming on data itself, particularly in
+physiological signals, remains underexplored. Data affected by priming can lead
+to misclassifications when used in learning models. This study proposes the
+Affective Priming Score (APS), a data-driven method to detect data points
+influenced by the priming effect. The APS assigns a score to each data point,
+quantifying the extent to which it is affected by priming. To validate this
+method, we apply it to the SEED and SEED-VII datasets, which contain sufficient
+transitions between emotional events to exhibit priming effects. We train
+models with the same configuration using both the original data and
+priming-free sequences. The misclassification rate is significantly reduced
+when using priming-free sequences compared to the original data. This work
+contributes to the broader challenge of ambiguity by identifying and mitigating
+priming effects at the data level, enhancing model robustness, and offering
+valuable insights for the design and collection of affective computing
+datasets.</p></br><a href="http://arxiv.org/pdf/2506.21102v1" target="_blank"><h2>Interpretable Hierarchical Concept Reasoning through Attention-Guided
+  Graph Learning</h2></a><strong><u>Authors:</u></strong>  David Debot, Pietro Barbiero, Gabriele Dominici, Giuseppe Marra</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Concept-Based Models (CBMs) are a class of deep learning models that provide
+interpretability by explaining predictions through high-level concepts. These
+models first predict concepts and then use them to perform a downstream task.
+However, current CBMs offer interpretability only for the final task
+prediction, while the concept predictions themselves are typically made via
+black-box neural networks. To address this limitation, we propose Hierarchical
+Concept Memory Reasoner (H-CMR), a new CBM that provides interpretability for
+both concept and task predictions. H-CMR models relationships between concepts
+using a learned directed acyclic graph, where edges represent logic rules that
+define concepts in terms of other concepts. During inference, H-CMR employs a
+neural attention mechanism to select a subset of these rules, which are then
+applied hierarchically to predict all concepts and the final task. Experimental
+results demonstrate that H-CMR matches state-of-the-art performance while
+enabling strong human interaction through concept and model interventions. The
+former can significantly improve accuracy at inference time, while the latter
+can enhance data efficiency during training when background knowledge is
+available.</p></br><a href="http://arxiv.org/pdf/2506.20779v1" target="_blank"><h2>Stable Minima of ReLU Neural Networks Suffer from the Curse of
+  Dimensionality: The Neural Shattering Phenomenon</h2></a><strong><u>Authors:</u></strong>  Tongtong Liang, Dan Qiao, Yu-Xiang Wang, Rahul Parhi</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Comments Welcome!</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> We study the implicit bias of flatness / low (loss) curvature and its effects
+on generalization in two-layer overparameterized ReLU networks with
+multivariate inputs -- a problem well motivated by the minima stability and
+edge-of-stability phenomena in gradient-descent training. Existing work either
+requires interpolation or focuses only on univariate inputs. This paper
+presents new and somewhat surprising theoretical results for multivariate
+inputs. On two natural settings (1) generalization gap for flat solutions, and
+(2) mean-squared error (MSE) in nonparametric function estimation by stable
+minima, we prove upper and lower bounds, which establish that while flatness
+does imply generalization, the resulting rates of convergence necessarily
+deteriorate exponentially as the input dimension grows. This gives an
+exponential separation between the flat solutions vis-\`a-vis low-norm
+solutions (i.e., weight decay), which knowingly do not suffer from the curse of
+dimensionality. In particular, our minimax lower bound construction, based on a
+novel packing argument with boundary-localized ReLU neurons, reveals how flat
+solutions can exploit a kind of ''neural shattering'' where neurons rarely
+activate, but with high weight magnitudes. This leads to poor performance in
+high dimensions. We corroborate these theoretical findings with extensive
+numerical simulations. To the best of our knowledge, our analysis provides the
+first systematic explanation for why flat minima may fail to generalize in high
+dimensions.</p></br><a href="http://arxiv.org/pdf/2506.21502v1" target="_blank"><h2>Process mining-driven modeling and simulation to enhance fault diagnosis
+  in cyber-physical systems</h2></a><strong><u>Authors:</u></strong>  Francesco Vitale, Nicola Dall'Ora, Sebastiano Gaiardelli, Enrico Fraccaroli, Nicola Mazzocca, Franco Fummi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Fault diagnosis in Cyber-Physical Systems (CPSs) is essential for ensuring
+system dependability and operational efficiency by accurately detecting
+anomalies and identifying their root causes. However, the manual modeling of
+faulty behaviors often demands extensive domain expertise and produces models
+that are complex, error-prone, and difficult to interpret. To address this
+challenge, we present a novel unsupervised fault diagnosis methodology that
+integrates collective anomaly detection in multivariate time series, process
+mining, and stochastic simulation. Initially, collective anomalies are detected
+from low-level sensor data using multivariate time-series analysis. These
+anomalies are then transformed into structured event logs, enabling the
+discovery of interpretable process models through process mining. By
+incorporating timing distributions into the extracted Petri nets, the approach
+supports stochastic simulation of faulty behaviors, thereby enhancing root
+cause analysis and behavioral understanding. The methodology is validated using
+the Robotic Arm Dataset (RoAD), a widely recognized benchmark in smart
+manufacturing. Experimental results demonstrate its effectiveness in modeling,
+simulating, and classifying faulty behaviors in CPSs. This enables the creation
+of comprehensive fault dictionaries that support predictive maintenance and the
+development of digital twins for industrial environments.</p></br><a href="http://arxiv.org/pdf/2506.20342v1" target="_blank"><h2>Feature Hallucination for Self-supervised Action Recognition</h2></a><strong><u>Authors:</u></strong>  Lei Wang, Piotr Koniusz</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted for publication in International Journal of Computer Vision (IJCV)</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding human actions in videos requires more than raw pixel analysis;
+it relies on high-level semantic reasoning and effective integration of
+multimodal features. We propose a deep translational action recognition
+framework that enhances recognition accuracy by jointly predicting action
+concepts and auxiliary features from RGB video frames. At test time,
+hallucination streams infer missing cues, enriching feature representations
+without increasing computational overhead. To focus on action-relevant regions
+beyond raw pixels, we introduce two novel domain-specific descriptors. Object
+Detection Features (ODF) aggregate outputs from multiple object detectors to
+capture contextual cues, while Saliency Detection Features (SDF) highlight
+spatial and intensity patterns crucial for action recognition. Our framework
+seamlessly integrates these descriptors with auxiliary modalities such as
+optical flow, Improved Dense Trajectories, skeleton data, and audio cues. It
+remains compatible with state-of-the-art architectures, including I3D,
+AssembleNet, Video Transformer Network, FASTER, and recent models like VideoMAE
+V2 and InternVideo2. To handle uncertainty in auxiliary features, we
+incorporate aleatoric uncertainty modeling in the hallucination step and
+introduce a robust loss function to mitigate feature noise. Our multimodal
+self-supervised action recognition framework achieves state-of-the-art
+performance on multiple benchmarks, including Kinetics-400, Kinetics-600, and
+Something-Something V2, demonstrating its effectiveness in capturing
+fine-grained action dynamics.</p></br><a href="http://arxiv.org/pdf/2506.19973v1" target="_blank"><h2>Quantum Neural Networks for Propensity Score Estimation and Survival
+  Analysis in Observational Biomedical Studies</h2></a><strong><u>Authors:</u></strong>  Vojtěch Novák, Ivan Zelinka, Lenka Přibylová, Lubomír Martínek</br><strong><u>Categories:</u></strong> quant-ph, cs.AI, stat.ML, 62H30, 62P10, 68T05, 81P68, I.2.6; J.3; I.5.4; F.4.1</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> This study investigates the application of quantum neural networks (QNNs) for
+propensity score estimation to address selection bias in comparing survival
+outcomes between laparoscopic and open surgical techniques in a cohort of 1177
+colorectal carcinoma patients treated at University Hospital Ostrava
+(2001-2009). Using a dataset with 77 variables, including patient demographics
+and tumor characteristics, we developed QNN-based propensity score models
+focusing on four key covariates (Age, Sex, Stage, BMI). The QNN architecture
+employed a linear ZFeatureMap for data encoding, a SummedPaulis operator for
+predictions, and the Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+for robust, gradient-free optimization in noisy quantum environments. Variance
+regularization was integrated to mitigate quantum measurement noise, with
+simulations conducted under exact, sampling (1024 shots), and noisy hardware
+(FakeManhattanV2) conditions. QNNs, particularly with simulated hardware noise,
+outperformed classical logistic regression and gradient boosted machines in
+small samples (AUC up to 0.750 for n=100), with noise modeling enhancing
+predictive stability. Propensity score matching and weighting, optimized via
+genetic matching and matching weights, achieved covariate balance with
+standardized mean differences of 0.0849 and 0.0869, respectively. Survival
+analyses using Kaplan-Meier estimation, Cox proportional hazards, and Aalen
+additive regression revealed no significant survival differences
+post-adjustment (p-values 0.287-0.851), indicating confounding bias in
+unadjusted outcomes. These results highlight QNNs' potential, enhanced by
+CMA-ES and noise-aware strategies, to improve causal inference in biomedical
+research, particularly for small-sample, high-dimensional datasets.</p></br><a href="http://arxiv.org/pdf/2506.20181v1" target="_blank"><h2>Causal Operator Discovery in Partial Differential Equations via
+  Counterfactual Physics-Informed Neural Networks</h2></a><strong><u>Authors:</u></strong>  Ronald Katende</br><strong><u>Categories:</u></strong> cs.LG, cs.NA, math.NA</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We develop a principled framework for discovering causal structure in partial
+differential equations (PDEs) using physics-informed neural networks and
+counterfactual perturbations. Unlike classical residual minimization or sparse
+regression methods, our approach quantifies operator-level necessity through
+functional interventions on the governing dynamics. We introduce causal
+sensitivity indices and structural deviation metrics to assess the influence of
+candidate differential operators within neural surrogates. Theoretically, we
+prove exact recovery of the causal operator support under restricted isometry
+or mutual coherence conditions, with residual bounds guaranteeing
+identifiability. Empirically, we validate the framework on both synthetic and
+real-world datasets across climate dynamics, tumor diffusion, and ocean flows.
+Our method consistently recovers governing operators even under noise,
+redundancy, and data scarcity, outperforming standard PINNs and DeepONets in
+structural fidelity. This work positions causal PDE discovery as a tractable
+and interpretable inference task grounded in structural causal models and
+variational residual analysis.</p></br></body>

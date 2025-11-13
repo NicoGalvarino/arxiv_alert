@@ -1,0 +1,234 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 09 Jul 2025 to 11 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.07373v1" target="_blank"><h2>Atherosclerosis through Hierarchical Explainable Neural Network Analysis</h2></a><strong><u>Authors:</u></strong>  Irsyad Adam, Steven Swee, Erika Yilin, Ethan Ji, William Speier, Dean Wang, Alex Bui, Wei Wang, Karol Watson, Peipei Ping</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In this work, we study the problem pertaining to personalized classification
+of subclinical atherosclerosis by developing a hierarchical graph neural
+network framework to leverage two characteristic modalities of a patient:
+clinical features within the context of the cohort, and molecular data unique
+to individual patients. Current graph-based methods for disease classification
+detect patient-specific molecular fingerprints, but lack consistency and
+comprehension regarding cohort-wide features, which are an essential
+requirement for understanding pathogenic phenotypes across diverse
+atherosclerotic trajectories. Furthermore, understanding patient subtypes often
+considers clinical feature similarity in isolation, without integration of
+shared pathogenic interdependencies among patients. To address these
+challenges, we introduce ATHENA: Atherosclerosis Through Hierarchical
+Explainable Neural Network Analysis, which constructs a novel hierarchical
+network representation through integrated modality learning; subsequently, it
+optimizes learned patient-specific molecular fingerprints that reflect
+individual omics data, enforcing consistency with cohort-wide patterns. With a
+primary clinical dataset of 391 patients, we demonstrate that this
+heterogeneous alignment of clinical features with molecular interaction
+patterns has significantly boosted subclinical atherosclerosis classification
+performance across various baselines by up to 13% in area under the receiver
+operating curve (AUC) and 20% in F1 score. Taken together, ATHENA enables
+mechanistically-informed patient subtype discovery through explainable AI
+(XAI)-driven subnetwork clustering; this novel integration framework
+strengthens personalized intervention strategies, thereby improving the
+prediction of atherosclerotic disease progression and management of their
+clinical actionable outcomes.</p></br><a href="http://arxiv.org/pdf/2507.07359v1" target="_blank"><h2>Goal-Oriented Sequential Bayesian Experimental Design for Causal
+  Learning</h2></a><strong><u>Authors:</u></strong>  Zheyu Zhang, Jiayuan Dong, Jie Liu, Xun Huan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ME, stat.ML</br><strong><u>Comments:</u></strong> 10 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We present GO-CBED, a goal-oriented Bayesian framework for sequential causal
+experimental design. Unlike conventional approaches that select interventions
+aimed at inferring the full causal model, GO-CBED directly maximizes the
+expected information gain (EIG) on user-specified causal quantities of
+interest, enabling more targeted and efficient experimentation. The framework
+is both non-myopic, optimizing over entire intervention sequences, and
+goal-oriented, targeting only model aspects relevant to the causal query. To
+address the intractability of exact EIG computation, we introduce a variational
+lower bound estimator, optimized jointly through a transformer-based policy
+network and normalizing flow-based variational posteriors. The resulting policy
+enables real-time decision-making via an amortized network. We demonstrate that
+GO-CBED consistently outperforms existing baselines across various causal
+reasoning and discovery tasks-including synthetic structural causal models and
+semi-synthetic gene regulatory networks-particularly in settings with limited
+experimental budgets and complex causal mechanisms. Our results highlight the
+benefits of aligning experimental design objectives with specific research
+goals and of forward-looking sequential planning.</p></br><a href="http://arxiv.org/pdf/2507.07804v1" target="_blank"><h2>Deep Survival Analysis in Multimodal Medical Data: A Parametric and
+  Probabilistic Approach with Competing Risks</h2></a><strong><u>Authors:</u></strong>  Alba Garrido, Alejandro Almodóvar, Patricia A. Apellániz, Juan Parras, Santiago Zazo</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 29 pages, 9 Figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), variational autoencoder (abstract), VAE (abstract), dimensionality reduction (abstract), latent space (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate survival prediction is critical in oncology for prognosis and
+treatment planning. Traditional approaches often rely on a single data
+modality, limiting their ability to capture the complexity of tumor biology. To
+address this challenge, we introduce a multimodal deep learning framework for
+survival analysis capable of modeling both single and competing risks
+scenarios, evaluating the impact of integrating multiple medical data sources
+on survival predictions. We propose SAMVAE (Survival Analysis Multimodal
+Variational Autoencoder), a novel deep learning architecture designed for
+survival prediction that integrates six data modalities: clinical variables,
+four molecular profiles, and histopathological images. SAMVAE leverages
+modality specific encoders to project inputs into a shared latent space,
+enabling robust survival prediction while preserving modality specific
+information. Its parametric formulation enables the derivation of clinically
+meaningful statistics from the output distributions, providing patient-specific
+insights through interactive multimedia that contribute to more informed
+clinical decision-making and establish a foundation for interpretable,
+data-driven survival analysis in oncology. We evaluate SAMVAE on two cancer
+cohorts breast cancer and lower grade glioma applying tailored preprocessing,
+dimensionality reduction, and hyperparameter optimization. The results
+demonstrate the successful integration of multimodal data for both standard
+survival analysis and competing risks scenarios across different datasets. Our
+model achieves competitive performance compared to state-of-the-art multimodal
+survival models. Notably, this is the first parametric multimodal deep learning
+architecture to incorporate competing risks while modeling continuous time to a
+specific event, using both tabular and image data.</p></br><a href="http://arxiv.org/pdf/2507.07184v1" target="_blank"><h2>Design and optimization of neural networks for multifidelity
+  cosmological emulation</h2></a><strong><u>Authors:</u></strong>  Yanhui Yang, Simeon Bird, Ming-Feng Ho, Mahdi Qezlou</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 14 pages, 9 figures, 4 tables. Submitted to Physical Review</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate and efficient simulation-based emulators are essential for
+interpreting cosmological survey data down to nonlinear scales. Multifidelity
+emulation techniques reduce simulation costs by combining high- and
+low-fidelity data, but traditional regression methods such as Gaussian
+processes struggle with scalability in sample size and dimensionality. In this
+work, we present T2N-MusE, a neural network framework characterized by (i) a
+novel 2-step multifidelity architecture, (ii) a 2-stage Bayesian hyperparameter
+optimization, (iii) a 2-phase $k$-fold training strategy, and (iv) a per-$z$
+principal component analysis strategy. We apply T2N-MusE to selected data from
+the Goku simulation suite, covering a 10-dimensional cosmological parameter
+space, and build emulators for the matter power spectrum over a range of
+redshifts with different configurations. We find the emulators outperform our
+earlier Gaussian process models significantly and demonstrate that each of
+these techniques is efficient in training neural networks or/and effective in
+improving generalization accuracy. We observe a reduction in validation error
+by more than a factor of five compared to previous work. This framework has
+been used to build the most powerful emulator for the matter power spectrum,
+GokuNEmu, and will also be used to construct emulators for other statistics in
+future.</p></br><a href="http://arxiv.org/pdf/2507.07177v1" target="_blank"><h2>Ten-dimensional neural network emulator for the nonlinear matter power
+  spectrum</h2></a><strong><u>Authors:</u></strong>  Yanhui Yang, Simeon Bird, Ming-Feng Ho, Mahdi Qezlou</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 9 pages, 5 figures, 1 table. Submitted to Physical Review</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We present GokuNEmu, a ten-dimensional neural network emulator for the
+nonlinear matter power spectrum, designed to support next-generation
+cosmological analyses. Built on the Goku $N$-body simulation suite and the
+T2N-MusE emulation framework, GokuNEmu predicts the matter power spectrum with
+$\sim 0.5 \%$ average accuracy for redshifts $0 \leq z \leq 3$ and scales
+$0.006 \leq k/(h\,\mathrm{Mpc}^{-1}) \leq 10$. The emulator models a 10D
+parameter space that extends beyond $\Lambda$CDM to include dynamical dark
+energy (characterized by $w_0$ and $w_a$), massive neutrinos ($\sum m_\nu$),
+the effective number of neutrinos ($N_\text{eff}$), and running of the spectral
+index ($\alpha_\text{s}$). Its broad parameter coverage, particularly for the
+extensions, makes it the only matter power spectrum emulator capable of testing
+recent dynamical dark energy constraints from DESI. In addition, it requires
+only $\sim $2 milliseconds to predict a single cosmology on a laptop, orders of
+magnitude faster than existing emulators. These features make GokuNEmu a
+uniquely powerful tool for interpreting observational data from upcoming
+surveys such as LSST, Euclid, the Roman Space Telescope, and CSST.</p></br><a href="http://arxiv.org/pdf/2507.07261v1" target="_blank"><h2>Robust Multimodal Learning Framework For Intake Gesture Detection Using
+  Contactless Radar and Wearable IMU Sensors</h2></a><strong><u>Authors:</u></strong>  Chunzhuo Wang, Hans Hallez, Bart Vanrumste</br><strong><u>Categories:</u></strong> cs.LG, eess.SP</br><strong><u>Comments:</u></strong> This manuscript has been submitted to a peer-reviewed journal and is currently under review</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Automated food intake gesture detection plays a vital role in dietary
+monitoring, enabling objective and continuous tracking of eating behaviors to
+support better health outcomes. Wrist-worn inertial measurement units (IMUs)
+have been widely used for this task with promising results. More recently,
+contactless radar sensors have also shown potential. This study explores
+whether combining wearable and contactless sensing modalities through
+multimodal learning can further improve detection performance. We also address
+a major challenge in multimodal learning: reduced robustness when one modality
+is missing. To this end, we propose a robust multimodal temporal convolutional
+network with cross-modal attention (MM-TCN-CMA), designed to integrate IMU and
+radar data, enhance gesture detection, and maintain performance under missing
+modality conditions. A new dataset comprising 52 meal sessions (3,050 eating
+gestures and 797 drinking gestures) from 52 participants is developed and made
+publicly available. Experimental results show that the proposed framework
+improves the segmental F1-score by 4.3% and 5.2% over unimodal Radar and IMU
+models, respectively. Under missing modality scenarios, the framework still
+achieves gains of 1.3% and 2.4% for missing radar and missing IMU inputs. This
+is the first study to demonstrate a robust multimodal learning framework that
+effectively fuses IMU and radar data for food intake gesture detection.</p></br><a href="http://arxiv.org/pdf/2507.07844v1" target="_blank"><h2>Machine Learning Tools for the IceCube-Gen2 Optical Array</h2></a><strong><u>Authors:</u></strong>  Francisco Javier Vara Carbonell, Jonas Selter</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> For IC-Gen2 contributions: "Presented at the 39th International Cosmic Ray Conference (ICRC2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Neural networks (NNs) have a great potential for future neutrino telescopes
+such as IceCube-Gen2, the planned high-energy extension of the IceCube
+observatory. IceCube-Gen2 will feature new optical sensors with multiple
+photomultiplier tubes (PMTs) designed to provide omnidirectional sensitivity.
+Neural networks excel at handling high-dimensional problems and can naturally
+incorporate the increased complexity of these new sensors. Additionally, their
+fast inference time makes them promising candidates for handling the high event
+rates expected from IceCube-Gen2.
+  This contribution presents potential applications of neural networks in the
+IceCube-Gen2 in-ice optical array. First, we introduce a method to simulate the
+IceCube-Gen2 optical modules' photon acceptance using a NN that leverages the
+modules' inherent symmetries. Secondly, we present the status of neutrino
+NN-based reconstruction efforts, including the adaptation of a novel IceCube
+technique that combines normalizing flows with transformer NNs. Finally, we
+describe current progress in noise cleaning applications based on node
+classification with graph neural networks (GNNs), a method that has already
+shown promising results for the forthcoming low-energy extension,
+IceCube-Upgrade.</p></br><a href="http://arxiv.org/pdf/2507.07714v1" target="_blank"><h2>Adaptive Gaussian Mixture Models-based Anomaly Detection for
+  under-constrained Cable-Driven Parallel Robots</h2></a><strong><u>Authors:</u></strong>  Julio Garrido, Javier Vales, Diego Silva-Muñiz, Enrique Riveiro, Pablo López-Matencio, Josué Rivera-Andrade</br><strong><u>Categories:</u></strong> cs.RO, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 14 pages, 8 figures, 1 table, to be submitted to Advanced Intelligent Systems</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title)</br><p><strong><u>Abstract:</u></strong> Cable-Driven Parallel Robots (CDPRs) are increasingly used for load
+manipulation tasks involving predefined toolpaths with intermediate stops. At
+each stop, where the platform maintains a fixed pose and the motors keep the
+cables under tension, the system must evaluate whether it is safe to proceed by
+detecting anomalies that could compromise performance (e.g., wind gusts or
+cable impacts). This paper investigates whether anomalies can be detected using
+only motor torque data, without additional sensors. It introduces an adaptive,
+unsupervised outlier detection algorithm based on Gaussian Mixture Models
+(GMMs) to identify anomalies from torque signals. The method starts with a
+brief calibration period, just a few seconds, during which a GMM is fit on
+known anomaly-free data. Real-time torque measurements are then evaluated using
+Mahalanobis distance from the GMM, with statistically derived thresholds
+triggering anomaly flags. Model parameters are periodically updated using the
+latest segments identified as anomaly-free to adapt to changing conditions.
+Validation includes 14 long-duration test sessions simulating varied wind
+intensities. The proposed method achieves a 100% true positive rate and 95.4%
+average true negative rate, with 1-second detection latency. Comparative
+evaluation against power threshold and non-adaptive GMM methods indicates
+higher robustness to drift and environmental variation.</p></br><a href="http://arxiv.org/pdf/2507.07833v1" target="_blank"><h2>Fisher Score Matching for Simulation-Based Forecasting and Inference</h2></a><strong><u>Authors:</u></strong>  Ce Sui, Shivam Pandey, Benjamin D. Wandelt</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> Accepted to the 2025 Workshop on Machine Learning for Astrophysics. Code available at:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a method for estimating the Fisher score--the gradient of the
+log-likelihood with respect to model parameters--using score matching. By
+introducing a latent parameter model, we show that the Fisher score can be
+learned by training a neural network to predict latent scores via a mean
+squared error loss. We validate our approach on a toy linear Gaussian model and
+a cosmological example using a differentiable simulator. In both cases, the
+learned scores closely match ground truth for plausible data-parameter pairs.
+This method extends the ability to perform Fisher forecasts, and gradient-based
+Bayesian inference to simulation models, even when they are not differentiable;
+it therefore has broad potential for advancing cosmological analyses.</p></br><a href="http://arxiv.org/pdf/2507.07219v1" target="_blank"><h2>Machine learning driven reconstruction of cosmic-ray air showers for
+  next generation radio arrays</h2></a><strong><u>Authors:</u></strong>  Paras Koundal</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> Presented at the 39th International Cosmic Ray Conference (ICRC2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Surface radio antenna-based measurements of cosmic-ray air showers present
+significant computational challenges in accurately reconstructing physics
+observables, in particular, the depth of shower maximum, X$_{max}$.
+State-of-the-art template fitting methods rely on extensive simulation
+libraries, limiting scalability. This work introduces a technique utilizing
+graph neural networks to reconstruct key air-shower parameters, in particular,
+direction and shower-core, energy, and X$_{max}$. For training and testing of
+the networks, we use a CoREAS simulation library made for a future enhancement
+of IceCube's surface array with radio antennas. The neural networks provide a
+scalable framework for large-scale data analysis for next-generation
+astroparticle observatories, such as IceCube-Gen2.</p></br><a href="http://arxiv.org/pdf/2507.07453v1" target="_blank"><h2>Bluish Veil Detection and Lesion Classification using Custom Deep
+  Learnable Layers with Explainable Artificial Intelligence (XAI)</h2></a><strong><u>Authors:</u></strong>  M. A. Rasel, Sameem Abdul Kareem, Zhenli Kwan, Shin Shen Yong, Unaizah Obaidellah</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Accepted version. Published in Computers in Biology and Medicine, 14 June 2024. DOI:https://doi.org/10.1016/j.compbiomed.2024.108758</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainable (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Melanoma, one of the deadliest types of skin cancer, accounts for thousands
+of fatalities globally. The bluish, blue-whitish, or blue-white veil (BWV) is a
+critical feature for diagnosing melanoma, yet research into detecting BWV in
+dermatological images is limited. This study utilizes a non-annotated skin
+lesion dataset, which is converted into an annotated dataset using a proposed
+imaging algorithm based on color threshold techniques on lesion patches and
+color palettes. A Deep Convolutional Neural Network (DCNN) is designed and
+trained separately on three individual and combined dermoscopic datasets, using
+custom layers instead of standard activation function layers. The model is
+developed to categorize skin lesions based on the presence of BWV. The proposed
+DCNN demonstrates superior performance compared to conventional BWV detection
+models across different datasets. The model achieves a testing accuracy of
+85.71% on the augmented PH2 dataset, 95.00% on the augmented ISIC archive
+dataset, 95.05% on the combined augmented (PH2+ISIC archive) dataset, and
+90.00% on the Derm7pt dataset. An explainable artificial intelligence (XAI)
+algorithm is subsequently applied to interpret the DCNN's decision-making
+process regarding BWV detection. The proposed approach, coupled with XAI,
+significantly improves the detection of BWV in skin lesions, outperforming
+existing models and providing a robust tool for early melanoma diagnosis.</p></br><a href="http://arxiv.org/pdf/2507.07885v1" target="_blank"><h2>UnIT: Scalable Unstructured Inference-Time Pruning for MAC-efficient
+  Neural Inference on MCUs</h2></a><strong><u>Authors:</u></strong>  Ashe Neth, Sawinder kaur, Mohammad Nur Hossain Khan, Subrata Biswas, Asif Salekin, Bashima Islam</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Submitted to SenSys 2026 on July 1, 2025</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Existing pruning methods are typically applied during training or compile
+time and often rely on structured sparsity. While compatible with low-power
+microcontrollers (MCUs), structured pruning underutilizes the opportunity for
+fine-grained efficiency on devices without SIMD support or parallel compute. To
+address these limitations, we introduce UnIT (Unstructured Inference-Time
+pruning), a lightweight method that dynamically identifies and skips
+unnecessary multiply-accumulate (MAC) operations during inference, guided by
+input-specific activation patterns. Unlike structured pruning, UnIT embraces
+irregular sparsity and does not require retraining or hardware specialization.
+It transforms pruning decisions into lightweight comparisons, replacing
+multiplications with threshold checks and approximated divisions. UnIT further
+optimizes compute by reusing threshold computations across multiple connections
+and applying layer- and group-specific pruning sensitivity. We present three
+fast, hardware-friendly division approximations tailored to the capabilities of
+common embedded platforms. Demonstrated on the MSP430 microcontroller, UnIT
+achieves 11.02% to 82.03% MAC reduction, 27.30% to 84.19% faster inference, and
+27.33% to 84.38% lower energy consumption compared to training-time pruned
+models, while maintaining accuracy with 0.48-7%. Under domain shift, UnIT
+matches or exceeds the accuracy of retrained models while requiring
+significantly fewer MACs. These results establish unstructured inference-time
+pruning as a viable and practical solution for efficient, retraining-free
+deployment of deep neural networks on MCUs.</p></br></body>

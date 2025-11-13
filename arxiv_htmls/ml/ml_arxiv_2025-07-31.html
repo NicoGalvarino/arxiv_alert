@@ -1,0 +1,221 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 29 Jul 2025 to 31 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.22493v1" target="_blank"><h2>LVM-GP: Uncertainty-Aware PDE Solver via coupling latent variable model
+  and Gaussian process</h2></a><strong><u>Authors:</u></strong>  Xiaodong Feng, Ling Guo, Xiaoliang Wan, Hao Wu, Tao Zhou, Wenwen Zhou</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a novel probabilistic framework, termed LVM-GP, for uncertainty
+quantification in solving forward and inverse partial differential equations
+(PDEs) with noisy data. The core idea is to construct a stochastic mapping from
+the input to a high-dimensional latent representation, enabling
+uncertainty-aware prediction of the solution. Specifically, the architecture
+consists of a confidence-aware encoder and a probabilistic decoder. The encoder
+implements a high-dimensional latent variable model based on a Gaussian process
+(LVM-GP), where the latent representation is constructed by interpolating
+between a learnable deterministic feature and a Gaussian process prior, with
+the interpolation strength adaptively controlled by a confidence function
+learned from data. The decoder defines a conditional Gaussian distribution over
+the solution field, where the mean is predicted by a neural operator applied to
+the latent representation, allowing the model to learn flexible
+function-to-function mapping. Moreover, physical laws are enforced as soft
+constraints in the loss function to ensure consistency with the underlying PDE
+structure. Compared to existing approaches such as Bayesian physics-informed
+neural networks (B-PINNs) and deep ensembles, the proposed framework can
+efficiently capture functional dependencies via merging a latent Gaussian
+process and neural operator, resulting in competitive predictive accuracy and
+robust uncertainty quantification. Numerical experiments demonstrate the
+effectiveness and reliability of the method.</p></br><a href="http://arxiv.org/pdf/2507.22864v1" target="_blank"><h2>Identification and photometric classification of extragalactic
+  transients in the Vera C. Rubin Observatory's Data Preview 1</h2></a><strong><u>Authors:</u></strong>  James Freeburn, Igor Andreoni, Kaylee M. de Soto, Cristina Andrade, Akash Anumarlapudi, Tyler Barna, Jonathan Carney, Sushant Sharma Chaudhary, Michael W. Coughlin, Felipe Fontinele Nunes, Sarah Teague, Mickael Rigault, V. Ashley Villar</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> 10 pages, 2 figures, 5 tables, to be submitted to ApJL</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> The Vera C. Rubin Observatory will soon survey the southern sky, delivering a
+depth and sky coverage that is unprecedented in time domain astronomy. As part
+of commissioning, Data Preview 1 (DP1) has been released. It comprises a ComCam
+observing campaign between November and December 2024 with multi-band imaging
+of seven fields, covering roughly 0.4 square degree each, provides a first
+glimpse into the data products that will become available once the Legacy
+Survey of Space and Time begins. In this work, we search three fields for
+extragalactic transients. We identify six new extragalactic transients, and
+three known ones from a sample of 369,644 difference image analysis objects.
+Photometric classification using \texttt{Superphot+} indicates that this sample
+likely comprises six type Ia, two type II, two type Ibc and one type IIn
+supernovae. Our findings are in slight tension with supernova detection rate
+predictions from the literature of $12\pm3$ SN Ia and $3\pm1$ core-collapse
+supernovae likely due to the lack of suitable templates. Nevertheless, this
+work demonstrates the quality of the data products delivered in DP1 and
+indicates that Rubin Observatory Legacy Survey and Space and Time (LSST) is
+well placed to fulfill its discovery potential in time domain astronomy.</p></br><a href="http://arxiv.org/pdf/2507.22321v1" target="_blank"><h2>Learning from Heterogeneous Structural MRI via Collaborative Domain
+  Adaptation for Late-Life Depression Assessment</h2></a><strong><u>Authors:</u></strong>  Yuzhen Gao, Qianqian Wang, Yongheng Sun, Cui Wang, Yongquan Liang, Mingxia Liu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), domain adaptation (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate identification of late-life depression (LLD) using structural brain
+MRI is essential for monitoring disease progression and facilitating timely
+intervention. However, existing learning-based approaches for LLD detection are
+often constrained by limited sample sizes (e.g., tens), which poses significant
+challenges for reliable model training and generalization. Although
+incorporating auxiliary datasets can expand the training set, substantial
+domain heterogeneity, such as differences in imaging protocols, scanner
+hardware, and population demographics, often undermines cross-domain
+transferability. To address this issue, we propose a Collaborative Domain
+Adaptation (CDA) framework for LLD detection using T1-weighted MRIs. The CDA
+leverages a Vision Transformer (ViT) to capture global anatomical context and a
+Convolutional Neural Network (CNN) to extract local structural features, with
+each branch comprising an encoder and a classifier. The CDA framework consists
+of three stages: (a) supervised training on labeled source data, (b)
+self-supervised target feature adaptation and (c) collaborative training on
+unlabeled target data. We first train ViT and CNN on source data, followed by
+self-supervised target feature adaptation by minimizing the discrepancy between
+classifier outputs from two branches to make the categorical boundary clearer.
+The collaborative training stage employs pseudo-labeled and augmented
+target-domain MRIs, enforcing prediction consistency under strong and weak
+augmentation to enhance domain robustness and generalization. Extensive
+experiments conducted on multi-site T1-weighted MRI data demonstrate that the
+CDA consistently outperforms state-of-the-art unsupervised domain adaptation
+methods.</p></br><a href="http://arxiv.org/pdf/2507.22632v1" target="_blank"><h2>A Unified Analysis of Generalization and Sample Complexity for
+  Semi-Supervised Domain Adaptation</h2></a><strong><u>Authors:</u></strong>  Elif Vural, Huseyin Karaca</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), domain adaptation (title, abstract)</br><p><strong><u>Abstract:</u></strong> Domain adaptation seeks to leverage the abundant label information in a
+source domain to improve classification performance in a target domain with
+limited labels. While the field has seen extensive methodological development,
+its theoretical foundations remain relatively underexplored. Most existing
+theoretical analyses focus on simplified settings where the source and target
+domains share the same input space and relate target-domain performance to
+measures of domain discrepancy. Although insightful, these analyses may not
+fully capture the behavior of modern approaches that align domains into a
+shared space via feature transformations. In this paper, we present a
+comprehensive theoretical study of domain adaptation algorithms based on domain
+alignment. We consider the joint learning of domain-aligning feature
+transformations and a shared classifier in a semi-supervised setting. We first
+derive generalization bounds in a broad setting, in terms of covering numbers
+of the relevant function classes. We then extend our analysis to characterize
+the sample complexity of domain-adaptive neural networks employing maximum mean
+discrepancy (MMD) or adversarial objectives. Our results rely on a rigorous
+analysis of the covering numbers of these architectures. We show that, for both
+MMD-based and adversarial models, the sample complexity admits an upper bound
+that scales quadratically with network depth and width. Furthermore, our
+analysis suggests that in semi-supervised settings, robustness to limited
+labeled target data can be achieved by scaling the target loss proportionally
+to the square root of the number of labeled target samples. Experimental
+evaluation in both shallow and deep settings lends support to our theoretical
+findings.</p></br><a href="http://arxiv.org/pdf/2507.22570v1" target="_blank"><h2>Explaining Deep Network Classification of Matrices: A Case Study on
+  Monotonicity</h2></a><strong><u>Authors:</u></strong>  Leandro Farina, Sergey Korotov</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NA, math.NA, 15B48, 68T07, 15A18, 62G32, I.2.6; I.5.2; G.1.3</br><strong><u>Comments:</u></strong> 22 pages, 11 figures. To be submitted to a journal</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This work demonstrates a methodology for using deep learning to discover
+simple, practical criteria for classifying matrices based on abstract algebraic
+properties. By combining a high-performance neural network with explainable AI
+(XAI) techniques, we can distill a model's learned strategy into
+human-interpretable rules. We apply this approach to the challenging case of
+monotone matrices, defined by the condition that their inverses are entrywise
+nonnegative. Despite their simple definition, an easy characterization in terms
+of the matrix elements or the derived parameters is not known. Here, we
+present, to the best of our knowledge, the first systematic machine-learning
+approach for deriving a practical criterion that distinguishes monotone from
+non-monotone matrices. After establishing a labelled dataset by randomly
+generated monotone and non-monotone matrices uniformly on $(-1,1)$, we employ
+deep neural network algorithms for classifying the matrices as monotone or
+non-monotone, using both their entries and a comprehensive set of matrix
+features. By saliency methods, such as integrated gradients, we identify among
+all features, two matrix parameters which alone provide sufficient information
+for the matrix classification, with $95\%$ accuracy, namely the absolute values
+of the two lowest-order coefficients, $c_0$ and $c_1$ of the matrix's
+characteristic polynomial. A data-driven study of 18,000 random $7\times7$
+matrices shows that the monotone class obeys $\lvert c_{0}/c_{1}\rvert\le0.18$
+with probability $>99.98\%$; because $\lvert c_{0}/c_{1}\rvert =
+1/\mathrm{tr}(A^{-1})$ for monotone $A$, this is equivalent to the simple bound
+$\mathrm{tr}(A^{-1})\ge5.7$.</p></br><a href="http://arxiv.org/pdf/2507.22640v1" target="_blank"><h2>Safe Deployment of Offline Reinforcement Learning via Input Convex
+  Action Correction</h2></a><strong><u>Authors:</u></strong>  Alex Durkin, Jasper Stolte, Matthew Jones, Raghuraman Pitchumani, Bei Li, Christian Michler, Mehmet Mercangöz</br><strong><u>Categories:</u></strong> eess.SY, cs.AI, cs.LG, cs.SY, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Offline reinforcement learning (offline RL) offers a promising framework for
+developing control strategies in chemical process systems using historical
+data, without the risks or costs of online experimentation. This work
+investigates the application of offline RL to the safe and efficient control of
+an exothermic polymerisation continuous stirred-tank reactor. We introduce a
+Gymnasium-compatible simulation environment that captures the reactor's
+nonlinear dynamics, including reaction kinetics, energy balances, and
+operational constraints. The environment supports three industrially relevant
+scenarios: startup, grade change down, and grade change up. It also includes
+reproducible offline datasets generated from proportional-integral controllers
+with randomised tunings, providing a benchmark for evaluating offline RL
+algorithms in realistic process control tasks.
+  We assess behaviour cloning and implicit Q-learning as baseline algorithms,
+highlighting the challenges offline agents face, including steady-state offsets
+and degraded performance near setpoints. To address these issues, we propose a
+novel deployment-time safety layer that performs gradient-based action
+correction using input convex neural networks (PICNNs) as learned cost models.
+The PICNN enables real-time, differentiable correction of policy actions by
+descending a convex, state-conditioned cost surface, without requiring
+retraining or environment interaction.
+  Experimental results show that offline RL, particularly when combined with
+convex action correction, can outperform traditional control approaches and
+maintain stability across all scenarios. These findings demonstrate the
+feasibility of integrating offline RL with interpretable and safety-aware
+corrections for high-stakes chemical process control, and lay the groundwork
+for more reliable data-driven automation in industrial systems.</p></br><a href="http://arxiv.org/pdf/2507.22842v1" target="_blank"><h2>Subgrid BoostCNN: Efficient Boosting of Convolutional Networks via
+  Gradient-Guided Feature Selection</h2></a><strong><u>Authors:</u></strong>  Biyi Fang, Jean Utke, Truong Vo, Diego Klabjan</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 68T05, 68T45, I.2.6; I.5.1; I.2.10</br><strong><u>Comments:</u></strong> 10 pages, 5 figures. Experimental results reported on CIFAR-10, SVHN, and ImageNetSub datasets. arXiv admin note: substantial text overlap witharXiv:2203.00761</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Convolutional Neural Networks (CNNs) have achieved remarkable success across
+a wide range of machine learning tasks by leveraging hierarchical feature
+learning through deep architectures. However, the large number of layers and
+millions of parameters often make CNNs computationally expensive to train,
+requiring extensive time and manual tuning to discover optimal architectures.
+In this paper, we introduce a novel framework for boosting CNN performance that
+integrates dynamic feature selection with the principles of BoostCNN. Our
+approach incorporates two key strategies: subgrid selection and importance
+sampling, to guide training toward informative regions of the feature space. We
+further develop a family of algorithms that embed boosting weights directly
+into the network training process using a least squares loss formulation. This
+integration not only alleviates the burden of manual architecture design but
+also enhances accuracy and efficiency. Experimental results across several
+fine-grained classification benchmarks demonstrate that our boosted CNN
+variants consistently outperform conventional CNNs in both predictive
+performance and training speed.</p></br><a href="http://arxiv.org/pdf/2507.22610v1" target="_blank"><h2>Metamorphic Testing of Deep Code Models: A Systematic Literature Review</h2></a><strong><u>Authors:</u></strong>  Ali Asgari, Milan de Koning, Pouria Derakhshanfar, Annibale Panichella</br><strong><u>Categories:</u></strong> cs.SE, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> literature review (title, abstract)</br><p><strong><u>Abstract:</u></strong> Large language models and deep learning models designed for code intelligence
+have revolutionized the software engineering field due to their ability to
+perform various code-related tasks. These models can process source code and
+software artifacts with high accuracy in tasks such as code completion, defect
+detection, and code summarization; therefore, they can potentially become an
+integral part of modern software engineering practices. Despite these
+capabilities, robustness remains a critical quality attribute for deep-code
+models as they may produce different results under varied and adversarial
+conditions (e.g., variable renaming). Metamorphic testing has become a widely
+used approach to evaluate models' robustness by applying semantic-preserving
+transformations to input programs and analyzing the stability of model outputs.
+While prior research has explored testing deep learning models, this systematic
+literature review focuses specifically on metamorphic testing for deep code
+models. By studying 45 primary papers, we analyze the transformations,
+techniques, and evaluation methods used to assess robustness. Our review
+summarizes the current landscape, identifying frequently evaluated models,
+programming tasks, datasets, target languages, and evaluation metrics, and
+highlights key challenges and future directions for advancing the field.</p></br><a href="http://arxiv.org/pdf/2507.22529v1" target="_blank"><h2>Accident-Driven Congestion Prediction and Simulation: An Explainable
+  Framework Using Advanced Clustering and Bayesian Networks</h2></a><strong><u>Authors:</u></strong>  Kranthi Kumar Talluri, Galia Weidl, Vaishnavi Kasuluru</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title)</br><p><strong><u>Abstract:</u></strong> Traffic congestion due to uncertainties, such as accidents, is a significant
+issue in urban areas, as the ripple effect of accidents causes longer delays,
+increased emissions, and safety concerns. To address this issue, we propose a
+robust framework for predicting the impact of accidents on congestion. We
+implement Automated Machine Learning (AutoML)-enhanced Deep Embedding
+Clustering (DEC) to assign congestion labels to accident data and predict
+congestion probability using a Bayesian Network (BN). The Simulation of Urban
+Mobility (SUMO) simulation is utilized to evaluate the correctness of BN
+predictions using evidence-based scenarios. Results demonstrate that the
+AutoML-enhanced DEC has outperformed traditional clustering approaches. The
+performance of the proposed BN model achieved an overall accuracy of 95.6%,
+indicating its ability to understand the complex relationship of accidents
+causing congestion. Validation in SUMO with evidence-based scenarios
+demonstrated that the BN model's prediction of congestion states closely
+matches those of SUMO, indicating the high reliability of the proposed BN model
+in ensuring smooth urban mobility.</p></br><a href="http://arxiv.org/pdf/2507.22477v1" target="_blank"><h2>LIDAR: Lightweight Adaptive Cue-Aware Fusion Vision Mamba for Multimodal
+  Segmentation of Structural Cracks</h2></a><strong><u>Authors:</u></strong>  Hui Liu, Chen Jia, Fan Shi, Xu Cheng, Mengfei Shi, Xia Xie, Shengyong Chen</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Achieving pixel-level segmentation with low computational cost using
+multimodal data remains a key challenge in crack segmentation tasks. Existing
+methods lack the capability for adaptive perception and efficient interactive
+fusion of cross-modal features. To address these challenges, we propose a
+Lightweight Adaptive Cue-Aware Vision Mamba network (LIDAR), which efficiently
+perceives and integrates morphological and textural cues from different
+modalities under multimodal crack scenarios, generating clear pixel-level crack
+segmentation maps. Specifically, LIDAR is composed of a Lightweight Adaptive
+Cue-Aware Visual State Space module (LacaVSS) and a Lightweight Dual Domain
+Dynamic Collaborative Fusion module (LD3CF). LacaVSS adaptively models crack
+cues through the proposed mask-guided Efficient Dynamic Guided Scanning
+Strategy (EDG-SS), while LD3CF leverages an Adaptive Frequency Domain
+Perceptron (AFDP) and a dual-pooling fusion strategy to effectively capture
+spatial and frequency-domain cues across modalities. Moreover, we design a
+Lightweight Dynamically Modulated Multi-Kernel convolution (LDMK) to perceive
+complex morphological structures with minimal computational overhead, replacing
+most convolutional operations in LIDAR. Experiments on three datasets
+demonstrate that our method outperforms other state-of-the-art (SOTA) methods.
+On the light-field depth dataset, our method achieves 0.8204 in F1 and 0.8465
+in mIoU with only 5.35M parameters. Code and datasets are available at
+https://github.com/Karl1109/LIDAR-Mamba.</p></br></body>

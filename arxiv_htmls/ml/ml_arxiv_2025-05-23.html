@@ -1,0 +1,325 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 21 May 2025 to 23 May 2025</em></font><a href="http://arxiv.org/pdf/2505.16074v1" target="_blank"><h2>Bidirectional Variational Autoencoders</h2></a><strong><u>Authors:</u></strong>  Bart Kosko, Olaoluwa Adigun</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 10 pages, 6 figures</br><p><strong><u>Abstract:</u></strong> We present the new bidirectional variational autoencoder (BVAE) network
+architecture. The BVAE uses a single neural network both to encode and decode
+instead of an encoder-decoder network pair. The network encodes in the forward
+direction and decodes in the backward direction through the same synaptic web.
+Simulations compared BVAEs and ordinary VAEs on the four image tasks of image
+reconstruction, classification, interpolation, and generation. The image
+datasets included MNIST handwritten digits, Fashion-MNIST, CIFAR-10, and
+CelebA-64 face images. The bidirectional structure of BVAEs cut the parameter
+count by almost 50% and still slightly outperformed the unidirectional VAEs.</p></br><a href="http://arxiv.org/pdf/2505.17010v1" target="_blank"><h2>Understanding Prompt Tuning and In-Context Learning via Meta-Learning</h2></a><strong><u>Authors:</u></strong>  Tim Genewein, Kevin Wenliang Li, Jordi Grau-Moya, Anian Ruoss, Laurent Orseau, Marcus Hutter</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Prompting is one of the main ways to adapt a pretrained model to target
+tasks. Besides manually constructing prompts, many prompt optimization methods
+have been proposed in the literature. Method development is mainly empirically
+driven, with less emphasis on a conceptual understanding of prompting. In this
+paper we discuss how optimal prompting can be understood through a Bayesian
+view, which also implies some fundamental limitations of prompting that can
+only be overcome by tuning weights. The paper explains in detail how
+meta-trained neural networks behave as Bayesian predictors over the pretraining
+distribution, whose hallmark feature is rapid in-context adaptation. Optimal
+prompting can be studied formally as conditioning these Bayesian predictors,
+yielding criteria for target tasks where optimal prompting is and is not
+possible. We support the theory with educational experiments on LSTMs and
+Transformers, where we compare different versions of prefix-tuning and
+different weight-tuning methods. We also confirm that soft prefixes, which are
+sequences of real-valued vectors outside the token alphabet, can lead to very
+effective prompts for trained and even untrained networks by manipulating
+activations in ways that are not achievable by hard tokens. This adds an
+important mechanistic aspect beyond the conceptual Bayesian theory.</p></br><a href="http://arxiv.org/pdf/2505.16223v1" target="_blank"><h2>MADCluster: Model-agnostic Anomaly Detection with Self-supervised
+  Clustering Network</h2></a><strong><u>Authors:</u></strong>  Sangyong Lee, Subo Hwang, Dohoon Kim</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 24 pages, 9 figures</br><p><strong><u>Abstract:</u></strong> In this paper, we propose MADCluster, a novel model-agnostic anomaly
+detection framework utilizing self-supervised clustering. MADCluster is
+applicable to various deep learning architectures and addresses the
+'hypersphere collapse' problem inherent in existing deep learning-based anomaly
+detection methods. The core idea is to cluster normal pattern data into a
+'single cluster' while simultaneously learning the cluster center and mapping
+data close to this center. Also, to improve expressiveness and enable effective
+single clustering, we propose a new 'One-directed Adaptive loss'. The
+optimization of this loss is mathematically proven. MADCluster consists of
+three main components: Base Embedder capturing high-dimensional temporal
+dynamics, Cluster Distance Mapping, and Sequence-wise Clustering for continuous
+center updates. Its model-agnostic characteristics are achieved by applying
+various architectures to the Base Embedder. Experiments on four time series
+benchmark datasets demonstrate that applying MADCluster improves the overall
+performance of comparative models. In conclusion, the compatibility of
+MADCluster shows potential for enhancing model performance across various
+architectures.</p></br><a href="http://arxiv.org/pdf/2505.16481v1" target="_blank"><h2>Neighbour-Driven Gaussian Process Variational Autoencoders for Scalable
+  Structured Latent Modelling</h2></a><strong><u>Authors:</u></strong>  Xinxing Shi, Xiaoyu Jiang, Mauricio A. Álvarez</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Gaussian Process (GP) Variational Autoencoders (VAEs) extend standard VAEs by
+replacing the fully factorised Gaussian prior with a GP prior, thereby
+capturing richer correlations among latent variables. However, performing exact
+GP inference in large-scale GPVAEs is computationally prohibitive, often
+forcing existing approaches to rely on restrictive kernel assumptions or large
+sets of inducing points. In this work, we propose a neighbour-driven
+approximation strategy that exploits local adjacencies in the latent space to
+achieve scalable GPVAE inference. By confining computations to the nearest
+neighbours of each data point, our method preserves essential latent
+dependencies, allowing more flexible kernel choices and mitigating the need for
+numerous inducing points. Through extensive experiments on tasks including
+representation learning, data imputation, and conditional generation, we
+demonstrate that our approach outperforms other GPVAE variants in both
+predictive performance and computational efficiency.</p></br><a href="http://arxiv.org/pdf/2505.16037v1" target="_blank"><h2>Causal LLM Routing: End-to-End Regret Minimization from Observational
+  Data</h2></a><strong><u>Authors:</u></strong>  Asterios Tsiourvas, Wei Sun, Georgia Perakis</br><strong><u>Categories:</u></strong> cs.AI, cs.CL, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> LLM routing aims to select the most appropriate model for each query,
+balancing competing performance metrics such as accuracy and cost across a pool
+of language models. Prior approaches typically adopt a decoupled strategy,
+where the metrics are first predicted and the model is then selected based on
+these estimates. This setup is prone to compounding errors and often relies on
+full-feedback data, where each query is evaluated by all candidate models,
+which is costly to obtain and maintain in practice. In contrast, we learn from
+observational data, which records only the outcome of the model actually
+deployed. We propose a causal end-to-end framework that learns routing policies
+by minimizing decision-making regret from observational data. To enable
+efficient optimization, we introduce two theoretically grounded surrogate
+objectives: a classification-based upper bound, and a softmax-weighted regret
+approximation shown to recover the optimal policy at convergence. We further
+extend our framework to handle heterogeneous cost preferences via an
+interval-conditioned architecture. Experiments on public benchmarks show that
+our method outperforms existing baselines, achieving state-of-the-art
+performance across different embedding models.</p></br><a href="http://arxiv.org/pdf/2505.16732v1" target="_blank"><h2>Sequential Monte Carlo for Policy Optimization in Continuous POMDPs</h2></a><strong><u>Authors:</u></strong>  Hany Abdulsamad, Sahel Iqbal, Simo Särkkä</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Optimal decision-making under partial observability requires agents to
+balance reducing uncertainty (exploration) against pursuing immediate
+objectives (exploitation). In this paper, we introduce a novel policy
+optimization framework for continuous partially observable Markov decision
+processes (POMDPs) that explicitly addresses this challenge. Our method casts
+policy learning as probabilistic inference in a non-Markovian Feynman--Kac
+model that inherently captures the value of information gathering by
+anticipating future observations, without requiring extrinsic exploration
+bonuses or handcrafted heuristics. To optimize policies under this model, we
+develop a nested sequential Monte Carlo~(SMC) algorithm that efficiently
+estimates a history-dependent policy gradient under samples from the optimal
+trajectory distribution induced by the POMDP. We demonstrate the effectiveness
+of our algorithm across standard continuous POMDP benchmarks, where existing
+methods struggle to act under uncertainty.</p></br><a href="http://arxiv.org/pdf/2505.16320v1" target="_blank"><h2>Learning novel representations of variable sources from multi-modal
+  $\textit{Gaia}$ data via autoencoders</h2></a><strong><u>Authors:</u></strong>  P. Huijse, J. De Ridder, L. Eyer, L. Rimoldini, B. Holl, N. Chornay, J. Roquette, K. Nienartowicz, G. Jevardat de Fombelle, D. J. Fritzewski, A. Kemp, V. Vanlaer, M. Vanrespaille, H. Wang, M. I. Carnerero, C. M. Raiteri, G. Marton, M. Madarász, G. Clementini, P. Gavras, C. Aerts</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> Manuscript resubmitted to Astronomy & Astrophysics after positive referee report, 20 pages, 20 figures, 2 tables</br><p><strong><u>Abstract:</u></strong> Gaia Data Release 3 (DR3) published for the first time epoch photometry,
+BP/RP (XP) low-resolution mean spectra, and supervised classification results
+for millions of variable sources. This extensive dataset offers a unique
+opportunity to study their variability by combining multiple Gaia data
+products. In preparation for DR4, we propose and evaluate a machine learning
+methodology capable of ingesting multiple Gaia data products to achieve an
+unsupervised classification of stellar and quasar variability. A dataset of 4
+million Gaia DR3 sources is used to train three variational autoencoders (VAE),
+which are artificial neural networks (ANNs) designed for data compression and
+generation. One VAE is trained on Gaia XP low-resolution spectra, another on a
+novel approach based on the distribution of magnitude differences in the Gaia G
+band, and the third on folded Gaia G band light curves. Each Gaia source is
+compressed into 15 numbers, representing the coordinates in a 15-dimensional
+latent space generated by combining the outputs of these three models. The
+learned latent representation produced by the ANN effectively distinguishes
+between the main variability classes present in Gaia DR3, as demonstrated
+through both supervised and unsupervised classification analysis of the latent
+space. The results highlight a strong synergy between light curves and
+low-resolution spectral data, emphasising the benefits of combining the
+different Gaia data products. A two-dimensional projection of the latent
+variables reveals numerous overdensities, most of which strongly correlate with
+astrophysical properties, showing the potential of this latent space for
+astrophysical discovery. We show that the properties of our novel latent
+representation make it highly valuable for variability analysis tasks,
+including classification, clustering and outlier detection.</p></br><a href="http://arxiv.org/pdf/2505.16872v1" target="_blank"><h2>A Multi-Step Comparative Framework for Anomaly Detection in IoT Data
+  Streams</h2></a><strong><u>Authors:</u></strong>  Mohammed Al-Qudah, Fadi AlMahamid</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The rapid expansion of Internet of Things (IoT) devices has introduced
+critical security challenges, underscoring the need for accurate anomaly
+detection. Although numerous studies have proposed machine learning (ML)
+methods for this purpose, limited research systematically examines how
+different preprocessing steps--normalization, transformation, and feature
+selection--interact with distinct model architectures. To address this gap,
+this paper presents a multi-step evaluation framework assessing the combined
+impact of preprocessing choices on three ML algorithms: RNN-LSTM, autoencoder
+neural networks (ANN), and Gradient Boosting (GBoosting). Experiments on the
+IoTID20 dataset shows that GBoosting consistently delivers superior accuracy
+across preprocessing configurations, while RNN-LSTM shows notable gains with
+z-score normalization and autoencoders excel in recall, making them well-suited
+for unsupervised scenarios. By offering a structured analysis of preprocessing
+decisions and their interplay with various ML techniques, the proposed
+framework provides actionable guidance to enhance anomaly detection performance
+in IoT environments.</p></br><a href="http://arxiv.org/pdf/2505.16363v1" target="_blank"><h2>AdamS: Momentum Itself Can Be A Normalizer for LLM Pretraining and
+  Post-training</h2></a><strong><u>Authors:</u></strong>  Huishuai Zhang, Bohan Wang, Luoxin Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We introduce AdamS, a simple yet effective alternative to Adam for large
+language model (LLM) pretraining and post-training. By leveraging a novel
+denominator, i.e., the root of weighted sum of squares of the momentum and the
+current gradient, AdamS eliminates the need for second-moment estimates. Hence,
+AdamS is efficient, matching the memory and compute footprint of SGD with
+momentum while delivering superior optimization performance. Moreover, AdamS is
+easy to adopt: it can directly inherit hyperparameters of AdamW, and is
+entirely model-agnostic, integrating seamlessly into existing pipelines without
+modifications to optimizer APIs or architectures. The motivation behind AdamS
+stems from the observed $(L_0, L_1)$ smoothness properties in transformer
+objectives, where local smoothness is governed by gradient magnitudes that can
+be further approximated by momentum magnitudes. We establish rigorous
+theoretical convergence guarantees and provide practical guidelines for
+hyperparameter selection. Empirically, AdamS demonstrates strong performance in
+various tasks, including pre-training runs on GPT-2 and Llama2 (up to 13B
+parameters) and reinforcement learning in post-training regimes. With its
+efficiency, simplicity, and theoretical grounding, AdamS stands as a compelling
+alternative to existing optimizers.</p></br><a href="http://arxiv.org/pdf/2505.16103v1" target="_blank"><h2>Towards Trustworthy Keylogger detection: A Comprehensive Analysis of
+  Ensemble Techniques and Feature Selections through Explainable AI</h2></a><strong><u>Authors:</u></strong>  Monirul Islam Mahmud</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Keylogger detection involves monitoring for unusual system behaviors such as
+delays between typing and character display, analyzing network traffic patterns
+for data exfiltration. In this study, we provide a comprehensive analysis for
+keylogger detection with traditional machine learning models - SVC, Random
+Forest, Decision Tree, XGBoost, AdaBoost, Logistic Regression and Naive Bayes
+and advanced ensemble methods including Stacking, Blending and Voting.
+Moreover, feature selection approaches such as Information gain, Lasso L1 and
+Fisher Score are thoroughly assessed to improve predictive performance and
+lower computational complexity. The Keylogger Detection dataset from publicly
+available Kaggle website is used in this project. In addition to accuracy-based
+classification, this study implements the approach for model interpretation
+using Explainable AI (XAI) techniques namely SHAP (Global) and LIME (Local) to
+deliver finer explanations for how much each feature contributes in assisting
+or hindering the detection process. To evaluate the models result, we have used
+AUC score, sensitivity, Specificity, Accuracy and F1 score. The best
+performance was achieved by AdaBoost with 99.76% accuracy, F1 score of 0.99,
+100% precision, 98.6% recall, 1.0 specificity and 0.99 of AUC that is
+near-perfect classification with Fisher Score.</p></br><a href="http://arxiv.org/pdf/2505.17004v1" target="_blank"><h2>Guided Diffusion Sampling on Function Spaces with Applications to PDEs</h2></a><strong><u>Authors:</u></strong>  Jiachen Yao, Abbas Mammadov, Julius Berner, Gavin Kerrigan, Jong Chul Ye, Kamyar Azizzadenesheli, Anima Anandkumar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NA, math.NA, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We propose a general framework for conditional sampling in PDE-based inverse
+problems, targeting the recovery of whole solutions from extremely sparse or
+noisy measurements. This is accomplished by a function-space diffusion model
+and plug-and-play guidance for conditioning. Our method first trains an
+unconditional discretization-agnostic denoising model using neural operator
+architectures. At inference, we refine the samples to satisfy sparse
+observation data via a gradient-based guidance mechanism. Through rigorous
+mathematical analysis, we extend Tweedie's formula to infinite-dimensional
+Hilbert spaces, providing the theoretical foundation for our posterior sampling
+approach. Our method (FunDPS) accurately captures posterior distributions in
+function spaces under minimal supervision and severe data scarcity. Across five
+PDE tasks with only 3% observation, our method achieves an average 32% accuracy
+improvement over state-of-the-art fixed-resolution diffusion baselines while
+reducing sampling steps by 4x. Furthermore, multi-resolution fine-tuning
+ensures strong cross-resolution generalizability. To the best of our knowledge,
+this is the first diffusion-based framework to operate independently of
+discretization, offering a practical and flexible solution for forward and
+inverse problems in the context of PDEs. Code is available at
+https://github.com/neuraloperator/FunDPS</p></br><a href="http://arxiv.org/pdf/2505.16035v1" target="_blank"><h2>Equivariant Eikonal Neural Networks: Grid-Free, Scalable Travel-Time
+  Prediction on Homogeneous Spaces</h2></a><strong><u>Authors:</u></strong>  Alejandro García-Castellanos, David R. Wessels, Nicky J. van den Berg, Remco Duits, Daniël M. Pelt, Erik J. Bekkers</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We introduce Equivariant Neural Eikonal Solvers, a novel framework that
+integrates Equivariant Neural Fields (ENFs) with Neural Eikonal Solvers. Our
+approach employs a single neural field where a unified shared backbone is
+conditioned on signal-specific latent variables - represented as point clouds
+in a Lie group - to model diverse Eikonal solutions. The ENF integration
+ensures equivariant mapping from these latent representations to the solution
+field, delivering three key benefits: enhanced representation efficiency
+through weight-sharing, robust geometric grounding, and solution steerability.
+This steerability allows transformations applied to the latent point cloud to
+induce predictable, geometrically meaningful modifications in the resulting
+Eikonal solution. By coupling these steerable representations with
+Physics-Informed Neural Networks (PINNs), our framework accurately models
+Eikonal travel-time solutions while generalizing to arbitrary Riemannian
+manifolds with regular group actions. This includes homogeneous spaces such as
+Euclidean, position-orientation, spherical, and hyperbolic manifolds. We
+validate our approach through applications in seismic travel-time modeling of
+2D and 3D benchmark datasets. Experimental results demonstrate superior
+performance, scalability, adaptability, and user controllability compared to
+existing Neural Operator-based Eikonal solver methods.</p></br><a href="http://arxiv.org/pdf/2505.16953v1" target="_blank"><h2>ICYM2I: The illusion of multimodal informativeness under missingness</h2></a><strong><u>Authors:</u></strong>  Young Sang Choi, Vincent Jeanselme, Pierre Elias, Shalmali Joshi</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Multimodal learning is of continued interest in artificial intelligence-based
+applications, motivated by the potential information gain from combining
+different types of data. However, modalities collected and curated during
+development may differ from the modalities available at deployment due to
+multiple factors including cost, hardware failure, or -- as we argue in this
+work -- the perceived informativeness of a given modality. Na{\"i}ve estimation
+of the information gain associated with including an additional modality
+without accounting for missingness may result in improper estimates of that
+modality's value in downstream tasks. Our work formalizes the problem of
+missingness in multimodal learning and demonstrates the biases resulting from
+ignoring this process. To address this issue, we introduce ICYM2I (In Case You
+Multimodal Missed It), a framework for the evaluation of predictive performance
+and information gain under missingness through inverse probability
+weighting-based correction. We demonstrate the importance of the proposed
+adjustment to estimate information gain under missingness on synthetic,
+semi-synthetic, and real-world medical datasets.</p></br><a href="http://arxiv.org/pdf/2505.16879v1" target="_blank"><h2>How high is `high'? Rethinking the roles of dimensionality in
+  topological data analysis and manifold learning</h2></a><strong><u>Authors:</u></strong>  Hannah Sansford, Nick Whiteley, Patrick Rubin-Delanchy</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We present a generalised Hanson-Wright inequality and use it to establish new
+statistical insights into the geometry of data point-clouds. In the setting of
+a general random function model of data, we clarify the roles played by three
+notions of dimensionality: ambient intrinsic dimension $p_{\mathrm{int}}$,
+which measures total variability across orthogonal feature directions;
+correlation rank, which measures functional complexity across samples; and
+latent intrinsic dimension, which is the dimension of manifold structure hidden
+in data. Our analysis shows that in order for persistence diagrams to reveal
+latent homology and for manifold structure to emerge it is sufficient that
+$p_{\mathrm{int}}\gg \log n$, where $n$ is the sample size. Informed by these
+theoretical perspectives, we revisit the ground-breaking neuroscience discovery
+of toroidal structure in grid-cell activity made by Gardner et al. (Nature,
+2022): our findings reveal, for the first time, evidence that this structure is
+in fact isometric to physical space, meaning that grid cell activity conveys a
+geometrically faithful representation of the real world.</p></br><a href="http://arxiv.org/pdf/2505.16985v1" target="_blank"><h2>Extremely Simple Multimodal Outlier Synthesis for Out-of-Distribution
+  Detection and Segmentation</h2></a><strong><u>Authors:</u></strong>  Moru Liu, Hao Dong, Jessica Kelly, Olga Fink, Mario Trapp</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, cs.RO</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Out-of-distribution (OOD) detection and segmentation are crucial for
+deploying machine learning models in safety-critical applications such as
+autonomous driving and robot-assisted surgery. While prior research has
+primarily focused on unimodal image data, real-world applications are
+inherently multimodal, requiring the integration of multiple modalities for
+improved OOD detection. A key challenge is the lack of supervision signals from
+unknown data, leading to overconfident predictions on OOD samples. To address
+this challenge, we propose Feature Mixing, an extremely simple and fast method
+for multimodal outlier synthesis with theoretical support, which can be further
+optimized to help the model better distinguish between in-distribution (ID) and
+OOD data. Feature Mixing is modality-agnostic and applicable to various
+modality combinations. Additionally, we introduce CARLA-OOD, a novel multimodal
+dataset for OOD segmentation, featuring synthetic OOD objects across diverse
+scenes and weather conditions. Extensive experiments on SemanticKITTI,
+nuScenes, CARLA-OOD datasets, and the MultiOOD benchmark demonstrate that
+Feature Mixing achieves state-of-the-art performance with a $10 \times$ to $370
+\times$ speedup. Our source code and dataset will be available at
+https://github.com/mona4399/FeatureMixing.</p></br><a href="http://arxiv.org/pdf/2505.16227v1" target="_blank"><h2>Explain Less, Understand More: Jargon Detection via Personalized
+  Parameter-Efficient Fine-tuning</h2></a><strong><u>Authors:</u></strong>  Bohao Wu, Qingyun Wang, Yue Guo</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Personalizing jargon detection and explanation is essential for making
+technical documents accessible to readers with diverse disciplinary
+backgrounds. However, tailoring models to individual users typically requires
+substantial annotation efforts and computational resources due to user-specific
+finetuning. To address this, we present a systematic study of personalized
+jargon detection, focusing on methods that are both efficient and scalable for
+real-world deployment. We explore two personalization strategies: (1)
+lightweight fine-tuning using Low-Rank Adaptation (LoRA) on open-source models,
+and (2) personalized prompting, which tailors model behavior at inference time
+without retaining. To reflect realistic constraints, we also investigate hybrid
+approaches that combine limited annotated data with unsupervised user
+background signals. Our personalized LoRA model outperforms GPT-4 by 21.4% in
+F1 score and exceeds the best performing oracle baseline by 8.3%. Remarkably,
+our method achieves comparable performance using only 10% of the annotated
+training data, demonstrating its practicality for resource-constrained
+settings. Our study offers the first work to systematically explore efficient,
+low-resource personalization of jargon detection using open-source language
+models, offering a practical path toward scalable, user-adaptive NLP system.</p></br><a href="http://arxiv.org/pdf/2505.16893v1" target="_blank"><h2>Statistical Test for Saliency Maps of Graph Neural Networks via
+  Selective Inference</h2></a><strong><u>Authors:</u></strong>  Shuichi Nishino, Tomohiro Shiraishi, Teruyuki Katsuoka, Ichiro Takeuchi</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have gained prominence for their ability to
+process graph-structured data across various domains. However, interpreting GNN
+decisions remains a significant challenge, leading to the adoption of saliency
+maps for identifying influential nodes and edges. Despite their utility, the
+reliability of GNN saliency maps has been questioned, particularly in terms of
+their robustness to noise. In this study, we propose a statistical testing
+framework to rigorously evaluate the significance of saliency maps. Our main
+contribution lies in addressing the inflation of the Type I error rate caused
+by double-dipping of data, leveraging the framework of Selective Inference. Our
+method provides statistically valid $p$-values while controlling the Type I
+error rate, ensuring that identified salient subgraphs contain meaningful
+information rather than random artifacts. To demonstrate the effectiveness of
+our method, we conduct experiments on both synthetic and real-world datasets,
+showing its effectiveness in assessing the reliability of GNN interpretations.</p></br><a href="http://arxiv.org/pdf/2505.16741v1" target="_blank"><h2>Meta-reinforcement learning with minimum attention</h2></a><strong><u>Authors:</u></strong>  Pilhwa Lee, Shashank Gupta</br><strong><u>Categories:</u></strong> cs.LG, math.OC, stat.ML</br><strong><u>Comments:</u></strong> 10 pages, 7 figures</br><p><strong><u>Abstract:</u></strong> Minimum attention applies the least action principle in the changes of
+control concerning state and time, first proposed by Brockett. The involved
+regularization is highly relevant in emulating biological control, such as
+motor learning. We apply minimum attention in reinforcement learning (RL) as
+part of the rewards and investigate its connection to meta-learning and
+stabilization. Specifically, model-based meta-learning with minimum attention
+is explored in high-dimensional nonlinear dynamics. Ensemble-based model
+learning and gradient-based meta-policy learning are alternately performed.
+Empirically, we show that the minimum attention does show outperforming
+competence in comparison to the state-of-the-art algorithms in model-free and
+model-based RL, i.e., fast adaptation in few shots and variance reduction from
+the perturbations of the model and environment. Furthermore, the minimum
+attention demonstrates the improvement in energy efficiency.</p></br><a href="http://arxiv.org/pdf/2505.16158v1" target="_blank"><h2>Confirming HSC strong lens candidates with DESI Spectroscopy. I. Project
+  Overview</h2></a><strong><u>Authors:</u></strong>  Yiping Shu, Shen Li</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 26 pages, 3 figures, 3 tables, submitted to SCIENCE CHINA Physics, Mechanics & Astronomy</br><p><strong><u>Abstract:</u></strong> Accurate redshift determinations of both lenses and sources are critical for
+confirming strong-lens systems and fully realizing their scientific value.
+However, the thousands of strong-lens candidates now routinely discovered in
+wide-field imaging surveys make one-by-one follow-up observations impractical.
+In this work, we investigate the capability and efficiency of large-scale
+spectroscopic surveys in confirming strong-lens systems. As a case study, we
+cross-match strong lens candidates identified from the Hyper Suprime-Cam Subaru
+Strategic Program with Data Release 1 of the Dark Energy Spectroscopic
+Instrument (DESI). We find that DESI DR1 serendipitously observed putative
+lenses and/or lensed images in approximately 50\% of these candidates.
+Analyzing the DESI spectra for $\approx 500$ matched candidates that meet our
+specific interests, we determine both lens and source redshifts for 27 systems.
+Additionally, 76 candidate systems feature lensing galaxies at $z > 0.8$, and
+one candidate system contains a quasar within its lensing galaxy. Applying this
+approach to other strong-lens candidates will yield numerous additional
+confirmations, with a further several-fold increase anticipated from the final
+DESI data release. Our results highlight the growing importance of large-scale
+spectroscopic surveys in advancing strong lensing discoveries and
+investigations.</p></br><a href="http://arxiv.org/pdf/2505.16923v1" target="_blank"><h2>TULiP: Test-time Uncertainty Estimation via Linearization and Weight
+  Perturbation</h2></a><strong><u>Authors:</u></strong>  Yuhui Zhang, Dongshen Wu, Yuichiro Wada, Takafumi Kanamori</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> A reliable uncertainty estimation method is the foundation of many modern
+out-of-distribution (OOD) detectors, which are critical for safe deployments of
+deep learning models in the open world. In this work, we propose TULiP, a
+theoretically-driven post-hoc uncertainty estimator for OOD detection. Our
+approach considers a hypothetical perturbation applied to the network before
+convergence. Based on linearized training dynamics, we bound the effect of such
+perturbation, resulting in an uncertainty score computable by perturbing model
+parameters. Ultimately, our approach computes uncertainty from a set of sampled
+predictions. We visualize our bound on synthetic regression and classification
+datasets. Furthermore, we demonstrate the effectiveness of TULiP using
+large-scale OOD detection benchmarks for image classification. Our method
+exhibits state-of-the-art performance, particularly for near-distribution
+samples.</p></br></body>

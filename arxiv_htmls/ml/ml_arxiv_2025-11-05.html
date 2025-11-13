@@ -1,0 +1,92 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 03 Nov 2025 to 05 Nov 2025</em></font><a href="http://arxiv.org/pdf/2511.01958v1" target="_blank"><h2>Improving Bayesian inference in PTA data analysis: importance nested
+  sampling with Normalizing Flows</h2></a><strong><u>Authors:</u></strong>  Eleonora Villa, Golam Mohiuddin Shaifullah, Andrea Possenti, Carmelita Carbone</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO, astro-ph.HE, cs.LG</br><strong><u>Comments:</u></strong> 37 pages, 7 figures, 3 tables. Submitted to the Astronomy and Computing special issue HPC in Cosmology and Astrophysics</br><strong><u>Matching Keywords:</u></strong> AGN (abstract)</br><p><strong><u>Abstract:</u></strong> We present a detailed study of Bayesian inference workflows for pulsar timing
+array data with a focus on enhancing efficiency, robustness and speed through
+the use of normalizing flow-based nested sampling. Building on the Enterprise
+framework, we integrate the i-nessai sampler and benchmark its performance on
+realistic, simulated datasets. We analyze its computational scaling and
+stability, and show that it achieves accurate posteriors and reliable evidence
+estimates with substantially reduced runtime, by up to three orders of
+magnitude depending on the dataset configuration, with respect to conventional
+single-core parallel-tempering MCMC analyses. These results highlight the
+potential of flow-based nested sampling to accelerate PTA analyses while
+preserving the quality of the inference.</p></br><a href="http://arxiv.org/pdf/2511.01584v1" target="_blank"><h2>$\mbox{H}$ $\mbox{I}$ 21-cm Absorption Spectra Classification using
+  Machine Learning</h2></a><strong><u>Authors:</u></strong>  Debasish Mondal, Anirudh S. Nemmani, Arunima Banerjee</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> 17 pages, 7 figures, 3 tables, 2 appendices. Accepted for publication in MNRAS</br><strong><u>Matching Keywords:</u></strong> atomic hydrogen (abstract)</br><p><strong><u>Abstract:</u></strong> $\mbox{H}$ $\mbox{I}$ 21-cm absorption, an extremely useful tool to study the
+cold atomic hydrogen gas, can arise either from the intervening galaxies along
+the line-of-sight towards the background radio source or from the radio source
+itself. Determining whether $\mbox{H}$ $\mbox{I}$ 21-cm absorption lines
+detected as part of large, blind surveys are `intervening' or `associated'
+using optical spectroscopy would be unfeasible. We therefore investigate a more
+efficient, machine learning (ML)-based method to classify $\mbox{H}$ $\mbox{I}$
+21-cm absorption lines. Using a sample of 118 known $\mbox{H}$ $\mbox{I}$ 21-cm
+absorption lines from the literature, we train six ML models (Gaussian naive
+Bayes, logistic regression, decision tree, random forest, SVM and XGBoost) on
+the spectral parameters obtained by fitting the Busy function to the absorption
+spectra. We found that a random forest model trained on these spectral
+parameters gives the most reliable classification results, with an accuracy of
+89%, a $F_1$-score of 0.9 and an AUC score of 0.94. We note that the linewidth
+parameter $w_{20}$ is the most significant spectral parameter that regulates
+the classification performance of this model. Retraining this random forest
+model only with this linewidth and the integrated optical depth parameters
+yields an accuracy of 88%, a $F_1$-score of 0.88 and an AUC score of 0.91. We
+have applied this retrained random forest model to predict the type of 30 new
+$\mbox{H}$ $\mbox{I}$ 21-cm absorption lines detected in recent blind surveys,
+viz. FLASH, illustrating the potential of the techniques developed in this work
+for future large $\mbox{H}$ $\mbox{I}$ surveys with the Square Kilometre Array.</p></br><a href="http://arxiv.org/pdf/2511.01811v1" target="_blank"><h2>Modeling Stellar Collisions in Galactic Nuclei Using Hydrodynamic
+  Simulations and Machine Learning</h2></a><strong><u>Authors:</u></strong>  Sanaea C. Rose, James C. Lombardi, Jr., Elena González Prieto, Fulya Kıroğlu, Frederic A. Rasio</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.SR</br><strong><u>Comments:</u></strong> Submitted to ApJ</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Nuclear star clusters represent some of the most extreme collisional
+environments in the Universe. A typical nuclear star cluster harbors a
+supermassive black hole at its center, which accelerates stars to high speeds
+($\gtrsim 100$-$1000$ km/s) in a region where millions of other stars reside.
+Direct collisions occur frequently in such high-density environments, where
+they can shape the stellar populations and drive the evolution of the cluster.
+We present a suite of a couple hundred high-resolution smoothed-particle
+hydrodynamics (SPH) simulations of collisions between $1$ M$_\odot$ stars, at
+impact speeds representative of galactic nuclei. We use our SPH dataset to
+develop physically-motivated fitting formulae for predicting collision
+outcomes. While collision-driven mass loss has been examined in detail in the
+literature, we present a new framework for understanding the effects of
+"hit-and-run" collisions on a star's trajectory. We demonstrate that the change
+in stellar velocity follows the tidal-dissipation limit for grazing encounters,
+while the deflection angle is well-approximated by point-particle dynamics for
+periapses $\gtrsim0.3$ times the stellar radii. We use our SPH dataset to test
+two machine learning (ML) algorithms, k-Nearest Neighbors and neural networks,
+for predicting collision outcomes and properties. We find that the neural
+network out-performs k-Nearest Neighbors and delivers results on par with and
+in some cases exceeding the accuracy of our fitting formulae. We conclude that
+both fitting formulae and ML have merits for modeling collisions in dense
+stellar environments, however ML may prove more effective as the parameter
+space of initial conditions expands.</p></br><a href="http://arxiv.org/pdf/2511.02328v1" target="_blank"><h2>ASTROFLOW: A Real-Time End-to-End Pipeline for Radio Single-Pulse
+  Searches</h2></a><strong><u>Authors:</u></strong>  Guanhong Lin, Dejia Zhou, Jianli Zhang, Jialang Ding, Fei Liu, Xiaoyun Ma, Yuan Liang, Ruan Duan, Liaoyuan Liu, Xuanyu Wang, Xiaohui Yan, Yingrou Zhan, Yuting Chu, Jing Qiao, Wei Wang, Jie Zhang, Zerui Wang, Meng Liu, Chenchen Miao, Menquan Liu, Meng Guo, Di Li, Pei Wang</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> 17 pages, 14 figures</br><strong><u>Matching Keywords:</u></strong> ISM (abstract)</br><p><strong><u>Abstract:</u></strong> Fast radio bursts (FRBs) are extremely bright, millisecond duration cosmic
+transients of unknown origin. The growing number of wide-field and
+high-time-resolution radio surveys, particularly with next-generation
+facilities such as the SKA and MeerKAT, will dramatically increase FRB
+discovery rates, but also produce data volumes that overwhelm conventional
+search pipelines. Real-time detection thus demands software that is both
+algorithmically robust and computationally efficient. We present Astroflow, an
+end-to-end, GPU-accelerated pipeline for single-pulse detection in radio
+time-frequency data. Built on a unified C++/CUDA core with a Python interface,
+Astroflow integrates RFI excision, incoherent dedispersion, dynamic-spectrum
+tiling, and a YOLO-based deep detector. Through vectorized memory access,
+shared-memory tiling, and OpenMP parallelism, it achieves 10x
+faster-than-real-time processing on consumer GPUs for a typical 150 s,
+2048-channel observation, while preserving high sensitivity across a wide range
+of pulse widths and dispersion measures. These results establish the
+feasibility of a fully integrated, GPU-accelerated single-pulse search stack,
+capable of scaling to the data volumes expected from upcoming large-scale
+surveys. Astroflow offers a reusable and deployable solution for real-time
+transient discovery, and provides a framework that can be continuously refined
+with new data and models.</p></br></body>

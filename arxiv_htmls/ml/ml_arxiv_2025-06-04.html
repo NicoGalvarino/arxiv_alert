@@ -1,0 +1,337 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 02 Jun 2025 to 04 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.01522v1" target="_blank"><h2>Beyond Diagonal Covariance: Flexible Posterior VAEs via Free-Form
+  Injective Flows</h2></a><strong><u>Authors:</u></strong>  Peter Sorrenson, Lukas Lührs, Hans Olischläger, Ullrich Köthe</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Variational Autoencoders (VAEs) are powerful generative models widely used
+for learning interpretable latent spaces, quantifying uncertainty, and
+compressing data for downstream generative tasks. VAEs typically rely on
+diagonal Gaussian posteriors due to computational constraints. Using arguments
+grounded in differential geometry, we demonstrate inherent limitations in the
+representational capacity of diagonal covariance VAEs, as illustrated by
+explicit low-dimensional examples. In response, we show that a regularized
+variant of the recently introduced Free-form Injective Flow (FIF) can be
+interpreted as a VAE featuring a highly flexible, implicitly defined posterior.
+Crucially, this regularization yields a posterior equivalent to a full Gaussian
+covariance distribution, yet maintains computational costs comparable to
+standard diagonal covariance VAEs. Experiments on image datasets validate our
+approach, demonstrating that incorporating full covariance substantially
+improves model likelihood.</p></br><a href="http://arxiv.org/pdf/2506.01450v1" target="_blank"><h2>ShaTS: A Shapley-based Explainability Method for Time Series Artificial
+  Intelligence Models applied to Anomaly Detection in Industrial Internet of
+  Things</h2></a><strong><u>Authors:</u></strong>  Manuel Franco de la Peña, Ángel Luis Perales Gómez, Lorenzo Fernández Maimó</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 22 pages;16 figures;Submitted to Elsevier (Information Fusion)</br><p><strong><u>Abstract:</u></strong> Industrial Internet of Things environments increasingly rely on advanced
+Anomaly Detection and explanation techniques to rapidly detect and mitigate
+cyberincidents, thereby ensuring operational safety. The sequential nature of
+data collected from these environments has enabled improvements in Anomaly
+Detection using Machine Learning and Deep Learning models by processing time
+windows rather than treating the data as tabular. However, conventional
+explanation methods often neglect this temporal structure, leading to imprecise
+or less actionable explanations. This work presents ShaTS (Shapley values for
+Time Series models), which is a model-agnostic explainable Artificial
+Intelligence method designed to enhance the precision of Shapley value
+explanations for time series models. ShaTS addresses the shortcomings of
+traditional approaches by incorporating an a priori feature grouping strategy
+that preserves temporal dependencies and produces both coherent and actionable
+insights. Experiments conducted on the SWaT dataset demonstrate that ShaTS
+accurately identifies critical time instants, precisely pinpoints the sensors,
+actuators, and processes affected by anomalies, and outperforms SHAP in terms
+of both explainability and resource efficiency, fulfilling the real-time
+requirements of industrial environments.</p></br><a href="http://arxiv.org/pdf/2506.02081v1" target="_blank"><h2>RATFM: Retrieval-augmented Time Series Foundation Model for Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Chihiro Maru, Shoetsu Sato</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Inspired by the success of large language models (LLMs) in natural language
+processing, recent research has explored the building of time series foundation
+models and applied them to tasks such as forecasting, classification, and
+anomaly detection. However, their performances vary between different domains
+and tasks. In LLM-based approaches, test-time adaptation using example-based
+prompting has become common, owing to the high cost of retraining. In the
+context of anomaly detection, which is the focus of this study, providing
+normal examples from the target domain can also be effective. However, time
+series foundation models do not naturally acquire the ability to interpret or
+utilize examples or instructions, because the nature of time series data used
+during training does not encourage such capabilities. To address this
+limitation, we propose a retrieval augmented time series foundation model
+(RATFM), which enables pretrained time series foundation models to incorporate
+examples of test-time adaptation. We show that RATFM achieves a performance
+comparable to that of in-domain fine-tuning while avoiding domain-dependent
+fine-tuning. Experiments on the UCR Anomaly Archive, a multi-domain dataset
+including nine domains, confirms the effectiveness of the proposed approach.</p></br><a href="http://arxiv.org/pdf/2506.02406v1" target="_blank"><h2>Random at First, Fast at Last: NTK-Guided Fourier Pre-Processing for
+  Tabular DL</h2></a><strong><u>Authors:</u></strong>  Renat Sergazinov, Jing Wu, Shao-An Yin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 16 pages, 3 figures, 1 table</br><p><strong><u>Abstract:</u></strong> While random Fourier features are a classic tool in kernel methods, their
+utility as a pre-processing step for deep learning on tabular data has been
+largely overlooked. Motivated by shortcomings in tabular deep learning
+pipelines - revealed through Neural Tangent Kernel (NTK) analysis - we revisit
+and repurpose random Fourier mappings as a parameter-free,
+architecture-agnostic transformation. By projecting each input into a fixed
+feature space via sine and cosine projections with frequencies drawn once at
+initialization, this approach circumvents the need for ad hoc normalization or
+additional learnable embeddings. We show within the NTK framework that this
+mapping (i) bounds and conditions the network's initial NTK spectrum, and (ii)
+introduces a bias that shortens the optimization trajectory, thereby
+accelerating gradient-based training. These effects pre-condition the network
+with a stable kernel from the outset. Empirically, we demonstrate that deep
+networks trained on Fourier-transformed inputs converge more rapidly and
+consistently achieve strong final performance, often with fewer epochs and less
+hyperparameter tuning. Our findings establish random Fourier pre-processing as
+a theoretically motivated, plug-and-play enhancement for tabular deep learning.</p></br><a href="http://arxiv.org/pdf/2506.02092v1" target="_blank"><h2>Towards Better Generalization and Interpretability in Unsupervised
+  Concept-Based Models</h2></a><strong><u>Authors:</u></strong>  Francesco De Santis, Philippe Bich, Gabriele Ciravegna, Pietro Barbiero, Danilo Giordano, Tania Cerquitelli</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Paper accepted at ECML-PKDD 2025</br><p><strong><u>Abstract:</u></strong> To increase the trustworthiness of deep neural networks, it is critical to
+improve the understanding of how they make decisions. This paper introduces a
+novel unsupervised concept-based model for image classification, named
+Learnable Concept-Based Model (LCBM) which models concepts as random variables
+within a Bernoulli latent space. Unlike traditional methods that either require
+extensive human supervision or suffer from limited scalability, our approach
+employs a reduced number of concepts without sacrificing performance. We
+demonstrate that LCBM surpasses existing unsupervised concept-based models in
+generalization capability and nearly matches the performance of black-box
+models. The proposed concept representation enhances information retention and
+aligns more closely with human understanding. A user study demonstrates the
+discovered concepts are also more intuitive for humans to interpret. Finally,
+despite the use of concept embeddings, we maintain model interpretability by
+means of a local linear combination of concepts.</p></br><a href="http://arxiv.org/pdf/2506.02084v1" target="_blank"><h2>Temporal Causal-based Simulation for Realistic Time-series Generation</h2></a><strong><u>Authors:</u></strong>  Nikolaos Gkorgkolis, Nikolaos Kougioulis, MingXue Wang, Bora Caglayan, Andrea Tonon, Dario Simionato, Ioannis Tsamardinos</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 22 pages, 3 figures</br><p><strong><u>Abstract:</u></strong> Causal Discovery plays a pivotal role in revealing relationships among
+observed variables, particularly in the temporal setup. While the majority of
+CD methods rely on synthetic data for evaluation, and recently for training,
+these fall short in accurately mirroring real-world scenarios; an effect even
+more evident in temporal data. Generation techniques depending on simplified
+assumptions on causal structure, effects and time, limit the quality and
+diversity of the simulated data. In this work, we introduce Temporal
+Causal-based Simulation (TCS), a robust framework for generating realistic
+time-series data and their associated temporal causal graphs. The approach is
+structured in three phases: estimating the true lagged causal structure of the
+data, approximating the functional dependencies between variables and learning
+the noise distribution of the corresponding causal model, each part of which
+can be explicitly tailored based on data assumptions and characteristics.
+Through an extensive evaluation process, we highlight that single detection
+methods for generated data discrimination prove inadequate, accentuating it as
+a multifaceted challenge. For this, we detail a Min-max optimization phase that
+draws on AutoML techniques. Our contributions include a flexible,
+model-agnostic pipeline for generating realistic temporal causal data, a
+thorough evaluation setup which enhances the validity of the generated datasets
+and insights into the challenges posed by realistic data generation. Through
+experiments involving not only real but also semi-synthetic and purely
+synthetic datasets, we demonstrate that while sampling realistic causal data
+remains a complex task, our method enriches the domain of generating sensible
+causal-based temporal data.</p></br><a href="http://arxiv.org/pdf/2506.02651v1" target="_blank"><h2>Asymptotics of SGD in Sequence-Single Index Models and Single-Layer
+  Attention Networks</h2></a><strong><u>Authors:</u></strong>  Luca Arnaboldi, Bruno Loureiro, Ludovic Stephan, Florent Krzakala, Lenka Zdeborova</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study the dynamics of stochastic gradient descent (SGD) for a class of
+sequence models termed Sequence Single-Index (SSI) models, where the target
+depends on a single direction in input space applied to a sequence of tokens.
+This setting generalizes classical single-index models to the sequential
+domain, encompassing simplified one-layer attention architectures. We derive a
+closed-form expression for the population loss in terms of a pair of sufficient
+statistics capturing semantic and positional alignment, and characterize the
+induced high-dimensional SGD dynamics for these coordinates. Our analysis
+reveals two distinct training phases: escape from uninformative initialization
+and alignment with the target subspace, and demonstrates how the sequence
+length and positional encoding influence convergence speed and learning
+trajectories. These results provide a rigorous and interpretable foundation for
+understanding how sequential structure in data can be beneficial for learning
+with attention-based models.</p></br><a href="http://arxiv.org/pdf/2506.01502v1" target="_blank"><h2>Learning of Population Dynamics: Inverse Optimization Meets JKO Scheme</h2></a><strong><u>Authors:</u></strong>  Mikhail Persiianov, Jiawei Chen, Petr Mokrov, Alexander Tyurin, Evgeny Burnaev, Alexander Korotin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Learning population dynamics involves recovering the underlying process that
+governs particle evolution, given evolutionary snapshots of samples at discrete
+time points. Recent methods frame this as an energy minimization problem in
+probability space and leverage the celebrated JKO scheme for efficient time
+discretization. In this work, we introduce $\texttt{iJKOnet}$, an approach that
+combines the JKO framework with inverse optimization techniques to learn
+population dynamics. Our method relies on a conventional $\textit{end-to-end}$
+adversarial training procedure and does not require restrictive architectural
+choices, e.g., input-convex neural networks. We establish theoretical
+guarantees for our methodology and demonstrate improved performance over prior
+JKO-based methods.</p></br><a href="http://arxiv.org/pdf/2506.02485v1" target="_blank"><h2>Generative AI for Predicting 2D and 3D Wildfire Spread: Beyond
+  Physics-Based Models and Traditional Deep Learning</h2></a><strong><u>Authors:</u></strong>  Haowen Xu, Sisi Zlatanova, Ruiyu Liang, Ismet Canbulat</br><strong><u>Categories:</u></strong> cs.AI, cs.CE</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Wildfires continue to inflict devastating human, environmental, and economic
+losses globally, as tragically exemplified by the 2025 Los Angeles wildfire and
+the urgent demand for more effective response strategies. While physics-based
+and deep learning models have advanced wildfire simulation, they face critical
+limitations in predicting and visualizing multimodal fire spread in real time,
+particularly in both 2D and 3D spatial domains using dynamically updated GIS
+data. These limitations hinder timely emergency response, infrastructure
+protection, and community safety. Generative AI has recently emerged as a
+transformative approach across research and industry. Models such as Generative
+Adversarial Networks (GANs), Variational Autoencoders (VAEs), Transformers, and
+diffusion-based architectures offer distinct advantages over traditional
+methods, including the integration of multimodal data, generation of diverse
+scenarios under uncertainty, and improved modeling of wildfire dynamics across
+spatial and temporal scales. This position paper advocates for the adoption of
+generative AI as a foundational framework for wildfire prediction. We explore
+how such models can enhance 2D fire spread forecasting and enable more
+realistic, scalable 3D simulations. Additionally, we employ a novel human-AI
+collaboration framework using large language models (LLMs) for automated
+knowledge extraction, literature synthesis, and bibliometric mapping. Looking
+ahead, we identify five key visions for integrating generative AI into wildfire
+management: multimodal approaches, AI foundation models, conversational AI
+systems, edge-computing-based scenario generation, and cognitive digital twins.
+We also address three major challenges accompanying these opportunities and
+propose potential solutions to support their implementation.</p></br><a href="http://arxiv.org/pdf/2506.02612v1" target="_blank"><h2>Simple, Good, Fast: Self-Supervised World Models Free of Baggage</h2></a><strong><u>Authors:</u></strong>  Jan Robine, Marc Höftmann, Stefan Harmeling</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Published as a conference paper at ICLR 2025. Code is available atthis https URL</br><p><strong><u>Abstract:</u></strong> What are the essential components of world models? How far do we get with
+world models that are not employing RNNs, transformers, discrete
+representations, and image reconstructions? This paper introduces SGF, a
+Simple, Good, and Fast world model that uses self-supervised representation
+learning, captures short-time dependencies through frame and action stacking,
+and enhances robustness against model errors through data augmentation. We
+extensively discuss SGF's connections to established world models, evaluate the
+building blocks in ablation studies, and demonstrate good performance through
+quantitative comparisons on the Atari 100k benchmark.</p></br><a href="http://arxiv.org/pdf/2506.02079v1" target="_blank"><h2>Robust Federated Learning against Noisy Clients via Masked Optimization</h2></a><strong><u>Authors:</u></strong>  Xuefeng Jiang, Tian Wen, Zhiqin Yang, Lvhua Wu, Yufeng Chen, Sheng Sun, Yuwei Wang, Min Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV, stat.ML</br><strong><u>Comments:</u></strong> Under review</br><p><strong><u>Abstract:</u></strong> In recent years, federated learning (FL) has made significant advance in
+privacy-sensitive applications. However, it can be hard to ensure that FL
+participants provide well-annotated data for training. The corresponding
+annotations from different clients often contain complex label noise at varying
+levels. This label noise issue has a substantial impact on the performance of
+the trained models, and clients with greater noise levels can be largely
+attributed for this degradation. To this end, it is necessary to develop an
+effective optimization strategy to alleviate the adverse effects of these noisy
+clients.In this study, we present a two-stage optimization framework,
+MaskedOptim, to address this intricate label noise problem. The first stage is
+designed to facilitate the detection of noisy clients with higher label noise
+rates. The second stage focuses on rectifying the labels of the noisy clients'
+data through an end-to-end label correction mechanism, aiming to mitigate the
+negative impacts caused by misinformation within datasets. This is achieved by
+learning the potential ground-truth labels of the noisy clients' datasets via
+backpropagation. To further enhance the training robustness, we apply the
+geometric median based model aggregation instead of the commonly-used vanilla
+averaged model aggregation. We implement sixteen related methods and conduct
+evaluations on three image datasets and one text dataset with diverse label
+noise patterns for a comprehensive comparison. Extensive experimental results
+indicate that our proposed framework shows its robustness in different
+scenarios. Additionally, our label correction framework effectively enhances
+the data quality of the detected noisy clients' local datasets. % Our codes
+will be open-sourced to facilitate related research communities. Our codes are
+available via https://github.com/Sprinter1999/MaskedOptim .</p></br><a href="http://arxiv.org/pdf/2506.01890v1" target="_blank"><h2>CogniAlign: Word-Level Multimodal Speech Alignment with Gated
+  Cross-Attention for Alzheimer's Detection</h2></a><strong><u>Authors:</u></strong>  David Ortiz-Perez, Manuel Benavent-Lledo, Javier Rodriguez-Juan, Jose Garcia-Rodriguez, David Tomás</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Early detection of cognitive disorders such as Alzheimer's disease is
+critical for enabling timely clinical intervention and improving patient
+outcomes. In this work, we introduce CogniAlign, a multimodal architecture for
+Alzheimer's detection that integrates audio and textual modalities, two
+non-intrusive sources of information that offer complementary insights into
+cognitive health. Unlike prior approaches that fuse modalities at a coarse
+level, CogniAlign leverages a word-level temporal alignment strategy that
+synchronizes audio embeddings with corresponding textual tokens based on
+transcription timestamps. This alignment supports the development of
+token-level fusion techniques, enabling more precise cross-modal interactions.
+To fully exploit this alignment, we propose a Gated Cross-Attention Fusion
+mechanism, where audio features attend over textual representations, guided by
+the superior unimodal performance of the text modality. In addition, we
+incorporate prosodic cues, specifically interword pauses, by inserting pause
+tokens into the text and generating audio embeddings for silent intervals,
+further enriching both streams. We evaluate CogniAlign on the ADReSSo dataset,
+where it achieves an accuracy of 90.36%, outperforming existing
+state-of-the-art methods. A detailed ablation study confirms the advantages of
+our alignment strategy, attention-based fusion, and prosodic modeling.</p></br><a href="http://arxiv.org/pdf/2506.02757v1" target="_blank"><h2>Investigating Mask-aware Prototype Learning for Tabular Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Ruiying Lu, Jinhan Liu, Chuan Du, Dandan Guo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 11 figures</br><p><strong><u>Abstract:</u></strong> Tabular anomaly detection, which aims at identifying deviant samples, has
+been crucial in a variety of real-world applications, such as medical disease
+identification, financial fraud detection, intrusion monitoring, etc. Although
+recent deep learning-based methods have achieved competitive performances,
+these methods suffer from representation entanglement and the lack of global
+correlation modeling, which hinders anomaly detection performance. To tackle
+the problem, we incorporate mask modeling and prototype learning into tabular
+anomaly detection. The core idea is to design learnable masks by disentangled
+representation learning within a projection space and extracting normal
+dependencies as explicit global prototypes. Specifically, the overall model
+involves two parts: (i) During encoding, we perform mask modeling in both the
+data space and projection space with orthogonal basis vectors for learning
+shared disentangled normal patterns; (ii) During decoding, we decode multiple
+masked representations in parallel for reconstruction and learn association
+prototypes to extract normal characteristic correlations. Our proposal derives
+from a distribution-matching perspective, where both projection space learning
+and association prototype learning are formulated as optimal transport
+problems, and the calibration distances are utilized to refine the anomaly
+scores. Quantitative and qualitative experiments on 20 tabular benchmarks
+demonstrate the effectiveness and interpretability of our model.</p></br><a href="http://arxiv.org/pdf/2506.02154v1" target="_blank"><h2>Z-Error Loss for Training Neural Networks</h2></a><strong><u>Authors:</u></strong>  Guillaume Godin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 13 pages, 6 figures, A technical note</br><p><strong><u>Abstract:</u></strong> Outliers introduce significant training challenges in neural networks by
+propagating erroneous gradients, which can degrade model performance and
+generalization. We propose the Z-Error Loss, a statistically principled
+approach that minimizes outlier influence during training by masking the
+contribution of data points identified as out-of-distribution within each
+batch. This method leverages batch-level statistics to automatically detect and
+exclude anomalous samples, allowing the model to focus its learning on the true
+underlying data structure. Our approach is robust, adaptive to data quality,
+and provides valuable diagnostics for data curation and cleaning.</p></br><a href="http://arxiv.org/pdf/2506.01884v1" target="_blank"><h2>Agnostic Reinforcement Learning: Foundations and Algorithms</h2></a><strong><u>Authors:</u></strong>  Gene Li</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Ph.D. thesis</br><p><strong><u>Abstract:</u></strong> Reinforcement Learning (RL) has demonstrated tremendous empirical success
+across numerous challenging domains. However, we lack a strong theoretical
+understanding of the statistical complexity of RL in environments with large
+state spaces, where function approximation is required for sample-efficient
+learning. This thesis addresses this gap by rigorously examining the
+statistical complexity of RL with function approximation from a learning
+theoretic perspective. Departing from a long history of prior work, we consider
+the weakest form of function approximation, called agnostic policy learning, in
+which the learner seeks to find the best policy in a given class $\Pi$, with no
+guarantee that $\Pi$ contains an optimal policy for the underlying task.
+  We systematically explore agnostic policy learning along three key axes:
+environment access -- how a learner collects data from the environment;
+coverage conditions -- intrinsic properties of the underlying MDP measuring the
+expansiveness of state-occupancy measures for policies in the class $\Pi$, and
+representational conditions -- structural assumptions on the class $\Pi$
+itself. Within this comprehensive framework, we (1) design new learning
+algorithms with theoretical guarantees and (2) characterize fundamental
+performance bounds of any algorithm. Our results reveal significant statistical
+separations that highlight the power and limitations of agnostic policy
+learning.</p></br><a href="http://arxiv.org/pdf/2506.02694v1" target="_blank"><h2>XicorAttention: Time Series Transformer Using Attention with Nonlinear
+  Correlation</h2></a><strong><u>Authors:</u></strong>  Daichi Kimura, Tomonori Izumitani, Hisashi Kashima</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Various Transformer-based models have been proposed for time series
+forecasting. These models leverage the self-attention mechanism to capture
+long-term temporal or variate dependencies in sequences. Existing methods can
+be divided into two approaches: (1) reducing computational cost of attention by
+making the calculations sparse, and (2) reshaping the input data to aggregate
+temporal features. However, existing attention mechanisms may not adequately
+capture inherent nonlinear dependencies present in time series data, leaving
+room for improvement. In this study, we propose a novel attention mechanism
+based on Chatterjee's rank correlation coefficient, which measures nonlinear
+dependencies between variables. Specifically, we replace the matrix
+multiplication in standard attention mechanisms with this rank coefficient to
+measure the query-key relationship. Since computing Chatterjee's correlation
+coefficient involves sorting and ranking operations, we introduce a
+differentiable approximation employing SoftSort and SoftRank. Our proposed
+mechanism, ``XicorAttention,'' integrates it into several state-of-the-art
+Transformer models. Experimental results on real-world datasets demonstrate
+that incorporating nonlinear correlation into the attention improves
+forecasting accuracy by up to approximately 9.1\% compared to existing models.</p></br><a href="http://arxiv.org/pdf/2506.01456v1" target="_blank"><h2>GenDMR: A dynamic multimodal role-swapping network for identifying risk
+  gene phenotypes</h2></a><strong><u>Authors:</u></strong>  Lina Qin, Cheng Zhu, Chuqi Zhou, Yukun Huang, Jiayi Zhu, Ping Liang, Jinju Wang, Yixing Huang, Cheng Luo, Dezhong Yao, Ying Tan</br><strong><u>Categories:</u></strong> q-bio.GN, cs.AI, cs.LG, q-bio.NC</br><strong><u>Comments:</u></strong> 31 pages, 9 figures</br><p><strong><u>Abstract:</u></strong> Recent studies have shown that integrating multimodal data fusion techniques
+for imaging and genetic features is beneficial for the etiological analysis and
+predictive diagnosis of Alzheimer's disease (AD). However, there are several
+critical flaws in current deep learning methods. Firstly, there has been
+insufficient discussion and exploration regarding the selection and encoding of
+genetic information. Secondly, due to the significantly superior classification
+value of AD imaging features compared to genetic features, many studies in
+multimodal fusion emphasize the strengths of imaging features, actively
+mitigating the influence of weaker features, thereby diminishing the learning
+of the unique value of genetic features. To address this issue, this study
+proposes the dynamic multimodal role-swapping network (GenDMR). In GenDMR, we
+develop a novel approach to encode the spatial organization of single
+nucleotide polymorphisms (SNPs), enhancing the representation of their genomic
+context. Additionally, to adaptively quantify the disease risk of SNPs and
+brain region, we propose a multi-instance attention module to enhance model
+interpretability. Furthermore, we introduce a dominant modality selection
+module and a contrastive self-distillation module, combining them to achieve a
+dynamic teacher-student role exchange mechanism based on dominant and auxiliary
+modalities for bidirectional co-updating of different modal data. Finally,
+GenDMR achieves state-of-the-art performance on the ADNI public dataset and
+visualizes attention to different SNPs, focusing on confirming 12 potential
+high-risk genes related to AD, including the most classic APOE and recently
+highlighted significant risk genes. This demonstrates GenDMR's interpretable
+analytical capability in exploring AD genetic features, providing new insights
+and perspectives for the development of multimodal data fusion techniques.</p></br><a href="http://arxiv.org/pdf/2506.01599v1" target="_blank"><h2>Connecting Neural Models Latent Geometries with Relative Geodesic
+  Representations</h2></a><strong><u>Authors:</u></strong>  Hanlin Yu, Berfin Inal, Georgios Arvanitidis, Soren Hauberg, Francesco Locatello, Marco Fumero</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Neural models learn representations of high-dimensional data on
+low-dimensional manifolds. Multiple factors, including stochasticities in the
+training process, model architectures, and additional inductive biases, may
+induce different representations, even when learning the same task on the same
+data. However, it has recently been shown that when a latent structure is
+shared between distinct latent spaces, relative distances between
+representations can be preserved, up to distortions. Building on this idea, we
+demonstrate that exploiting the differential-geometric structure of latent
+spaces of neural models, it is possible to capture precisely the
+transformations between representational spaces trained on similar data
+distributions. Specifically, we assume that distinct neural models parametrize
+approximately the same underlying manifold, and introduce a representation
+based on the pullback metric that captures the intrinsic structure of the
+latent space, while scaling efficiently to large models. We validate
+experimentally our method on model stitching and retrieval tasks, covering
+autoencoders and vision foundation discriminative models, across diverse
+architectures, datasets, and pretraining schemes.</p></br><a href="http://arxiv.org/pdf/2506.01622v1" target="_blank"><h2>General agents need world models</h2></a><strong><u>Authors:</u></strong>  Jonathan Richens, David Abel, Alexis Bellot, Tom Everitt</br><strong><u>Categories:</u></strong> cs.AI, cs.LG, cs.RO, stat.ML</br><strong><u>Comments:</u></strong> Accepted ICML 2025</br><p><strong><u>Abstract:</u></strong> Are world models a necessary ingredient for flexible, goal-directed
+behaviour, or is model-free learning sufficient? We provide a formal answer to
+this question, showing that any agent capable of generalizing to multi-step
+goal-directed tasks must have learned a predictive model of its environment. We
+show that this model can be extracted from the agent's policy, and that
+increasing the agents performance or the complexity of the goals it can achieve
+requires learning increasingly accurate world models. This has a number of
+consequences: from developing safe and general agents, to bounding agent
+capabilities in complex environments, and providing new algorithms for
+eliciting world models from agents.</p></br><a href="http://arxiv.org/pdf/2506.02308v1" target="_blank"><h2>MINT: Multimodal Instruction Tuning with Multimodal Interaction Grouping</h2></a><strong><u>Authors:</u></strong>  Xiaojun Shan, Qi Cao, Xing Han, Haofei Yu, Paul Pu Liang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Recent advances in multimodal foundation models have achieved
+state-of-the-art performance across a range of tasks. These breakthroughs are
+largely driven by new pre-training paradigms that leverage large-scale,
+unlabeled multimodal data, followed by instruction fine-tuning on curated
+labeled datasets and high-quality prompts. While there is growing interest in
+scaling instruction fine-tuning to ever-larger datasets in both quantity and
+scale, our findings reveal that simply increasing the number of
+instruction-tuning tasks does not consistently yield better performance.
+Instead, we observe that grouping tasks by the common interactions across
+modalities, such as discovering redundant shared information, prioritizing
+modality selection with unique information, or requiring synergistic fusion to
+discover new information from both modalities, encourages the models to learn
+transferrable skills within a group while suppressing interference from
+mismatched tasks. To this end, we introduce MINT, a simple yet surprisingly
+effective task-grouping strategy based on the type of multimodal interaction.
+We demonstrate that the proposed method greatly outperforms existing task
+grouping baselines for multimodal instruction tuning, striking an effective
+balance between generalization and specialization.</p></br></body>

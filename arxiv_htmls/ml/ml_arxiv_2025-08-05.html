@@ -1,0 +1,516 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 01 Aug 2025 to 05 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.01701v1" target="_blank"><h2>MHARFedLLM: Multimodal Human Activity Recognition Using Federated Large
+  Language Model</h2></a><strong><u>Authors:</u></strong>  Asmit Bandyopadhyay, Rohit Basu, Tanmay Sen, Swagatam Das</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Human Activity Recognition (HAR) plays a vital role in applications such as
+fitness tracking, smart homes, and healthcare monitoring. Traditional HAR
+systems often rely on single modalities, such as motion sensors or cameras,
+limiting robustness and accuracy in real-world environments. This work presents
+FedTime-MAGNET, a novel multimodal federated learning framework that advances
+HAR by combining heterogeneous data sources: depth cameras, pressure mats, and
+accelerometers. At its core is the Multimodal Adaptive Graph Neural Expert
+Transformer (MAGNET), a fusion architecture that uses graph attention and a
+Mixture of Experts to generate unified, discriminative embeddings across
+modalities. To capture complex temporal dependencies, a lightweight T5 encoder
+only architecture is customized and adapted within this framework. Extensive
+experiments show that FedTime-MAGNET significantly improves HAR performance,
+achieving a centralized F1 Score of 0.934 and a strong federated F1 Score of
+0.881. These results demonstrate the effectiveness of combining multimodal
+fusion, time series LLMs, and federated learning for building accurate and
+robust HAR systems.</p></br><a href="http://arxiv.org/pdf/2508.00969v1" target="_blank"><h2>Masked Omics Modeling for Multimodal Representation Learning across
+  Histopathology and Molecular Profiles</h2></a><strong><u>Authors:</u></strong>  Lucas Robinet, Ahmad Berjaoui, Elizabeth Cohen-Jonathan Moyal</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), multimodal (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Self-supervised learning has driven major advances in computational pathology
+by enabling models to learn rich representations from hematoxylin and eosin
+(H&E)-stained cancer tissue. However, histopathology alone often falls short
+for molecular characterization and understanding clinical outcomes, as
+important information is contained in high-dimensional omics profiles like
+transcriptomics, methylomics, or genomics. In this work, we introduce MORPHEUS,
+a unified transformer-based pre-training framework that encodes both
+histopathology and multi-omics data into a shared latent space. At its core,
+MORPHEUS relies on a masked modeling objective applied to randomly selected
+omics portions, encouraging the model to learn biologically meaningful
+cross-modal relationships. The same pre-trained network can be applied to
+histopathology alone or in combination with any subset of omics modalities,
+seamlessly adapting to the available inputs. Additionally, MORPHEUS enables
+any-to-any omics generation, enabling one or more omics profiles to be inferred
+from any subset of modalities, including H&E alone. Pre-trained on a large
+pan-cancer cohort, MORPHEUS consistently outperforms state-of-the-art methods
+across diverse modality combinations and tasks, positioning itself as a
+promising framework for developing multimodal foundation models in oncology.
+The code is available at: https://github.com/Lucas-rbnt/MORPHEUS</p></br><a href="http://arxiv.org/pdf/2508.01833v1" target="_blank"><h2>Neural Predictive Control to Coordinate Discrete- and Continuous-Time
+  Models for Time-Series Analysis with Control-Theoretical Improvements</h2></a><strong><u>Authors:</u></strong>  Haoran Li, Muhao Guo, Yang Weng, Hanghang Tong</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 14 pages, submitted to ACM SIGKDD Conference on Knowledge Discovery and Data Mining</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep sequence models have achieved notable success in time-series analysis,
+such as interpolation and forecasting. Recent advances move beyond
+discrete-time architectures like Recurrent Neural Networks (RNNs) toward
+continuous-time formulations such as the family of Neural Ordinary Differential
+Equations (Neural ODEs). Generally, they have shown that capturing the
+underlying dynamics is beneficial for generic tasks like interpolation,
+extrapolation, and classification. However, existing methods approximate the
+dynamics using unconstrained neural networks, which struggle to adapt reliably
+under distributional shifts. In this paper, we recast time-series problems as
+the continuous ODE-based optimal control problem. Rather than learning dynamics
+solely from data, we optimize control actions that steer ODE trajectories
+toward task objectives, bringing control-theoretical performance guarantees. To
+achieve this goal, we need to (1) design the appropriate control actions and
+(2) apply effective optimal control algorithms. As the actions should contain
+rich context information, we propose to employ the discrete-time model to
+process past sequences and generate actions, leading to a coordinate model to
+extract long-term temporal features to modulate short-term continuous dynamics.
+During training, we apply model predictive control to plan multi-step future
+trajectories, minimize a task-specific cost, and greedily select the optimal
+current action. We show that, under mild assumptions, this multi-horizon
+optimization leads to exponential convergence to infinite-horizon solutions,
+indicating that the coordinate model can gain robust and generalizable
+performance. Extensive experiments on diverse time-series datasets validate our
+method's superior generalization and adaptability compared to state-of-the-art
+baselines.</p></br><a href="http://arxiv.org/pdf/2508.01865v1" target="_blank"><h2>Structure Maintained Representation Learning Neural Network for Causal
+  Inference</h2></a><strong><u>Authors:</u></strong>  Yang Sun, Wenbin Lu, Yi-Hui Zhou</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, stat.ME</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> Recent developments in causal inference have greatly shifted the interest
+from estimating the average treatment effect to the individual treatment
+effect. In this article, we improve the predictive accuracy of representation
+learning and adversarial networks in estimating individual treatment effects by
+introducing a structure keeper which maintains the correlation between the
+baseline covariates and their corresponding representations in the high
+dimensional space. We train a discriminator at the end of representation layers
+to trade off representation balance and information loss. We show that the
+proposed discriminator minimizes an upper bound of the treatment estimation
+error. We can address the tradeoff between distribution balance and information
+loss by considering the correlations between the learned representation space
+and the original covariate feature space. We conduct extensive experiments with
+simulated and real-world observational data to show that our proposed Structure
+Maintained Representation Learning (SMRL) algorithm outperforms
+state-of-the-art methods. We also demonstrate the algorithms on real electronic
+health record data from the MIMIC-III database.</p></br><a href="http://arxiv.org/pdf/2508.01615v1" target="_blank"><h2>TCDiff: Triplex Cascaded Diffusion for High-fidelity Multimodal EHRs
+  Generation with Incomplete Clinical Data</h2></a><strong><u>Authors:</u></strong>  Yandong Yan, Chenxi Li, Yu Huang, Dexuan Xu, Jiaqi Zhu, Zhongyan Chai, Huamin Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> The scarcity of large-scale and high-quality electronic health records (EHRs)
+remains a major bottleneck in biomedical research, especially as large
+foundation models become increasingly data-hungry. Synthesizing substantial
+volumes of de-identified and high-fidelity data from existing datasets has
+emerged as a promising solution. However, existing methods suffer from a series
+of limitations: they struggle to model the intrinsic properties of
+heterogeneous multimodal EHR data (e.g., continuous, discrete, and textual
+modalities), capture the complex dependencies among them, and robustly handle
+pervasive data incompleteness. These challenges are particularly acute in
+Traditional Chinese Medicine (TCM). To this end, we propose TCDiff (Triplex
+Cascaded Diffusion Network), a novel EHR generation framework that cascades
+three diffusion networks to learn the features of real-world EHR data,
+formatting a multi-stage generative process: Reference Modalities Diffusion,
+Cross-Modal Bridging, and Target Modality Diffusion. Furthermore, to validate
+our proposed framework, besides two public datasets, we also construct and
+introduce TCM-SZ1, a novel multimodal EHR dataset for benchmarking.
+Experimental results show that TCDiff consistently outperforms state-of-the-art
+baselines by an average of 10% in data fidelity under various missing rate,
+while maintaining competitive privacy guarantees. This highlights the
+effectiveness, robustness, and generalizability of our approach in real-world
+healthcare scenarios.</p></br><a href="http://arxiv.org/pdf/2508.01077v1" target="_blank"><h2>The Lattice Geometry of Neural Network Quantization -- A Short
+  Equivalence Proof of GPTQ and Babai's algorithm</h2></a><strong><u>Authors:</u></strong>  Johann Birnick</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.6</br><strong><u>Comments:</u></strong> 9 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We explain how data-driven quantization of a linear unit in a neural network
+corresponds to solving the closest vector problem for a certain lattice
+generated by input data. We prove that the GPTQ algorithm is equivalent to
+Babai's well-known nearest-plane algorithm. We furthermore provide geometric
+intuition for both algorithms. Lastly, we note the consequences of these
+results, in particular hinting at the possibility for using lattice basis
+reduction for better quantization.</p></br><a href="http://arxiv.org/pdf/2508.00959v1" target="_blank"><h2>Enhancing material behavior discovery using embedding-oriented
+  Physically-Guided Neural Networks with Internal Variables</h2></a><strong><u>Authors:</u></strong>  Rubén Muñoz-Sierra, Manuel Doblaré, Jacobo Ayensa-Jiménez</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), transfer learning (abstract)</br><p><strong><u>Abstract:</u></strong> Physically Guided Neural Networks with Internal Variables are SciML tools
+that use only observable data for training and and have the capacity to unravel
+internal state relations. They incorporate physical knowledge both by
+prescribing the model architecture and using loss regularization, thus endowing
+certain specific neurons with a physical meaning as internal state variables.
+Despite their potential, these models face challenges in scalability when
+applied to high-dimensional data such as fine-grid spatial fields or
+time-evolving systems. In this work, we propose some enhancements to the PGNNIV
+framework that address these scalability limitations through reduced-order
+modeling techniques. Specifically, we introduce alternatives to the original
+decoder structure using spectral decomposition, POD, and pretrained
+autoencoder-based mappings. These surrogate decoders offer varying trade-offs
+between computational efficiency, accuracy, noise tolerance, and
+generalization, while improving drastically the scalability. Additionally, we
+integrate model reuse via transfer learning and fine-tuning strategies to
+exploit previously acquired knowledge, supporting efficient adaptation to novel
+materials or configurations, and significantly reducing training time while
+maintaining or improving model performance. To illustrate these various
+techniques, we use a representative case governed by the nonlinear diffusion
+equation, using only observable data. Results demonstrate that the enhanced
+PGNNIV framework successfully identifies the underlying constitutive state
+equations while maintaining high predictive accuracy. It also improves
+robustness to noise, mitigates overfitting, and reduces computational demands.
+The proposed techniques can be tailored to various scenarios depending on data
+availability, resources, and specific modeling objectives, overcoming
+scalability challenges in all the scenarios.</p></br><a href="http://arxiv.org/pdf/2508.01048v1" target="_blank"><h2>Explaining GNN Explanations with Edge Gradients</h2></a><strong><u>Authors:</u></strong>  Jesse He, Akbar Rafiey, Gal Mishne, Yusu Wang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> KDD 2025</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> In recent years, the remarkable success of graph neural networks (GNNs) on
+graph-structured data has prompted a surge of methods for explaining GNN
+predictions. However, the state-of-the-art for GNN explainability remains in
+flux. Different comparisons find mixed results for different methods, with many
+explainers struggling on more complex GNN architectures and tasks. This
+presents an urgent need for a more careful theoretical analysis of competing
+GNN explanation methods. In this work we take a closer look at GNN explanations
+in two different settings: input-level explanations, which produce explanatory
+subgraphs of the input graph, and layerwise explanations, which produce
+explanatory subgraphs of the computation graph. We establish the first
+theoretical connections between the popular perturbation-based and classical
+gradient-based methods, as well as point out connections between other recently
+proposed methods. At the input level, we demonstrate conditions under which
+GNNExplainer can be approximated by a simple heuristic based on the sign of the
+edge gradients. In the layerwise setting, we point out that edge gradients are
+equivalent to occlusion search for linear GNNs. Finally, we demonstrate how our
+theoretical results manifest in practice with experiments on both synthetic and
+real datasets.</p></br><a href="http://arxiv.org/pdf/2508.01311v1" target="_blank"><h2>C3D-AD: Toward Continual 3D Anomaly Detection via Kernel Attention with
+  Learnable Advisor</h2></a><strong><u>Authors:</u></strong>  Haoquan Lu, Hanzhe Liang, Jie Zhang, Chenxi Hu, Jinbao Wang, Can Gao</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> We have provided the code for C3D-AD with checkpoints and BASELINE at this link:this https URL</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> 3D Anomaly Detection (AD) has shown great potential in detecting anomalies or
+defects of high-precision industrial products. However, existing methods are
+typically trained in a class-specific manner and also lack the capability of
+learning from emerging classes. In this study, we proposed a continual learning
+framework named Continual 3D Anomaly Detection (C3D-AD), which can not only
+learn generalized representations for multi-class point clouds but also handle
+new classes emerging over time.Specifically, in the feature extraction module,
+to extract generalized local features from diverse product types of different
+tasks efficiently, Kernel Attention with random feature Layer (KAL) is
+introduced, which normalizes the feature space. Then, to reconstruct data
+correctly and continually, an efficient Kernel Attention with learnable Advisor
+(KAA) mechanism is proposed, which learns the information from new categories
+while discarding redundant old information within both the encoder and decoder.
+Finally, to keep the representation consistency over tasks, a Reconstruction
+with Parameter Perturbation (RPP) module is proposed by designing a
+representation rehearsal loss function, which ensures that the model remembers
+previous category information and returns category-adaptive
+representation.Extensive experiments on three public datasets demonstrate the
+effectiveness of the proposed method, achieving an average performance of
+66.4%, 83.1%, and 63.4% AUROC on Real3D-AD, Anomaly-ShapeNet, and MulSen-AD,
+respectively.</p></br><a href="http://arxiv.org/pdf/2508.01646v1" target="_blank"><h2>SPARTA: Advancing Sparse Attention in Spiking Neural Networks via
+  Spike-Timing-Based Prioritization</h2></a><strong><u>Authors:</u></strong>  Minsuk Jang, Changick Kim</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NE, I.2.6; I.2.10; C.1.3</br><strong><u>Comments:</u></strong> 9 pages, 4 figures, submitted to AAAI 2026</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Current Spiking Neural Networks (SNNs) underutilize the temporal dynamics
+inherent in spike-based processing, relying primarily on rate coding while
+overlooking precise timing information that provides rich computational cues.
+We propose SPARTA (Spiking Priority Attention with Resource-Adaptive Temporal
+Allocation), a framework that leverages heterogeneous neuron dynamics and
+spike-timing information to enable efficient sparse attention. SPARTA
+prioritizes tokens based on temporal cues, including firing patterns, spike
+timing, and inter-spike intervals, achieving 65.4% sparsity through competitive
+gating. By selecting only the most salient tokens, SPARTA reduces attention
+complexity from O(N^2) to O(K^2) with k << n, while maintaining high accuracy.
+Our method achieves state-of-the-art performance on DVS-Gesture (98.78%) and
+competitive results on CIFAR10-DVS (83.06%) and CIFAR-10 (95.3%), demonstrating
+that exploiting spike timing dynamics improves both computational efficiency
+and accuracy.</p></br><a href="http://arxiv.org/pdf/2508.02532v1" target="_blank"><h2>Contextual Graph Transformer: A Small Language Model for Enhanced
+  Engineering Document Information Extraction</h2></a><strong><u>Authors:</u></strong>  Karan Reddy, Mayukha Pal</br><strong><u>Categories:</u></strong> cs.CL, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Standard transformer-based language models, while powerful for general text,
+often struggle with the fine-grained syntax and entity relationships in complex
+technical, engineering documents. To address this, we propose the Contextual
+Graph Transformer (CGT), a hybrid neural architecture that combines Graph
+Neural Networks (GNNs) and Transformers for domain-specific question answering.
+CGT constructs a dynamic graph over input tokens using sequential, skip-gram,
+and semantic similarity edges, which is processed by GATv2Conv layers for local
+structure learning. These enriched embeddings are then passed to a Transformer
+encoder to capture global dependencies. Unlike generic large models, technical
+domains often require specialized language models with stronger
+contextualization and structure awareness. CGT offers a parameter-efficient
+solution for such use cases. Integrated into a Retrieval-Augmented Generation
+(RAG) pipeline, CGT outperforms baselines like GPT-2 and BERT, achieving 24.7%
+higher accuracy than GPT-2 with 62.4% fewer parameters. This gain stems from
+CGTs ability to jointly model structural token interactions and long-range
+semantic coherence. The model is trained from scratch using a two-phase
+approach: pretraining on general text followed by fine-tuning on
+domain-specific manuals. This highlights CGTs adaptability to technical
+language, enabling better grounding, entity tracking, and retrieval-augmented
+responses in real-world applications.</p></br><a href="http://arxiv.org/pdf/2508.00963v1" target="_blank"><h2>Rethinking Multimodality: Optimizing Multimodal Deep Learning for
+  Biomedical Signal Classification</h2></a><strong><u>Authors:</u></strong>  Timothy Oladunni, Alex Wong</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multimodality (title), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> This study proposes a novel perspective on multimodal deep learning for
+biomedical signal classification, systematically analyzing how complementary
+feature domains impact model performance. While fusing multiple domains often
+presumes enhanced accuracy, this work demonstrates that adding modalities can
+yield diminishing returns, as not all fusions are inherently advantageous. To
+validate this, five deep learning models were designed, developed, and
+rigorously evaluated: three unimodal (1D-CNN for time, 2D-CNN for
+time-frequency, and 1D-CNN-Transformer for frequency) and two multimodal
+(Hybrid 1, which fuses 1D-CNN and 2D-CNN; Hybrid 2, which combines 1D-CNN,
+2D-CNN, and a Transformer). For ECG classification, bootstrapping and Bayesian
+inference revealed that Hybrid 1 consistently outperformed the 2D-CNN baseline
+across all metrics (p-values < 0.05, Bayesian probabilities > 0.90), confirming
+the synergistic complementarity of the time and time-frequency domains.
+Conversely, Hybrid 2's inclusion of the frequency domain offered no further
+improvement and sometimes a marginal decline, indicating representational
+redundancy; a phenomenon further substantiated by a targeted ablation study.
+This research redefines a fundamental principle of multimodal design in
+biomedical signal analysis. We demonstrate that optimal domain fusion isn't
+about the number of modalities, but the quality of their inherent
+complementarity. This paradigm-shifting concept moves beyond purely heuristic
+feature selection. Our novel theoretical contribution, "Complementary Feature
+Domains in Multimodal ECG Deep Learning," presents a mathematically
+quantifiable framework for identifying ideal domain combinations, demonstrating
+that optimal multimodal performance arises from the intrinsic
+information-theoretic complementarity among fused domains.</p></br><a href="http://arxiv.org/pdf/2508.02566v1" target="_blank"><h2>Dynamic Feature Selection based on Rule-based Learning for Explainable
+  Classification with Uncertainty Quantification</h2></a><strong><u>Authors:</u></strong>  Javier Fumanal-Idocin, Raquel Fernandez-Peralta, Javier Andreu-Perez</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Dynamic feature selection (DFS) offers a compelling alternative to
+traditional, static feature selection by adapting the selected features to each
+individual sample. Unlike classical methods that apply a uniform feature set,
+DFS customizes feature selection per sample, providing insight into the
+decision-making process for each case. DFS is especially significant in
+settings where decision transparency is key, i.e., clinical decisions; however,
+existing methods use opaque models, which hinder their applicability in
+real-life scenarios. This paper introduces a novel approach leveraging a
+rule-based system as a base classifier for the DFS process, which enhances
+decision interpretability compared to neural estimators. We also show how this
+method provides a quantitative measure of uncertainty for each feature query
+and can make the feature selection process computationally lighter by
+constraining the feature search space. We also discuss when greedy selection of
+conditional mutual information is equivalent to selecting features that
+minimize the difference with respect to the global model predictions. Finally,
+we demonstrate the competitive performance of our rule-based DFS approach
+against established and state-of-the-art greedy and RL methods, which are
+mostly considered opaque, compared to our explainable rule-based system.</p></br><a href="http://arxiv.org/pdf/2508.01975v1" target="_blank"><h2>Diffusion models for inverse problems</h2></a><strong><u>Authors:</u></strong>  Hyungjin Chung, Jeongsol Kim, Jong Chul Ye</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Using diffusion priors to solve inverse problems in imaging have
+significantly matured over the years. In this chapter, we review the various
+different approaches that were proposed over the years. We categorize the
+approaches into the more classic explicit approximation approaches and others,
+which include variational inference, sequential monte carlo, and decoupled data
+consistency. We cover the extension to more challenging situations, including
+blind cases, high-dimensional data, and problems under data scarcity and
+distribution mismatch. More recent approaches that aim to leverage multimodal
+information through texts are covered. Through this chapter, we aim to (i)
+distill the common mathematical threads that connect these algorithms, (ii)
+systematically contrast their assumptions and performance trade-offs across
+representative inverse problems, and (iii) spotlight the open theoretical and
+practical challenges by clarifying the landscape of diffusion model based
+inverse problem solvers.</p></br><a href="http://arxiv.org/pdf/2508.01045v1" target="_blank"><h2>Structured Spectral Graph Learning for Anomaly Classification in 3D
+  Chest CT Scans</h2></a><strong><u>Authors:</u></strong>  Theo Di Piazza, Carole Lazarus, Olivier Nempont, Loic Boussel</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Accepted for publication at MICCAI 2025 EMERGE Workshop</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), anomaly detection (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> With the increasing number of CT scan examinations, there is a need for
+automated methods such as organ segmentation, anomaly detection and report
+generation to assist radiologists in managing their increasing workload.
+Multi-label classification of 3D CT scans remains a critical yet challenging
+task due to the complex spatial relationships within volumetric data and the
+variety of observed anomalies. Existing approaches based on 3D convolutional
+networks have limited abilities to model long-range dependencies while Vision
+Transformers suffer from high computational costs and often require extensive
+pre-training on large-scale datasets from the same domain to achieve
+competitive performance. In this work, we propose an alternative by introducing
+a new graph-based approach that models CT scans as structured graphs,
+leveraging axial slice triplets nodes processed through spectral domain
+convolution to enhance multi-label anomaly classification performance. Our
+method exhibits strong cross-dataset generalization, and competitive
+performance while achieving robustness to z-axis translation. An ablation study
+evaluates the contribution of each proposed component.</p></br><a href="http://arxiv.org/pdf/2508.01010v1" target="_blank"><h2>v-PuNNs: van der Put Neural Networks for Transparent Ultrametric
+  Representation Learning</h2></a><strong><u>Authors:</u></strong>  Gnankan Landry Regis N'guessan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Conventional deep learning models embed data in Euclidean space
+$\mathbb{R}^d$, a poor fit for strictly hierarchical objects such as taxa, word
+senses, or file systems. We introduce van der Put Neural Networks (v-PuNNs),
+the first architecture whose neurons are characteristic functions of p-adic
+balls in $\mathbb{Z}_p$. Under our Transparent Ultrametric Representation
+Learning (TURL) principle every weight is itself a p-adic number, giving exact
+subtree semantics. A new Finite Hierarchical Approximation Theorem shows that a
+depth-K v-PuNN with $\sum_{j=0}^{K-1}p^{\,j}$ neurons universally represents
+any K-level tree. Because gradients vanish in this discrete space, we propose
+Valuation-Adaptive Perturbation Optimization (VAPO), with a fast deterministic
+variant (HiPaN-DS) and a moment-based one (HiPaN / Adam-VAPO). On three
+canonical benchmarks our CPU-only implementation sets new state-of-the-art:
+WordNet nouns (52,427 leaves) 99.96% leaf accuracy in 16 min; GO
+molecular-function 96.9% leaf / 100% root in 50 s; NCBI Mammalia Spearman $\rho
+= -0.96$ with true taxonomic distance. The learned metric is perfectly
+ultrametric (zero triangle violations), and its fractal and
+information-theoretic properties are analyzed. Beyond classification we derive
+structural invariants for quantum systems (HiPaQ) and controllable generative
+codes for tabular data (Tab-HiPaN). v-PuNNs therefore bridge number theory and
+deep learning, offering exact, interpretable, and efficient models for
+hierarchical data.</p></br><a href="http://arxiv.org/pdf/2508.00974v1" target="_blank"><h2>ThermoCycleNet: Stereo-based Thermogram Labeling for Model Transition to
+  Cycling</h2></a><strong><u>Authors:</u></strong>  Daniel Andrés López, Vincent Weber, Severin Zentgraf, Barlo Hillen, Perikles Simon, Elmar Schömer</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Presented at IWANN 2025 18th International Work-Conference on Artificial Neural Networks, A Coruña, Spain, 16-18 June, 2025. Book of abstracts: ISBN: 979-13-8752213-1. Funding: Johannes Gutenberg University "Stufe I'': "Start ThermoCycleNet''. Partial funding: Carl-Zeiss-Stiftung: "Multi-dimensionAI'' (CZS-Project number: P2022-08-010)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Infrared thermography is emerging as a powerful tool in sports medicine,
+allowing assessment of thermal radiation during exercise and analysis of
+anatomical regions of interest, such as the well-exposed calves. Building on
+our previous advanced automatic annotation method, we aimed to transfer the
+stereo- and multimodal-based labeling approach from treadmill running to
+ergometer cycling. Therefore, the training of the semantic segmentation network
+with automatic labels and fine-tuning on high-quality manually annotated images
+has been examined and compared in different data set combinations. The results
+indicate that fine-tuning with a small fraction of manual data is sufficient to
+improve the overall performance of the deep neural network. Finally, combining
+automatically generated labels with small manually annotated data sets
+accelerates the adaptation of deep neural networks to new use cases, such as
+the transition from treadmill to bicycle.</p></br><a href="http://arxiv.org/pdf/2508.01459v1" target="_blank"><h2>Fast and scalable retrosynthetic planning with a transformer neural
+  network and speculative beam search</h2></a><strong><u>Authors:</u></strong>  Mikhail Andronov, Natalia Andronova, Michael Wand, Jürgen Schmidhuber, Djork-Arné Clevert</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> AI-based computer-aided synthesis planning (CASP) systems are in demand as
+components of AI-driven drug discovery workflows. However, the high latency of
+such CASP systems limits their utility for high-throughput synthesizability
+screening in de novo drug design. We propose a method for accelerating
+multi-step synthesis planning systems that rely on SMILES-to-SMILES
+transformers as single-step retrosynthesis models. Our approach reduces the
+latency of SMILES-to-SMILES transformers powering multi-step synthesis planning
+in AiZynthFinder through speculative beam search combined with a scalable
+drafting strategy called Medusa. Replacing standard beam search with our
+approach allows the CASP system to solve 26\% to 86\% more molecules under the
+same time constraints of several seconds. Our method brings AI-based CASP
+systems closer to meeting the strict latency requirements of high-throughput
+synthesizability screening and improving general user experience.</p></br><a href="http://arxiv.org/pdf/2508.02039v1" target="_blank"><h2>Model Recycling Framework for Multi-Source Data-Free Supervised Transfer
+  Learning</h2></a><strong><u>Authors:</u></strong>  Sijia Wang, Ricardo Henao</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (abstract)</br><p><strong><u>Abstract:</u></strong> Increasing concerns for data privacy and other difficulties associated with
+retrieving source data for model training have created the need for source-free
+transfer learning, in which one only has access to pre-trained models instead
+of data from the original source domains. This setting introduces many
+challenges, as many existing transfer learning methods typically rely on access
+to source data, which limits their direct applicability to scenarios where
+source data is unavailable. Further, practical concerns make it more difficult,
+for instance efficiently selecting models for transfer without information on
+source data, and transferring without full access to the source models. So
+motivated, we propose a model recycling framework for parameter-efficient
+training of models that identifies subsets of related source models to reuse in
+both white-box and black-box settings. Consequently, our framework makes it
+possible for Model as a Service (MaaS) providers to build libraries of
+efficient pre-trained models, thus creating an opportunity for multi-source
+data-free supervised transfer learning.</p></br><a href="http://arxiv.org/pdf/2508.01941v1" target="_blank"><h2>Less is More: AMBER-AFNO -- a New Benchmark for Lightweight 3D Medical
+  Image Segmentation</h2></a><strong><u>Authors:</u></strong>  Andrea Dosi, Semanto Mondal, Rajib Chandra Ghosh, Massimo Brescia, Giuseppe Longo</br><strong><u>Categories:</u></strong> eess.IV, cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> This work presents the results of a methodological transfer from remote
+sensing to healthcare, adapting AMBER -- a transformer-based model originally
+designed for multiband images, such as hyperspectral data -- to the task of 3D
+medical datacube segmentation. In this study, we use the AMBER architecture
+with Adaptive Fourier Neural Operators (AFNO) in place of the multi-head
+self-attention mechanism. While existing models rely on various forms of
+attention to capture global context, AMBER-AFNO achieves this through
+frequency-domain mixing, enabling a drastic reduction in model complexity. This
+design reduces the number of trainable parameters by over 80% compared to
+UNETR++, while maintaining a FLOPs count comparable to other state-of-the-art
+architectures. Model performance is evaluated on two benchmark 3D medical
+datasets -- ACDC and Synapse -- using standard metrics such as Dice Similarity
+Coefficient (DSC) and Hausdorff Distance (HD), demonstrating that AMBER-AFNO
+achieves competitive or superior accuracy with significant gains in training
+efficiency, inference speed, and memory usage.</p></br><a href="http://arxiv.org/pdf/2508.01217v1" target="_blank"><h2>Uncertainty Quantification for Large-Scale Deep Networks via Post-StoNet
+  Modeling</h2></a><strong><u>Authors:</u></strong>  Yan Sun, Faming Liang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep learning has revolutionized modern data science. However, how to
+accurately quantify the uncertainty of predictions from large-scale deep neural
+networks (DNNs) remains an unresolved issue. To address this issue, we
+introduce a novel post-processing approach. This approach feeds the output from
+the last hidden layer of a pre-trained large-scale DNN model into a stochastic
+neural network (StoNet), then trains the StoNet with a sparse penalty on a
+validation dataset and constructs prediction intervals for future observations.
+We establish a theoretical guarantee for the validity of this approach; in
+particular, the parameter estimation consistency for the sparse StoNet is
+essential for the success of this approach. Comprehensive experiments
+demonstrate that the proposed approach can construct honest confidence
+intervals with shorter interval lengths compared to conformal methods and
+achieves better calibration compared to other post-hoc calibration techniques.
+Additionally, we show that the StoNet formulation provides us with a platform
+to adapt sparse learning theory and methods from linear models to DNNs.</p></br><a href="http://arxiv.org/pdf/2508.02069v1" target="_blank"><h2>SpikeSTAG: Spatial-Temporal Forecasting via GNN-SNN Collaboration</h2></a><strong><u>Authors:</u></strong>  Bang Hu, Changze Lv, Mingjie Li, Yunpeng Liu, Xiaoqing Zheng, Fengzhe Zhang, Wei cao, Fan Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 7 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Spiking neural networks (SNNs), inspired by the spiking behavior of
+biological neurons, offer a distinctive approach for capturing the complexities
+of temporal data. However, their potential for spatial modeling in multivariate
+time-series forecasting remains largely unexplored. To bridge this gap, we
+introduce a brand new SNN architecture, which is among the first to seamlessly
+integrate graph structural learning with spike-based temporal processing for
+multivariate time-series forecasting. Specifically, we first embed time
+features and an adaptive matrix, eliminating the need for predefined graph
+structures. We then further learn sequence features through the Observation
+(OBS) Block. Building upon this, our Multi-Scale Spike Aggregation (MSSA)
+hierarchically aggregates neighborhood information through spiking SAGE layers,
+enabling multi-hop feature extraction while eliminating the need for
+floating-point operations. Finally, we propose a Dual-Path Spike Fusion (DSF)
+Block to integrate spatial graph features and temporal dynamics via a
+spike-gated mechanism, combining LSTM-processed sequences with spiking
+self-attention outputs, effectively improve the model accuracy of long sequence
+datasets. Experiments show that our model surpasses the state-of-the-art
+SNN-based iSpikformer on all datasets and outperforms traditional temporal
+models at long horizons, thereby establishing a new paradigm for efficient
+spatial-temporal modeling.</p></br><a href="http://arxiv.org/pdf/2508.02411v1" target="_blank"><h2>HGTS-Former: Hierarchical HyperGraph Transformer for Multivariate Time
+  Series Analysis</h2></a><strong><u>Authors:</u></strong>  Xiao Wang, Hao Si, Fan Zhang, Xiaoya Zhou, Dengdi Sun, Wanli Lyu, Qingquan Yang, Jin Tang</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multivariate time series analysis has long been one of the key research
+topics in the field of artificial intelligence. However, analyzing complex time
+series data remains a challenging and unresolved problem due to its high
+dimensionality, dynamic nature, and complex interactions among variables.
+Inspired by the strong structural modeling capability of hypergraphs, this
+paper proposes a novel hypergraph-based time series transformer backbone
+network, termed HGTS-Former, to address the multivariate coupling in time
+series data. Specifically, given the multivariate time series signal, we first
+normalize and embed each patch into tokens. Then, we adopt the multi-head
+self-attention to enhance the temporal representation of each patch. The
+hierarchical hypergraphs are constructed to aggregate the temporal patterns
+within each channel and fine-grained relations between different variables.
+After that, we convert the hyperedge into node features through the EdgeToNode
+module and adopt the feed-forward network to further enhance the output
+features. Extensive experiments conducted on two multivariate time series tasks
+and eight datasets fully validated the effectiveness of our proposed
+HGTS-Former. The source code will be released on
+https://github.com/Event-AHU/Time_Series_Analysis.</p></br><a href="http://arxiv.org/pdf/2508.02001v1" target="_blank"><h2>Convolutions are Competitive with Transformers for Encrypted Traffic
+  Classification with Pre-training</h2></a><strong><u>Authors:</u></strong>  Chungang Lin, Weiyao Zhang, Tianyu Zuo, Chao Zha, Yilong Jiang, Ruiqi Meng, Haitong Luo, Xuying Meng, Yujun Zhang</br><strong><u>Categories:</u></strong> cs.NI, cs.LG</br><strong><u>Comments:</u></strong> Under review</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Encrypted traffic classification is vital for modern network management and
+security. To reduce reliance on handcrafted features and labeled data, recent
+methods focus on learning generic representations through pre-training on
+large-scale unlabeled data. However, current pre-trained models face two
+limitations originating from the adopted Transformer architecture: (1) Limited
+model efficiency due to the self-attention mechanism with quadratic complexity;
+(2) Unstable traffic scalability to longer byte sequences, as the explicit
+positional encodings fail to generalize to input lengths not seen during
+pre-training. In this paper, we investigate whether convolutions, with linear
+complexity and implicit positional encoding, are competitive with Transformers
+in encrypted traffic classification with pre-training. We first conduct a
+systematic comparison, and observe that convolutions achieve higher efficiency
+and scalability, with lower classification performance. To address this
+trade-off, we propose NetConv, a novel pre-trained convolution model for
+encrypted traffic classification. NetConv employs stacked traffic convolution
+layers, which enhance the ability to capture localized byte-sequence patterns
+through window-wise byte scoring and sequence-wise byte gating. We design a
+continuous byte masking pre-training task to help NetConv learn
+protocol-specific patterns. Experimental results on four tasks demonstrate that
+NetConv improves average classification performance by 6.88% and model
+throughput by 7.41X over existing pre-trained models.</p></br><a href="http://arxiv.org/pdf/2508.02600v1" target="_blank"><h2>Adaptive Riemannian Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Xudong Wang, Tongxin Li, Chris Ding, Jicong Fan</br><strong><u>Categories:</u></strong> cs.LG, I.2; I.5.1; I.5.2</br><strong><u>Comments:</u></strong> Under Review</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph data often exhibits complex geometric heterogeneity, where structures
+with varying local curvature, such as tree-like hierarchies and dense
+communities, coexist within a single network. Existing geometric GNNs, which
+embed graphs into single fixed-curvature manifolds or discrete product spaces,
+struggle to capture this diversity. We introduce Adaptive Riemannian Graph
+Neural Networks (ARGNN), a novel framework that learns a continuous and
+anisotropic Riemannian metric tensor field over the graph. It allows each node
+to determine its optimal local geometry, enabling the model to fluidly adapt to
+the graph's structural landscape. Our core innovation is an efficient
+parameterization of the node-wise metric tensor, specializing to a learnable
+diagonal form that captures directional geometric information while maintaining
+computational tractability. To ensure geometric regularity and stable training,
+we integrate a Ricci flow-inspired regularization that smooths the learned
+manifold. Theoretically, we establish the rigorous geometric evolution
+convergence guarantee for ARGNN and provide a continuous generalization that
+unifies prior fixed or mixed-curvature GNNs. Empirically, our method
+demonstrates superior performance on both homophilic and heterophilic benchmark
+datasets with the ability to capture diverse structures adaptively. Moreover,
+the learned geometries both offer interpretable insights into the underlying
+graph structure and empirically corroborate our theoretical analysis.</p></br><a href="http://arxiv.org/pdf/2508.01848v1" target="_blank"><h2>Causal Discovery in Multivariate Time Series through Mutual Information
+  Featurization</h2></a><strong><u>Authors:</u></strong>  Gian Marco Paldino, Gianluca Bontempi</br><strong><u>Categories:</u></strong> cs.LG, stat.ME, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> causality (abstract)</br><p><strong><u>Abstract:</u></strong> Discovering causal relationships in complex multivariate time series is a
+fundamental scientific challenge. Traditional methods often falter, either by
+relying on restrictive linear assumptions or on conditional independence tests
+that become uninformative in the presence of intricate, non-linear dynamics.
+This paper proposes a new paradigm, shifting from statistical testing to
+pattern recognition. We hypothesize that a causal link creates a persistent and
+learnable asymmetry in the flow of information through a system's temporal
+graph, even when clear conditional independencies are obscured. We introduce
+Temporal Dependency to Causality (TD2C), a supervised learning framework that
+operationalizes this hypothesis. TD2C learns to recognize these complex causal
+signatures from a rich set of information-theoretic and statistical
+descriptors. Trained exclusively on a diverse collection of synthetic time
+series, TD2C demonstrates remarkable zero-shot generalization to unseen
+dynamics and established, realistic benchmarks. Our results show that TD2C
+achieves state-of-the-art performance, consistently outperforming established
+methods, particularly in high-dimensional and non-linear settings. By reframing
+the discovery problem, our work provides a robust and scalable new tool for
+uncovering causal structures in complex systems.</p></br><a href="http://arxiv.org/pdf/2508.02429v1" target="_blank"><h2>Multimodal Large Language Models for End-to-End Affective Computing:
+  Benchmarking and Boosting with Generative Knowledge Prompting</h2></a><strong><u>Authors:</u></strong>  Miaosen Luo, Jiesen Long, Zequn Li, Yunying Yang, Yuncheng Jiang, Sijie Mai</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal Affective Computing (MAC) aims to recognize and interpret human
+emotions by integrating information from diverse modalities such as text,
+video, and audio. Recent advancements in Multimodal Large Language Models
+(MLLMs) have significantly reshaped the landscape of MAC by offering a unified
+framework for processing and aligning cross-modal information. However,
+practical challenges remain, including performance variability across complex
+MAC tasks and insufficient understanding of how architectural designs and data
+characteristics impact affective analysis. To address these gaps, we conduct a
+systematic benchmark evaluation of state-of-the-art open-source MLLMs capable
+of concurrently processing audio, visual, and textual modalities across
+multiple established MAC datasets. Our evaluation not only compares the
+performance of these MLLMs but also provides actionable insights into model
+optimization by analyzing the influence of model architectures and dataset
+properties. Furthermore, we propose a novel hybrid strategy that combines
+generative knowledge prompting with supervised fine-tuning to enhance MLLMs'
+affective computing capabilities. Experimental results demonstrate that this
+integrated approach significantly improves performance across various MAC
+tasks, offering a promising avenue for future research and development in this
+field. Our code is released on https://github.com/LuoMSen/MLLM-MAC.</p></br><a href="http://arxiv.org/pdf/2508.02049v1" target="_blank"><h2>Epi$^2$-Net: Advancing Epidemic Dynamics Forecasting with
+  Physics-Inspired Neural Networks</h2></a><strong><u>Authors:</u></strong>  Rui Sun, Chenghua Gong, Tianjun Gu, Yuhao Zheng, Jie Ding, Juyuan Zhang, Liming Pan, Linyuan Lü</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Advancing epidemic dynamics forecasting is vital for targeted interventions
+and safeguarding public health. Current approaches mainly fall into two
+categories: mechanism-based and data-driven models. Mechanism-based models are
+constrained by predefined compartmental structures and oversimplified system
+assumptions, limiting their ability to model complex real-world dynamics, while
+data-driven models focus solely on intrinsic data dependencies without physical
+or epidemiological constraints, risking biased or misleading representations.
+Although recent studies have attempted to integrate epidemiological knowledge
+into neural architectures, most of them fail to reconcile explicit physical
+priors with neural representations. To overcome these obstacles, we introduce
+Epi$^2$-Net, a Epidemic Forecasting Framework built upon Physics-Inspired
+Neural Networks. Specifically, we propose reconceptualizing epidemic
+transmission from the physical transport perspective, introducing the concept
+of neural epidemic transport. Further, we present a physic-inspired deep
+learning framework, and integrate physical constraints with neural modules to
+model spatio-temporal patterns of epidemic dynamics. Experiments on real-world
+datasets have demonstrated that Epi$^2$-Net outperforms state-of-the-art
+methods in epidemic forecasting, providing a promising solution for future
+epidemic containment. The code is available at:
+https://anonymous.4open.science/r/Epi-2-Net-48CE.</p></br></body>

@@ -1,0 +1,375 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 11 Jun 2025 to 13 Jun 2025</em></font><a href="http://arxiv.org/pdf/2506.10089v1" target="_blank"><h2>Optimizing Latent Dimension Allocation in Hierarchical VAEs: Balancing
+  Attenuation and Information Retention for OOD Detection</h2></a><strong><u>Authors:</u></strong>  Dane Williamson, Yangfeng Ji, Matthew Dwyer</br><strong><u>Categories:</u></strong> cs.LG, I.2.6; I.5.1; G.3</br><strong><u>Comments:</u></strong> 41 pages, 6 figures</br><p><strong><u>Abstract:</u></strong> Out-of-distribution (OOD) detection is a critical task in machine learning,
+particularly for safety-critical applications where unexpected inputs must be
+reliably flagged. While hierarchical variational autoencoders (HVAEs) offer
+improved representational capacity over traditional VAEs, their performance is
+highly sensitive to how latent dimensions are distributed across layers.
+Existing approaches often allocate latent capacity arbitrarily, leading to
+ineffective representations or posterior collapse. In this work, we introduce a
+theoretically grounded framework for optimizing latent dimension allocation in
+HVAEs, drawing on principles from information theory to formalize the trade-off
+between information loss and representational attenuation. We prove the
+existence of an optimal allocation ratio $r^{\ast}$ under a fixed latent
+budget, and empirically show that tuning this ratio consistently improves OOD
+detection performance across datasets and architectures. Our approach
+outperforms baseline HVAE configurations and provides practical guidance for
+principled latent structure design, leading to more robust OOD detection with
+deep generative models.</p></br><a href="http://arxiv.org/pdf/2506.10378v1" target="_blank"><h2>Discovering Hierarchical Latent Capabilities of Language Models via
+  Causal Representation Learning</h2></a><strong><u>Authors:</u></strong>  Jikai Jin, Vasilis Syrgkanis, Sham Kakade, Hanlin Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Faithful evaluation of language model capabilities is crucial for deriving
+actionable insights that can inform model development. However, rigorous causal
+evaluations in this domain face significant methodological challenges,
+including complex confounding effects and prohibitive computational costs
+associated with extensive retraining. To tackle these challenges, we propose a
+causal representation learning framework wherein observed benchmark performance
+is modeled as a linear transformation of a few latent capability factors.
+Crucially, these latent factors are identified as causally interrelated after
+appropriately controlling for the base model as a common confounder. Applying
+this approach to a comprehensive dataset encompassing over 1500 models
+evaluated across six benchmarks from the Open LLM Leaderboard, we identify a
+concise three-node linear causal structure that reliably explains the observed
+performance variations. Further interpretation of this causal structure
+provides substantial scientific insights beyond simple numerical rankings:
+specifically, we reveal a clear causal direction starting from general
+problem-solving capabilities, advancing through instruction-following
+proficiency, and culminating in mathematical reasoning ability. Our results
+underscore the essential role of carefully controlling base model variations
+during evaluation, a step critical to accurately uncovering the underlying
+causal relationships among latent model capabilities.</p></br><a href="http://arxiv.org/pdf/2506.09368v1" target="_blank"><h2>Anomaly Detection and Generation with Diffusion Models: A Survey</h2></a><strong><u>Authors:</u></strong>  Yang Liu, Jing Liu, Chengfang Li, Rui Xi, Wenchao Li, Liang Cao, Jin Wang, Laurence T. Yang, Junsong Yuan, Wei Zhou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 20 pages, 11 figures, 13 tables</br><p><strong><u>Abstract:</u></strong> Anomaly detection (AD) plays a pivotal role across diverse domains, including
+cybersecurity, finance, healthcare, and industrial manufacturing, by
+identifying unexpected patterns that deviate from established norms in
+real-world data. Recent advancements in deep learning, specifically diffusion
+models (DMs), have sparked significant interest due to their ability to learn
+complex data distributions and generate high-fidelity samples, offering a
+robust framework for unsupervised AD. In this survey, we comprehensively review
+anomaly detection and generation with diffusion models (ADGDM), presenting a
+tutorial-style analysis of the theoretical foundations and practical
+implementations and spanning images, videos, time series, tabular, and
+multimodal data. Crucially, unlike existing surveys that often treat anomaly
+detection and generation as separate problems, we highlight their inherent
+synergistic relationship. We reveal how DMs enable a reinforcing cycle where
+generation techniques directly address the fundamental challenge of anomaly
+data scarcity, while detection methods provide critical feedback to improve
+generation fidelity and relevance, advancing both capabilities beyond their
+individual potential. A detailed taxonomy categorizes ADGDM methods based on
+anomaly scoring mechanisms, conditioning strategies, and architectural designs,
+analyzing their strengths and limitations. We final discuss key challenges
+including scalability and computational efficiency, and outline promising
+future directions such as efficient architectures, conditioning strategies, and
+integration with foundation models (e.g., visual-language models and large
+language models). By synthesizing recent advances and outlining open research
+questions, this survey aims to guide researchers and practitioners in
+leveraging DMs for innovative AD solutions across diverse applications.</p></br><a href="http://arxiv.org/pdf/2506.10282v1" target="_blank"><h2>Graph-MLLM: Harnessing Multimodal Large Language Models for Multimodal
+  Graph Learning</h2></a><strong><u>Authors:</u></strong>  Jiajin Liu, Dongzhe Fan, Jiacheng Shen, Chuanhao Ji, Daochen Zha, Qiaoyu Tan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 16 pages, 4 figures</br><p><strong><u>Abstract:</u></strong> Multimodal Large Language Models (MLLMs) have demonstrated remarkable
+capabilities in representing and understanding diverse modalities. However,
+they typically focus on modality alignment in a pairwise manner while
+overlooking structural relationships across data points. Integrating
+multimodality with structured graph information (i.e., multimodal graphs, MMGs)
+is essential for real-world applications such as social networks, healthcare,
+and recommendation systems. Existing MMG learning methods fall into three
+paradigms based on how they leverage MLLMs: Encoder, Aligner, and Predictor.
+MLLM-as-Encoder focuses on enhancing graph neural networks (GNNs) via
+multimodal feature fusion; MLLM-as-Aligner aligns multimodal attributes in
+language or hidden space to enable LLM-based graph reasoning; MLLM-as-Predictor
+treats MLLMs as standalone reasoners with in-context learning or fine-tuning.
+Despite their advances, the MMG field lacks a unified benchmark to fairly
+evaluate across these approaches, making it unclear what progress has been
+made. To bridge this gap, we present Graph-MLLM, a comprehensive benchmark for
+multimodal graph learning by systematically evaluating these three paradigms
+across six datasets with different domains. Through extensive experiments, we
+observe that jointly considering the visual and textual attributes of the nodes
+benefits graph learning, even when using pre-trained text-to-image alignment
+models (e.g., CLIP) as encoders. We also find that converting visual attributes
+into textual descriptions further improves performance compared to directly
+using visual inputs. Moreover, we observe that fine-tuning MLLMs on specific
+MMGs can achieve state-of-the-art results in most scenarios, even without
+explicit graph structure information. We hope that our open-sourced library
+will facilitate rapid, equitable evaluation and inspire further innovative
+research in this field.</p></br><a href="http://arxiv.org/pdf/2506.10613v1" target="_blank"><h2>Data Driven Diagnosis for Large Cyber-Physical-Systems with Minimal
+  Prior Information</h2></a><strong><u>Authors:</u></strong>  Henrik Sebastian Steude, Alexander Diedrich, Ingo Pill, Lukas Moddemann, Daniel Vranješ, Oliver Niggemann</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Diagnostic processes for complex cyber-physical systems often require
+extensive prior knowledge in the form of detailed system models or
+comprehensive training data. However, obtaining such information poses a
+significant challenge. To address this issue, we present a new diagnostic
+approach that operates with minimal prior knowledge, requiring only a basic
+understanding of subsystem relationships and data from nominal operations. Our
+method combines a neural network-based symptom generator, which employs
+subsystem-level anomaly detection, with a new graph diagnosis algorithm that
+leverages minimal causal relationship information between
+subsystems-information that is typically available in practice. Our experiments
+with fully controllable simulated datasets show that our method includes the
+true causal component in its diagnosis set for 82 p.c. of all cases while
+effectively reducing the search space in 73 p.c. of the scenarios. Additional
+tests on the real-world Secure Water Treatment dataset showcase the approach's
+potential for practical scenarios. Our results thus highlight our approach's
+potential for practical applications with large and complex cyber-physical
+systems where limited prior knowledge is available.</p></br><a href="http://arxiv.org/pdf/2506.10060v1" target="_blank"><h2>Textual Bayes: Quantifying Uncertainty in LLM-Based Systems</h2></a><strong><u>Authors:</u></strong>  Brendan Leigh Ross, Noël Vouitsis, Atiyeh Ashari Ghomi, Rasa Hosseinzadeh, Ji Xin, Zhaoyan Liu, Yi Sui, Shiyi Hou, Kin Kwan Leung, Gabriel Loaiza-Ganem, Jesse C. Cresswell</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Although large language models (LLMs) are becoming increasingly capable of
+solving challenging real-world tasks, accurately quantifying their uncertainty
+remains a critical open problem, which limits their applicability in
+high-stakes domains. This challenge is further compounded by the closed-source,
+black-box nature of many state-of-the-art LLMs. Moreover, LLM-based systems can
+be highly sensitive to the prompts that bind them together, which often require
+significant manual tuning (i.e., prompt engineering). In this work, we address
+these challenges by viewing LLM-based systems through a Bayesian lens. We
+interpret prompts as textual parameters in a statistical model, allowing us to
+use a small training dataset to perform Bayesian inference over these prompts.
+This novel perspective enables principled uncertainty quantification over both
+the model's textual parameters and its downstream predictions, while also
+incorporating prior beliefs about these parameters expressed in free-form text.
+To perform Bayesian inference, a difficult problem even for well-studied data
+modalities, we introduce Metropolis-Hastings through LLM Proposals (MHLP), a
+novel Markov chain Monte Carlo (MCMC) algorithm that combines prompt
+optimization techniques with standard MCMC methods. MHLP is a turnkey
+modification to existing LLM pipelines, including those that rely exclusively
+on closed-source models. Empirically, we demonstrate that our method yields
+improvements in both predictive accuracy and uncertainty quantification (UQ) on
+a range of LLM benchmarks and UQ tasks. More broadly, our work demonstrates a
+viable path for incorporating methods from the rich Bayesian literature into
+the era of LLMs, paving the way for more reliable and calibrated LLM-based
+systems.</p></br><a href="http://arxiv.org/pdf/2506.09940v1" target="_blank"><h2>The Sample Complexity of Online Strategic Decision Making with
+  Information Asymmetry and Knowledge Transportability</h2></a><strong><u>Authors:</u></strong>  Jiachen Hu, Rui Ai, Han Zhong, Xiaoyu Chen, Liwei Wang, Zhaoran Wang, Zhuoran Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Accepted at ICML 2025</br><p><strong><u>Abstract:</u></strong> Information asymmetry is a pervasive feature of multi-agent systems,
+especially evident in economics and social sciences. In these settings, agents
+tailor their actions based on private information to maximize their rewards.
+These strategic behaviors often introduce complexities due to confounding
+variables. Simultaneously, knowledge transportability poses another significant
+challenge, arising from the difficulties of conducting experiments in target
+environments. It requires transferring knowledge from environments where
+empirical data is more readily available. Against these backdrops, this paper
+explores a fundamental question in online learning: Can we employ non-i.i.d.
+actions to learn about confounders even when requiring knowledge transfer? We
+present a sample-efficient algorithm designed to accurately identify system
+dynamics under information asymmetry and to navigate the challenges of
+knowledge transfer effectively in reinforcement learning, framed within an
+online strategic interaction model. Our method provably achieves learning of an
+$\epsilon$-optimal policy with a tight sample complexity of $O(1/\epsilon^2)$.</p></br><a href="http://arxiv.org/pdf/2506.10586v1" target="_blank"><h2>Size-adaptive Hypothesis Testing for Fairness</h2></a><strong><u>Authors:</u></strong>  Antonio Ferrara, Francesco Cozzi, Alan Perotti, André Panisson, Francesco Bonchi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CY, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Determining whether an algorithmic decision-making system discriminates
+against a specific demographic typically involves comparing a single point
+estimate of a fairness metric against a predefined threshold. This practice is
+statistically brittle: it ignores sampling error and treats small demographic
+subgroups the same as large ones. The problem intensifies in intersectional
+analyses, where multiple sensitive attributes are considered jointly, giving
+rise to a larger number of smaller groups. As these groups become more
+granular, the data representing them becomes too sparse for reliable
+estimation, and fairness metrics yield excessively wide confidence intervals,
+precluding meaningful conclusions about potential unfair treatments.
+  In this paper, we introduce a unified, size-adaptive, hypothesis-testing
+framework that turns fairness assessment into an evidence-based statistical
+decision. Our contribution is twofold. (i) For sufficiently large subgroups, we
+prove a Central-Limit result for the statistical parity difference, leading to
+analytic confidence intervals and a Wald test whose type-I (false positive)
+error is guaranteed at level $\alpha$. (ii) For the long tail of small
+intersectional groups, we derive a fully Bayesian Dirichlet-multinomial
+estimator; Monte-Carlo credible intervals are calibrated for any sample size
+and naturally converge to Wald intervals as more data becomes available. We
+validate our approach empirically on benchmark datasets, demonstrating how our
+tests provide interpretable, statistically rigorous decisions under varying
+degrees of data availability and intersectionality.</p></br><a href="http://arxiv.org/pdf/2506.10412v1" target="_blank"><h2>Time-IMM: A Dataset and Benchmark for Irregular Multimodal Multivariate
+  Time Series</h2></a><strong><u>Authors:</u></strong>  Ching Chang, Jeehyun Hwang, Yidan Shi, Haixin Wang, Wen-Chih Peng, Tien-Fu Chen, Wei Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> This paper is currently under review</br><p><strong><u>Abstract:</u></strong> Time series data in real-world applications such as healthcare, climate
+modeling, and finance are often irregular, multimodal, and messy, with varying
+sampling rates, asynchronous modalities, and pervasive missingness. However,
+existing benchmarks typically assume clean, regularly sampled, unimodal data,
+creating a significant gap between research and real-world deployment. We
+introduce Time-IMM, a dataset specifically designed to capture cause-driven
+irregularity in multimodal multivariate time series. Time-IMM represents nine
+distinct types of time series irregularity, categorized into trigger-based,
+constraint-based, and artifact-based mechanisms. Complementing the dataset, we
+introduce IMM-TSF, a benchmark library for forecasting on irregular multimodal
+time series, enabling asynchronous integration and realistic evaluation.
+IMM-TSF includes specialized fusion modules, including a timestamp-to-text
+fusion module and a multimodality fusion module, which support both
+recency-aware averaging and attention-based integration strategies. Empirical
+results demonstrate that explicitly modeling multimodality on irregular time
+series data leads to substantial gains in forecasting performance. Time-IMM and
+IMM-TSF provide a foundation for advancing time series analysis under
+real-world conditions. The dataset is publicly available at
+https://www.kaggle.com/datasets/blacksnail789521/time-imm/data, and the
+benchmark library can be accessed at
+https://anonymous.4open.science/r/IMMTSF_NeurIPS2025.</p></br><a href="http://arxiv.org/pdf/2506.10119v1" target="_blank"><h2>Detecção da Psoríase Utilizando Visão Computacional: Uma
+  Abordagem Comparativa Entre CNNs e Vision Transformers</h2></a><strong><u>Authors:</u></strong>  Natanael Lucena, Fábio S. da Silva, Ricardo Rios</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 12 pages, in Portuguese language, 2 figures, 2 tables, and 4 formulas. To be published in the Proceedings of the LII Brazilian Integrated Software and Hardware Seminar 2025 (SEMISH 2025)</br><p><strong><u>Abstract:</u></strong> This paper presents a comparison of the performance of Convolutional Neural
+Networks (CNNs) and Vision Transformers (ViTs) in the task of multi-classifying
+images containing lesions of psoriasis and diseases similar to it. Models
+pre-trained on ImageNet were adapted to a specific data set. Both achieved high
+predictive metrics, but the ViTs stood out for their superior performance with
+smaller models. Dual Attention Vision Transformer-Base (DaViT-B) obtained the
+best results, with an f1-score of 96.4%, and is recommended as the most
+efficient architecture for automated psoriasis detection. This article
+reinforces the potential of ViTs for medical image classification tasks.</p></br><a href="http://arxiv.org/pdf/2506.09338v1" target="_blank"><h2>Know What You Don't Know: Uncertainty Calibration of Process Reward
+  Models</h2></a><strong><u>Authors:</u></strong>  Young-Jin Park, Kristjan Greenewald, Kaveh Alim, Hao Wang, Navid Azizan</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Process reward models (PRMs) play a central role in guiding inference-time
+scaling algorithms for large language models (LLMs). However, we observe that
+even state-of-the-art PRMs can be poorly calibrated and often overestimate
+success probabilities. To address this, we present a calibration approach,
+performed via quantile regression, that adjusts PRM outputs to better align
+with true success probabilities. Leveraging these calibrated success estimates
+and their associated confidence bounds, we introduce an \emph{instance-adaptive
+scaling} (IAS) framework that dynamically adjusts the inference budget based on
+the estimated likelihood that a partial reasoning trajectory will yield a
+correct final answer. Unlike conventional methods that allocate a fixed number
+of reasoning trajectories per query, this approach successfully adapts to each
+instance and reasoning step when using our calibrated PRMs. Experiments on
+mathematical reasoning benchmarks show that (i) our PRM calibration method
+successfully achieves small calibration error, outperforming the baseline
+methods, (ii) calibration is crucial for enabling effective adaptive scaling,
+and (iii) the proposed IAS strategy reduces inference costs while maintaining
+final answer accuracy, utilizing less compute on more confident problems as
+desired.</p></br><a href="http://arxiv.org/pdf/2506.10189v1" target="_blank"><h2>Improving Oral Cancer Outcomes Through Machine Learning and
+  Dimensionality Reduction</h2></a><strong><u>Authors:</u></strong>  Mohammad Subhi Al-Batah, Muhyeeddin Alqaraleh, Mowafaq Salem Alzboon</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Oral cancer presents a formidable challenge in oncology, necessitating early
+diagnosis and accurate prognosis to enhance patient survival rates. Recent
+advancements in machine learning and data mining have revolutionized
+traditional diagnostic methodologies, providing sophisticated and automated
+tools for differentiating between benign and malignant oral lesions. This study
+presents a comprehensive review of cutting-edge data mining methodologies,
+including Neural Networks, K-Nearest Neighbors (KNN), Support Vector Machines
+(SVM), and ensemble learning techniques, specifically applied to the diagnosis
+and prognosis of oral cancer. Through a rigorous comparative analysis, our
+findings reveal that Neural Networks surpass other models, achieving an
+impressive classification accuracy of 93,6 % in predicting oral cancer.
+Furthermore, we underscore the potential benefits of integrating feature
+selection and dimensionality reduction techniques to enhance model performance.
+These insights underscore the significant promise of advanced data mining
+techniques in bolstering early detection, optimizing treatment strategies, and
+ultimately improving patient outcomes in the realm of oral oncology.</p></br><a href="http://arxiv.org/pdf/2506.10982v1" target="_blank"><h2>Rethinking Losses for Diffusion Bridge Samplers</h2></a><strong><u>Authors:</u></strong>  Sebastian Sanokowski, Lukas Gruber, Christoph Bartmann, Sepp Hochreiter, Sebastian Lehner</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Diffusion bridges are a promising class of deep-learning methods for sampling
+from unnormalized distributions. Recent works show that the Log Variance (LV)
+loss consistently outperforms the reverse Kullback-Leibler (rKL) loss when
+using the reparametrization trick to compute rKL-gradients. While the on-policy
+LV loss yields identical gradients to the rKL loss when combined with the
+log-derivative trick for diffusion samplers with non-learnable forward
+processes, this equivalence does not hold for diffusion bridges or when
+diffusion coefficients are learned. Based on this insight we argue that for
+diffusion bridges the LV loss does not represent an optimization objective that
+can be motivated like the rKL loss via the data processing inequality. Our
+analysis shows that employing the rKL loss with the log-derivative trick
+(rKL-LD) does not only avoid these conceptual problems but also consistently
+outperforms the LV loss. Experimental results with different types of diffusion
+bridges on challenging benchmarks show that samplers trained with the rKL-LD
+loss achieve better performance. From a practical perspective we find that
+rKL-LD requires significantly less hyperparameter optimization and yields more
+stable training behavior.</p></br><a href="http://arxiv.org/pdf/2506.09508v1" target="_blank"><h2>Efficient Preference-Based Reinforcement Learning: Randomized
+  Exploration Meets Experimental Design</h2></a><strong><u>Authors:</u></strong>  Andreas Schlaginhaufen, Reda Ouhamma, Maryam Kamgarpour</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.RO, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We study reinforcement learning from human feedback in general Markov
+decision processes, where agents learn from trajectory-level preference
+comparisons. A central challenge in this setting is to design algorithms that
+select informative preference queries to identify the underlying reward while
+ensuring theoretical guarantees. We propose a meta-algorithm based on
+randomized exploration, which avoids the computational challenges associated
+with optimistic approaches and remains tractable. We establish both regret and
+last-iterate guarantees under mild reinforcement learning oracle assumptions.
+To improve query complexity, we introduce and analyze an improved algorithm
+that collects batches of trajectory pairs and applies optimal experimental
+design to select informative comparison queries. The batch structure also
+enables parallelization of preference queries, which is relevant in practical
+deployment as feedback can be gathered concurrently. Empirical evaluation
+confirms that the proposed method is competitive with reward-based
+reinforcement learning while requiring a small number of preference queries.</p></br><a href="http://arxiv.org/pdf/2506.10184v1" target="_blank"><h2>Optimizing Genetic Algorithms with Multilayer Perceptron Networks for
+  Enhancing TinyFace Recognition</h2></a><strong><u>Authors:</u></strong>  Mohammad Subhi Al-Batah, Mowafaq Salem Alzboon, Muhyeeddin Alqaraleh</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This study conducts an empirical examination of MLP networks investigated
+through a rigorous methodical experimentation process involving three diverse
+datasets: TinyFace, Heart Disease, and Iris. Study Overview: The study includes
+three key methods: a) a baseline training using the default settings for the
+Multi-Layer Perceptron (MLP), b) feature selection using Genetic Algorithm (GA)
+based refinement c) Principal Component Analysis (PCA) based dimension
+reduction. The results show important information on how such techniques affect
+performance. While PCA had showed benefits in low-dimensional and noise-free
+datasets GA consistently increased accuracy in complex datasets by accurately
+identifying critical features. Comparison reveals that feature selection and
+dimensionality reduction play interdependent roles in enhancing MLP
+performance. The study contributes to the literature on feature engineering and
+neural network parameter optimization, offering practical guidelines for a wide
+range of machine learning tasks</p></br><a href="http://arxiv.org/pdf/2506.09862v1" target="_blank"><h2>Guided Graph Compression for Quantum Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Mikel Casals, Vasilis Belis, Elias F. Combarro, Eduard Alarcón, Sofia Vallecorsa, Michele Grossi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, hep-ex, quant-ph</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) are effective for processing graph-structured
+data but face challenges with large graphs due to high memory requirements and
+inefficient sparse matrix operations on GPUs. Quantum Computing (QC) offers a
+promising avenue to address these issues and inspires new algorithmic
+approaches. In particular, Quantum Graph Neural Networks (QGNNs) have been
+explored in recent literature. However, current quantum hardware limits the
+dimension of the data that can be effectively encoded. Existing approaches
+either simplify datasets manually or use artificial graph datasets. This work
+introduces the Guided Graph Compression (GGC) framework, which uses a graph
+autoencoder to reduce both the number of nodes and the dimensionality of node
+features. The compression is guided to enhance the performance of a downstream
+classification task, which can be applied either with a quantum or a classical
+classifier. The framework is evaluated on the Jet Tagging task, a
+classification problem of fundamental importance in high energy physics that
+involves distinguishing particle jets initiated by quarks from those by gluons.
+The GGC is compared against using the autoencoder as a standalone preprocessing
+step and against a baseline classical GNN classifier. Our numerical results
+demonstrate that GGC outperforms both alternatives, while also facilitating the
+testing of novel QGNN ansatzes on realistic datasets.</p></br><a href="http://arxiv.org/pdf/2506.10259v1" target="_blank"><h2>Meta-learning Representations for Learning from Multiple Annotators</h2></a><strong><u>Authors:</u></strong>  Atsutoshi Kumagai, Tomoharu Iwata, Taishi Nishiyama, Yasutoshi Ida, Yasuhiro Fujiwara</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 24 pages</br><p><strong><u>Abstract:</u></strong> We propose a meta-learning method for learning from multiple noisy
+annotators. In many applications such as crowdsourcing services, labels for
+supervised learning are given by multiple annotators. Since the annotators have
+different skills or biases, given labels can be noisy. To learn accurate
+classifiers, existing methods require many noisy annotated data. However,
+sufficient data might be unavailable in practice. To overcome the lack of data,
+the proposed method uses labeled data obtained in different but related tasks.
+The proposed method embeds each example in tasks to a latent space by using a
+neural network and constructs a probabilistic model for learning a
+task-specific classifier while estimating annotators' abilities on the latent
+space. This neural network is meta-learned to improve the expected test
+classification performance when the classifier is adapted to a given small
+amount of annotated data. This classifier adaptation is performed by maximizing
+the posterior probability via the expectation-maximization (EM) algorithm.
+Since each step in the EM algorithm is easily computed as a closed-form and is
+differentiable, the proposed method can efficiently backpropagate the loss
+through the EM algorithm to meta-learn the neural network. We show the
+effectiveness of our method with real-world datasets with synthetic noise and
+real-world crowdsourcing datasets.</p></br><a href="http://arxiv.org/pdf/2506.10061v1" target="_blank"><h2>Generative Models of 21cm EoR Lightcones with 3D Scattering Transforms</h2></a><strong><u>Authors:</u></strong>  Ian Hothi, Erwan Allys, Benoit Semelin, Romain Meriot</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 12 pages, 10 figures, submitted to A&A</br><p><strong><u>Abstract:</u></strong> The 21cm signal from the Epoch of Reionization (EoR) is observed as a
+three-dimensional data set known as a lightcone, consisting of a redshift
+(frequency) axis and two spatial sky plane axes. When observed by radio
+interferometers, this EoR signal is strongly obscured by foregrounds that are
+several orders of magnitude stronger. Due to its inherently non-Gaussian
+nature, the EoR signal requires robust statistical tools to accurately separate
+it from these foreground contaminants, but current foreground separation
+techniques focus primarily on recovering the EoR power spectrum, often
+neglecting valuable non-Gaussian information. Recent developments in
+astrophysics, particularly in the context of the Galactic interstellar medium,
+have demonstrated the efficacy of scattering transforms - novel summary
+statistics for highly non-Gaussian processes - for component separation tasks.
+Motivated by these advances, we extend the scattering transform formalism from
+two-dimensional data sets to three-dimensional EoR lightcones. To this end, we
+introduce a 3D wavelet set from the tensor product of 2D isotropic wavelets in
+the sky plane domain and 1D wavelets in the redshift domain. As generative
+models form the basis of component separation, our focus here is on building
+and validating generative models that can be used for component separation in
+future projects. To achieve this, we construct maximum entropy generative
+models to synthesise EoR lightcones, and statistically validate the generative
+model by quantitatively comparing the synthesised EoR lightcones with the
+single target lightcone used to construct them, using independent statistics
+such as the power spectrum and Minkowski Functionals. The synthesised
+lightcones agree well with the target lightcone both statistically and
+visually, opening up the possibility of developing for component separation
+methods using 3D scattering transforms.</p></br><a href="http://arxiv.org/pdf/2506.10526v1" target="_blank"><h2>A Visibility-based 21 cm Bispectrum Estimator for Radio-interferometric
+  Data</h2></a><strong><u>Authors:</u></strong>  Sukhdeep Singh Gill, Somnath Bharadwaj</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 16 pages, 8 figures. Comments are welcome</br><p><strong><u>Abstract:</u></strong> We present a fast and scalable estimator for the binned multi-frequency
+angular bispectrum (MABS) and the 3D bispectrum (BS) of the redshifted 21 cm
+signal from radio interferometric observations. The estimator operates on
+gridded visibilities and leverages the FFT-based acceleration to efficiently
+compute the MABS and the 3D BS covering all possible triangle configurations.
+We present the formalism and validate the estimator using simulated visibility
+data for a known input model BS, considering the Murchison Widefield Array
+(MWA) observations with a bandwidth of $30.72$ MHz centered at $154.25$ MHz. We
+consider two cases, namely, without flagging, and with flagging, which has
+exactly the same frequency channels flagged as the actual data. We obtain
+estimates of the BS for a wide range of triangle shapes covering the scales
+$0.003 ~\mathrm{Mpc}^{-1}\leq k_1 \leq 1.258 ~\mathrm{Mpc}^{-1}$. The estimated
+BS shows excellent agreement with analytical predictions based on the input
+model BS. We find that the deviations, which are below 20\% even in the
+presence of flagging, are mostly consistent with the expected statistical
+fluctuations. This work paves the way for reliable observational estimates of
+the 21 cm BS for the epoch of reionization, where the signal is predicted to be
+highly non-Gaussian.</p></br><a href="http://arxiv.org/pdf/2506.09532v1" target="_blank"><h2>Athena: Enhancing Multimodal Reasoning with Data-efficient Process
+  Reward Models</h2></a><strong><u>Authors:</u></strong>  Shuai Wang, Zhenhua Liu, Jiaheng Wei, Xuanwu Yin, Dong Li, Emad Barsoum</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> We present Athena-PRM, a multimodal process reward model (PRM) designed to
+evaluate the reward score for each step in solving complex reasoning problems.
+Developing high-performance PRMs typically demands significant time and
+financial investment, primarily due to the necessity for step-level annotations
+of reasoning steps. Conventional automated labeling methods, such as Monte
+Carlo estimation, often produce noisy labels and incur substantial
+computational costs. To efficiently generate high-quality process-labeled data,
+we propose leveraging prediction consistency between weak and strong completers
+as a criterion for identifying reliable process labels. Remarkably, Athena-PRM
+demonstrates outstanding effectiveness across various scenarios and benchmarks
+with just 5,000 samples. Furthermore, we also develop two effective strategies
+to improve the performance of PRMs: ORM initialization and up-sampling for
+negative data. We validate our approach in three specific scenarios:
+verification for test time scaling, direct evaluation of reasoning step
+correctness, and reward ranked fine-tuning. Our Athena-PRM consistently
+achieves superior performance across multiple benchmarks and scenarios.
+Notably, when using Qwen2.5-VL-7B as the policy model, Athena-PRM enhances
+performance by 10.2 points on WeMath and 7.1 points on MathVista for test time
+scaling. Furthermore, Athena-PRM sets the state-of-the-art (SoTA) results in
+VisualProcessBench and outperforms the previous SoTA by 3.9 F1-score,
+showcasing its robust capability to accurately assess the correctness of the
+reasoning step. Additionally, utilizing Athena-PRM as the reward model, we
+develop Athena-7B with reward ranked fine-tuning and outperforms baseline with
+a significant margin on five benchmarks.</p></br></body>

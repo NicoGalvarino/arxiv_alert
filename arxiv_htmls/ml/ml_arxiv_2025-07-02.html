@@ -1,0 +1,211 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 29 Jun 2025 to 02 Jul 2025</em></font><a href="http://arxiv.org/pdf/2506.23344v1" target="_blank"><h2>Data-Driven Self-Supervised Learning for the Discovery of Solution
+  Singularity for Partial Differential Equations</h2></a><strong><u>Authors:</u></strong>  Difeng Cai, Paulina Sepúlveda</br><strong><u>Categories:</u></strong> math.NA, cs.LG, cs.NA, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (title, abstract)</br><p><strong><u>Abstract:</u></strong> The appearance of singularities in the function of interest constitutes a
+fundamental challenge in scientific computing. It can significantly undermine
+the effectiveness of numerical schemes for function approximation, numerical
+integration, and the solution of partial differential equations (PDEs), etc.
+The problem becomes more sophisticated if the location of the singularity is
+unknown, which is often encountered in solving PDEs. Detecting the singularity
+is therefore critical for developing efficient adaptive methods to reduce
+computational costs in various applications. In this paper, we consider
+singularity detection in a purely data-driven setting. Namely, the input only
+contains given data, such as the vertex set from a mesh. To overcome the
+limitation of the raw unlabeled data, we propose a self-supervised learning
+(SSL) framework for estimating the location of the singularity. A key component
+is a filtering procedure as the pretext task in SSL, where two filtering
+methods are presented, based on $k$ nearest neighbors and kernel density
+estimation, respectively. We provide numerical examples to illustrate the
+potential pathological or inaccurate results due to the use of raw data without
+filtering. Various experiments are presented to demonstrate the ability of the
+proposed approach to deal with input perturbation, label corruption, and
+different kinds of singularities such interior circle, boundary layer,
+concentric semicircles, etc.</p></br><a href="http://arxiv.org/pdf/2506.23068v1" target="_blank"><h2>Curious Causality-Seeking Agents Learn Meta Causal World</h2></a><strong><u>Authors:</u></strong>  Zhiyu Zhao, Haoxuan Li, Haifeng Zhang, Jun Wang, Francesco Faccio, Jürgen Schmidhuber, Mengyue Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.AP</br><strong><u>Comments:</u></strong> 33 pages</br><strong><u>Matching Keywords:</u></strong> causality (title, abstract)</br><p><strong><u>Abstract:</u></strong> When building a world model, a common assumption is that the environment has
+a single, unchanging underlying causal rule, like applying Newton's laws to
+every situation. In reality, what appears as a drifting causal mechanism is
+often the manifestation of a fixed underlying mechanism seen through a narrow
+observational window. This brings about a problem that, when building a world
+model, even subtle shifts in policy or environment states can alter the very
+observed causal mechanisms. In this work, we introduce the \textbf{Meta-Causal
+Graph} as world models, a minimal unified representation that efficiently
+encodes the transformation rules governing how causal structures shift across
+different latent world states. A single Meta-Causal Graph is composed of
+multiple causal subgraphs, each triggered by meta state, which is in the latent
+state space. Building on this representation, we introduce a
+\textbf{Causality-Seeking Agent} whose objectives are to (1) identify the meta
+states that trigger each subgraph, (2) discover the corresponding causal
+relationships by agent curiosity-driven intervention policy, and (3)
+iteratively refine the Meta-Causal Graph through ongoing curiosity-driven
+exploration and agent experiences. Experiments on both synthetic tasks and a
+challenging robot arm manipulation task demonstrate that our method robustly
+captures shifts in causal dynamics and generalizes effectively to previously
+unseen contexts.</p></br><a href="http://arxiv.org/pdf/2506.23538v1" target="_blank"><h2>Uncertainty-aware Diffusion and Reinforcement Learning for Joint Plane
+  Localization and Anomaly Diagnosis in 3D Ultrasound</h2></a><strong><u>Authors:</u></strong>  Yuhao Huang, Yueyue Xu, Haoran Dou, Jiaxiao Deng, Xin Yang, Hongyu Zheng, Dong Ni</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted by MICCAI 2025;10 pages, 3 figures</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Congenital uterine anomalies (CUAs) can lead to infertility, miscarriage,
+preterm birth, and an increased risk of pregnancy complications. Compared to
+traditional 2D ultrasound (US), 3D US can reconstruct the coronal plane,
+providing a clear visualization of the uterine morphology for assessing CUAs
+accurately. In this paper, we propose an intelligent system for simultaneous
+automated plane localization and CUA diagnosis. Our highlights are: 1) we
+develop a denoising diffusion model with local (plane) and global (volume/text)
+guidance, using an adaptive weighting strategy to optimize attention allocation
+to different conditions; 2) we introduce a reinforcement learning-based
+framework with unsupervised rewards to extract the key slice summary from
+redundant sequences, fully integrating information across multiple planes to
+reduce learning difficulty; 3) we provide text-driven uncertainty modeling for
+coarse prediction, and leverage it to adjust the classification probability for
+overall performance improvement. Extensive experiments on a large 3D uterine US
+dataset show the efficacy of our method, in terms of plane localization and CUA
+diagnosis. Code is available at https://github.com/yuhoo0302/CUA-US.</p></br><a href="http://arxiv.org/pdf/2506.23955v1" target="_blank"><h2>Variability-finding in Rubin Data Preview 1 with LSDB</h2></a><strong><u>Authors:</u></strong>  Konstantin Malanchev, Melissa DeLucchi, Neven Caplar, Alex I. Malz, Wilson Beebe, Doug Branton, Sandro Campos, Andrew Connolly, Mi Dai, Jeremy Kubica, Olivia Lynn, Rachel Mandelbaum, Sean McGuire, Eric Aubourg, Robert David Blum, Jeffrey L. Carlin, Francisco Delgado, Emmanuel Gangler, Buell T. Jannuzi, Tim Jenness, Yijung Kang, Arun Kannawadi, Marc Moniez, Andrés A. Plazas Malagón, Wouter van Reeven, David Sanmartim, Elana K. Urbach, W. M. Wood-Vasey</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.SR</br><strong><u>Comments:</u></strong> 9 pages, 5 figures</br><strong><u>Matching Keywords:</u></strong> time-domain (abstract)</br><p><strong><u>Abstract:</u></strong> The Vera C. Rubin Observatory recently released Data Preview 1 (DP1) in
+advance of the upcoming Legacy Survey of Space and Time (LSST), which will
+enable boundless discoveries in time-domain astronomy over the next ten years.
+DP1 provides an ideal sandbox for validating innovative data analysis
+approaches for the LSST mission, whose scale challenges established software
+infrastructure paradigms. This note presents a pair of such pipelines for
+variability-finding using powerful software infrastructure suited to LSST data,
+namely the HATS (Hierarchical Adaptive Tiling Scheme) format and the LSDB
+framework, developed by the LSST Interdisciplinary Network for Collaboration
+and Computing (LINCC) Frameworks team. This note presents a pair of
+variability-finding pipelines built on LSDB, the HATS catalog of DP1 data, and
+preliminary results of detected variable objects, two of which are novel
+discoveries.</p></br><a href="http://arxiv.org/pdf/2506.23492v1" target="_blank"><h2>Sample Margin-Aware Recalibration of Temperature Scaling</h2></a><strong><u>Authors:</u></strong>  Haolan Guo, Linwei Tao, Haoyang Luo, Minjing Dong, Chang Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Recent advances in deep learning have significantly improved predictive
+accuracy. However, modern neural networks remain systematically overconfident,
+posing risks for deployment in safety-critical scenarios. Current post-hoc
+calibration methods face a fundamental dilemma: global approaches like
+Temperature Scaling apply uniform adjustments across all samples, introducing
+high bias despite computational efficiency, while more expressive methods that
+operate on full logit distributions suffer from high variance due to noisy
+high-dimensional inputs and insufficient validation data. To address these
+challenges, we propose Sample Margin-Aware Recalibration of Temperature
+(SMART), a lightweight, data-efficient recalibration method that precisely
+scales logits based on the margin between the top two logits -- termed the
+logit gap. Specifically, the logit gap serves as a denoised, scalar signal
+directly tied to decision boundary uncertainty, providing a robust indicator
+that avoids the noise inherent in high-dimensional logit spaces while
+preserving model prediction invariance. Meanwhile, SMART employs a novel
+soft-binned Expected Calibration Error (SoftECE) objective that balances model
+bias and variance through adaptive binning, enabling stable parameter updates
+even with extremely limited calibration data. Extensive evaluations across
+diverse datasets and architectures demonstrate that SMART achieves
+state-of-the-art calibration performance even with substantially fewer
+parameters compared to existing parametric methods, offering a principled,
+robust, and highly efficient solution for practical uncertainty quantification
+in neural network predictions. The source code is available at:
+https://anonymous.4open.science/r/SMART-8B11.</p></br><a href="http://arxiv.org/pdf/2506.24018v1" target="_blank"><h2>Bridging Theory and Practice in Link Representation with Graph Neural
+  Networks</h2></a><strong><u>Authors:</u></strong>  Veronica Lachi, Francesco Ferrini, Antonio Longa, Bruno Lepri, Andrea Passerini, Manfred Jaeger</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) are widely used to compute representations of
+node pairs for downstream tasks such as link prediction. Yet, theoretical
+understanding of their expressive power has focused almost entirely on
+graph-level representations. In this work, we shift the focus to links and
+provide the first comprehensive study of GNN expressiveness in link
+representation. We introduce a unifying framework, the $k_\phi$-$k_\rho$-$m$
+framework, that subsumes existing message-passing link models and enables
+formal expressiveness comparisons. Using this framework, we derive a hierarchy
+of state-of-the-art methods and offer theoretical tools to analyze future
+architectures. To complement our analysis, we propose a synthetic evaluation
+protocol comprising the first benchmark specifically designed to assess
+link-level expressiveness. Finally, we ask: does expressiveness matter in
+practice? We use a graph symmetry metric that quantifies the difficulty of
+distinguishing links and show that while expressive models may underperform on
+standard benchmarks, they significantly outperform simpler ones as symmetry
+increases, highlighting the need for dataset-aware model selection.</p></br><a href="http://arxiv.org/pdf/2506.23717v1" target="_blank"><h2>Towards Efficient and Accurate Spiking Neural Networks via Adaptive Bit
+  Allocation</h2></a><strong><u>Authors:</u></strong>  Xingting Yao, Qinghao Hu, Fei Zhou, Tielong Liu, Gang Li, Peisong Wang, Jian Cheng</br><strong><u>Categories:</u></strong> cs.NE, cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multi-bit spiking neural networks (SNNs) have recently become a heated
+research spot, pursuing energy-efficient and high-accurate AI. However, with
+more bits involved, the associated memory and computation demands escalate to
+the point where the performance improvements become disproportionate. Based on
+the insight that different layers demonstrate different importance and extra
+bits could be wasted and interfering, this paper presents an adaptive bit
+allocation strategy for direct-trained SNNs, achieving fine-grained layer-wise
+allocation of memory and computation resources. Thus, SNN's efficiency and
+accuracy can be improved. Specifically, we parametrize the temporal lengths and
+the bit widths of weights and spikes, and make them learnable and controllable
+through gradients. To address the challenges caused by changeable bit widths
+and temporal lengths, we propose the refined spiking neuron, which can handle
+different temporal lengths, enable the derivation of gradients for temporal
+lengths, and suit spike quantization better. In addition, we theoretically
+formulate the step-size mismatch problem of learnable bit widths, which may
+incur severe quantization errors to SNN, and accordingly propose the step-size
+renewal mechanism to alleviate this issue. Experiments on various datasets,
+including the static CIFAR and ImageNet and the dynamic CIFAR-DVS and
+DVS-GESTURE, demonstrate that our methods can reduce the overall memory and
+computation cost while achieving higher accuracy. Particularly, our
+SEWResNet-34 can achieve a 2.69\% accuracy gain and 4.16$\times$ lower bit
+budgets over the advanced baseline work on ImageNet. This work will be fully
+open-sourced.</p></br><a href="http://arxiv.org/pdf/2506.23115v1" target="_blank"><h2>MoCa: Modality-aware Continual Pre-training Makes Better Bidirectional
+  Multimodal Embeddings</h2></a><strong><u>Authors:</u></strong>  Haonan Chen, Hong Liu, Yuping Luo, Liang Wang, Nan Yang, Furu Wei, Zhicheng Dou</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> Homepage:this https URL</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal embedding models, built upon causal Vision Language Models (VLMs),
+have shown promise in various tasks. However, current approaches face three key
+limitations: the use of causal attention in VLM backbones is suboptimal for
+embedding tasks; scalability issues due to reliance on high-quality labeled
+paired data for contrastive learning; and limited diversity in training
+objectives and data. To address these issues, we propose MoCa, a two-stage
+framework for transforming pre-trained VLMs into effective bidirectional
+multimodal embedding models. The first stage, Modality-aware Continual
+Pre-training, introduces a joint reconstruction objective that simultaneously
+denoises interleaved text and image inputs, enhancing bidirectional
+context-aware reasoning. The second stage, Heterogeneous Contrastive
+Fine-tuning, leverages diverse, semantically rich multimodal data beyond simple
+image-caption pairs to enhance generalization and alignment. Our method
+addresses the stated limitations by introducing bidirectional attention through
+continual pre-training, scaling effectively with massive unlabeled datasets via
+joint reconstruction objectives, and utilizing diverse multimodal data for
+enhanced representation robustness. Experiments demonstrate that MoCa
+consistently improves performance across MMEB and ViDoRe-v2 benchmarks,
+achieving new state-of-the-art results, and exhibits strong scalability with
+both model size and training data on MMEB.</p></br><a href="http://arxiv.org/pdf/2506.23358v1" target="_blank"><h2>Federated Timeline Synthesis: Scalable and Private Methodology For Model
+  Training and Deployment</h2></a><strong><u>Authors:</u></strong>  Pawel Renc, Michal K. Grzeszczyk, Linglong Qian, Nassim Oufattole, Jeff Rasley, Arkadiusz Sitek</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> conference paper</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We present Federated Timeline Synthesis (FTS), a novel framework for training
+generative foundation models across distributed timeseries data applied to
+electronic health records (EHR). At its core, FTS represents patient history as
+tokenized Patient Health Timelines (PHTs), language-agnostic sequences encoding
+temporal, categorical, and continuous clinical information. Each institution
+trains an autoregressive transformer on its local PHTs and transmits only model
+weights to a central server. The server uses the generators to synthesize a
+large corpus of trajectories and train a Global Generator (GG), enabling
+zero-shot inference via Monte Carlo simulation of future PHTs. We evaluate FTS
+on five clinically meaningful prediction tasks using MIMIC-IV data, showing
+that models trained on synthetic data generated by GG perform comparably to
+those trained on real data. FTS offers strong privacy guarantees, scalability
+across institutions, and extensibility to diverse prediction and simulation
+tasks especially in healthcare, including counterfactual inference, early
+warning detection, and synthetic trial design.</p></br><a href="http://arxiv.org/pdf/2506.23784v1" target="_blank"><h2>When GNNs Met a Word Equations Solver: Learning to Rank Equations
+  (Extended Technical Report)</h2></a><strong><u>Authors:</u></strong>  Parosh Aziz Abdulla, Mohamed Faouzi Atig, Julie Cailler, Chencheng Liang, Philipp Rümmer</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Nielsen transformation is a standard approach for solving word equations: by
+repeatedly splitting equations and applying simplification steps, equations are
+rewritten until a solution is reached. When solving a conjunction of word
+equations in this way, the performance of the solver will depend considerably
+on the order in which equations are processed. In this work, the use of Graph
+Neural Networks (GNNs) for ranking word equations before and during the solving
+process is explored. For this, a novel graph-based representation for word
+equations is presented, preserving global information across conjuncts,
+enabling the GNN to have a holistic view during ranking. To handle the variable
+number of conjuncts, three approaches to adapt a multi-classification task to
+the problem of ranking equations are proposed. The training of the GNN is done
+with the help of minimum unsatisfiable subsets (MUSes) of word equations. The
+experimental results show that, compared to state-of-the-art string solvers,
+the new framework solves more problems in benchmarks where each variable
+appears at most once in each equation.</p></br><a href="http://arxiv.org/pdf/2506.23174v1" target="_blank"><h2>Data Can Speak for Itself: Quality-guided Utilization of Wireless
+  Synthetic Data</h2></a><strong><u>Authors:</u></strong>  Chen Gong, Bo Liang, Wei Gao, Chenren Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Published in MobiSys 2025</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Generative models have gained significant attention for their ability to
+produce realistic synthetic data that supplements the quantity of real-world
+datasets. While recent studies show performance improvements in wireless
+sensing tasks by incorporating all synthetic data into training sets, the
+quality of synthetic data remains unpredictable and the resulting performance
+gains are not guaranteed. To address this gap, we propose tractable and
+generalizable metrics to quantify quality attributes of synthetic data -
+affinity and diversity. Our assessment reveals prevalent affinity limitation in
+current wireless synthetic data, leading to mislabeled data and degraded task
+performance. We attribute the quality limitation to generative models' lack of
+awareness of untrained conditions and domain-specific processing. To mitigate
+these issues, we introduce SynCheck, a quality-guided synthetic data
+utilization scheme that refines synthetic data quality during task model
+training. Our evaluation demonstrates that SynCheck consistently outperforms
+quality-oblivious utilization of synthetic data, and achieves 4.3% performance
+improvement even when the previous utilization degrades performance by 13.4%.</p></br></body>

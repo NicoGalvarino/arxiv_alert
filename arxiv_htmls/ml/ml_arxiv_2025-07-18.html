@@ -1,0 +1,294 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 16 Jul 2025 to 18 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.12659v1" target="_blank"><h2>Improving physics-informed neural network extrapolation via transfer
+  learning and adaptive activation functions</h2></a><strong><u>Authors:</u></strong>  Athanasios Papastathopoulos-Katsaros, Alexandra Stavrianidi, Zhandong Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NA, math.DS, math.NA, stat.ML</br><strong><u>Comments:</u></strong> 18 pages, 16 figures, 7 tables Accepted to ICANN 2025</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract), transfer learning (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Physics-Informed Neural Networks (PINNs) are deep learning models that
+incorporate the governing physical laws of a system into the learning process,
+making them well-suited for solving complex scientific and engineering
+problems. Recently, PINNs have gained widespread attention as a powerful
+framework for combining physical principles with data-driven modeling to
+improve prediction accuracy. Despite their successes, however, PINNs often
+exhibit poor extrapolation performance outside the training domain and are
+highly sensitive to the choice of activation functions (AFs). In this paper, we
+introduce a transfer learning (TL) method to improve the extrapolation
+capability of PINNs. Our approach applies transfer learning (TL) within an
+extended training domain, using only a small number of carefully selected
+collocation points. Additionally, we propose an adaptive AF that takes the form
+of a linear combination of standard AFs, which improves both the robustness and
+accuracy of the model. Through a series of experiments, we demonstrate that our
+method achieves an average of 40% reduction in relative L2 error and an average
+of 50% reduction in mean absolute error in the extrapolation domain, all
+without a significant increase in computational cost. The code is available at
+https://github.com/LiuzLab/PINN-extrapolation .</p></br><a href="http://arxiv.org/pdf/2507.12599v1" target="_blank"><h2>A Survey of Explainable Reinforcement Learning: Targets, Methods and
+  Needs</h2></a><strong><u>Authors:</u></strong>  Léo Saulières</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 69 pages, 19 figures</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The success of recent Artificial Intelligence (AI) models has been
+accompanied by the opacity of their internal mechanisms, due notably to the use
+of deep neural networks. In order to understand these internal mechanisms and
+explain the output of these AI models, a set of methods have been proposed,
+grouped under the domain of eXplainable AI (XAI). This paper focuses on a
+sub-domain of XAI, called eXplainable Reinforcement Learning (XRL), which aims
+to explain the actions of an agent that has learned by reinforcement learning.
+We propose an intuitive taxonomy based on two questions "What" and "How". The
+first question focuses on the target that the method explains, while the second
+relates to the way the explanation is provided. We use this taxonomy to provide
+a state-of-the-art review of over 250 papers. In addition, we present a set of
+domains close to XRL, which we believe should get attention from the community.
+Finally, we identify some needs for the field of XRL.</p></br><a href="http://arxiv.org/pdf/2507.13022v1" target="_blank"><h2>Fault detection and diagnosis for the engine electrical system of a
+  space launcher based on a temporal convolutional autoencoder and calibrated
+  classifiers</h2></a><strong><u>Authors:</u></strong>  Luis Basora, Louison Bocquet-Nouaille, Elinirina Robinson, Serge Le Gonidec</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 53 pages, 16 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> In the context of the health monitoring for the next generation of reusable
+space launchers, we outline a first step toward developing an onboard fault
+detection and diagnostic capability for the electrical system that controls the
+engine valves. Unlike existing approaches in the literature, our solution is
+designed to meet a broader range of key requirements. This includes estimating
+confidence levels for predictions, detecting out-of-distribution (OOD) cases,
+and controlling false alarms. The proposed solution is based on a temporal
+convolutional autoencoder to automatically extract low-dimensional features
+from raw sensor data. Fault detection and diagnosis are respectively carried
+out using a binary and a multiclass classifier trained on the autoencoder
+latent and residual spaces. The classifiers are histogram-based gradient
+boosting models calibrated to output probabilities that can be interpreted as
+confidence levels. A relatively simple technique, based on inductive conformal
+anomaly detection, is used to identify OOD data. We leverage other simple yet
+effective techniques, such as cumulative sum control chart (CUSUM) to limit the
+false alarms, and threshold moving to address class imbalance in fault
+detection. The proposed framework is highly configurable and has been evaluated
+on simulated data, covering both nominal and anomalous operational scenarios.
+The results indicate that our solution is a promising first step, though
+testing with real data will be necessary to ensure that it achieves the
+required maturity level for operational use.</p></br><a href="http://arxiv.org/pdf/2507.13090v1" target="_blank"><h2>MUPAX: Multidimensional Problem Agnostic eXplainable AI</h2></a><strong><u>Authors:</u></strong>  Vincenzo Dentamaro, Felice Franchini, Giuseppe Pirlo, Irina Voiculescu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Robust XAI techniques should ideally be simultaneously deterministic, model
+agnostic, and guaranteed to converge. We propose MULTIDIMENSIONAL PROBLEM
+AGNOSTIC EXPLAINABLE AI (MUPAX), a deterministic, model agnostic explainability
+technique, with guaranteed convergency. MUPAX measure theoretic formulation
+gives principled feature importance attribution through structured perturbation
+analysis that discovers inherent input patterns and eliminates spurious
+relationships. We evaluate MUPAX on an extensive range of data modalities and
+tasks: audio classification (1D), image classification (2D), volumetric medical
+image analysis (3D), and anatomical landmark detection, demonstrating dimension
+agnostic effectiveness. The rigorous convergence guarantees extend to any loss
+function and arbitrary dimensions, making MUPAX applicable to virtually any
+problem context for AI. By contrast with other XAI methods that typically
+decrease performance when masking, MUPAX not only preserves but actually
+enhances model accuracy by capturing only the most important patterns of the
+original data. Extensive benchmarking against the state of the XAI art
+demonstrates MUPAX ability to generate precise, consistent and understandable
+explanations, a crucial step towards explainable and trustworthy AI systems.
+The source code will be released upon publication.</p></br><a href="http://arxiv.org/pdf/2507.12784v1" target="_blank"><h2>A Semi-Supervised Learning Method for the Identification of Bad
+  Exposures in Large Imaging Surveys</h2></a><strong><u>Authors:</u></strong>  Yufeng Luo, Adam D. Myers, Alex Drlica-Wagner, Dario Dematties, Salma Borchani, Frank Valdes, Arjun Dey, David Schlegel, Rongpu Zhou, DESI Legacy Imaging Surveys Team</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.AI</br><strong><u>Comments:</u></strong> 21 pages, 12 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> As the data volume of astronomical imaging surveys rapidly increases,
+traditional methods for image anomaly detection, such as visual inspection by
+human experts, are becoming impractical. We introduce a machine-learning-based
+approach to detect poor-quality exposures in large imaging surveys, with a
+focus on the DECam Legacy Survey (DECaLS) in regions of low extinction (i.e.,
+$E(B-V)<0.04$). Our semi-supervised pipeline integrates a vision transformer
+(ViT), trained via self-supervised learning (SSL), with a k-Nearest Neighbor
+(kNN) classifier. We train and validate our pipeline using a small set of
+labeled exposures observed by surveys with the Dark Energy Camera (DECam). A
+clustering-space analysis of where our pipeline places images labeled in
+``good'' and ``bad'' categories suggests that our approach can efficiently and
+accurately determine the quality of exposures. Applied to new imaging being
+reduced for DECaLS Data Release 11, our pipeline identifies 780 problematic
+exposures, which we subsequently verify through visual inspection. Being highly
+efficient and adaptable, our method offers a scalable solution for quality
+control in other large imaging surveys.</p></br><a href="http://arxiv.org/pdf/2507.12451v1" target="_blank"><h2>S2WTM: Spherical Sliced-Wasserstein Autoencoder for Topic Modeling</h2></a><strong><u>Authors:</u></strong>  Suman Adhya, Debarshi Kumar Sanyal</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted as a long paper for ACL 2025 main conference</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Modeling latent representations in a hyperspherical space has proven
+effective for capturing directional similarities in high-dimensional text data,
+benefiting topic modeling. Variational autoencoder-based neural topic models
+(VAE-NTMs) commonly adopt the von Mises-Fisher prior to encode hyperspherical
+structure. However, VAE-NTMs often suffer from posterior collapse, where the KL
+divergence term in the objective function highly diminishes, leading to
+ineffective latent representations. To mitigate this issue while modeling
+hyperspherical structure in the latent space, we propose the Spherical Sliced
+Wasserstein Autoencoder for Topic Modeling (S2WTM). S2WTM employs a prior
+distribution supported on the unit hypersphere and leverages the Spherical
+Sliced-Wasserstein distance to align the aggregated posterior distribution with
+the prior. Experimental results demonstrate that S2WTM outperforms
+state-of-the-art topic models, generating more coherent and diverse topics
+while improving performance on downstream tasks.</p></br><a href="http://arxiv.org/pdf/2507.12295v1" target="_blank"><h2>Text-ADBench: Text Anomaly Detection Benchmark based on LLMs Embedding</h2></a><strong><u>Authors:</u></strong>  Feng Xiao, Jicong Fan</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Text anomaly detection is a critical task in natural language processing
+(NLP), with applications spanning fraud detection, misinformation
+identification, spam detection and content moderation, etc. Despite significant
+advances in large language models (LLMs) and anomaly detection algorithms, the
+absence of standardized and comprehensive benchmarks for evaluating the
+existing anomaly detection methods on text data limits rigorous comparison and
+development of innovative approaches. This work performs a comprehensive
+empirical study and introduces a benchmark for text anomaly detection,
+leveraging embeddings from diverse pre-trained language models across a wide
+array of text datasets. Our work systematically evaluates the effectiveness of
+embedding-based text anomaly detection by incorporating (1) early language
+models (GloVe, BERT); (2) multiple LLMs (LLaMa-2, LLama-3, Mistral, OpenAI
+(small, ada, large)); (3) multi-domain text datasets (news, social media,
+scientific publications); (4) comprehensive evaluation metrics (AUROC, AUPRC).
+Our experiments reveal a critical empirical insight: embedding quality
+significantly governs anomaly detection efficacy, and deep learning-based
+approaches demonstrate no performance advantage over conventional shallow
+algorithms (e.g., KNN, Isolation Forest) when leveraging LLM-derived
+embeddings.In addition, we observe strongly low-rank characteristics in
+cross-model performance matrices, which enables an efficient strategy for rapid
+model evaluation (or embedding evaluation) and selection in practical
+applications. Furthermore, by open-sourcing our benchmark toolkit that includes
+all embeddings from different models and code at
+https://github.com/jicongfan/Text-Anomaly-Detection-Benchmark, this work
+provides a foundation for future research in robust and scalable text anomaly
+detection systems.</p></br><a href="http://arxiv.org/pdf/2507.11997v1" target="_blank"><h2>Can LLMs Find Fraudsters? Multi-level LLM Enhanced Graph Fraud Detection</h2></a><strong><u>Authors:</u></strong>  Tairan Huang, Yili Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Graph fraud detection has garnered significant attention as Graph Neural
+Networks (GNNs) have proven effective in modeling complex relationships within
+multimodal data. However, existing graph fraud detection methods typically use
+preprocessed node embeddings and predefined graph structures to reveal
+fraudsters, which ignore the rich semantic cues contained in raw textual
+information. Although Large Language Models (LLMs) exhibit powerful
+capabilities in processing textual information, it remains a significant
+challenge to perform multimodal fusion of processed textual embeddings with
+graph structures. In this paper, we propose a \textbf{M}ulti-level \textbf{L}LM
+\textbf{E}nhanced Graph Fraud \textbf{D}etection framework called MLED. In
+MLED, we utilize LLMs to extract external knowledge from textual information to
+enhance graph fraud detection methods. To integrate LLMs with graph structure
+information and enhance the ability to distinguish fraudsters, we design a
+multi-level LLM enhanced framework including type-level enhancer and
+relation-level enhancer. One is to enhance the difference between the
+fraudsters and the benign entities, the other is to enhance the importance of
+the fraudsters in different relations. The experiments on four real-world
+datasets show that MLED achieves state-of-the-art performance in graph fraud
+detection as a generalized framework that can be applied to existing methods.</p></br><a href="http://arxiv.org/pdf/2507.12878v1" target="_blank"><h2>Bayesian Modeling and Estimation of Linear Time-Variant Systems using
+  Neural Networks and Gaussian Processes</h2></a><strong><u>Authors:</u></strong>  Yaniv Shulman</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The identification of Linear Time-Variant (LTV) systems from input-output
+data is a fundamental yet challenging ill-posed inverse problem. This work
+introduces a unified Bayesian framework that models the system's impulse
+response, $h(t, \tau)$, as a stochastic process. We decompose the response into
+a posterior mean and a random fluctuation term, a formulation that provides a
+principled approach for quantifying uncertainty and naturally defines a new,
+useful system class we term Linear Time-Invariant in Expectation (LTIE). To
+perform inference, we leverage modern machine learning techniques, including
+Bayesian neural networks and Gaussian Processes, using scalable variational
+inference. We demonstrate through a series of experiments that our framework
+can robustly infer the properties of an LTI system from a single noisy
+observation, show superior data efficiency compared to classical methods in a
+simulated ambient noise tomography problem, and successfully track a
+continuously varying LTV impulse response by using a structured Gaussian
+Process prior. This work provides a flexible and robust methodology for
+uncertainty-aware system identification in dynamic environments.</p></br><a href="http://arxiv.org/pdf/2507.13255v1" target="_blank"><h2>Automating Steering for Safe Multimodal Large Language Models</h2></a><strong><u>Authors:</u></strong>  Lyucheng Wu, Mengru Wang, Ziwen Xu, Tri Cao, Nay Oo, Bryan Hooi, Shumin Deng</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.IR, cs.LG, cs.MM</br><strong><u>Comments:</u></strong> Working in progress. 22 pages (8+ for main); 25 figures; 1 table</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recent progress in Multimodal Large Language Models (MLLMs) has unlocked
+powerful cross-modal reasoning abilities, but also raised new safety concerns,
+particularly when faced with adversarial multimodal inputs. To improve the
+safety of MLLMs during inference, we introduce a modular and adaptive
+inference-time intervention technology, AutoSteer, without requiring any
+fine-tuning of the underlying model. AutoSteer incorporates three core
+components: (1) a novel Safety Awareness Score (SAS) that automatically
+identifies the most safety-relevant distinctions among the model's internal
+layers; (2) an adaptive safety prober trained to estimate the likelihood of
+toxic outputs from intermediate representations; and (3) a lightweight Refusal
+Head that selectively intervenes to modulate generation when safety risks are
+detected. Experiments on LLaVA-OV and Chameleon across diverse safety-critical
+benchmarks demonstrate that AutoSteer significantly reduces the Attack Success
+Rate (ASR) for textual, visual, and cross-modal threats, while maintaining
+general abilities. These findings position AutoSteer as a practical,
+interpretable, and effective framework for safer deployment of multimodal AI
+systems.</p></br><a href="http://arxiv.org/pdf/2507.12774v1" target="_blank"><h2>A Comprehensive Survey of Electronic Health Record Modeling: From Deep
+  Learning Approaches to Large Language Models</h2></a><strong><u>Authors:</u></strong>  Weijieying Ren, Jingxi Zhu, Zehao Liu, Tianxiang Zhao, Vasant Honavar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Artificial intelligence (AI) has demonstrated significant potential in
+transforming healthcare through the analysis and modeling of electronic health
+records (EHRs). However, the inherent heterogeneity, temporal irregularity, and
+domain-specific nature of EHR data present unique challenges that differ
+fundamentally from those in vision and natural language tasks. This survey
+offers a comprehensive overview of recent advancements at the intersection of
+deep learning, large language models (LLMs), and EHR modeling. We introduce a
+unified taxonomy that spans five key design dimensions: data-centric
+approaches, neural architecture design, learning-focused strategies, multimodal
+learning, and LLM-based modeling systems. Within each dimension, we review
+representative methods addressing data quality enhancement, structural and
+temporal representation, self-supervised learning, and integration with
+clinical knowledge. We further highlight emerging trends such as foundation
+models, LLM-driven clinical agents, and EHR-to-text translation for downstream
+reasoning. Finally, we discuss open challenges in benchmarking, explainability,
+clinical alignment, and generalization across diverse clinical settings. This
+survey aims to provide a structured roadmap for advancing AI-driven EHR
+modeling and clinical decision support. For a comprehensive list of EHR-related
+methods, kindly refer to https://survey-on-tabular-data.github.io/.</p></br><a href="http://arxiv.org/pdf/2507.12011v1" target="_blank"><h2>DUSE: A Data Expansion Framework for Low-resource Automatic Modulation
+  Recognition based on Active Learning</h2></a><strong><u>Authors:</u></strong>  Yao Lu, Hongyu Gao, Zhuangzhi Chen, Dongwei Xu, Yun Lin, Qi Xuan, Guan Gui</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Although deep neural networks have made remarkable achievements in the field
+of automatic modulation recognition (AMR), these models often require a large
+amount of labeled data for training. However, in many practical scenarios, the
+available target domain data is scarce and difficult to meet the needs of model
+training. The most direct way is to collect data manually and perform expert
+annotation, but the high time and labor costs are unbearable. Another common
+method is data augmentation. Although it can enrich training samples to a
+certain extent, it does not introduce new data and therefore cannot
+fundamentally solve the problem of data scarcity. To address these challenges,
+we introduce a data expansion framework called Dynamic Uncertainty-driven
+Sample Expansion (DUSE). Specifically, DUSE uses an uncertainty scoring
+function to filter out useful samples from relevant AMR datasets and employs an
+active learning strategy to continuously refine the scorer. Extensive
+experiments demonstrate that DUSE consistently outperforms 8 coreset selection
+baselines in both class-balance and class-imbalance settings. Besides, DUSE
+exhibits strong cross-architecture generalization for unseen models.</p></br><a href="http://arxiv.org/pdf/2507.12435v1" target="_blank"><h2>Targeted Deep Architectures: A TMLE-Based Framework for Robust Causal
+  Inference in Neural Networks</h2></a><strong><u>Authors:</u></strong>  Yi Li, David Mccoy, Nolan Gunter, Kaitlyn Lee, Alejandro Schuler, Mark van der Laan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Modern deep neural networks are powerful predictive tools yet often lack
+valid inference for causal parameters, such as treatment effects or entire
+survival curves. While frameworks like Double Machine Learning (DML) and
+Targeted Maximum Likelihood Estimation (TMLE) can debias machine-learning fits,
+existing neural implementations either rely on "targeted losses" that do not
+guarantee solving the efficient influence function equation or computationally
+expensive post-hoc "fluctuations" for multi-parameter settings. We propose
+Targeted Deep Architectures (TDA), a new framework that embeds TMLE directly
+into the network's parameter space with no restrictions on the backbone
+architecture. Specifically, TDA partitions model parameters - freezing all but
+a small "targeting" subset - and iteratively updates them along a targeting
+gradient, derived from projecting the influence functions onto the span of the
+gradients of the loss with respect to weights. This procedure yields plug-in
+estimates that remove first-order bias and produce asymptotically valid
+confidence intervals. Crucially, TDA easily extends to multi-dimensional causal
+estimands (e.g., entire survival curves) by merging separate targeting
+gradients into a single universal targeting update. Theoretically, TDA inherits
+classical TMLE properties, including double robustness and semiparametric
+efficiency. Empirically, on the benchmark IHDP dataset (average treatment
+effects) and simulated survival data with informative censoring, TDA reduces
+bias and improves coverage relative to both standard neural-network estimators
+and prior post-hoc approaches. In doing so, TDA establishes a direct, scalable
+pathway toward rigorous causal inference within modern deep architectures for
+complex multi-parameter targets.</p></br><a href="http://arxiv.org/pdf/2507.12979v1" target="_blank"><h2>A Distributed Generative AI Approach for Heterogeneous Multi-Domain
+  Environments under Data Sharing constraints</h2></a><strong><u>Authors:</u></strong>  Youssef Tawfilis, Hossam Amer, Minar El-Aasser, Tallal Elshabrawy</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Federated Learning has gained increasing attention for its ability to enable
+multiple nodes to collaboratively train machine learning models without sharing
+their raw data. At the same time, Generative AI -- particularly Generative
+Adversarial Networks (GANs) -- have achieved remarkable success across a wide
+range of domains, such as healthcare, security, and Image Generation. However,
+training generative models typically requires large datasets and significant
+computational resources, which are often unavailable in real-world settings.
+Acquiring such resources can be costly and inefficient, especially when many
+underutilized devices -- such as IoT devices and edge devices -- with varying
+capabilities remain idle. Moreover, obtaining large datasets is challenging due
+to privacy concerns and copyright restrictions, as most devices are unwilling
+to share their data. To address these challenges, we propose a novel approach
+for decentralized GAN training that enables the utilization of distributed data
+and underutilized, low-capability devices while not sharing data in its raw
+form. Our approach is designed to tackle key challenges in decentralized
+environments, combining KLD-weighted Clustered Federated Learning to address
+the issues of data heterogeneity and multi-domain datasets, with Heterogeneous
+U-Shaped split learning to tackle the challenge of device heterogeneity under
+strict data sharing constraints -- ensuring that no labels or raw data, whether
+real or synthetic, are ever shared between nodes. Experimental results shows
+that our approach demonstrates consistent and significant improvements across
+key performance metrics, where it achieves 1.1x -- 2.2x higher image generation
+scores, an average 10% boost in classification metrics (up to 50% in
+multi-domain non-IID settings), in much lower latency compared to several
+benchmarks. Find our code at https://github.com/youssefga28/HuSCF-GAN.</p></br><a href="http://arxiv.org/pdf/2507.12803v1" target="_blank"><h2>FLDmamba: Integrating Fourier and Laplace Transform Decomposition with
+  Mamba for Enhanced Time Series Prediction</h2></a><strong><u>Authors:</u></strong>  Qianru Zhang, Chenglei Yu, Haixin Wang, Yudong Yan, Yuansheng Cao, Siu-Ming Yiu, Tailin Wu, Hongzhi Yin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Time series prediction, a crucial task across various domains, faces
+significant challenges due to the inherent complexities of time series data,
+including non-stationarity, multi-scale periodicity, and transient dynamics,
+particularly when tackling long-term predictions. While Transformer-based
+architectures have shown promise, their quadratic complexity with sequence
+length hinders their efficiency for long-term predictions. Recent advancements
+in State-Space Models, such as Mamba, offer a more efficient alternative for
+long-term modeling, but they cannot capture multi-scale periodicity and
+transient dynamics effectively. Meanwhile, they are susceptible to data noise
+issues in time series. This paper proposes a novel framework, FLDmamba (Fourier
+and Laplace Transform Decomposition Mamba), addressing these limitations.
+FLDmamba leverages the strengths of both Fourier and Laplace transforms to
+effectively capture both multi-scale periodicity, transient dynamics within
+time series data, and improve the robustness of the model to the data noise
+issue. Our extensive experiments demonstrate that FLDmamba achieves superior
+performance on time series prediction benchmarks, outperforming both
+Transformer-based and other Mamba-based architectures. To promote the
+reproducibility of our method, we have made both the code and data accessible
+via the following
+URL:{\href{https://github.com/AI4Science-WestlakeU/FLDmamba}{https://github.com/AI4Science-WestlakeU/\model}.</p></br></body>

@@ -1,0 +1,653 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 04 Sep 2025 to 08 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.04362v1" target="_blank"><h2>Parking Availability Prediction via Fusing Multi-Source Data with A
+  Self-Supervised Learning Enhanced Spatio-Temporal Inverted Transformer</h2></a><strong><u>Authors:</u></strong>  Yin Huang, Yongqi Dong, Youhua Tang, Li Li</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 25 pages, 5 figures, under review for journal publication</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The rapid growth of private car ownership has worsened the urban parking
+predicament, underscoring the need for accurate and effective parking
+availability prediction to support urban planning and management. To address
+key limitations in modeling spatio-temporal dependencies and exploiting
+multi-source data for parking availability prediction, this study proposes a
+novel approach with SST-iTransformer. The methodology leverages K-means
+clustering to establish parking cluster zones (PCZs), extracting and
+integrating traffic demand characteristics from various transportation modes
+(i.e., metro, bus, online ride-hailing, and taxi) associated with the targeted
+parking lots. Upgraded on vanilla iTransformer, SST-iTransformer integrates
+masking-reconstruction-based pretext tasks for self-supervised spatio-temporal
+representation learning, and features an innovative dual-branch attention
+mechanism: Series Attention captures long-term temporal dependencies via
+patching operations, while Channel Attention models cross-variate interactions
+through inverted dimensions. Extensive experiments using real-world data from
+Chengdu, China, demonstrate that SST-iTransformer outperforms baseline deep
+learning models (including Informer, Autoformer, Crossformer, and
+iTransformer), achieving state-of-the-art performance with the lowest mean
+squared error (MSE) and competitive mean absolute error (MAE). Comprehensive
+ablation studies quantitatively reveal the relative importance of different
+data sources: incorporating ride-hailing data provides the largest performance
+gains, followed by taxi, whereas fixed-route transit features (bus/metro)
+contribute marginally. Spatial correlation analysis further confirms that
+excluding historical data from correlated parking lots within PCZs leads to
+substantial performance degradation, underscoring the importance of modeling
+spatial dependencies.</p></br><a href="http://arxiv.org/pdf/2509.03898v1" target="_blank"><h2>Diffusion Generative Models Meet Compressed Sensing, with Applications
+  to Image Data and Financial Time Series</h2></a><strong><u>Authors:</u></strong>  Zhengyi Guo, Jiatu Li, Wenpin Tang, David D. Yao</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimension reduction (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> This paper develops dimension reduction techniques for accelerating diffusion
+model inference in the context of synthetic data generation. The idea is to
+integrate compressed sensing into diffusion models: (i) compress the data into
+a latent space, (ii) train a diffusion model in the latent space, and (iii)
+apply a compressed sensing algorithm to the samples generated in the latent
+space, facilitating the efficiency of both model training and inference. Under
+suitable sparsity assumptions on data, the proposed algorithm is proved to
+enjoy faster convergence by combining diffusion model inference with sparse
+recovery. As a byproduct, we obtain an optimal value for the latent space
+dimension. We also conduct numerical experiments on a range of datasets,
+including image data (handwritten digits, medical images, and climate data) and
+financial time series for stress testing.</p></br><a href="http://arxiv.org/pdf/2509.04999v1" target="_blank"><h2>Adversarial Augmentation and Active Sampling for Robust Cyber Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Sidahmed Benabderrahmane, Talal Rahwan</br><strong><u>Categories:</u></strong> cs.CR, cs.AI, cs.CY, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Advanced Persistent Threats (APTs) present a considerable challenge to
+cybersecurity due to their stealthy, long-duration nature. Traditional
+supervised learning methods typically require large amounts of labeled data,
+which is often scarce in real-world scenarios. This paper introduces a novel
+approach that combines AutoEncoders for anomaly detection with active learning
+to iteratively enhance APT detection. By selectively querying an oracle for
+labels on uncertain or ambiguous samples, our method reduces labeling costs
+while improving detection accuracy, enabling the model to effectively learn
+with minimal data and reduce reliance on extensive manual labeling. We present
+a comprehensive formulation of the Attention Adversarial Dual AutoEncoder-based
+anomaly detection framework and demonstrate how the active learning loop
+progressively enhances the model's performance. The framework is evaluated on
+real-world, imbalanced provenance trace data from the DARPA Transparent
+Computing program, where APT-like attacks account for just 0.004\% of the data.
+The datasets, which cover multiple operating systems including Android, Linux,
+BSD, and Windows, are tested in two attack scenarios. The results show
+substantial improvements in detection rates during active learning,
+outperforming existing methods.</p></br><a href="http://arxiv.org/pdf/2509.04682v1" target="_blank"><h2>Ecologically Valid Benchmarking and Adaptive Attention: Scalable Marine
+  Bioacoustic Monitoring</h2></a><strong><u>Authors:</u></strong>  Nicholas R. Rasmussen, Rodrigue Rizk, Longwei Wang, KC Santosh</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.CV, cs.IR, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> Under review as an anonymous submission to IEEETAI - We are allowed an archive submission. Final formatting is yet to be determined</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Underwater Passive Acoustic Monitoring (UPAM) provides rich spatiotemporal
+data for long-term ecological analysis, but intrinsic noise and complex signal
+dependencies hinder model stability and generalization. Multilayered windowing
+has improved target sound localization, yet variability from shifting ambient
+noise, diverse propagation effects, and mixed biological and anthropogenic
+sources demands robust architectures and rigorous evaluation. We introduce
+GetNetUPAM, a hierarchical nested cross-validation framework designed to
+quantify model stability under ecologically realistic variability. Data are
+partitioned into distinct site-year segments, preserving recording
+heterogeneity and ensuring each validation fold reflects a unique environmental
+subset, reducing overfitting to localized noise and sensor artifacts. Site-year
+blocking enforces evaluation against genuine environmental diversity, while
+standard cross-validation on random subsets measures generalization across
+UPAM's full signal distribution, a dimension absent from current benchmarks.
+Using GetNetUPAM as the evaluation backbone, we propose the Adaptive Resolution
+Pooling and Attention Network (ARPA-N), a neural architecture for irregular
+spectrogram dimensions. Adaptive pooling with spatial attention extends the
+receptive field, capturing global context without excessive parameters. Under
+GetNetUPAM, ARPA-N achieves a 14.4% gain in average precision over DenseNet
+baselines and a log2-scale order-of-magnitude drop in variability across all
+metrics, enabling consistent detection across site-year folds and advancing
+scalable, accurate bioacoustic monitoring.</p></br><a href="http://arxiv.org/pdf/2509.03819v1" target="_blank"><h2>Predicting Traffic Accident Severity with Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Meghan Bibb, Pablo Rivas, Mahee Tayba</br><strong><u>Categories:</u></strong> cs.LG, 68T07, 62H30, I.2.6; I.5.1</br><strong><u>Comments:</u></strong> The 17th International Conference on Data Science (ICDATA 2021)</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Traffic accidents can be studied to mitigate the risk of further events.
+Recent advances in machine learning have provided an alternative way to study
+data associated with traffic accidents. New models achieve good generalization
+and high predictive power over imbalanced data. In this research, we study
+neural network-based models on data related to traffic accidents. We begin
+analyzing relative feature colinearity and unsupervised dimensionality
+reduction through autoencoders, followed by a dense network. The features are
+related to traffic accident data and the target is to classify accident
+severity. Our experiments show cross-validated results of up to 92% accuracy
+when classifying accident severity using the proposed deep neural network.</p></br><a href="http://arxiv.org/pdf/2509.04449v1" target="_blank"><h2>ChronoGraph: A Real-World Graph-Based Multivariate Time Series Dataset</h2></a><strong><u>Authors:</u></strong>  Adrian Catalin Lutu, Ioana Pintilie, Elena Burceanu, Andrei Manolache</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> We present ChronoGraph, a graph-structured multivariate time series
+forecasting dataset built from real-world production microservices. Each node
+is a service that emits a multivariate stream of system-level performance
+metrics, capturing CPU, memory, and network usage patterns, while directed
+edges encode dependencies between services. The primary task is forecasting
+future values of these signals at the service level. In addition, ChronoGraph
+provides expert-annotated incident windows as anomaly labels, enabling
+evaluation of anomaly detection methods and assessment of forecast robustness
+during operational disruptions. Compared to existing benchmarks from industrial
+control systems or traffic and air-quality domains, ChronoGraph uniquely
+combines (i) multivariate time series, (ii) an explicit, machine-readable
+dependency graph, and (iii) anomaly labels aligned with real incidents. We
+report baseline results spanning forecasting models, pretrained time-series
+foundation models, and standard anomaly detectors. ChronoGraph offers a
+realistic benchmark for studying structure-aware forecasting and incident-aware
+evaluation in microservice systems.</p></br><a href="http://arxiv.org/pdf/2509.04538v1" target="_blank"><h2>Identifying Microlensing by Compact Dark Matter through Diffraction
+  Patterns in Gravitational Waves with Machine Learning</h2></a><strong><u>Authors:</u></strong>  Ao Liu, Tonghua Liu, Dejiang Li, Cuihong Wen, Jieci Wang, Kai Liao, Jiaxing Cui, Huan Zhou</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> 12 pages, 5 figures, comments are welcome</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract)</br><p><strong><u>Abstract:</u></strong> Gravitational wave lensing, particularly microlensing by compact dark matter
+(DM), offers a unique avenue to probe the nature of dark matter. However,
+conventional detection methods are often computationally expensive,
+inefficient, and sensitive to waveform systematics. In this work, we introduce
+the Wavelet Convolution Detector (WCD), a deep learning framework specifically
+designed to identify wave-optics diffraction patterns imprinted in
+gravitationally lensed signals. The WCD integrates multi-scale wavelet analysis
+within residual convolutional blocks to efficiently extract time-frequency
+interference structures, and is trained on a realistically generated dataset
+incorporating compact DM mass functions and astrophysical lensing
+probabilities. This work is the first machine learning-based approach capable
+of identifying such wave-optics signatures in lensed gravitational waves.
+Tested on simulated binary black hole events, the model achieves 92.2\%
+accuracy (AUC=0.965), with performance rising to AUC$\sim$0.99 at high SNR.
+Crucially, it maintains high discriminative power across a wide range of lens
+masses without retraining, demonstrating particular strength in the
+low-impact-parameter and high-lens-mass regimes where wave-optics effects are
+most pronounced. Compared to Bayesian inference, the WCD provides
+orders-of-magnitude faster inference, making it a scalable and efficient tool
+for discovering compact DM through lensed gravitational waves in the era of
+third-generation detectors.</p></br><a href="http://arxiv.org/pdf/2509.04925v1" target="_blank"><h2>A transformer-BiGRU-based framework with data augmentation and confident
+  learning for network intrusion detection</h2></a><strong><u>Authors:</u></strong>  Jiale Zhang, Pengfei He, Fei Li, Kewei Li, Yan Wang, Lan Huang, Ruochi Zhang, Fengfeng Zhou</br><strong><u>Categories:</u></strong> cs.LG, cs.CR</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), data augmentation (title, abstract)</br><p><strong><u>Abstract:</u></strong> In today's fast-paced digital communication, the surge in network traffic
+data and frequency demands robust and precise network intrusion solutions.
+Conventional machine learning methods struggle to grapple with complex patterns
+within the vast network intrusion datasets, which suffer from data scarcity and
+class imbalance. As a result, we have integrated machine learning and deep
+learning techniques within the network intrusion detection system to bridge
+this gap. This study has developed TrailGate, a novel framework that combines
+machine learning and deep learning techniques. By integrating Transformer and
+Bidirectional Gated Recurrent Unit (BiGRU) architectures with advanced feature
+selection strategies and supplemented by data augmentation techniques,
+TrailGate can identifies common attack types and excels at detecting and
+mitigating emerging threats. This algorithmic fusion excels at detecting common
+and well-understood attack types and has the unique ability to swiftly identify
+and neutralize emerging threats that stem from existing paradigms.</p></br><a href="http://arxiv.org/pdf/2509.04331v1" target="_blank"><h2>A fast machine learning tool to predict the composition of astronomical
+  ices from infrared absorption spectra</h2></a><strong><u>Authors:</u></strong>  Andrés Megías, Izaskun Jiménez-Serra, François Dulieu, Julie Vitorino, Belén Maté, David Ciudad, Will R. M. Rocha, Marcos Martínez Jiménez, Jacobo Aguirre</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.EP, astro-ph.IM, astro-ph.SR</br><strong><u>Comments:</u></strong> 24 pages, 20 figures; accepted to be published in Astronomy & Astrophysics</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Current observations taken by James Webb Space Telescope (JWST) allow us to
+observe the absorption features of icy mantles that cover interstellar dust
+grains, which are mainly composed of $\mathrm{H_2O}$, $\mathrm{CO}$, and
+$\mathrm{CO_2}$, along with other minor species. Thanks to its sensitivity and
+spectral resolution, JWST has the potential to observe ice features towards
+hundreds of sources at different stages along the process of star formation.
+However, identifying the spectral features of the different species and
+quantifying the ice composition is not trivial and requires complex
+spectroscopic analysis. We present Automatic Ice Composition Estimator (AICE),
+a new tool based on artificial neural networks. Based on the infrared (IR) ice
+absorption spectrum between 2.5 and 10 microns, AICE predicts the ice
+fractional composition in terms of $\mathrm{H_2O}$, $\mathrm{CO}$,
+$\mathrm{CO_2}$, $\mathrm{CH_3OH}$, $\mathrm{NH_3}$, and $\mathrm{CH_4}$. To
+train the model, we used hundreds of laboratory experiments of ice mixtures
+from different databases, which were reprocessed with baseline subtraction and
+normalisation. Once trained, AICE takes less than one second on a conventional
+computer to predict the ice composition associated with the observed IR
+absorption spectrum, with typical errors of $\sim$3 $\%$ in the species
+fraction. We tested its performance on two spectra reported towards the NIR38
+and J110621 background stars observed within the JWST Ice Age program,
+demonstrating a good agreement with previous estimations of the ice
+composition. The fast and accurate performance of AICE enables the systematic
+analysis of hundreds of different ice spectra with a modest time investment. In
+addition, this model can be enhanced and re-trained with more laboratory data,
+improving the precision of the predictions and expanding the list of predicted
+species.</p></br><a href="http://arxiv.org/pdf/2509.05190v1" target="_blank"><h2>Accuracy-Constrained CNN Pruning for Efficient and Reliable EEG-Based
+  Seizure Detection</h2></a><strong><u>Authors:</u></strong>  Mounvik K, N Harshit</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep learning models, especially convolutional neural networks (CNNs), have
+shown considerable promise for biomedical signals such as EEG-based seizure
+detection. However, these models come with challenges, primarily due to their
+size and compute requirements in environments where real-time detection or
+limited resources are available. In this study, we present a lightweight
+one-dimensional CNN model with structured pruning to improve efficiency and
+reliability. The model was trained with mild early stopping to address possible
+overfitting, achieving an accuracy of 92.78% and a macro-F1 score of 0.8686.
+Structured pruning of the baseline CNN involved removing 50% of the
+convolutional kernels based on their importance to model predictions.
+Surprisingly, after pruning the weights and memory by 50%, the new network was
+still able to maintain predictive capabilities, while modestly increasing
+precision to 92.87% and improving the macro-F1 score to 0.8707. Overall, we
+present a convincing case that structured pruning removes redundancy, improves
+generalization, and, in combination with mild early stopping, achieves a
+promising way forward to improve seizure detection efficiency and reliability,
+which is clear motivation for resource-limited settings.</p></br><a href="http://arxiv.org/pdf/2509.03884v1" target="_blank"><h2>Peptidomic-Based Prediction Model for Coronary Heart Disease Using a
+  Multilayer Perceptron Neural Network</h2></a><strong><u>Authors:</u></strong>  Jesus Celis-Porras</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 14 pages, 6 figures, Submitted to arXiv for public dissemination</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), over-sampling (abstract)</br><p><strong><u>Abstract:</u></strong> Coronary heart disease (CHD) is a leading cause of death worldwide and
+contributes significantly to annual healthcare expenditures. To develop a
+non-invasive diagnostic approach, we designed a model based on a multilayer
+perceptron (MLP) neural network, trained on 50 key urinary peptide biomarkers
+selected via genetic algorithms. Treatment and control groups, each comprising
+345 individuals, were balanced using the Synthetic Minority Over-sampling
+Technique (SMOTE). The neural network was trained using a stratified validation
+strategy. Using a network with three hidden layers of 60 neurons each and an
+output layer of two neurons, the model achieved a precision, sensitivity, and
+specificity of 95.67 percent, with an F1-score of 0.9565. The area under the
+ROC curve (AUC) reached 0.9748 for both classes, while the Matthews correlation
+coefficient (MCC) and Cohen's kappa coefficient were 0.9134 and 0.9131,
+respectively, demonstrating its reliability in detecting CHD. These results
+indicate that the model provides a highly accurate and robust non-invasive
+diagnostic tool for coronary heart disease.</p></br><a href="http://arxiv.org/pdf/2509.04669v1" target="_blank"><h2>VCMamba: Bridging Convolutions with Multi-Directional Mamba for
+  Efficient Visual Representation</h2></a><strong><u>Authors:</u></strong>  Mustafa Munir, Alex Zhang, Radu Marculescu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Proceedings of the 2025 IEEE/CVF International Conference on Computer Vision (ICCV) Workshops</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Recent advances in Vision Transformers (ViTs) and State Space Models (SSMs)
+have challenged the dominance of Convolutional Neural Networks (CNNs) in
+computer vision. ViTs excel at capturing global context, and SSMs like Mamba
+offer linear complexity for long sequences, yet they do not capture
+fine-grained local features as effectively as CNNs. Conversely, CNNs possess
+strong inductive biases for local features but lack the global reasoning
+capabilities of transformers and Mamba. To bridge this gap, we introduce
+\textit{VCMamba}, a novel vision backbone that integrates the strengths of CNNs
+and multi-directional Mamba SSMs. VCMamba employs a convolutional stem and a
+hierarchical structure with convolutional blocks in its early stages to extract
+rich local features. These convolutional blocks are then processed by later
+stages incorporating multi-directional Mamba blocks designed to efficiently
+model long-range dependencies and global context. This hybrid design allows for
+superior feature representation while maintaining linear complexity with
+respect to image resolution. We demonstrate VCMamba's effectiveness through
+extensive experiments on ImageNet-1K classification and ADE20K semantic
+segmentation. Our VCMamba-B achieves 82.6% top-1 accuracy on ImageNet-1K,
+surpassing PlainMamba-L3 by 0.3% with 37% fewer parameters, and outperforming
+Vision GNN-B by 0.3% with 64% fewer parameters. Furthermore, VCMamba-B obtains
+47.1 mIoU on ADE20K, exceeding EfficientFormer-L7 by 2.0 mIoU while utilizing
+62% fewer parameters. Code is available at
+https://github.com/Wertyuui345/VCMamba.</p></br><a href="http://arxiv.org/pdf/2509.04224v1" target="_blank"><h2>Cosmography via stellar archaeology of low-redshift early-type galaxies
+  from SDSS</h2></a><strong><u>Authors:</u></strong>  Carlos A. Álvarez, Marcos M. Cueli, Alessandro Bressan, Lumen Boco, Balakrishna S. Haridasu, Michele Bosi, Luigi Danese, Andrea Lapi</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> Accepted for publication in Astronomy & Astrophysics (01/09/2025) Main text: 20 pages, 13 figures, 1 table Appendices: 7 pages, 10 figures, 1 table</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Cosmic chronometers offer a model-independent way to trace the expansion
+history of the Universe via the dating of passively evolving objects. This
+enables testing the validity of cosmological models without concrete
+assumptions of their energy content. The main goal of this work is to derive
+model-independent constraints on the Hubble parameter up to $z \sim 0.4$ using
+stellar ages from the fitting of Lick index absorption lines in passively
+evolving galaxies. Contrary to recent related works that rely on finite
+differences to obtain a discrete measurement of the expansion of the Universe
+at an average redshift, our goal is to perform a cosmographic fit of $H(z)$ in
+terms of the Hubble constant ($H_0$) and the deceleration ($q_0$) and jerk
+($j_0$) parameters. We carefully select spectra of massive and passively
+evolving galaxies from the SDSS Legacy Survey. After applying a stacking
+procedure to ensure a high signal-to-noise ratio, the strength of Lick indices
+is fit using two stellar population models (TMJ and Knowles) to derive stellar
+population parameters. A cosmographic fit to the stellar ages is performed,
+which in turn enables the sampling of the Hubble parameter within the
+considered redshift range. The baseline result comes from using the
+TMJ-modelled ages, and it yields a value of $H_0 = 70.0^{+4.1}_{-7.6} \text{ km
+s}^{-1} \text{ Mpc}^{-1}$ for the Hubble constant, where uncertainties refer
+only to the statistical treatment of the data. The sampling of the Hubble
+parameter at $0.05 < z < 0.35$ is competitive with discreet model-independent
+measurements from the literature. We finally draw attention to an unexpected
+oscillating pattern in a number of critical indices with respect to redshift,
+which translates into a similar behaviour in the $t-z$ relations. These
+features have never been discussed before, although they are present in
+previous measurements.</p></br><a href="http://arxiv.org/pdf/2509.04154v1" target="_blank"><h2>Attention as an Adaptive Filter</h2></a><strong><u>Authors:</u></strong>  Peter Racioppo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> We introduce Adaptive Filter Attention (AFA), a novel attention mechanism
+that incorporates a learnable dynamics model directly into the computation of
+attention weights. Rather than comparing queries and keys directly, we model
+the input sequence as discrete observations of a linear stochastic differential
+equation (SDE). By imposing a linear dynamics model with simultaneously
+diagonalizable state matrices and noise covariances, we can make use of a
+closed-form solution to the differential Lyapunov equation to efficiently
+propagate pairwise uncertainties through the dynamics. Attention naturally
+arises as the maximum likelihood solution for this linear SDE, with attention
+weights corresponding to robust residual-based reweightings of the propagated
+pairwise precisions. Imposing an additional constraint on the state matrix's
+eigenvalues leads to a simplified variant with the same computational and
+memory complexity as standard attention. In the limit of vanishing dynamics and
+process noise, and using a small-angle approximation, we recover ordinary
+dot-product attention.</p></br><a href="http://arxiv.org/pdf/2509.03961v1" target="_blank"><h2>Multimodal Feature Fusion Network with Text Difference Enhancement for
+  Remote Sensing Change Detection</h2></a><strong><u>Authors:</u></strong>  Yijun Zhou, Yikui Zhai, Zilu Ying, Tingfeng Xian, Wenlve Zhou, Zhiheng Zhou, Xiaolin Tian, Xudong Jia, Hongsheng Zhang, C. L. Philip Chen</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Although deep learning has advanced remote sensing change detection (RSCD),
+most methods rely solely on image modality, limiting feature representation,
+change pattern modeling, and generalization especially under illumination and
+noise disturbances. To address this, we propose MMChange, a multimodal RSCD
+method that combines image and text modalities to enhance accuracy and
+robustness. An Image Feature Refinement (IFR) module is introduced to highlight
+key regions and suppress environmental noise. To overcome the semantic
+limitations of image features, we employ a vision language model (VLM) to
+generate semantic descriptions of bitemporal images. A Textual Difference
+Enhancement (TDE) module then captures fine grained semantic shifts, guiding
+the model toward meaningful changes. To bridge the heterogeneity between
+modalities, we design an Image Text Feature Fusion (ITFF) module that enables
+deep cross modal integration. Extensive experiments on LEVIRCD, WHUCD, and
+SYSUCD demonstrate that MMChange consistently surpasses state of the art
+methods across multiple metrics, validating its effectiveness for multimodal
+RSCD. Code is available at: https://github.com/yikuizhai/MMChange.</p></br><a href="http://arxiv.org/pdf/2509.04588v1" target="_blank"><h2>Toward Faithfulness-guided Ensemble Interpretation of Neural Network</h2></a><strong><u>Authors:</u></strong>  Siyu Zhang, Kenneth Mcmillan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Interpretable and faithful explanations for specific neural inferences are
+crucial for understanding and evaluating model behavior. Our work introduces
+\textbf{F}aithfulness-guided \textbf{E}nsemble \textbf{I}nterpretation
+(\textbf{FEI}), an innovative framework that enhances the breadth and
+effectiveness of faithfulness, advancing interpretability by providing superior
+visualization. Through an analysis of existing evaluation benchmarks,
+\textbf{FEI} employs a smooth approximation to elevate quantitative
+faithfulness scores. Diverse variations of \textbf{FEI} target enhanced
+faithfulness in hidden layer encodings, expanding interpretability.
+Additionally, we propose a novel qualitative metric that assesses hidden layer
+faithfulness. In extensive experiments, \textbf{FEI} surpasses existing
+methods, demonstrating substantial advances in qualitative visualization and
+quantitative faithfulness scores. Our research establishes a comprehensive
+framework for elevating faithfulness in neural network explanations,
+emphasizing both breadth and precision</p></br><a href="http://arxiv.org/pdf/2509.04785v1" target="_blank"><h2>Graph Unlearning: Efficient Node Removal in Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Faqian Guan, Tianqing Zhu, Zhoutian Wang, Wei Ren, Wanlei Zhou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> With increasing concerns about privacy attacks and potential sensitive
+information leakage, researchers have actively explored methods to efficiently
+remove sensitive training data and reduce privacy risks in graph neural network
+(GNN) models. Node unlearning has emerged as a promising technique for
+protecting the privacy of sensitive nodes by efficiently removing specific
+training node information from GNN models. However, existing node unlearning
+methods either impose restrictions on the GNN structure or do not effectively
+utilize the graph topology for node unlearning. Some methods even compromise
+the graph's topology, making it challenging to achieve a satisfactory
+performance-complexity trade-off. To address these issues and achieve efficient
+unlearning for training node removal in GNNs, we propose three novel node
+unlearning methods: Class-based Label Replacement, Topology-guided Neighbor
+Mean Posterior Probability, and Class-consistent Neighbor Node Filtering. Among
+these methods, Topology-guided Neighbor Mean Posterior Probability and
+Class-consistent Neighbor Node Filtering effectively leverage the topological
+features of the graph, resulting in more effective node unlearning. To validate
+the superiority of our proposed methods in node unlearning, we conducted
+experiments on three benchmark datasets. The evaluation criteria included model
+utility, unlearning utility, and unlearning efficiency. The experimental
+results demonstrate the utility and efficiency of the proposed methods and
+illustrate their superiority compared to state-of-the-art node unlearning
+methods. Overall, the proposed methods efficiently remove sensitive training
+nodes and protect the privacy information of sensitive nodes in GNNs. The
+findings contribute to enhancing the privacy and security of GNN models and
+provide valuable insights into the field of node unlearning.</p></br><a href="http://arxiv.org/pdf/2509.04317v1" target="_blank"><h2>Improving Robustness of AlphaZero Algorithms to Test-Time Environment
+  Changes</h2></a><strong><u>Authors:</u></strong>  Isidoro Tamassia, Wendelin Böhmer</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The AlphaZero framework provides a standard way of combining Monte Carlo
+planning with prior knowledge provided by a previously trained policy-value
+neural network. AlphaZero usually assumes that the environment on which the
+neural network was trained will not change at test time, which constrains its
+applicability. In this paper, we analyze the problem of deploying AlphaZero
+agents in potentially changed test environments and demonstrate how the
+combination of simple modifications to the standard framework can significantly
+boost performance, even in settings with a low planning budget available. The
+code is publicly available on GitHub.</p></br><a href="http://arxiv.org/pdf/2509.05281v1" target="_blank"><h2>Dual-Branch Convolutional Framework for Spatial and Frequency-Based
+  Image Forgery Detection</h2></a><strong><u>Authors:</u></strong>  Naman Tyagi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 14 pages, 5 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> With a very rapid increase in deepfakes and digital image forgeries, ensuring
+the authenticity of images is becoming increasingly challenging. This report
+introduces a forgery detection framework that combines spatial and
+frequency-based features for detecting forgeries. We propose a dual branch
+convolution neural network that operates on features extracted from spatial and
+frequency domains. Features from both branches are fused and compared within a
+Siamese network, yielding 64 dimensional embeddings for classification. When
+benchmarked on CASIA 2.0 dataset, our method achieves an accuracy of 77.9%,
+outperforming traditional statistical methods. Despite its relatively weaker
+performance compared to larger, more complex forgery detection pipelines, our
+approach balances computational complexity and detection reliability, making it
+ready for practical deployment. It provides a strong methodology for forensic
+scrutiny of digital images. In a broader sense, it advances the state of the
+art in visual forensics, addressing an urgent requirement in media
+verification, law enforcement and digital content reliability.</p></br><a href="http://arxiv.org/pdf/2509.04734v1" target="_blank"><h2>Beyond I-Con: Exploring New Dimension of Distance Measures in
+  Representation Learning</h2></a><strong><u>Authors:</u></strong>  Jasmine Shone, Shaden Alshammari, Mark Hamilton, Zhening Li, William Freeman</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract)</br><p><strong><u>Abstract:</u></strong> The Information Contrastive (I-Con) framework revealed that over 23
+representation learning methods implicitly minimize KL divergence between data
+and learned distributions that encode similarities between data points.
+However, a KL-based loss may be misaligned with the true objective, and
+properties of KL divergence such as asymmetry and unboundedness may create
+optimization challenges. We present Beyond I-Con, a framework that enables
+systematic discovery of novel loss functions by exploring alternative
+statistical divergences and similarity kernels. Key findings: (1) on
+unsupervised clustering of DINO-ViT embeddings, we achieve state-of-the-art
+results by modifying the PMI algorithm to use total variation (TV) distance;
+(2) on supervised contrastive learning, we outperform the standard approach by
+using TV and a distance-based similarity kernel instead of KL and an angular
+kernel; (3) on dimensionality reduction, we achieve superior qualitative
+results and better performance on downstream tasks than SNE by replacing KL
+with a bounded f-divergence. Our results highlight the importance of
+considering divergence and similarity kernel choices in representation learning
+optimization.</p></br><a href="http://arxiv.org/pdf/2509.03852v1" target="_blank"><h2>MillGNN: Learning Multi-Scale Lead-Lag Dependencies for Multi-Variate
+  Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Binqing Wu, Zongjiang Shang, Jianlong Huang, Ling Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted by CIKM 2025</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Multi-variate time series (MTS) forecasting is crucial for various
+applications. Existing methods have shown promising results owing to their
+strong ability to capture intra- and inter-variate dependencies. However, these
+methods often overlook lead-lag dependencies at multiple grouping scales,
+failing to capture hierarchical lead-lag effects in complex systems. To this
+end, we propose MillGNN, a novel \underline{g}raph \underline{n}eural
+\underline{n}etwork-based method that learns \underline{m}ult\underline{i}ple
+grouping scale \underline{l}ead-\underline{l}ag dependencies for MTS
+forecasting, which can comprehensively capture lead-lag effects considering
+variate-wise and group-wise dynamics and decays. Specifically, MillGNN
+introduces two key innovations: (1) a scale-specific lead-lag graph learning
+module that integrates cross-correlation coefficients and dynamic decaying
+features derived from real-time inputs and time lags to learn lead-lag
+dependencies for each scale, which can model evolving lead-lag dependencies
+with statistical interpretability and data-driven flexibility; (2) a
+hierarchical lead-lag message passing module that passes lead-lag messages at
+multiple grouping scales in a structured way to simultaneously propagate intra-
+and inter-scale lead-lag effects, which can capture multi-scale lead-lag
+effects with a balance of comprehensiveness and efficiency. Experimental
+results on 11 datasets demonstrate the superiority of MillGNN for long-term and
+short-term MTS forecasting, compared with 16 state-of-the-art methods.</p></br><a href="http://arxiv.org/pdf/2509.04166v1" target="_blank"><h2>Crossing the Species Divide: Transfer Learning from Speech to Animal
+  Sounds</h2></a><strong><u>Authors:</u></strong>  Jules Cauzinille, Marius Miron, Olivier Pietquin, Masato Hagiwara, Ricard Marxer, Arnaud Rey, Benoit Favre</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, cs.SD, 68T07, I.5.4; I.2.6; H.5.5</br><strong><u>Comments:</u></strong> 5 pages, 3 figures, usesthis http URL, submitted to DCASE 2025</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> Self-supervised speech models have demonstrated impressive performance in
+speech processing, but their effectiveness on non-speech data remains
+underexplored. We study the transfer learning capabilities of such models on
+bioacoustic detection and classification tasks. We show that models such as
+HuBERT, WavLM, and XEUS can generate rich latent representations of animal
+sounds across taxa. We analyze the models properties with linear probing on
+time-averaged representations. We then extend the approach to account for the
+effect of time-wise information with other downstream architectures. Finally,
+we study the implication of frequency range and noise on performance. Notably,
+our results are competitive with fine-tuned bioacoustic pre-trained models and
+show the impact of noise-robust pre-training setups. These findings highlight
+the potential of speech-based self-supervised learning as an efficient
+framework for advancing bioacoustic research.</p></br><a href="http://arxiv.org/pdf/2509.04782v1" target="_blank"><h2>VARMA-Enhanced Transformer for Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Jiajun Song, Xiaoou Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> The Pacific Rim International Conference on Artificial Intelligence - PRICAI2025</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Transformer-based models have significantly advanced time series forecasting.
+Recent work, like the Cross-Attention-only Time Series transformer (CATS),
+shows that removing self-attention can make the model more accurate and
+efficient. However, these streamlined architectures may overlook the
+fine-grained, local temporal dependencies effectively captured by classical
+statistical models like Vector AutoRegressive Moving Average model (VARMA). To
+address this gap, we propose VARMAformer, a novel architecture that synergizes
+the efficiency of a cross-attention-only framework with the principles of
+classical time series analysis. Our model introduces two key innovations: (1) a
+dedicated VARMA-inspired Feature Extractor (VFE) that explicitly models
+autoregressive (AR) and moving-average (MA) patterns at the patch level, and
+(2) a VARMA-Enhanced Attention (VE-atten) mechanism that employs a temporal
+gate to make queries more context-aware. By fusing these classical insights
+into a modern backbone, VARMAformer captures both global, long-range
+dependencies and local, statistical structures. Through extensive experiments
+on widely-used benchmark datasets, we demonstrate that our model consistently
+outperforms existing state-of-the-art methods. Our work validates the
+significant benefit of integrating classical statistical insights into modern
+deep learning frameworks for time series forecasting.</p></br><a href="http://arxiv.org/pdf/2509.04951v1" target="_blank"><h2>Detecting Blinks in Healthy and Parkinson's EEG: A Deep Learning
+  Perspective</h2></a><strong><u>Authors:</u></strong>  Artem Lensky, Yiding Qiu</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Blinks in electroencephalography (EEG) are often treated as unwanted
+artifacts. However, recent studies have demonstrated that blink rate and its
+variability are important physiological markers to monitor cognitive load,
+attention, and potential neurological disorders. This paper addresses the
+critical task of accurate blink detection by evaluating various deep learning
+models for segmenting EEG signals into involuntary blinks and non-blinks. We
+present a pipeline for blink detection using 1, 3, or 5 frontal EEG electrodes.
+The problem is formulated as a sequence-to-sequence task and tested on various
+deep learning architectures including standard recurrent neural networks,
+convolutional neural networks (both standard and depth-wise), temporal
+convolutional networks (TCN), transformer-based models, and hybrid
+architectures. The models were trained on raw EEG signals with minimal
+pre-processing. Training and testing was carried out on a public dataset of 31
+subjects collected at UCSD. This dataset consisted of 15 healthy participants
+and 16 patients with Parkinson's disease allowing us to verify the model's
+robustness to tremor. Out of all models, CNN-RNN hybrid model consistently
+outperformed other models and achieved the best blink detection accuracy of
+93.8%, 95.4% and 95.8% with 1, 3, and 5 channels in the healthy cohort and
+correspondingly 73.8%, 75.4% and 75.8% in patients with PD. The paper compares
+neural networks for the task of segmenting EEG recordings to involuntary blinks
+and no blinks allowing for computing blink rate and other statistics.</p></br><a href="http://arxiv.org/pdf/2509.05207v1" target="_blank"><h2>RapidGNN: Energy and Communication-Efficient Distributed Training on
+  Large-Scale Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Arefin Niam, Tevfik Kosar, M S Q Zulkar Nine</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> arXiv admin note: text overlap witharXiv:2505.10806</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have become popular across a diverse set of
+tasks in exploring structural relationships between entities. However, due to
+the highly connected structure of the datasets, distributed training of GNNs on
+large-scale graphs poses significant challenges. Traditional sampling-based
+approaches mitigate the computational loads, yet the communication overhead
+remains a challenge. This paper presents RapidGNN, a distributed GNN training
+framework with deterministic sampling-based scheduling to enable efficient
+cache construction and prefetching of remote features. Evaluation on benchmark
+graph datasets demonstrates RapidGNN's effectiveness across different scales
+and topologies. RapidGNN improves end-to-end training throughput by 2.46x to
+3.00x on average over baseline methods across the benchmark datasets, while
+cutting remote feature fetches by over 9.70x to 15.39x. RapidGNN further
+demonstrates near-linear scalability with an increasing number of computing
+units efficiently. Furthermore, it achieves increased energy efficiency over
+the baseline methods for both CPU and GPU by 44% and 32%, respectively.</p></br><a href="http://arxiv.org/pdf/2509.04751v1" target="_blank"><h2>Multimodal Foundation Model-Driven User Interest Modeling and Behavior
+  Analysis on Short Video Platforms</h2></a><strong><u>Authors:</u></strong>  Yushang Zhao, Yike Peng, Li Zhang, Qianyi Sun, Zhihui Zhang, Yingying Zhuang</br><strong><u>Categories:</u></strong> cs.IR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> With the rapid expansion of user bases on short video platforms, personalized
+recommendation systems are playing an increasingly critical role in enhancing
+user experience and optimizing content distribution. Traditional interest
+modeling methods often rely on unimodal data, such as click logs or text
+labels, which limits their ability to fully capture user preferences in a
+complex multimodal content environment. To address this challenge, this paper
+proposes a multimodal foundation model-based framework for user interest
+modeling and behavior analysis. By integrating video frames, textual
+descriptions, and background music into a unified semantic space using
+cross-modal alignment strategies, the framework constructs fine-grained user
+interest vectors. Additionally, we introduce a behavior-driven feature
+embedding mechanism that incorporates viewing, liking, and commenting sequences
+to model dynamic interest evolution, thereby improving both the timeliness and
+accuracy of recommendations. In the experimental phase, we conduct extensive
+evaluations using both public and proprietary short video datasets, comparing
+our approach against multiple mainstream recommendation algorithms and modeling
+techniques. Results demonstrate significant improvements in behavior prediction
+accuracy, interest modeling for cold-start users, and recommendation
+click-through rates. Moreover, we incorporate interpretability mechanisms using
+attention weights and feature visualization to reveal the model's decision
+basis under multimodal inputs and trace interest shifts, thereby enhancing the
+transparency and controllability of the recommendation system.</p></br><a href="http://arxiv.org/pdf/2509.05037v1" target="_blank"><h2>MultiSurv: A Multimodal Deep Survival Framework for Prostrate and
+  Bladder Cancer</h2></a><strong><u>Authors:</u></strong>  Noorul Wahab, Ethar Alzaid, Jiaqi Lv, Adam Shephard, Shan E Ahmed Raza</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 6 pages, 1 figure, 2 tables</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate prediction of time-to-event outcomes is a central challenge in
+oncology, with significant implications for treatment planning and patient
+management. In this work, we present MultiSurv, a multimodal deep survival
+model utilising DeepHit with a projection layer and inter-modality
+cross-attention, which integrates heterogeneous patient data, including
+clinical, MRI, RNA-seq and whole-slide pathology features. The model is
+designed to capture complementary prognostic signals across modalities and
+estimate individualised time-to-biochemical recurrence in prostate cancer and
+time-to-cancer recurrence in bladder cancer. Our approach was evaluated in the
+context of the CHIMERA Grand Challenge, across two of the three provided tasks.
+For Task 1 (prostate cancer bio-chemical recurrence prediction), the proposed
+framework achieved a concordance index (C-index) of 0.843 on 5-folds
+cross-validation and 0.818 on CHIMERA development set, demonstrating robust
+discriminatory ability. For Task 3 (bladder cancer recurrence prediction), the
+model obtained a C-index of 0.662 on 5-folds cross-validation and 0.457 on
+development set, highlighting its adaptability and potential for clinical
+translation. These results suggest that leveraging multimodal integration with
+deep survival learning provides a promising pathway toward personalised risk
+stratification in prostate and bladder cancer. Beyond the challenge setting,
+our framework is broadly applicable to survival prediction tasks involving
+heterogeneous biomedical data.</p></br><a href="http://arxiv.org/pdf/2509.03986v1" target="_blank"><h2>Promptception: How Sensitive Are Large Multimodal Models to Prompts?</h2></a><strong><u>Authors:</u></strong>  Mohamed Insaf Ismithdeen, Muhammad Uzair Khattak, Salman Khan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.CL, cs.LG</br><strong><u>Comments:</u></strong> Accepted to EMNLP 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Despite the success of Large Multimodal Models (LMMs) in recent years, prompt
+design for LMMs in Multiple-Choice Question Answering (MCQA) remains poorly
+understood. We show that even minor variations in prompt phrasing and structure
+can lead to accuracy deviations of up to 15% for certain prompts and models.
+This variability poses a challenge for transparent and fair LMM evaluation, as
+models often report their best-case performance using carefully selected
+prompts. To address this, we introduce Promptception, a systematic framework
+for evaluating prompt sensitivity in LMMs. It consists of 61 prompt types,
+spanning 15 categories and 6 supercategories, each targeting specific aspects
+of prompt formulation, and is used to evaluate 10 LMMs ranging from lightweight
+open-source models to GPT-4o and Gemini 1.5 Pro, across 3 MCQA benchmarks:
+MMStar, MMMU-Pro, MVBench. Our findings reveal that proprietary models exhibit
+greater sensitivity to prompt phrasing, reflecting tighter alignment with
+instruction semantics, while open-source models are steadier but struggle with
+nuanced and complex phrasing. Based on this analysis, we propose Prompting
+Principles tailored to proprietary and open-source LMMs, enabling more robust
+and fair model evaluation.</p></br><a href="http://arxiv.org/pdf/2509.05263v1" target="_blank"><h2>LatticeWorld: A Multimodal Large Language Model-Empowered Framework for
+  Interactive Complex World Generation</h2></a><strong><u>Authors:</u></strong>  Yinglin Duan, Zhengxia Zou, Tongwei Gu, Wei Jia, Zhan Zhao, Luyi Xu, Xinzhu Liu, Hao Jiang, Kang Chen, Shuang Qiu</br><strong><u>Categories:</u></strong> cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recent research has been increasingly focusing on developing 3D world models
+that simulate complex real-world scenarios. World models have found broad
+applications across various domains, including embodied AI, autonomous driving,
+entertainment, etc. A more realistic simulation with accurate physics will
+effectively narrow the sim-to-real gap and allow us to gather rich information
+about the real world conveniently. While traditional manual modeling has
+enabled the creation of virtual 3D scenes, modern approaches have leveraged
+advanced machine learning algorithms for 3D world generation, with most recent
+advances focusing on generative methods that can create virtual worlds based on
+user instructions. This work explores such a research direction by proposing
+LatticeWorld, a simple yet effective 3D world generation framework that
+streamlines the industrial production pipeline of 3D environments. LatticeWorld
+leverages lightweight LLMs (LLaMA-2-7B) alongside the industry-grade rendering
+engine (e.g., Unreal Engine 5) to generate a dynamic environment. Our proposed
+framework accepts textual descriptions and visual instructions as multimodal
+inputs and creates large-scale 3D interactive worlds with dynamic agents,
+featuring competitive multi-agent interaction, high-fidelity physics
+simulation, and real-time rendering. We conduct comprehensive experiments to
+evaluate LatticeWorld, showing that it achieves superior accuracy in scene
+layout generation and visual fidelity. Moreover, LatticeWorld achieves over a
+$90\times$ increase in industrial production efficiency while maintaining high
+creative quality compared with traditional manual production methods. Our demo
+video is available at https://youtu.be/8VWZXpERR18</p></br><a href="http://arxiv.org/pdf/2509.04966v1" target="_blank"><h2>Neuro-Spectral Architectures for Causal Physics-Informed Networks</h2></a><strong><u>Authors:</u></strong>  Arthur Bizzi, Leonardo M. Moreira, Márcio Marques, Leonardo Mendonça, Christian Júnior de Oliveira, Vitor Balestro, Lucas dos Santos Fernandez, Daniel Yukimura, Pavel Petrov, João M. Pereira, Tiago Novello, Lucas Nissenbaum</br><strong><u>Categories:</u></strong> cs.LG, 68T07, I.2.1</br><strong><u>Comments:</u></strong> 24 pages, 10 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> Physics-Informed Neural Networks (PINNs) have emerged as a powerful neural
+framework for solving partial differential equations (PDEs). However, standard
+MLP-based PINNs often fail to converge when dealing with complex initial-value
+problems, leading to solutions that violate causality and suffer from a
+spectral bias towards low-frequency components. To address these issues, we
+introduce NeuSA (Neuro-Spectral Architectures), a novel class of PINNs inspired
+by classical spectral methods, designed to solve linear and nonlinear PDEs with
+variable coefficients. NeuSA learns a projection of the underlying PDE onto a
+spectral basis, leading to a finite-dimensional representation of the dynamics
+which is then integrated with an adapted Neural ODE (NODE). This allows us to
+overcome spectral bias, by leveraging the high-frequency components enabled by
+the spectral representation; to enforce causality, by inheriting the causal
+structure of NODEs, and to start training near the target solution, by means of
+an initialization scheme based on classical methods. We validate NeuSA on
+canonical benchmarks for linear and nonlinear wave equations, demonstrating
+strong performance as compared to other architectures, with faster convergence,
+improved temporal consistency and superior predictive accuracy. Code and
+pretrained models will be released.</p></br><a href="http://arxiv.org/pdf/2509.03846v1" target="_blank"><h2>Hardware-Aware Data and Instruction Mapping for AI Tasks: Balancing
+  Parallelism, I/O and Memory Tradeoffs</h2></a><strong><u>Authors:</u></strong>  Md Rownak Hossain Chowdhury, Mostafizur Rahman</br><strong><u>Categories:</u></strong> cs.AR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a mapping framework for deep learning inference that takes
+advantage of predictable neural network behavior to plan both computation and
+communication ahead of time. The framework generates a unified stream of
+instructions and data, enabling the hardware to execute operations and route
+information on its own, without frequent involvement from the host and with
+minimal off-chip memory use. This naturally reduces reliance on I/O, off-chip
+memory, and host control. By leveraging fine-grained message passing on a
+programmable, message-based compute architecture, the framework keeps data
+movement local and coordinates computation across the array using techniques
+such as stationary-weight reuse, in-array multicasting, and staged reductions.
+Applied to VGG-19, the framework sustains high utilization (88 to 92 percent),
+with over 97 percent of messages generated internally and nearly 89 percent of
+time consumed on-chip transfers. Computation throughput scales beyond 1 TFLOP/s
+on larger arrays, while traffic reductions from reuse and local aggregation
+reach up to 100 MB per layer. Overall, the results highlight the effectiveness
+of streaming-based computation and show how our mapper enables this execution
+style by tightly coordinating data and instruction flow across the hardware.</p></br><a href="http://arxiv.org/pdf/2509.05117v1" target="_blank"><h2>HyPINO: Multi-Physics Neural Operators via HyperPINNs and the Method of
+  Manufactured Solutions</h2></a><strong><u>Authors:</u></strong>  Rafael Bischof, Michal Piovarči, Michael A. Kraus, Siddhartha Mishra, Bernd Bickel</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We present HyPINO, a multi-physics neural operator designed for zero-shot
+generalization across a broad class of parametric PDEs without requiring
+task-specific fine-tuning. Our approach combines a Swin Transformer-based
+hypernetwork with mixed supervision: (i) labeled data from analytical solutions
+generated via the Method of Manufactured Solutions (MMS), and (ii) unlabeled
+samples optimized using physics-informed objectives. The model maps PDE
+parametrizations to target Physics-Informed Neural Networks (PINNs) and can
+handle linear elliptic, hyperbolic, and parabolic equations in two dimensions
+with varying source terms, geometries, and mixed Dirichlet/Neumann boundary
+conditions, including interior boundaries. HyPINO achieves strong zero-shot
+accuracy on seven benchmark problems from PINN literature, outperforming
+U-Nets, Poseidon, and Physics-Informed Neural Operators (PINO). Further, we
+introduce an iterative refinement procedure that compares the physics of the
+generated PINN to the requested PDE and uses the discrepancy to generate a
+"delta" PINN. Summing their contributions and repeating this process forms an
+ensemble whose combined solution progressively reduces the error on six
+benchmarks and achieves over 100x gain in average $L_2$ loss in the best case,
+while retaining forward-only inference. Additionally, we evaluate the
+fine-tuning behavior of PINNs initialized by HyPINO and show that they converge
+faster and to lower final error than both randomly initialized and
+Reptile-meta-learned PINNs on five benchmarks, performing on par on the
+remaining two. Our results highlight the potential of this scalable approach as
+a foundation for extending neural operators toward solving increasingly
+complex, nonlinear, and high-dimensional PDE problems with significantly
+improved accuracy and reduced computational cost.</p></br><a href="http://arxiv.org/pdf/2509.04009v1" target="_blank"><h2>Detecting Regional Spurious Correlations in Vision Transformers via
+  Token Discarding</h2></a><strong><u>Authors:</u></strong>  Solha Kang, Esla Timothy Anzaku, Wesley De Neve, Arnout Van Messem, Joris Vankerschaver, Francois Rameau, Utku Ozbulak</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Due to their powerful feature association capabilities, neural network-based
+computer vision models have the ability to detect and exploit unintended
+patterns within the data, potentially leading to correct predictions based on
+incorrect or unintended but statistically relevant signals. These clues may
+vary from simple color aberrations to small texts within the image. In
+situations where these unintended signals align with the predictive task,
+models can mistakenly link these features with the task and rely on them for
+making predictions. This phenomenon is referred to as spurious correlations,
+where patterns appear to be associated with the task but are actually
+coincidental. As a result, detection and mitigation of spurious correlations
+have become crucial tasks for building trustworthy, reliable, and generalizable
+machine learning models. In this work, we present a novel method to detect
+spurious correlations in vision transformers, a type of neural network
+architecture that gained significant popularity in recent years. Using both
+supervised and self-supervised trained models, we present large-scale
+experiments on the ImageNet dataset demonstrating the ability of the proposed
+method to identify spurious correlations. We also find that, even if the same
+architecture is used, the training methodology has a significant impact on the
+model's reliance on spurious correlations. Furthermore, we show that certain
+classes in the ImageNet dataset contain spurious signals that are easily
+detected by the models and discuss the underlying reasons for those spurious
+signals. In light of our findings, we provide an exhaustive list of the
+aforementioned images and call for caution in their use in future research
+efforts. Lastly, we present a case study investigating spurious signals in
+invasive breast mass classification, grounding our work in real-world
+scenarios.</p></br><a href="http://arxiv.org/pdf/2509.05198v1" target="_blank"><h2>Enhancing 3D Point Cloud Classification with ModelNet-R and
+  Point-SkipNet</h2></a><strong><u>Authors:</u></strong>  Mohammad Saeid, Amir Salarpour, Pedram MohajerAnsari</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, cs.RO</br><strong><u>Comments:</u></strong> This paper has been accepted for presentation at the 7th International Conference on Pattern Recognition and Image Analysis (IPRIA 2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The classification of 3D point clouds is crucial for applications such as
+autonomous driving, robotics, and augmented reality. However, the commonly used
+ModelNet40 dataset suffers from limitations such as inconsistent labeling, 2D
+data, size mismatches, and inadequate class differentiation, which hinder model
+performance. This paper introduces ModelNet-R, a meticulously refined version
+of ModelNet40 designed to address these issues and serve as a more reliable
+benchmark. Additionally, this paper proposes Point-SkipNet, a lightweight
+graph-based neural network that leverages efficient sampling, neighborhood
+grouping, and skip connections to achieve high classification accuracy with
+reduced computational overhead. Extensive experiments demonstrate that models
+trained in ModelNet-R exhibit significant performance improvements. Notably,
+Point-SkipNet achieves state-of-the-art accuracy on ModelNet-R with a
+substantially lower parameter count compared to contemporary models. This
+research highlights the crucial role of dataset quality in optimizing model
+efficiency for 3D point cloud classification. For more details, see the code
+at: https://github.com/m-saeid/ModeNetR_PointSkipNet.</p></br><a href="http://arxiv.org/pdf/2509.05031v1" target="_blank"><h2>Pointing-Guided Target Estimation via Transformer-Based Attention</h2></a><strong><u>Authors:</u></strong>  Luca Müller, Hassan Ali, Philipp Allgeuer, Lukáš Gajdošech, Stefan Wermter</br><strong><u>Categories:</u></strong> cs.RO, cs.AI, cs.CV, I.2.9; I.2.10; I.2.6</br><strong><u>Comments:</u></strong> Accepted at the 34th International Conference on Artificial Neural Networks (ICANN) 2025,12 pages,4 figures,1 table; work was co-funded by Horizon Europe project TERAIS under Grant agreement number 101079338</br><strong><u>Matching Keywords:</u></strong> multi-modal (abstract), multi-modality (abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Deictic gestures, like pointing, are a fundamental form of non-verbal
+communication, enabling humans to direct attention to specific objects or
+locations. This capability is essential in Human-Robot Interaction (HRI), where
+robots should be able to predict human intent and anticipate appropriate
+responses. In this work, we propose the Multi-Modality Inter-TransFormer
+(MM-ITF), a modular architecture to predict objects in a controlled tabletop
+scenario with the NICOL robot, where humans indicate targets through natural
+pointing gestures. Leveraging inter-modality attention, MM-ITF maps 2D pointing
+gestures to object locations, assigns a likelihood score to each, and
+identifies the most likely target. Our results demonstrate that the method can
+accurately predict the intended object using monocular RGB data, thus enabling
+intuitive and accessible human-robot collaboration. To evaluate the
+performance, we introduce a patch confusion matrix, providing insights into the
+model's predictions across candidate object locations. Code available at:
+https://github.com/lucamuellercode/MMITF.</p></br></body>

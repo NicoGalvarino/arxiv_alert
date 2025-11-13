@@ -1,0 +1,559 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 04 Jul 2025 to 08 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.04490v1" target="_blank"><h2>Dealing with Uncertainty in Contextual Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Luca Bindini, Lorenzo Perini, Stefano Nistri, Jesse Davis, Paolo Frasconi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), contextual anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Contextual anomaly detection (CAD) aims to identify anomalies in a target
+(behavioral) variable conditioned on a set of contextual variables that
+influence the normalcy of the target variable but are not themselves indicators
+of anomaly. In many anomaly detection tasks, there exist contextual variables
+that influence the normalcy of the target variable but are not themselves
+indicators of anomaly. In this work, we propose a novel framework for CAD,
+normalcy score (NS), that explicitly models both the aleatoric and epistemic
+uncertainties. Built on heteroscedastic Gaussian process regression, our method
+regards the Z-score as a random variable, providing confidence intervals that
+reflect the reliability of the anomaly assessment. Through experiments on
+benchmark datasets and a real-world application in cardiology, we demonstrate
+that NS outperforms state-of-the-art CAD methods in both detection accuracy and
+interpretability. Moreover, confidence intervals enable an adaptive,
+uncertainty-driven decision-making process, which may be very important in
+domains such as healthcare.</p></br><a href="http://arxiv.org/pdf/2507.04216v1" target="_blank"><h2>Normalizing Flow to Augmented Posterior: Conditional Density Estimation
+  with Interpretable Dimension Reduction for High Dimensional Data</h2></a><strong><u>Authors:</u></strong>  Cheng Zeng, George Michailidis, Hitoshi Iyatomi, Leo L Duan</br><strong><u>Categories:</u></strong> stat.ME, stat.AP, stat.ML</br><strong><u>Comments:</u></strong> 25 pages, 11 figures</br><strong><u>Matching Keywords:</u></strong> dimension reduction (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The conditional density characterizes the distribution of a response variable
+$y$ given other predictor $x$, and plays a key role in many statistical tasks,
+including classification and outlier detection. Although there has been
+abundant work on the problem of Conditional Density Estimation (CDE) for a
+low-dimensional response in the presence of a high-dimensional predictor,
+little work has been done for a high-dimensional response such as images. The
+promising performance of normalizing flow (NF) neural networks in unconditional
+density estimation acts a motivating starting point. In this work, we extend NF
+neural networks when external $x$ is present. Specifically, they use the NF to
+parameterize a one-to-one transform between a high-dimensional $y$ and a latent
+$z$ that comprises two components \([z_P,z_N]\). The $z_P$ component is a
+low-dimensional subvector obtained from the posterior distribution of an
+elementary predictive model for $x$, such as logistic/linear regression. The
+$z_N$ component is a high-dimensional independent Gaussian vector, which
+explains the variations in $y$ not or less related to $x$. Unlike existing CDE
+methods, the proposed approach, coined Augmented Posterior CDE (AP-CDE), only
+requires a simple modification on the common normalizing flow framework, while
+significantly improving the interpretation of the latent component, since $z_P$
+represents a supervised dimension reduction. In image analytics applications,
+AP-CDE shows good separation of $x$-related variations due to factors such as
+lighting condition and subject id, from the other random variations. Further,
+the experiments show that an unconditional NF neural network, based on an
+unsupervised model of $z$, such as Gaussian mixture, fails to generate
+interpretable results.</p></br><a href="http://arxiv.org/pdf/2507.03995v1" target="_blank"><h2>Fast Re-Trainable Attention Autoencoder for Liquid Sensor Anomaly
+  Detection at the Edge</h2></a><strong><u>Authors:</u></strong>  Seongyun Choi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 11 pages, 2 figure</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> A lightweight, edge-deployable pipeline is proposed for detecting sensor
+anomalies in chemistry and biology laboratories. A custom PCB captures seven
+sensor channels and streams them over the local network. An Attention-based
+One-Class Autoencoder reaches a usable state after training on only thirty
+minutes of normal data. Despite the small data set, the model already attains
+an F1 score of 0.72, a precision of 0.89, and a recall of 0.61 when tested on
+synthetic micro-anomalies. The trained network is converted into a
+TensorFlow-Lite binary of about 31 kB and runs on an Advantech ARK-1221L, a
+fan-less x86 edge device without AVX instructions; end-to-end inference latency
+stays below two seconds. The entire collect-train-deploy workflow finishes
+within one hour, which demonstrates that the pipeline adapts quickly whenever a
+new liquid or sensor is introduced.</p></br><a href="http://arxiv.org/pdf/2507.04621v1" target="_blank"><h2>Multimodal LLM Integrated Semantic Communications for 6G Immersive
+  Experiences</h2></a><strong><u>Authors:</u></strong>  Yusong Zhang, Yuxuan Sun, Lei Guo, Wei Chen, Bo Ai, Deniz Gunduz</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NI</br><strong><u>Comments:</u></strong> This work has been submitted to the IEEE for possible publication</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> 6G networks promise revolutionary immersive communication experiences
+including augmented reality (AR), virtual reality (VR), and holographic
+communications. These applications demand high-dimensional multimodal data
+transmission and intelligent data processing in real-time, which is extremely
+challenging over resource-limited wireless communication systems. Moreover, a
+joint understanding of the environment, context, and user intent is essential
+to deliver task-relevant content effectively. This article presents a novel
+multimodal large language model (MLLM) integrated semantic communications
+framework, termed MLLM-SC, which fully leverages reasoning and generative
+capabilities of pre-trained foundation models for context-aware and
+task-oriented wireless communication. The MLLM-SC framework adopts a
+device-edge collaborative architecture. At the edge, MLLM-empowered semantic
+guidance module analyzes multimodal inputs, user intents, and channel
+conditions to generate importance-aware attention maps prioritizing
+semantically critical information. An importance-aware semantic encoder and a
+resource-adaptive semantic decoder are jointly designed and optimized, which
+can utilize the semantic guidance for adaptive bandwidth allocation and
+high-quality content reconstruction or generation. Extensive case studies on
+visual question answering for AR/VR applications and diffusion-driven image
+generation validate the effectiveness of MLLM-SC.</p></br><a href="http://arxiv.org/pdf/2507.04194v1" target="_blank"><h2>Mixed-Sample SGD: an End-to-end Analysis of Supervised Transfer Learning</h2></a><strong><u>Authors:</u></strong>  Yuyang Deng, Samory Kpotufe</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Theoretical works on supervised transfer learning (STL) -- where the learner
+has access to labeled samples from both source and target distributions -- have
+for the most part focused on statistical aspects of the problem, while
+efficient optimization has received less attention. We consider the problem of
+designing an SGD procedure for STL that alternates sampling between source and
+target data, while maintaining statistical transfer guarantees without prior
+knowledge of the quality of the source data. A main algorithmic difficulty is
+in understanding how to design such an adaptive sub-sampling mechanism at each
+SGD step, to automatically gain from the source when it is informative, or bias
+towards the target and avoid negative transfer when the source is less
+informative.
+  We show that, such a mixed-sample SGD procedure is feasible for general
+prediction tasks with convex losses, rooted in tracking an abstract sequence of
+constrained convex programs that serve to maintain the desired transfer
+guarantees.
+  We instantiate these results in the concrete setting of linear regression
+with square loss, and show that the procedure converges, with $1/\sqrt{T}$
+rate, to a solution whose statistical performance on the target is adaptive to
+the a priori unknown quality of the source. Experiments with synthetic and real
+datasets support the theory.</p></br><a href="http://arxiv.org/pdf/2507.03910v1" target="_blank"><h2>Return of the Latent Space COWBOYS: Re-thinking the use of VAEs for
+  Bayesian Optimisation of Structured Spaces</h2></a><strong><u>Authors:</u></strong>  Henry B. Moss, Sebastian W. Ober, Tom Diethe</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Accepted for publication at the International Conference on Machine Learning (ICML) 2025</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract), latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Bayesian optimisation in the latent space of a Variational AutoEncoder (VAE)
+is a powerful framework for optimisation tasks over complex structured domains,
+such as the space of scientifically interesting molecules. However, existing
+approaches tightly couple the surrogate and generative models, which can lead
+to suboptimal performance when the latent space is not tailored to specific
+tasks, which in turn has led to the proposal of increasingly sophisticated
+algorithms. In this work, we explore a new direction, instead proposing a
+decoupled approach that trains a generative model and a Gaussian Process (GP)
+surrogate separately, then combines them via a simple yet principled Bayesian
+update rule. This separation allows each component to focus on its strengths --
+structure generation from the VAE and predictive modelling by the GP. We show
+that our decoupled approach improves our ability to identify high-potential
+candidates in molecular optimisation problems under constrained evaluation
+budgets.</p></br><a href="http://arxiv.org/pdf/2507.03855v1" target="_blank"><h2>Transformer with Koopman-Enhanced Graph Convolutional Network for
+  Spatiotemporal Dynamics Forecasting</h2></a><strong><u>Authors:</u></strong>  Zekai Wang, Bing Yao</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), latent space (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Spatiotemporal dynamics forecasting is inherently challenging, particularly
+in systems defined over irregular geometric domains, due to the need to jointly
+capture complex spatial correlations and nonlinear temporal dynamics. To tackle
+these challenges, we propose TK-GCN, a two-stage framework that integrates
+geometry-aware spatial encoding with long-range temporal modeling. In the first
+stage, a Koopman-enhanced Graph Convolutional Network (K-GCN) is developed to
+embed the high-dimensional dynamics distributed on spatially irregular domains
+into a latent space where the evolution of system states is approximately
+linear. By leveraging Koopman operator theory, this stage enhances the temporal
+consistency during the latent learning. In the second stage, a Transformer
+module is employed to model the temporal progression within the Koopman-encoded
+latent space. Through the self-attention mechanism, the Transformer captures
+long-range temporal dependencies, enabling accurate forecasting over extended
+horizons. We evaluate TK-GCN in spatiotemporal cardiac dynamics forecasting and
+benchmark its performance against several state-of-the-art baselines.
+Experimental results and ablation studies show that TK-GCN consistently
+delivers superior predictive accuracy across a range of forecast horizons,
+demonstrating its capability to effectively model complex spatial structures
+and nonlinear temporal dynamics.</p></br><a href="http://arxiv.org/pdf/2507.03531v1" target="_blank"><h2>Multimodal Alignment with Cross-Attentive GRUs for Fine-Grained Video
+  Understanding</h2></a><strong><u>Authors:</u></strong>  Namho Kim, Junhwa Kim</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Fine-grained video classification requires understanding complex
+spatio-temporal and semantic cues that often exceed the capacity of a single
+modality. In this paper, we propose a multimodal framework that fuses video,
+image, and text representations using GRU-based sequence encoders and
+cross-modal attention mechanisms. The model is trained using a combination of
+classification or regression loss, depending on the task, and is further
+regularized through feature-level augmentation and autoencoding techniques. To
+evaluate the generality of our framework, we conduct experiments on two
+challenging benchmarks: the DVD dataset for real-world violence detection and
+the Aff-Wild2 dataset for valence-arousal estimation. Our results demonstrate
+that the proposed fusion strategy significantly outperforms unimodal baselines,
+with cross-attention and feature augmentation contributing notably to
+robustness and performance.</p></br><a href="http://arxiv.org/pdf/2507.03854v1" target="_blank"><h2>Latent FxLMS: Accelerating Active Noise Control with Neural Adaptive
+  Filters</h2></a><strong><u>Authors:</u></strong>  Kanad Sarkar, Austin Lu, Manan Mittal, Yongjie Zhuang, Ryan Corey, Andrew Singer</br><strong><u>Categories:</u></strong> cs.LG, cs.SD, cs.SY, eess.AS, eess.SY, nlin.AO, stat.ML</br><strong><u>Comments:</u></strong> 8 pages, Submitted at Forum Acousticum Euronoise 2025</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Filtered-X LMS (FxLMS) is commonly used for active noise control (ANC),
+wherein the soundfield is minimized at a desired location. Given prior
+knowledge of the spatial region of the noise or control sources, we could
+improve FxLMS by adapting along the low-dimensional manifold of possible
+adaptive filter weights. We train an auto-encoder on the filter coefficients of
+the steady-state adaptive filter for each primary source location sampled from
+a given spatial region and constrain the weights of the adaptive filter to be
+the output of the decoder for a given state of latent variables. Then, we
+perform updates in the latent space and use the decoder to generate the
+cancellation filter. We evaluate how various neural network constraints and
+normalization techniques impact the convergence speed and steady-state mean
+squared error. Under certain conditions, our Latent FxLMS model converges in
+fewer steps with comparable steady-state error to the standard FxLMS.</p></br><a href="http://arxiv.org/pdf/2507.03310v1" target="_blank"><h2>ReTimeCausal: EM-Augmented Additive Noise Models for Interpretable
+  Causal Discovery in Irregular Time Series</h2></a><strong><u>Authors:</u></strong>  Weihong Li, Anpeng Wu, Kun Kuang, Keting Yin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 2 figures</br><strong><u>Matching Keywords:</u></strong> causality (abstract)</br><p><strong><u>Abstract:</u></strong> This paper studies causal discovery in irregularly sampled time series-a
+pivotal challenge in high-stakes domains like finance, healthcare, and climate
+science, where missing data and inconsistent sampling frequencies distort
+causal mechanisms. Traditional methods (e.g., Granger causality, PCMCI) fail to
+reconcile multi-scale interactions (e.g., hourly storms vs. decadal climate
+shifts), while neural approaches (e.g., CUTS+) lack interpretability, stemming
+from a critical gap: existing frameworks either rigidly assume temporal
+regularity or aggregate dynamics into opaque representations, neglecting
+real-world granularity and auditable logic. To bridge this gap, we propose
+ReTimeCausal, a novel integration of Additive Noise Models (ANM) and
+Expectation-Maximization (EM) that unifies physics-guided data imputation with
+sparse causal inference. Through kernelized sparse regression and structural
+constraints, ReTimeCausal iteratively refines missing values (E-step) and
+causal graphs (M-step), resolving cross-frequency dependencies and missing data
+issues. Extensive experiments on synthetic and real-world datasets demonstrate
+that ReTimeCausal outperforms existing state-of-the-art methods under
+challenging irregular sampling and missing data conditions.</p></br><a href="http://arxiv.org/pdf/2507.04000v1" target="_blank"><h2>Leveraging Multimodal Data and Side Users for Diffusion Cross-Domain
+  Recommendation</h2></a><strong><u>Authors:</u></strong>  Fan Zhang, Jinpeng Chen, Huan Li, Senzhang Wang, Yuan Cao, Kaimin Wei, JianXiang He, Feifei Kou, Jinqing Wang</br><strong><u>Categories:</u></strong> cs.IR, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Cross-domain recommendation (CDR) aims to address the persistent cold-start
+problem in Recommender Systems. Current CDR research concentrates on
+transferring cold-start users' information from the auxiliary domain to the
+target domain. However, these systems face two main issues: the
+underutilization of multimodal data, which hinders effective cross-domain
+alignment, and the neglect of side users who interact solely within the target
+domain, leading to inadequate learning of the target domain's vector space
+distribution. To address these issues, we propose a model leveraging Multimodal
+data and Side users for diffusion Cross-domain recommendation (MuSiC). We first
+employ a multimodal large language model to extract item multimodal features
+and leverage a large language model to uncover user features using prompt
+learning without fine-tuning. Secondly, we propose the cross-domain diffusion
+module to learn the generation of feature vectors in the target domain. This
+approach involves learning feature distribution from side users and
+understanding the patterns in cross-domain transformation through overlapping
+users. Subsequently, the trained diffusion module is used to generate feature
+vectors for cold-start users in the target domain, enabling the completion of
+cross-domain recommendation tasks. Finally, our experimental evaluation of the
+Amazon dataset confirms that MuSiC achieves state-of-the-art performance,
+significantly outperforming all selected baselines. Our code is available:
+https://anonymous.4open.science/r/MuSiC-310A/.</p></br><a href="http://arxiv.org/pdf/2507.04380v1" target="_blank"><h2>Transferring Visual Explainability of Self-Explaining Models through
+  Task Arithmetic</h2></a><strong><u>Authors:</u></strong>  Yuya Yoshikawa, Ryotaro Shimizu, Takahiro Kawashima, Yuki Saito</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (title, abstract)</br><p><strong><u>Abstract:</u></strong> In scenarios requiring both prediction and explanation efficiency for image
+classification, self-explaining models that perform both tasks in a single
+inference are effective. However, their training incurs substantial labeling
+and computational costs. This study aims to tackle the issue by proposing a
+method to transfer the visual explainability of self-explaining models, learned
+in a source domain, to a target domain based on a task arithmetic framework.
+Specifically, we construct a self-explaining model by extending image
+classifiers based on a vision-language pretrained model. We then define an
+\emph{explainability vector} as the difference between model parameters trained
+on the source domain with and without explanation supervision. Based on the
+task arithmetic framework, we impart explainability to a model trained only on
+the prediction task in the target domain by applying the explainability vector.
+Experimental results on various image classification datasets demonstrate that,
+except for transfers between some less-related domains, visual explainability
+can be successfully transferred from source to target domains, improving
+explanation quality in the target domain without sacrificing classification
+accuracy. Furthermore, we show that the explainability vector learned on a
+large and diverse dataset like ImageNet, extended with explanation supervision,
+exhibits universality and robustness, improving explanation quality on nine out
+of ten different target datasets. We also find that the explanation quality
+achieved with a single model inference is comparable to that of Kernel SHAP,
+which requires 150 model inferences.</p></br><a href="http://arxiv.org/pdf/2507.04385v1" target="_blank"><h2>Tractable Representation Learning with Probabilistic Circuits</h2></a><strong><u>Authors:</u></strong>  Steven Braun, Sahil Sidheekh, Antonio Vergari, Martin Mundt, Sriraam Natarajan, Kristian Kersting</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Probabilistic circuits (PCs) are powerful probabilistic models that enable
+exact and tractable inference, making them highly suitable for probabilistic
+reasoning and inference tasks. While dominant in neural networks,
+representation learning with PCs remains underexplored, with prior approaches
+relying on external neural embeddings or activation-based encodings. To address
+this gap, we introduce autoencoding probabilistic circuits (APCs), a novel
+framework leveraging the tractability of PCs to model probabilistic embeddings
+explicitly. APCs extend PCs by jointly modeling data and embeddings, obtaining
+embedding representations through tractable probabilistic inference. The PC
+encoder allows the framework to natively handle arbitrary missing data and is
+seamlessly integrated with a neural decoder in a hybrid, end-to-end trainable
+architecture enabled by differentiable sampling. Our empirical evaluation
+demonstrates that APCs outperform existing PC-based autoencoding methods in
+reconstruction quality, generate embeddings competitive with, and exhibit
+superior robustness in handling missing data compared to neural autoencoders.
+These results highlight APCs as a powerful and flexible representation learning
+method that exploits the probabilistic inference capabilities of PCs, showing
+promising directions for robust inference, out-of-distribution detection, and
+knowledge distillation.</p></br><a href="http://arxiv.org/pdf/2507.04448v1" target="_blank"><h2>Transfer Learning in Infinite Width Feature Learning Networks</h2></a><strong><u>Authors:</u></strong>  Clarissa Lauditi, Blake Bordelon, Cengiz Pehlevan</br><strong><u>Categories:</u></strong> cs.LG, cond-mat.dis-nn, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> We develop a theory of transfer learning in infinitely wide neural networks
+where both the pretraining (source) and downstream (target) task can operate in
+a feature learning regime. We analyze both the Bayesian framework, where
+learning is described by a posterior distribution over the weights, and
+gradient flow training of randomly initialized networks trained with weight
+decay. Both settings track how representations evolve in both source and target
+tasks. The summary statistics of these theories are adapted feature kernels
+which, after transfer learning, depend on data and labels from both source and
+target tasks. Reuse of features during transfer learning is controlled by an
+elastic weight coupling which controls the reliance of the network on features
+learned during training on the source task. We apply our theory to linear and
+polynomial regression tasks as well as real datasets. Our theory and
+experiments reveal interesting interplays between elastic weight coupling,
+feature learning strength, dataset size, and source and target task alignment
+on the utility of transfer learning.</p></br><a href="http://arxiv.org/pdf/2507.03899v1" target="_blank"><h2>Transformer Model for Alzheimer's Disease Progression Prediction Using
+  Longitudinal Visit Sequences</h2></a><strong><u>Authors:</u></strong>  Mahdi Moghaddami, Clayton Schubring, Mohammad-Reza Siadat</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> Conference on Health, Inference, and Learning (CHIL, 2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Alzheimer's disease (AD) is a neurodegenerative disorder with no known cure
+that affects tens of millions of people worldwide. Early detection of AD is
+critical for timely intervention to halt or slow the progression of the
+disease. In this study, we propose a Transformer model for predicting the stage
+of AD progression at a subject's next clinical visit using features from a
+sequence of visits extracted from the subject's visit history. We also
+rigorously compare our model to recurrent neural networks (RNNs) such as long
+short-term memory (LSTM), gated recurrent unit (GRU), and minimalRNN and assess
+their performances based on factors such as the length of prior visits and data
+imbalance. We test the importance of different feature categories and visit
+history, as well as compare the model to a newer Transformer-based model
+optimized for time series. Our model demonstrates strong predictive performance
+despite missing visits and missing features in available visits, particularly
+in identifying converter subjects -- individuals transitioning to more severe
+disease stages -- an area that has posed significant challenges in longitudinal
+prediction. The results highlight the model's potential in enhancing early
+diagnosis and patient outcomes.</p></br><a href="http://arxiv.org/pdf/2507.03430v1" target="_blank"><h2>Multi-Level Fusion Graph Neural Network for Molecule Property Prediction</h2></a><strong><u>Authors:</u></strong>  XiaYu Liu, Hou-biao Li, Yang Liu, Chao Fan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07, I.2.6</br><strong><u>Comments:</u></strong> 38 pages, 11 figures, 6 tables</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), multi-modal (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate molecular property prediction is essential in drug discovery and
+related fields. However, existing graph neural networks (GNNs) often struggle
+to simultaneously capture both local and global molecular structures. In this
+work, we propose a Multi-Level Fusion Graph Neural Network (MLFGNN) that
+integrates Graph Attention Networks and a novel Graph Transformer to jointly
+model local and global dependencies. In addition, we incorporate molecular
+fingerprints as a complementary modality and introduce a mechanism of
+interaction between attention to adaptively fuse information across
+representations. Extensive experiments on multiple benchmark datasets
+demonstrate that MLFGNN consistently outperforms state-of-the-art methods in
+both classification and regression tasks. Interpretability analysis further
+reveals that the model effectively captures task-relevant chemical patterns,
+supporting the usefulness of multi-level and multi-modal fusion in molecular
+representation learning.</p></br><a href="http://arxiv.org/pdf/2507.04981v1" target="_blank"><h2>Classification of autoimmune diseases from Peripheral blood TCR
+  repertoires by multimodal multi-instance learning</h2></a><strong><u>Authors:</u></strong>  Ruihao Zhang, Fei Ye, Dandan Meng, Yixuan Huang, Maochen, Xiao Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, q-bio.GN</br><strong><u>Comments:</u></strong> 7 figures, 4 tabels</br><strong><u>Matching Keywords:</u></strong> multimodal (title), attention (abstract)</br><p><strong><u>Abstract:</u></strong> T cell receptor (TCR) repertoires encode critical immunological signatures
+for autoimmune diseases, yet their clinical application remains limited by
+sequence sparsity and low witness rates. We developed EAMil, a multi-instance
+deep learning framework that leverages TCR sequencing data to diagnose systemic
+lupus erythematosus (SLE) and rheumatoid arthritis (RA) with exceptional
+accuracy. By integrating PrimeSeq feature extraction with ESMonehot encoding
+and enhanced gate attention mechanisms, our model achieved state-of-the-art
+performance with AUCs of 98.95% for SLE and 97.76% for RA. EAMil successfully
+identified disease-associated genes with over 90% concordance with established
+differential analyses and effectively distinguished disease-specific TCR genes.
+The model demonstrated robustness in classifying multiple disease categories,
+utilizing the SLEDAI score to stratify SLE patients by disease severity as well
+as to diagnose the site of damage in SLE patients, and effectively controlling
+for confounding factors such as age and gender. This interpretable framework
+for immune receptor analysis provides new insights for autoimmune disease
+detection and classification with broad potential clinical applications across
+immune-mediated conditions.</p></br><a href="http://arxiv.org/pdf/2507.04870v1" target="_blank"><h2>NTSFormer: A Self-Teaching Graph Transformer for Multimodal Cold-Start
+  Node Classification</h2></a><strong><u>Authors:</u></strong>  Jun Hu, Yufei He, Yuan Li, Bryan Hooi, Bingsheng He</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Cold-start node classification on multimodal graphs is challenging because
+cold-start nodes are isolated (i.e., no edges) and often have missing
+modalities (e.g., absent text or image features). Existing methods address
+structural isolation by degrading graph learning models to MLPs for cold-start
+inference, using a teacher model (with graph access) to guide the MLP. However,
+this results in limited model capacity in the student, which is further
+challenged when modalities are missing. In this paper, we propose
+Neighbor-to-Self Graph Transformer (NTSFormer), a unified Graph Transformer
+framework that jointly tackles the isolation and missing-modality issues via a
+self-teaching paradigm. Specifically, NTSFormer uses a cold-start attention
+mask to simultaneously make two predictions for each node: a "student"
+prediction based only on self-information (i.e., the node's own features), and
+a "teacher" prediction incorporating both self and neighbor information. This
+enables the model to supervise itself without degrading to an MLP, thereby
+fully leveraging the Transformer's capacity to handle missing modalities. To
+handle diverse graph information and missing modalities, NTSFormer performs a
+one-time multimodal graph pre-computation that converts structural and feature
+data into token sequences, which are then processed by a Mixture-of-Experts
+(MoE) Input Projection and Transformer layers for effective fusion.
+Experimental results on public datasets show that NTSFormer achieves superior
+performance on multimodal cold-start node classification tasks.</p></br><a href="http://arxiv.org/pdf/2507.03885v1" target="_blank"><h2>Unraveling the Black-box Magic: An Analysis of Neural Networks' Dynamic
+  Local Extrema</h2></a><strong><u>Authors:</u></strong>  Shengjian Chen</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 19 pages, 8 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We point out that neural networks are not black boxes, and their
+generalization stems from the ability to dynamically map a dataset to the local
+extrema of the model function. We further prove that the number of local
+extrema in a neural network is positively correlated with the number of its
+parameters, and on this basis, we give a new algorithm that is different from
+the back-propagation algorithm, which we call the extremum-increment algorithm.
+Some difficult situations, such as gradient vanishing and overfitting, can be
+reasonably explained and dealt with in this framework.</p></br><a href="http://arxiv.org/pdf/2507.03318v1" target="_blank"><h2>Structure-Aware Compound-Protein Affinity Prediction via Graph Neural
+  Network with Group Lasso Regularization</h2></a><strong><u>Authors:</u></strong>  Zanyu Shi, Yang Wang, Pathum Weerawarna, Jie Zhang, Timothy Richardson, Yijie Wang, Kun Huang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 15 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Explainable artificial intelligence (XAI) approaches have been increasingly
+applied in drug discovery to learn molecular representations and identify
+substructures driving property predictions. However, building end-to-end
+explainable machine learning models for structure-activity relationship (SAR)
+modeling for compound property prediction faces many challenges, such as
+limited activity data per target and the sensitivity of properties to subtle
+molecular changes. To address this, we leveraged activity-cliff molecule pairs,
+i.e., compounds sharing a common scaffold but differing sharply in potency,
+targeting three proto-oncogene tyrosine-protein kinase Src proteins (i.e., PDB
+IDs 1O42, 2H8H, and 4MXO). We implemented graph neural network (GNN) methods to
+obtain atom-level feature information and predict compound-protein affinity
+(i.e., half maximal inhibitory concentration, IC50). In addition, we trained
+GNN models with different structure-aware loss functions to adequately leverage
+molecular property and structure information. We also utilized group lasso and
+sparse group lasso to prune and highlight molecular subgraphs and enhance the
+structure-specific model explainability for the predicted property difference
+in molecular activity-cliff pairs. We improved drug property prediction by
+integrating common and uncommon node information and using sparse group lasso,
+reducing the average root mean squared error (RMSE) by 12.70%, and achieving
+the lowest averaged RMSE=0.2551 and the highest PCC=0.9572. Furthermore,
+applying regularization enhances feature attribution methods that estimate the
+contribution of each atom in the molecular graphs by boosting global direction
+scores and atom-level accuracy in atom coloring accuracy, which improves model
+interpretability in drug discovery pipelines, particularly in investigating
+important molecular substructures in lead optimization.</p></br><a href="http://arxiv.org/pdf/2507.04858v1" target="_blank"><h2>Towards Human-in-the-Loop Onset Detection: A Transfer Learning Approach
+  for Maracatu</h2></a><strong><u>Authors:</u></strong>  António Sá Pinto</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> Accepted at ISMIR 2025</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> We explore transfer learning strategies for musical onset detection in the
+Afro-Brazilian Maracatu tradition, which features complex rhythmic patterns
+that challenge conventional models. We adapt two Temporal Convolutional Network
+architectures: one pre-trained for onset detection (intra-task) and another for
+beat tracking (inter-task). Using only 5-second annotated snippets per
+instrument, we fine-tune these models through layer-wise retraining strategies
+for five traditional percussion instruments. Our results demonstrate
+significant improvements over baseline performance, with F1 scores reaching up
+to 0.998 in the intra-task setting and improvements of over 50 percentage
+points in best-case scenarios. The cross-task adaptation proves particularly
+effective for time-keeping instruments, where onsets naturally align with beat
+positions. The optimal fine-tuning configuration varies by instrument,
+highlighting the importance of instrument-specific adaptation strategies. This
+approach addresses the challenges of underrepresented musical traditions,
+offering an efficient human-in-the-loop methodology that minimizes annotation
+effort while maximizing performance. Our findings contribute to more inclusive
+music information retrieval tools applicable beyond Western musical contexts.</p></br><a href="http://arxiv.org/pdf/2507.04417v1" target="_blank"><h2>Neural Networks for Tamed Milstein Approximation of SDEs with Additive
+  Symmetric Jump Noise Driven by a Poisson Random Measure</h2></a><strong><u>Authors:</u></strong>  Ramirez-Gonzalez Jose-Hermenegildo, Sun Ying</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 60H10, 68T07, I.2.6; G.3</br><strong><u>Comments:</u></strong> 15 pages, 9 figures, 4 tables</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> This work aims to estimate the drift and diffusion functions in stochastic
+differential equations (SDEs) driven by a particular class of L\'evy processes
+with finite jump intensity, using neural networks. We propose a framework that
+integrates the Tamed-Milstein scheme with neural networks employed as
+non-parametric function approximators. Estimation is carried out in a
+non-parametric fashion for the drift function \( f: \mathbb{Z} \to \mathbb{R}
+\), the diffusion coefficient \( g: \mathbb{Z} \to \mathbb{R} \). The model of
+interest is given by \[ dX(t) = \xi + f(X(t))\, dt + g(X(t))\, dW_t + \gamma
+\int_{\mathbb{Z}} z\, N(dt,dz), \] where \( W_t \) is a standard Brownian
+motion, and \( N(dt,dz) \) is a Poisson random measure on \( (~\mathbb{R}_{+}
+~\times ~\mathbb{Z}~, ~\mathcal{B}~(~\mathbb{R}_{+}~)~\otimes~\mathcal{Z}~,~
+\lambda( \Lambda~\otimes~v~)~) \), with \( \lambda, \gamma > 0 \), \( \Lambda
+\) being the Lebesgue measure on \( \mathbb{R}_{+} \), and \( v \) a finite
+measure on the measurable space \( (\mathbb{Z}, \mathcal{Z}) \).
+  Neural networks are used as non-parametric function approximators, enabling
+the modeling of complex nonlinear dynamics without assuming restrictive
+functional forms. The proposed methodology constitutes a flexible alternative
+for inference in systems with state-dependent noise and discontinuities driven
+by L\'evy processes.</p></br><a href="http://arxiv.org/pdf/2507.03340v1" target="_blank"><h2>Degrees of Freedom for Linear Attention: Distilling Softmax Attention
+  with Optimal Feature Efficiency</h2></a><strong><u>Authors:</u></strong>  Naoki Nishikawa, Rei Higuchi, Taiji Suzuki</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 18 pages, 1 figure</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Linear attention has attracted interest as a computationally efficient
+approximation to softmax attention, especially for long sequences. Recent
+studies have explored distilling softmax attention in pre-trained Transformers
+into linear attention. However, a critical challenge remains: how to choose the
+feature dimension that governs the approximation quality. Existing methods fix
+this dimension uniformly across all attention layers, overlooking the diverse
+roles and complexities of them. In this paper, we propose a principled method
+to automatically determine the feature dimension in linear attention using the
+concept of statistical degrees of freedom, which represent the effective
+dimensionality of the inputs. We provide a theoretical bound on the
+approximation error and show that the dimension chosen by our method achieves
+smaller error under a fixed computational budget. Furthermore, we introduce an
+efficient layerwise training strategy to learn nonlinear features tailored to
+each layer. Experiments on multiple pre-trained transformers demonstrate that
+our method improves the performance of distilled models compared to baselines
+without increasing the inference cost. Our findings also provide insight into
+how the complexity of the attention mechanism evolves across layers.</p></br><a href="http://arxiv.org/pdf/2507.04464v1" target="_blank"><h2>Anomalous Decision Discovery using Inverse Reinforcement Learning</h2></a><strong><u>Authors:</u></strong>  Ashish Bastola, Mert D. Pesé, Long Cheng, Jonathon Smereka, Abolfazl Razi</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection plays a critical role in Autonomous Vehicles (AVs) by
+identifying unusual behaviors through perception systems that could compromise
+safety and lead to hazardous situations. Current approaches, which often rely
+on predefined thresholds or supervised learning paradigms, exhibit reduced
+efficacy when confronted with unseen scenarios, sensor noise, and occlusions,
+leading to potential safety-critical failures. Moreover, supervised methods
+require large annotated datasets, limiting their real-world feasibility. To
+address these gaps, we propose an anomaly detection framework based on Inverse
+Reinforcement Learning (IRL) to infer latent driving intentions from sequential
+perception data, thus enabling robust identification. Specifically, we present
+Trajectory-Reward Guided Adaptive Pre-training (TRAP), a novel IRL framework
+for anomaly detection, to address two critical limitations of existing methods:
+noise robustness and generalization to unseen scenarios. Our core innovation is
+implicitly learning temporal credit assignments via reward and worst-case
+supervision. We leverage pre-training with variable-horizon sampling to
+maximize time-to-consequence, resulting in early detection of behavior
+deviation. Experiments on 14,000+ simulated trajectories demonstrate
+state-of-the-art performance, achieving 0.90 AUC and 82.2\% F1-score -
+outperforming similarly trained supervised and unsupervised baselines by 39\%
+on Recall and 12\% on F1-score, respectively. Similar performance is achieved
+while exhibiting robustness to various noise types and generalization to unseen
+anomaly types. Our code will be available at:
+https://github.com/abastola0/TRAP.git</p></br><a href="http://arxiv.org/pdf/2507.03282v1" target="_blank"><h2>Observation and research on cosmic ray muons and solar modulation effect
+  based on plastic scintillator detector</h2></a><strong><u>Authors:</u></strong>  Wang Dexin, Zhang Rui, Yu Dekang, Na Hui, Yao Zhangha, Wu Linghe, Zhang Suyalatu, Liang Tairan, Huang Meirong, Wang Zhilong, Bai Yu, Huang Yongshun, Yang Xue, Zhang Jiawen, Liu Mengdi, Ma Qiang, Yu Jing, Ji Xiuyan, Yu Yiliqi, Shao Xuepeng</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.IM, nucl-ex, physics.ins-det</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Cosmic rays, originating from stars, supernovae, and other astrophysical
+sources, are composed of high-energy particles that enter Earths atmosphere.
+Upon interaction with atmospheric nuclei, these primary cosmic rays generate
+secondary particles, including neutrons, electrons, and muons, with muons
+constituting a dominant component at ground level. Muons, due to their relative
+abundance, stability, and well-characterized energy loss mechanisms, serve as
+critical probes for investigating the fundamental properties of cosmic rays.
+Studies of muon energy distribution, diurnal anisotropy, and their modulation
+by solar activity provide critical insights into the mechanism of particle
+acceleration in cosmic ray sources and the effects of solar and
+atmospheric.This study aims to characterize the counting spectra and
+anisotropic properties of cosmic ray muons by using a plastic scintillator
+detector system. The experiment was conducted over a three-month period, from
+December 2023 to February 2024, leveraging long-bar plastic scintillator
+detectors equipped with dual-end photomultiplier tubes (PMTs) and a
+high-resolution digital data acquisition system. A dual-end coincidence
+measurement technique was used to enhance the signal-to-noise ratio by
+suppressing thermal noise and other background interferences. Diurnal
+variations in muon count rates exhibit a pronounced pattern, with a systematic
+reduction occurring between 8:00 AM and 1:00 PM. This phenomenon is attributed
+to the solar shielding effects, where enhanced solar activity during daytime
+hours modulates the flux of galactic cosmic rays reaching Earths surface. The
+study further corroborates these findings through cross-comparisons with data
+from the Yangbajing Cosmic Ray Observatory. These observations underscore the
+robustness of the plastic scintillator detector system for capturing detailed
+muon spectra and anisotropic patterns.</p></br><a href="http://arxiv.org/pdf/2507.03594v1" target="_blank"><h2>RECA-PD: A Robust Explainable Cross-Attention Method for Speech-based
+  Parkinson's Disease Classification</h2></a><strong><u>Authors:</u></strong>  Terry Yi Zhong, Cristian Tejedor-Garcia, Martha Larson, Bastiaan R. Bloem</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.CL, eess.AS</br><strong><u>Comments:</u></strong> Accepted for TSD 2025</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Parkinson's Disease (PD) affects over 10 million people globally, with speech
+impairments often preceding motor symptoms by years, making speech a valuable
+modality for early, non-invasive detection. While recent deep-learning models
+achieve high accuracy, they typically lack the explainability required for
+clinical use. To address this, we propose RECA-PD, a novel, robust, and
+explainable cross-attention architecture that combines interpretable speech
+features with self-supervised representations. RECA-PD matches state-of-the-art
+performance in Speech-based PD detection while providing explanations that are
+more consistent and more clinically meaningful. Additionally, we demonstrate
+that performance degradation in certain speech tasks (e.g., monologue) can be
+mitigated by segmenting long recordings. Our findings indicate that performance
+and explainability are not necessarily mutually exclusive. Future work will
+enhance the usability of explanations for non-experts and explore severity
+estimation to increase the real-world clinical relevance.</p></br><a href="http://arxiv.org/pdf/2507.04239v1" target="_blank"><h2>Scaling Context Requires Rethinking Attention</h2></a><strong><u>Authors:</u></strong>  Carles Gelada, Jacob Buckman, Sean Zhang, Txus Bach</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> We argue that neither transformers nor sub-quadratic architectures are well
+suited to training at long sequence lengths: the cost of processing the context
+is too expensive in the former, too inexpensive in the latter. Approaches such
+as sliding window attention which reduce the cost-per-token of a transformer
+impair in-context learning, and so are also unsuitable. To address these
+limitations, we introduce power attention, an architectural layer for
+linear-cost sequence modeling whose state size can be adjusted independently of
+parameters, unlocking the advantages of linear attention on practical domains.
+We develop and open-source a set of GPU kernels for efficient power attention,
+identifying a novel pattern of operation fusion to avoid memory and bandwidth
+bottlenecks. Our experiments on the in-context learning of power attention
+shows that these models dominate both exponential attention and linear
+attention at long-context training.</p></br><a href="http://arxiv.org/pdf/2507.03570v1" target="_blank"><h2>From Street Form to Spatial Justice: Explaining Urban Exercise
+  Inequality via a Triadic SHAP-Informed Framework</h2></a><strong><u>Authors:</u></strong>  Minwei Zhao, Guosheng Yang, Zhuoni Zhang, Cai Wu</br><strong><u>Categories:</u></strong> cs.CY, cs.IT, cs.LG, math.IT, 62H30, 91D10, 68T05, I.2.6; I.5.2; H.2.8; J.4</br><strong><u>Comments:</u></strong> 31 pages, 3 tables and 11 figures</br><strong><u>Matching Keywords:</u></strong> explainable (abstract)</br><p><strong><u>Abstract:</u></strong> Urban streets are essential public spaces that facilitate everyday physical
+activity and promote health equity. Drawing on Henri Lefebvre's spatial triad,
+this study proposes a conceptual and methodological framework to quantify
+street-level exercise deprivation through the dimensions of conceived (planning
+and structure), perceived (visual and sensory), and lived (practice and
+experiential) urban spaces. We integrate multi-source spatial data-including
+street networks, street-view imagery, and social media-using explainable
+machine learning (SHAP analysis) to classify streets by their dominant
+deprivation modes, forming a novel typology of spatial inequity. Results
+highlight significant differences across urban contexts: older city cores
+predominantly experience infrastructural constraints (conceived space), whereas
+new development areas suffer from experiential disengagement (lived space).
+Furthermore, by identifying spatial mismatches between population distribution
+and exercise intensity, our study reveals localized clusters of latent
+deprivation. Simulation experiments demonstrate that targeted improvements
+across spatial dimensions can yield up to 14% increases in exercise
+supportiveness. This research not only operationalizes Lefebvre's spatial
+theory at the street scale but also provides actionable insights and
+intervention guidelines, contributing to the broader goals of spatial justice
+and urban health equity.</p></br><a href="http://arxiv.org/pdf/2507.04075v1" target="_blank"><h2>Accurate and Efficient World Modeling with Masked Latent Transformers</h2></a><strong><u>Authors:</u></strong>  Maxime Burchi, Radu Timofte</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> The Dreamer algorithm has recently obtained remarkable performance across
+diverse environment domains by training powerful agents with simulated
+trajectories. However, the compressed nature of its world model's latent space
+can result in the loss of crucial information, negatively affecting the agent's
+performance. Recent approaches, such as $\Delta$-IRIS and DIAMOND, address this
+limitation by training more accurate world models. However, these methods
+require training agents directly from pixels, which reduces training efficiency
+and prevents the agent from benefiting from the inner representations learned
+by the world model. In this work, we propose an alternative approach to world
+modeling that is both accurate and efficient. We introduce EMERALD (Efficient
+MaskEd latent tRAnsformer worLD model), a world model using a spatial latent
+state with MaskGIT predictions to generate accurate trajectories in latent
+space and improve the agent performance. On the Crafter benchmark, EMERALD
+achieves new state-of-the-art performance, becoming the first method to surpass
+human experts performance within 10M environment steps. Our method also
+succeeds to unlock all 22 Crafter achievements at least once during evaluation.</p></br><a href="http://arxiv.org/pdf/2507.04175v1" target="_blank"><h2>Uncertainty Quantification in the Tsetlin Machine</h2></a><strong><u>Authors:</u></strong>  Runar Helin, Ole-Christoffer Granmo, Mayur Kishor Shende, Lei Jiao, Vladimir I. Zadorozhny, Kunal Ganesh Dumbre, Rishad Shafik, Alex Yakovlev</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Data modeling using Tsetlin machines (TMs) is all about building logical
+rules from the data features. The decisions of the model are based on a
+combination of these logical rules. Hence, the model is fully transparent and
+it is possible to get explanations of its predictions. In this paper, we
+present a probability score for TM predictions and develop new techniques for
+uncertainty quantification to increase the explainability further. The
+probability score is an inherent property of any TM variant and is derived
+through an analysis of the TM learning dynamics. Simulated data is used to show
+a clear connection between the learned TM probability scores and the underlying
+probabilities of the data. A visualization of the probability scores also
+reveals that the TM is less confident in its predictions outside the training
+data domain, which contrasts the typical extrapolation phenomenon found in
+Artificial Neural Networks. The paper concludes with an application of the
+uncertainty quantification techniques on an image classification task using the
+CIFAR-10 dataset, where they provide new insights and suggest possible
+improvements to current TM image classification models.</p></br><a href="http://arxiv.org/pdf/2507.04033v1" target="_blank"><h2>Benchmarking Stochastic Approximation Algorithms for
+  Fairness-Constrained Training of Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Andrii Kliachkin, Jana Lepšová, Gilles Bareilles, Jakub Mareček</br><strong><u>Categories:</u></strong> cs.LG, cs.CY, math.OC, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The ability to train Deep Neural Networks (DNNs) with constraints is
+instrumental in improving the fairness of modern machine-learning models. Many
+algorithms have been analysed in recent years, and yet there is no standard,
+widely accepted method for the constrained training of DNNs. In this paper, we
+provide a challenging benchmark of real-world large-scale fairness-constrained
+learning tasks, built on top of the US Census (Folktables). We point out the
+theoretical challenges of such tasks and review the main approaches in
+stochastic approximation algorithms. Finally, we demonstrate the use of the
+benchmark by implementing and comparing three recently proposed, but as-of-yet
+unimplemented, algorithms both in terms of optimization performance, and
+fairness improvement. We release the code of the benchmark as a Python package
+at https://github.com/humancompatible/train.</p></br><a href="http://arxiv.org/pdf/2507.04050v1" target="_blank"><h2>Predictive Modeling of Effluent Temperature in SAT Systems Using Ambient
+  Meteorological Data: Implications for Infiltration Management</h2></a><strong><u>Authors:</u></strong>  Roy Elkayam</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate prediction of effluent temperature in recharge basins is essential
+for optimizing the Soil Aquifer Treatment (SAT) process, as temperature
+directly influences water viscosity and infiltration rates. This study develops
+and evaluates predictive models for effluent temperature in the upper recharge
+layer of a Shafdan SAT system recharge basin using ambient meteorological data.
+Multiple linear regression (MLR), neural networks (NN), and random forests (RF)
+were tested for their predictive accuracy and interpretability. The MLR model,
+preferred for its operational simplicity and robust performance, achieved high
+predictive accuracy (R2 = 0.86-0.87) and was used to estimate effluent
+temperatures over a 10-year period. Results highlight pronounced seasonal
+temperature cycles and the importance of topsoil temperature in governing the
+thermal profile of the infiltrating effluent. The study provides practical
+equations for real-time monitoring and long-term planning of SAT operations.</p></br></body>

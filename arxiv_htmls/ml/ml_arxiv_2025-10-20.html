@@ -1,0 +1,247 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 16 Oct 2025 to 20 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.15010v1" target="_blank"><h2>Hybrid Autoencoder-Based Framework for Early Fault Detection in Wind
+  Turbines</h2></a><strong><u>Authors:</u></strong>  Rekha R Nair, Tina Babu, Alavikunhu Panthakkan, Balamurugan Balusamy, Wathiq Mansoor</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), anomaly detection (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Wind turbine reliability is critical to the growing renewable energy sector,
+where early fault detection significantly reduces downtime and maintenance
+costs. This paper introduces a novel ensemble-based deep learning framework for
+unsupervised anomaly detection in wind turbines. The method integrates
+Variational Autoencoders (VAE), LSTM Autoencoders, and Transformer
+architectures, each capturing different temporal and contextual patterns from
+high-dimensional SCADA data. A unique feature engineering pipeline extracts
+temporal, statistical, and frequency-domain indicators, which are then
+processed by the deep models. Ensemble scoring combines model predictions,
+followed by adaptive thresholding to detect operational anomalies without
+requiring labeled fault data. Evaluated on the CARE dataset containing 89 years
+of real-world turbine data across three wind farms, the proposed method
+achieves an AUC-ROC of 0.947 and early fault detection up to 48 hours prior to
+failure. This approach offers significant societal value by enabling predictive
+maintenance, reducing turbine failures, and enhancing operational efficiency in
+large-scale wind energy deployments.</p></br><a href="http://arxiv.org/pdf/2510.15435v1" target="_blank"><h2>Nonlinear Dimensionality Reduction Techniques for Bayesian Optimization</h2></a><strong><u>Authors:</u></strong>  Luo Long, Coralia Cartis, Paz Fink Shustin</br><strong><u>Categories:</u></strong> math.OC, cs.LG, cs.NA, math.NA</br><strong><u>Comments:</u></strong> 34 pages including appendixes, 8 figures. Keywords: global optimisation, dimensionality reduction techniques, Bayesian methods, Variational Autoencoders</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), dimensionality reduction (title, abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Bayesian optimisation (BO) is a standard approach for sample-efficient global
+optimisation of expensive black-box functions, yet its scalability to high
+dimensions remains challenging. Here, we investigate nonlinear dimensionality
+reduction techniques that reduce the problem to a sequence of low-dimensional
+Latent-Space BO (LSBO). While early LSBO methods used (linear) random
+projections (Wang et al., 2013), building on Grosnit et al. (2021), we employ
+Variational Autoencoders (VAEs) for LSBO, focusing on deep metric loss for
+structured latent manifolds and VAE retraining to adapt the encoder-decoder to
+newly sampled regions. We propose some changes in their implementation,
+originally designed for tasks such as molecule generation, and reformulate the
+algorithm for broader optimisation purposes. We then couple LSBO with
+Sequential Domain Reduction (SDR) directly in the latent space (SDR-LSBO),
+yielding an algorithm that narrows the latent search domains as evidence
+accumulates. Implemented in a GPU-accelerated BoTorch stack with Matern-5/2
+Gaussian process surrogates, our numerical results show improved optimisation
+quality across benchmark tasks and that structured latent manifolds improve BO
+performance. Additionally, we compare random embeddings and VAEs as two
+mechanisms for dimensionality reduction, showing that the latter outperforms
+the former. To the best of our knowledge, this is the first study to combine
+SDR with VAE-based LSBO, and our analysis clarifies design choices for metric
+shaping and retraining that are critical for scalable latent space BO. For
+reproducibility, our source code is available at
+https://github.com/L-Lok/Nonlinear-Dimensionality-Reduction-Techniques-for-Bayesian-Optimization.git.</p></br><a href="http://arxiv.org/pdf/2510.15458v1" target="_blank"><h2>Robust Optimization in Causal Models and G-Causal Normalizing Flows</h2></a><strong><u>Authors:</u></strong>  Gabriele Visentin, Patrick Cheridito</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG, q-fin.PM</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> In this paper, we show that interventionally robust optimization problems in
+causal models are continuous under the $G$-causal Wasserstein distance, but may
+be discontinuous under the standard Wasserstein distance. This highlights the
+importance of using generative models that respect the causal structure when
+augmenting data for such tasks. To this end, we propose a new normalizing flow
+architecture that satisfies a universal approximation property for causal
+structural models and can be efficiently trained to minimize the $G$-causal
+Wasserstein distance. Empirically, we demonstrate that our model outperforms
+standard (non-causal) generative models in data augmentation for causal
+regression and mean-variance portfolio optimization in causal factor models.</p></br><a href="http://arxiv.org/pdf/2510.15363v1" target="_blank"><h2>Kernel Regression in Structured Non-IID Settings: Theory and
+  Implications for Denoising Score Learning</h2></a><strong><u>Authors:</u></strong>  Dechen Zhang, Zhenmei Shi, Yi Zhang, Yingyu Liang, Difan Zou</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Kernel ridge regression (KRR) is a foundational tool in machine learning,
+with recent work emphasizing its connections to neural networks. However,
+existing theory primarily addresses the i.i.d. setting, while real-world data
+often exhibits structured dependencies - particularly in applications like
+denoising score learning where multiple noisy observations derive from shared
+underlying signals. We present the first systematic study of KRR generalization
+for non-i.i.d. data with signal-noise causal structure, where observations
+represent different noisy views of common signals. By developing a novel
+blockwise decomposition method that enables precise concentration analysis for
+dependent data, we derive excess risk bounds for KRR that explicitly depend on:
+(1) the kernel spectrum, (2) causal structure parameters, and (3) sampling
+mechanisms (including relative sample sizes for signals and noises). We further
+apply our results to denoising score learning, establishing generalization
+guarantees and providing principled guidance for sampling noisy data points.
+This work advances KRR theory while providing practical tools for analyzing
+dependent data in modern machine learning applications.</p></br><a href="http://arxiv.org/pdf/2510.15669v1" target="_blank"><h2>Disentanglement of Sources in a Multi-Stream Variational Autoencoder</h2></a><strong><u>Authors:</u></strong>  Veranika Boukun, Jörg Lücke</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title, abstract), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Variational autoencoders (VAEs) are a leading approach to address the problem
+of learning disentangled representations. Typically a single VAE is used and
+disentangled representations are sought in its continuous latent space. Here we
+explore a different approach by using discrete latents to combine
+VAE-representations of individual sources. The combination is done based on an
+explicit model for source combination, and we here use a linear combination
+model which is well suited, e.g., for acoustic data. We formally define such a
+multi-stream VAE (MS-VAE) approach, derive its inference and learning
+equations, and we numerically investigate its principled functionality. The
+MS-VAE is domain-agnostic, and we here explore its ability to separate sources
+into different streams using superimposed hand-written digits, and mixed
+acoustic sources in a speaker diarization task. We observe a clear separation
+of digits, and on speaker diarization we observe an especially low rate of
+missed speakers. Numerical experiments further highlight the flexibility of the
+approach across varying amounts of supervision and training data.</p></br><a href="http://arxiv.org/pdf/2510.15422v1" target="_blank"><h2>Information Theory in Open-world Machine Learning Foundations,
+  Frameworks, and Future Direction</h2></a><strong><u>Authors:</u></strong>  Lin Wang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Open world Machine Learning (OWML) aims to develop intelligent systems
+capable of recognizing known categories, rejecting unknown samples, and
+continually learning from novel information. Despite significant progress in
+open set recognition, novelty detection, and continual learning, the field
+still lacks a unified theoretical foundation that can quantify uncertainty,
+characterize information transfer, and explain learning adaptability in
+dynamic, nonstationary environments. This paper presents a comprehensive review
+of information theoretic approaches in open world machine learning, emphasizing
+how core concepts such as entropy, mutual information, and Kullback Leibler
+divergence provide a mathematical language for describing knowledge
+acquisition, uncertainty suppression, and risk control under open world
+conditions. We synthesize recent studies into three major research axes:
+information theoretic open set recognition enabling safe rejection of unknowns,
+information driven novelty discovery guiding new concept formation, and
+information retentive continual learning ensuring stable long term adaptation.
+Furthermore, we discuss theoretical connections between information theory and
+provable learning frameworks, including PAC Bayes bounds, open-space risk
+theory, and causal information flow, to establish a pathway toward provable and
+trustworthy open world intelligence. Finally, the review identifies key open
+problems and future research directions, such as the quantification of
+information risk, development of dynamic mutual information bounds, multimodal
+information fusion, and integration of information theory with causal reasoning
+and world model learning.</p></br><a href="http://arxiv.org/pdf/2510.15012v1" target="_blank"><h2>From Universal Approximation Theorem to Tropical Geometry of Multi-Layer
+  Perceptrons</h2></a><strong><u>Authors:</u></strong>  Yi-Shan Chu, Yueh-Cheng Kuo</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We revisit the Universal Approximation Theorem(UAT) through the lens of the
+tropical geometry of neural networks and introduce a constructive,
+geometry-aware initialization for sigmoidal multi-layer perceptrons (MLPs).
+Tropical geometry shows that Rectified Linear Unit (ReLU) networks admit
+decision functions with a combinatorial structure often described as a tropical
+rational, namely a difference of tropical polynomials. Focusing on planar
+binary classification, we design purely sigmoidal MLPs that adhere to the
+finite-sum format of UAT: a finite linear combination of shifted and scaled
+sigmoids of affine functions. The resulting models yield decision boundaries
+that already align with prescribed shapes at initialization and can be refined
+by standard training if desired. This provides a practical bridge between the
+tropical perspective and smooth MLPs, enabling interpretable, shape-driven
+initialization without resorting to ReLU architectures. We focus on the
+construction and empirical demonstrations in two dimensions; theoretical
+analysis and higher-dimensional extensions are left for future work.</p></br><a href="http://arxiv.org/pdf/2510.15684v1" target="_blank"><h2>Towards Label-Free Brain Tumor Segmentation: Unsupervised Learning with
+  Multimodal MRI</h2></a><strong><u>Authors:</u></strong>  Gerard Comas-Quiles, Carles Garcia-Cabrera, Julia Dietlmeier, Noel E. O'Connor, Ferran Marques</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, 5 figures, BraTS GoAT 2025 challenge</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), multimodal (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Unsupervised anomaly detection (UAD) presents a complementary alternative to
+supervised learning for brain tumor segmentation in magnetic resonance imaging
+(MRI), particularly when annotated datasets are limited, costly, or
+inconsistent. In this work, we propose a novel Multimodal Vision Transformer
+Autoencoder (MViT-AE) trained exclusively on healthy brain MRIs to detect and
+localize tumors via reconstruction-based error maps. This unsupervised paradigm
+enables segmentation without reliance on manual labels, addressing a key
+scalability bottleneck in neuroimaging workflows. Our method is evaluated in
+the BraTS-GoAT 2025 Lighthouse dataset, which includes various types of tumors
+such as gliomas, meningiomas, and pediatric brain tumors. To enhance
+performance, we introduce a multimodal early-late fusion strategy that
+leverages complementary information across multiple MRI sequences, and a
+post-processing pipeline that integrates the Segment Anything Model (SAM) to
+refine predicted tumor contours. Despite the known challenges of UAD,
+particularly in detecting small or non-enhancing lesions, our method achieves
+clinically meaningful tumor localization, with lesion-wise Dice Similarity
+Coefficient of 0.437 (Whole Tumor), 0.316 (Tumor Core), and 0.350 (Enhancing
+Tumor) on the test set, and an anomaly Detection Rate of 89.4% on the
+validation set. These findings highlight the potential of transformer-based
+unsupervised models to serve as scalable, label-efficient tools for
+neuro-oncological imaging.</p></br><a href="http://arxiv.org/pdf/2510.15821v1" target="_blank"><h2>Chronos-2: From Univariate to Universal Forecasting</h2></a><strong><u>Authors:</u></strong>  Abdul Fatir Ansari, Oleksandr Shchur, Jaris Küken, Andreas Auer, Boran Han, Pedro Mercado, Syama Sundar Rangapuram, Huibin Shen, Lorenzo Stella, Xiyuan Zhang, Mononito Goswami, Shubham Kapoor, Danielle C. Maddix, Pablo Guerron, Tony Hu, Junming Yin, Nick Erickson, Prateek Mutalik Desai, Hao Wang, Huzefa Rangwala, George Karypis, Yuyang Wang, Michael Bohlke-Schneider</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Pretrained time series models have enabled inference-only forecasting systems
+that produce accurate predictions without task-specific training. However,
+existing approaches largely focus on univariate forecasting, limiting their
+applicability in real-world scenarios where multivariate data and covariates
+play a crucial role. We present Chronos-2, a pretrained model capable of
+handling univariate, multivariate, and covariate-informed forecasting tasks in
+a zero-shot manner. Chronos-2 employs a group attention mechanism that
+facilitates in-context learning (ICL) through efficient information sharing
+across multiple time series within a group, which may represent sets of related
+series, variates of a multivariate series, or targets and covariates in a
+forecasting task. These general capabilities are achieved through training on
+synthetic datasets that impose diverse multivariate structures on univariate
+series. Chronos-2 delivers state-of-the-art performance across three
+comprehensive benchmarks: fev-bench, GIFT-Eval, and Chronos Benchmark II. On
+fev-bench, which emphasizes multivariate and covariate-informed forecasting,
+Chronos-2's universal ICL capabilities lead to substantial improvements over
+existing models. On tasks involving covariates, it consistently outperforms
+baselines by a wide margin. Case studies in the energy and retail domains
+further highlight its practical advantages. The in-context learning
+capabilities of Chronos-2 establish it as a general-purpose forecasting model
+that can be used "as is" in real-world forecasting pipelines.</p></br><a href="http://arxiv.org/pdf/2510.15262v1" target="_blank"><h2>Robust Layerwise Scaling Rules by Proper Weight Decay Tuning</h2></a><strong><u>Authors:</u></strong>  Zhiyuan Fan, Yifeng Liu, Qingyue Zhao, Angela Yuan, Quanquan Gu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Empirical scaling laws prescribe how to allocate parameters, data, and
+compute, while maximal-update parameterization ($\mu$P) enables learning-rate
+transfer across widths by equalizing early-time update magnitudes. However, in
+modern scale-invariant architectures, training quickly enters an
+optimizer-governed steady state where normalization layers create backward
+scale sensitivity and the effective learning rate becomes width dependent,
+degrading $\mu$P transfer. We address this by introducing a weight-decay
+scaling rule for AdamW that preserves sublayer gain across widths. Empirically,
+the singular-value spectrum of each matrix parameter scales in norm as
+$\sqrt{\eta/\lambda}$ with an approximately invariant shape; under width
+scaling $d$, we observe that the top singular value scales approximately as
+$\sqrt{\eta/\lambda}\cdot d^{0.75}$. Combining this observation with the $\mu$P
+learning-rate rule $\eta_2\propto d^{-1}$ for matrix-like parameters implies an
+empirical weight-decay scaling rule $\lambda_2\propto \sqrt{d}$ that
+approximately keeps sublayer gains width invariant. Together with vector-like
+parameters trained at $\eta_1=\Theta_d(1)$ and $\lambda_1=0$, this yields
+\emph{zero-shot} transfer of both learning rate and weight decay from proxy to
+target widths, removing per-width sweeps. We validate the rule on LLaMA-style
+Transformers and in a minimal synthetic setting, and we provide a simple
+diagnostic, matching top singular values, to check sublayer-gain invariance.
+Our results extend $\mu$P beyond the near-init regime by explicitly controlling
+steady-state scales set by the optimizer, offering a practical recipe for
+width-robust hyperparameter transfer under AdamW.</p></br><a href="http://arxiv.org/pdf/2510.15547v1" target="_blank"><h2>Hypergraph Contrastive Sensor Fusion for Multimodal Fault Diagnosis in
+  Induction Motors</h2></a><strong><u>Authors:</u></strong>  Usman Ali, Ali Zia, Waqas Ali, Umer Ramzan, Abdul Rehman, Muhammad Tayyab Chaudhry, Wei Xiang</br><strong><u>Categories:</u></strong> cs.AI, cs.ET, cs.LG, cs.SY, eess.SP, eess.SY</br><strong><u>Comments:</u></strong> Submitted to IEEE Sensors Journal</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Reliable induction motor (IM) fault diagnosis is vital for industrial safety
+and operational continuity, mitigating costly unplanned downtime. Conventional
+approaches often struggle to capture complex multimodal signal relationships,
+are constrained to unimodal data or single fault types, and exhibit performance
+degradation under noisy or cross-domain conditions. This paper proposes the
+Multimodal Hypergraph Contrastive Attention Network (MM-HCAN), a unified
+framework for robust fault diagnosis. To the best of our knowledge, MM-HCAN is
+the first to integrate contrastive learning within a hypergraph topology
+specifically designed for multimodal sensor fusion, enabling the joint
+modelling of intra- and inter-modal dependencies and enhancing generalisation
+beyond Euclidean embedding spaces. The model facilitates simultaneous diagnosis
+of bearing, stator, and rotor faults, addressing the engineering need for
+consolidated di- agnostic capabilities. Evaluated on three real-world
+benchmarks, MM-HCAN achieves up to 99.82% accuracy with strong cross-domain
+generalisation and resilience to noise, demonstrating its suitability for
+real-world deployment. An ablation study validates the contribution of each
+component. MM-HCAN provides a scalable and robust solution for comprehensive
+multi-fault diagnosis, supporting predictive maintenance and extended asset
+longevity in industrial environments.</p></br><a href="http://arxiv.org/pdf/2510.15337v1" target="_blank"><h2>Transfer Learning for Benign Overfitting in High-Dimensional Linear
+  Regression</h2></a><strong><u>Authors:</u></strong>  Yeichan Kim, Ilmun Kim, Seyoung Park</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> 42 pages, 4 figures, 2 tables, 1 algorithm; camera-ready version accepted at NeurIPS 2025 (Spotlight)</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), transfer learning (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Transfer learning is a key component of modern machine learning, enhancing
+the performance of target tasks by leveraging diverse data sources.
+Simultaneously, overparameterized models such as the minimum-$\ell_2$-norm
+interpolator (MNI) in high-dimensional linear regression have garnered
+significant attention for their remarkable generalization capabilities, a
+property known as benign overfitting. Despite their individual importance, the
+intersection of transfer learning and MNI remains largely unexplored. Our
+research bridges this gap by proposing a novel two-step Transfer MNI approach
+and analyzing its trade-offs. We characterize its non-asymptotic excess risk
+and identify conditions under which it outperforms the target-only MNI. Our
+analysis reveals free-lunch covariate shift regimes, where leveraging
+heterogeneous data yields the benefit of knowledge transfer at limited cost. To
+operationalize our findings, we develop a data-driven procedure to detect
+informative sources and introduce an ensemble method incorporating multiple
+informative Transfer MNIs. Finite-sample experiments demonstrate the robustness
+of our methods to model and data heterogeneity, confirming their advantage.</p></br><a href="http://arxiv.org/pdf/2510.14688v1" target="_blank"><h2>Online Reliable Anomaly Detection via Neuromorphic Sensing and
+  Communications</h2></a><strong><u>Authors:</u></strong>  Junya Shiraishi, Jiechen Chen, Osvaldo Simeone, Petar Popovski</br><strong><u>Categories:</u></strong> cs.LG, cs.NE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper proposes a low-power online anomaly detection framework based on
+neuromorphic wireless sensor networks, encompassing possible use cases such as
+brain-machine interfaces and remote environmental monitoring. In the considered
+system, a central reader node actively queries a subset of neuromorphic sensor
+nodes (neuro-SNs) at each time frame. The neuromorphic sensors are
+event-driven, producing spikes in correspondence to relevant changes in the
+monitored system. The queried neuro-SNs respond to the reader with impulse
+radio (IR) transmissions that directly encode the sensed local events. The
+reader processes these event-driven signals to determine whether the monitored
+environment is in a normal or anomalous state, while rigorously controlling the
+false discovery rate (FDR) of detections below a predefined threshold. The
+proposed approach employs an online hypothesis testing method with e-values to
+maintain FDR control without requiring knowledge of the anomaly rate, and it
+dynamically optimizes the sensor querying strategy by casting it as a best-arm
+identification problem in a multi-armed bandit framework. Extensive performance
+evaluation demonstrates that the proposed method can reliably detect anomalies
+under stringent FDR requirements, while efficiently scheduling sensor
+communications and achieving low detection latency.</p></br></body>

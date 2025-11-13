@@ -1,0 +1,173 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 24 Sep 2025 to 26 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.21149v1" target="_blank"><h2>LAVA: Explainability for Unsupervised Latent Embeddings</h2></a><strong><u>Authors:</u></strong>  Ivan Stresec, Joana P. Gonçalves</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 28 pages, including references and appendix</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), explainability (title, abstract)</br><p><strong><u>Abstract:</u></strong> Unsupervised black-box models can be drivers of scientific discovery, but
+remain difficult to interpret. Crucially, discovery hinges on understanding the
+model output, which is often a multi-dimensional latent embedding rather than a
+well-defined target. While explainability for supervised learning usually seeks
+to uncover how input features are used to predict a target, its unsupervised
+counterpart should relate input features to the structure of the learned latent
+space. Adaptations of supervised model explainability for unsupervised learning
+provide either single-sample or dataset-wide summary explanations. However,
+without automated strategies of relating similar samples to one another guided
+by their latent proximity, explanations remain either too fine-grained or too
+reductive to be meaningful. This is especially relevant for manifold learning
+methods that produce no mapping function, leaving us only with the relative
+spatial organization of their embeddings. We introduce Locality-Aware Variable
+Associations (LAVA), a post-hoc model-agnostic method designed to explain local
+embedding organization through its relationship with the input features. To
+achieve this, LAVA represents the latent space as a series of localities
+(neighborhoods) described in terms of correlations between the original
+features, and then reveals reoccurring patterns of correlations across the
+entire latent space. Based on UMAP embeddings of MNIST and a single-cell kidney
+dataset, we show that LAVA captures relevant feature associations, with
+visually and biologically relevant local patterns shared among seemingly
+distant regions of the latent spaces.</p></br><a href="http://arxiv.org/pdf/2509.20978v1" target="_blank"><h2>FracAug: Fractional Augmentation boost Graph-level Anomaly Detection
+  under Limited Supervision</h2></a><strong><u>Authors:</u></strong>  Xiangyu Dong, Xingyi Zhang, Sibo Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph-level anomaly detection (GAD) is critical in diverse domains such as
+drug discovery, yet high labeling costs and dataset imbalance hamper the
+performance of Graph Neural Networks (GNNs). To address these issues, we
+propose FracAug, an innovative plug-in augmentation framework that enhances
+GNNs by generating semantically consistent graph variants and pseudo-labeling
+with mutual verification. Unlike previous heuristic methods, FracAug learns
+semantics within given graphs and synthesizes fractional variants, guided by a
+novel weighted distance-aware margin loss. This captures multi-scale topology
+to generate diverse, semantic-preserving graphs unaffected by data imbalance.
+Then, FracAug utilizes predictions from both original and augmented graphs to
+pseudo-label unlabeled data, iteratively expanding the training set. As a
+model-agnostic module compatible with various GNNs, FracAug demonstrates
+remarkable universality and efficacy: experiments across 14 GNNs on 12
+real-world datasets show consistent gains, boosting average AUROC, AUPRC, and
+F1-score by up to 5.72%, 7.23%, and 4.18%, respectively.</p></br><a href="http://arxiv.org/pdf/2509.21190v1" target="_blank"><h2>Towards Foundation Models for Zero-Shot Time Series Anomaly Detection:
+  Leveraging Synthetic Data and Relative Context Discrepancy</h2></a><strong><u>Authors:</u></strong>  Tian Lan, Hao Duong Le, Jinbo Li, Wenjun He, Meng Wang, Chenghao Liu, Chen Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Time series anomaly detection (TSAD) is a critical task, but developing
+models that generalize to unseen data in a zero-shot manner remains a major
+challenge. Prevailing foundation models for TSAD predominantly rely on
+reconstruction-based objectives, which suffer from a fundamental objective
+mismatch: they struggle to identify subtle anomalies while often
+misinterpreting complex normal patterns, leading to high rates of false
+negatives and positives. To overcome these limitations, we introduce
+\texttt{TimeRCD}, a novel foundation model for TSAD built upon a new
+pre-training paradigm: Relative Context Discrepancy (RCD). Instead of learning
+to reconstruct inputs, \texttt{TimeRCD} is explicitly trained to identify
+anomalies by detecting significant discrepancies between adjacent time windows.
+This relational approach, implemented with a standard Transformer architecture,
+enables the model to capture contextual shifts indicative of anomalies that
+reconstruction-based methods often miss. To facilitate this paradigm, we
+develop a large-scale, diverse synthetic corpus with token-level anomaly
+labels, providing the rich supervisory signal necessary for effective
+pre-training. Extensive experiments demonstrate that \texttt{TimeRCD}
+significantly outperforms existing general-purpose and anomaly-specific
+foundation models in zero-shot TSAD across diverse datasets. Our results
+validate the superiority of the RCD paradigm and establish a new, effective
+path toward building robust and generalizable foundation models for time series
+anomaly detection.</p></br><a href="http://arxiv.org/pdf/2509.20574v1" target="_blank"><h2>The Sensitivity of Variational Bayesian Neural Network Performance to
+  Hyperparameters</h2></a><strong><u>Authors:</u></strong>  Scott Koermer, Natalie Klein</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 18 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In scientific applications, predictive modeling is often of limited use
+without accurate uncertainty quantification (UQ) to indicate when a model may
+be extrapolating or when more data needs to be collected. Bayesian Neural
+Networks (BNNs) produce predictive uncertainty by propagating uncertainty in
+neural network (NN) weights and offer the promise of obtaining not only an
+accurate predictive model but also accurate UQ. However, in practice, obtaining
+accurate UQ with BNNs is difficult due in part to the approximations used for
+practical model training and in part to the need to choose a suitable set of
+hyperparameters; these hyperparameters outnumber those needed for traditional
+NNs and often have opaque effects on the results. We aim to shed light on the
+effects of hyperparameter choices for BNNs by performing a global sensitivity
+analysis of BNN performance under varying hyperparameter settings. Our results
+indicate that many of the hyperparameters interact with each other to affect
+both predictive accuracy and UQ. For improved usage of BNNs in real-world
+applications, we suggest that global sensitivity analysis, or related methods
+such as Bayesian optimization, should be used to aid in dimensionality
+reduction and selection of hyperparameters to ensure accurate UQ in BNNs.</p></br><a href="http://arxiv.org/pdf/2509.21296v1" target="_blank"><h2>No Prior, No Leakage: Revisiting Reconstruction Attacks in Trained
+  Neural Networks</h2></a><strong><u>Authors:</u></strong>  Yehonatan Refael, Guy Smorodinsky, Ofir Lindenbaum, Itay Safran</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The memorization of training data by neural networks raises pressing concerns
+for privacy and security. Recent work has shown that, under certain conditions,
+portions of the training set can be reconstructed directly from model
+parameters. Some of these methods exploit implicit bias toward margin
+maximization, suggesting that properties often regarded as beneficial for
+generalization may actually compromise privacy. Yet despite striking empirical
+demonstrations, the reliability of these attacks remains poorly understood and
+lacks a solid theoretical foundation. In this work, we take a complementary
+perspective: rather than designing stronger attacks, we analyze the inherent
+weaknesses and limitations of existing reconstruction methods and identify
+conditions under which they fail. We rigorously prove that, without
+incorporating prior knowledge about the data, there exist infinitely many
+alternative solutions that may lie arbitrarily far from the true training set,
+rendering reconstruction fundamentally unreliable. Empirically, we further
+demonstrate that exact duplication of training examples occurs only by chance.
+Our results refine the theoretical understanding of when training set leakage
+is possible and offer new insights into mitigating reconstruction attacks.
+Remarkably, we demonstrate that networks trained more extensively, and
+therefore satisfying implicit bias conditions more strongly -- are, in fact,
+less susceptible to reconstruction attacks, reconciling privacy with the need
+for strong generalization in this setting.</p></br><a href="http://arxiv.org/pdf/2509.20783v1" target="_blank"><h2>IConv: Focusing on Local Variation with Channel Independent Convolution
+  for Multivariate Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Gawon Lee, Hanbyeol Park, Minseop Kim, Dohee Kim, Hyerim Bae</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Submitted to AAAI</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Real-world time-series data often exhibit non-stationarity, including
+changing trends, irregular seasonality, and residuals. In terms of changing
+trends, recently proposed multi-layer perceptron (MLP)-based models have shown
+excellent performance owing to their computational efficiency and ability to
+capture long-term dependency. However, the linear nature of MLP architectures
+poses limitations when applied to channels with diverse distributions,
+resulting in local variations such as seasonal patterns and residual components
+being ignored. However, convolutional neural networks (CNNs) can effectively
+incorporate these variations. To resolve the limitations of MLP, we propose
+combining them with CNNs. The overall trend is modeled using an MLP to consider
+long-term dependencies. The CNN uses diverse kernels to model fine-grained
+local patterns in conjunction with MLP trend predictions. To focus on modeling
+local variation, we propose IConv, a novel convolutional architecture that
+processes the temporal dependency channel independently and considers the
+inter-channel relationship through distinct layers. Independent channel
+processing enables the modeling of diverse local temporal dependencies and the
+adoption of a large kernel size. Distinct inter-channel considerations reduce
+computational cost. The proposed model is evaluated through extensive
+experiments on time-series datasets. The results reveal the superiority of the
+proposed method for multivariate time-series forecasting.</p></br><a href="http://arxiv.org/pdf/2509.20501v1" target="_blank"><h2>Beyond Visual Similarity: Rule-Guided Multimodal Clustering with
+  explicit domain rules</h2></a><strong><u>Authors:</u></strong>  Kishor Datta Gupta, Mohd Ariful Haque, Marufa Kamal, Ahmed Rafi Hasan, Md. Mahfuzur Rahman, Roy George</br><strong><u>Categories:</u></strong> cs.LG, cs.CV</br><strong><u>Comments:</u></strong> 12 pages, 9 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Traditional clustering techniques often rely solely on similarity in the
+input data, limiting their ability to capture structural or semantic
+constraints that are critical in many domains. We introduce the Domain Aware
+Rule Triggered Variational Autoencoder (DARTVAE), a rule guided multimodal
+clustering framework that incorporates domain specific constraints directly
+into the representation learning process. DARTVAE extends the VAE architecture
+by embedding explicit rules, semantic representations, and data driven features
+into a unified latent space, while enforcing constraint compliance through rule
+consistency and violation penalties in the loss function. Unlike conventional
+clustering methods that rely only on visual similarity or apply rules as post
+hoc filters, DARTVAE treats rules as first class learning signals. The rules
+are generated by LLMs, structured into knowledge graphs, and enforced through a
+loss function combining reconstruction, KL divergence, consistency, and
+violation penalties. Experiments on aircraft and automotive datasets
+demonstrate that rule guided clustering produces more operationally meaningful
+and interpretable clusters for example, isolating UAVs, unifying stealth
+aircraft, or separating SUVs from sedans while improving traditional clustering
+metrics. However, the framework faces challenges: LLM generated rules may
+hallucinate or conflict, excessive rules risk overfitting, and scaling to
+complex domains increases computational and consistency difficulties. By
+combining rule encodings with learned representations, DARTVAE achieves more
+meaningful and consistent clustering outcomes than purely data driven models,
+highlighting the utility of constraint guided multimodal clustering for
+complex, knowledge intensive settings.</p></br><a href="http://arxiv.org/pdf/2509.20447v1" target="_blank"><h2>Neural Networks as Surrogate Solvers for Time-Dependent Accretion Disk
+  Dynamics</h2></a><strong><u>Authors:</u></strong>  Shunyuan Mao, Weiqi Wang, Sifan Wang, Ruobing Dong, Lu Lu, Kwang Moo Yi, Paris Perdikaris, Andrea Isella, Sébastien Fabbro, Lile Wang</br><strong><u>Categories:</u></strong> astro-ph.EP, astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> Astrophysical Journal Letters accepted; associate animations are available atthis https URL</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accretion disks are ubiquitous in astrophysics, appearing in diverse
+environments from planet-forming systems to X-ray binaries and active galactic
+nuclei. Traditionally, modeling their dynamics requires computationally
+intensive (magneto)hydrodynamic simulations. Recently, Physics-Informed Neural
+Networks (PINNs) have emerged as a promising alternative. This approach trains
+neural networks directly on physical laws without requiring data. We for the
+first time demonstrate PINNs for solving the two-dimensional, time-dependent
+hydrodynamics of non-self-gravitating accretion disks. Our models provide
+solutions at arbitrary times and locations within the training domain, and
+successfully reproduce key physical phenomena, including the excitation and
+propagation of spiral density waves and gap formation from disk-companion
+interactions. Notably, the boundary-free approach enabled by PINNs naturally
+eliminates the spurious wave reflections at disk edges, which are challenging
+to suppress in numerical simulations. These results highlight how advanced
+machine learning techniques can enable physics-driven, data-free modeling of
+complex astrophysical systems, potentially offering an alternative to
+traditional numerical simulations in the future.</p></br></body>

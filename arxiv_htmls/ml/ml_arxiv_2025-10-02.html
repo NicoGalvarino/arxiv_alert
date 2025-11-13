@@ -1,0 +1,183 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 30 Sep 2025 to 02 Oct 2025</em></font><a href="http://arxiv.org/pdf/2509.25804v1" target="_blank"><h2>CardioForest: An Explainable Ensemble Learning Model for Automatic Wide
+  QRS Complex Tachycardia Diagnosis from ECG</h2></a><strong><u>Authors:</u></strong>  Vaskar Chakma, Ju Xiaolin, Heling Cao, Xue Feng, Ji Xiaodong, Pan Haiyan, Gao Zhan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> This study aims to develop and evaluate an ensemble machine learning-based
+framework for the automatic detection of Wide QRS Complex Tachycardia (WCT)
+from ECG signals, emphasizing diagnostic accuracy and interpretability using
+Explainable AI. The proposed system integrates ensemble learning techniques,
+i.e., an optimized Random Forest known as CardioForest, and models like XGBoost
+and LightGBM. The models were trained and tested on ECG data from the publicly
+available MIMIC-IV dataset. The testing was carried out with the assistance of
+accuracy, balanced accuracy, precision, recall, F1 score, ROC-AUC, and error
+rate (RMSE, MAE) measures. In addition, SHAP (SHapley Additive exPlanations)
+was used to ascertain model explainability and clinical relevance. The
+CardioForest model performed best on all metrics, achieving a test accuracy of
+94.95%, a balanced accuracy of 88.31%, and high precision and recall metrics.
+SHAP analysis confirmed the model's ability to rank the most relevant ECG
+features, such as QRS duration, in accordance with clinical intuitions, thereby
+fostering trust and usability in clinical practice. The findings recognize
+CardioForest as an extremely dependable and interpretable WCT detection model.
+Being able to offer accurate predictions and transparency through
+explainability makes it a valuable tool to help cardiologists make timely and
+well-informed diagnoses, especially for high-stakes and emergency scenarios.</p></br><a href="http://arxiv.org/pdf/2509.25902v1" target="_blank"><h2>A Photometric Classifier for Tidal Disruption Events in Rubin LSST</h2></a><strong><u>Authors:</u></strong>  Kunal Bhardwaj, Asen Christov, Sergey Karpov</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Tidal Disruption Events (TDEs) are astrophysical phenomena arising when stars
+are disrupted by supermassive black holes. The Vera C. Rubin Observatory Legacy
+Survey of Space and Time (LSST), with its unprecedented depth and cadence, will
+detect thousands of TDEs, motivating the need for robust photometric
+classifiers capable of efficiently distinguishing these events from other
+extragalactic transients. We aim to develop and validate a machine learning
+pipeline for photometric TDE identification in LSST-scale datasets. Our
+classifier is designed to provide high precision and recall, enabling the
+construction of reliable TDE catalogs for multi-messenger follow-up and
+statistical studies. Using the second Extended LSST Astronomical Time Series
+Classification Challenge (ELAsTiCC2) dataset, we fit Gaussian Processes (GP) to
+light curves for feature extraction (e.g., color, rise/fade times, GP length
+scales). We then train and tune boosted decision-tree models (XGBoost) with a
+custom scoring function emphasizing high-precision recovery of TDEs. Our
+pipeline is tested on a diverse simulation of transient and variable events,
+including supernovae, active galactic nuclei, and superluminous supernovae. We
+achieve high precision (up to 95%) while maintaining competitive recall (about
+72%) for TDEs, with minimal contamination from non-TDE classes. Key predictive
+features include post-peak colors and GP hyperparameters, reflecting
+characteristic timescales and spectral behaviors of TDEs. Our photometric
+classifier provides a practical and scalable approach to identifying TDEs in
+forthcoming LSST data. By capturing essential color and temporal properties
+through GP-based feature extraction, it enables efficient construction of clean
+TDE candidate samples.</p></br><a href="http://arxiv.org/pdf/2509.25741v1" target="_blank"><h2>Test time training enhances in-context learning of nonlinear functions</h2></a><strong><u>Authors:</u></strong>  Kento Kuwataka, Taiji Suzuki</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Under review at ICLR 2026. 36 pages, 2 figures, appendix included</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Test-time training (TTT) enhances model performance by explicitly updating
+designated parameters prior to each prediction to adapt to the test data. While
+TTT has demonstrated considerable empirical success, its theoretical
+underpinnings remain limited, particularly for nonlinear models. In this paper,
+we investigate the combination of TTT with in-context learning (ICL), where the
+model is given a few examples from the target distribution at inference time.
+We analyze this framework in the setting of single-index models
+$y=\sigma_*(\langle \beta, \mathbf{x} \rangle)$, where the feature vector
+$\beta$ is drawn from a hidden low-dimensional subspace. For single-layer
+transformers trained with gradient-based algorithms and adopting TTT, we
+establish an upper bound on the prediction risk. Our theory reveals that TTT
+enables the single-layer transformers to adapt to both the feature vector
+$\beta$ and the link function $\sigma_*$, which vary across tasks. This creates
+a sharp contrast with ICL alone, which is theoretically difficult to adapt to
+shifts in the link function. Moreover, we provide the convergence rate with
+respect to the data length, showing the predictive error can be driven
+arbitrarily close to the noise level as the context size and the network width
+grow.</p></br><a href="http://arxiv.org/pdf/2509.26560v1" target="_blank"><h2>Estimating Dimensionality of Neural Representations from Finite Samples</h2></a><strong><u>Authors:</u></strong>  Chanwoo Chun, Abdulkadir Canatar, SueYeon Chung, Daniel Lee</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, q-bio.NC</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The global dimensionality of a neural representation manifold provides rich
+insight into the computational process underlying both artificial and
+biological neural networks. However, all existing measures of global
+dimensionality are sensitive to the number of samples, i.e., the number of rows
+and columns of the sample matrix. We show that, in particular, the
+participation ratio of eigenvalues, a popular measure of global dimensionality,
+is highly biased with small sample sizes, and propose a bias-corrected
+estimator that is more accurate with finite samples and with noise. On
+synthetic data examples, we demonstrate that our estimator can recover the true
+known dimensionality. We apply our estimator to neural brain recordings,
+including calcium imaging, electrophysiological recordings, and fMRI data, and
+to the neural activations in a large language model and show our estimator is
+invariant to the sample size. Finally, our estimators can additionally be used
+to measure the local dimensionalities of curved neural manifolds by weighting
+the finite samples appropriately.</p></br><a href="http://arxiv.org/pdf/2509.25964v1" target="_blank"><h2>Reevaluating Convolutional Neural Networks for Spectral Analysis: A
+  Focus on Raman Spectroscopy</h2></a><strong><u>Authors:</u></strong>  Deniz Soysal, Xabier García-Andrade, Laura E. Rodriguez, Pablo Sobron, Laura M. Barge, Renaud Detry</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Autonomous Raman instruments on Mars rovers, deep-sea landers, and field
+robots must interpret raw spectra distorted by fluorescence baselines, peak
+shifts, and limited ground-truth labels. Using curated subsets of the RRUFF
+database, we evaluate one-dimensional convolutional neural networks (CNNs) and
+report four advances: (i) Baseline-independent classification: compact CNNs
+surpass $k$-nearest-neighbors and support-vector machines on handcrafted
+features, removing background-correction and peak-picking stages while ensuring
+reproducibility through released data splits and scripts. (ii)
+Pooling-controlled robustness: tuning a single pooling parameter accommodates
+Raman shifts up to $30 \,\mathrm{cm}^{-1}$, balancing translational invariance
+with spectral resolution. (iii) Label-efficient learning: semi-supervised
+generative adversarial networks and contrastive pretraining raise accuracy by
+up to $11\%$ with only $10\%$ labels, valuable for autonomous deployments with
+scarce annotation. (iv) Constant-time adaptation: freezing the CNN backbone and
+retraining only the softmax layer transfers models to unseen minerals at
+$\mathcal{O}(1)$ cost, outperforming Siamese networks on resource-limited
+processors. This workflow, which involves training on raw spectra, tuning
+pooling, adding semi-supervision when labels are scarce, and fine-tuning
+lightly for new targets, provides a practical path toward robust, low-footprint
+Raman classification in autonomous exploration.</p></br><a href="http://arxiv.org/pdf/2509.26429v1" target="_blank"><h2>An Orthogonal Learner for Individualized Outcomes in Markov Decision
+  Processes</h2></a><strong><u>Authors:</u></strong>  Emil Javurek, Valentyn Melnychuk, Jonas Schweisthal, Konstantin Hess, Dennis Frauen, Stefan Feuerriegel</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Preprint</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Predicting individualized potential outcomes in sequential decision-making is
+central for optimizing therapeutic decisions in personalized medicine (e.g.,
+which dosing sequence to give to a cancer patient). However, predicting
+potential outcomes over long horizons is notoriously difficult. Existing
+methods that break the curse of the horizon typically lack strong theoretical
+guarantees such as orthogonality and quasi-oracle efficiency. In this paper, we
+revisit the problem of predicting individualized potential outcomes in
+sequential decision-making (i.e., estimating Q-functions in Markov decision
+processes with observational data) through a causal inference lens. In
+particular, we develop a comprehensive theoretical foundation for meta-learners
+in this setting with a focus on beneficial theoretical properties. As a result,
+we yield a novel meta-learner called DRQ-learner and establish that it is: (1)
+doubly robust (i.e., valid inference under the misspecification of one of the
+nuisances), (2) Neyman-orthogonal (i.e., insensitive to first-order estimation
+errors in the nuisance functions), and (3) achieves quasi-oracle efficiency
+(i.e., behaves asymptotically as if the ground-truth nuisance functions were
+known). Our DRQ-learner is applicable to settings with both discrete and
+continuous state spaces. Further, our DRQ-learner is flexible and can be used
+together with arbitrary machine learning models (e.g., neural networks). We
+validate our theoretical results through numerical experiments, thereby showing
+that our meta-learner outperforms state-of-the-art baselines.</p></br><a href="http://arxiv.org/pdf/2509.25788v1" target="_blank"><h2>From Cheap Geometry to Expensive Physics: Elevating Neural Operators via
+  Latent Shape Pretraining</h2></a><strong><u>Authors:</u></strong>  Zhizhou Zhang, Youjia Wu, Kaixuan Zhang, Yanjia Wang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Industrial design evaluation often relies on high-fidelity simulations of
+governing partial differential equations (PDEs). While accurate, these
+simulations are computationally expensive, making dense exploration of design
+spaces impractical. Operator learning has emerged as a promising approach to
+accelerate PDE solution prediction; however, its effectiveness is often limited
+by the scarcity of labeled physics-based data. At the same time, large numbers
+of geometry-only candidate designs are readily available but remain largely
+untapped. We propose a two-stage framework to better exploit this abundant,
+physics-agnostic resource and improve supervised operator learning under
+limited labeled data. In Stage 1, we pretrain an autoencoder on a geometry
+reconstruction task to learn an expressive latent representation without PDE
+labels. In Stage 2, the neural operator is trained in a standard supervised
+manner to predict PDE solutions, using the pretrained latent embeddings as
+inputs instead of raw point clouds. Transformer-based architectures are adopted
+for both the autoencoder and the neural operator to handle point cloud data and
+integrate both stages seamlessly. Across four PDE datasets and three
+state-of-the-art transformer-based neural operators, our approach consistently
+improves prediction accuracy compared to models trained directly on raw point
+cloud inputs. These results demonstrate that representations from
+physics-agnostic pretraining provide a powerful foundation for data-efficient
+operator learning.</p></br><a href="http://arxiv.org/pdf/2509.26145v1" target="_blank"><h2>LMILAtt: A Deep Learning Model for Depression Detection from Social
+  Media Users Enhanced by Multi-Instance Learning Based on Attention Mechanism</h2></a><strong><u>Authors:</u></strong>  Yukun Yang</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Depression is a major global public health challenge and its early
+identification is crucial. Social media data provides a new perspective for
+depression detection, but existing methods face limitations such as
+insufficient accuracy, insufficient utilization of time series features, and
+high annotation costs. To this end, this study proposes the LMILAtt model,
+which innovatively integrates Long Short-Term Memory autoencoders and attention
+mechanisms: firstly, the temporal dynamic features of user tweets (such as
+depressive tendency evolution patterns) are extracted through unsupervised LSTM
+autoencoders. Secondly, the attention mechanism is used to dynamically weight
+key texts (such as early depression signals) and construct a multi-example
+learning architecture to improve the accuracy of user-level detection. Finally,
+the performance was verified on the WU3D dataset labeled by professional
+medicine. Experiments show that the model is significantly better than the
+baseline model in terms of accuracy, recall and F1 score. In addition, the
+weakly supervised learning strategy significantly reduces the cost of labeling
+and provides an efficient solution for large-scale social media depression
+screening.</p></br><a href="http://arxiv.org/pdf/2509.25839v1" target="_blank"><h2>RAE: A Neural Network Dimensionality Reduction Method for Nearest
+  Neighbors Preservation in Vector Search</h2></a><strong><u>Authors:</u></strong>  Han Zhang, Dongfang Zhao</br><strong><u>Categories:</u></strong> cs.IR, cs.AI, cs.DB</br><strong><u>Comments:</u></strong> submitted to ICLR 2026</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> While high-dimensional embedding vectors are being increasingly employed in
+various tasks like Retrieval-Augmented Generation and Recommendation Systems,
+popular dimensionality reduction (DR) methods such as PCA and UMAP have rarely
+been adopted for accelerating the retrieval process due to their inability of
+preserving the nearest neighbor (NN) relationship among vectors. Empowered by
+neural networks' optimization capability and the bounding effect of Rayleigh
+quotient, we propose a Regularized Auto-Encoder (RAE) for k-NN preserving
+dimensionality reduction. RAE constrains the network parameter variation
+through regularization terms, adjusting singular values to control embedding
+magnitude changes during reduction, thus preserving k-NN relationships. We
+provide a rigorous mathematical analysis demonstrating that regularization
+establishes an upper bound on the norm distortion rate of transformed vectors,
+thereby offering provable guarantees for k-NN preservation. With modest
+training overhead, RAE achieves superior k-NN recall compared to existing DR
+approaches while maintaining fast retrieval efficiency.</p></br></body>

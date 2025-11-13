@@ -1,0 +1,162 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 07 Oct 2025 to 09 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.06840v1" target="_blank"><h2>CNN-TFT explained by SHAP with multi-head attention weights for time
+  series forecasting</h2></a><strong><u>Authors:</u></strong>  Stefano F. Stefenon, João P. Matos-Carvalho, Valderi R. Q. Leithardt, Kin-Choong Yow</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (abstract), neural network (abstract), transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Convolutional neural networks (CNNs) and transformer architectures offer
+strengths for modeling temporal data: CNNs excel at capturing local patterns
+and translational invariances, while transformers effectively model long-range
+dependencies via self-attention. This paper proposes a hybrid architecture
+integrating convolutional feature extraction with a temporal fusion transformer
+(TFT) backbone to enhance multivariate time series forecasting. The CNN module
+first applies a hierarchy of one-dimensional convolutional layers to distill
+salient local patterns from raw input sequences, reducing noise and
+dimensionality. The resulting feature maps are then fed into the TFT, which
+applies multi-head attention to capture both short- and long-term dependencies
+and to weigh relevant covariates adaptively. We evaluate the CNN-TFT on a
+hydroelectric natural flow time series dataset. Experimental results
+demonstrate that CNN-TFT outperforms well-established deep learning models,
+with a mean absolute percentage error of up to 2.2%. The explainability of the
+model is obtained by a proposed Shapley additive explanations with multi-head
+attention weights (SHAP-MHAW). Our novel architecture, named CNN-TFT-SHAP-MHAW,
+is promising for applications requiring high-fidelity, multivariate time series
+forecasts, being available for future analysis at
+https://github.com/SFStefenon/CNN-TFT-SHAP-MHAW .</p></br><a href="http://arxiv.org/pdf/2510.06910v1" target="_blank"><h2>Vacuum Spiker: A Spiking Neural Network-Based Model for Efficient
+  Anomaly Detection in Time Series</h2></a><strong><u>Authors:</u></strong>  Iago Xabier Vázquez, Javier Sedano, Muhammad Afzal, Ángel Miguel García-Vico</br><strong><u>Categories:</u></strong> cs.LG, I.2; I.5</br><strong><u>Comments:</u></strong> 53 pages, 16 figures, preprint submitted to a journal for review</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (title)</br><p><strong><u>Abstract:</u></strong> Anomaly detection is a key task across domains such as industry, healthcare,
+and cybersecurity. Many real-world anomaly detection problems involve analyzing
+multiple features over time, making time series analysis a natural approach for
+such problems. While deep learning models have achieved strong performance in
+this field, their trend to exhibit high energy consumption limits their
+deployment in resource-constrained environments such as IoT devices, edge
+computing platforms, and wearables. To address this challenge, this paper
+introduces the \textit{Vacuum Spiker algorithm}, a novel Spiking Neural
+Network-based method for anomaly detection in time series. It incorporates a
+new detection criterion that relies on global changes in neural activity rather
+than reconstruction or prediction error. It is trained using Spike
+Time-Dependent Plasticity in a novel way, intended to induce changes in neural
+activity when anomalies occur. A new efficient encoding scheme is also
+proposed, which discretizes the input space into non-overlapping intervals,
+assigning each to a single neuron. This strategy encodes information with a
+single spike per time step, improving energy efficiency compared to
+conventional encoding methods. Experimental results on publicly available
+datasets show that the proposed algorithm achieves competitive performance
+while significantly reducing energy consumption, compared to a wide set of deep
+learning and machine learning baselines. Furthermore, its practical utility is
+validated in a real-world case study, where the model successfully identifies
+power curtailment events in a solar inverter. These results highlight its
+potential for sustainable and efficient anomaly detection.</p></br><a href="http://arxiv.org/pdf/2510.06880v1" target="_blank"><h2>MoRE-GNN: Multi-omics Data Integration with a Heterogeneous Graph
+  Autoencoder</h2></a><strong><u>Authors:</u></strong>  Zhiyu Wang, Sonia Koszut, Pietro Liò, Francesco Ceccarelli</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The integration of multi-omics single-cell data remains challenging due to
+high-dimensionality and complex inter-modality relationships. To address this,
+we introduce MoRE-GNN (Multi-omics Relational Edge Graph Neural Network), a
+heterogeneous graph autoencoder that combines graph convolution and attention
+mechanisms to dynamically construct relational graphs directly from data.
+Evaluations on six publicly available datasets demonstrate that MoRE-GNN
+captures biologically meaningful relationships and outperforms existing
+methods, particularly in settings with strong inter-modality correlations.
+Furthermore, the learned representations allow for accurate downstream
+cross-modal predictions. While performance may vary with dataset complexity,
+MoRE-GNN offers an adaptive, scalable and interpretable framework for advancing
+multi-omics integration.</p></br><a href="http://arxiv.org/pdf/2510.07088v1" target="_blank"><h2>Explaining Models under Multivariate Bernoulli Distribution via
+  Hoeffding Decomposition</h2></a><strong><u>Authors:</u></strong>  Baptiste Ferrere, Nicolas Bousquet, Fabrice Gamboa, Jean-Michel Loubes, Joseph Muré</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Explaining the behavior of predictive models with random inputs can be
+achieved through sub-models decomposition, where such sub-models have easier
+interpretable features. Arising from the uncertainty quantification community,
+recent results have demonstrated the existence and uniqueness of a generalized
+Hoeffding decomposition for such predictive models when the stochastic input
+variables are correlated, based on concepts of oblique projection onto L 2
+subspaces. This article focuses on the case where the input variables have
+Bernoulli distributions and provides a complete description of this
+decomposition. We show that in this case the underlying L 2 subspaces are
+one-dimensional and that the functional decomposition is explicit. This leads
+to a complete interpretability framework and theoretically allows reverse
+engineering. Explicit indicators of the influence of inputs on the output
+prediction (exemplified by Sobol' indices and Shapley effects) can be
+explicitly derived. Illustrated by numerical experiments, this type of analysis
+proves useful for addressing decision-support problems, based on binary
+decision diagrams, Boolean networks or binary neural networks. The article
+outlines perspectives for exploring high-dimensional settings and, beyond the
+case of binary inputs, extending these findings to models with finite countable
+inputs.</p></br><a href="http://arxiv.org/pdf/2510.06931v1" target="_blank"><h2>Textual interpretation of transient image classifications from large
+  language models</h2></a><strong><u>Authors:</u></strong>  Fiorenzo Stoppa, Turan Bulmus, Steven Bloemen, Stephen J. Smartt, Paul J. Groot, Paul Vreeswijk, Ken W. Smith</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> Published in Nature Astronomy (2025). Publisher's Version of Record (CC BY 4.0). DOI:https://doi.org/10.1038/s41550-025-02670-z</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Modern astronomical surveys deliver immense volumes of transient detections,
+yet distinguishing real astrophysical signals (for example, explosive events)
+from bogus imaging artefacts remains a challenge. Convolutional neural networks
+are effectively used for real versus bogus classification; however, their
+reliance on opaque latent representations hinders interpretability. Here we
+show that large language models (LLMs) can approach the performance level of a
+convolutional neural network on three optical transient survey datasets
+(Pan-STARRS, MeerLICHT and ATLAS) while simultaneously producing direct,
+human-readable descriptions for every candidate. Using only 15 examples and
+concise instructions, Google's LLM, Gemini, achieves a 93% average accuracy
+across datasets that span a range of resolution and pixel scales. We also show
+that a second LLM can assess the coherence of the output of the first model,
+enabling iterative refinement by identifying problematic cases. This framework
+allows users to define the desired classification behaviour through natural
+language and examples, bypassing traditional training pipelines. Furthermore,
+by generating textual descriptions of observed features, LLMs enable users to
+query classifications as if navigating an annotated catalogue, rather than
+deciphering abstract latent spaces. As next-generation telescopes and surveys
+further increase the amount of data available, LLM-based classification could
+help bridge the gap between automated detection and transparent, human-level
+understanding.</p></br><a href="http://arxiv.org/pdf/2510.06858v1" target="_blank"><h2>Explaining raw data complexity to improve satellite onboard processing</h2></a><strong><u>Authors:</u></strong>  Adrien Dorise, Marjorie Bellizzi, Adrien Girard, Benjamin Francesconi, Stéphane May</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Preprint: European Data Handling & Data Processing Conference (EDHPC) 2025</br><strong><u>Matching Keywords:</u></strong> explainability (abstract)</br><p><strong><u>Abstract:</u></strong> With increasing processing power, deploying AI models for remote sensing
+directly onboard satellites is becoming feasible. However, new constraints
+arise, mainly when using raw, unprocessed sensor data instead of preprocessed
+ground-based products. While current solutions primarily rely on preprocessed
+sensor images, few approaches directly leverage raw data. This study
+investigates the effects of utilising raw data on deep learning models for
+object detection and classification tasks. We introduce a simulation workflow
+to generate raw-like products from high-resolution L1 imagery, enabling
+systemic evaluation. Two object detection models (YOLOv11s and YOLOX-S) are
+trained on both raw and L1 datasets, and their performance is compared using
+standard detection metrics and explainability tools. Results indicate that
+while both models perform similarly at low to medium confidence thresholds, the
+model trained on raw data struggles with object boundary identification at high
+confidence levels. It suggests that adapting AI architectures with improved
+contouring methods can enhance object detection on raw images, improving
+onboard AI for remote sensing.</p></br><a href="http://arxiv.org/pdf/2510.06662v1" target="_blank"><h2>The Effect of Attention Head Count on Transformer Approximation</h2></a><strong><u>Authors:</u></strong>  Penghao Yu, Haotian Jiang, Zeyu Bao, Ruoxi Yu, Qianxiao Li</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformer has become the dominant architecture for sequence modeling, yet a
+detailed understanding of how its structural parameters influence expressive
+power remains limited. In this work, we study the approximation properties of
+transformers, with particular emphasis on the role of the number of attention
+heads. Our analysis begins with the introduction of a generalized $D$-retrieval
+task, which we prove to be dense in the space of continuous functions, thereby
+providing the basis for our theoretical framework. We then establish both upper
+and lower bounds on the parameter complexity required for
+$\epsilon$-approximation. Specifically, we show that transformers with
+sufficiently many heads admit efficient approximation, whereas with too few
+heads, the number of parameters must scale at least as $O(1/\epsilon^{cT})$,
+for some constant $c$ and sequence length $T$. To the best of our knowledge,
+this constitutes the first rigorous lower bound of this type in a nonlinear and
+practically relevant setting. We further examine the single-head case and
+demonstrate that an embedding dimension of order $O(T)$ allows complete
+memorization of the input, where approximation is entirely achieved by the
+feed-forward block. Finally, we validate our theoretical findings with
+experiments on both synthetic data and real-world tasks, illustrating the
+practical relevance of our results.</p></br><a href="http://arxiv.org/pdf/2510.06355v1" target="_blank"><h2>PIKAN: Physics-Inspired Kolmogorov-Arnold Networks for Explainable UAV
+  Channel Modelling</h2></a><strong><u>Authors:</u></strong>  Kürşat Tekbıyık, Güneş Karabulut Kurt, Antoine Lesage-Landry</br><strong><u>Categories:</u></strong> cs.LG, eess.SP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Unmanned aerial vehicle (UAV) communications demand accurate yet
+interpretable air-to-ground (A2G) channel models that can adapt to
+nonstationary propagation environments. While deterministic models offer
+interpretability and deep learning (DL) models provide accuracy, both
+approaches suffer from either rigidity or a lack of explainability. To bridge
+this gap, we propose the Physics-Inspired Kolmogorov-Arnold Network (PIKAN)
+that embeds physical principles (e.g., free-space path loss, two-ray
+reflections) into the learning process. Unlike physics-informed neural networks
+(PINNs), PIKAN is more flexible for applying physical information because it
+introduces them as flexible inductive biases. Thus, it enables a more flexible
+training process. Experiments on UAV A2G measurement data show that PIKAN
+achieves comparable accuracy to DL models while providing symbolic and
+explainable expressions aligned with propagation laws. Remarkably, PIKAN
+achieves this performance with only 232 parameters, making it up to 37 times
+lighter than multilayer perceptron (MLP) baselines with thousands of
+parameters, without sacrificing correlation with measurements and also
+providing symbolic expressions. These results highlight PIKAN as an efficient,
+interpretable, and scalable solution for UAV channel modelling in beyond-5G and
+6G networks.</p></br></body>

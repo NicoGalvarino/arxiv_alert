@@ -1,0 +1,344 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'><style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 20 May 2025 to 22 May 2025</em></font><a href="http://arxiv.org/pdf/2505.15239v1" target="_blank"><h2>Neural Collapse is Globally Optimal in Deep Regularized ResNets and
+  Transformers</h2></a><strong><u>Authors:</u></strong>  Peter Súkeník, Christoph H. Lampert, Marco Mondelli</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> The empirical emergence of neural collapse -- a surprising symmetry in the
+feature representations of the training data in the penultimate layer of deep
+neural networks -- has spurred a line of theoretical research aimed at its
+understanding. However, existing work focuses on data-agnostic models or, when
+data structure is taken into account, it remains limited to multi-layer
+perceptrons. Our paper fills both these gaps by analyzing modern architectures
+in a data-aware regime: we prove that global optima of deep regularized
+transformers and residual networks (ResNets) with LayerNorm trained with cross
+entropy or mean squared error loss are approximately collapsed, and the
+approximation gets tighter as the depth grows. More generally, we formally
+reduce any end-to-end large-depth ResNet or transformer training into an
+equivalent unconstrained features model, thus justifying its wide use in the
+literature even beyond data-agnostic settings. Our theoretical results are
+supported by experiments on computer vision and language datasets showing that,
+as the depth grows, neural collapse indeed becomes more prominent.</p></br><a href="http://arxiv.org/pdf/2505.15329v1" target="_blank"><h2>Fourier-Invertible Neural Encoder (FINE) for Homogeneous Flows</h2></a><strong><u>Authors:</u></strong>  Anqiao Ouyang, Hongyi Ke, Qi Wang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Invertible neural architectures have recently attracted attention for their
+compactness, interpretability, and information-preserving properties. In this
+work, we propose the Fourier-Invertible Neural Encoder (FINE), which combines
+invertible monotonic activation functions with reversible filter structures,
+and could be extended using Invertible ResNets. This architecture is examined
+in learning low-dimensional representations of one-dimensional nonlinear wave
+interactions and exact circular translation symmetry. Dimensionality is
+preserved across layers, except for a Fourier truncation step in the latent
+space, which enables dimensionality reduction while maintaining shift
+equivariance and interpretability. Our results demonstrate that FINE
+significantly outperforms classical linear methods such as Discrete Fourier
+Transformation (DFT) and Proper Orthogonal Decomposition (POD), and achieves
+reconstruction accuracy better than conventional deep autoencoders with
+convolutional layers (CNN) - while using substantially smaller models and
+offering superior physical interpretability. These findings suggest that
+invertible single-neuron networks, when combined with spectral truncation,
+offer a promising framework for learning compact and interpretable
+representations of physics datasets, and symmetry-aware representation learning
+in physics-informed machine learning.</p></br><a href="http://arxiv.org/pdf/2505.15808v1" target="_blank"><h2>Neural Conditional Transport Maps</h2></a><strong><u>Authors:</u></strong>  Carlos Rodriguez-Pardo, Leonardo Chiani, Emanuele Borgonovo, Massimo Tavoni</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.PR, stat.AP, stat.ML, 49Q22 (Primary) 68T07 (Secondary), I.5.1; I.2.0; G.3</br><strong><u>Comments:</u></strong> Under Review. Supplementary material included in the pdf</br><p><strong><u>Abstract:</u></strong> We present a neural framework for learning conditional optimal transport (OT)
+maps between probability distributions. Our approach introduces a conditioning
+mechanism capable of processing both categorical and continuous conditioning
+variables simultaneously. At the core of our method lies a hypernetwork that
+generates transport layer parameters based on these inputs, creating adaptive
+mappings that outperform simpler conditioning methods. Comprehensive ablation
+studies demonstrate the superior performance of our method over baseline
+configurations. Furthermore, we showcase an application to global sensitivity
+analysis, offering high performance in computing OT-based sensitivity indices.
+This work advances the state-of-the-art in conditional optimal transport,
+enabling broader application of optimal transport principles to complex,
+high-dimensional domains such as generative modeling and black-box model
+explainability.</p></br><a href="http://arxiv.org/pdf/2505.15516v1" target="_blank"><h2>Explainable embeddings with Distance Explainer</h2></a><strong><u>Authors:</u></strong>  Christiaan Meijer, E. G. Patrick Bos</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, cs.CV, 68T99, I.2.m</br><strong><u>Comments:</u></strong> 33 pages, 19 figures. Submitted to JMLR. Method implementation:this https URL</br><p><strong><u>Abstract:</u></strong> While eXplainable AI (XAI) has advanced significantly, few methods address
+interpretability in embedded vector spaces where dimensions represent complex
+abstractions. We introduce Distance Explainer, a novel method for generating
+local, post-hoc explanations of embedded spaces in machine learning models. Our
+approach adapts saliency-based techniques from RISE to explain the distance
+between two embedded data points by assigning attribution values through
+selective masking and distance-ranked mask filtering. We evaluate Distance
+Explainer on cross-modal embeddings (image-image and image-caption pairs) using
+established XAI metrics including Faithfulness, Sensitivity/Robustness, and
+Randomization. Experiments with ImageNet and CLIP models demonstrate that our
+method effectively identifies features contributing to similarity or
+dissimilarity between embedded data points while maintaining high robustness
+and consistency. We also explore how parameter tuning, particularly mask
+quantity and selection strategy, affects explanation quality. This work
+addresses a critical gap in XAI research and enhances transparency and
+trustworthiness in deep learning applications utilizing embedded spaces.</p></br><a href="http://arxiv.org/pdf/2505.14967v1" target="_blank"><h2>Anomaly Detection Based on Critical Paths for Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Fangzhen Zhao, Chenyi Zhang, Naipeng Dong, Ming Li, Jinxiao Shan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 23 pages in ACM journal latex format</br><p><strong><u>Abstract:</u></strong> Deep neural networks (DNNs) are notoriously hard to understand and difficult
+to defend. Extracting representative paths (including the neuron activation
+values and the connections between neurons) from DNNs using software
+engineering approaches has recently shown to be a promising approach in
+interpreting the decision making process of blackbox DNNs, as the extracted
+paths are often effective in capturing essential features. With this in mind,
+this work investigates a novel approach that extracts critical paths from DNNs
+and subsequently applies the extracted paths for the anomaly detection task,
+based on the observation that outliers and adversarial inputs do not usually
+induce the same activation pattern on those paths as normal (in-distribution)
+inputs.
+  In our approach, we first identify critical detection paths via genetic
+evolution and mutation. Since different paths in a DNN often capture different
+features for the same target class, we ensemble detection results from multiple
+paths by integrating random subspace sampling and a voting mechanism. Compared
+with state-of-the-art methods, our experimental results suggest that our method
+not only outperforms them, but it is also suitable for the detection of a broad
+range of anomaly types with high accuracy.</p></br><a href="http://arxiv.org/pdf/2505.14877v1" target="_blank"><h2>A self-regulated convolutional neural network for classifying variable
+  stars</h2></a><strong><u>Authors:</u></strong>  Francisco Pérez-Galarce, Jorge Martínez-Palomera, Karim Pichara, Pablo Huijse, Márcio Catelan</br><strong><u>Categories:</u></strong> cs.LG, astro-ph.SR</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Over the last two decades, machine learning models have been widely applied
+and have proven effective in classifying variable stars, particularly with the
+adoption of deep learning architectures such as convolutional neural networks,
+recurrent neural networks, and transformer models. While these models have
+achieved high accuracy, they require high-quality, representative data and a
+large number of labelled samples for each star type to generalise well, which
+can be challenging in time-domain surveys. This challenge often leads to models
+learning and reinforcing biases inherent in the training data, an issue that is
+not easily detectable when validation is performed on subsamples from the same
+catalogue. The problem of biases in variable star data has been largely
+overlooked, and a definitive solution has yet to be established. In this paper,
+we propose a new approach to improve the reliability of classifiers in variable
+star classification by introducing a self-regulated training process. This
+process utilises synthetic samples generated by a physics-enhanced latent space
+variational autoencoder, incorporating six physical parameters from Gaia Data
+Release 3. Our method features a dynamic interaction between a classifier and a
+generative model, where the generative model produces ad-hoc synthetic light
+curves to reduce confusion during classifier training and populate
+underrepresented regions in the physical parameter space. Experiments conducted
+under various scenarios demonstrate that our self-regulated training approach
+outperforms traditional training methods for classifying variable stars on
+biased datasets, showing statistically significant improvements.</p></br><a href="http://arxiv.org/pdf/2505.15429v1" target="_blank"><h2>Uncertainty Quantification in SVM prediction</h2></a><strong><u>Authors:</u></strong>  Pritam Anand</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> This paper explores Uncertainty Quantification (UQ) in SVM predictions,
+particularly for regression and forecasting tasks. Unlike the Neural Network,
+the SVM solutions are typically more stable, sparse, optimal and interpretable.
+However, there are only few literature which addresses the UQ in SVM
+prediction. At first, we provide a comprehensive summary of existing Prediction
+Interval (PI) estimation and probabilistic forecasting methods developed in the
+SVM framework and evaluate them against the key properties expected from an
+ideal PI model. We find that none of the existing SVM PI models achieves a
+sparse solution. To introduce sparsity in SVM model, we propose the Sparse
+Support Vector Quantile Regression (SSVQR) model, which constructs PIs and
+probabilistic forecasts by solving a pair of linear programs. Further, we
+develop a feature selection algorithm for PI estimation using SSVQR that
+effectively eliminates a significant number of features while improving PI
+quality in case of high-dimensional dataset. Finally we extend the SVM models
+in Conformal Regression setting for obtaining more stable prediction set with
+finite test set guarantees. Extensive experiments on artificial, real-world
+benchmark datasets compare the different characteristics of both existing and
+proposed SVM-based PI estimation methods and also highlight the advantages of
+the feature selection in PI estimation. Furthermore, we compare both, the
+existing and proposed SVM-based PI estimation models, with modern deep learning
+models for probabilistic forecasting tasks on benchmark datasets. Furthermore,
+SVM models show comparable or superior performance to modern complex deep
+learning models for probabilistic forecasting task in our experiments.</p></br><a href="http://arxiv.org/pdf/2505.15141v1" target="_blank"><h2>BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms</h2></a><strong><u>Authors:</u></strong>  Yunlong Hou, Fengzhuo Zhang, Cunxiao Du, Xuan Zhang, Jiachun Pan, Tianyu Pang, Chao Du, Vincent Y. F. Tan, Zhuoran Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 35 pages, 4 figures</br><p><strong><u>Abstract:</u></strong> Speculative decoding has emerged as a popular method to accelerate the
+inference of Large Language Models (LLMs) while retaining their superior text
+generation performance. Previous methods either adopt a fixed speculative
+decoding configuration regardless of the prefix tokens, or train draft models
+in an offline or online manner to align them with the context. This paper
+proposes a training-free online learning framework to adaptively choose the
+configuration of the hyperparameters for speculative decoding as text is being
+generated. We first formulate this hyperparameter selection problem as a
+Multi-Armed Bandit problem and provide a general speculative decoding framework
+BanditSpec. Furthermore, two bandit-based hyperparameter selection algorithms,
+UCBSpec and EXP3Spec, are designed and analyzed in terms of a novel quantity,
+the stopping time regret. We upper bound this regret under both stochastic and
+adversarial reward settings. By deriving an information-theoretic impossibility
+result, it is shown that the regret performance of UCBSpec is optimal up to
+universal constants. Finally, extensive empirical experiments with LLaMA3 and
+Qwen2 demonstrate that our algorithms are effective compared to existing
+methods, and the throughput is close to the oracle best hyperparameter in
+simulated real-life LLM serving scenarios with diverse input prompts.</p></br><a href="http://arxiv.org/pdf/2505.15201v1" target="_blank"><h2>Pass@K Policy Optimization: Solving Harder Reinforcement Learning
+  Problems</h2></a><strong><u>Authors:</u></strong>  Christian Walder, Deep Karkhanis</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Reinforcement Learning (RL) algorithms sample multiple n>1 solution attempts
+for each problem and reward them independently. This optimizes for pass@1
+performance and prioritizes the strength of isolated samples at the expense of
+the diversity and collective utility of sets of samples. This under-utilizes
+the sampling capacity, limiting exploration and eventual improvement on harder
+examples. As a fix, we propose Pass-at-k Policy Optimization (PKPO), a
+transformation on the final rewards which leads to direct optimization of
+pass@k performance, thus optimizing for sets of samples that maximize reward
+when considered jointly. Our contribution is to derive novel low variance
+unbiased estimators for pass@k and its gradient, in both the binary and
+continuous reward settings. We show optimization with our estimators reduces to
+standard RL with rewards that have been jointly transformed by a stable and
+efficient transformation function.
+  While previous efforts are restricted to k=n, ours is the first to enable
+robust optimization of pass@k for any arbitrary k <= n. Moreover, instead of
+trading off pass@1 performance for pass@k gains, our method allows annealing k
+during training, optimizing both metrics and often achieving strong pass@1
+numbers alongside significant pass@k gains.
+  We validate our reward transformations on toy experiments, which reveal the
+variance reducing properties of our formulations. We also include real-world
+examples using the open-source LLM, GEMMA-2. We find that our transformation
+effectively optimizes for the target k. Furthermore, higher k values enable
+solving more and harder problems, while annealing k boosts both the pass@1 and
+pass@k . Crucially, for challenging task sets where conventional pass@1
+optimization stalls, our pass@k approach unblocks learning, likely due to
+better exploration by prioritizing joint utility over the utility of individual
+samples.</p></br><a href="http://arxiv.org/pdf/2505.15008v1" target="_blank"><h2>Know When to Abstain: Optimal Selective Classification with Likelihood
+  Ratios</h2></a><strong><u>Authors:</u></strong>  Alvin Heng, Harold Soh</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Selective classification enhances the reliability of predictive models by
+allowing them to abstain from making uncertain predictions. In this work, we
+revisit the design of optimal selection functions through the lens of the
+Neyman--Pearson lemma, a classical result in statistics that characterizes the
+optimal rejection rule as a likelihood ratio test. We show that this
+perspective not only unifies the behavior of several post-hoc selection
+baselines, but also motivates new approaches to selective classification which
+we propose here. A central focus of our work is the setting of covariate shift,
+where the input distribution at test time differs from that at training. This
+realistic and challenging scenario remains relatively underexplored in the
+context of selective classification. We evaluate our proposed methods across a
+range of vision and language tasks, including both supervised learning and
+vision-language models. Our experiments demonstrate that our
+Neyman--Pearson-informed methods consistently outperform existing baselines,
+indicating that likelihood ratio-based selection offers a robust mechanism for
+improving selective classification under covariate shifts. Our code is publicly
+available at https://github.com/clear-nus/sc-likelihood-ratios.</p></br><a href="http://arxiv.org/pdf/2505.14999v1" target="_blank"><h2>Learning to Rank Chain-of-Thought: An Energy-Based Approach with Outcome
+  Supervision</h2></a><strong><u>Authors:</u></strong>  Eric Hanchen Jiang, Haozheng Luo, Shengyuan Pang, Xiaomin Li, Zhenting Qi, Hengli Li, Cheng-Fu Yang, Zongyu Lin, Xinfeng Li, Hao Xu, Kai-Wei Chang, Ying Nian Wu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Mathematical reasoning presents a significant challenge for Large Language
+Models (LLMs), often requiring robust multi step logical consistency. While
+Chain of Thought (CoT) prompting elicits reasoning steps, it doesn't guarantee
+correctness, and improving reliability via extensive sampling is
+computationally costly. This paper introduces the Energy Outcome Reward Model
+(EORM), an effective, lightweight, post hoc verifier. EORM leverages Energy
+Based Models (EBMs) to simplify the training of reward models by learning to
+assign a scalar energy score to CoT solutions using only outcome labels,
+thereby avoiding detailed annotations. It achieves this by interpreting
+discriminator output logits as negative energies, effectively ranking
+candidates where lower energy is assigned to solutions leading to correct final
+outcomes implicitly favoring coherent reasoning. On mathematical benchmarks
+(GSM8k, MATH), EORM significantly improves final answer accuracy (e.g., with
+Llama 3 8B, achieving 90.7% on GSM8k and 63.7% on MATH). EORM effectively
+leverages a given pool of candidate solutions to match or exceed the
+performance of brute force sampling, thereby enhancing LLM reasoning outcome
+reliability through its streamlined post hoc verification process.</p></br><a href="http://arxiv.org/pdf/2505.15240v1" target="_blank"><h2>Generalised Probabilistic Modelling and Improved Uncertainty Estimation
+  in Comparative LLM-as-a-judge</h2></a><strong><u>Authors:</u></strong>  Yassir Fathullah, Mark J. F. Gales</br><strong><u>Categories:</u></strong> cs.AI, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> To appear in UAI 2025</br><p><strong><u>Abstract:</u></strong> This paper explores generalised probabilistic modelling and uncertainty
+estimation in comparative LLM-as-a-judge frameworks. We show that existing
+Product-of-Experts methods are specific cases of a broader framework, enabling
+diverse modelling options. Furthermore, we propose improved uncertainty
+estimates for individual comparisons, enabling more efficient selection and
+achieving strong performance with fewer evaluations. We also introduce a method
+for estimating overall ranking uncertainty. Finally, we demonstrate that
+combining absolute and comparative scoring improves performance. Experiments
+show that the specific expert model has a limited impact on final rankings but
+our proposed uncertainty estimates, especially the probability of reordering,
+significantly improve the efficiency of systems reducing the number of needed
+comparisons by ~50%. Furthermore, ranking-level uncertainty metrics can be used
+to identify low-performing predictions, where the nature of the probabilistic
+model has a notable impact on the quality of the overall uncertainty.</p></br><a href="http://arxiv.org/pdf/2505.15417v1" target="_blank"><h2>Robust Multimodal Learning via Entropy-Gated Contrastive Fusion</h2></a><strong><u>Authors:</u></strong>  Leon Chlon, Maggie Chlon, MarcAntonio M. Awada</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Real-world multimodal systems routinely face missing-input scenarios, and in
+reality, robots lose audio in a factory or a clinical record omits lab tests at
+inference time. Standard fusion layers either preserve robustness or
+calibration but never both. We introduce Adaptive Entropy-Gated Contrastive
+Fusion (AECF), a single light-weight layer that (i) adapts its entropy
+coefficient per instance, (ii) enforces monotone calibration across all
+modality subsets, and (iii) drives a curriculum mask directly from
+training-time entropy. On AV-MNIST and MS-COCO, AECF improves masked-input mAP
+by +18 pp at a 50% drop rate while reducing ECE by up to 200%, yet adds 1%
+run-time. All back-bones remain frozen, making AECF an easy drop-in layer for
+robust, calibrated multimodal inference.</p></br><a href="http://arxiv.org/pdf/2505.15470v1" target="_blank"><h2>The PAU Survey: Measuring intrinsic galaxy alignments in deep wide
+  fields as a function of colour, luminosity, stellar mass and redshift</h2></a><strong><u>Authors:</u></strong>  D. Navarro-Gironés, M. Crocce, E. Gaztañaga, A. Wittje, M. Siudek, H. Hoekstra, H. Hildebrandt, B. Joachimi, R. Paviot, C. M. Baugh, J. Carretero, R. Casas, F. J. Castander, M. Eriksen, E. Fernandez, P. Fosalba, J. García-Bellido, R. Miquel, C. Padilla, P. Renard, E. Sánchez, S. Serrano, I. Sevilla-Noarbe, P. Tallada-Crespí</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA</br><strong><u>Comments:</u></strong> 30 pages, 24 figures, submitted to MNRAS</br><p><strong><u>Abstract:</u></strong> We present the measurements and constraints of intrinsic alignments (IA) in
+the Physics of the Accelerating Universe Survey (PAUS) deep wide fields, which
+include the W1 and W3 fields from the Canada-France-Hawaii Telescope Legacy
+Survey (CFHTLS) and the G09 field from the Kilo-Degree Survey (KiDS). Our
+analyses cover 51deg$^{2}$, in the photometric redshift (photo-$z$) range $0.1
+< z_{\mathrm{b}} < 1$ and a magnitude limit $i_{\mathrm{AB}}<22$. The precise
+photo-$z$s and the luminosity coverage of PAUS enable robust IA measurements,
+which are key for setting informative priors for upcoming stage-IV surveys. For
+red galaxies, we detect an increase in IA amplitude with both luminosity and
+stellar mass, extending previous results towards fainter and less massive
+regimes. As a function of redshift, we observe strong IA signals at
+intermediate ($z_{\mathrm{b}}\sim0.55$) and high ($z_{\mathrm{b}}\sim0.75$)
+redshift bins. However, we find no significant trend of IA evolution with
+redshift after accounting for the varying luminosities across redshift bins,
+consistent with the literature. For blue galaxies, no significant IA signal is
+detected, with $A_{1}=0.68_{-0.51}^{+0.53}$ when splitting only by galaxy
+colour, yielding some of the tightest constraints to date for the blue
+population and constraining a regime of very faint and low-mass galaxies.</p></br><a href="http://arxiv.org/pdf/2505.15175v1" target="_blank"><h2>A Linear Approach to Data Poisoning</h2></a><strong><u>Authors:</u></strong>  Diego Granziol, Donald Flynn</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> 9 pages, 9 Figures</br><p><strong><u>Abstract:</u></strong> We investigate the theoretical foundations of data poisoning attacks in
+machine learning models. Our analysis reveals that the Hessian with respect to
+the input serves as a diagnostic tool for detecting poisoning, exhibiting
+spectral signatures that characterize compromised datasets. We use random
+matrix theory (RMT) to develop a theory for the impact of poisoning proportion
+and regularisation on attack efficacy in linear regression. Through QR stepwise
+regression, we study the spectral signatures of the Hessian in multi-output
+regression. We perform experiments on deep networks to show experimentally that
+this theory extends to modern convolutional and transformer networks under the
+cross-entropy loss. Based on these insights we develop preliminary algorithms
+to determine if a network has been poisoned and remedies which do not require
+further training.</p></br><a href="http://arxiv.org/pdf/2505.15127v1" target="_blank"><h2>Spatial and velocity anisotropies of stellar halos across cosmic web
+  environments: Insights from IllustrisTNG simulation</h2></a><strong><u>Authors:</u></strong>  Amit Mondal, Biswajit Pandey, Anindita Nandi</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 10 pages, 5 figures, 2 tables, comments are welcome</br><p><strong><u>Abstract:</u></strong> The role of large-scale environment in shaping the structural and kinematic
+properties of stellar halos remains an open question. We investigate whether
+the cosmic web environments affect the spatial and velocity anisotropies of
+stellar halos in Milky Way-mass galaxies. Using high-resolution data from the
+TNG50 simulation, we analyze 29 stellar halos from each environment and
+quantify their spatial and kinematic anisotropies as a function of halo-centric
+radius. We find that stellar halos across all environments generally exhibit
+increasing spatial anisotropy with radius, with fluctuations corresponding to
+bound substructures. The velocity anisotropy profiles show radially dominated
+orbits on average, but also display significant local variation, including
+tangentially dominated regions. However, no statistically significant
+differences are observed in the mean spatial or velocity anisotropy profiles
+across environments, for either the total stellar halo population or for the in
+situ and ex situ components individually. The large scatter within each
+environment suggests that the formation of stellar halos is primarily driven by
+stochastic, small-scale processes such as satellite merger histories, rather
+than the large-scale geometry of the cosmic web. Our results imply that, at
+fixed halo mass, the influence of cosmic web environment on the structure of
+stellar halo is weak or highly non-deterministic. Possible environmental
+effects may be more prominent at higher masses where accretion is more
+anisotropic. Exploring this regime will require simulations with both larger
+volume and higher resolution.</p></br><a href="http://arxiv.org/pdf/2505.15013v1" target="_blank"><h2>Convergence of Adam in Deep ReLU Networks via Directional Complexity and
+  Kakeya Bounds</h2></a><strong><u>Authors:</u></strong>  Anupama Sridhar, Alexander Johansen</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 9 pages main paper</br><p><strong><u>Abstract:</u></strong> First-order adaptive optimization methods like Adam are the default choices
+for training modern deep neural networks. Despite their empirical success, the
+theoretical understanding of these methods in non-smooth settings, particularly
+in Deep ReLU networks, remains limited. ReLU activations create exponentially
+many region boundaries where standard smoothness assumptions break down.
+\textbf{We derive the first
+\(\tilde{O}\!\bigl(\sqrt{d_{\mathrm{eff}}/n}\bigr)\) generalization bound for
+Adam in Deep ReLU networks and the first global-optimal convergence for Adam in
+the non smooth, non convex relu landscape without a global PL or convexity
+assumption.} Our analysis is based on stratified Morse theory and novel results
+in Kakeya sets. We develop a multi-layer refinement framework that
+progressively tightens bounds on region crossings. We prove that the number of
+region crossings collapses from exponential to near-linear in the effective
+dimension. Using a Kakeya based method, we give a tighter generalization bound
+than PAC-Bayes approaches and showcase convergence using a mild uniform low
+barrier assumption.</p></br><a href="http://arxiv.org/pdf/2505.15116v1" target="_blank"><h2>Graph Foundation Models: A Comprehensive Survey</h2></a><strong><u>Authors:</u></strong>  Zehong Wang, Zheyuan Liu, Tianyi Ma, Jiazheng Li, Zheyuan Zhang, Xingbo Fu, Yiyang Li, Zhengqing Yuan, Wei Song, Yijun Ma, Qingkai Zeng, Xiusi Chen, Jianan Zhao, Jundong Li, Meng Jiang, Pietro Lio, Nitesh Chawla, Chuxu Zhang, Yanfang Ye</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.SI</br><strong><u>Comments:</u></strong> Github Repo:this https URL. 93 pages, 438 references</br><p><strong><u>Abstract:</u></strong> Graph-structured data pervades domains such as social networks, biological
+systems, knowledge graphs, and recommender systems. While foundation models
+have transformed natural language processing, vision, and multimodal learning
+through large-scale pretraining and generalization, extending these
+capabilities to graphs -- characterized by non-Euclidean structures and complex
+relational semantics -- poses unique challenges and opens new opportunities. To
+this end, Graph Foundation Models (GFMs) aim to bring scalable, general-purpose
+intelligence to structured data, enabling broad transfer across graph-centric
+tasks and domains. This survey provides a comprehensive overview of GFMs,
+unifying diverse efforts under a modular framework comprising three key
+components: backbone architectures, pretraining strategies, and adaptation
+mechanisms. We categorize GFMs by their generalization scope -- universal,
+task-specific, and domain-specific -- and review representative methods, key
+innovations, and theoretical insights within each category. Beyond methodology,
+we examine theoretical foundations including transferability and emergent
+capabilities, and highlight key challenges such as structural alignment,
+heterogeneity, scalability, and evaluation. Positioned at the intersection of
+graph learning and general-purpose AI, GFMs are poised to become foundational
+infrastructure for open-ended reasoning over structured data. This survey
+consolidates current progress and outlines future directions to guide research
+in this rapidly evolving field. Resources are available at
+https://github.com/Zehong-Wang/Awesome-Foundation-Models-on-Graphs.</p></br><a href="http://arxiv.org/pdf/2505.15354v1" target="_blank"><h2>Human in the Loop Adaptive Optimization for Improved Time Series
+  Forecasting</h2></a><strong><u>Authors:</u></strong>  Malik Tiomoko, Hamza Cherkaoui, Giuseppe Paolo, Zhang Yili, Yu Meng, Zhang Keli, Hafiz Tiomoko Ali</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Time series forecasting models often produce systematic, predictable errors
+even in critical domains such as energy, finance, and healthcare. We introduce
+a novel post training adaptive optimization framework that improves forecast
+accuracy without retraining or architectural changes. Our method automatically
+applies expressive transformations optimized via reinforcement learning,
+contextual bandits, or genetic algorithms to correct model outputs in a
+lightweight and model agnostic way. Theoretically, we prove that affine
+corrections always reduce the mean squared error; practically, we extend this
+idea with dynamic action based optimization. The framework also supports an
+optional human in the loop component: domain experts can guide corrections
+using natural language, which is parsed into actions by a language model.
+Across multiple benchmarks (e.g., electricity, weather, traffic), we observe
+consistent accuracy gains with minimal computational overhead. Our interactive
+demo shows the framework's real time usability. By combining automated post hoc
+refinement with interpretable and extensible mechanisms, our approach offers a
+powerful new direction for practical forecasting systems.</p></br><a href="http://arxiv.org/pdf/2505.15215v1" target="_blank"><h2>Clustering and Pruning in Causal Data Fusion</h2></a><strong><u>Authors:</u></strong>  Otto Tabell, Santtu Tikka, Juha Karvanen</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, stat.ME</br><strong><u>Comments:</u></strong> No comments</br><p><strong><u>Abstract:</u></strong> Data fusion, the process of combining observational and experimental data,
+can enable the identification of causal effects that would otherwise remain
+non-identifiable. Although identification algorithms have been developed for
+specific scenarios, do-calculus remains the only general-purpose tool for
+causal data fusion, particularly when variables are present in some data
+sources but not others. However, approaches based on do-calculus may encounter
+computational challenges as the number of variables increases and the causal
+graph grows in complexity. Consequently, there exists a need to reduce the size
+of such models while preserving the essential features. For this purpose, we
+propose pruning (removing unnecessary variables) and clustering (combining
+variables) as preprocessing operations for causal data fusion. We generalize
+earlier results on a single data source and derive conditions for applying
+pruning and clustering in the case of multiple data sources. We give sufficient
+conditions for inferring the identifiability or non-identifiability of a causal
+effect in a larger graph based on a smaller graph and show how to obtain the
+corresponding identifying functional for identifiable causal effects. Examples
+from epidemiology and social science demonstrate the use of the results.</p></br></body>

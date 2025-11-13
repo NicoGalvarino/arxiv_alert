@@ -1,0 +1,227 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 06 Aug 2025 to 08 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.04956v1" target="_blank"><h2>MENDR: Manifold Explainable Neural Data Representations</h2></a><strong><u>Authors:</u></strong>  Matthew Chen, Micky Nnamdi, Justin Shao, Andrew Hornback, Hongyun Huang, Ben Tamo, Yishan Zhong, Benoit Marteau, Wenqi Shi, May Dongmei Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Foundation models for electroencephalography (EEG) signals have recently
+demonstrated success in learning generalized representations of EEGs,
+outperforming specialized models in various downstream tasks. However, many of
+these models lack transparency in their pretraining dynamics and offer limited
+insight into how well EEG information is preserved within their embeddings. For
+successful clinical integration, EEG foundation models must ensure transparency
+in pretraining, downstream fine-tuning, and the interpretability of learned
+representations. Current approaches primarily operate in the temporal domain,
+overlooking advancements in digital signal processing that enable the
+extraction of deterministic and traceable features, such as wavelet-based
+representations. We propose MENDR (Manifold Explainable Neural Data
+Representations), a filter bank-based EEG foundation model built on a novel
+Riemannian Manifold Transformer architecture to resolve these issues. MENDR
+learns symmetric positive definite matrix embeddings of EEG signals and is
+pretrained on a large corpus comprising over 4,000 hours of EEG data,
+decomposed via discrete wavelet packet transforms into multi-resolution
+coefficients. MENDR significantly enhances interpretability by visualizing
+symmetric positive definite embeddings as geometric ellipsoids and supports
+accurate reconstruction of EEG signals from learned embeddings. Evaluations
+across multiple clinical EEG tasks demonstrate that MENDR achieves near
+state-of-the-art performance with substantially fewer parameters, underscoring
+its potential for efficient, interpretable, and clinically applicable EEG
+analysis.</p></br><a href="http://arxiv.org/pdf/2508.04845v1" target="_blank"><h2>Multi-Stage Knowledge-Distilled VGAE and GAT for Robust
+  Controller-Area-Network Intrusion Detection</h2></a><strong><u>Authors:</u></strong>  Robert Frenken, Sidra Ghayour Bhatti, Hanqin Zhang, Qadeer Ahmed</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> arXiv admin note: substantial text overlap witharXiv:2507.19686Author note: This submission is an extension of the above work by the same author</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The Controller Area Network (CAN) protocol is a standard for in-vehicle
+communication but remains susceptible to cyber-attacks due to its lack of
+built-in security. This paper presents a multi-stage intrusion detection
+framework leveraging unsupervised anomaly detection and supervised graph
+learning tailored for automotive CAN traffic. Our architecture combines a
+Variational Graph Autoencoder (VGAE) for structural anomaly detection with a
+Knowledge-Distilled Graph Attention Network (KD-GAT) for robust attack
+classification. CAN bus activity is encoded as graph sequences to model
+temporal and relational dependencies. The pipeline applies VGAE-based selective
+undersampling to address class imbalance, followed by GAT classification with
+optional score-level fusion. The compact student GAT achieves 96% parameter
+reduction compared to the teacher model while maintaining strong predictive
+performance. Experiments on six public CAN intrusion datasets--Car-Hacking,
+Car-Survival, and can-train-and-test--demonstrate competitive accuracy and
+efficiency, with average improvements of 16.2% in F1-score over existing
+methods, particularly excelling on highly imbalanced datasets with up to 55%
+F1-score improvements.</p></br><a href="http://arxiv.org/pdf/2508.05423v1" target="_blank"><h2>Negative Binomial Variational Autoencoders for Overdispersed Latent
+  Modeling</h2></a><strong><u>Authors:</u></strong>  Yixuan Zhang, Wenxin Zhang, Hua Jiang, Quyu Kong, Feng Zhou</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title, abstract), VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Biological neurons communicate through spike trains, discrete, irregular
+bursts of activity that exhibit variability far beyond the modeling capacity of
+conventional variational autoencoders (VAEs). Recent work, such as the
+Poisson-VAE, makes a biologically inspired move by modeling spike counts using
+the Poisson distribution. However, they impose a rigid constraint: equal mean
+and variance, which fails to reflect the true stochastic nature of neural
+activity. In this work, we challenge this constraint and introduce NegBio-VAE,
+a principled extension of the VAE framework that models spike counts using the
+negative binomial distribution. This shift grants explicit control over
+dispersion, unlocking a broader and more accurate family of neural
+representations. We further develop two ELBO optimization schemes and two
+differentiable reparameterization strategies tailored to the negative binomial
+setting. By introducing one additional dispersion parameter, NegBio-VAE
+generalizes the Poisson latent model to a negative binomial formulation.
+Empirical results demonstrate this minor yet impactful change leads to
+significant gains in reconstruction fidelity, highlighting the importance of
+explicitly modeling overdispersion in spike-like activations.</p></br><a href="http://arxiv.org/pdf/2508.04750v1" target="_blank"><h2>PA-RNet: Perturbation-Aware Reasoning Network for Multimodal Time Series
+  Forecasting</h2></a><strong><u>Authors:</u></strong>  Chanjuan Liu, Shengzhi Wang, Enqiang Zhu</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> In real-world applications, multimodal time series data often suffer from
+interference, especially in the textual modality. Existing methods for
+multimodal time series forecasting often neglect the inherent perturbations
+within textual data, where irrelevant, noisy, or ambiguous content can
+significantly degrade model performance, particularly when the noise exhibits
+varying intensity or stems from structural inconsistencies. To address this
+challenge, we propose PA-RNet (Perturbation-Aware Reasoning Network for
+Multimodal Time Series Forecasting), a robust multimodal forecasting framework.
+PA-RNet features a perturbation-aware projection module and a cross-modal
+attention mechanism to effectively separate noise from the textual embeddings
+while maintaining semantically meaningful representations, thereby enhancing
+the model's generalization ability. Theoretically, we establish the Lipschitz
+continuity of PA-RNet with respect to textual inputs and prove that the
+proposed perturbation module can reduce expected prediction error, offering
+strong guarantees of stability under noisy conditions. Furthermore, we
+introduce a textual perturbation pipeline that can be seamlessly incorporated
+into existing multimodal time series forecasting tasks, allowing for systematic
+evaluation of the model's robustness in the presence of varying levels of
+textual noise. Extensive experiments across diverse domains and temporal
+settings demonstrate that PA-RNet consistently outperforms state-of-the-art
+baselines.</p></br><a href="http://arxiv.org/pdf/2508.05388v1" target="_blank"><h2>An Explainable Machine Learning Framework for Railway Predictive
+  Maintenance using Data Streams from the Metro Operator of Portugal</h2></a><strong><u>Authors:</u></strong>  Silvia García-Méndez, Francisco de Arriba-Pérez, Fátima Leal, Bruno Veloso, Benedita Malheiro, Juan Carlos Burguillo-Rial</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainability (abstract), explainable (title)</br><p><strong><u>Abstract:</u></strong> This work contributes to a real-time data-driven predictive maintenance
+solution for Intelligent Transportation Systems. The proposed method implements
+a processing pipeline comprised of sample pre-processing, incremental
+classification with Machine Learning models, and outcome explanation. This
+novel online processing pipeline has two main highlights: (i) a dedicated
+sample pre-processing module, which builds statistical and frequency-related
+features on the fly, and (ii) an explainability module. This work is the first
+to perform online fault prediction with natural language and visual
+explainability. The experiments were performed with the MetroPT data set from
+the metro operator of Porto, Portugal. The results are above 98 % for F-measure
+and 99 % for accuracy. In the context of railway predictive maintenance,
+achieving these high values is crucial due to the practical and operational
+implications of accurate failure prediction. In the specific case of a high
+F-measure, this ensures that the system maintains an optimal balance between
+detecting the highest possible number of real faults and minimizing false
+alarms, which is crucial for maximizing service availability. Furthermore, the
+accuracy obtained enables reliability, directly impacting cost reduction and
+increased safety. The analysis demonstrates that the pipeline maintains high
+performance even in the presence of class imbalance and noise, and its
+explanations effectively reflect the decision-making process. These findings
+validate the methodological soundness of the approach and confirm its practical
+applicability for supporting proactive maintenance decisions in real-world
+railway operations. Therefore, by identifying the early signs of failure, this
+pipeline enables decision-makers to understand the underlying problems and act
+accordingly swiftly.</p></br><a href="http://arxiv.org/pdf/2508.04999v1" target="_blank"><h2>Disentangling Bias by Modeling Intra- and Inter-modal Causal Attention
+  for Multimodal Sentiment Analysis</h2></a><strong><u>Authors:</u></strong>  Menghua Jiang, Yuxia Lin, Baoliang Chen, Haifeng Hu, Yuncheng Jiang, Sijie Mai</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal sentiment analysis (MSA) aims to understand human emotions by
+integrating information from multiple modalities, such as text, audio, and
+visual data. However, existing methods often suffer from spurious correlations
+both within and across modalities, leading models to rely on statistical
+shortcuts rather than true causal relationships, thereby undermining
+generalization. To mitigate this issue, we propose a Multi-relational
+Multimodal Causal Intervention (MMCI) model, which leverages the backdoor
+adjustment from causal theory to address the confounding effects of such
+shortcuts. Specifically, we first model the multimodal inputs as a
+multi-relational graph to explicitly capture intra- and inter-modal
+dependencies. Then, we apply an attention mechanism to separately estimate and
+disentangle the causal features and shortcut features corresponding to these
+intra- and inter-modal relations. Finally, by applying the backdoor adjustment,
+we stratify the shortcut features and dynamically combine them with the causal
+features to encourage MMCI to produce stable predictions under distribution
+shifts. Extensive experiments on several standard MSA datasets and
+out-of-distribution (OOD) test sets demonstrate that our method effectively
+suppresses biases and improves performance.</p></br><a href="http://arxiv.org/pdf/2508.05612v1" target="_blank"><h2>Shuffle-R1: Efficient RL framework for Multimodal Large Language Models
+  via Data-centric Dynamic Shuffle</h2></a><strong><u>Authors:</u></strong>  Linghao Zhu, Yiran Guan, Dingkang Liang, Jianzhong Ju, Zhenbo Luo, Bin Qin, Jian Luan, Yuliang Liu, Xiang Bai</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Reinforcement learning (RL) has emerged as an effective post-training
+paradigm for enhancing the reasoning capabilities of multimodal large language
+model (MLLM). However, current RL pipelines often suffer from training
+inefficiencies caused by two underexplored issues: Advantage Collapsing, where
+most advantages in a batch concentrate near zero, and Rollout Silencing, where
+the proportion of rollouts contributing non-zero gradients diminishes over
+time. These issues lead to suboptimal gradient updates and hinder long-term
+learning efficiency. To address these issues, we propose Shuffle-R1, a simple
+yet principled framework that improves RL fine-tuning efficiency by dynamically
+restructuring trajectory sampling and batch composition. It introduces (1)
+Pairwise Trajectory Sampling, which selects high-contrast trajectories with
+large advantages to improve gradient signal quality, and (2) Advantage-based
+Trajectory Shuffle, which increases exposure of valuable rollouts through
+informed batch reshuffling. Experiments across multiple reasoning benchmarks
+show that our framework consistently outperforms strong RL baselines with
+minimal overhead. These results highlight the importance of data-centric
+adaptations for more efficient RL training in MLLM.</p></br><a href="http://arxiv.org/pdf/2508.04882v1" target="_blank"><h2>Hilbert Neural Operator: Operator Learning in the Analytic Signal Domain</h2></a><strong><u>Authors:</u></strong>  Saman Pordanesh, Pejman Shahsavari, Hossein Ghadjari</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Neural operators have emerged as a powerful, data-driven paradigm for
+learning solution operators of partial differential equations (PDEs).
+State-of-the-art architectures, such as the Fourier Neural Operator (FNO), have
+achieved remarkable success by performing convolutions in the frequency domain,
+making them highly effective for a wide range of problems. However, this method
+has some limitations, including the periodicity assumption of the Fourier
+transform. In addition, there are other methods of analysing a signal, beyond
+phase and amplitude perspective, and provide us with other useful information
+to learn an effective network. We introduce the \textbf{Hilbert Neural Operator
+(HNO)}, a new neural operator architecture to address some advantages by
+incorporating a strong inductive bias from signal processing. HNO operates by
+first mapping the input signal to its analytic representation via the Hilbert
+transform, thereby making instantaneous amplitude and phase information
+explicit features for the learning process. The core learnable operation -- a
+spectral convolution -- is then applied to this Hilbert-transformed
+representation. We hypothesize that this architecture enables HNO to model
+operators more effectively for causal, phase-sensitive, and non-stationary
+systems. We formalize the HNO architecture and provide the theoretical
+motivation for its design, rooted in analytic signal theory.</p></br><a href="http://arxiv.org/pdf/2508.04084v1" target="_blank"><h2>Convolutional autoencoders for the reconstruction of three-dimensional
+  interfacial multiphase flows</h2></a><strong><u>Authors:</u></strong>  Murray Cutforth, Shahab Mirjalili</br><strong><u>Categories:</u></strong> cs.CE, cs.LG, physics.flu-dyn</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> In this work, we perform a comprehensive investigation of autoencoders for
+reduced-order modeling of three-dimensional multiphase flows. Focusing on the
+accuracy of reconstructing multiphase flow volume/mass fractions with a
+standard convolutional architecture, we examine the advantages and
+disadvantages of different interface representation choices (diffuse, sharp,
+level set). We use a combination of synthetic data with non-trivial interface
+topologies and high-resolution simulation data of multiphase homogeneous
+isotropic turbulence for training and validation. This study clarifies the best
+practices for reducing the dimensionality of multiphase flows via autoencoders.
+Consequently, this paves the path for uncoupling the training of autoencoders
+for accurate reconstruction and the training of temporal or input/output models
+such as neural operators (e.g., FNOs, DeepONets) and neural ODEs on the
+lower-dimensional latent space given by the autoencoders. As such, the
+implications of this study are significant and of interest to the multiphase
+flow community and beyond.</p></br><a href="http://arxiv.org/pdf/2508.04800v1" target="_blank"><h2>Differentially Private Model-X Knockoffs via Johnson-Lindenstrauss
+  Transform</h2></a><strong><u>Authors:</u></strong>  Yuxuan Tao, Adel Javanmard</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> 68 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> dimension reduction (abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a novel privatization framework for high-dimensional controlled
+variable selection. Our framework enables rigorous False Discovery Rate (FDR)
+control under differential privacy constraints. While the Model-X knockoff
+procedure provides FDR guarantees by constructing provably exchangeable
+``negative control" features, existing privacy mechanisms like Laplace or
+Gaussian noise injection disrupt its core exchangeability conditions. Our key
+innovation lies in privatizing the data knockoff matrix through the Gaussian
+Johnson-Lindenstrauss Transformation (JLT), a dimension reduction technique
+that simultaneously preserves covariate relationships through approximate
+isometry for $(\epsilon,\delta)$-differential privacy.
+  We theoretically characterize both FDR and the power of the proposed private
+variable selection procedure, in an asymptotic regime. Our theoretical analysis
+characterizes the role of different factors, such as the JLT's dimension
+reduction ratio, signal-to-noise ratio, differential privacy parameters, sample
+size and feature dimension, in shaping the privacy-power trade-off. Our
+analysis is based on a novel `debiasing technique' for high-dimensional private
+knockoff procedure. We further establish sufficient conditions under which the
+power of the proposed procedure converges to one. This work bridges two
+critical paradigms -- knockoff-based FDR control and private data release --
+enabling reliable variable selection in sensitive domains. Our analysis
+demonstrates that structural privacy preservation through random projections
+outperforms the classical noise addition mechanism, maintaining statistical
+power even under strict privacy budgets.</p></br><a href="http://arxiv.org/pdf/2508.05210v1" target="_blank"><h2>Advanced Hybrid Transformer LSTM Technique with Attention and TS Mixer
+  for Drilling Rate of Penetration Prediction</h2></a><strong><u>Authors:</u></strong>  Saddam Hussain Khan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> 37 Pages, 19 Figures, 9 Tables</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The Rate of Penetration (ROP) is crucial for optimizing drilling operations;
+however, accurately predicting it is hindered by the complex, dynamic, and
+high-dimensional nature of drilling data. Traditional empirical, physics-based,
+and basic machine learning models often fail to capture intricate temporal and
+contextual relationships, resulting in suboptimal predictions and limited
+real-time utility. To address this gap, we propose a novel hybrid deep learning
+architecture integrating Long Short-Term Memory (LSTM) networks, Transformer
+encoders, Time-Series Mixer (TS-Mixer) blocks, and attention mechanisms to
+synergistically model temporal dependencies, static feature interactions,
+global context, and dynamic feature importance. Evaluated on a real-world
+drilling dataset, our model outperformed benchmarks (standalone LSTM, TS-Mixer,
+and simpler hybrids) with an R-squared score of 0.9988 and a Mean Absolute
+Percentage Error of 1.447%, as measured by standard regression metrics
+(R-squared, MAE, RMSE, MAPE). Model interpretability was ensured using SHAP and
+LIME, while actual vs. predicted curves and bias checks confirmed accuracy and
+fairness across scenarios. This advanced hybrid approach enables reliable
+real-time ROP prediction, paving the way for intelligent, cost-effective
+drilling optimization systems with significant operational impact.</p></br></body>

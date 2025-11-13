@@ -1,0 +1,197 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 15 Sep 2025 to 17 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.12372v1" target="_blank"><h2>Explainable Unsupervised Multi-Anomaly Detection and Temporal
+  Localization in Nuclear Times Series Data with a Dual Attention-Based
+  Autoencoder</h2></a><strong><u>Authors:</u></strong>  Konstantinos Vasili, Zachery T. Dahm, Stylianos Chatzidakis</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), explainability (abstract), explainable (title), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The nuclear industry is advancing toward more new reactor designs, with
+next-generation reactors expected to be smaller in scale and power output.
+These systems have the potential to produce large volumes of information in the
+form of multivariate time-series data, which could be used for enhanced
+real-time monitoring and control. In this context, the development of remote
+autonomous or semi-autonomous control systems for reactor operation has gained
+significant interest. A critical first step toward such systems is an accurate
+diagnostics module capable of detecting and localizing anomalies within the
+reactor system. Recent studies have proposed various ML and DL approaches for
+anomaly detection in the nuclear domain. Despite promising results, key
+challenges remain, including limited to no explainability, lack of access to
+real-world data, and scarcity of abnormal events, which impedes benchmarking
+and characterization. Most existing studies treat these methods as black boxes,
+while recent work highlights the need for greater interpretability of ML/DL
+outputs in safety-critical domains. Here, we propose an unsupervised
+methodology based on an LSTM autoencoder with a dual attention mechanism for
+characterization of abnormal events in a real-world reactor radiation area
+monitoring system. The framework includes not only detection but also
+localization of the event and was evaluated using real-world datasets of
+increasing complexity from the PUR-1 research reactor. The attention mechanisms
+operate in both the feature and temporal dimensions, where the feature
+attention assigns weights to radiation sensors exhibiting abnormal patterns,
+while time attention highlights the specific timesteps where irregularities
+occur, thus enabling localization. By combining the results, the framework can
+identify both the affected sensors and the duration of each anomaly within a
+single unified network.</p></br><a href="http://arxiv.org/pdf/2509.12650v1" target="_blank"><h2>Leveraging Intermediate Representations of Time Series Foundation Models
+  for Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Chan Sik Han, Keon Myung Lee</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages,8 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Detecting anomalies in time series data is essential for the reliable
+operation of many real-world systems. Recently, time series foundation models
+(TSFMs) have emerged as a powerful tool for anomaly detection. However,
+existing methods typically rely on the final layer's representations of TSFMs,
+computing the anomaly score as a reconstruction or forecasting error via a
+task-specific head. Instead, we propose TimeRep, a novel anomaly detection
+approach that leverages the intermediate layer's representations of TSFMs,
+computing the anomaly score as the distance between these representations.
+Given a pre-trained TSFM, TimeRep selects the intermediate layer and
+patch-token position that yield the most informative representation. TimeRep
+forms a reference collection of intermediate representations from the training
+data and applies a core-set strategy to reduce its size while maintaining
+distributional coverage. During inference, TimeRep computes the anomaly score
+for incoming data by measuring the distance between its intermediate
+representations and those of the collection. To address concept drift, TimeRep
+integrates an adaptation mechanism that, at inference time, augments the
+collection exclusively with non-redundant intermediate representations from
+incoming data. We conducted extensive experiments on the UCR Anomaly Archive,
+which contains 250 univariate time series. TimeRep consistently outperforms a
+broad spectrum of state-of-the-art baselines, including non-DL, DL, and
+foundation model-based methods.</p></br><a href="http://arxiv.org/pdf/2509.13202v1" target="_blank"><h2>B-TGAT: A Bi-directional Temporal Graph Attention Transformer for
+  Clustering Multivariate Spatiotemporal Data</h2></a><strong><u>Authors:</u></strong>  Francis Ndikum Nji, Vandana Janaja, Jianwu Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, In review</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Clustering high-dimensional multivariate spatiotemporal climate data is
+challenging due to complex temporal dependencies, evolving spatial
+interactions, and non-stationary dynamics. Conventional clustering methods,
+including recurrent and convolutional models, often struggle to capture both
+local and global temporal relationships while preserving spatial context. We
+present a time-distributed hybrid U-Net autoencoder that integrates a
+Bi-directional Temporal Graph Attention Transformer (B-TGAT) to guide efficient
+temporal clustering of multidimensional spatiotemporal climate datasets. The
+encoder and decoder are equipped with ConvLSTM2D modules that extract joint
+spatial--temporal features by modeling localized dynamics and spatial
+correlations over time, and skip connections that preserve multiscale spatial
+details during feature compression and reconstruction. At the bottleneck,
+B-TGAT integrates graph-based spatial modeling with attention-driven temporal
+encoding, enabling adaptive weighting of temporal neighbors and capturing both
+short and long-range dependencies across regions. This architecture produces
+discriminative latent embeddings optimized for clustering. Experiments on three
+distinct spatiotemporal climate datasets demonstrate superior cluster
+separability, temporal stability, and alignment with known climate transitions
+compared to state-of-the-art baselines. The integration of ConvLSTM2D, U-Net
+skip connections, and B-TGAT enhances temporal clustering performance while
+providing interpretable insights into complex spatiotemporal variability,
+advancing both methodological development and climate science applications.</p></br><a href="http://arxiv.org/pdf/2509.12401v1" target="_blank"><h2>Reduced Order Modeling of Energetic Materials Using Physics-Aware
+  Recurrent Convolutional Neural Networks in a Latent Space (LatentPARC)</h2></a><strong><u>Authors:</u></strong>  Zoë J. Gray, Joseph B. Choi, Youngsoo Choi, H. Keo Springer, H. S. Udaykumar, Stephen S. Baek</br><strong><u>Categories:</u></strong> cond-mat.mtrl-sci, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), convolutional (title), latent space (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Physics-aware deep learning (PADL) has gained popularity for use in complex
+spatiotemporal dynamics (field evolution) simulations, such as those that arise
+frequently in computational modeling of energetic materials (EM). Here, we show
+that the challenge PADL methods face while learning complex field evolution
+problems can be simplified and accelerated by decoupling it into two tasks:
+learning complex geometric features in evolving fields and modeling dynamics
+over these features in a lower dimensional feature space. To accomplish this,
+we build upon our previous work on physics-aware recurrent convolutions (PARC).
+PARC embeds knowledge of underlying physics into its neural network
+architecture for more robust and accurate prediction of evolving physical
+fields. PARC was shown to effectively learn complex nonlinear features such as
+the formation of hotspots and coupled shock fronts in various initiation
+scenarios of EMs, as a function of microstructures, serving effectively as a
+microstructure-aware burn model. In this work, we further accelerate PARC and
+reduce its computational cost by projecting the original dynamics onto a
+lower-dimensional invariant manifold, or 'latent space.' The projected latent
+representation encodes the complex geometry of evolving fields (e.g.
+temperature and pressure) in a set of data-driven features. The reduced
+dimension of this latent space allows us to learn the dynamics during the
+initiation of EM with a lighter and more efficient model. We observe a
+significant decrease in training and inference time while maintaining results
+comparable to PARC at inference. This work takes steps towards enabling rapid
+prediction of EM thermomechanics at larger scales and characterization of EM
+structure-property-performance linkages at a full application scale.</p></br><a href="http://arxiv.org/pdf/2509.12653v1" target="_blank"><h2>Beyond Artificial Misalignment: Detecting and Grounding
+  Semantic-Coordinated Multimodal Manipulations</h2></a><strong><u>Authors:</u></strong>  Jinjie Shen, Yaxiong Wang, Lechao Cheng, Nan Pu, Zhun Zhong</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> The detection and grounding of manipulated content in multimodal data has
+emerged as a critical challenge in media forensics. While existing benchmarks
+demonstrate technical progress, they suffer from misalignment artifacts that
+poorly reflect real-world manipulation patterns: practical attacks typically
+maintain semantic consistency across modalities, whereas current datasets
+artificially disrupt cross-modal alignment, creating easily detectable
+anomalies. To bridge this gap, we pioneer the detection of
+semantically-coordinated manipulations where visual edits are systematically
+paired with semantically consistent textual descriptions. Our approach begins
+with constructing the first Semantic-Aligned Multimodal Manipulation (SAMM)
+dataset, generated through a two-stage pipeline: 1) applying state-of-the-art
+image manipulations, followed by 2) generation of contextually-plausible
+textual narratives that reinforce the visual deception. Building on this
+foundation, we propose a Retrieval-Augmented Manipulation Detection and
+Grounding (RamDG) framework. RamDG commences by harnessing external knowledge
+repositories to retrieve contextual evidence, which serves as the auxiliary
+texts and encoded together with the inputs through our image forgery grounding
+and deep manipulation detection modules to trace all manipulations. Extensive
+experiments demonstrate our framework significantly outperforms existing
+methods, achieving 2.06\% higher detection accuracy on SAMM compared to
+state-of-the-art approaches. The dataset and code are publicly available at
+https://github.com/shen8424/SAMM-RamDG-CAP.</p></br><a href="http://arxiv.org/pdf/2509.13000v1" target="_blank"><h2>Ensemble Visualization With Variational Autoencoder</h2></a><strong><u>Authors:</u></strong>  Cenyang Wu, Qinhan Yu, Liang Zhou</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted by the IEEE Workshop on Uncertainty Visualization</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> We present a new method to visualize data ensembles by constructing
+structured probabilistic representations in latent spaces, i.e.,
+lower-dimensional representations of spatial data features. Our approach
+transforms the spatial features of an ensemble into a latent space through
+feature space conversion and unsupervised learning using a variational
+autoencoder (VAE). The resulting latent spaces follow multivariate standard
+Gaussian distributions, enabling analytical computation of confidence intervals
+and density estimation of the probabilistic distribution that generates the
+data ensemble. Preliminary results on a weather forecasting ensemble
+demonstrate the effectiveness and versatility of our method.</p></br><a href="http://arxiv.org/pdf/2509.12512v1" target="_blank"><h2>DinoAtten3D: Slice-Level Attention Aggregation of DinoV2 for 3D Brain
+  MRI Anomaly Classification</h2></a><strong><u>Authors:</u></strong>  Fazle Rafsani, Jay Shah, Catherine D. Chong, Todd J. Schwedt, Teresa Wu</br><strong><u>Categories:</u></strong> eess.IV, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> ACCEPTED at the ICCV 2025 Workshop on Anomaly Detection with Foundation Models</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection and classification in medical imaging are critical for
+early diagnosis but remain challenging due to limited annotated data, class
+imbalance, and the high cost of expert labeling. Emerging vision foundation
+models such as DINOv2, pretrained on extensive, unlabeled datasets, offer
+generalized representations that can potentially alleviate these limitations.
+In this study, we propose an attention-based global aggregation framework
+tailored specifically for 3D medical image anomaly classification. Leveraging
+the self-supervised DINOv2 model as a pretrained feature extractor, our method
+processes individual 2D axial slices of brain MRIs, assigning adaptive
+slice-level importance weights through a soft attention mechanism. To further
+address data scarcity, we employ a composite loss function combining supervised
+contrastive learning with class-variance regularization, enhancing inter-class
+separability and intra-class consistency. We validate our framework on the ADNI
+dataset and an institutional multi-class headache cohort, demonstrating strong
+anomaly classification performance despite limited data availability and
+significant class imbalance. Our results highlight the efficacy of utilizing
+pretrained 2D foundation models combined with attention-based slice aggregation
+for robust volumetric anomaly detection in medical imaging. Our implementation
+is publicly available at https://github.com/Rafsani/DinoAtten3D.git.</p></br><a href="http://arxiv.org/pdf/2509.12327v1" target="_blank"><h2>Exploring the spatially-resolved capabilities of the J-PAS survey with
+  Py2DJPAS</h2></a><strong><u>Authors:</u></strong>  J. E. Rodríguez-Martín, L. A. Díaz-García, R. M. González Delgado, G. Martínez-Solaeche, R. García-Benito, A. de Amorim, J. Thainá-Batista, R. Cid Fernandes, I. Márquez, A. Fernández-Soto, I. Breda, R. Abramo, J. Alcaniz, N. Benítez, S. Bonoli, S. Carneiro, A. J. Cenarro, D. Cristóbal-Hornillos, R. A. Dupke, A. Ederoclite, A. Hernán-Caballero, C. Hernández-Monteagudo, C. López-Sanjuan, A. Marín-Franch, C. Mendes de Oliveira, M. Moles, L. Sodré, K. Taylor, J. Varela, H. Vázquez Ramió</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> 20 pages, 13 figures, 5 tables. Accepted for publication in A&A</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We present Py2DJPAS, a Python-based tool to automate the analysis of
+spatially resolved galaxies in the \textbf{miniJPAS} survey, a 1~deg$^2$
+precursor of the J-PAS survey, using the same filter system, telescope, and
+Pathfinder camera. Py2DJPAS streamlines the entire workflow: downloading
+scientific images and catalogs, performing PSF homogenization, masking,
+aperture definition, SED fitting, and estimating optical emission line
+equivalent widths via an artificial neural network.
+  We validate Py2DJPAS on a sample of resolved miniJPAS galaxies, recovering
+magnitudes in all bands consistent with the catalog ($\sim 10$~\% precision
+using SExtractor). Local background estimation improves results for faint
+galaxies and apertures. PSF homogenization enables consistent multi-band
+photometry in inner apertures, allowing pseudo-spectra generation without
+artifacts. SED fitting across annular apertures yields residuals $<10$~\%, with
+no significant wavelength-dependent bias for regions with $S/N>5$.
+  We demonstrate the IFU-like capability of J-PAS by analyzing the spatially
+resolved properties of galaxy 2470-10239 at $z = 0.078$, comparing them to
+MaNGA data within 1 half-light radius (HLR). We find excellent agreement in
+photometric vs. spectroscopic measurements and stellar mass surface density
+profiles. Our analysis extends to 4 HLR (S/N~$\sim$~5), showing that J-PAS can
+probe galaxy outskirts, enabling the study of evolutionary processes at large
+galactocentric distances.</p></br><a href="http://arxiv.org/pdf/2509.12540v1" target="_blank"><h2>Cross-Modal Deep Metric Learning for Time Series Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Wei Li, Zheze Yang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> To effectively address the issues of low sensitivity and high time
+consumption in time series anomaly detection, we propose an anomaly detection
+method based on cross-modal deep metric learning. A cross-modal deep metric
+learning feature clustering model is constructed, composed of an input layer, a
+triplet selection layer, and a loss function computation layer. The squared
+Euclidean distances between cluster centers are calculated, and a stochastic
+gradient descent strategy is employed to optimize the model and classify
+different time series features. The inner product of principal component
+direction vectors is used as a metric for anomaly measurement. The von
+Mises-Fisher (vMF) distribution is applied to describe the directional
+characteristics of time series data, and historical data is used to train and
+obtain evaluation parameters. By comparing the principal component direction
+vector of actual time series data with the threshold, anomaly detection is
+performed. Experimental results demonstrate that the proposed method accurately
+classifies time series data with different attributes, exhibits high
+sensitivity to anomalies, and achieves high detection accuracy, fast detection
+speed, and strong robustness.</p></br></body>

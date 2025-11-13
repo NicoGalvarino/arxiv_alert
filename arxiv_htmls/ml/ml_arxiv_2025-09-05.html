@@ -1,0 +1,158 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 03 Sep 2025 to 05 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.04362v1" target="_blank"><h2>Parking Availability Prediction via Fusing Multi-Source Data with A
+  Self-Supervised Learning Enhanced Spatio-Temporal Inverted Transformer</h2></a><strong><u>Authors:</u></strong>  Yin Huang, Yongqi Dong, Youhua Tang, Li Li</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 25 pages, 5 figures, under review for journal publication</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The rapid growth of private car ownership has worsened the urban parking
+predicament, underscoring the need for accurate and effective parking
+availability prediction to support urban planning and management. To address
+key limitations in modeling spatio-temporal dependencies and exploiting
+multi-source data for parking availability prediction, this study proposes a
+novel approach with SST-iTransformer. The methodology leverages K-means
+clustering to establish parking cluster zones (PCZs), extracting and
+integrating traffic demand characteristics from various transportation modes
+(i.e., metro, bus, online ride-hailing, and taxi) associated with the targeted
+parking lots. Upgraded on vanilla iTransformer, SST-iTransformer integrates
+masking-reconstruction-based pretext tasks for self-supervised spatio-temporal
+representation learning, and features an innovative dual-branch attention
+mechanism: Series Attention captures long-term temporal dependencies via
+patching operations, while Channel Attention models cross-variate interactions
+through inverted dimensions. Extensive experiments using real-world data from
+Chengdu, China, demonstrate that SST-iTransformer outperforms baseline deep
+learning models (including Informer, Autoformer, Crossformer, and
+iTransformer), achieving state-of-the-art performance with the lowest mean
+squared error (MSE) and competitive mean absolute error (MAE). Comprehensive
+ablation studies quantitatively reveal the relative importance of different
+data sources: incorporating ride-hailing data provides the largest performance
+gains, followed by taxi, whereas fixed-route transit features (bus/metro)
+contribute marginally. Spatial correlation analysis further confirms that
+excluding historical data from correlated parking lots within PCZs leads to
+substantial performance degradation, underscoring the importance of modeling
+spatial dependencies.</p></br><a href="http://arxiv.org/pdf/2509.03898v1" target="_blank"><h2>Diffusion Generative Models Meet Compressed Sensing, with Applications
+  to Image Data and Financial Time Series</h2></a><strong><u>Authors:</u></strong>  Zhengyi Guo, Jiatu Li, Wenpin Tang, David D. Yao</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimension reduction (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> This paper develops dimension reduction techniques for accelerating diffusion
+model inference in the context of synthetic data generation. The idea is to
+integrate compressed sensing into diffusion models: (i) compress the data into
+a latent space, (ii) train a diffusion model in the latent space, and (iii)
+apply a compressed sensing algorithm to the samples generated in the latent
+space, facilitating the efficiency of both model training and inference. Under
+suitable sparsity assumptions on data, the proposed algorithm is proved to
+enjoy faster convergence by combining diffusion model inference with sparse
+recovery. As a byproduct, we obtain an optimal value for the latent space
+dimension. We also conduct numerical experiments on a range of datasets,
+including image data (handwritten digits, medical images, and climate data) and
+financial time series for stress testing.</p></br><a href="http://arxiv.org/pdf/2509.03738v1" target="_blank"><h2>Sparse Autoencoder Neural Operators: Model Recovery in Function Spaces</h2></a><strong><u>Authors:</u></strong>  Bahareh Tolooshams, Ailsa Shen, Anima Anandkumar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, eess.SP, stat.ML</br><strong><u>Comments:</u></strong> Tolooshams and Shen has equal contribution. preprint</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We frame the problem of unifying representations in neural models as one of
+sparse model recovery and introduce a framework that extends sparse
+autoencoders (SAEs) to lifted spaces and infinite-dimensional function spaces,
+enabling mechanistic interpretability of large neural operators (NO). While the
+Platonic Representation Hypothesis suggests that neural networks converge to
+similar representations across architectures, the representational properties
+of neural operators remain underexplored despite their growing importance in
+scientific computing. We compare the inference and training dynamics of SAEs,
+lifted-SAE, and SAE neural operators. We highlight how lifting and operator
+modules introduce beneficial inductive biases, enabling faster recovery,
+improved recovery of smooth concepts, and robust inference across varying
+resolutions, a property unique to neural operators.</p></br><a href="http://arxiv.org/pdf/2509.03819v1" target="_blank"><h2>Predicting Traffic Accident Severity with Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Meghan Bibb, Pablo Rivas, Mahee Tayba</br><strong><u>Categories:</u></strong> cs.LG, 68T07, 62H30, I.2.6; I.5.1</br><strong><u>Comments:</u></strong> The 17th International Conference on Data Science (ICDATA 2021)</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Traffic accidents can be studied to mitigate the risk of further events.
+Recent advances in machine learning have provided an alternative way to study
+data associated with traffic accidents. New models achieve good generalization
+and high predictive power over imbalanced data. In this research, we study
+neural network-based models on data related to traffic accidents. We begin
+analyzing relative feature colinearity and unsupervised dimensionality
+reduction through autoencoders, followed by a dense network. The features are
+related to traffic accident data and the target is to classify accident
+severity. Our experiments show cross-validated results of up to 92% accuracy
+when classifying accident severity using the proposed deep neural network.</p></br><a href="http://arxiv.org/pdf/2509.04449v1" target="_blank"><h2>ChronoGraph: A Real-World Graph-Based Multivariate Time Series Dataset</h2></a><strong><u>Authors:</u></strong>  Adrian Catalin Lutu, Ioana Pintilie, Elena Burceanu, Andrei Manolache</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> We present ChronoGraph, a graph-structured multivariate time series
+forecasting dataset built from real-world production microservices. Each node
+is a service that emits a multivariate stream of system-level performance
+metrics, capturing CPU, memory, and network usage patterns, while directed
+edges encode dependencies between services. The primary task is forecasting
+future values of these signals at the service level. In addition, ChronoGraph
+provides expert-annotated incident windows as anomaly labels, enabling
+evaluation of anomaly detection methods and assessment of forecast robustness
+during operational disruptions. Compared to existing benchmarks from industrial
+control systems or traffic and air-quality domains, ChronoGraph uniquely
+combines (i) multivariate time series, (ii) an explicit, machine-readable
+dependency graph, and (iii) anomaly labels aligned with real incidents. We
+report baseline results spanning forecasting models, pretrained time-series
+foundation models, and standard anomaly detectors. ChronoGraph offers a
+realistic benchmark for studying structure-aware forecasting and incident-aware
+evaluation in microservice systems.</p></br><a href="http://arxiv.org/pdf/2509.03733v1" target="_blank"><h2>Differentiable Entropy Regularization for Geometry and Neural Networks</h2></a><strong><u>Authors:</u></strong>  Ibne Farabi Shihab, Sanjeda Akter, Anuj Sharma</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a differentiable estimator of range-partition entropy, a recent
+concept from computational geometry that enables algorithms to adapt to the
+"sortedness" of their input. While range-partition entropy provides strong
+guarantees in algorithm design, it has not yet been made accessible to deep
+learning. In this work, we (i) propose the first differentiable approximation
+of range-partition entropy, enabling its use as a trainable loss or
+regularizer; (ii) design EntropyNet, a neural module that restructures data
+into low-entropy forms to accelerate downstream instance-optimal algorithms;
+and (iii) extend this principle beyond geometry by applying entropy
+regularization directly to Transformer attention. Across tasks, we demonstrate
+that differentiable entropy improves efficiency without degrading correctness:
+in geometry, our method achieves up to $4.1\times$ runtime speedups with
+negligible error ($<0.2%$); in deep learning, it induces structured attention
+patterns that yield 6% higher accuracy at 80% sparsity compared to L1
+baselines. Our theoretical analysis provides approximation bounds for the
+estimator, and extensive ablations validate design choices. These results
+suggest that entropy-bounded computation is not only theoretically elegant but
+also a practical mechanism for adaptive learning, efficiency, and structured
+representation.</p></br><a href="http://arxiv.org/pdf/2509.03636v1" target="_blank"><h2>CausalARC: Abstract Reasoning with Causal World Models</h2></a><strong><u>Authors:</u></strong>  Jacqueline Maasch, John Kalantari, Kia Khezeli</br><strong><u>Categories:</u></strong> cs.AI, cs.CL, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Reasoning requires adaptation to novel problem settings under limited data
+and distribution shift. This work introduces CausalARC: an experimental testbed
+for AI reasoning in low-data and out-of-distribution regimes, modeled after the
+Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is
+sampled from a fully specified causal world model, formally expressed as a
+structural causal model. Principled data augmentations provide observational,
+interventional, and counterfactual feedback about the world model in the form
+of few-shot, in-context learning demonstrations. As a proof-of-concept, we
+illustrate the use of CausalARC for four language model evaluation settings:
+(1) abstract reasoning with test-time training, (2) counterfactual reasoning
+with in-context learning, (3) program synthesis, and (4) causal discovery with
+logical reasoning.</p></br><a href="http://arxiv.org/pdf/2509.03772v1" target="_blank"><h2>Testing for correlation between network structure and high-dimensional
+  node covariates</h2></a><strong><u>Authors:</u></strong>  Alexander Fuchs-Kreiss, Keith Levin</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> In many application domains, networks are observed with node-level features.
+In such settings, a common problem is to assess whether or not nodal covariates
+are correlated with the network structure itself. Here, we present four novel
+methods for addressing this problem. Two of these are based on a linear model
+relating node-level covariates to latent node-level variables that drive
+network structure. The other two are based on applying canonical correlation
+analysis to the node features and network structure, avoiding the linear
+modeling assumptions. We provide theoretical guarantees for all four methods
+when the observed network is generated according to a low-rank latent space
+model endowed with node-level covariates, which we allow to be
+high-dimensional. Our methods are computationally cheaper and require fewer
+modeling assumptions than previous approaches to network dependency testing. We
+demonstrate and compare the performance of our novel methods on both simulated
+and real-world data.</p></br><a href="http://arxiv.org/pdf/2509.04331v1" target="_blank"><h2>A fast machine learning tool to predict the composition of astronomical
+  ices from infrared absorption spectra</h2></a><strong><u>Authors:</u></strong>  Andrés Megías, Izaskun Jiménez-Serra, François Dulieu, Julie Vitorino, Belén Maté, David Ciudad, Will R. M. Rocha, Marcos Martínez Jiménez, Jacobo Aguirre</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.EP, astro-ph.IM, astro-ph.SR</br><strong><u>Comments:</u></strong> 24 pages, 20 figures; accepted to be published in Astronomy & Astrophysics</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Current observations taken by James Webb Space Telescope (JWST) allow us to
+observe the absorption features of icy mantles that cover interstellar dust
+grains, which are mainly composed of $\mathrm{H_2O}$, $\mathrm{CO}$, and
+$\mathrm{CO_2}$, along with other minor species. Thanks to its sensitivity and
+spectral resolution, JWST has the potential to observe ice features towards
+hundreds of sources at different stages along the process of star formation.
+However, identifying the spectral features of the different species and
+quantifying the ice composition is not trivial and requires complex
+spectroscopic analysis. We present Automatic Ice Composition Estimator (AICE),
+a new tool based on artificial neural networks. Based on the infrared (IR) ice
+absorption spectrum between 2.5 and 10 microns, AICE predicts the ice
+fractional composition in terms of $\mathrm{H_2O}$, $\mathrm{CO}$,
+$\mathrm{CO_2}$, $\mathrm{CH_3OH}$, $\mathrm{NH_3}$, and $\mathrm{CH_4}$. To
+train the model, we used hundreds of laboratory experiments of ice mixtures
+from different databases, which were reprocessed with baseline subtraction and
+normalisation. Once trained, AICE takes less than one second on a conventional
+computer to predict the ice composition associated with the observed IR
+absorption spectrum, with typical errors of $\sim$3 $\%$ in the species
+fraction. We tested its performance on two spectra reported towards the NIR38
+and J110621 background stars observed within the JWST Ice Age program,
+demonstrating a good agreement with previous estimations of the ice
+composition. The fast and accurate performance of AICE enables the systematic
+analysis of hundreds of different ice spectra with a modest time investment. In
+addition, this model can be enhanced and re-trained with more laboratory data,
+improving the precision of the predictions and expanding the list of predicted
+species.</p></br></body>

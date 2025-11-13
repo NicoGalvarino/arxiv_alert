@@ -1,0 +1,238 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 14 Jul 2025 to 16 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.11071v1" target="_blank"><h2>LogTinyLLM: Tiny Large Language Models Based Contextual Log Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Isaiah Thompson Ocansey, Ritwik Bhattacharya, Tanmay Sen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Log anomaly detection using traditional rule based or deep learning based
+methods is often challenging due to the large volume and highly complex nature
+of log sequence. So effective way of detection of anomalous sequence of logs is
+crucial for system maintenance and development. This paper proposes parameter
+efficient finetuning specifically low rank adaptation (LoRA) and adapter based
+approaches for finding contextual anomalies in sequence of logs in large log
+data set. It compares different tiny large language models (LLMs) on the
+Thunderbird dataset. The results show that LoRA based finetuning provides
+substantial performance improvements of 18 to 19 percentage over LogBert based
+full finetuning approach, achieving accuracy scores between 97.76% and 98.83%
+compared to 79.37%.</p></br><a href="http://arxiv.org/pdf/2507.10622v1" target="_blank"><h2>Spectral Feature Extraction for Robust Network Intrusion Detection Using
+  MFCCs</h2></a><strong><u>Authors:</u></strong>  HyeYoung Lee, Muhammad Nadeem, Pavel Tsoi</br><strong><u>Categories:</u></strong> cs.CR, cond-mat.dis-nn, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> The rapid expansion of Internet of Things (IoT) networks has led to a surge
+in security vulnerabilities, emphasizing the critical need for robust anomaly
+detection and classification techniques. In this work, we propose a novel
+approach for identifying anomalies in IoT network traffic by leveraging the
+Mel-frequency cepstral coefficients (MFCC) and ResNet-18, a deep learning model
+known for its effectiveness in feature extraction and image-based tasks.
+Learnable MFCCs enable adaptive spectral feature representation, capturing the
+temporal patterns inherent in network traffic more effectively than traditional
+fixed MFCCs. We demonstrate that transforming raw signals into MFCCs maps the
+data into a higher-dimensional space, enhancing class separability and enabling
+more effective multiclass classification. Our approach combines the strengths
+of MFCCs with the robust feature extraction capabilities of ResNet-18, offering
+a powerful framework for anomaly detection. The proposed model is evaluated on
+three widely used IoT intrusion detection datasets: CICIoT2023, NSL-KDD, and
+IoTID20. The experimental results highlight the potential of integrating
+adaptive signal processing techniques with deep learning architectures to
+achieve robust and scalable anomaly detection in heterogeneous IoT network
+landscapes.</p></br><a href="http://arxiv.org/pdf/2507.10998v1" target="_blank"><h2>Crafting Imperceptible On-Manifold Adversarial Attacks for Tabular Data</h2></a><strong><u>Authors:</u></strong>  Zhipeng He, Alexander Stevens, Chun Ouyang, Johannes De Smedt, Alistair Barros, Catarina Moreira</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 32 pages</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Adversarial attacks on tabular data present fundamental challenges distinct
+from image or text domains due to the heterogeneous nature of mixed categorical
+and numerical features. Unlike images where pixel perturbations maintain visual
+similarity, tabular data lacks intuitive similarity metrics, making it
+difficult to define imperceptible modifications. Additionally, traditional
+gradient-based methods prioritise $\ell_p$-norm constraints, often producing
+adversarial examples that deviate from the original data distributions, making
+them detectable. We propose a latent space perturbation framework using a
+mixed-input Variational Autoencoder (VAE) to generate imperceptible adversarial
+examples. The proposed VAE integrates categorical embeddings and numerical
+features into a unified latent manifold, enabling perturbations that preserve
+statistical consistency. We specify In-Distribution Success Rate (IDSR) to
+measure the proportion of adversarial examples that remain statistically
+indistinguishable from the input distribution. Evaluation across six publicly
+available datasets and three model architectures demonstrates that our method
+achieves substantially lower outlier rates and more consistent performance
+compared to traditional input-space attacks and other VAE-based methods adapted
+from image domain approaches. Our comprehensive analysis includes
+hyperparameter sensitivity, sparsity control mechanisms, and generative
+architectural comparisons, revealing that VAE-based attacks depend critically
+on reconstruction quality but offer superior practical utility when sufficient
+training data is available. This work highlights the importance of on-manifold
+perturbations for realistic adversarial attacks on tabular data, offering a
+robust approach for practical deployment. The source code can be accessed
+through https://github.com/ZhipengHe/VAE-TabAttack.</p></br><a href="http://arxiv.org/pdf/2507.11398v1" target="_blank"><h2>Emulating CO Line Radiative Transfer with Deep Learning</h2></a><strong><u>Authors:</u></strong>  Shiqi Su, Frederik De Ceuster, Jaehoon Cha, Mark I. Wilkinson, Jeyan Thiyagalingam, Jeremy Yates, Yi-Hang Zhu, Jan Bolte</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.GA</br><strong><u>Comments:</u></strong> 12 pages, 7 figures. Accepted by RAS Techniques & Instruments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Modelling carbon monoxide (CO) line radiation is computationally expensive
+for traditional numerical solvers, especially when applied to complex,
+three-dimensional stellar atmospheres. We present COEmuNet, a 3D convolutional
+neural network (CNN)-based surrogate model that emulates CO line radiation
+transport with high accuracy and efficiency. It consists of an asymmetric
+encoder-decoder design that takes 3D hydrodynamical models as inputs and
+generates synthetic observations of evolved stellar atmospheres. The model is
+trained on data from hydrodynamic simulations of Asymptotic Giant Branch (AGB)
+stars perturbed by a companion. Given a set of input parameters, including
+velocity fields, kinetic temperature distribution, and CO molecular number
+densities, the COEmuNet model emulates spectral line observations with a median
+relative error of ~7% compared to a classical numerical solver of the radiative
+transfer equation, measured over seven frequency channels and arbitrary viewing
+directions. Besides, COEmuNet delivers a 1000 times speedup, enabling efficient
+model fitting to observational datasets, real-time visualization of simulations
+and progress toward integration in large-scale cosmological simulations.</p></br><a href="http://arxiv.org/pdf/2507.11053v1" target="_blank"><h2>GATE: Graph Attention Neural Networks with Real-Time Edge Construction
+  for Robust Indoor Localization using Mobile Embedded Devices</h2></a><strong><u>Authors:</u></strong>  Danish Gufran, Sudeep Pasricha</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate indoor localization is crucial for enabling spatial context in smart
+environments and navigation systems. Wi-Fi Received Signal Strength (RSS)
+fingerprinting is a widely used indoor localization approach due to its
+compatibility with mobile embedded devices. Deep Learning (DL) models improve
+accuracy in localization tasks by learning RSS variations across locations, but
+they assume fingerprint vectors exist in a Euclidean space, failing to
+incorporate spatial relationships and the non-uniform distribution of
+real-world RSS noise. This results in poor generalization across heterogeneous
+mobile devices, where variations in hardware and signal processing distort RSS
+readings. Graph Neural Networks (GNNs) can improve upon conventional DL models
+by encoding indoor locations as nodes and modeling their spatial and signal
+relationships as edges. However, GNNs struggle with non-Euclidean noise
+distributions and suffer from the GNN blind spot problem, leading to degraded
+accuracy in environments with dense access points (APs). To address these
+challenges, we propose GATE, a novel framework that constructs an adaptive
+graph representation of fingerprint vectors while preserving an indoor
+state-space topology, modeling the non-Euclidean structure of RSS noise to
+mitigate environmental noise and address device heterogeneity. GATE introduces
+1) a novel Attention Hyperspace Vector (AHV) for enhanced message passing, 2) a
+novel Multi-Dimensional Hyperspace Vector (MDHV) to mitigate the GNN blind
+spot, and 3) an new Real-Time Edge Construction (RTEC) approach for dynamic
+graph adaptation. Extensive real-world evaluations across multiple indoor
+spaces with varying path lengths, AP densities, and heterogeneous devices
+demonstrate that GATE achieves 1.6x to 4.72x lower mean localization errors and
+1.85x to 4.57x lower worst-case errors compared to state-of-the-art indoor
+localization frameworks.</p></br><a href="http://arxiv.org/pdf/2507.10666v1" target="_blank"><h2>Machine-learning inference of stellar properties using integrated
+  photometric and spectroscopic data</h2></a><strong><u>Authors:</u></strong>  Ilay Kamai, Alex M. Bronstein, Hagai B. Perets</br><strong><u>Categories:</u></strong> astro-ph.SR, astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> submitted to ApJ</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), latent space (abstract), multimodal (abstract), multi-modal (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Stellar astrophysics relies on diverse observational modalities-primarily
+photometric light curves and spectroscopic data-from which fundamental stellar
+properties are inferred. While machine learning (ML) has advanced analysis
+within individual modalities, the complementary information encoded across
+modalities remains largely underexploited. We present DESA (Dual Embedding
+model for Stellar Astrophysics), a novel multi-modal foundation model that
+integrates light curves and spectra to learn a unified, physically meaningful
+latent space for stars. DESA first trains separate modality-specific encoders
+using a hybrid supervised/self-supervised scheme, and then aligns them through
+DualFormer, a transformer-based cross-modal integration module tailored for
+astrophysical data. DualFormer combines cross- and self-attention, a novel
+dual-projection alignment loss, and a projection-space eigendecomposition that
+yields physically structured embeddings. We demonstrate that DESA significantly
+outperforms leading unimodal and self-supervised baselines across a range of
+tasks. In zero- and few-shot settings, DESA's learned representations recover
+stellar color-magnitude and Hertzsprung-Russell diagrams with high fidelity
+($R^2 = 0.92$ for photometric regressions). In full fine-tuning, DESA achieves
+state-of-the-art accuracy for binary star detection (AUC = $0.99$, AP = $1.00$)
+and stellar age prediction (RMSE = $0.94$ Gyr). As a compelling case, DESA
+naturally separates synchronized binaries from young stars, two populations
+with nearly identical light curves, purely from their embedded positions in
+UMAP space, without requiring external kinematic or luminosity information.
+DESA thus offers a powerful new framework for multimodal, data-driven stellar
+population analysis, enabling both accurate prediction and novel discovery.</p></br><a href="http://arxiv.org/pdf/2507.11367v1" target="_blank"><h2>Local Pairwise Distance Matching for Backpropagation-Free Reinforcement
+  Learning</h2></a><strong><u>Authors:</u></strong>  Daniel Tanneberg</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> accepted at the European Conference on Artificial Intelligence (ECAI 2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Training neural networks with reinforcement learning (RL) typically relies on
+backpropagation (BP), necessitating storage of activations from the forward
+pass for subsequent backward updates. Furthermore, backpropagating error
+signals through multiple layers often leads to vanishing or exploding
+gradients, which can degrade learning performance and stability. We propose a
+novel approach that trains each layer of the neural network using local signals
+during the forward pass in RL settings. Our approach introduces local,
+layer-wise losses leveraging the principle of matching pairwise distances from
+multi-dimensional scaling, enhanced with optional reward-driven guidance. This
+method allows each hidden layer to be trained using local signals computed
+during forward propagation, thus eliminating the need for backward passes and
+storing intermediate activations. Our experiments, conducted with policy
+gradient methods across common RL benchmarks, demonstrate that this
+backpropagation-free method achieves competitive performance compared to their
+classical BP-based counterpart. Additionally, the proposed method enhances
+stability and consistency within and across runs, and improves performance
+especially in challenging environments.</p></br><a href="http://arxiv.org/pdf/2507.10809v1" target="_blank"><h2>Uncovering Causal Relation Shifts in Event Sequences under Out-of-Domain
+  Interventions</h2></a><strong><u>Authors:</u></strong>  Kazi Tasnim Zinat, Yun Zhou, Xiang Lyu, Yawei Wang, Zhicheng Liu, Panpan Xu</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Accepted at ICANN 2025</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Inferring causal relationships between event pairs in a temporal sequence is
+applicable in many domains such as healthcare, manufacturing, and
+transportation. Most existing work on causal inference primarily focuses on
+event types within the designated domain, without considering the impact of
+exogenous out-of-domain interventions. In real-world settings, these
+out-of-domain interventions can significantly alter causal dynamics. To address
+this gap, we propose a new causal framework to define average treatment effect
+(ATE), beyond independent and identically distributed (i.i.d.) data in classic
+Rubin's causal framework, to capture the causal relation shift between events
+of temporal process under out-of-domain intervention. We design an unbiased ATE
+estimator, and devise a Transformer-based neural network model to handle both
+long-range temporal dependencies and local patterns while integrating
+out-of-domain intervention information into process modeling. Extensive
+experiments on both simulated and real-world datasets demonstrate that our
+method outperforms baselines in ATE estimation and goodness-of-fit under
+out-of-domain-augmented point processes.</p></br><a href="http://arxiv.org/pdf/2507.11439v1" target="_blank"><h2>Data Augmentation in Time Series Forecasting through Inverted Framework</h2></a><strong><u>Authors:</u></strong>  Hongming Tan, Ting Chen, Ruochong Jin, Wai Kin Chan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), data augmentation (title)</br><p><strong><u>Abstract:</u></strong> Currently, iTransformer is one of the most popular and effective models for
+multivariate time series (MTS) forecasting. Thanks to its inverted framework,
+iTransformer effectively captures multivariate correlation. However, the
+inverted framework still has some limitations. It diminishes temporal
+interdependency information, and introduces noise in cases of nonsignificant
+variable correlation. To address these limitations, we introduce a novel data
+augmentation method on inverted framework, called DAIF. Unlike previous data
+augmentation methods, DAIF stands out as the first real-time augmentation
+specifically designed for the inverted framework in MTS forecasting. We first
+define the structure of the inverted sequence-to-sequence framework, then
+propose two different DAIF strategies, Frequency Filtering and Cross-variation
+Patching to address the existing challenges of the inverted framework.
+Experiments across multiple datasets and inverted models have demonstrated the
+effectiveness of our DAIF.</p></br><a href="http://arxiv.org/pdf/2507.11178v1" target="_blank"><h2>Gradient Regularization-based Neural Granger Causality</h2></a><strong><u>Authors:</u></strong>  Meiliang Liu, Huiwen Dong, Xiaoxiao Yang, Yunfang Xu, Zijin Li, Zhengye Si, Xinyue Yang, Zhiwen Zhao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 9 pages,3 figures, conference</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), causality (title, abstract)</br><p><strong><u>Abstract:</u></strong> With the advancement of deep learning technologies, various neural
+network-based Granger causality models have been proposed. Although these
+models have demonstrated notable improvements, several limitations remain. Most
+existing approaches adopt the component-wise architecture, necessitating the
+construction of a separate model for each time series, which results in
+substantial computational costs. In addition, imposing the sparsity-inducing
+penalty on the first-layer weights of the neural network to extract causal
+relationships weakens the model's ability to capture complex interactions. To
+address these limitations, we propose Gradient Regularization-based Neural
+Granger Causality (GRNGC), which requires only one time series prediction model
+and applies $L_{1}$ regularization to the gradient between model's input and
+output to infer Granger causality. Moreover, GRNGC is not tied to a specific
+time series forecasting model and can be implemented with diverse architectures
+such as KAN, MLP, and LSTM, offering enhanced flexibility. Numerical
+simulations on DREAM, Lorenz-96, fMRI BOLD, and CausalTime show that GRNGC
+outperforms existing baselines and significantly reduces computational
+overhead. Meanwhile, experiments on real-world DNA, Yeast, HeLa, and bladder
+urothelial carcinoma datasets further validate the model's effectiveness in
+reconstructing gene regulatory networks.</p></br><a href="http://arxiv.org/pdf/2507.11161v1" target="_blank"><h2>How does Labeling Error Impact Contrastive Learning? A Perspective from
+  Data Dimensionality Reduction</h2></a><strong><u>Authors:</u></strong>  Jun Chen, Hong Chen, Yonghua Yu, Yiming Ying</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Accepted by ICML2025 as a poster</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (title)</br><p><strong><u>Abstract:</u></strong> In recent years, contrastive learning has achieved state-of-the-art
+performance in the territory of self-supervised representation learning. Many
+previous works have attempted to provide the theoretical understanding
+underlying the success of contrastive learning. Almost all of them rely on a
+default assumption, i.e., the label consistency assumption, which may not hold
+in practice (the probability of failure is called labeling error) due to the
+strength and randomness of common augmentation strategies, such as random
+resized crop (RRC). This paper investigates the theoretical impact of labeling
+error on the downstream classification performance of contrastive learning. We
+first reveal several significant negative impacts of labeling error on
+downstream classification risk. To mitigate these impacts, data dimensionality
+reduction method (e.g., singular value decomposition, SVD) is applied on
+original data to reduce false positive samples, and establish both theoretical
+and empirical evaluations. Moreover, it is also found that SVD acts as a
+double-edged sword, which may lead to the deterioration of downstream
+classification accuracy due to the reduced connectivity of the augmentation
+graph. Based on the above observations, we give the augmentation suggestion
+that we should use some moderate embedding dimension (such as $512, 1024$ in
+our experiments), data inflation, weak augmentation, and SVD to ensure large
+graph connectivity and small labeling error to improve model performance.</p></br><a href="http://arxiv.org/pdf/2507.11531v1" target="_blank"><h2>Langevin Flows for Modeling Neural Latent Dynamics</h2></a><strong><u>Authors:</u></strong>  Yue Song, T. Anderson Keller, Yisong Yue, Pietro Perona, Max Welling</br><strong><u>Categories:</u></strong> cs.LG, q-bio.NC</br><strong><u>Comments:</u></strong> Full version of the Cognitive Computational Neuroscience (CCN) 2025 poster</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Neural populations exhibit latent dynamical structures that drive
+time-evolving spiking activities, motivating the search for models that capture
+both intrinsic network dynamics and external unobserved influences. In this
+work, we introduce LangevinFlow, a sequential Variational Auto-Encoder where
+the time evolution of latent variables is governed by the underdamped Langevin
+equation. Our approach incorporates physical priors -- such as inertia,
+damping, a learned potential function, and stochastic forces -- to represent
+both autonomous and non-autonomous processes in neural systems. Crucially, the
+potential function is parameterized as a network of locally coupled
+oscillators, biasing the model toward oscillatory and flow-like behaviors
+observed in biological neural populations. Our model features a recurrent
+encoder, a one-layer Transformer decoder, and Langevin dynamics in the latent
+space. Empirically, our method outperforms state-of-the-art baselines on
+synthetic neural populations generated by a Lorenz attractor, closely matching
+ground-truth firing rates. On the Neural Latents Benchmark (NLB), the model
+achieves superior held-out neuron likelihoods (bits per spike) and forward
+prediction accuracy across four challenging datasets. It also matches or
+surpasses alternative methods in decoding behavioral metrics such as hand
+velocity. Overall, this work introduces a flexible, physics-inspired,
+high-performing framework for modeling complex neural population dynamics and
+their unobserved influences.</p></br></body>

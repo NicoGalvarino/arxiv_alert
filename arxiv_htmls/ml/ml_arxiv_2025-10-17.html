@@ -1,0 +1,199 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 15 Oct 2025 to 17 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.13997v1" target="_blank"><h2>Dynamic SBI: Round-free Sequential Simulation-Based Inference with
+  Adaptive Datasets</h2></a><strong><u>Authors:</u></strong>  Huifang Lyu, James Alvey, Noemi Anau Montel, Mauro Pieroni, Christoph Weniger</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 15 pages, 5 figures, software available at:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Simulation-based inference (SBI) is emerging as a new statistical paradigm
+for addressing complex scientific inference problems. By leveraging the
+representational power of deep neural networks, SBI can extract the most
+informative simulation features for the parameters of interest. Sequential SBI
+methods extend this approach by iteratively steering the simulation process
+towards the most relevant regions of parameter space. This is typically
+implemented through an algorithmic structure, in which simulation and network
+training alternate over multiple rounds. This strategy is particularly well
+suited for high-precision inference in high-dimensional settings, which are
+commonplace in physics applications with growing data volumes and increasing
+model fidelity. Here, we introduce dynamic SBI, which implements the core ideas
+of sequential methods in a round-free, asynchronous, and highly parallelisable
+manner. At its core is an adaptive dataset that is iteratively transformed
+during inference to resemble the target observation. Simulation and training
+proceed in parallel: trained networks are used both to filter out simulations
+incompatible with the data and to propose new, more promising ones. Compared to
+round-based sequential methods, this asynchronous structure can significantly
+reduce simulation costs and training overhead. We demonstrate that dynamic SBI
+achieves significant improvements in simulation and training efficiency while
+maintaining inference performance. We further validate our framework on two
+challenging astrophysical inference tasks: characterising the stochastic
+gravitational wave background and analysing strong gravitational lensing
+systems. Overall, this work presents a flexible and efficient new paradigm for
+sequential SBI.</p></br><a href="http://arxiv.org/pdf/2510.14102v1" target="_blank"><h2>Extracting latent representations from X-ray spectra. Classification,
+  regression, and accretion signatures of Chandra sources</h2></a><strong><u>Authors:</u></strong>  Nicolò Oreste Pinciroli Vago, Juan Rafael Martínez-Galarza, Roberta Amato</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> The study of X-ray spectra is crucial to understanding the physical nature of
+astrophysical sources. Machine learning methods can extract compact and
+informative representations of data from large datasets. The Chandra Source
+Catalog (CSC) provides a rich archive of X-ray spectral data, which remains
+largely underexplored in this context. This work aims to develop a compact and
+physically meaningful representation of Chandra X-ray spectra using deep
+learning. To verify that the learned representation captures relevant
+information, we evaluate it through classification, regression, and
+interpretability analyses. We use a transformer-based autoencoder to compress
+X-ray spectra. The input spectra, drawn from the CSC, include only
+high-significance detections. Astrophysical source types and physical summary
+statistics are compiled from external catalogs. We evaluate the learned
+representation in terms of spectral reconstruction accuracy, clustering
+performance on 8 known astrophysical source classes, and correlation with
+physical quantities such as hardness ratios and hydrogen column density
+($N_H$). The autoencoder accurately reconstructs spectra with 8 latent
+variables. Clustering in the latent space yields a balanced classification
+accuracy of $\sim$40% across the 8 source classes, increasing to $\sim$69% when
+restricted to AGNs and stellar-mass compact objects exclusively. Moreover,
+latent features correlate with non-linear combinations of spectral fluxes,
+suggesting that the compressed representation encodes physically relevant
+information. The proposed autoencoder-based pipeline is a powerful tool for the
+representation and interpretation of X-ray spectra, providing a compact latent
+space that supports both classification and the estimation of physical
+properties. This work demonstrates the potential of deep learning for spectral
+studies and uncovering new patterns in X-ray data.</p></br><a href="http://arxiv.org/pdf/2510.14287v1" target="_blank"><h2>Enhancing Time-Series Anomaly Detection by Integrating Spectral-Residual
+  Bottom-Up Attention with Reservoir Computing</h2></a><strong><u>Authors:</u></strong>  Hayato Nihei, Sou Nobukawa, Yusuke Sakemi, Kazuyuki Aihara</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Reservoir computing (RC) establishes the basis for the processing of
+time-series data by exploiting the high-dimensional spatiotemporal response of
+a recurrent neural network to an input signal. In particular, RC trains only
+the output layer weights. This simplicity has drawn attention especially in
+Edge Artificial Intelligence (AI) applications. Edge AI enables time-series
+anomaly detection in real time, which is important because detection delays can
+lead to serious incidents. However, achieving adequate anomaly-detection
+performance with RC alone may require an unacceptably large reservoir on
+resource-constrained edge devices. Without enlarging the reservoir, attention
+mechanisms can improve accuracy, although they may require substantial
+computation and undermine the learning efficiency of RC. In this study, to
+improve the anomaly detection performance of RC without sacrificing learning
+efficiency, we propose a spectral residual RC (SR-RC) that integrates the
+spectral residual (SR) method - a learning-free, bottom-up attention mechanism
+- with RC. We demonstrated that SR-RC outperformed conventional RC and
+logistic-regression models based on values extracted by the SR method across
+benchmark tasks and real-world time-series datasets. Moreover, because the SR
+method, similarly to RC, is well suited for hardware implementation, SR-RC
+suggests a practical direction for deploying RC as Edge AI for time-series
+anomaly detection.</p></br><a href="http://arxiv.org/pdf/2510.14202v1" target="_blank"><h2>Hierarchical Simulation-Based Inference of Supernova Power Sources and
+  their Physical Properties</h2></a><strong><u>Authors:</u></strong>  Edgar P. Vidal, Alexander T. Gagliano, Carolina Cuesta-Lazaro</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> 9 pages, 4 figures, Accepted at the 2025 Machine Learning and the Physical Sciences (ML4PS) workshop at NeurIPS</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Time domain surveys such as the Vera C. Rubin Observatory are projected to
+annually discover millions of astronomical transients. This and complementary
+programs demand fast, automated methods to constrain the physical properties of
+the most interesting objects for spectroscopic follow up. Traditional
+approaches to likelihood-based inference are computationally expensive and
+ignore the multi-component energy sources powering astrophysical phenomena. In
+this work, we present a hierarchical simulation-based inference model for
+multi-band light curves that 1) identifies the energy sources powering an event
+of interest, 2) infers the physical properties of each subclass, and 3)
+separates physical anomalies in the learned embedding space. Our architecture
+consists of a transformer-based light curve summarizer coupled to a
+flow-matching regression module and a categorical classifier for the physical
+components. We train and test our model on $\sim$150k synthetic light curves
+generated with $\texttt{MOSFiT}$. Our network achieves a 90% classification
+accuracy at identifying energy sources, yields well-calibrated posteriors for
+all active components, and detects rare anomalies such as tidal disruption
+events (TDEs) through the learned latent space. This work demonstrates a
+scalable joint framework for population studies of known transients and the
+discovery of novel populations in the era of Rubin.</p></br><a href="http://arxiv.org/pdf/2510.14139v1" target="_blank"><h2>Inferred global dense residue transition graphs from primary structure
+  sequences enable protein interaction prediction via directed graph
+  convolutional neural networks</h2></a><strong><u>Authors:</u></strong>  Islam Akef Ebeid, Haoteng Tang, Pengfei Gu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> under review in Frontiers in Bioinformatics</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Introduction Accurate prediction of protein-protein interactions (PPIs) is
+crucial for understanding cellular functions and advancing drug development.
+Existing in-silico methods use direct sequence embeddings from Protein Language
+Models (PLMs). Others use Graph Neural Networks (GNNs) for 3D protein
+structures. This study explores less computationally intensive alternatives. We
+introduce a novel framework for downstream PPI prediction through link
+prediction. Methods We introduce a two-stage graph representation learning
+framework, ProtGram-DirectGCN. First, we developed ProtGram. This approach
+models a protein's primary structure as a hierarchy of globally inferred n-gram
+graphs. In these graphs, residue transition probabilities define edge weights.
+Each edge connects a pair of residues in a directed graph. The probabilities
+are aggregated from a large corpus of sequences. Second, we propose DirectGCN,
+a custom directed graph convolutional neural network. This model features a
+unique convolutional layer. It processes information through separate
+path-specific transformations: incoming, outgoing, and undirected. A shared
+transformation is also applied. These paths are combined via a learnable gating
+mechanism. We apply DirectGCN to ProtGram graphs to learn residue-level
+embeddings. These embeddings are pooled via attention to generate protein-level
+embeddings for prediction. Results We first established the efficacy of
+DirectGCN on standard node classification benchmarks. Its performance matches
+established methods on general datasets. The model excels at complex, directed
+graphs with dense, heterophilic structures. When applied to PPI prediction, the
+full ProtGram-DirectGCN framework delivers robust predictive power. This strong
+performance holds even with limited training data.</p></br><a href="http://arxiv.org/pdf/2510.13311v1" target="_blank"><h2>Isolation-based Spherical Ensemble Representations for Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Yang Cao, Sikun Yang, Hao Tian, Kai He, Lianyong Qi, Ming Liu, Yujiu Yang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection is a critical task in data mining and management with
+applications spanning fraud detection, network security, and log monitoring.
+Despite extensive research, existing unsupervised anomaly detection methods
+still face fundamental challenges including conflicting distributional
+assumptions, computational inefficiency, and difficulty handling different
+anomaly types. To address these problems, we propose ISER (Isolation-based
+Spherical Ensemble Representations) that extends existing isolation-based
+methods by using hypersphere radii as proxies for local density characteristics
+while maintaining linear time and constant space complexity. ISER constructs
+ensemble representations where hypersphere radii encode density information:
+smaller radii indicate dense regions while larger radii correspond to sparse
+areas. We introduce a novel similarity-based scoring method that measures
+pattern consistency by comparing ensemble representations against a theoretical
+anomaly reference pattern. Additionally, we enhance the performance of
+Isolation Forest by using ISER and adapting the scoring function to address
+axis-parallel bias and local anomaly detection limitations. Comprehensive
+experiments on 22 real-world datasets demonstrate ISER's superior performance
+over 11 baseline methods.</p></br><a href="http://arxiv.org/pdf/2510.14299v1" target="_blank"><h2>TED++: Submanifold-Aware Backdoor Detection via Layerwise
+  Tubular-Neighbourhood Screening</h2></a><strong><u>Authors:</u></strong>  Nam Le, Leo Yu Zhang, Kewen Liao, Shirui Pan, Wei Luo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07, 62H30, 53Z50, I.2.6; I.5.1; K.6.5</br><strong><u>Comments:</u></strong> Accepted by ICDM 2025</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> As deep neural networks power increasingly critical applications, stealthy
+backdoor attacks, where poisoned training inputs trigger malicious model
+behaviour while appearing benign, pose a severe security risk. Many existing
+defences are vulnerable when attackers exploit subtle distance-based anomalies
+or when clean examples are scarce. To meet this challenge, we introduce TED++,
+a submanifold-aware framework that effectively detects subtle backdoors that
+evade existing defences. TED++ begins by constructing a tubular neighbourhood
+around each class's hidden-feature manifold, estimating its local ``thickness''
+from a handful of clean activations. It then applies Locally Adaptive Ranking
+(LAR) to detect any activation that drifts outside the admissible tube. By
+aggregating these LAR-adjusted ranks across all layers, TED++ captures how
+faithfully an input remains on the evolving class submanifolds. Based on such
+characteristic ``tube-constrained'' behaviour, TED++ flags inputs whose
+LAR-based ranking sequences deviate significantly. Extensive experiments are
+conducted on benchmark datasets and tasks, demonstrating that TED++ achieves
+state-of-the-art detection performance under both adaptive-attack and
+limited-data scenarios. Remarkably, even with only five held-out examples per
+class, TED++ still delivers near-perfect detection, achieving gains of up to
+14\% in AUROC over the next-best method. The code is publicly available at
+https://github.com/namle-w/TEDpp.</p></br><a href="http://arxiv.org/pdf/2510.14095v1" target="_blank"><h2>Unlocking Out-of-Distribution Generalization in Transformers via
+  Recursive Latent Space Reasoning</h2></a><strong><u>Authors:</u></strong>  Awni Altabaa, Siyu Chen, John Lafferty, Zhuoran Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (title), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Systematic, compositional generalization beyond the training distribution
+remains a core challenge in machine learning -- and a critical bottleneck for
+the emergent reasoning abilities of modern language models. This work
+investigates out-of-distribution (OOD) generalization in Transformer networks
+using a GSM8K-style modular arithmetic on computational graphs task as a
+testbed. We introduce and explore a set of four architectural mechanisms aimed
+at enhancing OOD generalization: (i) input-adaptive recurrence; (ii)
+algorithmic supervision; (iii) anchored latent representations via a discrete
+bottleneck; and (iv) an explicit error-correction mechanism. Collectively,
+these mechanisms yield an architectural approach for native and scalable latent
+space reasoning in Transformer networks with robust algorithmic generalization
+capabilities. We complement these empirical results with a detailed mechanistic
+interpretability analysis that reveals how these mechanisms give rise to robust
+OOD generalization abilities.</p></br><a href="http://arxiv.org/pdf/2510.14977v1" target="_blank"><h2>Terra: Explorable Native 3D World Model with Point Latents</h2></a><strong><u>Authors:</u></strong>  Yuanhui Huang, Weiliang Chen, Wenzhao Zheng, Xin Tao, Pengfei Wan, Jie Zhou, Jiwen Lu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Project Page:this https URL</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> World models have garnered increasing attention for comprehensive modeling of
+the real world. However, most existing methods still rely on pixel-aligned
+representations as the basis for world evolution, neglecting the inherent 3D
+nature of the physical world. This could undermine the 3D consistency and
+diminish the modeling efficiency of world models. In this paper, we present
+Terra, a native 3D world model that represents and generates explorable
+environments in an intrinsic 3D latent space. Specifically, we propose a novel
+point-to-Gaussian variational autoencoder (P2G-VAE) that encodes 3D inputs into
+a latent point representation, which is subsequently decoded as 3D Gaussian
+primitives to jointly model geometry and appearance. We then introduce a sparse
+point flow matching network (SPFlow) for generating the latent point
+representation, which simultaneously denoises the positions and features of the
+point latents. Our Terra enables exact multi-view consistency with native 3D
+representation and architecture, and supports flexible rendering from any
+viewpoint with only a single generation process. Furthermore, Terra achieves
+explorable world modeling through progressive generation in the point latent
+space. We conduct extensive experiments on the challenging indoor scenes from
+ScanNet v2. Terra achieves state-of-the-art performance in both reconstruction
+and generation with high 3D consistency.</p></br></body>

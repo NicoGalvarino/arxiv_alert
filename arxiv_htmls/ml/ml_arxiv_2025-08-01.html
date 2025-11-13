@@ -1,0 +1,126 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 30 Jul 2025 to 01 Aug 2025</em></font><a href="http://arxiv.org/pdf/2507.23615v1" target="_blank"><h2>L-GTA: Latent Generative Modeling for Time Series Augmentation</h2></a><strong><u>Authors:</u></strong>  Luis Roque, Carlos Soares, Vitor Cerqueira, Luis Torgo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T01, I.5.1; G.3; H.2.8; I.2.1</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), latent space (abstract), transformer (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Data augmentation is gaining importance across various aspects of time series
+analysis, from forecasting to classification and anomaly detection tasks. We
+introduce the Latent Generative Transformer Augmentation (L-GTA) model, a
+generative approach using a transformer-based variational recurrent
+autoencoder. This model uses controlled transformations within the latent space
+of the model to generate new time series that preserve the intrinsic properties
+of the original dataset. L-GTA enables the application of diverse
+transformations, ranging from simple jittering to magnitude warping, and
+combining these basic transformations to generate more complex synthetic time
+series datasets. Our evaluation of several real-world datasets demonstrates the
+ability of L-GTA to produce more reliable, consistent, and controllable
+augmented data. This translates into significant improvements in predictive
+accuracy and similarity measures compared to direct transformation methods.</p></br><a href="http://arxiv.org/pdf/2507.23662v1" target="_blank"><h2>Modeling turbulent and self-gravitating fluids with Fourier neural
+  operators</h2></a><strong><u>Authors:</u></strong>  Keith Poletti, Stella S. R. Offner, Rachel A. Ward</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Neural Operators (NOs) are a leading method for surrogate modeling of partial
+differential equations. Unlike traditional neural networks, which approximate
+individual functions, NOs learn the mappings between function spaces. While NOs
+have been predominantly tested on simplified 1D and 2D problems, such as those
+explored in prior works, these studies fail to address the complexities of more
+realistic, high-dimensional, and high-dynamic range systems. Moreover, many
+real-world applications involve incomplete or noisy data, which has not been
+adequately explored in current NO literature. In this work, we present a novel
+application of NOs to astrophysical data, which involves high-dynamic range
+projections into an observational space. We train Fourier NO (FNO) models to
+predict the evolution of incomplete observational proxies with density
+variations spanning four orders of magnitude. We demonstrate that FNOs can
+predict the effects of unobserved dynamical variables. Our work lays the
+groundwork for future studies that forecast direct astronomical observables.</p></br><a href="http://arxiv.org/pdf/2507.23010v1" target="_blank"><h2>Investigating the Invertibility of Multimodal Latent Spaces: Limitations
+  of Optimization-Based Methods</h2></a><strong><u>Authors:</u></strong>  Siwoo Park</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV, cs.SD, eess.AS</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper investigates the inverse capabilities and broader utility of
+multimodal latent spaces within task-specific AI (Artificial Intelligence)
+models. While these models excel at their designed forward tasks (e.g.,
+text-to-image generation, audio-to-text transcription), their potential for
+inverse mappings remains largely unexplored. We propose an optimization-based
+framework to infer input characteristics from desired outputs, applying it
+bidirectionally across Text-Image (BLIP, Flux.1-dev) and Text-Audio
+(Whisper-Large-V3, Chatterbox-TTS) modalities.
+  Our central hypothesis posits that while optimization can guide models
+towards inverse tasks, their multimodal latent spaces will not consistently
+support semantically meaningful and perceptually coherent inverse mappings.
+Experimental results consistently validate this hypothesis. We demonstrate that
+while optimization can force models to produce outputs that align textually
+with targets (e.g., a text-to-image model generating an image that an image
+captioning model describes correctly, or an ASR model transcribing optimized
+audio accurately), the perceptual quality of these inversions is chaotic and
+incoherent. Furthermore, when attempting to infer the original semantic input
+from generative models, the reconstructed latent space embeddings frequently
+lack semantic interpretability, aligning with nonsensical vocabulary tokens.
+  These findings highlight a critical limitation. multimodal latent spaces,
+primarily optimized for specific forward tasks, do not inherently possess the
+structure required for robust and interpretable inverse mappings. Our work
+underscores the need for further research into developing truly semantically
+rich and invertible multimodal latent spaces.</p></br><a href="http://arxiv.org/pdf/2507.23000v1" target="_blank"><h2>Planning for Cooler Cities: A Multimodal AI Framework for Predicting and
+  Mitigating Urban Heat Stress through Urban Landscape Transformation</h2></a><strong><u>Authors:</u></strong>  Shengao Yi, Xiaojiang Li, Wei Tu, Tianhong Zhao</br><strong><u>Categories:</u></strong> cs.LG, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> As extreme heat events intensify due to climate change and urbanization,
+cities face increasing challenges in mitigating outdoor heat stress. While
+traditional physical models such as SOLWEIG and ENVI-met provide detailed
+assessments of human-perceived heat exposure, their computational demands limit
+scalability for city-wide planning. In this study, we propose GSM-UTCI, a
+multimodal deep learning framework designed to predict daytime average
+Universal Thermal Climate Index (UTCI) at 1-meter hyperlocal resolution. The
+model fuses surface morphology (nDSM), high-resolution land cover data, and
+hourly meteorological conditions using a feature-wise linear modulation (FiLM)
+architecture that dynamically conditions spatial features on atmospheric
+context. Trained on SOLWEIG-derived UTCI maps, GSM-UTCI achieves near-physical
+accuracy, with an R2 of 0.9151 and a mean absolute error (MAE) of 0.41{\deg}C,
+while reducing inference time from hours to under five minutes for an entire
+city. To demonstrate its planning relevance, we apply GSM-UTCI to simulate
+systematic landscape transformation scenarios in Philadelphia, replacing bare
+earth, grass, and impervious surfaces with tree canopy. Results show spatially
+heterogeneous but consistently strong cooling effects, with impervious-to-tree
+conversion producing the highest aggregated benefit (-4.18{\deg}C average
+change in UTCI across 270.7 km2). Tract-level bivariate analysis further
+reveals strong alignment between thermal reduction potential and land cover
+proportions. These findings underscore the utility of GSM-UTCI as a scalable,
+fine-grained decision support tool for urban climate adaptation, enabling
+scenario-based evaluation of greening strategies across diverse urban
+environments.</p></br><a href="http://arxiv.org/pdf/2507.23712v1" target="_blank"><h2>Anomalous Samples for Few-Shot Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Aymane Abdali, Bartosz Boguslawski, Lucas Drumetz, Vincent Gripon</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Several anomaly detection and classification methods rely on large amounts of
+non-anomalous or "normal" samples under the assump- tion that anomalous data is
+typically harder to acquire. This hypothesis becomes questionable in Few-Shot
+settings, where as little as one anno- tated sample can make a significant
+difference. In this paper, we tackle the question of utilizing anomalous
+samples in training a model for bi- nary anomaly classification. We propose a
+methodology that incorporates anomalous samples in a multi-score anomaly
+detection score leveraging recent Zero-Shot and memory-based techniques. We
+compare the utility of anomalous samples to that of regular samples and study
+the benefits and limitations of each. In addition, we propose an
+augmentation-based validation technique to optimize the aggregation of the
+different anomaly scores and demonstrate its effectiveness on popular
+industrial anomaly detection datasets.</p></br><a href="http://arxiv.org/pdf/2507.23058v1" target="_blank"><h2>Reference-Guided Diffusion Inpainting For Multimodal Counterfactual
+  Generation</h2></a><strong><u>Authors:</u></strong>  Alexandru Buburuzan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> A dissertation submitted to The University of Manchester for the degree of Bachelor of Science in Artificial Intelligence</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Safety-critical applications, such as autonomous driving and medical image
+analysis, require extensive multimodal data for rigorous testing. Synthetic
+data methods are gaining prominence due to the cost and complexity of gathering
+real-world data, but they demand a high degree of realism and controllability
+to be useful. This work introduces two novel methods for synthetic data
+generation in autonomous driving and medical image analysis, namely MObI and
+AnydoorMed, respectively. MObI is a first-of-its-kind framework for Multimodal
+Object Inpainting that leverages a diffusion model to produce realistic and
+controllable object inpaintings across perceptual modalities, demonstrated
+simultaneously for camera and lidar. Given a single reference RGB image, MObI
+enables seamless object insertion into existing multimodal scenes at a
+specified 3D location, guided by a bounding box, while maintaining semantic
+consistency and multimodal coherence. Unlike traditional inpainting methods
+that rely solely on edit masks, this approach uses 3D bounding box conditioning
+to ensure accurate spatial positioning and realistic scaling. AnydoorMed
+extends this paradigm to the medical imaging domain, focusing on
+reference-guided inpainting for mammography scans. It leverages a
+diffusion-based model to inpaint anomalies with impressive detail preservation,
+maintaining the reference anomaly's structural integrity while semantically
+blending it with the surrounding tissue. Together, these methods demonstrate
+that foundation models for reference-guided inpainting in natural images can be
+readily adapted to diverse perceptual modalities, paving the way for the next
+generation of systems capable of constructing highly realistic, controllable
+and multimodal counterfactual scenarios.</p></br></body>

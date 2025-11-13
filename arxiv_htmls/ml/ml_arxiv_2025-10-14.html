@@ -1,0 +1,754 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 10 Oct 2025 to 14 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.10713v1" target="_blank"><h2>Deep Learning in Astrophysics</h2></a><strong><u>Authors:</u></strong>  Yuan-Sen Ting</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO, astro-ph.EP, astro-ph.GA, astro-ph.HE, cs.AI</br><strong><u>Comments:</u></strong> Manuscript submitted to Annual Review of Astronomy and Astrophysics for Volume 64. This is the authors' version. Revisions and the final version will be available atthis https URL</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep learning has generated diverse perspectives in astronomy, with ongoing
+discussions between proponents and skeptics motivating this review. We examine
+how neural networks complement classical statistics, extending our data
+analytical toolkit for modern surveys. Astronomy offers unique opportunities
+through encoding physical symmetries, conservation laws, and differential
+equations directly into architectures, creating models that generalize beyond
+training data. Yet challenges persist as unlabeled observations number in
+billions while confirmed examples with known properties remain scarce and
+expensive. This review demonstrates how deep learning incorporates domain
+knowledge through architectural design, with built-in assumptions guiding
+models toward physically meaningful solutions. We evaluate where these methods
+offer genuine advances versus claims requiring careful scrutiny. - Neural
+architectures overcome trade-offs between scalability, expressivity, and data
+efficiency by encoding physical symmetries and conservation laws into network
+structure, enabling learning from limited labeled data. - Simulation-based
+inference and anomaly detection extract information from complex, non-Gaussian
+distributions where analytical likelihoods fail, enabling field-level
+cosmological analysis and systematic discovery of rare phenomena. - Multi-scale
+neural modeling bridges resolution gaps in astronomical simulations, learning
+effective subgrid physics from expensive high-fidelity runs to enhance
+large-volume calculations where direct computation remains prohibitive. -
+Emerging paradigms-reinforcement learning for telescope operations, foundation
+models learning from minimal examples, and large language model agents for
+research automation-show promise though are still developing in astronomical
+applications.</p></br><a href="http://arxiv.org/pdf/2510.10915v1" target="_blank"><h2>LPCVAE: A Conditional VAE with Long-Term Dependency and Probabilistic
+  Time-Frequency Fusion for Time Series Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Hanchang Cheng, Weimin Mu, Fan Liu, Weilin Zhu, Can Ma</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract), anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Time series anomaly detection(TSAD) is a critical task in signal processing
+field, ensuring the reliability of complex systems. Reconstruction-based
+methods dominate in TSAD. Among these methods, VAE-based methods have achieved
+promising results. Existing VAE-based methods suffer from the limitation of
+single-window feature and insufficient leveraging of long-term time and
+frequency information. We propose a Conditional Variational AutoEncoder with
+Long-term dependency and Probabilistic time-frequency fusion, named LPCVAE.
+LPCVAE introduces LSTM to capture long-term dependencies beyond windows. It
+further incorporates a Product-of-Experts (PoE) mechanism for adaptive and
+distribution-level probabilistic fusion. This design effectively mitigates
+time-frequency information loss. Extensive experiments on four public datasets
+demonstrate it outperforms state-of-the-art methods. The results confirm that
+integrating long-term time and frequency representations with adaptive fusion
+yields a robust and efficient solution for TSAD.</p></br><a href="http://arxiv.org/pdf/2510.09748v1" target="_blank"><h2>The Importance of Being Adaptable: An Exploration of the Power and
+  Limitations of Domain Adaptation for Simulation-Based Inference with Galaxy
+  Clusters</h2></a><strong><u>Authors:</u></strong>  Michelle Ntampaka, A. Ciprijanovic, Ana Maria Delgado, John Soltis, John F. Wu, Mikaeel Yunus, John ZuHone</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract), domain adaptation (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The application of deep machine learning methods in astronomy has exploded in
+the last decade, with new models showing remarkably improved performance on
+benchmark tasks. Not nearly enough attention is given to understanding the
+models' robustness, especially when the test data are systematically different
+from the training data, or "out of domain." Domain shift poses a significant
+challenge for simulation-based inference, where models are trained on simulated
+data but applied to real observational data. In this paper, we explore domain
+shift and test domain adaptation methods for a specific scientific case:
+simulation-based inference for estimating galaxy cluster masses from X-ray
+profiles. We build datasets to mimic simulation-based inference: a training set
+from the Magneticum simulation, a scatter-augmented training set to capture
+uncertainties in scaling relations, and a test set derived from the
+IllustrisTNG simulation. We demonstrate that the Test Set is out of domain in
+subtle ways that would be difficult to detect without careful analysis. We
+apply three deep learning methods: a standard neural network (NN), a neural
+network trained on the scatter-augmented input catalogs, and a Deep
+Reconstruction-Regression Network (DRRN), a semi-supervised deep model
+engineered to address domain shift. Although the NN improves results by 17% in
+the Training Data, it performs 40% worse on the out-of-domain Test Set.
+Surprisingly, the Scatter-Augmented Neural Network (SANN) performs similarly.
+While the DRRN is successful in mapping the training and Test Data onto the
+same latent space, it consistently underperforms compared to a straightforward
+Yx scaling relation. These results serve as a warning that simulation-based
+inference must be handled with extreme care, as subtle differences between
+training simulations and observational data can lead to unforeseen biases
+creeping into the results.</p></br><a href="http://arxiv.org/pdf/2510.09119v1" target="_blank"><h2>Identification of molecular line emission using Convolutional Neural
+  Networks</h2></a><strong><u>Authors:</u></strong>  Nina Kessler, Timea Csengeri, David Cornu, Sylvain Bontemps, Laure Bouscasse</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.GA</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Complex organic molecules (COMs) are observed to be abundant in various
+astrophysical environments, in particular toward star forming regions they are
+observed both toward protostellar envelopes as well as shocked regions.
+Emission spectrum especially of heavier COMs may consists of up to hundreds of
+lines, where line blending hinders the analysis. However, identifying the
+molecular composition of the gas leading to the observed millimeter spectra is
+the first step toward a quantitative analysis. We develop a new method based on
+supervised machine learning to recognize spectroscopic features of the
+rotational spectrum of molecules in the 3mm atmospheric transmission band for a
+list of species including COMs with the aim to obtain a detection probability.
+We used local thermodynamic equilibrium (LTE) modeling to build a large set of
+synthetic spectra of 20 molecular species including COMs with a range of
+physical conditions typical for star forming regions. We successfully designed
+and trained a Convolutional Neural Network (CNN) that provides detection
+probabilities of individual species in the spectra. We demonstrate that the
+produced CNN-model has a robust performance to detect spectroscopic signatures
+from these species in synthetic spectra. We evaluate its ability to detect
+molecules according to the noise level, frequency coverage, and line-richness,
+and also test its performance for incomplete frequency coverage with high
+detection probabilities for the tested parameter space, and no false
+predictions. Ultimately, we apply the CNN-model to obtain predictions on
+observational data from the literature toward line-rich hot-core like sources,
+where detection probabilities remain reasonable with no false detection. We
+prove the use of CNNs facilitating the analysis of complex millimeter spectra
+both on synthetic spectra as well as first tests on observational data.</p></br><a href="http://arxiv.org/pdf/2510.11084v1" target="_blank"><h2>Causal Disentanglement Learning for Accurate Anomaly Detection in
+  Multivariate Time Series</h2></a><strong><u>Authors:</u></strong>  Wonah Kim, Jeonghyeon Park, Dongsan Jun, Jungkyu Han, Sejin Chun</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 20 pages, 4 Figures,</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Disentangling complex causal relationships is important for accurate
+detection of anomalies. In multivariate time series analysis, dynamic
+interactions among data variables over time complicate the interpretation of
+causal relationships. Traditional approaches assume statistical independence
+between variables in unsupervised settings, whereas recent methods capture
+feature correlations through graph representation learning. However, their
+representations fail to explicitly infer the causal relationships over
+different time periods. To solve the problem, we propose Causally Disentangled
+Representation Learning for Anomaly Detection (CDRL4AD) to detect anomalies and
+identify their causal relationships in multivariate time series. First, we
+design the causal process as model input, the temporal heterogeneous graph, and
+causal relationships. Second, our representation identifies causal
+relationships over different time periods and disentangles latent variables to
+infer the corresponding causal factors. Third, our experiments on real-world
+datasets demonstrate that CDRL4AD outperforms state-of-the-art methods in terms
+of accuracy and root cause analysis. Fourth, our model analysis validates
+hyperparameter sensitivity and the time complexity of CDRL4AD. Last, we conduct
+a case study to show how our approach assists human experts in diagnosing the
+root causes of anomalies.</p></br><a href="http://arxiv.org/pdf/2510.11354v1" target="_blank"><h2>Understanding the Generalization of Stochastic Gradient Adam in Learning
+  Neural Networks</h2></a><strong><u>Authors:</u></strong>  Xuan Tang, Han Zhang, Yuan Cao, Difan Zou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 71 pages, 12 figures, NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> Adam is a popular and widely used adaptive gradient method in deep learning,
+which has also received tremendous focus in theoretical research. However, most
+existing theoretical work primarily analyzes its full-batch version, which
+differs fundamentally from the stochastic variant used in practice. Unlike SGD,
+stochastic Adam does not converge to its full-batch counterpart even with
+infinitesimal learning rates. We present the first theoretical characterization
+of how batch size affects Adam's generalization, analyzing two-layer
+over-parameterized CNNs on image data. Our results reveal that while both Adam
+and AdamW with proper weight decay $\lambda$ converge to poor test error
+solutions, their mini-batch variants can achieve near-zero test error. We
+further prove Adam has a strictly smaller effective weight decay bound than
+AdamW, theoretically explaining why Adam requires more sensitive $\lambda$
+tuning. Extensive experiments validate our findings, demonstrating the critical
+role of batch size and weight decay in Adam's generalization performance.</p></br><a href="http://arxiv.org/pdf/2510.09776v1" target="_blank"><h2>Why Do Transformers Fail to Forecast Time Series In-Context?</h2></a><strong><u>Authors:</u></strong>  Yufa Zhou, Yixiao Wang, Surbhi Goel, Anru R. Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Code:this https URL</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Time series forecasting (TSF) remains a challenging and largely unsolved
+problem in machine learning, despite significant recent efforts leveraging
+Large Language Models (LLMs), which predominantly rely on Transformer
+architectures. Empirical evidence consistently shows that even powerful
+Transformers often fail to outperform much simpler models, e.g., linear models,
+on TSF tasks; however, a rigorous theoretical understanding of this phenomenon
+remains limited. In this paper, we provide a theoretical analysis of
+Transformers' limitations for TSF through the lens of In-Context Learning (ICL)
+theory. Specifically, under AR($p$) data, we establish that: (1) Linear
+Self-Attention (LSA) models $\textit{cannot}$ achieve lower expected MSE than
+classical linear models for in-context forecasting; (2) as the context length
+approaches to infinity, LSA asymptotically recovers the optimal linear
+predictor; and (3) under Chain-of-Thought (CoT) style inference, predictions
+collapse to the mean exponentially. We empirically validate these findings
+through carefully designed experiments. Our theory not only sheds light on
+several previously underexplored phenomena but also offers practical insights
+for designing more effective forecasting architectures. We hope our work
+encourages the broader research community to revisit the fundamental
+theoretical limitations of TSF and to critically evaluate the direct
+application of increasingly sophisticated architectures without deeper
+scrutiny.</p></br><a href="http://arxiv.org/pdf/2510.11579v1" target="_blank"><h2>MS-Mix: Unveiling the Power of Mixup for Multimodal Sentiment Analysis</h2></a><strong><u>Authors:</u></strong>  Hongyu Zhu, Lin Chen, Mounim A. El-Yacoubi, Mingsheng Shang</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Under Review</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal Sentiment Analysis (MSA) aims to identify and interpret human
+emotions by integrating information from heterogeneous data sources such as
+text, video, and audio. While deep learning models have advanced in network
+architecture design, they remain heavily limited by scarce multimodal annotated
+data. Although Mixup-based augmentation improves generalization in unimodal
+tasks, its direct application to MSA introduces critical challenges: random
+mixing often amplifies label ambiguity and semantic inconsistency due to the
+lack of emotion-aware mixing mechanisms. To overcome these issues, we propose
+MS-Mix, an adaptive, emotion-sensitive augmentation framework that
+automatically optimizes sample mixing in multimodal settings. The key
+components of MS-Mix include: (1) a Sentiment-Aware Sample Selection (SASS)
+strategy that effectively prevents semantic confusion caused by mixing samples
+with contradictory emotions. (2) a Sentiment Intensity Guided (SIG) module
+using multi-head self-attention to compute modality-specific mixing ratios
+dynamically based on their respective emotional intensities. (3) a Sentiment
+Alignment Loss (SAL) that aligns the prediction distributions across
+modalities, and incorporates the Kullback-Leibler-based loss as an additional
+regularization term to train the emotion intensity predictor and the backbone
+network jointly. Extensive experiments on three benchmark datasets with six
+state-of-the-art backbones confirm that MS-Mix consistently outperforms
+existing methods, establishing a new standard for robust multimodal sentiment
+augmentation. The source code is available at:
+https://github.com/HongyuZhu-s/MS-Mix.</p></br><a href="http://arxiv.org/pdf/2510.11335v1" target="_blank"><h2>DiffStyleTS: Diffusion Model for Style Transfer in Time Series</h2></a><strong><u>Authors:</u></strong>  Mayank Nagda, Phil Ostheimer, Justus Arweiler, Indra Jungjohann, Jennifer Werner, Dennis Wagner, Aparna Muraleedharan, Pouya Jafari, Jochen Schmid, Fabian Jirasek, Jakob Burger, Michael Bortz, Hans Hasse, Stephan Mandt, Marius Kloft, Sophie Fellenz</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), anomaly detection (abstract), attention (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Style transfer combines the content of one signal with the style of another.
+It supports applications such as data augmentation and scenario simulation,
+helping machine learning models generalize in data-scarce domains. While well
+developed in vision and language, style transfer methods for time series data
+remain limited. We introduce DiffTSST, a diffusion-based framework that
+disentangles a time series into content and style representations via
+convolutional encoders and recombines them through a self-supervised
+attention-based diffusion process. At inference, encoders extract content and
+style from two distinct series, enabling conditional generation of novel
+samples to achieve style transfer. We demonstrate both qualitatively and
+quantitatively that DiffTSST achieves effective style transfer. We further
+validate its real-world utility by showing that data augmentation with DiffTSST
+improves anomaly detection in data-scarce regimes.</p></br><a href="http://arxiv.org/pdf/2510.09945v1" target="_blank"><h2>Explainable Human-in-the-Loop Segmentation via Critic Feedback Signals</h2></a><strong><u>Authors:</u></strong>  Pouya Shaeri, Ryan T. Woo, Yasaman Mohammadpour, Ariane Middel</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.HC, cs.LG, eess.IV</br><strong><u>Comments:</u></strong> Submitted to a computer vision conference (under review)</br><strong><u>Matching Keywords:</u></strong> explainable (title)</br><p><strong><u>Abstract:</u></strong> Segmentation models achieve high accuracy on benchmarks but often fail in
+real-world domains by relying on spurious correlations instead of true object
+boundaries. We propose a human-in-the-loop interactive framework that enables
+interventional learning through targeted human corrections of segmentation
+outputs. Our approach treats human corrections as interventional signals that
+show when reliance on superficial features (e.g., color or texture) is
+inappropriate. The system learns from these interventions by propagating
+correction-informed edits across visually similar images, effectively steering
+the model toward robust, semantically meaningful features rather than
+dataset-specific artifacts. Unlike traditional annotation approaches that
+simply provide more training data, our method explicitly identifies when and
+why the model fails and then systematically corrects these failure modes across
+the entire dataset. Through iterative human feedback, the system develops
+increasingly robust representations that generalize better to novel domains and
+resist artifactual correlations. We demonstrate that our framework improves
+segmentation accuracy by up to 9 mIoU points (12-15\% relative improvement) on
+challenging cubemap data and yields 3-4$\times$ reductions in annotation effort
+compared to standard retraining, while maintaining competitive performance on
+benchmark datasets. This work provides a practical framework for researchers
+and practitioners seeking to build segmentation systems that are accurate,
+robust to dataset biases, data-efficient, and adaptable to real-world domains
+such as urban climate monitoring and autonomous driving.</p></br><a href="http://arxiv.org/pdf/2510.09895v1" target="_blank"><h2>Chain-of-Influence: Tracing Interdependencies Across Time and Features
+  in Clinical Predictive Modelings</h2></a><strong><u>Authors:</u></strong>  Yubo Li, Rema Padman</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Modeling clinical time-series data is hampered by the challenge of capturing
+latent, time-varying dependencies among features. State-of-the-art approaches
+often rely on black-box mechanisms or simple aggregation, failing to explicitly
+model how the influence of one clinical variable propagates through others over
+time. We propose $\textbf{Chain-of-Influence (CoI)}$, an interpretable deep
+learning framework that constructs an explicit, time-unfolded graph of feature
+interactions. CoI leverages a multi-level attention architecture: first, a
+temporal attention layer identifies critical time points in a patient's record;
+second, a cross-feature attention layer models the directed influence from
+features at these time points to subsequent features. This design enables the
+tracing of influence pathways, providing a granular audit trail that shows how
+any feature at any time contributes to the final prediction, both directly and
+through its influence on other variables. We evaluate CoI on mortality and
+disease progression tasks using the MIMIC-IV dataset and a private chronic
+kidney disease cohort. Our framework significantly outperforms existing methods
+in predictive accuracy. More importantly, through case studies, we show that
+CoI can uncover clinically meaningful, patient-specific patterns of disease
+progression that are opaque to other models, offering unprecedented
+transparency into the temporal and cross-feature dependencies that inform
+clinical decision-making.</p></br><a href="http://arxiv.org/pdf/2510.09876v1" target="_blank"><h2>A Systematic Literature Review of Machine Learning Techniques for
+  Observational Constraints in Cosmology</h2></a><strong><u>Authors:</u></strong>  Luis Rojas, Sebastián Espinoza, Esteban González, Carlos Maldonado, Fei Luo</br><strong><u>Categories:</u></strong> astro-ph.CO, gr-qc</br><strong><u>Comments:</u></strong> 41 pages, 14 figures, and 4 tables</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), neural network (abstract), literature review (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper presents a systematic literature review focusing on the
+application of machine learning techniques for deriving observational
+constraints in cosmology. The goal is to evaluate and synthesize existing
+research to identify effective methodologies, highlight gaps, and propose
+future research directions. Our review identifies several key findings: (1)
+various machine learning techniques, including Bayesian neural networks,
+Gaussian processes, and deep learning models, have been applied to cosmological
+data analysis, improving parameter estimation and handling large datasets.
+However, models achieving significant computational speedups often exhibit
+worse confidence regions compared to traditional methods, emphasizing the need
+for future research to enhance both efficiency and measurement precision. (2)
+Traditional cosmological methods, such as those using Type Ia Supernovae,
+baryon acoustic oscillations, and cosmic microwave background data, remain
+fundamental, but most studies focus narrowly on specific datasets. We recommend
+broader dataset usage to fully validate alternative cosmological models. (3)
+The reviewed studies mainly address the $H_0$ tension, leaving other
+cosmological challenges-such as the cosmological constant problem, warm dark
+matter, phantom dark energy, and others-unexplored. (4) Hybrid methodologies
+combining machine learning with Markov chain Monte Carlo offer promising
+results, particularly when machine learning techniques are used to solve
+differential equations, such as Einstein Boltzmann solvers, as prior to Markov
+chain Monte Carlo models, accelerating computations while maintaining
+precision. (5) There is a significant need for standardized evaluation criteria
+and methodologies, as variability in training processes and experimental setups
+complicates result comparability and reproducibility (abridged).</p></br><a href="http://arxiv.org/pdf/2510.11495v1" target="_blank"><h2>How Reinforcement Learning After Next-Token Prediction Facilitates
+  Learning</h2></a><strong><u>Authors:</u></strong>  Nikolaos Tsilivis, Eran Malach, Karen Ullrich, Julia Kempe</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Recent advances in reasoning domains with neural networks have primarily been
+enabled by a training recipe that optimizes Large Language Models, previously
+trained to predict the next-token in a sequence, with reinforcement learning
+algorithms. We introduce a framework to study the success of this paradigm, and
+we theoretically expose the optimization mechanisms by which reinforcement
+learning improves over next-token prediction in this setting. We study learning
+from mixture distributions of short and long ``chain-of-thought'' sequences
+encoding a single task. In particular, when the task consists of predicting the
+parity of $d$ bits and long sequences are rare, we show how reinforcement
+learning after next-token prediction enables autoregressive transformers to
+generalize, whereas mere next-token prediction requires extreme statistical or
+computational resources to do so. We further explain how reinforcement learning
+leverages increased test-time computation, manifested in longer responses, to
+facilitate this learning process. In a simplified setting, we theoretically
+prove that autoregressive linear models following this training recipe can
+efficiently learn to predict the parity of $d$ bits as long as the proportion
+of long demonstrations in the data mix is not exponentially small in the input
+dimension $d$. Finally, we demonstrate these same phenomena in other settings,
+including the post-training of Llama-series models on mixture variations of
+common mathematical reasoning benchmarks.</p></br><a href="http://arxiv.org/pdf/2510.10089v1" target="_blank"><h2>What Makes Looped Transformers Perform Better Than Non-Recursive Ones
+  (Provably)</h2></a><strong><u>Authors:</u></strong>  Zixuan Gong, Jiaye Teng, Yong Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> While looped transformers (termed as Looped-Attn) often outperform standard
+transformers (termed as Single-Attn) on complex reasoning tasks, the
+theoretical basis for this advantage remains underexplored. In this paper, we
+explain this phenomenon through the lens of loss landscape geometry, inspired
+by empirical observations of their distinct dynamics at both sample and Hessian
+levels. To formalize this, we extend the River-Valley landscape model by
+distinguishing between U-shaped valleys (flat) and V-shaped valleys (steep).
+Based on empirical observations, we conjecture that the recursive architecture
+of Looped-Attn induces a landscape-level inductive bias towards River-V-Valley.
+Theoretical derivations based on this inductive bias guarantee a better loss
+convergence along the river due to valley hopping, and further encourage
+learning about complex patterns compared to the River-U-Valley induced by
+Single-Attn. Building on this insight, we propose SHIFT (Staged HIerarchical
+Framework for Progressive Training), a staged training framework that
+accelerates the training process of Looped-Attn while achieving comparable
+performances.</p></br><a href="http://arxiv.org/pdf/2510.09805v1" target="_blank"><h2>Temporal Lifting as Latent-Space Regularization for Continuous-Time Flow
+  Models in AI Systems</h2></a><strong><u>Authors:</u></strong>  Jeffrey Camlin</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 35Q30, 76D05, 65M70, 68T07, 68T27, 03D45, I.2.0</br><strong><u>Comments:</u></strong> 6 pages, 1 figure, 1 table, 1 algorithm</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We present a latent-space formulation of adaptive temporal reparametrization
+for continuous-time dynamical systems. The method, called *temporal lifting*,
+introduces a smooth monotone mapping $t \mapsto \tau(t)$ that regularizes
+near-singular behavior of the underlying flow while preserving its conservation
+laws. In the lifted coordinate, trajectories such as those of the
+incompressible Navier-Stokes equations on the torus $\mathbb{T}^3$ become
+globally smooth. From the standpoint of machine-learning dynamics, temporal
+lifting acts as a continuous-time normalization or time-warping operator that
+can stabilize physics-informed neural networks and other latent-flow
+architectures used in AI systems. The framework links analytic regularity
+theory with representation-learning methods for stiff or turbulent processes.</p></br><a href="http://arxiv.org/pdf/2510.09477v1" target="_blank"><h2>Efficient Autoregressive Inference for Transformer Probabilistic Models</h2></a><strong><u>Authors:</u></strong>  Conor Hassan, Nasrulloh Loka, Cen-You Li, Daolang Huang, Paul E. Chang, Yang Yang, Francesco Silvestrin, Samuel Kaski, Luigi Acerbi</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformer-based models for amortized probabilistic inference, such as
+neural processes, prior-fitted networks, and tabular foundation models, excel
+at single-pass marginal prediction. However, many real-world applications, from
+signal interpolation to multi-column tabular predictions, require coherent
+joint distributions that capture dependencies between predictions. While purely
+autoregressive architectures efficiently generate such distributions, they
+sacrifice the flexible set-conditioning that makes these models powerful for
+meta-learning. Conversely, the standard approach to obtain joint distributions
+from set-based models requires expensive re-encoding of the entire augmented
+conditioning set at each autoregressive step. We introduce a causal
+autoregressive buffer that preserves the advantages of both paradigms. Our
+approach decouples context encoding from updating the conditioning set. The
+model processes the context once and caches it. A dynamic buffer then captures
+target dependencies: as targets are incorporated, they enter the buffer and
+attend to both the cached context and previously buffered targets. This enables
+efficient batched autoregressive generation and one-pass joint log-likelihood
+evaluation. A unified training strategy allows seamless integration of
+set-based and autoregressive modes at minimal additional cost. Across synthetic
+functions, EEG signals, cognitive models, and tabular data, our method matches
+predictive accuracy of strong baselines while delivering up to 20 times faster
+joint sampling. Our approach combines the efficiency of autoregressive
+generative models with the representational power of set-based conditioning,
+making joint prediction practical for transformer-based probabilistic models.</p></br><a href="http://arxiv.org/pdf/2510.09891v1" target="_blank"><h2>Probabilistic bias adjustment of seasonal predictions of Arctic Sea Ice
+  Concentration</h2></a><strong><u>Authors:</u></strong>  Parsa Gooya, Reinel Sospedra-Alfonso</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, physics.ao-ph, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract)</br><p><strong><u>Abstract:</u></strong> Seasonal forecast of Arctic sea ice concentration is key to mitigate the
+negative impact and assess potential opportunities posed by the rapid decline
+of sea ice coverage. Seasonal prediction systems based on climate models often
+show systematic biases and complex spatio-temporal errors that grow with the
+forecasts. Consequently, operational predictions are routinely bias corrected
+and calibrated using retrospective forecasts. For predictions of Arctic sea ice
+concentration, error corrections are mainly based on one-to-one post-processing
+methods including climatological mean or linear regression correction and, more
+recently, machine learning. Such deterministic adjustments are confined at best
+to the limited number of costly-to-run ensemble members of the raw forecast.
+However, decision-making requires proper quantification of uncertainty and
+likelihood of events, particularly of extremes. We introduce a probabilistic
+error correction framework based on a conditional Variational Autoencoder model
+to map the conditional distribution of observations given the biased model
+prediction. This method naturally allows for generating large ensembles of
+adjusted forecasts. We evaluate our model using deterministic and probabilistic
+metrics and show that the adjusted forecasts are better calibrated, closer to
+the observational distribution, and have smaller errors than climatological
+mean adjusted forecasts.</p></br><a href="http://arxiv.org/pdf/2510.10480v1" target="_blank"><h2>Latent Retrieval Augmented Generation of Cross-Domain Protein Binders</h2></a><strong><u>Authors:</u></strong>  Zishen Zhang, Xiangzhe Kong, Wenbing Huang, Yang Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Designing protein binders targeting specific sites, which requires to
+generate realistic and functional interaction patterns, is a fundamental
+challenge in drug discovery. Current structure-based generative models are
+limited in generating nterfaces with sufficient rationality and
+interpretability. In this paper, we propose Retrieval-Augmented Diffusion for
+Aligned interface (RADiAnce), a new framework that leverages known interfaces
+to guide the design of novel binders. By unifying retrieval and generation in a
+shared contrastive latent space, our model efficiently identifies relevant
+interfaces for a given binding site and seamlessly integrates them through a
+conditional latent diffusion generator, enabling cross-domain interface
+transfer. Extensive exeriments show that RADiAnce significantly outperforms
+baseline models across multiple metrics, including binding affinity and
+recovery of geometries and interactions. Additional experimental results
+validate cross-domain generalization, demonstrating that retrieving interfaces
+from diverse domains, such as peptides, antibodies, and protein fragments,
+enhances the generation performance of binders for other domains. Our work
+establishes a new paradigm for protein binder design that successfully bridges
+retrieval-based knowledge and generative AI, opening new possibilities for drug
+discovery.</p></br><a href="http://arxiv.org/pdf/2510.09513v1" target="_blank"><h2>Interpretable Generative and Discriminative Learning for Multimodal and
+  Incomplete Clinical Data</h2></a><strong><u>Authors:</u></strong>  Albert Belenguer-Llorens, Carlos Sevilla-Salcedo, Janaina Mourao-Miranda, Vanessa Gómez-Verdejo</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Real-world clinical problems are often characterized by multimodal data,
+usually associated with incomplete views and limited sample sizes in their
+cohorts, posing significant limitations for machine learning algorithms. In
+this work, we propose a Bayesian approach designed to efficiently handle these
+challenges while providing interpretable solutions. Our approach integrates (1)
+a generative formulation to capture cross-view relationships with a
+semi-supervised strategy, and (2) a discriminative task-oriented formulation to
+identify relevant information for specific downstream objectives. This dual
+generative-discriminative formulation offers both general understanding and
+task-specific insights; thus, it provides an automatic imputation of the
+missing views while enabling robust inference across different data sources.
+The potential of this approach becomes evident when applied to the multimodal
+clinical data, where our algorithm is able to capture and disentangle the
+complex interactions among biological, psychological, and sociodemographic
+modalities.</p></br><a href="http://arxiv.org/pdf/2510.10075v1" target="_blank"><h2>Gradient-based Model Shortcut Detection for Time Series Classification</h2></a><strong><u>Authors:</u></strong>  Salomon Ibarra, Frida Cantu, Kaixiong Zhou, Li Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Code available at:this https URL</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Deep learning models have attracted lots of research attention in time series
+classification (TSC) task in the past two decades. Recently, deep neural
+networks (DNN) have surpassed classical distance-based methods and achieved
+state-of-the-art performance. Despite their promising performance, deep neural
+networks (DNNs) have been shown to rely on spurious correlations present in the
+training data, which can hinder generalization. For instance, a model might
+incorrectly associate the presence of grass with the label ``cat" if the
+training set have majority of cats lying in grassy backgrounds. However, the
+shortcut behavior of DNNs in time series remain under-explored. Most existing
+shortcut work are relying on external attributes such as gender, patients
+group, instead of focus on the internal bias behavior in time series models.
+  In this paper, we take the first step to investigate and establish
+point-based shortcut learning behavior in deep learning time series
+classification. We further propose a simple detection method based on other
+class to detect shortcut occurs without relying on test data or clean training
+classes. We test our proposed method in UCR time series datasets.</p></br><a href="http://arxiv.org/pdf/2510.10693v1" target="_blank"><h2>High-Dimensional Learning Dynamics of Quantized Models with
+  Straight-Through Estimator</h2></a><strong><u>Authors:</u></strong>  Yuma Ichikawa, Shuhei Kashiwamura, Ayaka Sakata</br><strong><u>Categories:</u></strong> stat.ML, cond-mat.dis-nn, cs.AI, cs.LG, math.ST, stat.TH</br><strong><u>Comments:</u></strong> 27 pages, 14 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Quantized neural network training optimizes a discrete, non-differentiable
+objective. The straight-through estimator (STE) enables backpropagation through
+surrogate gradients and is widely used. While previous studies have primarily
+focused on the properties of surrogate gradients and their convergence, the
+influence of quantization hyperparameters, such as bit width and quantization
+range, on learning dynamics remains largely unexplored. We theoretically show
+that in the high-dimensional limit, STE dynamics converge to a deterministic
+ordinary differential equation. This reveals that STE training exhibits a
+plateau followed by a sharp drop in generalization error, with plateau length
+depending on the quantization range. A fixed-point analysis quantifies the
+asymptotic deviation from the unquantized linear model. We also extend
+analytical techniques for stochastic gradient descent to nonlinear
+transformations of weights and inputs.</p></br><a href="http://arxiv.org/pdf/2510.10032v1" target="_blank"><h2>Photo-$z$ Estimation with Normalizing Flow</h2></a><strong><u>Authors:</u></strong>  Yiming Ren, Kwan Chuen Chan, Le Zhang, Yin Li, Haolin Zhang, Ruiyu Song, Yan Gong, Xian-Min Meng, Xingchen Zhou</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> 19 pages, 14 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate photometric redshift (photo-$z$) estimation is a key challenge in
+cosmology, as uncertainties in photo-$z$ directly limit the scientific return
+of large-scale structure and weak lensing studies, especially in upcoming Stage
+IV surveys. The problem is particularly severe for faint galaxies with sparse
+spectroscopic training data. In this work, we introduce nflow-$z$, a novel
+photo-$z$ estimation method using the powerful machine learning technique of
+normalizing flow (NF). nflow-$z$ explicitly models the redshift probability
+distribution conditioned on the observables such as fluxes and colors. We build
+two nflow-$z$ implementations, dubbed cINN and cNSF, and compare their
+performance. We demonstrate the effectiveness of nflow-$z$ on several datasets,
+including a CSST mock, the COSMOS2020 catalog, and samples from DES Y1, SDSS,
+and DESCaLS. Our evaluation against state-of-the-art algorithms shows that
+nflow-$z$ performs favorably. For instance, cNSF surpasses Random Forest,
+Multi-Layer Perceptron, and Convolutional Neutral Network on the CSST mock
+test. We also achieve a ~30\% improvement over official results for the faint
+DESCaLS sample and outperform conditional Generative Adversarial Network and
+Mixture Density Network methods on the DES Y1 dataset test. Furthermore,
+nflow-$z$ is computationally efficient, requiring only a fraction of the
+computing time of some of the competing algorithms. Our algorithm is
+particularly effective for the faint sample with sparse training data, making
+it highly suitable for upcoming Stage IV surveys.</p></br><a href="http://arxiv.org/pdf/2510.08965v1" target="_blank"><h2>HiBBO: HiPPO-based Space Consistency for High-dimensional Bayesian
+  Optimisation</h2></a><strong><u>Authors:</u></strong>  Junyu Xuan, Wenlong Chen, Yingzhen Li</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Bayesian Optimisation (BO) is a powerful tool for optimising expensive
+blackbox functions but its effectiveness diminishes in highdimensional spaces
+due to sparse data and poor surrogate model scalability While Variational
+Autoencoder (VAE) based approaches address this by learning low-dimensional
+latent representations the reconstructionbased objective function often brings
+the functional distribution mismatch between the latent space and original
+space leading to suboptimal optimisation performance In this paper we first
+analyse the reason why reconstructiononly loss may lead to distribution
+mismatch and then propose HiBBO a novel BO framework that introduces the space
+consistency into the latent space construction in VAE using HiPPO - a method
+for longterm sequence modelling - to reduce the functional distribution
+mismatch between the latent space and original space Experiments on
+highdimensional benchmark tasks demonstrate that HiBBO outperforms existing
+VAEBO methods in convergence speed and solution quality Our work bridges the
+gap between high-dimensional sequence representation learning and efficient
+Bayesian Optimisation enabling broader applications in neural architecture
+search materials science and beyond.</p></br><a href="http://arxiv.org/pdf/2510.11711v1" target="_blank"><h2>Reinforced sequential Monte Carlo for amortised sampling</h2></a><strong><u>Authors:</u></strong>  Sanghyeok Choi, Sarthak Mittal, Víctor Elvira, Jinkyoo Park, Nikolay Malkin</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> code:this https URL</br><strong><u>Matching Keywords:</u></strong> multi-modal (abstract)</br><p><strong><u>Abstract:</u></strong> This paper proposes a synergy of amortised and particle-based methods for
+sampling from distributions defined by unnormalised density functions. We state
+a connection between sequential Monte Carlo (SMC) and neural sequential
+samplers trained by maximum-entropy reinforcement learning (MaxEnt RL), wherein
+learnt sampling policies and value functions define proposal kernels and twist
+functions. Exploiting this connection, we introduce an off-policy RL training
+procedure for the sampler that uses samples from SMC -- using the learnt
+sampler as a proposal -- as a behaviour policy that better explores the target
+distribution. We describe techniques for stable joint training of proposals and
+twist functions and an adaptive weight tempering scheme to reduce training
+signal variance. Furthermore, building upon past attempts to use experience
+replay to guide the training of neural samplers, we derive a way to combine
+historical samples with annealed importance sampling weights within a replay
+buffer. On synthetic multi-modal targets (in both continuous and discrete
+spaces) and the Boltzmann distribution of alanine dipeptide conformations, we
+demonstrate improvements in approximating the true distribution as well as
+training stability compared to both amortised and Monte Carlo methods.</p></br><a href="http://arxiv.org/pdf/2510.09990v1" target="_blank"><h2>An FPCA-Enhanced Ensemble Learning Framework for Photometric
+  Identification of Type Ia Supernovae</h2></a><strong><u>Authors:</u></strong>  Moonzarin Reza, Lifan Wang, Lei Hu</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> Submitted to The Astrophysical Journal (ApJ) 24 pages, 16 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), VAE (title, abstract)</br><p><strong><u>Abstract:</u></strong> Type Ia supernovae (SNe Ia) are essential tools for addressing key cosmic
+questions, including the Hubble tension and the nature of dark energy. Modern
+surveys are predominantly photometry-based, making the construction of a clean
+photometric SNe Ia sample crucial. In this study, we investigate whether
+functional principal component analysis (FPCA) scores derived from photometric
+light curves, combined with ensemble learning, can reliably distinguish SNe Ia
+from other transients using the PLAsTiCC dataset. FPCA provides a data-driven,
+flexible characterization of light curves without relying on rigid theoretical
+model assumptions. Light curves are fitted by minimizing residuals with penalty
+terms from clean samples, making the method robust to outliers or poorly
+sampled bands. The first two FPCA scores and peak magnitudes across the five
+LSST bands are used as classification features. We implement two complementary
+binary classifiers: an ensemble boosting model (CatBoost) and a statistical
+probabilistic method based on Euclidean distances. CatBoost slightly
+outperforms the statistical method, achieving 98.5% accuracy and 97.8%
+precision. Performance remains robust (>90%) under typical photometric redshift
+uncertainties ({\sigma} = 0.1). On the spectroscopic DES Y5 sample, both
+methods reach approximately 90% accuracy and 95% precision, demonstrating
+strong out-of-domain generalization compared to state-of-the-art methods with
+limited cross-survey applicability. Applied to DECam DDF and DESIRT transients,
+the predictions strongly agree, and their intersection provides a
+high-confidence SNe Ia sample for cosmological analyses. Overall, this
+FPCA-based framework offers a powerful, flexible tool for classifying
+transients in upcoming large-scale surveys such as LSST and Roman.</p></br><a href="http://arxiv.org/pdf/2510.08993v1" target="_blank"><h2>PlatformX: An End-to-End Transferable Platform for Energy-Efficient
+  Neural Architecture Search</h2></a><strong><u>Authors:</u></strong>  Xiaolong Tu, Dawei Chen, Kyungtae Han, Onur Altintas, Haoxin Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Hardware-Aware Neural Architecture Search (HW-NAS) has emerged as a powerful
+tool for designing efficient deep neural networks (DNNs) tailored to edge
+devices. However, existing methods remain largely impractical for real-world
+deployment due to their high time cost, extensive manual profiling, and poor
+scalability across diverse hardware platforms with complex, device-specific
+energy behavior. In this paper, we present PlatformX, a fully automated and
+transferable HW-NAS framework designed to overcome these limitations. PlatformX
+integrates four key components: (i) an energy-driven search space that expands
+conventional NAS design by incorporating energy-critical configurations,
+enabling exploration of high-efficiency architectures; (ii) a transferable
+kernel-level energy predictor across devices and incrementally refined with
+minimal on-device samples; (iii) a Pareto-based multi-objective search
+algorithm that balances energy and accuracy to identify optimal trade-offs; and
+(iv) a high-resolution runtime energy profiling system that automates on-device
+power measurement using external monitors without human intervention. We
+evaluate PlatformX across multiple mobile platforms, showing that it
+significantly reduces search overhead while preserving accuracy and energy
+fidelity. It identifies models with up to 0.94 accuracy or as little as 0.16 mJ
+per inference, both outperforming MobileNet-V2 in accuracy and efficiency. Code
+and tutorials are available at github.com/amai-gsu/PlatformX.</p></br><a href="http://arxiv.org/pdf/2510.08908v1" target="_blank"><h2>A Frequency-Domain Analysis of the Multi-Armed Bandit Problem: A New
+  Perspective on the Exploration-Exploitation Trade-off</h2></a><strong><u>Authors:</u></strong>  Di Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.IT, math.IT, math.OC, stat.ML, 68T05, 62L05, 94A12, I.2.6; G.3</br><strong><u>Comments:</u></strong> 6 pages</br><strong><u>Matching Keywords:</u></strong> time-domain (abstract)</br><p><strong><u>Abstract:</u></strong> The stochastic multi-armed bandit (MAB) problem is one of the most
+fundamental models in sequential decision-making, with the core challenge being
+the trade-off between exploration and exploitation. Although algorithms such as
+Upper Confidence Bound (UCB) and Thompson Sampling, along with their regret
+theories, are well-established, existing analyses primarily operate from a
+time-domain and cumulative regret perspective, struggling to characterize the
+dynamic nature of the learning process. This paper proposes a novel
+frequency-domain analysis framework, reformulating the bandit process as a
+signal processing problem. Within this framework, the reward estimate of each
+arm is viewed as a spectral component, with its uncertainty corresponding to
+the component's frequency, and the bandit algorithm is interpreted as an
+adaptive filter. We construct a formal Frequency-Domain Bandit Model and prove
+the main theorem: the confidence bound term in the UCB algorithm is equivalent
+in the frequency domain to a time-varying gain applied to uncertain spectral
+components, a gain inversely proportional to the square root of the visit
+count. Based on this, we further derive finite-time dynamic bounds concerning
+the exploration rate decay. This theory not only provides a novel and intuitive
+physical interpretation for classical algorithms but also lays a rigorous
+theoretical foundation for designing next-generation algorithms with adaptive
+parameter adjustment.</p></br><a href="http://arxiv.org/pdf/2510.09762v1" target="_blank"><h2>PatentVision: A multimodal method for drafting patent applications</h2></a><strong><u>Authors:</u></strong>  Ruo Yang, Sai Krishna Reddy Mudhiganti, Manali Sharma</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Patent drafting is complex due to its need for detailed technical
+descriptions, legal compliance, and visual elements. Although Large Vision
+Language Models (LVLMs) show promise across various tasks, their application in
+automating patent writing remains underexplored. In this paper, we present
+PatentVision, a multimodal framework that integrates textual and visual inputs
+such as patent claims and drawings to generate complete patent specifications.
+Built on advanced LVLMs, PatentVision enhances accuracy by combining fine tuned
+vision language models with domain specific training tailored to patents.
+Experiments reveal it surpasses text only methods, producing outputs with
+greater fidelity and alignment with human written standards. Its incorporation
+of visual data allows it to better represent intricate design features and
+functional connections, leading to richer and more precise results. This study
+underscores the value of multimodal techniques in patent automation, providing
+a scalable tool to reduce manual workloads and improve consistency.
+PatentVision not only advances patent drafting but also lays the groundwork for
+broader use of LVLMs in specialized areas, potentially transforming
+intellectual property management and innovation processes.</p></br><a href="http://arxiv.org/pdf/2510.10102v1" target="_blank"><h2>PANTHER: Generative Pretraining Beyond Language for Sequential User
+  Behavior Modeling</h2></a><strong><u>Authors:</u></strong>  Guilin Li, Yun Zhang, Xiuyuan Chen, Chengqi Li, Bo Wang, Linghe Kong, Wenjia Wang, Weiran Huang, Matthias Hwai Yong Tan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Large language models (LLMs) have shown that generative pretraining can
+distill vast world knowledge into compact token representations. While LLMs
+encapsulate extensive world knowledge, they remain limited in modeling the
+behavioral knowledge contained within user interaction histories. User behavior
+forms a distinct modality, where each action, defined by multi-dimensional
+attributes such as time, context, and transaction type, constitutes a
+behavioral token. Modeling these high-cardinality sequences is challenging, and
+discriminative models often falter under limited supervision. To bridge this
+gap, we extend generative pretraining to user behavior, learning transferable
+representations from unlabeled behavioral data analogous to how LLMs learn from
+text. We present PANTHER, a hybrid generative-discriminative framework that
+unifies user behavior pretraining and downstream adaptation, enabling
+large-scale sequential user representation learning and real-time inference.
+PANTHER introduces: (1) Structured Tokenization to compress multi-dimensional
+transaction attributes into an interpretable vocabulary; (2) Sequence Pattern
+Recognition Module (SPRM) for modeling periodic transaction motifs; (3) a
+Unified User-Profile Embedding that fuses static demographics with dynamic
+transaction histories; and (4) Real-time scalability enabled by offline caching
+of pretrained embeddings for millisecond-level inference. Fully deployed and
+operational online at WeChat Pay, PANTHER delivers a 25.6 percent boost in
+next-transaction prediction HitRate@1 and a 38.6 percent relative improvement
+in fraud detection recall over baselines. Cross-domain evaluations on public
+benchmarks show strong generalization, achieving up to 21 percent HitRate@1
+gains over transformer baselines, establishing PANTHER as a scalable,
+high-performance framework for industrial sequential user behavior modeling.</p></br><a href="http://arxiv.org/pdf/2510.10866v1" target="_blank"><h2>Quantifying Dataset Similarity to Guide Transfer Learning</h2></a><strong><u>Authors:</u></strong>  Shudong Sun, Hao Helen Zhang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transfer learning has become a cornerstone of modern machine learning, as it
+can empower models by leveraging knowledge from related domains to improve
+learning effectiveness. However, transferring from poorly aligned data can harm
+rather than help performance, making it crucial to determine whether the
+transfer will be beneficial before implementation. This work aims to address
+this challenge by proposing an innovative metric to measure dataset similarity
+and provide quantitative guidance on transferability. In the literature,
+existing methods largely focus on feature distributions while overlooking label
+information and predictive relationships, potentially missing critical
+transferability insights. In contrast, our proposed metric, the Cross-Learning
+Score (CLS), measures dataset similarity through bidirectional generalization
+performance between domains. We provide a theoretical justification for CLS by
+establishing its connection to the cosine similarity between the decision
+boundaries for the target and source datasets. Computationally, CLS is
+efficient and fast to compute as it bypasses the problem of expensive
+distribution estimation for high-dimensional problems. We further introduce a
+general framework that categorizes source datasets into positive, ambiguous, or
+negative transfer zones based on their CLS relative to the baseline error,
+enabling informed decisions. Additionally, we extend this approach to
+encoder-head architectures in deep learning to better reflect modern transfer
+pipelines. Extensive experiments on diverse synthetic and real-world tasks
+demonstrate that CLS can reliably predict whether transfer will improve or
+degrade performance, offering a principled tool for guiding data selection in
+transfer learning.</p></br><a href="http://arxiv.org/pdf/2510.11141v1" target="_blank"><h2>A Comprehensive Forecasting-Based Framework for Time Series Anomaly
+  Detection: Benchmarking on the Numenta Anomaly Benchmark (NAB)</h2></a><strong><u>Authors:</u></strong>  Mohammad Karami, Mostafa Jalali, Fatemeh Ghassemi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Time series anomaly detection is critical for modern digital infrastructures,
+yet existing methods lack systematic cross-domain evaluation. We present a
+comprehensive forecasting-based framework unifying classical methods
+(Holt-Winters, SARIMA) with deep learning architectures (LSTM, Informer) under
+a common residual-based detection interface. Our modular pipeline integrates
+preprocessing (normalization, STL decomposition), four forecasting models, four
+detection methods, and dual evaluation through forecasting metrics (MAE, RMSE,
+PCC) and detection metrics (Precision, Recall, F1, AUC). We conduct the first
+complete evaluation on the Numenta Anomaly Benchmark (58 datasets, 7
+categories) with 232 model training runs and 464 detection evaluations
+achieving 100\% success rate. LSTM achieves best performance (F1: 0.688,
+ranking first or second on 81\% of datasets) with exceptional correlation on
+complex patterns (PCC: 0.999). Informer provides competitive accuracy (F1:
+0.683) with 30\% faster training. Classical methods achieve perfect predictions
+on simple synthetic data with 60 lower cost but show 2-3 worse F1-scores on
+real-world datasets. Forecasting quality dominates detection performance:
+differences between detection methods (F1: 0.621-0.688) are smaller than
+between forecasting models (F1: 0.344-0.688). Our findings provide
+evidence-based guidance: use LSTM for complex patterns, Informer for
+efficiency-critical deployments, and classical methods for simple periodic data
+with resource constraints. The complete implementation and results establish
+baselines for future forecasting-based anomaly detection research.</p></br><a href="http://arxiv.org/pdf/2510.09177v1" target="_blank"><h2>Distributionally robust approximation property of neural networks</h2></a><strong><u>Authors:</u></strong>  Mihriban Ceylan, David J. Prömel</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.FA, math.PR</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The universal approximation property uniformly with respect to weakly compact
+families of measures is established for several classes of neural networks. To
+that end, we prove that these neural networks are dense in Orlicz spaces,
+thereby extending classical universal approximation theorems even beyond the
+traditional $L^p$-setting. The covered classes of neural networks include
+widely used architectures like feedforward neural networks with non-polynomial
+activation functions, deep narrow networks with ReLU activation functions and
+functional input neural networks.</p></br><a href="http://arxiv.org/pdf/2510.11133v1" target="_blank"><h2>Test-Time Adaptation by Causal Trimming</h2></a><strong><u>Authors:</u></strong>  Yingnan Liu, Rui Qiao, Mong Li Lee, Wynne Hsu</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted to the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025); Code is available atthis https URL</br><strong><u>Matching Keywords:</u></strong> data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Test-time adaptation aims to improve model robustness under distribution
+shifts by adapting models with access to unlabeled target samples. A primary
+cause of performance degradation under such shifts is the model's reliance on
+features that lack a direct causal relationship with the prediction target. We
+introduce Test-time Adaptation by Causal Trimming (TACT), a method that
+identifies and removes non-causal components from representations for test
+distributions. TACT applies data augmentations that preserve causal features
+while varying non-causal ones. By analyzing the changes in the representations
+using Principal Component Analysis, TACT identifies the highest variance
+directions associated with non-causal features. It trims the representations by
+removing their projections on the identified directions, and uses the trimmed
+representations for the predictions. During adaptation, TACT continuously
+tracks and refines these directions to get a better estimate of non-causal
+features. We theoretically analyze the effectiveness of this approach and
+empirically validate TACT on real-world out-of-distribution benchmarks. TACT
+consistently outperforms state-of-the-art methods by a significant margin.</p></br><a href="http://arxiv.org/pdf/2510.09046v1" target="_blank"><h2>A study of 80 known pulsars at 185 MHz using MWA incoherent drift-scan
+  observations</h2></a><strong><u>Authors:</u></strong>  Ting Yu, Hongyu Gong, Zhifu Gao, Zhongli Zhang, Zhigang Wen, Yujie Wang, Tao An</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.GA</br><strong><u>Comments:</u></strong> 16 pages, 9 figures, accepted for publication in MNRAS</br><strong><u>Matching Keywords:</u></strong> time-domain (abstract)</br><p><strong><u>Abstract:</u></strong> A systematic study of 80 known pulsars observed at 185 MHz has been conducted
+using archival incoherent-sum data from the Murchison Widefield Array (MWA).
+The dataset comprises 48 drift-scan observations from the MWA Voltage Capture
+System, covering approximately 30,000 square degrees of sky with sensitivities
+reaching about 8 mJy in the deepest regions. An optimized PRESTO-based search
+pipeline was deployed on the China SKA Regional Centre infrastructure. This
+enabled the detection of 80 known pulsars, representing a 60 percent increase
+over the previous census. Notably, this includes 30 pulsars with first-time
+detections at this frequency, of which pulse profiles and flux densities are
+presented. Spectral, scattering, and pulse-width properties were examined for
+the sample, providing observational constraints on low-frequency turnover,
+propagation effects, and width-period relations. This study highlights the
+value of wide-field, low-frequency time-domain surveys for constraining pulsar
+emission and propagation, offering empirical insights that may inform future
+observations with instruments such as SKA-Low.</p></br><a href="http://arxiv.org/pdf/2510.10195v1" target="_blank"><h2>CauchyNet: Compact and Data-Efficient Learning using Holomorphic
+  Activation Functions</h2></a><strong><u>Authors:</u></strong>  Hong-Kun Zhang, Xin Li, Sikun Yang, Zhihong Xia</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> A novel neural network inspired by Cauchy's integral formula, is proposed for
+function approximation tasks that include time series forecasting, missing data
+imputation, etc. Hence, the novel neural network is named CauchyNet. By
+embedding real-valued data into the complex plane, CauchyNet efficiently
+captures complex temporal dependencies, surpassing traditional real-valued
+models in both predictive performance and computational efficiency. Grounded in
+Cauchy's integral formula and supported by the universal approximation theorem,
+CauchyNet offers strong theoretical guarantees for function approximation. The
+architecture incorporates complex-valued activation functions, enabling robust
+learning from incomplete data while maintaining a compact parameter footprint
+and reducing computational overhead. Through extensive experiments in diverse
+domains, including transportation, energy consumption, and epidemiological
+data, CauchyNet consistently outperforms state-of-the-art models in predictive
+accuracy, often achieving a 50% lower mean absolute error with fewer
+parameters. These findings highlight CauchyNet's potential as an effective and
+efficient tool for data-driven predictive modeling, particularly in
+resource-constrained and data-scarce environments.</p></br><a href="http://arxiv.org/pdf/2510.09977v1" target="_blank"><h2>An Unsupervised Time Series Anomaly Detection Approach for Efficient
+  Online Process Monitoring of Additive Manufacturing</h2></a><strong><u>Authors:</u></strong>  Frida Cantu, Salomon Ibarra, Arturo Gonzales, Jesus Barreda, Chenang Liu, Li Zhang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 2025 IEEE 21st International Conference on Automation Science and Engineering</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Online sensing plays an important role in advancing modern manufacturing. The
+real-time sensor signals, which can be stored as high-resolution time series
+data, contain rich information about the operation status. One of its popular
+usages is online process monitoring, which can be achieved by effective anomaly
+detection from the sensor signals. However, most existing approaches either
+heavily rely on labeled data for training supervised models, or are designed to
+detect only extreme outliers, thus are ineffective at identifying subtle
+semantic off-track anomalies to capture where new regimes or unexpected
+routines start. To address this challenge, we propose an matrix profile-based
+unsupervised anomaly detection algorithm that captures fabrication cycle
+similarity and performs semantic segmentation to precisely identify the onset
+of defect anomalies in additive manufacturing. The effectiveness of the
+proposed method is demonstrated by the experiments on real-world sensor data.</p></br><a href="http://arxiv.org/pdf/2510.11090v1" target="_blank"><h2>Source-Free Object Detection with Detection Transformer</h2></a><strong><u>Authors:</u></strong>  Huizai Yao, Sicheng Zhao, Shuo Lu, Hui Chen, Yangyang Li, Guoping Liu, Tengfei Xing, Chenggang Yan, Jianhua Tao, Guiguang Ding</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> IEEE Transactions on Image Processing</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Source-Free Object Detection (SFOD) enables knowledge transfer from a source
+domain to an unsupervised target domain for object detection without access to
+source data. Most existing SFOD approaches are either confined to conventional
+object detection (OD) models like Faster R-CNN or designed as general solutions
+without tailored adaptations for novel OD architectures, especially Detection
+Transformer (DETR). In this paper, we introduce Feature Reweighting ANd
+Contrastive Learning NetworK (FRANCK), a novel SFOD framework specifically
+designed to perform query-centric feature enhancement for DETRs. FRANCK
+comprises four key components: (1) an Objectness Score-based Sample Reweighting
+(OSSR) module that computes attention-based objectness scores on multi-scale
+encoder feature maps, reweighting the detection loss to emphasize
+less-recognized regions; (2) a Contrastive Learning with Matching-based Memory
+Bank (CMMB) module that integrates multi-level features into memory banks,
+enhancing class-wise contrastive learning; (3) an Uncertainty-weighted
+Query-fused Feature Distillation (UQFD) module that improves feature
+distillation through prediction quality reweighting and query feature fusion;
+and (4) an improved self-training pipeline with a Dynamic Teacher Updating
+Interval (DTUI) that optimizes pseudo-label quality. By leveraging these
+components, FRANCK effectively adapts a source-pre-trained DETR model to a
+target domain with enhanced robustness and generalization. Extensive
+experiments on several widely used benchmarks demonstrate that our method
+achieves state-of-the-art performance, highlighting its effectiveness and
+compatibility with DETR-based SFOD models.</p></br><a href="http://arxiv.org/pdf/2510.09495v1" target="_blank"><h2>Precoder Design in Multi-User FDD Systems with VQ-VAE and GNN</h2></a><strong><u>Authors:</u></strong>  Srikar Allaparapu, Michael Baur, Benedikt Böck, Michael Joham, Wolfgang Utschick</br><strong><u>Categories:</u></strong> cs.IT, cs.AI, eess.SP, math.IT</br><strong><u>Comments:</u></strong> Submitted to IEEE ICASSP 2026</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Robust precoding is efficiently feasible in frequency division duplex (FDD)
+systems by incorporating the learnt statistics of the propagation environment
+through a generative model. We build on previous work that successfully
+designed site-specific precoders based on a combination of Gaussian mixture
+models (GMMs) and graph neural networks (GNNs). In this paper, by utilizing a
+vector quantized-variational autoencoder (VQ-VAE), we circumvent one of the key
+drawbacks of GMMs, i.e., the number of GMM components scales exponentially to
+the feedback bits. In addition, the deep learning architecture of the VQ-VAE
+allows us to jointly train the GNN together with VQ-VAE along with pilot
+optimization forming an end-to-end (E2E) model, resulting in considerable
+performance gains in sum rate for multi-user wireless systems. Simulations
+demonstrate the superiority of the proposed frameworks over the conventional
+methods involving the sub-discrete Fourier transform (DFT) pilot matrix and
+iterative precoder algorithms enabling the deployment of systems characterized
+by fewer pilots or feedback bits.</p></br><a href="http://arxiv.org/pdf/2510.10744v1" target="_blank"><h2>How Patterns Dictate Learnability in Sequential Data</h2></a><strong><u>Authors:</u></strong>  Mario Morawski, Anais Despres, Rémi Rehm</br><strong><u>Categories:</u></strong> stat.ML, cs.IT, cs.LG, math.IT</br><strong><u>Comments:</u></strong> NeurIPS 2025, 36 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> sequential data (title, abstract)</br><p><strong><u>Abstract:</u></strong> Sequential data - ranging from financial time series to natural language -
+has driven the growing adoption of autoregressive models. However, these
+algorithms rely on the presence of underlying patterns in the data, and their
+identification often depends heavily on human expertise. Misinterpreting these
+patterns can lead to model misspecification, resulting in increased
+generalization error and degraded performance. The recently proposed evolving
+pattern (EvoRate) metric addresses this by using the mutual information between
+the next data point and its past to guide regression order estimation and
+feature selection. Building on this idea, we introduce a general framework
+based on predictive information, defined as the mutual information between the
+past and the future, $I(X_{past}; X_{future})$. This quantity naturally defines
+an information-theoretic learning curve, which quantifies the amount of
+predictive information available as the observation window grows. Using this
+formalism, we show that the presence or absence of temporal patterns
+fundamentally constrains the learnability of sequential models: even an optimal
+predictor cannot outperform the intrinsic information limit imposed by the
+data. We validate our framework through experiments on synthetic data,
+demonstrating its ability to assess model adequacy, quantify the inherent
+complexity of a dataset, and reveal interpretable structure in sequential data.</p></br><a href="http://arxiv.org/pdf/2510.10909v1" target="_blank"><h2>PaperArena: An Evaluation Benchmark for Tool-Augmented Agentic Reasoning
+  on Scientific Literature</h2></a><strong><u>Authors:</u></strong>  Daoyu Wang, Mingyue Cheng, Qi Liu, Shuo Yu, Zirui Liu, Ze Guo</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> 12 pages, 9 figures</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding and reasoning on the web-scale scientific literature is a
+crucial touchstone for large language model (LLM) based agents designed to
+support complex knowledge-intensive tasks. However, existing works are mainly
+restricted to tool-free tasks within isolated papers, largely due to the lack
+of a benchmark for cross-paper reasoning and multi-tool orchestration in real
+research scenarios. In this work, we propose PaperArena, an evaluation
+benchmark for agents to address real-world research questions that typically
+require integrating information across multiple papers with the assistance of
+external tools. Given a research question, agents should integrate diverse
+formats across multiple papers through reasoning and interacting with
+appropriate tools, thereby producing a well-grounded answer. To support
+standardized evaluation, we provide a modular and extensible platform for agent
+execution, offering tools such as multimodal parsing, context retrieval, and
+programmatic computation. Experimental results reveal that even the most
+advanced LLM powering a well-established agent system achieves merely 38.78%
+average accuracy. On the hard subset, accuracy drops to only 18.47%,
+highlighting great potential for improvement. We also present several empirical
+findings, including that all agents tested exhibit inefficient tool usage,
+often invoking more tools than necessary to solve a task. We invite the
+community to adopt PaperArena to develop and evaluate more capable agents for
+scientific discovery. Our code and data are available
+https://github.com/Melmaphother/PaperArena.</p></br></body>

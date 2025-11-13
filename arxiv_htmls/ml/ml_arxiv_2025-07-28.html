@@ -1,0 +1,522 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 24 Jul 2025 to 28 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.19368v1" target="_blank"><h2>Counterfactual Explanations in Medical Imaging: Exploring SPN-Guided
+  Latent Space Manipulation</h2></a><strong><u>Authors:</u></strong>  Julia Siekiera, Stefan Kramer</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, 3 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Artificial intelligence is increasingly leveraged across various domains to
+automate decision-making processes that significantly impact human lives. In
+medical image analysis, deep learning models have demonstrated remarkable
+performance. However, their inherent complexity makes them black box systems,
+raising concerns about reliability and interpretability. Counterfactual
+explanations provide comprehensible insights into decision processes by
+presenting hypothetical "what-if" scenarios that alter model classifications.
+By examining input alterations, counterfactual explanations provide patterns
+that influence the decision-making process. Despite their potential, generating
+plausible counterfactuals that adhere to similarity constraints providing
+human-interpretable explanations remains a challenge. In this paper, we
+investigate this challenge by a model-specific optimization approach. While
+deep generative models such as variational autoencoders (VAEs) exhibit
+significant generative power, probabilistic models like sum-product networks
+(SPNs) efficiently represent complex joint probability distributions. By
+modeling the likelihood of a semi-supervised VAE's latent space with an SPN, we
+leverage its dual role as both a latent space descriptor and a classifier for a
+given discrimination task. This formulation enables the optimization of latent
+space counterfactuals that are both close to the original data distribution and
+aligned with the target class distribution. We conduct experimental evaluation
+on the cheXpert dataset. To evaluate the effectiveness of the integration of
+SPNs, our SPN-guided latent space manipulation is compared against a neural
+network baseline. Additionally, the trade-off between latent variable
+regularization and counterfactual quality is analyzed.</p></br><a href="http://arxiv.org/pdf/2507.19321v1" target="_blank"><h2>SIDE: Sparse Information Disentanglement for Explainable Artificial
+  Intelligence</h2></a><strong><u>Authors:</u></strong>  Viktar Dubovik, Łukasz Struski, Jacek Tabor, Dawid Rymarczyk</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding the decisions made by deep neural networks is essential in
+high-stakes domains such as medical imaging and autonomous driving. Yet, these
+models often lack transparency, particularly in computer vision.
+Prototypical-parts-based neural networks have emerged as a promising solution
+by offering concept-level explanations. However, most are limited to
+fine-grained classification tasks, with few exceptions such as InfoDisent.
+InfoDisent extends prototypical models to large-scale datasets like ImageNet,
+but produces complex explanations.
+  We introduce Sparse Information Disentanglement for Explainability (SIDE), a
+novel method that improves the interpretability of prototypical parts through a
+dedicated training and pruning scheme that enforces sparsity. Combined with
+sigmoid activations in place of softmax, this approach allows SIDE to associate
+each class with only a small set of relevant prototypes. Extensive experiments
+show that SIDE matches the accuracy of existing methods while reducing
+explanation size by over $90\%$, substantially enhancing the understandability
+of prototype-based explanations.</p></br><a href="http://arxiv.org/pdf/2507.18983v1" target="_blank"><h2>KASPER: Kolmogorov Arnold Networks for Stock Prediction and Explainable
+  Regimes</h2></a><strong><u>Authors:</u></strong>  Vidhi Oad, Param Pathak, Nouhaila Innan, Shalini D, Muhammad Shafique</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 11 pages, 7 figures, 3 tables</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Forecasting in financial markets remains a significant challenge due to their
+nonlinear and regime-dependent dynamics. Traditional deep learning models, such
+as long short-term memory networks and multilayer perceptrons, often struggle
+to generalize across shifting market conditions, highlighting the need for a
+more adaptive and interpretable approach. To address this, we introduce
+Kolmogorov-Arnold networks for stock prediction and explainable regimes
+(KASPER), a novel framework that integrates regime detection, sparse
+spline-based function modeling, and symbolic rule extraction. The framework
+identifies hidden market conditions using a Gumbel-Softmax-based mechanism,
+enabling regime-specific forecasting. For each regime, it employs
+Kolmogorov-Arnold networks with sparse spline activations to capture intricate
+price behaviors while maintaining robustness. Interpretability is achieved
+through symbolic learning based on Monte Carlo Shapley values, which extracts
+human-readable rules tailored to each regime. Applied to real-world financial
+time series from Yahoo Finance, the model achieves an $R^2$ score of 0.89, a
+Sharpe Ratio of 12.02, and a mean squared error as low as 0.0001, outperforming
+existing methods. This research establishes a new direction for regime-aware,
+transparent, and robust forecasting in financial markets.</p></br><a href="http://arxiv.org/pdf/2507.18525v1" target="_blank"><h2>Performance Study of the IceCube Upgrade Camera System</h2></a><strong><u>Authors:</u></strong>  Carsten Rott, Minje Park, Matti Jansson, Garrett Iverson, Seowon Choi</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> Presented at the 39th International Cosmic Ray Conference (ICRC2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The IceCube Upgrade Camera System is a novel calibration system designed to
+calibrate the IceCube detector by measuring the optical properties of the
+Antarctic ice. The system comprises nearly 2,000 cameras and illumination LEDs,
+which are present on every D-Egg and mDOM, the newly designed optical modules
+for the IceCube Upgrade. These units, deployed across the IceCube Upgrade
+volume, will capture transmission and reflection images that can be used to
+characterize the optical properties of both the refrozen ice within drill holes
+and the bulk ice between strings. Additionally, the images can aid in
+determining the positions of the optical modules the camera systems are mounted
+on. To maximize the systems performance, various image analysis methodologies
+have been explored, ranging from classical maximum likelihood estimation to
+AI-based approaches using neural networks. In this study, we present
+preliminary results on the performance of these methods based on images
+generated by a simulation tool developed specifically for this system.</p></br><a href="http://arxiv.org/pdf/2507.18031v1" target="_blank"><h2>ViGText: Deepfake Image Detection with Vision-Language Model
+  Explanations and Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Ahmad ALBarqawi, Mahmoud Nazzal, Issa Khalil, Abdallah Khreishah, NhatHai Phan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The rapid rise of deepfake technology, which produces realistic but
+fraudulent digital content, threatens the authenticity of media. Traditional
+deepfake detection approaches often struggle with sophisticated, customized
+deepfakes, especially in terms of generalization and robustness against
+malicious attacks. This paper introduces ViGText, a novel approach that
+integrates images with Vision Large Language Model (VLLM) Text explanations
+within a Graph-based framework to improve deepfake detection. The novelty of
+ViGText lies in its integration of detailed explanations with visual data, as
+it provides a more context-aware analysis than captions, which often lack
+specificity and fail to reveal subtle inconsistencies. ViGText systematically
+divides images into patches, constructs image and text graphs, and integrates
+them for analysis using Graph Neural Networks (GNNs) to identify deepfakes.
+Through the use of multi-level feature extraction across spatial and frequency
+domains, ViGText captures details that enhance its robustness and accuracy to
+detect sophisticated deepfakes. Extensive experiments demonstrate that ViGText
+significantly enhances generalization and achieves a notable performance boost
+when it detects user-customized deepfakes. Specifically, average F1 scores rise
+from 72.45% to 98.32% under generalization evaluation, and reflects the model's
+superior ability to generalize to unseen, fine-tuned variations of stable
+diffusion models. As for robustness, ViGText achieves an increase of 11.1% in
+recall compared to other deepfake detection approaches. When facing targeted
+attacks that exploit its graph-based architecture, ViGText limits
+classification performance degradation to less than 4%. ViGText uses detailed
+visual and textual analysis to set a new standard for detecting deepfakes,
+helping ensure media authenticity and information integrity.</p></br><a href="http://arxiv.org/pdf/2507.18555v2" target="_blank"><h2>Neural Tangent Kernels and Fisher Information Matrices for Simple ReLU
+  Networks with Random Hidden Weights</h2></a><strong><u>Authors:</u></strong>  Jun'ichi Takeuchi, Yoshinari Takeishi, Noboru Murata, Kazushi Mimura, Ka Long Keith Ho, Hiroshi Nagaoka</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Fisher information matrices and neural tangent kernels (NTK) for 2-layer ReLU
+networks with random hidden weight are argued. We discuss the relation between
+both notions as a linear transformation and show that spectral decomposition of
+NTK with concrete forms of eigenfunctions with major eigenvalues. We also
+obtain an approximation formula of the functions presented by the 2-layer
+neural networks.</p></br><a href="http://arxiv.org/pdf/2507.19233v1" target="_blank"><h2>Component-Based Machine Learning for Indoor Flow and Temperature Fields
+  Prediction Latent Feature Aggregation and Flow Interaction</h2></a><strong><u>Authors:</u></strong>  Shaofan Wang, Nils Thuerey, Philipp Geyer</br><strong><u>Categories:</u></strong> cs.LG, physics.flu-dyn</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate and efficient prediction of indoor airflow and temperature
+distributions is essential for building energy optimization and occupant
+comfort control. However, traditional CFD simulations are computationally
+intensive, limiting their integration into real-time or design-iterative
+workflows. This study proposes a component-based machine learning (CBML)
+surrogate modeling approach to replace conventional CFD simulation for fast
+prediction of indoor velocity and temperature fields. The model consists of
+three neural networks: a convolutional autoencoder with residual connections
+(CAER) to extract and compress flow features, a multilayer perceptron (MLP) to
+map inlet velocities to latent representations, and a convolutional neural
+network (CNN) as an aggregator to combine single-inlet features into dual-inlet
+scenarios. A two-dimensional room with varying left and right air inlet
+velocities is used as a benchmark case, with CFD simulations providing training
+and testing data. Results show that the CBML model accurately and fast predicts
+two-component aggregated velocity and temperature fields across both training
+and testing datasets.</p></br><a href="http://arxiv.org/pdf/2507.18632v1" target="_blank"><h2>SIDA: Synthetic Image Driven Zero-shot Domain Adaptation</h2></a><strong><u>Authors:</u></strong>  Ye-Chan Kim, SeungJu Cha, Si-Woo Kim, Taewhan Kim, Dong-Jin Kim</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, cs.MM</br><strong><u>Comments:</u></strong> Accepted to ACM MM 2025</br><strong><u>Matching Keywords:</u></strong> domain adaptation (title, abstract)</br><p><strong><u>Abstract:</u></strong> Zero-shot domain adaptation is a method for adapting a model to a target
+domain without utilizing target domain image data. To enable adaptation without
+target images, existing studies utilize CLIP's embedding space and text
+description to simulate target-like style features. Despite the previous
+achievements in zero-shot domain adaptation, we observe that these text-driven
+methods struggle to capture complex real-world variations and significantly
+increase adaptation time due to their alignment process. Instead of relying on
+text descriptions, we explore solutions leveraging image data, which provides
+diverse and more fine-grained style cues. In this work, we propose SIDA, a
+novel and efficient zero-shot domain adaptation method leveraging synthetic
+images. To generate synthetic images, we first create detailed, source-like
+images and apply image translation to reflect the style of the target domain.
+We then utilize the style features of these synthetic images as a proxy for the
+target domain. Based on these features, we introduce Domain Mix and Patch Style
+Transfer modules, which enable effective modeling of real-world variations. In
+particular, Domain Mix blends multiple styles to expand the intra-domain
+representations, and Patch Style Transfer assigns different styles to
+individual patches. We demonstrate the effectiveness of our method by showing
+state-of-the-art performance in diverse zero-shot adaptation scenarios,
+particularly in challenging domains. Moreover, our approach achieves high
+efficiency by significantly reducing the overall adaptation time.</p></br><a href="http://arxiv.org/pdf/2507.18147v1" target="_blank"><h2>Learning graphons from data: Random walks, transfer operators, and
+  spectral clustering</h2></a><strong><u>Authors:</u></strong>  Stefan Klus, Jason J. Bramburger</br><strong><u>Categories:</u></strong> stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Many signals evolve in time as a stochastic process, randomly switching
+between states over discretely sampled time points. Here we make an explicit
+link between the underlying stochastic process of a signal that can take on a
+bounded continuum of values and a random walk process on a graphon. Graphons
+are infinite-dimensional objects that represent the limit of convergent
+sequences of graphs whose size tends to infinity. We introduce transfer
+operators, such as the Koopman and Perron--Frobenius operators, associated with
+random walk processes on graphons and then illustrate how these operators can
+be estimated from signal data and how their eigenvalues and eigenfunctions can
+be used for detecting clusters, thereby extending conventional spectral
+clustering methods from graphs to graphons. Furthermore, we show that it is
+also possible to reconstruct transition probability densities and, if the
+random walk process is reversible, the graphon itself using only the signal.
+The resulting data-driven methods are applied to a variety of synthetic and
+real-world signals, including daily average temperatures and stock index
+values.</p></br><a href="http://arxiv.org/pdf/2507.19372v1" target="_blank"><h2>Learning neuro-symbolic convergent term rewriting systems</h2></a><strong><u>Authors:</u></strong>  Flavio Petruzzellis, Alberto Testolin, Alessandro Sperduti</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 48 pages, 31 figures. Submitted for review by Artificial Intelligence Journal</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Building neural systems that can learn to execute symbolic algorithms is a
+challenging open problem in artificial intelligence, especially when aiming for
+strong generalization and out-of-distribution performance. In this work, we
+introduce a general framework for learning convergent term rewriting systems
+using a neuro-symbolic architecture inspired by the rewriting algorithm itself.
+We present two modular implementations of such architecture: the Neural
+Rewriting System (NRS) and the Fast Neural Rewriting System (FastNRS). As a
+result of algorithmic-inspired design and key architectural elements, both
+models can generalize to out-of-distribution instances, with FastNRS offering
+significant improvements in terms of memory efficiency, training speed, and
+inference time. We evaluate both architectures on four tasks involving the
+simplification of mathematical formulas and further demonstrate their
+versatility in a multi-domain learning scenario, where a single model is
+trained to solve multiple types of problems simultaneously. The proposed system
+significantly outperforms two strong neural baselines: the Neural Data Router,
+a recent transformer variant specifically designed to solve algorithmic
+problems, and GPT-4o, one of the most powerful general-purpose large-language
+models. Moreover, our system matches or outperforms the latest o1-preview model
+from OpenAI that excels in reasoning benchmarks.</p></br><a href="http://arxiv.org/pdf/2507.19354v1" target="_blank"><h2>EffiComm: Bandwidth Efficient Multi Agent Communication</h2></a><strong><u>Authors:</u></strong>  Melih Yazgan, Allen Xavier Arasan, J. Marius Zöllner</br><strong><u>Categories:</u></strong> cs.CV, cs.LG, cs.RO</br><strong><u>Comments:</u></strong> Accepted for publication at ITSC 2025</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Collaborative perception allows connected vehicles to exchange sensor
+information and overcome each vehicle's blind spots. Yet transmitting raw point
+clouds or full feature maps overwhelms Vehicle-to-Vehicle (V2V) communications,
+causing latency and scalability problems. We introduce EffiComm, an end-to-end
+framework that transmits less than 40% of the data required by prior art while
+maintaining state-of-the-art 3D object detection accuracy. EffiComm operates on
+Bird's-Eye-View (BEV) feature maps from any modality and applies a two-stage
+reduction pipeline: (1) Selective Transmission (ST) prunes low-utility regions
+with a confidence mask; (2) Adaptive Grid Reduction (AGR) uses a Graph Neural
+Network (GNN) to assign vehicle-specific keep ratios according to role and
+network load. The remaining features are fused with a soft-gated
+Mixture-of-Experts (MoE) attention layer, offering greater capacity and
+specialization for effective feature integration. On the OPV2V benchmark,
+EffiComm reaches 0.84 mAP@0.7 while sending only an average of approximately
+1.5 MB per frame, outperforming previous methods on the accuracy-per-bit curve.
+These results highlight the value of adaptive, learned communication for
+scalable Vehicle-to-Everything (V2X) perception.</p></br><a href="http://arxiv.org/pdf/2507.19144v1" target="_blank"><h2>Solar Photovoltaic Assessment with Large Language Model</h2></a><strong><u>Authors:</u></strong>  Muhao Guo, Yang Weng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 27 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate detection and localization of solar photovoltaic (PV) panels in
+satellite imagery is essential for optimizing microgrids and active
+distribution networks (ADNs), which are critical components of renewable energy
+systems. Existing methods lack transparency regarding their underlying
+algorithms or training datasets, rely on large, high-quality PV training data,
+and struggle to generalize to new geographic regions or varied environmental
+conditions without extensive re-training. These limitations lead to
+inconsistent detection outcomes, hindering large-scale deployment and
+data-driven grid optimization. In this paper, we investigate how large language
+models (LLMs) can be leveraged to overcome these challenges. Despite their
+promise, LLMs face several challenges in solar panel detection, including
+difficulties with multi-step logical processes, inconsistent output formatting,
+frequent misclassification of visually similar objects (e.g., shadows, parking
+lots), and low accuracy in complex tasks such as spatial localization and
+quantification. To overcome these issues, we propose the PV Assessment with
+LLMs (PVAL) framework, which incorporates task decomposition for more efficient
+workflows, output standardization for consistent and scalable formatting,
+few-shot prompting to enhance classification accuracy, and fine-tuning using
+curated PV datasets with detailed annotations. PVAL ensures transparency,
+scalability, and adaptability across heterogeneous datasets while minimizing
+computational overhead. By combining open-source accessibility with robust
+methodologies, PVAL establishes an automated and reproducible pipeline for
+solar panel detection, paving the way for large-scale renewable energy
+integration and optimized grid management.</p></br><a href="http://arxiv.org/pdf/2507.18550v1" target="_blank"><h2>On the Performance of Concept Probing: The Influence of the Data
+  (Extended Version)</h2></a><strong><u>Authors:</u></strong>  Manuel de Sousa Ribeiro, Afonso Leote, João Leite</br><strong><u>Categories:</u></strong> cs.AI, cs.CV, cs.LG, cs.NE</br><strong><u>Comments:</u></strong> Extended version of the paper published in Proceedings of the European Conference on Artificial Intelligence (ECAI 2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Concept probing has recently garnered increasing interest as a way to help
+interpret artificial neural networks, dealing both with their typically large
+size and their subsymbolic nature, which ultimately renders them unfeasible for
+direct human interpretation. Concept probing works by training additional
+classifiers to map the internal representations of a model into human-defined
+concepts of interest, thus allowing humans to peek inside artificial neural
+networks. Research on concept probing has mainly focused on the model being
+probed or the probing model itself, paying limited attention to the data
+required to train such probing models. In this paper, we address this gap.
+Focusing on concept probing in the context of image classification tasks, we
+investigate the effect of the data used to train probing models on their
+performance. We also make available concept labels for two widely used
+datasets.</p></br><a href="http://arxiv.org/pdf/2507.18323v1" target="_blank"><h2>A Multi-Dataset Benchmark for Semi-Supervised Semantic Segmentation in
+  ECG Delineation</h2></a><strong><u>Authors:</u></strong>  Minje Park, Jeonghwa Lim, Taehyung Yu, Sunghoon Joo</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, eess.SP</br><strong><u>Comments:</u></strong> 6 pages, 2 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Electrocardiogram (ECG) delineation, the segmentation of meaningful waveform
+features, is critical for clinical diagnosis. Despite recent advances using
+deep learning, progress has been limited by the scarcity of publicly available
+annotated datasets. Semi-supervised learning presents a promising solution by
+leveraging abundant unlabeled ECG data. In this study, we present the first
+systematic benchmark for semi-supervised semantic segmentation (SemiSeg) in ECG
+delineation. We curated and unified multiple public datasets, including
+previously underused sources, to support robust and diverse evaluation. We
+adopted five representative SemiSeg algorithms from computer vision,
+implemented them on two different architectures: the convolutional network and
+the transformer, and evaluated them in two different settings: in-domain and
+cross-domain. Additionally, we propose ECG-specific training configurations and
+augmentation strategies and introduce a standardized evaluation framework. Our
+results show that the transformer outperforms the convolutional network in
+semi-supervised ECG delineation. We anticipate that our benchmark will serve as
+a foundation for advancing semi-supervised ECG delineation methods and will
+facilitate further research in this domain.</p></br><a href="http://arxiv.org/pdf/2507.18668v1" target="_blank"><h2>Efficient Knowledge Tracing Leveraging Higher-Order Information in
+  Integrated Graphs</h2></a><strong><u>Authors:</u></strong>  Donghee Han, Daehee Kim, Minjun Lee, Daeyoung Roh, Keejun Han, Mun Yong Yi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The rise of online learning has led to the development of various knowledge
+tracing (KT) methods. However, existing methods have overlooked the problem of
+increasing computational cost when utilizing large graphs and long learning
+sequences. To address this issue, we introduce Dual Graph Attention-based
+Knowledge Tracing (DGAKT), a graph neural network model designed to leverage
+high-order information from subgraphs representing student-exercise-KC
+relationships. DGAKT incorporates a subgraph-based approach to enhance
+computational efficiency. By processing only relevant subgraphs for each target
+interaction, DGAKT significantly reduces memory and computational requirements
+compared to full global graph models. Extensive experimental results
+demonstrate that DGAKT not only outperforms existing KT models but also sets a
+new standard in resource efficiency, addressing a critical need that has been
+largely overlooked by prior KT approaches.</p></br><a href="http://arxiv.org/pdf/2507.18989v1" target="_blank"><h2>GENIAL: Generative Design Space Exploration via Network Inversion for
+  Low Power Algorithmic Logic Units</h2></a><strong><u>Authors:</u></strong>  Maxence Bouvier, Ryan Amaudruz, Felix Arnold, Renzo Andri, Lukas Cavigelli</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.AR</br><strong><u>Comments:</u></strong> Under review</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> As AI workloads proliferate, optimizing arithmetic units is becoming
+increasingly important to reduce the footprint of digital systems. Conventional
+design flows, which often rely on manual or heuristics-based optimization, are
+limited in their ability to thoroughly explore the vast design space. In this
+paper, we introduce GENIAL, a machine learning-based framework for the
+automatic generation and optimization of arithmetic units, more specifically
+multipliers.
+  At the core of GENIAL is a Transformer-based surrogate model trained in two
+stages, involving self-supervised pretraining followed by supervised
+finetuning, to robustly forecast key hardware metrics such as power and area
+from abstracted design representations. By inverting the surrogate model,
+GENIAL efficiently searches for new operand encodings that directly minimize
+power consumption in arithmetic units for specific input data distributions.
+Extensive experiments on large datasets demonstrate that GENIAL is consistently
+more sample efficient than other methods, and converges faster towards
+optimized designs. This enables to deploy a high-effort logic synthesis
+optimization flow in the loop, improving the accuracy of the surrogate model.
+Notably, GENIAL automatically discovers encodings that achieve up to 18%
+switching activity savings within multipliers on representative AI workloads
+compared with the conventional two's complement. We also demonstrate the
+versatility of our approach by achieving significant improvements on Finite
+State Machines, highlighting GENIAL's applicability for a wide spectrum of
+logic functions. Together, these advances mark a significant step toward
+automated Quality-of-Results-optimized combinational circuit generation for
+digital systems.</p></br><a href="http://arxiv.org/pdf/2507.19168v1" target="_blank"><h2>Explainable AI guided unsupervised fault diagnostics for high-voltage
+  circuit breakers</h2></a><strong><u>Authors:</u></strong>  Chi-Ching Hsu, Gaëtan Frusque, Florent Forest, Felipe Macedo, Christian M. Franck, Olga Fink</br><strong><u>Categories:</u></strong> cs.LG, eess.SP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Commercial high-voltage circuit breaker (CB) condition monitoring systems
+rely on directly observable physical parameters such as gas filling pressure
+with pre-defined thresholds. While these parameters are crucial, they only
+cover a small subset of malfunctioning mechanisms and usually can be monitored
+only if the CB is disconnected from the grid. To facilitate online condition
+monitoring while CBs remain connected, non-intrusive measurement techniques
+such as vibration or acoustic signals are necessary. Currently, CB condition
+monitoring studies using these signals typically utilize supervised methods for
+fault diagnostics, where ground-truth fault types are known due to artificially
+introduced faults in laboratory settings. This supervised approach is however
+not feasible in real-world applications, where fault labels are unavailable. In
+this work, we propose a novel unsupervised fault detection and segmentation
+framework for CBs based on vibration and acoustic signals. This framework can
+detect deviations from the healthy state. The explainable artificial
+intelligence (XAI) approach is applied to the detected faults for fault
+diagnostics. The specific contributions are: (1) we propose an integrated
+unsupervised fault detection and segmentation framework that is capable of
+detecting faults and clustering different faults with only healthy data
+required during training (2) we provide an unsupervised explainability-guided
+fault diagnostics approach using XAI to offer domain experts potential
+indications of the aged or faulty components, achieving fault diagnostics
+without the prerequisite of ground-truth fault labels. These contributions are
+validated using an experimental dataset from a high-voltage CB under healthy
+and artificially introduced fault conditions, contributing to more reliable CB
+system operation.</p></br><a href="http://arxiv.org/pdf/2507.18987v1" target="_blank"><h2>Differentiated Thyroid Cancer Recurrence Classification Using Machine
+  Learning Models and Bayesian Neural Networks with Varying Priors: A
+  SHAP-Based Interpretation of the Best Performing Model</h2></a><strong><u>Authors:</u></strong>  HMNS Kumari, HMLS Kumari, UMMPK Nawarathne</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 16 pages, 15 figures, to be published in International Journal of Research in Computing (IJRC)</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Differentiated thyroid cancer DTC recurrence is a major public health
+concern, requiring classification and predictive models that are not only
+accurate but also interpretable and uncertainty aware. This study introduces a
+comprehensive framework for DTC recurrence classification using a dataset
+containing 383 patients and 16 clinical and pathological variables. Initially,
+11 machine learning ML models were employed using the complete dataset, where
+the Support Vector Machines SVM model achieved the highest accuracy of 0.9481.
+To reduce complexity and redundancy, feature selection was carried out using
+the Boruta algorithm, and the same ML models were applied to the reduced
+dataset, where it was observed that the Logistic Regression LR model obtained
+the maximum accuracy of 0.9611. However, these ML models often lack uncertainty
+quantification, which is critical in clinical decision making. Therefore, to
+address this limitation, the Bayesian Neural Networks BNN with six varying
+prior distributions, including Normal 0,1, Normal 0,10, Laplace 0,1, Cauchy
+0,1, Cauchy 0,2.5, and Horseshoe 1, were implemented on both the complete and
+reduced datasets. The BNN model with Normal 0,10 prior distribution exhibited
+maximum accuracies of 0.9740 and 0.9870 before and after feature selection,
+respectively.</p></br><a href="http://arxiv.org/pdf/2507.18815v1" target="_blank"><h2>Deepfake Detection Via Facial Feature Extraction and Modeling</h2></a><strong><u>Authors:</u></strong>  Benjamin Carter, Nathan Dilla, Micheal Callahan, Atuhaire Ambala</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Keywords: deepfake, facial recognition, feature extraction, artificial intelligence, recurrent neural network, convolutional neural network, artificial neural network</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The rise of deepfake technology brings forth new questions about the
+authenticity of various forms of media found online today. Videos and images
+generated by artificial intelligence (AI) have become increasingly more
+difficult to differentiate from genuine media, resulting in the need for new
+models to detect artificially-generated media. While many models have attempted
+to solve this, most focus on direct image processing, adapting a convolutional
+neural network (CNN) or a recurrent neural network (RNN) that directly
+interacts with the video image data. This paper introduces an approach of using
+solely facial landmarks for deepfake detection. Using a dataset consisting of
+both deepfake and genuine videos of human faces, this paper describes an
+approach for extracting facial landmarks for deepfake detection, focusing on
+identifying subtle inconsistencies in facial movements instead of raw image
+processing. Experimental results demonstrated that this feature extraction
+technique is effective in various neural network models, with the same facial
+landmarks tested on three neural network models, with promising performance
+metrics indicating its potential for real-world applications. The findings
+discussed in this paper include RNN and artificial neural network (ANN) models
+with accuracy between 96% and 93%, respectively, with a CNN model hovering
+around 78%. This research challenges the assumption that raw image processing
+is necessary to identify deepfake videos by presenting a facial feature
+extraction approach compatible with various neural network models while
+requiring fewer parameters.</p></br><a href="http://arxiv.org/pdf/2507.18738v1" target="_blank"><h2>An Explainable Equity-Aware P2P Energy Trading Framework for
+  Socio-Economically Diverse Microgrid</h2></a><strong><u>Authors:</u></strong>  Abhijan Theja, Mayukha Pal</br><strong><u>Categories:</u></strong> eess.SY, cs.GT, cs.LG, cs.SY</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Fair and dynamic energy allocation in community microgrids remains a critical
+challenge, particularly when serving socio-economically diverse participants.
+Static optimization and cost-sharing methods often fail to adapt to evolving
+inequities, leading to participant dissatisfaction and unsustainable
+cooperation. This paper proposes a novel framework that integrates
+multi-objective mixed-integer linear programming (MILP), cooperative game
+theory, and a dynamic equity-adjustment mechanism driven by reinforcement
+learning (RL). At its core, the framework utilizes a bi-level optimization
+model grounded in Equity-regarding Welfare Maximization (EqWM) principles,
+which incorporate Rawlsian fairness to prioritize the welfare of the least
+advantaged participants. We introduce a Proximal Policy Optimization (PPO)
+agent that dynamically adjusts socio-economic weights in the optimization
+objective based on observed inequities in cost and renewable energy access.
+This RL-powered feedback loop enables the system to learn and adapt,
+continuously striving for a more equitable state. To ensure transparency,
+Explainable AI (XAI) is used to interpret the benefit allocations derived from
+a weighted Shapley value. Validated across six realistic scenarios, the
+framework demonstrates peak demand reductions of up to 72.6%, and significant
+cooperative gains. The adaptive RL mechanism further reduces the Gini
+coefficient over time, showcasing a pathway to truly sustainable and fair
+energy communities.</p></br><a href="http://arxiv.org/pdf/2507.18967v1" target="_blank"><h2>Underwater Waste Detection Using Deep Learning A Performance Comparison
+  of YOLOv7 to 10 and Faster RCNN</h2></a><strong><u>Authors:</u></strong>  UMMPK Nawarathne, HMNS Kumari, HMLS Kumari</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 7 pages, 11 figures, to be published in International Journal of Research in Computing (IJRC)</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Underwater pollution is one of today's most significant environmental
+concerns, with vast volumes of garbage found in seas, rivers, and landscapes
+around the world. Accurate detection of these waste materials is crucial for
+successful waste management, environmental monitoring, and mitigation
+strategies. In this study, we investigated the performance of five cutting-edge
+object recognition algorithms, namely YOLO (You Only Look Once) models,
+including YOLOv7, YOLOv8, YOLOv9, YOLOv10, and Faster Region-Convolutional
+Neural Network (R-CNN), to identify which model was most effective at
+recognizing materials in underwater situations. The models were thoroughly
+trained and tested on a large dataset containing fifteen different classes
+under diverse conditions, such as low visibility and variable depths. From the
+above-mentioned models, YOLOv8 outperformed the others, with a mean Average
+Precision (mAP) of 80.9%, indicating a significant performance. This increased
+performance is attributed to YOLOv8's architecture, which incorporates advanced
+features such as improved anchor-free mechanisms and self-supervised learning,
+allowing for more precise and efficient recognition of items in a variety of
+settings. These findings highlight the YOLOv8 model's potential as an effective
+tool in the global fight against pollution, improving both the detection
+capabilities and scalability of underwater cleanup operations.</p></br><a href="http://arxiv.org/pdf/2507.19003v1" target="_blank"><h2>A diffusion-based generative model for financial time series via
+  geometric Brownian motion</h2></a><strong><u>Authors:</u></strong>  Gihun Kim, Sun-Yong Choi, Yeoneung Kim</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NA, math.NA, 60H10, 91G80, 91G60</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a novel diffusion-based generative framework for financial time
+series that incorporates geometric Brownian motion (GBM), the foundation of the
+Black--Scholes theory, into the forward noising process. Unlike standard
+score-based models that treat price trajectories as generic numerical
+sequences, our method injects noise proportionally to asset prices at each time
+step, reflecting the heteroskedasticity observed in financial time series. By
+accurately balancing the drift and diffusion terms, we show that the resulting
+log-price process reduces to a variance-exploding stochastic differential
+equation, aligning with the formulation in score-based generative models. The
+reverse-time generative process is trained via denoising score matching using a
+Transformer-based architecture adapted from the Conditional Score-based
+Diffusion Imputation (CSDI) framework. Empirical evaluations on historical
+stock data demonstrate that our model reproduces key stylized facts
+heavy-tailed return distributions, volatility clustering, and the leverage
+effect more realistically than conventional diffusion models.</p></br><a href="http://arxiv.org/pdf/2507.18448v1" target="_blank"><h2>Restoring Rhythm: Punctuation Restoration Using Transformer Models for
+  Bangla, a Low-Resource Language</h2></a><strong><u>Authors:</u></strong>  Md Obyedullahil Mamun, Md Adyelullahil Mamun, Arif Ahmad, Md. Imran Hossain Emu</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG, I.2; I.7</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Punctuation restoration enhances the readability of text and is critical for
+post-processing tasks in Automatic Speech Recognition (ASR), especially for
+low-resource languages like Bangla. In this study, we explore the application
+of transformer-based models, specifically XLM-RoBERTa-large, to automatically
+restore punctuation in unpunctuated Bangla text. We focus on predicting four
+punctuation marks: period, comma, question mark, and exclamation mark across
+diverse text domains. To address the scarcity of annotated resources, we
+constructed a large, varied training corpus and applied data augmentation
+techniques. Our best-performing model, trained with an augmentation factor of
+alpha = 0.20%, achieves an accuracy of 97.1% on the News test set, 91.2% on the
+Reference set, and 90.2% on the ASR set.
+  Results show strong generalization to reference and ASR transcripts,
+demonstrating the model's effectiveness in real-world, noisy scenarios. This
+work establishes a strong baseline for Bangla punctuation restoration and
+contributes publicly available datasets and code to support future research in
+low-resource NLP.</p></br><a href="http://arxiv.org/pdf/2507.18700v1" target="_blank"><h2>Adaptive Neural Quantum States: A Recurrent Neural Network Perspective</h2></a><strong><u>Authors:</u></strong>  Jake McNaughton, Mohamed Hibat-Allah</br><strong><u>Categories:</u></strong> cond-mat.dis-nn, cond-mat.str-el, cs.LG, physics.comp-ph, quant-ph</br><strong><u>Comments:</u></strong> 14 pages, 7 figures, 3 tables. Link to GitHub repository:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Neural-network quantum states (NQS) are powerful neural-network ans\"atzes
+that have emerged as promising tools for studying quantum many-body physics
+through the lens of the variational principle. These architectures are known to
+be systematically improvable by increasing the number of parameters. Here we
+demonstrate an Adaptive scheme to optimize NQSs, through the example of
+recurrent neural networks (RNN), using a fraction of the computation cost while
+reducing training fluctuations and improving the quality of variational
+calculations targeting ground states of prototypical models in one- and
+two-spatial dimensions. This Adaptive technique reduces the computational cost
+through training small RNNs and reusing them to initialize larger RNNs. This
+work opens up the possibility for optimizing graphical processing unit (GPU)
+resources deployed in large-scale NQS simulations.</p></br><a href="http://arxiv.org/pdf/2507.19427v1" target="_blank"><h2>Step-3 is Large yet Affordable: Model-system Co-design for
+  Cost-effective Decoding</h2></a><strong><u>Authors:</u></strong>  StepFun, :, Bin Wang, Bojun Wang, Changyi Wan, Guanzhe Huang, Hanpeng Hu, Haonan Jia, Hao Nie, Mingliang Li, Nuo Chen, Siyu Chen, Song Yuan, Wuxun Xie, Xiaoniu Song, Xing Chen, Xingping Yang, Xuelin Zhang, Yanbo Yu, Yaoyu Wang, Yibo Zhu, Yimin Jiang, Yu Zhou, Yuanwei Lu, Houyi Li, Jingcheng Hu, Ka Man Lo, Ailin Huang, Binxing Jiao, Bo Li, Boyu Chen, Changxin Miao, Chang Lou, Chen Hu, Chen Xu, Chenfeng Yu, Chengyuan Yao, Daokuan Lv, Dapeng Shi, Deshan Sun, Ding Huang, Dingyuan Hu, Dongqing Pang, Enle Liu, Fajie Zhang, Fanqi Wan, Gulin Yan, Han Zhang, Han Zhou, Hanghao Wu, Hangyu Guo, Hanqi Chen, Hanshan Zhang, Hao Wu, Haocheng Zhang, Haolong Yan, Haoran Lv, Haoran Wei, Hebin Zhou, Heng Wang, Heng Wang, Hongxin Li, Hongyu Zhou, Hongyuan Wang, Huiyong Guo, Jia Wang, Jiahao Gong, Jialing Xie, Jian Zhou, Jianjian Sun, Jiaoren Wu, Jiaran Zhang, Jiayu Liu, Jie Cheng, Jie Luo, Jie Yan, Jie Yang, Jieyi Hou, Jinguang Zhang, Jinlan Cao, Jisheng Yin, Junfeng Liu, Junhao Huang, Junzhe Lin, Kaijun Tan, Kaixiang Li, Kang An, Kangheng Lin, Kenkun Liu, Lei Yang, Liang Zhao, Liangyu Chen, Lieyu Shi, Liguo Tan, Lin Lin, Lin Zhang, Lina Chen, Liwen Huang, Liying Shi, Longlong Gu, Mei Chen, Mengqiang Ren, Ming Li, Mingzhe Chen, Na Wang, Nan Wu, Qi Han, Qian Zhao, Qiang Zhang, Qianni Liu, Qiaohui Chen, Qiling Wu, Qinglin He, Qinyuan Tan, Qiufeng Wang, Qiuping Wu, Qiuyan Liang, Quan Sun, Rui Li, Ruihang Miao, Ruosi Wan, Ruyan Guo, Shangwu Zhong, Shaoliang Pang, Shengjie Fan, Shijie Shang, Shilei Jiang, Shiliang Yang, Shiming Hao, Shuli Gao, Siming Huang, Siqi Liu, Tiancheng Cao, Tianhao Cheng, Tianhao Peng, Wang You, Wei Ji, Wen Sun, Wenjin Deng, Wenqing He, Wenzhen Zheng, Xi Chen, Xiangwen Kong, Xianzhen Luo, Xiaobo Yang, Xiaojia Liu, Xiaoxiao Ren, Xin Han, Xin Li, Xin Wu, Xu Zhao, Yanan Wei, Yang Li, Yangguang Li, Yangshijie Xu, Yanming Xu, Yaqiang Shi, Yeqing Shen, Yi Yang, Yifei Yang, Yifeng Gong, Yihan Chen, Yijing Yang, Yinmin Zhang, Yizhuang Zhou, Yuanhao Ding, Yuantao Fan, Yuanzhen Yang, Yuchu Luo, Yue Peng, Yufan Lu, Yuhang Deng, Yuhe Yin, Yujie Liu, Yukun Chen, Yuling Zhao, Yun Mou, Yunlong Li, Yunzhou Ju, Yusheng Li, Yuxiang Yang, Yuxiang Zhang, Yuyang Chen, Zejia Weng, Zhe Xie, Zheng Ge, Zheng Gong, Zhenyi Lu, Zhewei Huang, Zhichao Chang, Zhiguo Huang, Zhirui Wang, Zidong Yang, Zili Wang, Ziqi Wang, Zixin Zhang, Binxing Jiao, Daxin Jiang, Heung-Yeung Shum, Xiangyu Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Large language models (LLMs) face low hardware efficiency during decoding,
+especially for long-context reasoning tasks. This paper introduces Step-3, a
+321B-parameter VLM with hardware-aware model-system co-design optimized for
+minimizing decoding costs. Step-3 innovates in two key dimensions: (1) A novel
+Multi-Matrix Factorization Attention (MFA) mechanism that significantly reduces
+both KV cache size and computation while maintaining high attention
+expressiveness, and (2) Attention-FFN Disaggregation (AFD), a distributed
+inference system that decouples attention and Feed-Forward Network (FFN) layers
+into specialized subsystems. This co-design achieves unprecedented cost
+efficiency: Step-3 significantly reduces theoretical decoding costs compared
+with models like DeepSeek-V3 and Qwen3 MoE 235B, with the gains widening at
+longer context. Step-3 achieves low cost while activating 38B parameters per
+token (more than DeepSeek-V3 and Qwen3 MoE 235B), demonstrating that
+hardware-aligned attention arithmetic intensity, MoE sparsity, and AFD are
+critical to cost-effectiveness. We perform a head-to-head comparison with
+DeepSeek-V3 in its favorable scenarios. Our implementation on Hopper GPUs
+achieves a decoding throughput of up to 4,039 tokens per second per GPU under
+50ms TPOT SLA (4K context, FP8, no MTP). It is higher than DeepSeek-V3's 2,324
+in the same setup and sets a new Pareto frontier for LLM decoding.</p></br><a href="http://arxiv.org/pdf/2507.18937v1" target="_blank"><h2>CNN-based Surface Temperature Forecasts with Ensemble Numerical Weather
+  Prediction over Medium-range Forecast Periods</h2></a><strong><u>Authors:</u></strong>  Takuya Inoue, Takuya Kawabata</br><strong><u>Categories:</u></strong> physics.ao-ph, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 32 pages, 10 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This study proposes a method that integrates convolutional neural networks
+(CNNs) with ensemble numerical weather prediction (NWP) models, enabling
+surface temperature forecasting at lead times beyond the short-range (five-day)
+forecast period. Owing to limited computational resources, operational
+medium-range temperature forecasts typically rely on low-resolution NWP models,
+which are prone to systematic and random errors. To resolve these limitations,
+the proposed method first reduces systematic errors through CNN-based
+post-processing (bias correction and spatial super-resolution) on each ensemble
+member, reconstructing high-resolution temperature fields from low-resolution
+model outputs. Second, it reduces random errors through ensemble averaging of
+the CNN-corrected members. This study also investigates whether the sequence of
+CNN correction and ensemble averaging affects the forecast accuracy. For
+comparison with the proposed method, we additionally conducted experiments with
+the CNN trained on ensemble-averaged forecasts. The first approach--CNN
+correction before ensemble averaging--consistently achieved higher accuracy
+than the reverse approach. Although based on low-resolution ensemble forecasts,
+the proposed method notably outperformed the high-resolution deterministic NWP
+models. These findings indicate that combining CNN-based correction with
+ensemble averaging effectively reduces both the systematic and random errors in
+NWP model outputs. The proposed approach is a practical and scalable solution
+for improving medium-range temperature forecasts, and is particularly valuable
+at operational centers with limited computational resources.</p></br><a href="http://arxiv.org/pdf/2507.18627v1" target="_blank"><h2>Gait Recognition Based on Tiny ML and IMU Sensors</h2></a><strong><u>Authors:</u></strong>  Jiahang Zhang, Mingtong Chen, Zhengbao Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This project presents the development of a gait recognition system using Tiny
+Machine Learning (Tiny ML) and Inertial Measurement Unit (IMU) sensors. The
+system leverages the XIAO-nRF52840 Sense microcontroller and the LSM6DS3 IMU
+sensor to capture motion data, including acceleration and angular velocity,
+from four distinct activities: walking, stationary, going upstairs, and going
+downstairs. The data collected is processed through Edge Impulse, an edge AI
+platform, which enables the training of machine learning models that can be
+deployed directly onto the microcontroller for real-time activity
+classification.The data preprocessing step involves extracting relevant
+features from the raw sensor data using techniques such as sliding windows and
+data normalization, followed by training a Deep Neural Network (DNN) classifier
+for activity recognition. The model achieves over 80% accuracy on a test
+dataset, demonstrating its ability to classify the four activities effectively.
+Additionally, the platform enables anomaly detection, further enhancing the
+robustness of the system. The integration of Tiny ML ensures low-power
+operation, making it suitable for battery-powered or energy-harvesting devices.</p></br><a href="http://arxiv.org/pdf/2507.18115v1" target="_blank"><h2>Agentic AI framework for End-to-End Medical Data Inference</h2></a><strong><u>Authors:</u></strong>  Soorya Ram Shimgekar, Shayan Vassef, Abhay Goyal, Navin Kumar, Koustuv Saha</br><strong><u>Categories:</u></strong> cs.AI, cs.CL, cs.CY, cs.ET, cs.LG</br><strong><u>Comments:</u></strong> 10 pages, 5 figures, 2 tables, BIBM conference</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Building and deploying machine learning solutions in healthcare remains
+expensive and labor-intensive due to fragmented preprocessing workflows, model
+compatibility issues, and stringent data privacy constraints. In this work, we
+introduce an Agentic AI framework that automates the entire clinical data
+pipeline, from ingestion to inference, through a system of modular,
+task-specific agents. These agents handle both structured and unstructured
+data, enabling automatic feature selection, model selection, and preprocessing
+recommendation without manual intervention. We evaluate the system on publicly
+available datasets from geriatrics, palliative care, and colonoscopy imaging.
+For example, in the case of structured data (anxiety data) and unstructured
+data (colonoscopy polyps data), the pipeline begins with file-type detection by
+the Ingestion Identifier Agent, followed by the Data Anonymizer Agent ensuring
+privacy compliance, where we first identify the data type and then anonymize
+it. The Feature Extraction Agent identifies features using an embedding-based
+approach for tabular data, extracting all column names, and a multi-stage
+MedGemma-based approach for image data, which infers modality and disease name.
+These features guide the Model-Data Feature Matcher Agent in selecting the
+best-fit model from a curated repository. The Preprocessing Recommender Agent
+and Preprocessing Implementor Agent then apply tailored preprocessing based on
+data type and model requirements. Finally, the ``Model Inference Agent" runs
+the selected model on the uploaded data and generates interpretable outputs
+using tools like SHAP, LIME, and DETR attention maps. By automating these
+high-friction stages of the ML lifecycle, the proposed framework reduces the
+need for repeated expert intervention, offering a scalable, cost-efficient
+pathway for operationalizing AI in clinical environments.</p></br></body>

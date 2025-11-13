@@ -1,0 +1,721 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 22 Aug 2025 to 26 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.17376v1" target="_blank"><h2>ShaLa: Multimodal Shared Latent Space Modelling</h2></a><strong><u>Authors:</u></strong>  Jiali Cui, Yan-Ying Chen, Yanxia Zhang, Matthew Klenk</br><strong><u>Categories:</u></strong> cs.LG, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), latent space (title, abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper presents a novel generative framework for learning shared latent
+representations across multimodal data. Many advanced multimodal methods focus
+on capturing all combinations of modality-specific details across inputs, which
+can inadvertently obscure the high-level semantic concepts that are shared
+across modalities. Notably, Multimodal VAEs with low-dimensional latent
+variables are designed to capture shared representations, enabling various
+tasks such as joint multimodal synthesis and cross-modal inference. However,
+multimodal VAEs often struggle to design expressive joint variational
+posteriors and suffer from low-quality synthesis. In this work, ShaLa addresses
+these challenges by integrating a novel architectural inference model and a
+second-stage expressive diffusion prior, which not only facilitates effective
+inference of shared latent representation but also significantly improves the
+quality of downstream multimodal synthesis. We validate ShaLa extensively
+across multiple benchmarks, demonstrating superior coherence and synthesis
+quality compared to state-of-the-art multimodal VAEs. Furthermore, ShaLa scales
+to many more modalities while prior multimodal VAEs have fallen short in
+capturing the increasing complexity of the shared latent space.</p></br><a href="http://arxiv.org/pdf/2508.17256v1" target="_blank"><h2>Provable Generalization in Overparameterized Neural Nets</h2></a><strong><u>Authors:</u></strong>  Aviral Dhingra</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 8 Pages</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks often contain far more parameters than training
+examples, yet they still manage to generalize well in practice. Classical
+complexity measures such as VC-dimension or PAC-Bayes bounds usually become
+vacuous in this overparameterized regime, offering little explanation for the
+empirical success of models like Transformers. In this work, I explore an
+alternative notion of capacity for attention-based models, based on the
+effective rank of their attention matrices. The intuition is that, although the
+parameter count is enormous, the functional dimensionality of attention is
+often much lower. I show that this quantity leads to a generalization bound
+whose dependence on sample size matches empirical scaling laws observed in
+large language models, up to logarithmic factors. While the analysis is not a
+complete theory of overparameterized learning, it provides evidence that
+spectral properties of attention, rather than raw parameter counts, may be the
+right lens for understanding why these models generalize.</p></br><a href="http://arxiv.org/pdf/2508.18057v1" target="_blank"><h2>Dynamic Fusion Multimodal Network for SpeechWellness Detection</h2></a><strong><u>Authors:</u></strong>  Wenqiang Sun, Han Yin, Jisheng Bai, Jianfeng Chen</br><strong><u>Categories:</u></strong> cs.SD, cs.AI</br><strong><u>Comments:</u></strong> 6 pages, 5figures</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), time-domain (abstract)</br><p><strong><u>Abstract:</u></strong> Suicide is one of the leading causes of death among adolescents. Previous
+suicide risk prediction studies have primarily focused on either textual or
+acoustic information in isolation, the integration of multimodal signals, such
+as speech and text, offers a more comprehensive understanding of an
+individual's mental state. Motivated by this, and in the context of the 1st
+SpeechWellness detection challenge, we explore a lightweight multi-branch
+multimodal system based on a dynamic fusion mechanism for speechwellness
+detection. To address the limitation of prior approaches that rely on
+time-domain waveforms for acoustic analysis, our system incorporates both
+time-domain and time-frequency (TF) domain acoustic features, as well as
+semantic representations. In addition, we introduce a dynamic fusion block to
+adaptively integrate information from different modalities. Specifically, it
+applies learnable weights to each modality during the fusion process, enabling
+the model to adjust the contribution of each modality. To enhance computational
+efficiency, we design a lightweight structure by simplifying the original
+baseline model. Experimental results demonstrate that the proposed system
+exhibits superior performance compared to the challenge baseline, achieving a
+78% reduction in model parameters and a 5% improvement in accuracy.</p></br><a href="http://arxiv.org/pdf/2508.17521v1" target="_blank"><h2>Modeling Irregular Astronomical Time Series with Neural Stochastic Delay
+  Differential Equations</h2></a><strong><u>Authors:</u></strong>  YongKyung Oh, Seungsu Kam, Dong-Young Lim, Sungil Kim</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Astronomical time series from large-scale surveys like LSST are often
+irregularly sampled and incomplete, posing challenges for classification and
+anomaly detection. We introduce a new framework based on Neural Stochastic
+Delay Differential Equations (Neural SDDEs) that combines stochastic modeling
+with neural networks to capture delayed temporal dynamics and handle irregular
+observations. Our approach integrates a delay-aware neural architecture, a
+numerical solver for SDDEs, and mechanisms to robustly learn from noisy, sparse
+sequences. Experiments on irregularly sampled astronomical data demonstrate
+strong classification accuracy and effective detection of novel astrophysical
+events, even with partial labels. This work highlights Neural SDDEs as a
+principled and practical tool for time series analysis under observational
+constraints.</p></br><a href="http://arxiv.org/pdf/2508.17294v1" target="_blank"><h2>Explainable AI (XAI) for Arrhythmia detection from electrocardiograms</h2></a><strong><u>Authors:</u></strong>  Joschka Beck, Arlene John</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Advancements in deep learning have enabled highly accurate arrhythmia
+detection from electrocardiogram (ECG) signals, but limited interpretability
+remains a barrier to clinical adoption. This study investigates the application
+of Explainable AI (XAI) techniques specifically adapted for time-series ECG
+analysis. Using the MIT-BIH arrhythmia dataset, a convolutional neural
+network-based model was developed for arrhythmia classification, with
+R-peak-based segmentation via the Pan-Tompkins algorithm. To increase the
+dataset size and to reduce class imbalance, an additional 12-lead ECG dataset
+was incorporated. A user needs assessment was carried out to identify what kind
+of explanation would be preferred by medical professionals. Medical
+professionals indicated a preference for saliency map-based explanations over
+counterfactual visualisations, citing clearer correspondence with ECG
+interpretation workflows. Four SHapley Additive exPlanations (SHAP)-based
+approaches: permutation importance, KernelSHAP, gradient-based methods, and
+Deep Learning Important FeaTures (DeepLIFT), were implemented and compared. The
+model achieved 98.3% validation accuracy on MIT-BIH but showed performance
+degradation on the combined dataset, underscoring dataset variability
+challenges. Permutation importance and KernelSHAP produced cluttered visual
+outputs, while gradient-based and DeepLIFT methods highlighted waveform regions
+consistent with clinical reasoning, but with variability across samples.
+Findings emphasize the need for domain-specific XAI adaptations in ECG analysis
+and highlight saliency mapping as a more clinically intuitive approach</p></br><a href="http://arxiv.org/pdf/2508.17783v1" target="_blank"><h2>Algebraic Approach to Ridge-Regularized Mean Squared Error Minimization
+  in Minimal ReLU Neural Network</h2></a><strong><u>Authors:</u></strong>  Ryoya Fukasaku, Yutaro Kabata, Akifumi Okuno</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG, stat.CO</br><strong><u>Comments:</u></strong> 44 pages, 5 figres</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper investigates a perceptron, a simple neural network model, with
+ReLU activation and a ridge-regularized mean squared error (RR-MSE). Our
+approach leverages the fact that the RR-MSE for ReLU perceptron is piecewise
+polynomial, enabling a systematic analysis using tools from computational
+algebra. In particular, we develop a Divide-Enumerate-Merge strategy that
+exhaustively enumerates all local minima of the RR-MSE. By virtue of the
+algebraic formulation, our approach can identify not only the typical
+zero-dimensional minima (i.e., isolated points) obtained by numerical
+optimization, but also higher-dimensional minima (i.e., connected sets such as
+curves, surfaces, or hypersurfaces). Although computational algebraic methods
+are computationally very intensive for perceptrons of practical size, as a
+proof of concept, we apply the proposed approach in practice to minimal
+perceptrons with a few hidden units.</p></br><a href="http://arxiv.org/pdf/2508.17550v1" target="_blank"><h2>In-Context Algorithm Emulation in Fixed-Weight Transformers</h2></a><strong><u>Authors:</u></strong>  Jerry Yao-Chieh Hu, Hude Liu, Jennifer Yuntong Zhang, Han Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Code is available atthis https URL</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> We prove that a minimal Transformer architecture with frozen weights is
+capable of emulating a broad class of algorithms by in-context prompting. In
+particular, for any algorithm implementable by a fixed-weight attention head
+(e.g. one-step gradient descent or linear/ridge regression), there exists a
+prompt that drives a two-layer softmax attention module to reproduce the
+algorithm's output with arbitrary precision. This guarantee extends even to a
+single-head attention layer (using longer prompts if necessary), achieving
+architectural minimality. Our key idea is to construct prompts that encode an
+algorithm's parameters into token representations, creating sharp dot-product
+gaps that force the softmax attention to follow the intended computation. This
+construction requires no feed-forward layers and no parameter updates. All
+adaptation happens through the prompt alone. These findings forge a direct link
+between in-context learning and algorithmic emulation, and offer a simple
+mechanism for large Transformers to serve as prompt-programmable libraries of
+algorithms. They illuminate how GPT-style foundation models may swap algorithms
+via prompts alone, establishing a form of algorithmic universality in modern
+Transformer models.</p></br><a href="http://arxiv.org/pdf/2508.17175v1" target="_blank"><h2>Scaling Graph Transformers: A Comparative Study of Sparse and Dense
+  Attention</h2></a><strong><u>Authors:</u></strong>  Leon Dimitrov</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graphs have become a central representation in machine learning for capturing
+relational and structured data across various domains. Traditional graph neural
+networks often struggle to capture long-range dependencies between nodes due to
+their local structure. Graph transformers overcome this by using attention
+mechanisms that allow nodes to exchange information globally. However, there
+are two types of attention in graph transformers: dense and sparse. In this
+paper, we compare these two attention mechanisms, analyze their trade-offs, and
+highlight when to use each. We also outline current challenges and problems in
+designing attention for graph transformers.</p></br><a href="http://arxiv.org/pdf/2508.16915v1" target="_blank"><h2>Reinforcement-Guided Hyper-Heuristic Hyperparameter Optimization for
+  Fair and Explainable Spiking Neural Network-Based Financial Fraud Detection</h2></a><strong><u>Authors:</u></strong>  Sadman Mohammad Nasif, Md Abrar Jahin, M. F. Mridha</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The growing adoption of home banking systems has heightened the risk of
+cyberfraud, necessitating fraud detection mechanisms that are not only accurate
+but also fair and explainable. While AI models have shown promise in this
+domain, they face key limitations, including computational inefficiency, the
+interpretability challenges of spiking neural networks (SNNs), and the
+complexity and convergence instability of hyper-heuristic reinforcement
+learning (RL)-based hyperparameter optimization. To address these issues, we
+propose a novel framework that integrates a Cortical Spiking Network with
+Population Coding (CSNPC) and a Reinforcement-Guided Hyper-Heuristic Optimizer
+for Spiking Systems (RHOSS). The CSNPC, a biologically inspired SNN, employs
+population coding for robust classification, while RHOSS uses Q-learning to
+dynamically select low-level heuristics for hyperparameter optimization under
+fairness and recall constraints. Embedded within the Modular Supervisory
+Framework for Spiking Network Training and Interpretation (MoSSTI), the system
+incorporates explainable AI (XAI) techniques, specifically, saliency-based
+attribution and spike activity profiling, to increase transparency. Evaluated
+on the Bank Account Fraud (BAF) dataset suite, our model achieves a $90.8\%$
+recall at a strict $5\%$ false positive rate (FPR), outperforming
+state-of-the-art spiking and non-spiking models while maintaining over $98\%$
+predictive equality across key demographic attributes. The explainability
+module further confirms that saliency attributions align with spiking dynamics,
+validating interpretability. These results demonstrate the potential of
+combining population-coded SNNs with reinforcement-guided hyper-heuristics for
+fair, transparent, and high-performance fraud detection in real-world financial
+applications.</p></br><a href="http://arxiv.org/pdf/2508.18013v1" target="_blank"><h2>Towards Continual Visual Anomaly Detection in the Medical Domain</h2></a><strong><u>Authors:</u></strong>  Manuel Barusco, Francesco Borsatti, Nicola Beda, Davide Dalle Pezze, Gian Antonio Susto</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), explainable (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Visual Anomaly Detection (VAD) seeks to identify abnormal images and
+precisely localize the corresponding anomalous regions, relying solely on
+normal data during training. This approach has proven essential in domains such
+as manufacturing and, more recently, in the medical field, where accurate and
+explainable detection is critical. Despite its importance, the impact of
+evolving input data distributions over time has received limited attention,
+even though such changes can significantly degrade model performance. In
+particular, given the dynamic and evolving nature of medical imaging data,
+Continual Learning (CL) provides a natural and effective framework to
+incrementally adapt models while preserving previously acquired knowledge. This
+study explores for the first time the application of VAD models in a CL
+scenario for the medical field. In this work, we utilize a CL version of the
+well-established PatchCore model, called PatchCoreCL, and evaluate its
+performance using BMAD, a real-world medical imaging dataset with both
+image-level and pixel-level annotations. Our results demonstrate that
+PatchCoreCL is an effective solution, achieving performance comparable to the
+task-specific models, with a forgetting value less than a 1%, highlighting the
+feasibility and potential of CL for adaptive VAD in medical imaging.</p></br><a href="http://arxiv.org/pdf/2508.16924v1" target="_blank"><h2>Gamma-ray burst light curve reconstruction with predictive models</h2></a><strong><u>Authors:</u></strong>  Zhunuskanov A., Sakan A., Akhmetali A., Zaidyn M., Ussipov N</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> 13 pages, 7 figures, 2 tables</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Gamma-ray bursts represent some of the most energetic and complex phenomena
+in the universe, characterized by highly variable light curves that often
+contain observational gaps. Reconstructing these light curves is essential for
+gaining deeper insight into the physical processes driving such events. This
+study proposes a machine learning-based framework for the reconstruction of
+gamma-ray burst light curves, focusing specifically on the plateau phase
+observed in X-ray data. The analysis compares the performance of three
+sequential modeling approaches: a bidirectional recurrent neural network, a
+gated recurrent architecture, and a convolutional model designed for temporal
+data. The findings of this study indicate that the Bidirectional Gated
+Recurrent Unit model showed the best predictive accuracy among the evaluated
+models across all GRB types, as measured by Mean Absolute Error, Root Mean
+Square Error, and Coefficient of Determination. Notably, Bidirectional Gated
+Recurrent Unit exhibited enhanced capability in modeling both gradual plateau
+phases and abrupt transient features, including flares and breaks, particularly
+in complex light-curve scenarios.</p></br><a href="http://arxiv.org/pdf/2508.16748v1" target="_blank"><h2>FAIRWELL: Fair Multimodal Self-Supervised Learning for Wellbeing
+  Prediction</h2></a><strong><u>Authors:</u></strong>  Jiaee Cheong, Abtin Mogharabin, Paul Liang, Hatice Gunes, Sinan Kalkan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Early efforts on leveraging self-supervised learning (SSL) to improve machine
+learning (ML) fairness has proven promising. However, such an approach has yet
+to be explored within a multimodal context. Prior work has shown that, within a
+multimodal setting, different modalities contain modality-unique information
+that can complement information of other modalities. Leveraging on this, we
+propose a novel subject-level loss function to learn fairer representations via
+the following three mechanisms, adapting the variance-invariance-covariance
+regularization (VICReg) method: (i) the variance term, which reduces reliance
+on the protected attribute as a trivial solution; (ii) the invariance term,
+which ensures consistent predictions for similar individuals; and (iii) the
+covariance term, which minimizes correlational dependence on the protected
+attribute. Consequently, our loss function, coined as FAIRWELL, aims to obtain
+subject-independent representations, enforcing fairness in multimodal
+prediction tasks. We evaluate our method on three challenging real-world
+heterogeneous healthcare datasets (i.e. D-Vlog, MIMIC and MODMA) which contain
+different modalities of varying length and different prediction tasks. Our
+findings indicate that our framework improves overall fairness performance with
+minimal reduction in classification performance and significantly improves on
+the performance-fairness Pareto frontier.</p></br><a href="http://arxiv.org/pdf/2508.17519v1" target="_blank"><h2>TANDEM: Temporal Attention-guided Neural Differential Equations for
+  Missingness in Time Series Classification</h2></a><strong><u>Authors:</u></strong>  YongKyung Oh, Dong-Young Lim, Sungil Kim, Alex Bui</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Handling missing data in time series classification remains a significant
+challenge in various domains. Traditional methods often rely on imputation,
+which may introduce bias or fail to capture the underlying temporal dynamics.
+In this paper, we propose TANDEM (Temporal Attention-guided Neural Differential
+Equations for Missingness), an attention-guided neural differential equation
+framework that effectively classifies time series data with missing values. Our
+approach integrates raw observation, interpolated control path, and continuous
+latent dynamics through a novel attention mechanism, allowing the model to
+focus on the most informative aspects of the data. We evaluate TANDEM on 30
+benchmark datasets and a real-world medical dataset, demonstrating its
+superiority over existing state-of-the-art methods. Our framework not only
+improves classification accuracy but also provides insights into the handling
+of missing data, making it a valuable tool in practice.</p></br><a href="http://arxiv.org/pdf/2508.17455v1" target="_blank"><h2>A Systematic Literature Review on Multi-label Data Stream Classification</h2></a><strong><u>Authors:</u></strong>  H. Freire-Oliveira, E. R. F. Paiva, J. Gama, L. Khan, R. Cerri</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 48 pages, 12 figures</br><strong><u>Matching Keywords:</u></strong> attention (abstract), literature review (title, abstract)</br><p><strong><u>Abstract:</u></strong> Classification in the context of multi-label data streams represents a
+challenge that has attracted significant attention due to its high real-world
+applicability. However, this task faces problems inherent to dynamic
+environments, such as the continuous arrival of data at high speed and volume,
+changes in the data distribution (concept drift), the emergence of new labels
+(concept evolution), and the latency in the arrival of ground truth labels.
+This systematic literature review presents an in-depth analysis of multi-label
+data stream classification proposals. We characterize the latest methods in the
+literature, providing a comprehensive overview, building a thorough hierarchy,
+and discussing how the proposals approach each problem. Furthermore, we discuss
+the adopted evaluation strategies and analyze the methods' asymptotic
+complexity and resource consumption. Finally, we identify the main gaps and
+offer recommendations for future research directions in the field.</p></br><a href="http://arxiv.org/pdf/2508.17497v1" target="_blank"><h2>Multimodal Representation Learning Conditioned on Semantic Relations</h2></a><strong><u>Authors:</u></strong>  Yang Qiao, Yuntong Hu, Liang Zhao</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal representation learning has advanced rapidly with contrastive
+models such as CLIP, which align image-text pairs in a shared embedding space.
+However, these models face limitations: (1) they typically focus on image-text
+pairs, underutilizing the semantic relations across different pairs. (2) they
+directly match global embeddings without contextualization, overlooking the
+need for semantic alignment along specific subspaces or relational dimensions;
+and (3) they emphasize cross-modal contrast, with limited support for
+intra-modal consistency. To address these issues, we propose
+Relation-Conditioned Multimodal Learning RCML, a framework that learns
+multimodal representations under natural-language relation descriptions to
+guide both feature extraction and alignment. Our approach constructs
+many-to-many training pairs linked by semantic relations and introduces a
+relation-guided cross-attention mechanism that modulates multimodal
+representations under each relation context. The training objective combines
+inter-modal and intra-modal contrastive losses, encouraging consistency across
+both modalities and semantically related samples. Experiments on different
+datasets show that RCML consistently outperforms strong baselines on both
+retrieval and classification tasks, highlighting the effectiveness of
+leveraging semantic relations to guide multimodal representation learning.</p></br><a href="http://arxiv.org/pdf/2508.17128v1" target="_blank"><h2>CE-RS-SBCIT A Novel Channel Enhanced Hybrid CNN Transformer with
+  Residual, Spatial, and Boundary-Aware Learning for Brain Tumor MRI Analysis</h2></a><strong><u>Authors:</u></strong>  Mirza Mumtaz Zahoor, Saddam Hussain Khan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 37 Pages, 12 Figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Brain tumors remain among the most lethal human diseases, where early
+detection and accurate classification are critical for effective diagnosis and
+treatment planning. Although deep learning-based computer-aided diagnostic
+(CADx) systems have shown remarkable progress. However, conventional
+convolutional neural networks (CNNs) and Transformers face persistent
+challenges, including high computational cost, sensitivity to minor contrast
+variations, structural heterogeneity, and texture inconsistencies in MRI data.
+Therefore, a novel hybrid framework, CE-RS-SBCIT, is introduced, integrating
+residual and spatial learning-based CNNs with transformer-driven modules. The
+proposed framework exploits local fine-grained and global contextual cues
+through four core innovations: (i) a smoothing and boundary-based
+CNN-integrated Transformer (SBCIT), (ii) tailored residual and spatial learning
+CNNs, (iii) a channel enhancement (CE) strategy, and (iv) a novel spatial
+attention mechanism. The developed SBCIT employs stem convolution and
+contextual interaction transformer blocks with systematic smoothing and
+boundary operations, enabling efficient global feature modeling. Moreover,
+Residual and spatial CNNs, enhanced by auxiliary transfer-learned feature maps,
+enrich the representation space, while the CE module amplifies discriminative
+channels and mitigates redundancy. Furthermore, the spatial attention mechanism
+selectively emphasizes subtle contrast and textural variations across tumor
+classes. Extensive evaluation on challenging MRI datasets from Kaggle and
+Figshare, encompassing glioma, meningioma, pituitary tumors, and healthy
+controls, demonstrates superior performance, achieving 98.30% accuracy, 98.08%
+sensitivity, 98.25% F1-score, and 98.43% precision.</p></br><a href="http://arxiv.org/pdf/2508.16844v1" target="_blank"><h2>Transformer-Based Neural Network for Transient Detection without Image
+  Subtraction</h2></a><strong><u>Authors:</u></strong>  Adi Inada, Masao Sako, Tatiana Acero-Cuellar, Federica Bianco</br><strong><u>Categories:</u></strong> cs.CV, astro-ph.IM</br><strong><u>Comments:</u></strong> 12 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (title, abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a transformer-based neural network for the accurate
+classification of real and bogus transient detections in astronomical images.
+This network advances beyond the conventional convolutional neural network
+(CNN) methods, widely used in image processing tasks, by adopting an
+architecture better suited for detailed pixel-by-pixel comparison. The
+architecture enables efficient analysis of search and template images only,
+thus removing the necessity for computationally-expensive difference imaging,
+while maintaining high performance. Our primary evaluation was conducted using
+the autoScan dataset from the Dark Energy Survey (DES), where the network
+achieved a classification accuracy of 97.4% and diminishing performance utility
+for difference image as the size of the training set grew. Further experiments
+with DES data confirmed that the network can operate at a similar level even
+when the input images are not centered on the supernova candidate. These
+findings highlight the network's effectiveness in enhancing both accuracy and
+efficiency of supernova detection in large-scale astronomical surveys.</p></br><a href="http://arxiv.org/pdf/2508.16747v1" target="_blank"><h2>Explainable AI for Predicting and Understanding Mathematics Achievement:
+  A Cross-National Analysis of PISA 2018</h2></a><strong><u>Authors:</u></strong>  Liu Liu, Rui Dai</br><strong><u>Categories:</u></strong> cs.AI, cs.CY, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding the factors that shape students' mathematics performance is
+vital for designing effective educational policies. This study applies
+explainable artificial intelligence (XAI) techniques to PISA 2018 data to
+predict math achievement and identify key predictors across ten countries
+(67,329 students). We tested four models: Multiple Linear Regression (MLR),
+Random Forest (RF), CATBoost, and Artificial Neural Networks (ANN), using
+student, family, and school variables. Models were trained on 70% of the data
+(with 5-fold cross-validation) and tested on 30%, stratified by country.
+Performance was assessed with R^2 and Mean Absolute Error (MAE). To ensure
+interpretability, we used feature importance, SHAP values, and decision tree
+visualizations. Non-linear models, especially RF and ANN, outperformed MLR,
+with RF balancing accuracy and generalizability. Key predictors included
+socio-economic status, study time, teacher motivation, and students' attitudes
+toward mathematics, though their impact varied across countries. Visual
+diagnostics such as scatterplots of predicted vs actual scores showed RF and
+CATBoost aligned closely with actual performance. Findings highlight the
+non-linear and context-dependent nature of achievement and the value of XAI in
+educational research. This study uncovers cross-national patterns, informs
+equity-focused reforms, and supports the development of personalized learning
+strategies.</p></br><a href="http://arxiv.org/pdf/2508.18188v1" target="_blank"><h2>Explain and Monitor Deep Learning Models for Computer Vision using Obz
+  AI</h2></a><strong><u>Authors:</u></strong>  Neo Christopher Chung, Jakub Binda</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.HC, cs.SE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (abstract), explainable (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Deep learning has transformed computer vision (CV), achieving outstanding
+performance in classification, segmentation, and related tasks. Such AI-based
+CV systems are becoming prevalent, with applications spanning from medical
+imaging to surveillance. State of the art models such as convolutional neural
+networks (CNNs) and vision transformers (ViTs) are often regarded as ``black
+boxes,'' offering limited transparency into their decision-making processes.
+Despite a recent advancement in explainable AI (XAI), explainability remains
+underutilized in practical CV deployments. A primary obstacle is the absence of
+integrated software solutions that connect XAI techniques with robust knowledge
+management and monitoring frameworks. To close this gap, we have developed Obz
+AI, a comprehensive software ecosystem designed to facilitate state-of-the-art
+explainability and observability for vision AI systems. Obz AI provides a
+seamless integration pipeline, from a Python client library to a full-stack
+analytics dashboard. With Obz AI, a machine learning engineer can easily
+incorporate advanced XAI methodologies, extract and analyze features for
+outlier detection, and continuously monitor AI models in real time. By making
+the decision-making mechanisms of deep models interpretable, Obz AI promotes
+observability and responsible deployment of computer vision systems.</p></br><a href="http://arxiv.org/pdf/2508.17630v1" target="_blank"><h2>Quantum Graph Attention Network: A Novel Quantum Multi-Head Attention
+  Mechanism for Graph Learning</h2></a><strong><u>Authors:</u></strong>  An Ning, Tai Yue Li, Nan Yow Chen</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> We propose the Quantum Graph Attention Network (QGAT), a hybrid graph neural
+network that integrates variational quantum circuits into the attention
+mechanism. At its core, QGAT employs strongly entangling quantum circuits with
+amplitude-encoded node features to enable expressive nonlinear interactions.
+Distinct from classical multi-head attention that separately computes each
+head, QGAT leverages a single quantum circuit to simultaneously generate
+multiple attention coefficients. This quantum parallelism facilitates parameter
+sharing across heads, substantially reducing computational overhead and model
+complexity. Classical projection weights and quantum circuit parameters are
+optimized jointly in an end-to-end manner, ensuring flexible adaptation to
+learning tasks. Empirical results demonstrate QGAT's effectiveness in capturing
+complex structural dependencies and improved generalization in inductive
+scenarios, highlighting its potential for scalable quantum-enhanced learning
+across domains such as chemistry, biology, and network analysis. Furthermore,
+experiments confirm that quantum embedding enhances robustness against feature
+and structural noise, suggesting advantages in handling real-world noisy data.
+The modularity of QGAT also ensures straightforward integration into existing
+architectures, allowing it to easily augment classical attention-based models.</p></br><a href="http://arxiv.org/pdf/2508.18132v1" target="_blank"><h2>Test-Time Scaling Strategies for Generative Retrieval in Multimodal
+  Conversational Recommendations</h2></a><strong><u>Authors:</u></strong>  Hung-Chun Hsu, Yuan-Ching Kuo, Chao-Han Huck Yang, Szu-Wei Fu, Hanrong Ye, Hongxu Yin, Yu-Chiang Frank Wang, Ming-Feng Tsai, Chuan-Ju Wang</br><strong><u>Categories:</u></strong> cs.IR, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> The rapid evolution of e-commerce has exposed the limitations of traditional
+product retrieval systems in managing complex, multi-turn user interactions.
+Recent advances in multimodal generative retrieval -- particularly those
+leveraging multimodal large language models (MLLMs) as retrievers -- have shown
+promise. However, most existing methods are tailored to single-turn scenarios
+and struggle to model the evolving intent and iterative nature of multi-turn
+dialogues when applied naively. Concurrently, test-time scaling has emerged as
+a powerful paradigm for improving large language model (LLM) performance
+through iterative inference-time refinement. Yet, its effectiveness typically
+relies on two conditions: (1) a well-defined problem space (e.g., mathematical
+reasoning), and (2) the model's ability to self-correct -- conditions that are
+rarely met in conversational product search. In this setting, user queries are
+often ambiguous and evolving, and MLLMs alone have difficulty grounding
+responses in a fixed product corpus. Motivated by these challenges, we propose
+a novel framework that introduces test-time scaling into conversational
+multimodal product retrieval. Our approach builds on a generative retriever,
+further augmented with a test-time reranking (TTR) mechanism that improves
+retrieval accuracy and better aligns results with evolving user intent
+throughout the dialogue. Experiments across multiple benchmarks show consistent
+improvements, with average gains of 14.5 points in MRR and 10.6 points in
+nDCG@1.</p></br><a href="http://arxiv.org/pdf/2508.17096v1" target="_blank"><h2>Convolutional Neural Networks for Accurate Measurement of Train Speed</h2></a><strong><u>Authors:</u></strong>  Haitao Tian, Argyrios Zolotas, Miguel Arana-Catania</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> 15 pages, 12 figures, 2 tables. Proceedings of the Institution of Mechanical Engineers, Part F: Journal of Rail and Rapid Transit</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In this study, we explore the use of Convolutional Neural Networks for
+improving train speed estimation accuracy, addressing the complex challenges of
+modern railway systems. We investigate three CNN architectures - single-branch
+2D, single-branch 1D, and multiple-branch models - and compare them with the
+Adaptive Kalman Filter. We analyse their performance using simulated train
+operation datasets with and without Wheel Slide Protection activation. Our
+results reveal that CNN-based approaches, especially the multiple-branch model,
+demonstrate superior accuracy and robustness compared to traditional methods,
+particularly under challenging operational conditions. These findings highlight
+the potential of deep learning techniques to enhance railway safety and
+operational efficiency by more effectively capturing intricate patterns in
+complex transportation datasets.</p></br><a href="http://arxiv.org/pdf/2508.17822v1" target="_blank"><h2>Limits of message passing for node classification: How class-bottlenecks
+  restrict signal-to-noise ratio</h2></a><strong><u>Authors:</u></strong>  Jonathan Rubin, Sahil Loomba, Nick S. Jones</br><strong><u>Categories:</u></strong> cs.LG, cond-mat.dis-nn, cs.AI, math.ST, stat.ML, stat.TH</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Message passing neural networks (MPNNs) are powerful models for node
+classification but suffer from performance limitations under heterophily (low
+same-class connectivity) and structural bottlenecks in the graph. We provide a
+unifying statistical framework exposing the relationship between heterophily
+and bottlenecks through the signal-to-noise ratio (SNR) of MPNN
+representations. The SNR decomposes model performance into feature-dependent
+parameters and feature-independent sensitivities. We prove that the sensitivity
+to class-wise signals is bounded by higher-order homophily -- a generalisation
+of classical homophily to multi-hop neighbourhoods -- and show that low
+higher-order homophily manifests locally as the interaction between structural
+bottlenecks and class labels (class-bottlenecks). Through analysis of graph
+ensembles, we provide a further quantitative decomposition of bottlenecking
+into underreaching (lack of depth implying signals cannot arrive) and
+oversquashing (lack of breadth implying signals arriving on fewer paths) with
+closed-form expressions. We prove that optimal graph structures for maximising
+higher-order homophily are disjoint unions of single-class and
+two-class-bipartite clusters. This yields BRIDGE, a graph ensemble-based
+rewiring algorithm that achieves near-perfect classification accuracy across
+all homophily regimes on synthetic benchmarks and significant improvements on
+real-world benchmarks, by eliminating the ``mid-homophily pitfall'' where MPNNs
+typically struggle, surpassing current standard rewiring techniques from the
+literature. Our framework, whose code we make available for public use,
+provides both diagnostic tools for assessing MPNN performance, and simple yet
+effective methods for enhancing performance through principled graph
+modification.</p></br><a href="http://arxiv.org/pdf/2508.17867v1" target="_blank"><h2>Ada-TransGNN: An Air Quality Prediction Model Based On Adaptive Graph
+  Convolutional Networks</h2></a><strong><u>Authors:</u></strong>  Dan Wang, Feng Jiang, Zhanquan Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 15 pages, 4 figures, 3 tables. This paper is accepted by ICONIP2025 but not published</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), convolutional (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate air quality prediction is becoming increasingly important in the
+environmental field. To address issues such as low prediction accuracy and slow
+real-time updates in existing models, which lead to lagging prediction results,
+we propose a Transformer-based spatiotemporal data prediction method
+(Ada-TransGNN) that integrates global spatial semantics and temporal behavior.
+The model constructs an efficient and collaborative spatiotemporal block set
+comprising a multi-head attention mechanism and a graph convolutional network
+to extract dynamically changing spatiotemporal dependency features from complex
+air quality monitoring data. Considering the interaction relationships between
+different monitoring points, we propose an adaptive graph structure learning
+module, which combines spatiotemporal dependency features in a data-driven
+manner to learn the optimal graph structure, thereby more accurately capturing
+the spatial relationships between monitoring points. Additionally, we design an
+auxiliary task learning module that enhances the decoding capability of
+temporal relationships by integrating spatial context information into the
+optimal graph structure representation, effectively improving the accuracy of
+prediction results. We conducted comprehensive evaluations on a benchmark
+dataset and a novel dataset (Mete-air). The results demonstrate that our model
+outperforms existing state-of-the-art prediction models in short-term and
+long-term predictions.</p></br><a href="http://arxiv.org/pdf/2508.17097v1" target="_blank"><h2>Two Birds with One Stone: Enhancing Uncertainty Quantification and
+  Interpretability with Graph Functional Neural Process</h2></a><strong><u>Authors:</u></strong>  Lingkai Kong, Haotian Sun, Yuchen Zhuang, Haorui Wang, Wenhao Mu, Chao Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> AISTATS'25</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph neural networks (GNNs) are powerful tools on graph data. However, their
+predictions are mis-calibrated and lack interpretability, limiting their
+adoption in critical applications. To address this issue, we propose a new
+uncertainty-aware and interpretable graph classification model that combines
+graph functional neural process and graph generative model. The core of our
+method is to assume a set of latent rationales which can be mapped to a
+probabilistic embedding space; the predictive distribution of the classifier is
+conditioned on such rationale embeddings by learning a stochastic correlation
+matrix. The graph generator serves to decode the graph structure of the
+rationales from the embedding space for model interpretability. For efficient
+model training, we adopt an alternating optimization procedure which mimics the
+well known Expectation-Maximization (EM) algorithm. The proposed method is
+general and can be applied to any existing GNN architecture. Extensive
+experiments on five graph classification datasets demonstrate that our
+framework outperforms state-of-the-art methods in both uncertainty
+quantification and GNN interpretability. We also conduct case studies to show
+that the decoded rationale structure can provide meaningful explanations.</p></br><a href="http://arxiv.org/pdf/2508.17290v1" target="_blank"><h2>MEENA (PersianMMMU): Multimodal-Multilingual Educational Exams for
+  N-level Assessment</h2></a><strong><u>Authors:</u></strong>  Omid Ghahroodi, Arshia Hemmat, Marzia Nouri, Seyed Mohammad Hadi Hosseini, Doratossadat Dastgheib, Mohammad Vali Sanian, Alireza Sahebi, Reihaneh Zohrabi, Mohammad Hossein Rohban, Ehsaneddin Asgari, Mahdieh Soleymani Baghshah</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Recent advancements in large vision-language models (VLMs) have primarily
+focused on English, with limited attention given to other languages. To address
+this gap, we introduce MEENA (also known as PersianMMMU), the first dataset
+designed to evaluate Persian VLMs across scientific, reasoning, and human-level
+understanding tasks. Our dataset comprises approximately 7,500 Persian and
+3,000 English questions, covering a wide range of topics such as reasoning,
+mathematics, physics, diagrams, charts, and Persian art and literature. Key
+features of MEENA include: (1) diverse subject coverage spanning various
+educational levels, from primary to upper secondary school, (2) rich metadata,
+including difficulty levels and descriptive answers, (3) original Persian data
+that preserves cultural nuances, (4) a bilingual structure to assess
+cross-linguistic performance, and (5) a series of diverse experiments assessing
+various capabilities, including overall performance, the model's ability to
+attend to images, and its tendency to generate hallucinations. We hope this
+benchmark contributes to enhancing VLM capabilities beyond English.</p></br><a href="http://arxiv.org/pdf/2508.16905v1" target="_blank"><h2>Tri-Accel: Curvature-Aware Precision-Adaptive and Memory-Elastic
+  Optimization for Efficient GPU Usage</h2></a><strong><u>Authors:</u></strong>  Mohsen Sheibanian, Pouya Shaeri, Alimohammad Beigi, Ryan T. Woo, Aryan Keluskar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks are increasingly bottlenecked by the cost of
+optimization, both in terms of GPU memory and compute time. Existing
+acceleration techniques, such as mixed precision, second-order methods, and
+batch size scaling, are typically used in isolation. We present Tri-Accel, a
+unified optimization framework that co-adapts three acceleration strategies
+along with adaptive parameters during training: (1) Precision-Adaptive Updates
+that dynamically assign mixed-precision levels to layers based on curvature and
+gradient variance; (2) Sparse Second-Order Signals that exploit Hessian/Fisher
+sparsity patterns to guide precision and step size decisions; and (3)
+Memory-Elastic Batch Scaling that adjusts batch size in real time according to
+VRAM availability. On CIFAR-10 with ResNet-18 and EfficientNet-B0, Tri-Accel
+achieves up to 9.9% reduction in training time and 13.3% lower memory usage,
+while improving accuracy by +1.1 percentage points over FP32 baselines. Tested
+on CIFAR-10/100, our approach demonstrates adaptive learning behavior, with
+efficiency gradually improving over the course of training as the system learns
+to allocate resources more effectively. Compared to static mixed-precision
+training, Tri-Accel maintains 78.1% accuracy while reducing memory footprint
+from 0.35GB to 0.31GB on standard hardware. The framework is implemented with
+custom Triton kernels, whose hardware-aware adaptation enables automatic
+optimization without manual hyperparameter tuning, making it practical for
+deployment across diverse computational environments. This work demonstrates
+how algorithmic adaptivity and hardware awareness can be combined to improve
+scalability in resource-constrained settings, paving the way for more efficient
+neural network training on edge devices and cost-sensitive cloud deployments.</p></br><a href="http://arxiv.org/pdf/2508.16829v1" target="_blank"><h2>Understanding and Tackling Over-Dilution in Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Junhyun Lee, Veronika Thost, Bumsoo Kim, Jaewoo Kang, Tengfei Ma</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07, 68R10, 68T05, I.2.6; G.2.2; F.2.2</br><strong><u>Comments:</u></strong> Extended version of KDD '25 paper. 22 pages including appendix. Conference version: KDD '25 (Toronto, Aug 3-7, 2025), pp. 1253-1261. Code:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Message Passing Neural Networks (MPNNs) hold a key position in machine
+learning on graphs, but they struggle with unintended behaviors, such as
+over-smoothing and over-squashing, due to irregular data structures. The
+observation and formulation of these limitations have become foundational in
+constructing more informative graph representations. In this paper, we delve
+into the limitations of MPNNs, focusing on aspects that have previously been
+overlooked. Our observations reveal that even within a single layer, the
+information specific to an individual node can become significantly diluted. To
+delve into this phenomenon in depth, we present the concept of Over-dilution
+and formulate it with two dilution factors: intra-node dilution for
+attribute-level and inter-node dilution for node-level representations. We also
+introduce a transformer-based solution that alleviates over-dilution and
+complements existing node embedding methods like MPNNs. Our findings provide
+new insights and contribute to the development of informative representations.
+The implementation and supplementary materials are publicly available at
+https://github.com/LeeJunHyun/NATR.</p></br><a href="http://arxiv.org/pdf/2508.17827v1" target="_blank"><h2>A Contrastive Learning-Guided Confident Meta-learning for Zero Shot
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Muhammad Aqeel, Danijel Skocaj, Marco Cristani, Francesco Setti</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Accepted to VISION Workshop at ICCV 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), domain adaptation (abstract)</br><p><strong><u>Abstract:</u></strong> Industrial and medical anomaly detection faces critical challenges from data
+scarcity and prohibitive annotation costs, particularly in evolving
+manufacturing and healthcare settings. To address this, we propose CoZAD, a
+novel zero-shot anomaly detection framework that integrates soft confident
+learning with meta-learning and contrastive feature representation. Unlike
+traditional confident learning that discards uncertain samples, our method
+assigns confidence-based weights to all training data, preserving boundary
+information while emphasizing prototypical normal patterns. The framework
+quantifies data uncertainty through IQR-based thresholding and model
+uncertainty via covariance based regularization within a Model-Agnostic
+Meta-Learning. Contrastive learning creates discriminative feature spaces where
+normal patterns form compact clusters, enabling rapid domain adaptation.
+Comprehensive evaluation across 10 datasets spanning industrial and medical
+domains demonstrates state-of-the-art performance, outperforming existing
+methods on 6 out of 7 industrial benchmarks with notable improvements on
+texture-rich datasets (99.2% I-AUROC on DTD-Synthetic, 97.2% on BTAD) and
+pixellevel localization (96.3% P-AUROC on MVTec-AD). The framework eliminates
+dependence on vision-language alignments or model ensembles, making it valuable
+for resourceconstrained environments requiring rapid deployment.</p></br><a href="http://arxiv.org/pdf/2508.16744v1" target="_blank"><h2>Hyperbolic Multimodal Representation Learning for Biological Taxonomies</h2></a><strong><u>Authors:</u></strong>  ZeMing Gong, Chuanqi Tang, Xiaoliang Huo, Nicholas Pellegrino, Austin T. Wang, Graham W. Taylor, Angel X. Chang, Scott C. Lowe, Joakim Bruslund Haurum</br><strong><u>Categories:</u></strong> cs.LG, cs.CL, cs.CV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Taxonomic classification in biodiversity research involves organizing
+biological specimens into structured hierarchies based on evidence, which can
+come from multiple modalities such as images and genetic information. We
+investigate whether hyperbolic networks can provide a better embedding space
+for such hierarchical models. Our method embeds multimodal inputs into a shared
+hyperbolic space using contrastive and a novel stacked entailment-based
+objective. Experiments on the BIOSCAN-1M dataset show that hyperbolic embedding
+achieves competitive performance with Euclidean baselines, and outperforms all
+other models on unseen species classification using DNA barcodes. However,
+fine-grained classification and open-world generalization remain challenging.
+Our framework offers a structure-aware foundation for biodiversity modelling,
+with potential applications to species discovery, ecological monitoring, and
+conservation efforts.</p></br><a href="http://arxiv.org/pdf/2508.17789v1" target="_blank"><h2>Robust Anomaly Detection in Industrial Environments via Meta-Learning</h2></a><strong><u>Authors:</u></strong>  Muhammad Aqeel, Shakiba Sharifi, Marco Cristani, Francesco Setti</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Accepted to VISION Workshop at ICCV 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection is fundamental for ensuring quality control and operational
+efficiency in industrial environments, yet conventional approaches face
+significant challenges when training data contains mislabeled samples-a common
+occurrence in real-world scenarios. This paper presents RAD, a robust anomaly
+detection framework that integrates Normalizing Flows with Model-Agnostic
+Meta-Learning to address the critical challenge of label noise in industrial
+settings. Our approach employs a bi-level optimization strategy where
+meta-learning enables rapid adaptation to varying noise conditions, while
+uncertainty quantification guides adaptive L2 regularization to maintain model
+stability. The framework incorporates multiscale feature processing through
+pretrained feature extractors and leverages the precise likelihood estimation
+capabilities of Normalizing Flows for robust anomaly scoring. Comprehensive
+evaluation on MVTec-AD and KSDD2 datasets demonstrates superior performance,
+achieving I-AUROC scores of 95.4% and 94.6% respectively under clean
+conditions, while maintaining robust detection capabilities above 86.8% and
+92.1% even when 50% of training samples are mislabeled. The results highlight
+RAD's exceptional resilience to noisy training conditions and its ability to
+detect subtle anomalies across diverse industrial scenarios, making it a
+practical solution for real-world anomaly detection applications where perfect
+data curation is challenging.</p></br><a href="http://arxiv.org/pdf/2508.17232v1" target="_blank"><h2>Curvature Learning for Generalization of Hyperbolic Neural Networks</h2></a><strong><u>Authors:</u></strong>  Xiaomeng Fan, Yuwei Wu, Zhi Gao, Mehrtash Harandi, Yunde Jia</br><strong><u>Categories:</u></strong> cs.LG, cs.CV, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Hyperbolic neural networks (HNNs) have demonstrated notable efficacy in
+representing real-world data with hierarchical structures via exploiting the
+geometric properties of hyperbolic spaces characterized by negative curvatures.
+Curvature plays a crucial role in optimizing HNNs. Inappropriate curvatures may
+cause HNNs to converge to suboptimal parameters, degrading overall performance.
+So far, the theoretical foundation of the effect of curvatures on HNNs has not
+been developed. In this paper, we derive a PAC-Bayesian generalization bound of
+HNNs, highlighting the role of curvatures in the generalization of HNNs via
+their effect on the smoothness of the loss landscape. Driven by the derived
+bound, we propose a sharpness-aware curvature learning method to smooth the
+loss landscape, thereby improving the generalization of HNNs. In our method,
+  we design a scope sharpness measure for curvatures, which is minimized
+through a bi-level optimization process. Then, we introduce an implicit
+differentiation algorithm that efficiently solves the bi-level optimization by
+approximating gradients of curvatures. We present the approximation error and
+convergence analyses of the proposed method, showing that the approximation
+error is upper-bounded, and the proposed method can converge by bounding
+gradients of HNNs. Experiments on four settings: classification, learning from
+long-tailed data, learning from noisy data, and few-shot learning show that our
+method can improve the performance of HNNs.</p></br><a href="http://arxiv.org/pdf/2508.18025v1" target="_blank"><h2>AQ-PCDSys: An Adaptive Quantized Planetary Crater Detection System for
+  Autonomous Space Exploration</h2></a><strong><u>Authors:</u></strong>  Aditri Paul, Archan Paul</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV, cs.ET, cs.SY, eess.SY, 68T07(2020), 68T45(2020), 68T10(2020), 90C90(2020), I.2.10; I.2.6; I.2.9; J.2</br><strong><u>Comments:</u></strong> 17 pages, 6 figures. A research paper on a novel deep learning framework for planetary crater detection</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Autonomous planetary exploration missions are critically dependent on
+real-time, accurate environmental perception for navigation and hazard
+avoidance. However, deploying deep learning models on the resource-constrained
+computational hardware of planetary exploration platforms remains a significant
+challenge. This paper introduces the Adaptive Quantized Planetary Crater
+Detection System (AQ-PCDSys), a novel framework specifically engineered for
+real-time, onboard deployment in the computationally constrained environments
+of space exploration missions. AQ-PCDSys synergistically integrates a Quantized
+Neural Network (QNN) architecture, trained using Quantization-Aware Training
+(QAT), with an Adaptive Multi-Sensor Fusion (AMF) module. The QNN architecture
+significantly optimizes model size and inference latency suitable for real-time
+onboard deployment in space exploration missions, while preserving high
+accuracy. The AMF module intelligently fuses data from Optical Imagery (OI) and
+Digital Elevation Models (DEMs) at the feature level, utilizing an Adaptive
+Weighting Mechanism (AWM) to dynamically prioritize the most relevant and
+reliable sensor modality based on planetary ambient conditions. This approach
+enhances detection robustness across diverse planetary landscapes. Paired with
+Multi-Scale Detection Heads specifically designed for robust and efficient
+detection of craters across a wide range of sizes, AQ-PCDSys provides a
+computationally efficient, reliable and accurate solution for planetary crater
+detection, a critical capability for enabling the next generation of autonomous
+planetary landing, navigation, and scientific exploration.</p></br><a href="http://arxiv.org/pdf/2508.16832v1" target="_blank"><h2>Out of Distribution Detection for Efficient Continual Learning in
+  Quality Prediction for Arc Welding</h2></a><strong><u>Authors:</u></strong>  Yannik Hahn, Jan Voets, Antonin Koenigsfeld, Hasan Tercan, Tobias Meisen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.6; I.5.1</br><strong><u>Comments:</u></strong> Accepted at CIKM 2025 (Applied Research Papers)</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), explainable (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Modern manufacturing relies heavily on fusion welding processes, including
+gas metal arc welding (GMAW). Despite significant advances in machine
+learning-based quality prediction, current models exhibit critical limitations
+when confronted with the inherent distribution shifts that occur in dynamic
+manufacturing environments. In this work, we extend the VQ-VAE Transformer
+architecture - previously demonstrating state-of-the-art performance in weld
+quality prediction - by leveraging its autoregressive loss as a reliable
+out-of-distribution (OOD) detection mechanism. Our approach exhibits superior
+performance compared to conventional reconstruction methods, embedding
+error-based techniques, and other established baselines. By integrating OOD
+detection with continual learning strategies, we optimize model adaptation,
+triggering updates only when necessary and thereby minimizing costly labeling
+requirements. We introduce a novel quantitative metric that simultaneously
+evaluates OOD detection capability while interpreting in-distribution
+performance. Experimental validation in real-world welding scenarios
+demonstrates that our framework effectively maintains robust quality prediction
+capabilities across significant distribution shifts, addressing critical
+challenges in dynamic manufacturing environments where process parameters
+frequently change. This research makes a substantial contribution to applied
+artificial intelligence by providing an explainable and at the same time
+adaptive solution for quality assurance in dynamic manufacturing processes - a
+crucial step towards robust, practical AI systems in the industrial
+environment.</p></br><a href="http://arxiv.org/pdf/2508.17136v1" target="_blank"><h2>Factor Informed Double Deep Learning For Average Treatment Effect
+  Estimation</h2></a><strong><u>Authors:</u></strong>  Jianqing Fan, Soham Jana, Sanjeev Kulkarni, Qishuo Yin</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.ME, stat.TH, 62G08, 62G20</br><strong><u>Comments:</u></strong> 41 pages, 3 figures, 4 tables</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We investigate the problem of estimating the average treatment effect (ATE)
+under a very general setup where the covariates can be high-dimensional, highly
+correlated, and can have sparse nonlinear effects on the propensity and outcome
+models. We present the use of a Double Deep Learning strategy for estimation,
+which involves combining recently developed factor-augmented deep
+learning-based estimators, FAST-NN, for both the response functions and
+propensity scores to achieve our goal. By using FAST-NN, our method can select
+variables that contribute to propensity and outcome models in a completely
+nonparametric and algorithmic manner and adaptively learn low-dimensional
+function structures through neural networks. Our proposed novel estimator,
+FIDDLE (Factor Informed Double Deep Learning Estimator), estimates ATE based on
+the framework of augmented inverse propensity weighting AIPW with the
+FAST-NN-based response and propensity estimates. FIDDLE consistently estimates
+ATE even under model misspecification and is flexible to also allow for
+low-dimensional covariates. Our method achieves semiparametric efficiency under
+a very flexible family of propensity and outcome models. We present extensive
+numerical studies on synthetic and real datasets to support our theoretical
+guarantees and establish the advantages of our methods over other traditional
+choices, especially when the data dimension is large.</p></br><a href="http://arxiv.org/pdf/2508.16857v1" target="_blank"><h2>Neural Contrast Expansion for Explainable Structure-Property Prediction
+  and Random Microstructure Design</h2></a><strong><u>Authors:</u></strong>  Guangyu Nie, Yang Jiao, Yi Ren</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Effective properties of composite materials are defined as the ensemble
+average of property-specific PDE solutions over the underlying microstructure
+distributions. Traditionally, predicting such properties can be done by solving
+PDEs derived from microstructure samples or building data-driven models that
+directly map microstructure samples to properties. The former has a higher
+running cost, but provides explainable sensitivity information that may guide
+material design; the latter could be more cost-effective if the data overhead
+is amortized, but its learned sensitivities are often less explainable. With a
+focus on properties governed by linear self-adjoint PDEs (e.g., Laplace,
+Helmholtz, and Maxwell curl-curl) defined on bi-phase microstructures, we
+propose a structure-property model that is both cost-effective and explainable.
+Our method is built on top of the strong contrast expansion (SCE) formalism,
+which analytically maps $N$-point correlations of an unbounded random field to
+its effective properties. Since real-world material samples have finite sizes
+and analytical PDE kernels are not always available, we propose Neural Contrast
+Expansion (NCE), an SCE-inspired architecture to learn surrogate PDE kernels
+from structure-property data. For static conduction and electromagnetic wave
+propagation cases, we show that NCE models reveal accurate and insightful
+sensitivity information useful for material design. Compared with other PDE
+kernel learning methods, our method does not require measurements about the PDE
+solution fields, but rather only requires macroscopic property measurements
+that are more accessible in material development contexts.</p></br><a href="http://arxiv.org/pdf/2508.17675v1" target="_blank"><h2>Towards Synthesizing Normative Data for Cognitive Assessments Using
+  Generative Multimodal Large Language Models</h2></a><strong><u>Authors:</u></strong>  Victoria Yan, Honor Chotkowski, Fengran Wang, Alex Fedorov</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Preprint</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Cognitive assessments require normative data as essential benchmarks for
+evaluating individual performance. Hence, developing new cognitive tests based
+on novel image stimuli is challenging due to the lack of readily available
+normative data. Traditional data collection methods are costly, time-consuming,
+and infrequently updated, limiting their practical utility. Recent advancements
+in generative multimodal large language models (MLLMs) offer a new approach to
+generate synthetic normative data from existing cognitive test images. We
+investigated the feasibility of using MLLMs, specifically GPT-4o and
+GPT-4o-mini, to synthesize normative textual responses for established
+image-based cognitive assessments, such as the "Cookie Theft" picture
+description task. Two distinct prompting strategies-naive prompts with basic
+instructions and advanced prompts enriched with contextual guidance-were
+evaluated. Responses were analyzed using embeddings to assess their capacity to
+distinguish diagnostic groups and demographic variations. Performance metrics
+included BLEU, ROUGE, BERTScore, and an LLM-as-a-judge evaluation. Advanced
+prompting strategies produced synthetic responses that more effectively
+distinguished between diagnostic groups and captured demographic diversity
+compared to naive prompts. Superior models generated responses exhibiting
+higher realism and diversity. BERTScore emerged as the most reliable metric for
+contextual similarity assessment, while BLEU was less effective for evaluating
+creative outputs. The LLM-as-a-judge approach provided promising preliminary
+validation results. Our study demonstrates that generative multimodal LLMs,
+guided by refined prompting methods, can feasibly generate robust synthetic
+normative data for existing cognitive tests, thereby laying the groundwork for
+developing novel image-based cognitive assessments without the traditional
+limitations.</p></br><a href="http://arxiv.org/pdf/2508.17948v1" target="_blank"><h2>Debiasing Multilingual LLMs in Cross-lingual Latent Space</h2></a><strong><u>Authors:</u></strong>  Qiwei Peng, Guimin Hu, Yekun Chai, Anders Søgaard</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> EMNLP 2025 Main</br><strong><u>Matching Keywords:</u></strong> latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Debiasing techniques such as SentDebias aim to reduce bias in large language
+models (LLMs). Previous studies have evaluated their cross-lingual
+transferability by directly applying these methods to LLM representations,
+revealing their limited effectiveness across languages. In this work, we
+therefore propose to perform debiasing in a joint latent space rather than
+directly on LLM representations. We construct a well-aligned cross-lingual
+latent space using an autoencoder trained on parallel TED talk scripts. Our
+experiments with Aya-expanse and two debiasing techniques across four languages
+(English, French, German, Dutch) demonstrate that a) autoencoders effectively
+construct a well-aligned cross-lingual latent space, and b) applying debiasing
+techniques in the learned cross-lingual latent space significantly improves
+both the overall debiasing performance and cross-lingual transferability.</p></br><a href="http://arxiv.org/pdf/2508.16995v1" target="_blank"><h2>GraphPPD: Posterior Predictive Modelling for Graph-Level Inference</h2></a><strong><u>Authors:</u></strong>  Soumyasundar Pal, Liheng Ma, Amine Natik, Yingxue Zhang, Mark Coates</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate modelling and quantification of predictive uncertainty is crucial in
+deep learning since it allows a model to make safer decisions when the data is
+ambiguous and facilitates the users' understanding of the model's confidence in
+its predictions. Along with the tremendously increasing research focus on
+\emph{graph neural networks} (GNNs) in recent years, there have been numerous
+techniques which strive to capture the uncertainty in their predictions.
+However, most of these approaches are specifically designed for node or
+link-level tasks and cannot be directly applied to graph-level learning
+problems. In this paper, we propose a novel variational modelling framework for
+the \emph{posterior predictive distribution}~(PPD) to obtain uncertainty-aware
+prediction in graph-level learning tasks. Based on a graph-level embedding
+derived from one of the existing GNNs, our framework can learn the PPD in a
+data-adaptive fashion. Experimental results on several benchmark datasets
+exhibit the effectiveness of our approach.</p></br><a href="http://arxiv.org/pdf/2508.17215v1" target="_blank"><h2>How to make Medical AI Systems safer? Simulating Vulnerabilities, and
+  Threats in Multimodal Medical RAG System</h2></a><strong><u>Authors:</u></strong>  Kaiwen Zuo, Zelin Liu, Raman Dutt, Ziyang Wang, Zhongtian Sun, Yeming Wang, Fan Mo, Pietro Liò</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR</br><strong><u>Comments:</u></strong> Sumbitted to 2025 AAAI main track</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Large Vision-Language Models (LVLMs) augmented with Retrieval-Augmented
+Generation (RAG) are increasingly employed in medical AI to enhance factual
+grounding through external clinical image-text retrieval. However, this
+reliance creates a significant attack surface. We propose MedThreatRAG, a novel
+multimodal poisoning framework that systematically probes vulnerabilities in
+medical RAG systems by injecting adversarial image-text pairs. A key innovation
+of our approach is the construction of a simulated semi-open attack
+environment, mimicking real-world medical systems that permit periodic
+knowledge base updates via user or pipeline contributions. Within this setting,
+we introduce and emphasize Cross-Modal Conflict Injection (CMCI), which embeds
+subtle semantic contradictions between medical images and their paired reports.
+These mismatches degrade retrieval and generation by disrupting cross-modal
+alignment while remaining sufficiently plausible to evade conventional filters.
+While basic textual and visual attacks are included for completeness, CMCI
+demonstrates the most severe degradation. Evaluations on IU-Xray and MIMIC-CXR
+QA tasks show that MedThreatRAG reduces answer F1 scores by up to 27.66% and
+lowers LLaVA-Med-1.5 F1 rates to as low as 51.36%. Our findings expose
+fundamental security gaps in clinical RAG systems and highlight the urgent need
+for threat-aware design and robust multimodal consistency checks. Finally, we
+conclude with a concise set of guidelines to inform the safe development of
+future multimodal medical RAG systems.</p></br></body>

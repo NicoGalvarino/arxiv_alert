@@ -1,0 +1,89 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 13 Oct 2025 to 15 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.11827v1" target="_blank"><h2>Combining Euclidean and Hyperbolic Representations for Node-level
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Simone Mungari, Ettore Ritacco, Pietro Sabatino</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Node-level anomaly detection (NAD) is challenging due to diverse structural
+patterns and feature distributions. As such, NAD is a critical task with
+several applications which range from fraud detection, cybersecurity, to
+recommendation systems. We introduce Janus, a framework that jointly leverages
+Euclidean and Hyperbolic Graph Neural Networks to capture complementary aspects
+of node representations. Each node is described by two views, composed by the
+original features and structural features derived from random walks and
+degrees, then embedded into Euclidean and Hyperbolic spaces. A multi
+Graph-Autoencoder framework, equipped with a contrastive learning objective as
+regularization term, aligns the embeddings across the Euclidean and Hyperbolic
+spaces, highlighting nodes whose views are difficult to reconcile and are thus
+likely anomalous. Experiments on four real-world datasets show that Janus
+consistently outperforms shallow and deep baselines, empirically demonstrating
+that combining multiple geometric representations provides a robust and
+effective approach for identifying subtle and complex anomalies in graphs.</p></br><a href="http://arxiv.org/pdf/2510.12489v1" target="_blank"><h2>CrossAD: Time Series Anomaly Detection with Cross-scale Associations and
+  Cross-window Modeling</h2></a><strong><u>Authors:</u></strong>  Beibu Li, Qichao Shentu, Yang Shu, Hui Zhang, Ming Li, Ning Jin, Bin Yang, Chenjuan Guo</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Accepted by the thirty-ninth annual conference on Neural Information Processing Systems</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Time series anomaly detection plays a crucial role in a wide range of
+real-world applications. Given that time series data can exhibit different
+patterns at different sampling granularities, multi-scale modeling has proven
+beneficial for uncovering latent anomaly patterns that may not be apparent at a
+single scale. However, existing methods often model multi-scale information
+independently or rely on simple feature fusion strategies, neglecting the
+dynamic changes in cross-scale associations that occur during anomalies.
+Moreover, most approaches perform multi-scale modeling based on fixed sliding
+windows, which limits their ability to capture comprehensive contextual
+information. In this work, we propose CrossAD, a novel framework for time
+series Anomaly Detection that takes Cross-scale associations and Cross-window
+modeling into account. We propose a cross-scale reconstruction that
+reconstructs fine-grained series from coarser series, explicitly capturing
+cross-scale associations. Furthermore, we design a query library and
+incorporate global multi-scale context to overcome the limitations imposed by
+fixed window sizes. Extensive experiments conducted on multiple real-world
+datasets using nine evaluation metrics validate the effectiveness of CrossAD,
+demonstrating state-of-the-art performance in anomaly detection.</p></br><a href="http://arxiv.org/pdf/2510.12700v1" target="_blank"><h2>Topological Signatures of ReLU Neural Network Activation Patterns</h2></a><strong><u>Authors:</u></strong>  Vicente Bosca, Tatum Rask, Sunia Tanweer, Andrew R. Tawfeek, Branden Stone</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CG, math.AT, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper explores the topological signatures of ReLU neural network
+activation patterns. We consider feedforward neural networks with ReLU
+activation functions and analyze the polytope decomposition of the feature
+space induced by the network. Mainly, we investigate how the Fiedler partition
+of the dual graph and show that it appears to correlate with the decision
+boundary -- in the case of binary classification. Additionally, we compute the
+homology of the cellular decomposition -- in a regression task -- to draw
+similar patterns in behavior between the training loss and polyhedral
+cell-count, as the model is trained.</p></br><a href="http://arxiv.org/pdf/2510.12269v1" target="_blank"><h2>Tensor Logic: The Language of AI</h2></a><strong><u>Authors:</u></strong>  Pedro Domingos</br><strong><u>Categories:</u></strong> cs.AI, cs.LG, cs.NE, cs.PL, stat.ML, I.2.3; I.2.4; I.2.5; I.2.6; I.5.1</br><strong><u>Comments:</u></strong> 17 pages, 0 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Progress in AI is hindered by the lack of a programming language with all the
+requisite features. Libraries like PyTorch and TensorFlow provide automatic
+differentiation and efficient GPU implementation, but are additions to Python,
+which was never intended for AI. Their lack of support for automated reasoning
+and knowledge acquisition has led to a long and costly series of hacky attempts
+to tack them on. On the other hand, AI languages like LISP an Prolog lack
+scalability and support for learning. This paper proposes tensor logic, a
+language that solves these problems by unifying neural and symbolic AI at a
+fundamental level. The sole construct in tensor logic is the tensor equation,
+based on the observation that logical rules and Einstein summation are
+essentially the same operation, and all else can be reduced to them. I show how
+to elegantly implement key forms of neural, symbolic and statistical AI in
+tensor logic, including transformers, formal reasoning, kernel machines and
+graphical models. Most importantly, tensor logic makes new directions possible,
+such as sound reasoning in embedding space. This combines the scalability and
+learnability of neural networks with the reliability and transparency of
+symbolic reasoning, and is potentially a basis for the wider adoption of AI.</p></br><a href="http://arxiv.org/pdf/2510.12795v1" target="_blank"><h2>CuMPerLay: Learning Cubical Multiparameter Persistence Vectorizations</h2></a><strong><u>Authors:</u></strong>  Caner Korkmaz, Brighton Nuwagira, Barış Coşkunuzer, Tolga Birdal</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, math.AT, stat.ML</br><strong><u>Comments:</u></strong> Appears at ICCV 2025</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We present CuMPerLay, a novel differentiable vectorization layer that enables
+the integration of Cubical Multiparameter Persistence (CMP) into deep learning
+pipelines. While CMP presents a natural and powerful way to topologically work
+with images, its use is hindered by the complexity of multifiltration
+structures as well as the vectorization of CMP. In face of these challenges, we
+introduce a new algorithm for vectorizing MP homologies of cubical complexes.
+Our CuMPerLay decomposes the CMP into a combination of individual, learnable
+single-parameter persistence, where the bifiltration functions are jointly
+learned. Thanks to the differentiability, its robust topological feature
+vectors can be seamlessly used within state-of-the-art architectures such as
+Swin Transformers. We establish theoretical guarantees for the stability of our
+vectorization under generalized Wasserstein metrics. Our experiments on
+benchmark medical imaging and computer vision datasets show the benefit
+CuMPerLay on classification and segmentation performance, particularly in
+limited-data scenarios. Overall, CuMPerLay offers a promising direction for
+integrating global structural information into deep networks for structured
+image analysis.</p></br></body>

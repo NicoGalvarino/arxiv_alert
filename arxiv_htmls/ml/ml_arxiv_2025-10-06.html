@@ -1,0 +1,1006 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 01 Oct 2025 to 06 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.02915v1" target="_blank"><h2>WavInWav: Time-domain Speech Hiding via Invertible Neural Network</h2></a><strong><u>Authors:</u></strong>  Wei Fan, Kejiang Chen, Xiangkun Wang, Weiming Zhang, Nenghai Yu</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.CR, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> 13 pages, 5 figures, project page:this https URL</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), time-domain (title, abstract), invertible neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Data hiding is essential for secure communication across digital media, and
+recent advances in Deep Neural Networks (DNNs) provide enhanced methods for
+embedding secret information effectively. However, previous audio hiding
+methods often result in unsatisfactory quality when recovering secret audio,
+due to their inherent limitations in the modeling of time-frequency
+relationships. In this paper, we explore these limitations and introduce a new
+DNN-based approach. We use a flow-based invertible neural network to establish
+a direct link between stego audio, cover audio, and secret audio, enhancing the
+reversibility of embedding and extracting messages. To address common issues
+from time-frequency transformations that degrade secret audio quality during
+recovery, we implement a time-frequency loss on the time-domain signal. This
+approach not only retains the benefits of time-frequency constraints but also
+enhances the reversibility of message recovery, which is vital for practical
+applications. We also add an encryption technique to protect the hidden data
+from unauthorized access. Experimental results on the VCTK and LibriSpeech
+datasets demonstrate that our method outperforms previous approaches in terms
+of subjective and objective metrics and exhibits robustness to various types of
+noise, suggesting its utility in targeted secure communication scenarios.</p></br><a href="http://arxiv.org/pdf/2510.00706v1" target="_blank"><h2>AttentionDep: Domain-Aware Attention for Explainable Depression Severity
+  Assessment</h2></a><strong><u>Authors:</u></strong>  Yusif Ibrahimov, Tarique Anwar, Tommy Yuan, Turan Mutallimov, Elgun Hasanov</br><strong><u>Categories:</u></strong> cs.AI, cs.IR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> In today's interconnected society, social media platforms provide a window
+into individuals' thoughts, emotions, and mental states. This paper explores
+the use of platforms like Facebook, X (formerly Twitter), and Reddit for
+depression severity detection. We propose AttentionDep, a domain-aware
+attention model that drives explainable depression severity estimation by
+fusing contextual and domain knowledge. Posts are encoded hierarchically using
+unigrams and bigrams, with attention mechanisms highlighting clinically
+relevant tokens. Domain knowledge from a curated mental health knowledge graph
+is incorporated through a cross-attention mechanism, enriching the contextual
+features. Finally, depression severity is predicted using an ordinal regression
+framework that respects the clinical-relevance and natural ordering of severity
+levels. Our experiments demonstrate that AttentionDep outperforms
+state-of-the-art baselines by over 5% in graded F1 score across datasets, while
+providing interpretable insights into its predictions. This work advances the
+development of trustworthy and transparent AI systems for mental health
+assessment from social media.</p></br><a href="http://arxiv.org/pdf/2510.01899v1" target="_blank"><h2>Multimodal Foundation Models for Early Disease Detection</h2></a><strong><u>Authors:</u></strong>  Md Talha Mohsin, Ismail Abdulrashid</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.HC</br><strong><u>Comments:</u></strong> 6 pages</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), multimodal (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Healthcare generates diverse streams of data, including electronic health
+records (EHR), medical imaging, genetics, and ongoing monitoring from wearable
+devices. Traditional diagnostic models frequently analyze these sources in
+isolation, which constrains their capacity to identify cross-modal correlations
+essential for early disease diagnosis. Our research presents a multimodal
+foundation model that consolidates diverse patient data through an
+attention-based transformer framework. At first, dedicated encoders put each
+modality into a shared latent space. Then, they combine them using multi-head
+attention and residual normalization. The architecture is made for pretraining
+on many tasks, which makes it easy to adapt to new diseases and datasets with
+little extra work. We provide an experimental strategy that uses benchmark
+datasets in oncology, cardiology, and neurology, with the goal of testing early
+detection tasks. The framework includes data governance and model management
+tools in addition to technological performance to improve transparency,
+reliability, and clinical interpretability. The suggested method works toward a
+single foundation model for precision diagnostics, which could improve the
+accuracy of predictions and help doctors make decisions.</p></br><a href="http://arxiv.org/pdf/2510.01112v1" target="_blank"><h2>The causal structure of galactic astrophysics</h2></a><strong><u>Authors:</u></strong>  Harry Desmond, Joseph Ramsey</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO, cs.LG, stat.AP, stat.ME</br><strong><u>Comments:</u></strong> 5 pages, 3 figures; submitted to MNRAS Letters</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Data-driven astrophysics currently relies on the detection and
+characterisation of correlations between objects' properties, which are then
+used to test physical theories that make predictions for them. This process
+fails to utilise information in the data that forms a crucial part of the
+theories' predictions, namely which variables are directly correlated (as
+opposed to accidentally correlated through others), the directions of these
+determinations, and the presence or absence of confounders that correlate
+variables in the dataset but are themselves absent from it. We propose to
+recover this information through causal discovery, a well-developed methodology
+for inferring the causal structure of datasets that is however almost entirely
+unknown to astrophysics. We develop a causal discovery algorithm suitable for
+astrophysical datasets and illustrate it on $\sim$5$\times10^5$ low-redshift
+galaxies from the Nasa Sloan Atlas, demonstrating its ability to distinguish
+physical mechanisms that are degenerate on the basis of correlations alone.</p></br><a href="http://arxiv.org/pdf/2510.01004v1" target="_blank"><h2>TextCAM: Explaining Class Activation Map with Text</h2></a><strong><u>Authors:</u></strong>  Qiming Zhao, Xingjian Li, Xiaoyu Cao, Xiaolong Wu, Min Xu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks (DNNs) have achieved remarkable success across domains
+but remain difficult to interpret, limiting their trustworthiness in
+high-stakes applications. This paper focuses on deep vision models, for which a
+dominant line of explainability methods are Class Activation Mapping (CAM) and
+its variants working by highlighting spatial regions that drive predictions. We
+figure out that CAM provides little semantic insight into what attributes
+underlie these activations. To address this limitation, we propose TextCAM, a
+novel explanation framework that enriches CAM with natural languages. TextCAM
+combines the precise spatial localization of CAM with the semantic alignment of
+vision-language models (VLMs). Specifically, we derive channel-level semantic
+representations using CLIP embeddings and linear discriminant analysis, and
+aggregate them with CAM weights to produce textual descriptions of salient
+visual evidence. This yields explanations that jointly specify where the model
+attends and what visual attributes likely support its decision. We further
+extend TextCAM to generate feature channels into semantically coherent groups,
+enabling more fine-grained visual-textual explanations. Experiments on
+ImageNet, CLEVR, and CUB demonstrate that TextCAM produces faithful and
+interpretable rationales that improve human understanding, detect spurious
+correlations, and preserve model fidelity.</p></br><a href="http://arxiv.org/pdf/2510.01622v1" target="_blank"><h2>LLM4Rec: Large Language Models for Multimodal Generative Recommendation
+  with Causal Debiasing</h2></a><strong><u>Authors:</u></strong>  Bo Ma, Hang Li, ZeHua Hu, XiaoFan Gui, LuYao Liu, Simon Lau</br><strong><u>Categories:</u></strong> cs.IR, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Contemporary generative recommendation systems face significant challenges in
+handling multimodal data, eliminating algorithmic biases, and providing
+transparent decision-making processes. This paper introduces an enhanced
+generative recommendation framework that addresses these limitations through
+five key innovations: multimodal fusion architecture, retrieval-augmented
+generation mechanisms, causal inference-based debiasing, explainable
+recommendation generation, and real-time adaptive learning capabilities. Our
+framework leverages advanced large language models as the backbone while
+incorporating specialized modules for cross-modal understanding, contextual
+knowledge integration, bias mitigation, explanation synthesis, and continuous
+model adaptation. Extensive experiments on three benchmark datasets
+(MovieLens-25M, Amazon-Electronics, Yelp-2023) demonstrate consistent
+improvements in recommendation accuracy, fairness, and diversity compared to
+existing approaches. The proposed framework achieves up to 2.3% improvement in
+NDCG@10 and 1.4% enhancement in diversity metrics while maintaining
+computational efficiency through optimized inference strategies.</p></br><a href="http://arxiv.org/pdf/2510.01970v1" target="_blank"><h2>Moon: A Modality Conversion-based Efficient Multivariate Time Series
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Yuanyuan Yao, Yuhan Shi, Lu Chen, Ziquan Fang, Yunjun Gao, Leong Hou U, Yushuai Li, Tianyi Li</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Multivariate time series (MTS) anomaly detection identifies abnormal patterns
+where each timestamp contains multiple variables. Existing MTS anomaly
+detection methods fall into three categories: reconstruction-based,
+prediction-based, and classifier-based methods. However, these methods face two
+key challenges: (1) Unsupervised learning methods, such as reconstruction-based
+and prediction-based methods, rely on error thresholds, which can lead to
+inaccuracies; (2) Semi-supervised methods mainly model normal data and often
+underuse anomaly labels, limiting detection of subtle anomalies;(3) Supervised
+learning methods, such as classifier-based approaches, often fail to capture
+local relationships, incur high computational costs, and are constrained by the
+scarcity of labeled data. To address these limitations, we propose Moon, a
+supervised modality conversion-based multivariate time series anomaly detection
+framework. Moon enhances the efficiency and accuracy of anomaly detection while
+providing detailed anomaly analysis reports. First, Moon introduces a novel
+multivariate Markov Transition Field (MV-MTF) technique to convert numeric time
+series data into image representations, capturing relationships across
+variables and timestamps. Since numeric data retains unique patterns that
+cannot be fully captured by image conversion alone, Moon employs a
+Multimodal-CNN to integrate numeric and image data through a feature fusion
+model with parameter sharing, enhancing training efficiency. Finally, a
+SHAP-based anomaly explainer identifies key variables contributing to
+anomalies, improving interpretability. Extensive experiments on six real-world
+MTS datasets demonstrate that Moon outperforms six state-of-the-art methods by
+up to 93% in efficiency, 4% in accuracy and, 10.8% in interpretation
+performance.</p></br><a href="http://arxiv.org/pdf/2510.01658v1" target="_blank"><h2>Learning Time-Series Representations by Hierarchical
+  Uniformity-Tolerance Latent Balancing</h2></a><strong><u>Authors:</u></strong>  Amin Jalali, Milad Soltany, Michael Greenspan, Ali Etemad</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted in Transactions on Machine Learning Research</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> We propose TimeHUT, a novel method for learning time-series representations
+by hierarchical uniformity-tolerance balancing of contrastive representations.
+Our method uses two distinct losses to learn strong representations with the
+aim of striking an effective balance between uniformity and tolerance in the
+embedding space. First, TimeHUT uses a hierarchical setup to learn both
+instance-wise and temporal information from input time-series. Next, we
+integrate a temperature scheduler within the vanilla contrastive loss to
+balance the uniformity and tolerance characteristics of the embeddings.
+Additionally, a hierarchical angular margin loss enforces instance-wise and
+temporal contrast losses, creating geometric margins between positive and
+negative pairs of temporal sequences. This approach improves the coherence of
+positive pairs and their separation from the negatives, enhancing the capture
+of temporal dependencies within a time-series sample. We evaluate our approach
+on a wide range of tasks, namely 128 UCR and 30 UAE datasets for univariate and
+multivariate classification, as well as Yahoo and KPI datasets for anomaly
+detection. The results demonstrate that TimeHUT outperforms prior methods by
+considerable margins on classification, while obtaining competitive results for
+anomaly detection. Finally, detailed sensitivity and ablation studies are
+performed to evaluate different components and hyperparameters of our method.</p></br><a href="http://arxiv.org/pdf/2510.01303v1" target="_blank"><h2>Low Rank Gradients and Where to Find Them</h2></a><strong><u>Authors:</u></strong>  Rishi Sonthalia, Michael Murray, Guido Montúfar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This paper investigates low-rank structure in the gradients of the training
+loss for two-layer neural networks while relaxing the usual isotropy
+assumptions on the training data and parameters. We consider a spiked data
+model in which the bulk can be anisotropic and ill-conditioned, we do not
+require independent data and weight matrices and we also analyze both the
+mean-field and neural-tangent-kernel scalings. We show that the gradient with
+respect to the input weights is approximately low rank and is dominated by two
+rank-one terms: one aligned with the bulk data-residue , and another aligned
+with the rank one spike in the input data. We characterize how properties of
+the training data, the scaling regime and the activation function govern the
+balance between these two components. Additionally, we also demonstrate that
+standard regularizers, such as weight decay, input noise and Jacobian
+penalties, also selectively modulate these components. Experiments on synthetic
+and real data corroborate our theoretical predictions.</p></br><a href="http://arxiv.org/pdf/2510.01038v1" target="_blank"><h2>Activation-Deactivation: A General Framework for Robust Post-hoc
+  Explainable AI</h2></a><strong><u>Authors:</u></strong>  Akchunya Chanchal, David A. Kelly, Hana Chockler</br><strong><u>Categories:</u></strong> cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Preprint: Under Review</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainability (abstract), explainable (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Black-box explainability methods are popular tools for explaining the
+decisions of image classifiers. A major drawback of these tools is their
+reliance on mutants obtained by occluding parts of the input, leading to
+out-of-distribution images. This raises doubts about the quality of the
+explanations. Moreover, choosing an appropriate occlusion value often requires
+domain knowledge. In this paper we introduce a novel forward-pass paradigm
+Activation-Deactivation (AD), which removes the effects of occluded input
+features from the model's decision-making by switching off the parts of the
+model that correspond to the occlusions. We introduce ConvAD, a drop-in
+mechanism that can be easily added to any trained Convolutional Neural Network
+(CNN), and which implements the AD paradigm. This leads to more robust
+explanations without any additional training or fine-tuning. We prove that the
+ConvAD mechanism does not change the decision-making process of the network. We
+provide experimental evaluation across several datasets and model
+architectures. We compare the quality of AD-explanations with explanations
+achieved using a set of masking values, using the proxies of robustness, size,
+and confidence drop-off. We observe a consistent improvement in robustness of
+AD explanations (up to 62.5%) compared to explanations obtained with
+occlusions, demonstrating that ConvAD extracts more robust explanations without
+the need for domain knowledge.</p></br><a href="http://arxiv.org/pdf/2510.02711v1" target="_blank"><h2>A Novel Unified Lightweight Temporal-Spatial Transformer Approach for
+  Intrusion Detection in Drone Networks</h2></a><strong><u>Authors:</u></strong>  Tarun Kumar Biswas, Ashrafun Zannat, Waqas Ishtiaq, Md. Alamgir Hossain</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR</br><strong><u>Comments:</u></strong> 21 pages, 18 figures, 5 tables</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The growing integration of drones across commercial, industrial, and civilian
+domains has introduced significant cybersecurity challenges, particularly due
+to the susceptibility of drone networks to a wide range of cyberattacks.
+Existing intrusion detection mechanisms often lack the adaptability,
+efficiency, and generalizability required for the dynamic and resource
+constrained environments in which drones operate. This paper proposes TSLT-Net,
+a novel lightweight and unified Temporal Spatial Transformer based intrusion
+detection system tailored specifically for drone networks. By leveraging self
+attention mechanisms, TSLT-Net effectively models both temporal patterns and
+spatial dependencies in network traffic, enabling accurate detection of diverse
+intrusion types. The framework includes a streamlined preprocessing pipeline
+and supports both multiclass attack classification and binary anomaly detection
+within a single architecture. Extensive experiments conducted on the ISOT Drone
+Anomaly Detection Dataset, consisting of more than 2.3 million labeled records,
+demonstrate the superior performance of TSLT-Net with 99.99 percent accuracy in
+multiclass detection and 100 percent in binary anomaly detection, while
+maintaining a minimal memory footprint of only 0.04 MB and 9722 trainable
+parameters. These results establish TSLT-Net as an effective and scalable
+solution for real time drone cybersecurity, particularly suitable for
+deployment on edge devices in mission critical UAV systems.</p></br><a href="http://arxiv.org/pdf/2510.00460v1" target="_blank"><h2>Robust Spatiotemporally Contiguous Anomaly Detection Using Tensor
+  Decomposition</h2></a><strong><u>Authors:</u></strong>  Rachita Mondal, Mert Indibi, Tapabrata Maiti, Selin Aviyente</br><strong><u>Categories:</u></strong> cs.LG, stat.ME, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in spatiotemporal data is a challenging problem encountered
+in a variety of applications, including video surveillance, medical imaging
+data, and urban traffic monitoring. Existing anomaly detection methods focus
+mainly on point anomalies and cannot deal with temporal and spatial
+dependencies that arise in spatio-temporal data. Tensor-based anomaly detection
+methods have been proposed to address this problem. Although existing methods
+can capture dependencies across different modes, they are primarily supervised
+and do not account for the specific structure of anomalies. Moreover, these
+methods focus mainly on extracting anomalous features without providing any
+statistical confidence. In this paper, we introduce an unsupervised
+tensor-based anomaly detection method that simultaneously considers the sparse
+and spatiotemporally smooth nature of anomalies. The anomaly detection problem
+is formulated as a regularized robust low-rank + sparse tensor decomposition
+where the total variation of the tensor with respect to the underlying spatial
+and temporal graphs quantifies the spatiotemporal smoothness of the anomalies.
+Once the anomalous features are extracted, we introduce a statistical anomaly
+scoring framework that accounts for local spatio-temporal dependencies. The
+proposed framework is evaluated on both synthetic and real data.</p></br><a href="http://arxiv.org/pdf/2510.00726v1" target="_blank"><h2>CroSTAta: Cross-State Transition Attention Transformer for Robotic
+  Manipulation</h2></a><strong><u>Authors:</u></strong>  Giovanni Minelli, Giulio Turrisi, Victor Barasuol, Claudio Semini</br><strong><u>Categories:</u></strong> cs.RO, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Code and data available atthis https URL</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Learning robotic manipulation policies through supervised learning from
+demonstrations remains challenging when policies encounter execution variations
+not explicitly covered during training. While incorporating historical context
+through attention mechanisms can improve robustness, standard approaches
+process all past states in a sequence without explicitly modeling the temporal
+structure that demonstrations may include, such as failure and recovery
+patterns. We propose a Cross-State Transition Attention Transformer that
+employs a novel State Transition Attention (STA) mechanism to modulate standard
+attention weights based on learned state evolution patterns, enabling policies
+to better adapt their behavior based on execution history. Our approach
+combines this structured attention with temporal masking during training, where
+visual information is randomly removed from recent timesteps to encourage
+temporal reasoning from historical context. Evaluation in simulation shows that
+STA consistently outperforms standard cross-attention and temporal modeling
+approaches like TCN and LSTM networks across all tasks, achieving more than 2x
+improvement over cross-attention on precision-critical tasks.</p></br><a href="http://arxiv.org/pdf/2510.02717v1" target="_blank"><h2>CST-AFNet: A dual attention-based deep learning framework for intrusion
+  detection in IoT networks</h2></a><strong><u>Authors:</u></strong>  Waqas Ishtiaq, Ashrafun Zannat, A. H. M. Shahariar Parvez, Md. Alamgir Hossain, Muntasir Hasan Kanchan, Muhammad Masud Tarek</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR</br><strong><u>Comments:</u></strong> 9 pages, 9 figures, 5 tables</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The rapid expansion of the Internet of Things (IoT) has revolutionized modern
+industries by enabling smart automation and real time connectivity. However,
+this evolution has also introduced complex cybersecurity challenges due to the
+heterogeneous, resource constrained, and distributed nature of these
+environments. To address these challenges, this research presents CST AFNet, a
+novel dual attention based deep learning framework specifically designed for
+robust intrusion detection in IoT networks. The model integrates multi scale
+Convolutional Neural Networks (CNNs) for spatial feature extraction,
+Bidirectional Gated Recurrent Units (BiGRUs) for capturing temporal
+dependencies, and a dual attention mechanism, channel and temporal attention,
+to enhance focus on critical patterns in the data. The proposed method was
+trained and evaluated on the Edge IIoTset dataset, a comprehensive and
+realistic benchmark containing more than 2.2 million labeled instances spanning
+15 attack types and benign traffic, collected from a seven layer industrial
+testbed. Our proposed model achieves outstanding accuracy for both 15 attack
+types and benign traffic. CST AFNet achieves 99.97 percent accuracy. Moreover,
+this model demonstrates exceptional performance with macro averaged precision,
+recall, and F1 score all above 99.3 percent. Experimental results show that CST
+AFNet achieves superior detection accuracy, significantly outperforming
+traditional deep learning models. The findings confirm that CST AFNet is a
+powerful and scalable solution for real time cyber threat detection in complex
+IoT and IIoT environments, paving the way for more secure, intelligent, and
+adaptive cyber physical systems.</p></br><a href="http://arxiv.org/pdf/2510.02922v1" target="_blank"><h2>Multimodal Carotid Risk Stratification with Large Vision-Language
+  Models: Benchmarking, Fine-Tuning, and Clinical Insights</h2></a><strong><u>Authors:</u></strong>  Daphne Tsolissou, Theofanis Ganitidis, Konstantinos Mitsis, Stergios CHristodoulidis, Maria Vakalopoulou, Konstantina Nikita</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), multimodal (title, abstract), domain adaptation (abstract)</br><p><strong><u>Abstract:</u></strong> Reliable risk assessment for carotid atheromatous disease remains a major
+clinical challenge, as it requires integrating diverse clinical and imaging
+information in a manner that is transparent and interpretable to clinicians.
+This study investigates the potential of state-of-the-art and recent large
+vision-language models (LVLMs) for multimodal carotid plaque assessment by
+integrating ultrasound imaging (USI) with structured clinical, demographic,
+laboratory, and protein biomarker data. A framework that simulates realistic
+diagnostic scenarios through interview-style question sequences is proposed,
+comparing a range of open-source LVLMs, including both general-purpose and
+medically tuned models. Zero-shot experiments reveal that even if they are very
+powerful, not all LVLMs can accurately identify imaging modality and anatomy,
+while all of them perform poorly in accurate risk classification. To address
+this limitation, LLaVa-NeXT-Vicuna is adapted to the ultrasound domain using
+low-rank adaptation (LoRA), resulting in substantial improvements in stroke
+risk stratification. The integration of multimodal tabular data in the form of
+text further enhances specificity and balanced accuracy, yielding competitive
+performance compared to prior convolutional neural network (CNN) baselines
+trained on the same dataset. Our findings highlight both the promise and
+limitations of LVLMs in ultrasound-based cardiovascular risk prediction,
+underscoring the importance of multimodal integration, model calibration, and
+domain adaptation for clinical translation.</p></br><a href="http://arxiv.org/pdf/2510.01717v1" target="_blank"><h2>Latency-aware Multimodal Federated Learning over UAV Networks</h2></a><strong><u>Authors:</u></strong>  Shaba Shaon, Dinh C. Nguyen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted at IEEE Transactions on Network Science and Engineering</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper investigates federated multimodal learning (FML) assisted by
+unmanned aerial vehicles (UAVs) with a focus on minimizing system latency and
+providing convergence analysis. In this framework, UAVs are distributed
+throughout the network to collect data, participate in model training, and
+collaborate with a base station (BS) to build a global model. By utilizing
+multimodal sensing, the UAVs overcome the limitations of unimodal systems,
+enhancing model accuracy, generalization, and offering a more comprehensive
+understanding of the environment. The primary objective is to optimize FML
+system latency in UAV networks by jointly addressing UAV sensing scheduling,
+power control, trajectory planning, resource allocation, and BS resource
+management. To address the computational complexity of our latency minimization
+problem, we propose an efficient iterative optimization algorithm combining
+block coordinate descent and successive convex approximation techniques, which
+provides high-quality approximate solutions. We also present a theoretical
+convergence analysis for the UAV-assisted FML framework under a non-convex loss
+function. Numerical experiments demonstrate that our FML framework outperforms
+existing approaches in terms of system latency and model training performance
+under different data settings.</p></br><a href="http://arxiv.org/pdf/2510.02528v1" target="_blank"><h2>Multimodal Function Vectors for Spatial Relations</h2></a><strong><u>Authors:</u></strong>  Shuhao Fu, Esther Goldberg, Ying Nian Wu, Hongjing Lu</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Large Multimodal Models (LMMs) demonstrate impressive in-context learning
+abilities from limited multimodal demonstrations, yet the internal mechanisms
+supporting such task learning remain opaque. Building on prior work of large
+language models, we show that a small subset of attention heads in the
+vision-language model OpenFlamingo-4B is responsible for transmitting
+representations of spatial relations. The activations of these attention heads,
+termed function vectors, can be extracted and manipulated to alter an LMM's
+performance on relational tasks. First, using both synthetic and real image
+datasets, we apply causal mediation analysis to identify attention heads that
+strongly influence relational predictions, and extract multimodal function
+vectors that improve zero-shot accuracy at inference time. We further
+demonstrate that these multimodal function vectors can be fine-tuned with a
+modest amount of training data, while keeping LMM parameters frozen, to
+significantly outperform in-context learning baselines. Finally, we show that
+relation-specific function vectors can be linearly combined to solve analogy
+problems involving novel and untrained spatial relations, highlighting the
+strong generalization ability of this approach. Our results show that LMMs
+encode spatial relational knowledge within localized internal structures, which
+can be systematically extracted and optimized, thereby advancing our
+understanding of model modularity and enhancing control over relational
+reasoning in LMMs.</p></br><a href="http://arxiv.org/pdf/2510.01011v1" target="_blank"><h2>The trigger design for AdvCam</h2></a><strong><u>Authors:</u></strong>  Leonid Burmistrov</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE</br><strong><u>Comments:</u></strong> 39th International Cosmic Ray Conference (ICRC2025)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The AdvCam is a next-generation camera for the Large-Sized Telescopes of the
+Cherenkov Telescope Array Observatory, based on silicon photomultipliers. Its
+fully digital readout system enables the design of new, sophisticated trigger
+logic. The Large-Sized Telescopes aim to cover the low-energy range of the
+cosmic gamma-ray spectrum, with a threshold starting at about 20 GeV, using the
+existing photomultiplier tube camera. The AdvCam, along with the new trigger
+logic, as shown by simulations, lowers the detectable energy threshold to 13
+GeV. The proposed trigger logic has a multilevel structure. The first level
+involves fast coincidences among small pixel regions at a rate of approximately
+1 GHz, while the second level processes all camera pixels within an
+approximately 10-nanosecond time window. Different families of machine learning
+algorithms optimized for FPGAs form the second-level trigger. In this work, we
+consider two main approaches: Deep Neural Networks and Density-Based Spatial
+Clustering of Applications with Noise, both running with latencies below 1
+microsecond at a 1 MHz rate. This work provides a detailed description of the
+trigger chain and its performance, as studied through simulation.</p></br><a href="http://arxiv.org/pdf/2510.02789v1" target="_blank"><h2>Align Your Query: Representation Alignment for Multimodality Medical
+  Object Detection</h2></a><strong><u>Authors:</u></strong>  Ara Seo, Bryan Sangwoo Kim, Hyungjin Chung, Jong Chul Ye</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Project page:this https URL</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multimodality (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Medical object detection suffers when a single detector is trained on mixed
+medical modalities (e.g., CXR, CT, MRI) due to heterogeneous statistics and
+disjoint representation spaces. To address this challenge, we turn to
+representation alignment, an approach that has proven effective for bringing
+features from different sources into a shared space. Specifically, we target
+the representations of DETR-style object queries and propose a simple,
+detector-agnostic framework to align them with modality context. First, we
+define modality tokens: compact, text-derived embeddings encoding imaging
+modality that are lightweight and require no extra annotations. We integrate
+the modality tokens into the detection process via Multimodality Context
+Attention (MoCA), mixing object-query representations via self-attention to
+propagate modality context within the query set. This preserves DETR-style
+architectures and adds negligible latency while injecting modality cues into
+object queries. We further introduce QueryREPA, a short pretraining stage that
+aligns query representations to their modality tokens using a task-specific
+contrastive objective with modality-balanced batches. Together, MoCA and
+QueryREPA produce modality-aware, class-faithful queries that transfer
+effectively to downstream training. Across diverse modalities trained
+altogether, the proposed approach consistently improves AP with minimal
+overhead and no architectural modifications, offering a practical path toward
+robust multimodality medical object detection. Project page:
+https://araseo.github.io/alignyourquery/.</p></br><a href="http://arxiv.org/pdf/2510.02835v1" target="_blank"><h2>Subject-Adaptive Sparse Linear Models for Interpretable Personalized
+  Health Prediction from Multimodal Lifelog Data</h2></a><strong><u>Authors:</u></strong>  Dohyun Bu, Jisoo Han, Soohwa Kwon, Yulim So, Jong-Seok Lee</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 6 pages, ICTC 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Improved prediction of personalized health outcomes -- such as sleep quality
+and stress -- from multimodal lifelog data could have meaningful clinical and
+practical implications. However, state-of-the-art models, primarily deep neural
+networks and gradient-boosted ensembles, sacrifice interpretability and fail to
+adequately address the significant inter-individual variability inherent in
+lifelog data. To overcome these challenges, we propose the Subject-Adaptive
+Sparse Linear (SASL) framework, an interpretable modeling approach explicitly
+designed for personalized health prediction. SASL integrates ordinary least
+squares regression with subject-specific interactions, systematically
+distinguishing global from individual-level effects. We employ an iterative
+backward feature elimination method based on nested $F$-tests to construct a
+sparse and statistically robust model. Additionally, recognizing that health
+outcomes often represent discretized versions of continuous processes, we
+develop a regression-then-thresholding approach specifically designed to
+maximize macro-averaged F1 scores for ordinal targets. For intrinsically
+challenging predictions, SASL selectively incorporates outputs from compact
+LightGBM models through confidence-based gating, enhancing accuracy without
+compromising interpretability. Evaluations conducted on the CH-2025 dataset --
+which comprises roughly 450 daily observations from ten subjects -- demonstrate
+that the hybrid SASL-LightGBM framework achieves predictive performance
+comparable to that of sophisticated black-box methods, but with significantly
+fewer parameters and substantially greater transparency, thus providing clear
+and actionable insights for clinicians and practitioners.</p></br><a href="http://arxiv.org/pdf/2510.00478v1" target="_blank"><h2>Vicinity-Guided Discriminative Latent Diffusion for Privacy-Preserving
+  Domain Adaptation</h2></a><strong><u>Authors:</u></strong>  Jing Wang, Wonho Bae, Jiahong Chen, Wenxu Wang, Junhyug Noh</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 32 pages, 6 figures, 39th Conference on Neural Information Processing Systems (NeurIPS 2025)</br><strong><u>Matching Keywords:</u></strong> domain adaptation (title)</br><p><strong><u>Abstract:</u></strong> Recent work on latent diffusion models (LDMs) has focused almost exclusively
+on generative tasks, leaving their potential for discriminative transfer
+largely unexplored. We introduce Discriminative Vicinity Diffusion (DVD), a
+novel LDM-based framework for a more practical variant of source-free domain
+adaptation (SFDA): the source provider may share not only a pre-trained
+classifier but also an auxiliary latent diffusion module, trained once on the
+source data and never exposing raw source samples. DVD encodes each source
+feature's label information into its latent vicinity by fitting a Gaussian
+prior over its k-nearest neighbors and training the diffusion network to drift
+noisy samples back to label-consistent representations. During adaptation, we
+sample from each target feature's latent vicinity, apply the frozen diffusion
+module to generate source-like cues, and use a simple InfoNCE loss to align the
+target encoder to these cues, explicitly transferring decision boundaries
+without source access. Across standard SFDA benchmarks, DVD outperforms
+state-of-the-art methods. We further show that the same latent diffusion module
+enhances the source classifier's accuracy on in-domain data and boosts
+performance in supervised classification and domain generalization experiments.
+DVD thus reinterprets LDMs as practical, privacy-preserving bridges for
+explicit knowledge transfer, addressing a core challenge in source-free domain
+adaptation that prior methods have yet to solve.</p></br><a href="http://arxiv.org/pdf/2510.02407v1" target="_blank"><h2>Extreme value forecasting using relevance-based data augmentation with
+  deep learning models</h2></a><strong><u>Authors:</u></strong>  Junru Hua, Rahul Ahluwalia, Rohitash Chandra</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), data augmentation (title, abstract)</br><p><strong><u>Abstract:</u></strong> Data augmentation with generative adversarial networks (GANs) has been
+popular for class imbalance problems, mainly for pattern classification and
+computer vision-related applications. Extreme value forecasting is a
+challenging field that has various applications from finance to climate change
+problems. In this study, we present a data augmentation framework for extreme
+value forecasting. In this framework, our focus is on forecasting extreme
+values using deep learning models in combination with data augmentation models
+such as GANs and synthetic minority oversampling technique (SMOTE). We use deep
+learning models such as convolutional long short-term memory (Conv-LSTM) and
+bidirectional long short-term memory (BD-LSTM) networks for multistep ahead
+prediction featuring extremes. We investigate which data augmentation models
+are the most suitable, taking into account the prediction accuracy overall and
+at extreme regions, along with computational efficiency. We also present novel
+strategies for incorporating data augmentation, considering extreme values
+based on a relevance function. Our results indicate that the SMOTE-based
+strategy consistently demonstrated superior adaptability, leading to improved
+performance across both short- and long-horizon forecasts. Conv-LSTM and
+BD-LSTM exhibit complementary strengths: the former excels in periodic, stable
+datasets, while the latter performs better in chaotic or non-stationary
+sequences.</p></br><a href="http://arxiv.org/pdf/2510.00545v1" target="_blank"><h2>Bayesian Neural Networks for Functional ANOVA model</h2></a><strong><u>Authors:</u></strong>  Seokhun Park, Choeun Kim, Jihu Lee, Yunseop Shin, Insung Kong, Yongdai Kim</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> With the increasing demand for interpretability in machine learning,
+functional ANOVA decomposition has gained renewed attention as a principled
+tool for breaking down high-dimensional function into low-dimensional
+components that reveal the contributions of different variable groups.
+Recently, Tensor Product Neural Network (TPNN) has been developed and applied
+as basis functions in the functional ANOVA model, referred to as ANOVA-TPNN. A
+disadvantage of ANOVA-TPNN, however, is that the components to be estimated
+must be specified in advance, which makes it difficult to incorporate
+higher-order TPNNs into the functional ANOVA model due to computational and
+memory constraints. In this work, we propose Bayesian-TPNN, a Bayesian
+inference procedure for the functional ANOVA model with TPNN basis functions,
+enabling the detection of higher-order components with reduced computational
+cost compared to ANOVA-TPNN. We develop an efficient MCMC algorithm and
+demonstrate that Bayesian-TPNN performs well by analyzing multiple benchmark
+datasets. Theoretically, we prove that the posterior of Bayesian-TPNN is
+consistent.</p></br><a href="http://arxiv.org/pdf/2510.01520v1" target="_blank"><h2>Predictive Modeling and Explainable AI for Veterinary Safety Profiles,
+  Residue Assessment, and Health Outcomes Using Real-World Data and
+  Physicochemical Properties</h2></a><strong><u>Authors:</u></strong>  Hossein Sholehrasa, Xuan Xu, Doina Caragea, Jim E. Riviere, Majid Jaberi-Douraki</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> The safe use of pharmaceuticals in food-producing animals is vital to protect
+animal welfare and human food safety. Adverse events (AEs) may signal
+unexpected pharmacokinetic or toxicokinetic effects, increasing the risk of
+violative residues in the food chain. This study introduces a predictive
+framework for classifying outcomes (Death vs. Recovery) using ~1.28 million
+reports (1987-2025 Q1) from the U.S. FDA's OpenFDA Center for Veterinary
+Medicine. A preprocessing pipeline merged relational tables and standardized
+AEs through VeDDRA ontologies. Data were normalized, missing values imputed,
+and high-cardinality features reduced; physicochemical drug properties were
+integrated to capture chemical-residue links. We evaluated supervised models,
+including Random Forest, CatBoost, XGBoost, ExcelFormer, and large language
+models (Gemma 3-27B, Phi 3-12B). Class imbalance was addressed, such as
+undersampling and oversampling, with a focus on prioritizing recall for fatal
+outcomes. Ensemble methods(Voting, Stacking) and CatBoost performed best,
+achieving precision, recall, and F1-scores of 0.95. Incorporating Average
+Uncertainty Margin (AUM)-based pseudo-labeling of uncertain cases improved
+minority-class detection, particularly in ExcelFormer and XGBoost.
+Interpretability via SHAP identified biologically plausible predictors,
+including lung, heart, and bronchial disorders, animal demographics, and drug
+physicochemical properties. These features were strongly linked to fatal
+outcomes. Overall, the framework shows that combining rigorous data
+engineering, advanced machine learning, and explainable AI enables accurate,
+interpretable predictions of veterinary safety outcomes. The approach supports
+FARAD's mission by enabling early detection of high-risk drug-event profiles,
+strengthening residue risk assessment, and informing regulatory and clinical
+decision-making.</p></br><a href="http://arxiv.org/pdf/2510.02683v1" target="_blank"><h2>Can Data-Driven Dynamics Reveal Hidden Physics? There Is A Need for
+  Interpretable Neural Operators</h2></a><strong><u>Authors:</u></strong>  Wenhan Gao, Jian Luo, Fang Wan, Ruichen Xu, Xiang Liu, Haipeng Xing, Yi Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recently, neural operators have emerged as powerful tools for learning
+mappings between function spaces, enabling data-driven simulations of complex
+dynamics. Despite their successes, a deeper understanding of their learning
+mechanisms remains underexplored. In this work, we classify neural operators
+into two types: (1) Spatial domain models that learn on grids and (2)
+Functional domain models that learn with function bases. We present several
+viewpoints based on this classification and focus on learning data-driven
+dynamics adhering to physical principles. Specifically, we provide a way to
+explain the prediction-making process of neural operators and show that neural
+operator can learn hidden physical patterns from data. However, this
+explanation method is limited to specific situations, highlighting the urgent
+need for generalizable explanation methods. Next, we show that a simple
+dual-space multi-scale model can achieve SOTA performance and we believe that
+dual-space multi-spatio-scale models hold significant potential to learn
+complex physics and require further investigation. Lastly, we discuss the
+critical need for principled frameworks to incorporate known physics into
+neural operators, enabling better generalization and uncovering more hidden
+physical phenomena.</p></br><a href="http://arxiv.org/pdf/2510.00487v1" target="_blank"><h2>Black-Box Time-Series Domain Adaptation via Cross-Prompt Foundation
+  Models</h2></a><strong><u>Authors:</u></strong>  M. T. Furqon, Mahardhika Pratama, Igor Skrjanc, Lin Liu, Habibullah Habibullah, Kutluyil Dogancay</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> domain adaptation (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The black-box domain adaptation (BBDA) topic is developed to address the
+privacy and security issues where only an application programming interface
+(API) of the source model is available for domain adaptations. Although the
+BBDA topic has attracted growing research attentions, existing works mostly
+target the vision applications and are not directly applicable to the
+time-series applications possessing unique spatio-temporal characteristics. In
+addition, none of existing approaches have explored the strength of foundation
+model for black box time-series domain adaptation (BBTSDA). This paper proposes
+a concept of Cross-Prompt Foundation Model (CPFM) for the BBTSDA problems. CPFM
+is constructed under a dual branch network structure where each branch is
+equipped with a unique prompt to capture different characteristics of data
+distributions. In the domain adaptation phase, the reconstruction learning
+phase in the prompt and input levels is developed. All of which are built upon
+a time-series foundation model to overcome the spatio-temporal dynamic. Our
+rigorous experiments substantiate the advantage of CPFM achieving improved
+results with noticeable margins from its competitors in three time-series
+datasets of different application domains.</p></br><a href="http://arxiv.org/pdf/2510.02695v1" target="_blank"><h2>RAMAC: Multimodal Risk-Aware Offline Reinforcement Learning and the Role
+  of Behavior Regularization</h2></a><strong><u>Authors:</u></strong>  Kai Fukazawa, Kunal Mundada, Iman Soltani</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Under review as a conference paper at ICLR 2026, 21 pages, 8 figures. The HTML preview may misrender some figures; please refer to the PDF</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> In safety-critical domains where online data collection is infeasible,
+offline reinforcement learning (RL) offers an attractive alternative but only
+if policies deliver high returns without incurring catastrophic lower-tail
+risk. Prior work on risk-averse offline RL achieves safety at the cost of value
+conservatism and restricted policy classes, whereas expressive policies are
+only used in risk-neutral settings. Here, we address this gap by introducing
+the \textbf{Risk-Aware Multimodal Actor-Critic (RAMAC)} framework, which
+couples an \emph{expressive generative actor} with a distributional critic. The
+RAMAC differentiates composite objective combining distributional risk and BC
+loss through the generative path, achieving risk-sensitive learning in complex
+multimodal scenarios. We instantiate RAMAC with diffusion and flow-matching
+actors and observe consistent gains in $\mathrm{CVaR}_{0.1}$ while maintaining
+strong returns on most Stochastic-D4RL tasks. Code:
+https://github.com/KaiFukazawa/RAMAC.git</p></br><a href="http://arxiv.org/pdf/2510.01020v1" target="_blank"><h2>The Good, the Bad, and the Sampled: a No-Regret Approach to Safe Online
+  Classification</h2></a><strong><u>Authors:</u></strong>  Tavor Z. Baharav, Spyros Dragazis, Aldo Pacchiano</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.ST, stat.ML, stat.TH</br><strong><u>Comments:</u></strong> 43 pages</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> We study the problem of sequentially testing individuals for a binary disease
+outcome whose true risk is governed by an unknown logistic model. At each
+round, a patient arrives with feature vector $x_t$, and the decision maker may
+either pay to administer a (noiseless) diagnostic test--revealing the true
+label--or skip testing and predict the patient's disease status based on their
+feature vector and prior history. Our goal is to minimize the total number of
+costly tests required while guaranteeing that the fraction of
+misclassifications does not exceed a prespecified error tolerance $\alpha$,
+with probability at least $1-\delta$. To address this, we develop a novel
+algorithm that interleaves label-collection and distribution estimation to
+estimate both $\theta^{*}$ and the context distribution $P$, and computes a
+conservative, data-driven threshold $\tau_t$ on the logistic score
+$|x_t^\top\theta|$ to decide when testing is necessary. We prove that, with
+probability at least $1-\delta$, our procedure does not exceed the target
+misclassification rate, and requires only $O(\sqrt{T})$ excess tests compared
+to the oracle baseline that knows both $\theta^{*}$ and the patient feature
+distribution $P$. This establishes the first no-regret guarantees for
+error-constrained logistic testing, with direct applications to cost-sensitive
+medical screening. Simulations corroborate our theoretical guarantees, showing
+that in practice our procedure efficiently estimates $\theta^{*}$ while
+retaining safety guarantees, and does not require too many excess tests.</p></br><a href="http://arxiv.org/pdf/2510.02060v1" target="_blank"><h2>ReTabAD: A Benchmark for Restoring Semantic Context in Tabular Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Sanghyu Yoon, Dongmin Kim, Suhee Yoon, Ye Seul Sim, Seungdong Yoa, Hye-Seung Cho, Soonyoung Lee, Hankook Lee, Woohyung Lim</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 9 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> In tabular anomaly detection (AD), textual semantics often carry critical
+signals, as the definition of an anomaly is closely tied to domain-specific
+context. However, existing benchmarks provide only raw data points without
+semantic context, overlooking rich textual metadata such as feature
+descriptions and domain knowledge that experts rely on in practice. This
+limitation restricts research flexibility and prevents models from fully
+leveraging domain knowledge for detection. ReTabAD addresses this gap by
+restoring textual semantics to enable context-aware tabular AD research. We
+provide (1) 20 carefully curated tabular datasets enriched with structured
+textual metadata, together with implementations of state-of-the-art AD
+algorithms including classical, deep learning, and LLM-based approaches, and
+(2) a zero-shot LLM framework that leverages semantic context without
+task-specific training, establishing a strong baseline for future research.
+Furthermore, this work provides insights into the role and utility of textual
+metadata in AD through experiments and analysis. Results show that semantic
+context improves detection performance and enhances interpretability by
+supporting domain-aware reasoning. These findings establish ReTabAD as a
+benchmark for systematic exploration of context-aware AD.</p></br><a href="http://arxiv.org/pdf/2510.01418v1" target="_blank"><h2>DiffKnock: Diffusion-based Knockoff Statistics for Neural Networks
+  Inference</h2></a><strong><u>Authors:</u></strong>  Heng Ge, Qing Lu</br><strong><u>Categories:</u></strong> stat.ME, stat.AP, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We introduce DiffKnock, a diffusion-based knockoff framework for
+high-dimensional feature selection with finite-sample false discovery rate
+(FDR) control. DiffKnock addresses two key limitations of existing knockoff
+methods: preserving complex feature dependencies and detecting non-linear
+associations. Our approach trains diffusion models to generate valid knockoffs
+and uses neural network--based gradient and filter statistics to construct
+antisymmetric feature importance measures. Through simulations, we showed that
+DiffKnock achieved higher power than autoencoder-based knockoffs while
+maintaining target FDR, indicating its superior performance in scenarios
+involving complex non-linear architectures. Applied to murine single-cell
+RNA-seq data of LPS-stimulated macrophages, DiffKnock identifies canonical
+NF-$\kappa$B target genes (Ccl3, Hmox1) and regulators (Fosb, Pdgfb). These
+results highlight that, by combining the flexibility of deep generative models
+with rigorous statistical guarantees, DiffKnock is a powerful and reliable tool
+for analyzing single-cell RNA-seq data, as well as high-dimensional and
+structured data in other domains.</p></br><a href="http://arxiv.org/pdf/2510.00495v2" target="_blank"><h2>Normal-Abnormal Guided Generalist Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Yuexin Wang, Xiaolei Wang, Yizheng Gong, Jimin Xiao</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Accepted by NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Generalist Anomaly Detection (GAD) aims to train a unified model on an
+original domain that can detect anomalies in new target domains. Previous GAD
+methods primarily use only normal samples as references, overlooking the
+valuable information contained in anomalous samples that are often available in
+real-world scenarios. To address this limitation, we propose a more practical
+approach: normal-abnormal-guided generalist anomaly detection, which leverages
+both normal and anomalous samples as references to guide anomaly detection
+across diverse domains. We introduce the Normal-Abnormal Generalist Learning
+(NAGL) framework, consisting of two key components: Residual Mining (RM) and
+Anomaly Feature Learning (AFL). RM extracts abnormal patterns from
+normal-abnormal reference residuals to establish transferable anomaly
+representations, while AFL adaptively learns anomaly features in query images
+through residual mapping to identify instance-aware anomalies. Our approach
+effectively utilizes both normal and anomalous references for more accurate and
+efficient cross-domain anomaly detection. Extensive experiments across multiple
+benchmarks demonstrate that our method significantly outperforms existing GAD
+approaches. This work represents the first to adopt a mixture of normal and
+abnormal samples as references in generalist anomaly detection. The code and
+datasets are available at https://github.com/JasonKyng/NAGL.</p></br><a href="http://arxiv.org/pdf/2510.01934v1" target="_blank"><h2>Foundation Visual Encoders Are Secretly Few-Shot Anomaly Detectors</h2></a><strong><u>Authors:</u></strong>  Guangyao Zhai, Yue Zhou, Xinyan Deng, Lars Heckler, Nassir Navab, Benjamin Busam</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 23 pages, 13 figures. Code is available at \url{this https URL}</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Few-shot anomaly detection streamlines and simplifies industrial safety
+inspection. However, limited samples make accurate differentiation between
+normal and abnormal features challenging, and even more so under
+category-agnostic conditions. Large-scale pre-training of foundation visual
+encoders has advanced many fields, as the enormous quantity of data helps to
+learn the general distribution of normal images. We observe that the anomaly
+amount in an image directly correlates with the difference in the learnt
+embeddings and utilize this to design a few-shot anomaly detector termed
+FoundAD. This is done by learning a nonlinear projection operator onto the
+natural image manifold. The simple operator acts as an effective tool for
+anomaly detection to characterize and identify out-of-distribution regions in
+an image. Extensive experiments show that our approach supports multi-class
+detection and achieves competitive performance while using substantially fewer
+parameters than prior methods. Backed up by evaluations with multiple
+foundation encoders, including fresh DINOv3, we believe this idea broadens the
+perspective on foundation features and advances the field of few-shot anomaly
+detection.</p></br><a href="http://arxiv.org/pdf/2510.02236v1" target="_blank"><h2>PUL-Inter-slice Defender: An Anomaly Detection Solution for Distributed
+  Slice Mobility Attacks</h2></a><strong><u>Authors:</u></strong>  Ricardo Misael Ayala Molina, Hyame Assem Alameddine, Makan Pourzandi, Chadi Assi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 13 pages, 7 figures, 4 tables, journal paper</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Network Slices (NSs) are virtual networks operating over a shared physical
+infrastructure, each designed to meet specific application requirements while
+maintaining consistent Quality of Service (QoS). In Fifth Generation (5G)
+networks, User Equipment (UE) can connect to and seamlessly switch between
+multiple NSs to access diverse services. However, this flexibility, known as
+Inter-Slice Switching (ISS), introduces a potential vulnerability that can be
+exploited to launch Distributed Slice Mobility (DSM) attacks, a form of
+Distributed Denial of Service (DDoS) attack. To secure 5G networks and their
+NSs against DSM attacks, we present in this work, PUL-Inter-Slice Defender; an
+anomaly detection solution that leverages Positive Unlabeled Learning (PUL) and
+incorporates a combination of Long Short-Term Memory Autoencoders and K-Means
+clustering. PUL-Inter-Slice Defender leverages the Third Generation Partnership
+Project (3GPP) key performance indicators and performance measurement counters
+as features for its machine learning models to detect DSM attack variants while
+maintaining robustness in the presence of contaminated training data. When
+evaluated on data collected from our 5G testbed based on the open-source
+free5GC and UERANSIM, a UE/ Radio Access Network (RAN) simulator;
+PUL-Inter-Slice Defender achieved F1-scores exceeding 98.50% on training
+datasets with 10% to 40% attack contamination, consistently outperforming its
+counterpart Inter-Slice Defender and other PUL based solutions combining
+One-Class Support Vector Machine (OCSVM) with Random Forest and XGBoost.</p></br><a href="http://arxiv.org/pdf/2510.02936v1" target="_blank"><h2>RAxSS: Retrieval-Augmented Sparse Sampling for Explainable
+  Variable-Length Medical Time Series Classification</h2></a><strong><u>Authors:</u></strong>  Aydin Javadov, Samir Garibov, Tobias Hoesli, Qiyang Sun, Florian von Wangenheim, Joseph Ollier, Björn W. Schuller</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted at the NeurIPS 2025 Workshop on Learning from Time Series for Health</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Medical time series analysis is challenging due to data sparsity, noise, and
+highly variable recording lengths. Prior work has shown that stochastic sparse
+sampling effectively handles variable-length signals, while retrieval-augmented
+approaches improve explainability and robustness to noise and weak temporal
+correlations. In this study, we generalize the stochastic sparse sampling
+framework for retrieval-informed classification. Specifically, we weight window
+predictions by within-channel similarity and aggregate them in probability
+space, yielding convex series-level scores and an explicit evidence trail for
+explainability. Our method achieves competitive iEEG classification performance
+and provides practitioners with greater transparency and explainability. We
+evaluate our method in iEEG recordings collected in four medical centers,
+demonstrating its potential for reliable and explainable clinical
+variable-length time series classification.</p></br><a href="http://arxiv.org/pdf/2510.00376v1" target="_blank"><h2>Discrete Wavelet Transform as a Facilitator for Expressive Latent Space
+  Representation in Variational Autoencoders in Satellite Imagery</h2></a><strong><u>Authors:</u></strong>  Arpan Mahara, Md Rezaul Karim Khan, Naphtali Rishe, Wenjia Wang, Seyed Masoud Sadjadi</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 6 pages, 3 Figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title, abstract), VAE (abstract), convolutional (abstract), latent space (title, abstract)</br><p><strong><u>Abstract:</u></strong> Latent Diffusion Models (LDM), a subclass of diffusion models, mitigate the
+computational complexity of pixel-space diffusion by operating within a
+compressed latent space constructed by Variational Autoencoders (VAEs),
+demonstrating significant advantages in Remote Sensing (RS) applications.
+Though numerous studies enhancing LDMs have been conducted, investigations
+explicitly targeting improvements within the intrinsic latent space remain
+scarce. This paper proposes an innovative perspective, utilizing the Discrete
+Wavelet Transform (DWT) to enhance the VAE's latent space representation,
+designed for satellite imagery. The proposed method, ExpDWT-VAE, introduces
+dual branches: one processes spatial domain input through convolutional
+operations, while the other extracts and processes frequency-domain features
+via 2D Haar wavelet decomposition, convolutional operation, and inverse DWT
+reconstruction. These branches merge to create an integrated spatial-frequency
+representation, further refined through convolutional and diagonal Gaussian
+mapping into a robust latent representation. We utilize a new satellite imagery
+dataset housed by the TerraFly mapping system to validate our method.
+Experimental results across several performance metrics highlight the efficacy
+of the proposed method at enhancing latent space representation.</p></br><a href="http://arxiv.org/pdf/2510.00367v1" target="_blank"><h2>CINDES: Classification induced neural density estimator and simulator</h2></a><strong><u>Authors:</u></strong>  Dehao Dai, Jianqing Fan, Yihong Gu, Debarghya Mukherjee</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, math.ST, stat.ME, stat.TH, 62G08</br><strong><u>Comments:</u></strong> 50 pages, 1 figure</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Neural network-based methods for (un)conditional density estimation have
+recently gained substantial attention, as various neural density estimators
+have outperformed classical approaches in real-data experiments. Despite these
+empirical successes, implementation can be challenging due to the need to
+ensure non-negativity and unit-mass constraints, and theoretical understanding
+remains limited. In particular, it is unclear whether such estimators can
+adaptively achieve faster convergence rates when the underlying density
+exhibits a low-dimensional structure. This paper addresses these gaps by
+proposing a structure-agnostic neural density estimator that is (i)
+straightforward to implement and (ii) provably adaptive, attaining faster rates
+when the true density admits a low-dimensional composition structure. Another
+key contribution of our work is to show that the proposed estimator integrates
+naturally into generative sampling pipelines, most notably score-based
+diffusion models, where it achieves provably faster convergence when the
+underlying density is structured. We validate its performance through extensive
+simulations and a real-data application.</p></br><a href="http://arxiv.org/pdf/2510.00374v1" target="_blank"><h2>GDLNN: Marriage of Programming Language and Neural Networks for Accurate
+  and Easy-to-Explain Graph Classification</h2></a><strong><u>Authors:</u></strong>  Minseok Jeon, Seunghyun Park</br><strong><u>Categories:</u></strong> cs.LG, cs.CL</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We present GDLNN, a new graph machine learning architecture, for graph
+classification tasks. GDLNN combines a domain-specific programming language,
+called GDL, with neural networks. The main strength of GDLNN lies in its GDL
+layer, which generates expressive and interpretable graph representations.
+Since the graph representation is interpretable, existing model explanation
+techniques can be directly applied to explain GDLNN's predictions. Our
+evaluation shows that the GDL-based representation achieves high accuracy on
+most graph classification benchmark datasets, outperforming dominant graph
+learning methods such as GNNs. Applying an existing model explanation technique
+also yields high-quality explanations of GDLNN's predictions. Furthermore, the
+cost of GDLNN is low when the explanation cost is included.</p></br><a href="http://arxiv.org/pdf/2510.02876v1" target="_blank"><h2>ELMF4EggQ: Ensemble Learning with Multimodal Feature Fusion for
+  Non-Destructive Egg Quality Assessment</h2></a><strong><u>Authors:</u></strong>  Md Zahim Hassan, Md. Osama, Muhammad Ashad Kabir, Md. Saiful Islam, Zannatul Naim</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> 30 pages</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate, non-destructive assessment of egg quality is critical for ensuring
+food safety, maintaining product standards, and operational efficiency in
+commercial poultry production. This paper introduces ELMF4EggQ, an ensemble
+learning framework that employs multimodal feature fusion to classify egg grade
+and freshness using only external attributes - image, shape, and weight. A
+novel, publicly available dataset of 186 brown-shelled eggs was constructed,
+with egg grade and freshness levels determined through laboratory-based expert
+assessments involving internal quality measurements, such as yolk index and
+Haugh unit. To the best of our knowledge, this is the first study to apply
+machine learning methods for internal egg quality assessment using only
+external, non-invasive features, and the first to release a corresponding
+labeled dataset. The proposed framework integrates deep features extracted from
+external egg images with structural characteristics such as egg shape and
+weight, enabling a comprehensive representation of each egg. Image feature
+extraction is performed using top-performing pre-trained CNN models (ResNet152,
+DenseNet169, and ResNet152V2), followed by PCA-based dimensionality reduction,
+SMOTE augmentation, and classification using multiple machine learning
+algorithms. An ensemble voting mechanism combines predictions from the
+best-performing classifiers to enhance overall accuracy. Experimental results
+demonstrate that the multimodal approach significantly outperforms image-only
+and tabular (shape and weight) only baselines, with the multimodal ensemble
+approach achieving 86.57% accuracy in grade classification and 70.83% in
+freshness prediction. All code and data are publicly available at
+https://github.com/Kenshin-Keeps/Egg_Quality_Prediction_ELMF4EggQ, promoting
+transparency, reproducibility, and further research in this domain.</p></br><a href="http://arxiv.org/pdf/2510.00621v1" target="_blank"><h2>FAME: Adaptive Functional Attention with Expert Routing for
+  Function-on-Function Regression</h2></a><strong><u>Authors:</u></strong>  Yifei Gao, Yong Chen, Chen Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Functional data play a pivotal role across science and engineering, yet their
+infinite-dimensional nature makes representation learning challenging.
+Conventional statistical models depend on pre-chosen basis expansions or
+kernels, limiting the flexibility of data-driven discovery, while many
+deep-learning pipelines treat functions as fixed-grid vectors, ignoring
+inherent continuity. In this paper, we introduce Functional Attention with a
+Mixture-of-Experts (FAME), an end-to-end, fully data-driven framework for
+function-on-function regression. FAME forms continuous attention by coupling a
+bidirectional neural controlled differential equation with MoE-driven vector
+fields to capture intra-functional continuity, and further fuses change to
+inter-functional dependencies via multi-head cross attention. Extensive
+experiments on synthetic and real-world functional-regression benchmarks show
+that FAME achieves state-of-the-art accuracy, strong robustness to arbitrarily
+sampled discrete observations of functions.</p></br><a href="http://arxiv.org/pdf/2510.01634v1" target="_blank"><h2>CAT: Curvature-Adaptive Transformers for Geometry-Aware Learning</h2></a><strong><u>Authors:</u></strong>  Ryan Y. Lin, Siddhartha Ojha, Nicholas Bai</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Transformers achieve strong performance across diverse domains but implicitly
+assume Euclidean geometry in their attention mechanisms, limiting their
+effectiveness on data with non-Euclidean structure. While recent extensions to
+hyperbolic and spherical spaces show promise for hierarchical and cyclical
+patterns, respectively, they require committing to a single geometry a priori,
+reducing flexibility when data exhibits mixed geometric properties. We
+introduce the Curvature-Adaptive Transformer (CAT), a novel architecture that
+dynamically learns per-token routing across three geometric attention branches
+through a lightweight, differentiable gating mechanism. Unlike fixed-geometry
+approaches, CAT enables adaptive geometric specialization, routing tokens to
+the appropriate curvature based on their local relational structure. The
+routing network provides interpretable curvature preferences while each branch
+employs geometry-specific operations optimized for its respective manifold. On
+knowledge graph completion benchmarks (FB15k-237, WN18RR), CAT achieves
+approximately 10% improvements in MRR and Hits@10 over fixed-geometry baselines
+with minimal overhead (5% parameter increase, comparable inference time). These
+results demonstrate that learned geometric adaptation outperforms any single
+fixed geometry for complex relational reasoning, establishing CAT as a scalable
+and interpretable foundation for mixture-of-geometry architectures across
+language, vision, and multimodal domains.</p></br><a href="http://arxiv.org/pdf/2510.02610v1" target="_blank"><h2>MINERVA: Mutual Information Neural Estimation for Supervised Feature
+  Selection</h2></a><strong><u>Authors:</u></strong>  Taurai Muvunzaa, Egor Kraev, Pere Planell-Morell, Alexander Y. Shestopaloff</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.6; I.5.1; G.3</br><strong><u>Comments:</u></strong> 23 pages</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Existing feature filters rely on statistical pair-wise dependence metrics to
+model feature-target relationships, but this approach may fail when the target
+depends on higher-order feature interactions rather than individual
+contributions. We introduce Mutual Information Neural Estimation Regularized
+Vetting Algorithm (MINERVA), a novel approach to supervised feature selection
+based on neural estimation of mutual information between features and targets.
+We paramaterize the approximation of mutual information with neural networks
+and perform feature selection using a carefully designed loss function
+augmented with sparsity-inducing regularizers. Our method is implemented in a
+two-stage process to decouple representation learning from feature selection,
+ensuring better generalization and a more accurate expression of feature
+importance. We present examples of ubiquitous dependency structures that are
+rarely captured in literature and show that our proposed method effectively
+captures these complex feature-target relationships by evaluating feature
+subsets as an ensemble. Experimental results on synthetic and real-life fraud
+datasets demonstrate the efficacy of our method and its ability to perform
+exact solutions.</p></br><a href="http://arxiv.org/pdf/2510.02677v1" target="_blank"><h2>ARMs: Adaptive Red-Teaming Agent against Multimodal Models with
+  Plug-and-Play Attacks</h2></a><strong><u>Authors:</u></strong>  Zhaorun Chen, Xun Liu, Mintong Kang, Jiawei Zhang, Minzhou Pan, Shuang Yang, Bo Li</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 60 pages, 16 figures</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> As vision-language models (VLMs) gain prominence, their multimodal interfaces
+also introduce new safety vulnerabilities, making the safety evaluation
+challenging and critical. Existing red-teaming efforts are either restricted to
+a narrow set of adversarial patterns or depend heavily on manual engineering,
+lacking scalable exploration of emerging real-world VLM vulnerabilities. To
+bridge this gap, we propose ARMs, an adaptive red-teaming agent that
+systematically conducts comprehensive risk assessments for VLMs. Given a target
+harmful behavior or risk definition, ARMs automatically optimizes diverse
+red-teaming strategies with reasoning-enhanced multi-step orchestration, to
+effectively elicit harmful outputs from target VLMs. We propose 11 novel
+multimodal attack strategies, covering diverse adversarial patterns of VLMs
+(e.g., reasoning hijacking, contextual cloaking), and integrate 17 red-teaming
+algorithms into ARMs via model context protocol (MCP). To balance the diversity
+and effectiveness of the attack, we design a layered memory with an
+epsilon-greedy attack exploration algorithm. Extensive experiments on instance-
+and policy-based benchmarks show that ARMs achieves SOTA attack success rates,
+exceeding baselines by an average of 52.1% and surpassing 90% on
+Claude-4-Sonnet. We show that the diversity of red-teaming instances generated
+by ARMs is significantly higher, revealing emerging vulnerabilities in VLMs.
+Leveraging ARMs, we construct ARMs-Bench, a large-scale multimodal safety
+dataset comprising over 30K red-teaming instances spanning 51 diverse risk
+categories, grounded in both real-world multimodal threats and regulatory
+risks. Safety fine-tuning with ARMs-Bench substantially improves the robustness
+of VLMs while preserving their general utility, providing actionable guidance
+to improve multimodal safety alignment against emerging threats.</p></br><a href="http://arxiv.org/pdf/2510.03004v1" target="_blank"><h2>BrainIB++: Leveraging Graph Neural Networks and Information Bottleneck
+  for Functional Brain Biomarkers in Schizophrenia</h2></a><strong><u>Authors:</u></strong>  Tianzheng Hu, Qiang Li, Shu Liu, Vince D. Calhoun, Guido van Wingen, Shujian Yu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07 (Primary), 68U10, 94A17 (Secondary)</br><strong><u>Comments:</u></strong> This manuscript has been accepted by Biomedical Signal Processing and Control and the code is available atthis https URL</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainable (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The development of diagnostic models is gaining traction in the field of
+psychiatric disorders. Recently, machine learning classifiers based on
+resting-state functional magnetic resonance imaging (rs-fMRI) have been
+developed to identify brain biomarkers that differentiate psychiatric disorders
+from healthy controls. However, conventional machine learning-based diagnostic
+models often depend on extensive feature engineering, which introduces bias
+through manual intervention. While deep learning models are expected to operate
+without manual involvement, their lack of interpretability poses significant
+challenges in obtaining explainable and reliable brain biomarkers to support
+diagnostic decisions, ultimately limiting their clinical applicability. In this
+study, we introduce an end-to-end innovative graph neural network framework
+named BrainIB++, which applies the information bottleneck (IB) principle to
+identify the most informative data-driven brain regions as subgraphs during
+model training for interpretation. We evaluate the performance of our model
+against nine established brain network classification methods across three
+multi-cohort schizophrenia datasets. It consistently demonstrates superior
+diagnostic accuracy and exhibits generalizability to unseen data. Furthermore,
+the subgraphs identified by our model also correspond with established clinical
+biomarkers in schizophrenia, particularly emphasizing abnormalities in the
+visual, sensorimotor, and higher cognition brain functional network. This
+alignment enhances the model's interpretability and underscores its relevance
+for real-world diagnostic applications.</p></br><a href="http://arxiv.org/pdf/2510.01098v1" target="_blank"><h2>Theory of Scaling Laws for In-Context Regression: Depth, Width, Context
+  and Time</h2></a><strong><u>Authors:</u></strong>  Blake Bordelon, Mary I. Letey, Cengiz Pehlevan</br><strong><u>Categories:</u></strong> stat.ML, cond-mat.dis-nn, cs.LG</br><strong><u>Comments:</u></strong> preprint with 29 pages</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> We study in-context learning (ICL) of linear regression in a deep linear
+self-attention model, characterizing how performance depends on various
+computational and statistical resources (width, depth, number of training
+steps, batch size and data per context). In a joint limit where data dimension,
+context length, and residual stream width scale proportionally, we analyze the
+limiting asymptotics for three ICL settings: (1) isotropic covariates and tasks
+(ISO), (2) fixed and structured covariance (FS), and (3) where covariances are
+randomly rotated and structured (RRS). For ISO and FS settings, we find that
+depth only aids ICL performance if context length is limited. Alternatively, in
+the RRS setting where covariances change across contexts, increasing the depth
+leads to significant improvements in ICL, even at infinite context length. This
+provides a new solvable toy model of neural scaling laws which depends on both
+width and depth of a transformer and predicts an optimal transformer shape as a
+function of compute. This toy model enables computation of exact asymptotics
+for the risk as well as derivation of powerlaws under source/capacity
+conditions for the ICL tasks.</p></br><a href="http://arxiv.org/pdf/2510.02297v1" target="_blank"><h2>Interactive Training: Feedback-Driven Neural Network Optimization</h2></a><strong><u>Authors:</u></strong>  Wentao Zhang, Yang Young Lu, Yuntian Deng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> EMNLP 2025 Demo</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Traditional neural network training typically follows fixed, predefined
+optimization recipes, lacking the flexibility to dynamically respond to
+instabilities or emerging training issues. In this paper, we introduce
+Interactive Training, an open-source framework that enables real-time,
+feedback-driven intervention during neural network training by human experts or
+automated AI agents. At its core, Interactive Training uses a control server to
+mediate communication between users or agents and the ongoing training process,
+allowing users to dynamically adjust optimizer hyperparameters, training data,
+and model checkpoints. Through three case studies, we demonstrate that
+Interactive Training achieves superior training stability, reduced sensitivity
+to initial hyperparameters, and improved adaptability to evolving user needs,
+paving the way toward a future training paradigm where AI agents autonomously
+monitor training logs, proactively resolve instabilities, and optimize training
+dynamics.</p></br><a href="http://arxiv.org/pdf/2510.01006v1" target="_blank"><h2>Integrating AI and Ensemble Forecasting: Explainable Materials Planning
+  with Scorecards and Trend Insights for a Large-Scale Manufacturer</h2></a><strong><u>Authors:</u></strong>  Saravanan Venkatachalam</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper presents a practical architecture for after-sales demand
+forecasting and monitoring that unifies a revenue- and cluster-aware ensemble
+of statistical, machine-learning, and deep-learning models with a role-driven
+analytics layer for scorecards and trend diagnostics. The framework ingests
+exogenous signals (installed base, pricing, macro indicators, life cycle,
+seasonality) and treats COVID-19 as a distinct regime, producing country-part
+forecasts with calibrated intervals. A Pareto-aware segmentation forecasts
+high-revenue items individually and pools the long tail via clusters, while
+horizon-aware ensembling aligns weights with business-relevant losses (e.g.,
+WMAPE). Beyond forecasts, a performance scorecard delivers decision-focused
+insights: accuracy within tolerance thresholds by revenue share and count, bias
+decomposition (over- vs under-forecast), geographic and product-family
+hotspots, and ranked root causes tied to high-impact part-country pairs. A
+trend module tracks trajectories of MAPE/WMAPE and bias across recent months,
+flags entities that are improving or deteriorating, detects change points
+aligned with known regimes, and attributes movements to lifecycle and seasonal
+factors. LLMs are embedded in the analytics layer to generate role-aware
+narratives and enforce reporting contracts. They standardize business
+definitions, automate quality checks and reconciliations, and translate
+quantitative results into concise, explainable summaries for planners and
+executives. The system exposes a reproducible workflow -- request
+specification, model execution, database-backed artifacts, and AI-generated
+narratives -- so planners can move from "How accurate are we now?" to "Where is
+accuracy heading and which levers should we pull?", closing the loop between
+forecasting, monitoring, and inventory decisions across more than 90 countries
+and about 6,000 parts.</p></br><a href="http://arxiv.org/pdf/2510.00476v2" target="_blank"><h2>Analyzing Latent Concepts in Code Language Models</h2></a><strong><u>Authors:</u></strong>  Arushi Sharma, Vedant Pungliya, Christopher J. Quinn, Ali Jannesari</br><strong><u>Categories:</u></strong> cs.SE, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract)</br><p><strong><u>Abstract:</u></strong> Interpreting the internal behavior of large language models trained on code
+remains a critical challenge, particularly for applications demanding trust,
+transparency, and semantic robustness. We propose Code Concept Analysis
+(CoCoA): a global post-hoc interpretability framework that uncovers emergent
+lexical, syntactic, and semantic structures in a code language model's
+representation space by clustering contextualized token embeddings into
+human-interpretable concept groups. We propose a hybrid annotation pipeline
+that combines static analysis tool-based syntactic alignment with
+prompt-engineered large language models (LLMs), enabling scalable labeling of
+latent concepts across abstraction levels. We analyse the distribution of
+concepts across layers and across three finetuning tasks. Emergent concept
+clusters can help identify unexpected latent interactions and be used to
+identify trends and biases within the model's learned representations. We
+further integrate LCA with local attribution methods to produce
+concept-grounded explanations, improving the coherence and interpretability of
+token-level saliency. Empirical evaluations across multiple models and tasks
+show that LCA discovers concepts that remain stable under semantic-preserving
+perturbations (average Cluster Sensitivity Index, CSI = 0.288) and evolve
+predictably with fine-tuning. In a user study on the programming-language
+classification task, concept-augmented explanations disambiguated token roles
+and improved human-centric explainability by 37 percentage points compared with
+token-level attributions using Integrated Gradients.</p></br><a href="http://arxiv.org/pdf/2510.02532v1" target="_blank"><h2>Learning Multi-Index Models with Hyper-Kernel Ridge Regression</h2></a><strong><u>Authors:</u></strong>  Shuo Huang, Hippolyte Labarrière, Ernesto De Vito, Tomaso Poggio, Lorenzo Rosasco</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks excel in high-dimensional problems, outperforming models
+such as kernel methods, which suffer from the curse of dimensionality. However,
+the theoretical foundations of this success remain poorly understood. We follow
+the idea that the compositional structure of the learning task is the key
+factor determining when deep networks outperform other approaches. Taking a
+step towards formalizing this idea, we consider a simple compositional model,
+namely the multi-index model (MIM). In this context, we introduce and study
+hyper-kernel ridge regression (HKRR), an approach blending neural networks and
+kernel methods. Our main contribution is a sample complexity result
+demonstrating that HKRR can adaptively learn MIM, overcoming the curse of
+dimensionality. Further, we exploit the kernel nature of the estimator to
+develop ad hoc optimization approaches. Indeed, we contrast alternating
+minimization and alternating gradient methods both theoretically and
+numerically. These numerical results complement and reinforce our theoretical
+findings.</p></br><a href="http://arxiv.org/pdf/2510.00923v1" target="_blank"><h2>Forecasting the Observable Rates of Gravitationally Lensed Supernovae
+  for the PASSAGES Dusty Starbursts</h2></a><strong><u>Authors:</u></strong>  Patrick S. Kamieneski, Rogier A. Windhorst, Brenda L. Frye, Min S. Yun, Kevin C. Harrington, Simon D. Mork, Nicholas Foo, Nikhil Garuda, Massimo Pascale, Belen Alcalde Pampliega, Timothy Carleton, Seth H. Cohen, Carlos Garcia Diaz, Rolf A. Jansen, Eric F. Jimenez-Andrade, Anton M. Koekemoer, James D. Lowenthal, Allison Noble, Justin D. R. Pierel, Amit Vishwas, Q. Daniel Wang, Ilsang Yoon</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> 29 pages, 8 figures, 2 tables. Submitted to AAS Journals on August 14, 2025. Comments welcome</br><strong><u>Matching Keywords:</u></strong> VAE (title, abstract)</br><p><strong><u>Abstract:</u></strong> More than 60 years have passed since the first formal suggestion to use
+strongly-lensed supernovae to measure the expansion rate of the Universe
+through time-delay cosmography. Yet, fewer than 10 such objects have ever been
+discovered. We consider the merits of a targeted strategy focused on lensed
+hyperluminous infrared galaxies -- among the most rapidly star-forming galaxies
+known in the Universe. With star formation rates (SFRs) $\sim {200 -
+6000}~\textrm{M}_\odot~\textrm{yr}^{-1}$, the $\sim 30$ objects in the Planck
+All-Sky Survey to Analyze Gravitationally-lensed Extreme Starbursts (PASSAGES)
+are excellent candidates for a case study, in particular, and have already led
+to the discovery of the multiply-imaged SN H0pe. Considering their lens
+model-corrected SFRs, we estimate their intrinsic supernova rates to be an
+extraordinary ${1.8 - 65}~\textrm{yr}^{-1}$ (core-collapse) and ${0.2 -
+6.4}~\textrm{yr}^{-1}$ (Type Ia). Moreover, these massive starbursts typically
+have star-forming companions which are unaccounted for in this tally. We
+demonstrate a strong correlation between Einstein radius and typical time
+delays, with cluster lenses often exceeding several months (and therefore most
+favorable for high-precision $H_0$ inferences). A multi-visit monitoring
+campaign with a sensitive infrared telescope (namely, JWST) is necessary to
+mitigate dust attenuation. Still, a porous interstellar medium and clumpy star
+formation in these extreme galaxies might produce favorable conditions for
+detecting supernovae as transient point sources. Targeted campaigns of known
+lensed galaxies to discover new lensed supernovae can greatly complement
+wide-area cadenced surveys. Increasing the sample size helps to realize the
+potential of supernova time-delay cosmography to elucidate the Hubble tension
+through a single-step measurement, independent of other $H_0$ techniques.</p></br><a href="http://arxiv.org/pdf/2510.01560v1" target="_blank"><h2>AI Foundation Model for Time Series with Innovations Representation</h2></a><strong><u>Authors:</u></strong>  Lang Tong, Xinyi Wang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces an Artificial Intelligence (AI) foundation model for
+time series in engineering applications, where causal operations are required
+for real-time monitoring and control. Since engineering time series are
+governed by physical, rather than linguistic, laws, large-language-model-based
+AI foundation models may be ineffective or inefficient. Building on the
+classical innovations representation theory of Wiener, Kallianpur, and
+Rosenblatt, we propose Time Series GPT (TS-GPT) -- an
+innovations-representation-based Generative Pre-trained Transformer for
+engineering monitoring and control. As an example of foundation model
+adaptation, we consider Probabilistic Generative Forecasting, which produces
+future time series samples from conditional probability distributions given
+past realizations. We demonstrate the effectiveness of TS-GPT in forecasting
+real-time locational marginal prices using historical data from U.S.
+independent system operators.</p></br><a href="http://arxiv.org/pdf/2510.02592v1" target="_blank"><h2>Multimodal Large Language Model Framework for Safe and Interpretable
+  Grid-Integrated EVs</h2></a><strong><u>Authors:</u></strong>  Jean Douglas Carvalho, Hugo Kenji, Ahmad Mohammad Saber, Glaucia Melo, Max Mauro Dias Santos, Deepa Kundur</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> This paper has been presented at the 2025 IEEE PES Conference on Innovative Smart Grid Technologies (ISGT 2025)</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multi-modal (abstract)</br><p><strong><u>Abstract:</u></strong> The integration of electric vehicles (EVs) into smart grids presents unique
+opportunities to enhance both transportation systems and energy networks.
+However, ensuring safe and interpretable interactions between drivers,
+vehicles, and the surrounding environment remains a critical challenge. This
+paper presents a multi-modal large language model (LLM)-based framework to
+process multimodal sensor data - such as object detection, semantic
+segmentation, and vehicular telemetry - and generate natural-language alerts
+for drivers. The framework is validated using real-world data collected from
+instrumented vehicles driving on urban roads, ensuring its applicability to
+real-world scenarios. By combining visual perception (YOLOv8), geocoded
+positioning, and CAN bus telemetry, the framework bridges raw sensor data and
+driver comprehension, enabling safer and more informed decision-making in urban
+driving scenarios. Case studies using real data demonstrate the framework's
+effectiveness in generating context-aware alerts for critical situations, such
+as proximity to pedestrians, cyclists, and other vehicles. This paper
+highlights the potential of LLMs as assistive tools in e-mobility, benefiting
+both transportation systems and electric networks by enabling scalable fleet
+coordination, EV load forecasting, and traffic-aware energy planning.
+  Index Terms - Electric vehicles, visual perception, large language models,
+YOLOv8, semantic segmentation, CAN bus, prompt engineering, smart grid.</p></br><a href="http://arxiv.org/pdf/2510.01733v1" target="_blank"><h2>Reducing Simulation Dependence in Neutrino Telescopes with Masked Point
+  Transformers</h2></a><strong><u>Authors:</u></strong>  Felix J. Yu, Nicholas Kamp, Carlos A. Argüelles</br><strong><u>Categories:</u></strong> hep-ex, astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> 8 pages, 3 figures, presented at the 39th International Cosmic Ray Conference (ICRC2025)</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Machine learning techniques in neutrino physics have traditionally relied on
+simulated data, which provides access to ground-truth labels. However, the
+accuracy of these simulations and the discrepancies between simulated and real
+data remain significant concerns, particularly for large-scale neutrino
+telescopes that operate in complex natural media. In recent years,
+self-supervised learning has emerged as a powerful paradigm for reducing
+dependence on labeled datasets. Here, we present the first self-supervised
+training pipeline for neutrino telescopes, leveraging point cloud transformers
+and masked autoencoders. By shifting the majority of training to real data,
+this approach minimizes reliance on simulations, thereby mitigating associated
+systematic uncertainties. This represents a fundamental departure from previous
+machine learning applications in neutrino telescopes, paving the way for
+substantial improvements in event reconstruction and classification.</p></br><a href="http://arxiv.org/pdf/2510.02014v1" target="_blank"><h2>Normality Calibration in Semi-supervised Graph Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Guolei Zeng, Hezhe Qiao, Guoguo Ai, Jinsong Guo, Guansong Pang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 17 pages</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph anomaly detection (GAD) has attracted growing interest for its crucial
+ability to uncover irregular patterns in broad applications. Semi-supervised
+GAD, which assumes a subset of annotated normal nodes available during
+training, is among the most widely explored application settings. However, the
+normality learned by existing semi-supervised GAD methods is limited to the
+labeled normal nodes, often inclining to overfitting the given patterns. These
+can lead to high detection errors, such as high false positives. To overcome
+this limitation, we propose GraphNC , a graph normality calibration framework
+that leverages both labeled and unlabeled data to calibrate the normality from
+a teacher model (a pre-trained semi-supervised GAD model) jointly in anomaly
+score and node representation spaces. GraphNC includes two main components,
+anomaly score distribution alignment (ScoreDA) and perturbation-based normality
+regularization (NormReg). ScoreDA optimizes the anomaly scores of our model by
+aligning them with the score distribution yielded by the teacher model. Due to
+accurate scores in most of the normal nodes and part of the anomaly nodes in
+the teacher model, the score alignment effectively pulls the anomaly scores of
+the normal and abnormal classes toward the two ends, resulting in more
+separable anomaly scores. Nevertheless, there are inaccurate scores from the
+teacher model. To mitigate the misleading by these scores, NormReg is designed
+to regularize the graph normality in the representation space, making the
+representations of normal nodes more compact by minimizing a
+perturbation-guided consistency loss solely on the labeled nodes.</p></br><a href="http://arxiv.org/pdf/2510.01444v1" target="_blank"><h2>VOGUE: Guiding Exploration with Visual Uncertainty Improves Multimodal
+  Reasoning</h2></a><strong><u>Authors:</u></strong>  Rui Liu, Dian Yu, Tong Zheng, Runpeng Dai, Zongxia Li, Wenhao Yu, Zhenwen Liang, Linfeng Song, Haitao Mi, Pratap Tokekar, Dong Yu</br><strong><u>Categories:</u></strong> cs.AI, cs.CL, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Reinforcement learning with verifiable rewards (RLVR) improves reasoning in
+large language models (LLMs) but struggles with exploration, an issue that
+still persists for multimodal LLMs (MLLMs). Current methods treat the visual
+input as a fixed, deterministic condition, overlooking a critical source of
+ambiguity and struggling to build policies robust to plausible visual
+variations. We introduce $\textbf{VOGUE (Visual Uncertainty Guided
+Exploration)}$, a novel method that shifts exploration from the output (text)
+to the input (visual) space. By treating the image as a stochastic context,
+VOGUE quantifies the policy's sensitivity to visual perturbations using the
+symmetric KL divergence between a "raw" and "noisy" branch, creating a direct
+signal for uncertainty-aware exploration. This signal shapes the learning
+objective via an uncertainty-proportional bonus, which, combined with a
+token-entropy bonus and an annealed sampling schedule, effectively balances
+exploration and exploitation. Implemented within GRPO on two model scales
+(Qwen2.5-VL-3B/7B), VOGUE boosts pass@1 accuracy by an average of 2.6% on three
+visual math benchmarks and 3.7% on three general-domain reasoning benchmarks,
+while simultaneously increasing pass@4 performance and mitigating the
+exploration decay commonly observed in RL fine-tuning. Our work shows that
+grounding exploration in the inherent uncertainty of visual inputs is an
+effective strategy for improving multimodal reasoning.</p></br></body>

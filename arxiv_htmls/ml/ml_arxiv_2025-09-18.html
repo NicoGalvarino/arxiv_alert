@@ -1,0 +1,153 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 16 Sep 2025 to 18 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.13636v1" target="_blank"><h2>Multimodal signal fusion for stress detection using deep neural
+  networks: a novel approach for converting 1D signals to unified 2D images</h2></a><strong><u>Authors:</u></strong>  Yasin Hasanpoor, Bahram Tarvirdizadeh, Khalil Alipour, Mohammad Ghamari</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 14 pages 7 images 2 tables</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), multimodal (title, abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> This study introduces a novel method that transforms multimodal physiological
+signalsphotoplethysmography (PPG), galvanic skin response (GSR), and
+acceleration (ACC) into 2D image matrices to enhance stress detection using
+convolutional neural networks (CNNs). Unlike traditional approaches that
+process these signals separately or rely on fixed encodings, our technique
+fuses them into structured image representations that enable CNNs to capture
+temporal and cross signal dependencies more effectively. This image based
+transformation not only improves interpretability but also serves as a robust
+form of data augmentation. To further enhance generalization and model
+robustness, we systematically reorganize the fused signals into multiple
+formats, combining them in a multi stage training pipeline. This approach
+significantly boosts classification performance. While demonstrated here in the
+context of stress detection, the proposed method is broadly applicable to any
+domain involving multimodal physiological signals, paving the way for more
+accurate, personalized, and real time health monitoring through wearable
+technologies.</p></br><a href="http://arxiv.org/pdf/2509.13633v1" target="_blank"><h2>DeepLogit: A sequentially constrained explainable deep learning modeling
+  approach for transport policy analysis</h2></a><strong><u>Authors:</u></strong>  Jeremy Oon, Rakhi Manohar Mepparambath, Ling Feng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), convolutional (abstract), explainable (title), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Despite the significant progress of deep learning models in multitude of
+applications, their adaption in planning and policy related areas remains
+challenging due to the black-box nature of these models. In this work, we
+develop a set of DeepLogit models that follow a novel sequentially constrained
+approach in estimating deep learning models for transport policy analysis. In
+the first step of the proposed approach, we estimate a convolutional neural
+network (CNN) model with only linear terms, which is equivalent of a
+linear-in-parameter multinomial logit model. We then estimate other deep
+learning models by constraining the parameters that need interpretability at
+the values obtained in the linear-in-parameter CNN model and including higher
+order terms or by introducing advanced deep learning architectures like
+Transformers. Our approach can retain the interpretability of the selected
+parameters, yet provides significantly improved model accuracy than the
+discrete choice model. We demonstrate our approach on a transit route choice
+example using real-world transit smart card data from Singapore. This study
+shows the potential for a unifying approach, where theory-based discrete choice
+model (DCM) and data-driven AI models can leverage each other's strengths in
+interpretability and predictive power. With the availability of larger datasets
+and more complex constructions, such approach can lead to more accurate models
+using discrete choice models while maintaining its applicability in planning
+and policy-related areas. Our code is available on
+https://github.com/jeremyoon/route-choice/ .</p></br><a href="http://arxiv.org/pdf/2509.13621v1" target="_blank"><h2>Unsupervised Anomaly Detection in ALS EPICS Event Logs</h2></a><strong><u>Authors:</u></strong>  Antonin Sulc, Thorsten Hellert, Steven Hunt</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 6 pages, 5 figures, The 20th International Conference on Accelerator and Large Experimental Physics Control Systems</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces an automated fault analysis framework for the Advanced
+Light Source (ALS) that processes real-time event logs from its EPICS control
+system. By treating log entries as natural language, we transform them into
+contextual vector representations using semantic embedding techniques. A
+sequence-aware neural network, trained on normal operational data, assigns a
+real-time anomaly score to each event. This method flags deviations from
+baseline behavior, enabling operators to rapidly identify the critical event
+sequences that precede complex system failures.</p></br><a href="http://arxiv.org/pdf/2509.13394v1" target="_blank"><h2>Bayesian Anomaly Detection for Ia Cosmology: Automating SALT3 Data
+  Curation</h2></a><strong><u>Authors:</u></strong>  S. A. K. Leeney, W. J. Handley, H. T. J. Bevins, E. de Lera Acedo</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> 14 pages, 8 figures</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Precision cosmology with Type Ia supernovae (SNe Ia) requires robust quality
+control of large, heterogeneous datasets. Current data processing often relies
+on manual, subjective rejection of photometric data, a practice that is not
+scalable for forthcoming surveys like the Vera C. Rubin Observatory's Legacy
+Survey of Space and Time (LSST). We present a Bayesian framework that automates
+this step by integrating anomaly detection directly into the light curve
+fitting process. While the framework is model-agnostic and compatible with any
+spectral energy distribution (SED) model, here we demonstrate its application
+with the SALT3 model, implemented fully on GPU using \texttt{JAX-bandflux} for
+computational efficiency. Our method models the probability of each photometric
+measurement being anomalous with respect to the model, simultaneously inferring
+the physical supernova parameters and each data point's posterior probability
+of being a contaminant. Applying this framework to the Hawaii Supernova Flows
+dataset, we demonstrate its three principal capabilities: (i) robust mitigation
+of isolated outliers; (ii) automated identification and rejection of entirely
+corrupted bandpasses; and (iii) preservation of valid data by flagging only
+specific anomalous points within otherwise usable filters. We also find that
+contaminants are systematically brighter and bluer, which if uncorrected could
+bias subsequent cosmological inference.</p></br><a href="http://arxiv.org/pdf/2509.13842v1" target="_blank"><h2>Simulation-based Inference of Massive Black Hole Binaries using
+  Sequential Neural Likelihood</h2></a><strong><u>Authors:</u></strong>  Iván Martín Vílchez, Carlos F. Sopuerta</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> Submitted to the Proceedings of the 24th International Conference on General Relativity and Gravitation & 16th Edoardo Amaldi Conference on Gravitational Waves. 5 pages, 1 figure, 3 plots</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a machine learning-based approach for parameter estimation of
+Massive Black Hole Binaries (MBHBs), leveraging normalizing flows to
+approximate the likelihood function. By training these flows on simulated data,
+we can generate posterior samples via Markov Chain Monte Carlo with a
+relatively reduced computational cost. Our method enables iterative refinement
+of smaller models targeting specific MBHB events, with significantly fewer
+waveform template evaluations. However, dimensionality reduction is crucial to
+make the method computationally feasible: it dictates both the quality and time
+efficiency of the method. We present initial results for a single MBHB with
+Gaussian noise and aim to extend our work to increasingly realistic scenarios,
+including waveforms with higher modes, non-stationary noise, glitches, and data
+gaps.</p></br><a href="http://arxiv.org/pdf/2509.13805v1" target="_blank"><h2>Towards a Physics Foundation Model</h2></a><strong><u>Authors:</u></strong>  Florian Wiesner, Matthias Wessling, Stephen Baek</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Foundation models have revolutionized natural language processing through a
+``train once, deploy anywhere'' paradigm, where a single pre-trained model
+adapts to countless downstream tasks without retraining. Access to a Physics
+Foundation Model (PFM) would be transformative -- democratizing access to
+high-fidelity simulations, accelerating scientific discovery, and eliminating
+the need for specialized solver development. Yet current physics-aware machine
+learning approaches remain fundamentally limited to single, narrow domains and
+require retraining for each new system. We present the General Physics
+Transformer (GPhyT), trained on 1.8 TB of diverse simulation data, that
+demonstrates foundation model capabilities are achievable for physics. Our key
+insight is that transformers can learn to infer governing dynamics from
+context, enabling a single model to simulate fluid-solid interactions, shock
+waves, thermal convection, and multi-phase dynamics without being told the
+underlying equations. GPhyT achieves three critical breakthroughs: (1) superior
+performance across multiple physics domains, outperforming specialized
+architectures by up to 29x, (2) zero-shot generalization to entirely unseen
+physical systems through in-context learning, and (3) stable long-term
+predictions through 50-timestep rollouts. By establishing that a single model
+can learn generalizable physical principles from data alone, this work opens
+the path toward a universal PFM that could transform computational science and
+engineering.</p></br><a href="http://arxiv.org/pdf/2509.13735v1" target="_blank"><h2>State Space Models over Directed Graphs</h2></a><strong><u>Authors:</u></strong>  Junzhi She, Xunkai Li, Rong-Hua Li, Guoren Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> currently undergoing review by IEEE Transactions on Big Data</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Directed graphs are ubiquitous across numerous domains, where the
+directionality of edges encodes critical causal dependencies. However, existing
+GNNs and graph Transformers tailored for directed graphs face two major
+challenges: (1) effectively capturing long-range causal dependencies derived
+from directed edges; (2) balancing accuracy and training efficiency when
+processing large-scale graph datasets. In recent years, state space models
+(SSMs) have achieved substantial progress in causal sequence tasks, and their
+variants designed for graphs have demonstrated state-of-the-art accuracy while
+maintaining high efficiency across various graph learning benchmarks. However,
+existing graph state space models are exclusively designed for undirected
+graphs, which limits their performance in directed graph learning. To this end,
+we propose an innovative approach DirEgo2Token which sequentializes directed
+graphs via k-hop ego graphs. This marks the first systematic extension of state
+space models to the field of directed graph learning. Building upon this, we
+develop DirGraphSSM, a novel directed graph neural network architecture that
+implements state space models on directed graphs via the message-passing
+mechanism. Experimental results demonstrate that DirGraphSSM achieves
+state-of-the-art performance on three representative directed graph learning
+tasks while attaining competitive performance on two additional tasks with
+1.5$\times $ to 2$\times $ training speed improvements compared to existing
+state-of-the-art models.</p></br><a href="http://arxiv.org/pdf/2509.13390v1" target="_blank"><h2>A Domain Knowledge Informed Approach for Anomaly Detection of Electric
+  Vehicle Interior Sounds</h2></a><strong><u>Authors:</u></strong>  Deepti Kunte, Bram Cornelis, Claudio Colangeli, Karl Janssens, Brecht Van Baelen, Konstantinos Gryllias</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.CV, cs.LG, eess.AS, I.2.1; I.2.6; I.2.10; I.5.1; I.5.2; J.2; J.7</br><strong><u>Comments:</u></strong> Submitted to: Mechanical Systems and Signal Processing</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title)</br><p><strong><u>Abstract:</u></strong> The detection of anomalies in automotive cabin sounds is critical for
+ensuring vehicle quality and maintaining passenger comfort. In many real-world
+settings, this task is more appropriately framed as an unsupervised learning
+problem rather than the supervised case due to the scarcity or complete absence
+of labeled faulty data. In such an unsupervised setting, the model is trained
+exclusively on healthy samples and detects anomalies as deviations from normal
+behavior. However, in the absence of labeled faulty samples for validation and
+the limited reliability of commonly used metrics, such as validation
+reconstruction error, effective model selection remains a significant
+challenge. To overcome these limitations, a domain-knowledge-informed approach
+for model selection is proposed, in which proxy-anomalies engineered through
+structured perturbations of healthy spectrograms are used in the validation set
+to support model selection. The proposed methodology is evaluated on a
+high-fidelity electric vehicle dataset comprising healthy and faulty cabin
+sounds across five representative fault types viz., Imbalance, Modulation,
+Whine, Wind, and Pulse Width Modulation. This dataset, generated using advanced
+sound synthesis techniques, and validated via expert jury assessments, has been
+made publicly available to facilitate further research. Experimental
+evaluations on the five fault cases demonstrate the selection of optimal models
+using proxy-anomalies, significantly outperform conventional model selection
+strategies.</p></br></body>

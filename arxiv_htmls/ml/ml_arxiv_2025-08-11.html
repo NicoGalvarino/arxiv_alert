@@ -1,0 +1,589 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 07 Aug 2025 to 11 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.05744v1" target="_blank"><h2>Detecting Model Misspecification in Cosmology with Scale-Dependent
+  Normalizing Flows</h2></a><strong><u>Authors:</u></strong>  Aizhan Akhmetzhanova, Carolina Cuesta-Lazaro, Siddharth Mishra-Sharma</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> 14 + 5 pages, 6 + 4 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Current and upcoming cosmological surveys will produce unprecedented amounts
+of high-dimensional data, which require complex high-fidelity forward
+simulations to accurately model both physical processes and systematic effects
+which describe the data generation process. However, validating whether our
+theoretical models accurately describe the observed datasets remains a
+fundamental challenge. An additional complexity to this task comes from
+choosing appropriate representations of the data which retain all the relevant
+cosmological information, while reducing the dimensionality of the original
+dataset. In this work we present a novel framework combining scale-dependent
+neural summary statistics with normalizing flows to detect model
+misspecification in cosmological simulations through Bayesian evidence
+estimation. By conditioning our neural network models for data compression and
+evidence estimation on the smoothing scale, we systematically identify where
+theoretical models break down in a data-driven manner. We demonstrate a first
+application to our approach using matter and gas density fields from three
+CAMELS simulation suites with different subgrid physics implementations.</p></br><a href="http://arxiv.org/pdf/2508.06347v1" target="_blank"><h2>Structural Equation-VAE: Disentangled Latent Representations for Tabular
+  Data</h2></a><strong><u>Authors:</u></strong>  Ruiyu Zhang, Ce Zhao, Xin Zhao, Lin Nie, Wai-Fung Lam</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.NE</br><strong><u>Comments:</u></strong> 10 pages, 2 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract)</br><p><strong><u>Abstract:</u></strong> Learning interpretable latent representations from tabular data remains a
+challenge in deep generative modeling. We introduce SE-VAE (Structural
+Equation-Variational Autoencoder), a novel architecture that embeds measurement
+structure directly into the design of a variational autoencoder. Inspired by
+structural equation modeling, SE-VAE aligns latent subspaces with known
+indicator groupings and introduces a global nuisance latent to isolate
+construct-specific confounding variation. This modular architecture enables
+disentanglement through design rather than through statistical regularizers
+alone. We evaluate SE-VAE on a suite of simulated tabular datasets and
+benchmark its performance against a series of leading baselines using standard
+disentanglement metrics. SE-VAE consistently outperforms alternatives in factor
+recovery, interpretability, and robustness to nuisance variation. Ablation
+results reveal that architectural structure, rather than regularization
+strength, is the key driver of performance. SE-VAE offers a principled
+framework for white-box generative modeling in scientific and social domains
+where latent constructs are theory-driven and measurement validity is
+essential.</p></br><a href="http://arxiv.org/pdf/2508.05842v1" target="_blank"><h2>Stacked Hybrid RNN-CNN Reconstruction of X-ray Influence on 21-cm
+  Brightness Temperature</h2></a><strong><u>Authors:</u></strong>  S. Mobina Hosseini, Bahareh Soleimanpour Salmasi</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The X-ray photons substantially affect the thermal and ionization states of
+the intergalactic medium (IGM) during the Epoch of Reionization (EoR), thereby
+significantly influencing the 21-cm line observables such as its sky-averaged
+(global) brightness temperature. Nevertheless, the complicated dependency of
+astrophysical processes on a broad spectrum of parameters, including X-ray
+efficiency, spectral characteristics, and gas dynamics, makes precisely
+simulating the effect of X-ray flux challenging. Traditional approaches,
+including N-body and hydrodynamical simulations, are computationally intensive
+and struggle to explore high-dimensional parameter spaces efficiently. We
+present a stacked hybrid model trained on a specific simulation intended to
+reconstruct the effect of X-ray flux on the global 21-cm brightness temperature
+during the EoR. Along with Convolutional Neural Networks (CNNs), this
+architecture combines two substantial forms of recurrent neural networks
+(RNNs), Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), therefore
+enabling fast adaptation to several X-ray flux levels. Without demanding
+repeated simulations, this emulator preserves temporal and spatial dependencies
+and generalizes to unseen parameter combinations. This matter reduces
+computation time by a factor of one million while preserving excellent
+prediction accuracy of 99.93\%, facilitating studies on high-dimensional
+parameter inference and sensitivity with an error margin of less than 0.35 mK.
+Our LSTM-GRU-CNN emulator combines recurrent and convolutional architectures to
+enable a robust and scalable analysis of X-ray heating effects on the global
+21-cm brightness temperature during the EoR.</p></br><a href="http://arxiv.org/pdf/2508.05934v1" target="_blank"><h2>ASLSL: Adaptive shared latent structure learning with incomplete
+  multi-modal physiological data for multi-dimensional emotional feature
+  selection</h2></a><strong><u>Authors:</u></strong>  Xueyuan Xu, Tianze Yu, Wenjia Dong, Fulin Wei, Li Zhuo</br><strong><u>Categories:</u></strong> cs.HC, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), multi-modal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Recently, multi-modal physiological signals based emotion recognition has
+garnered increasing attention in the field of brain-computer interfaces.
+Nevertheness, the associated multi-modal physiological features are often
+high-dimensional and inevitably include irrelevant, redundant, and noisy
+representation, which can easily lead to overfitting, poor performance, and
+high computational complexity in emotion classifiers. Feature selection has
+been widely applied to address these challenges. However, previous studies
+generally assumed that multi-modal physiological data are complete, whereas in
+reality, the data are often incomplete due to the openness of the acquisition
+and operational environment. For example, a part of samples are available in
+several modalities but not in others. To address this issue, we propose a novel
+method for incomplete multi-modal physiological signal feature selection called
+adaptive shared latent structure learning (ASLSL). Based on the property that
+similar features share similar emotional labels, ASLSL employs adaptive shared
+latent structure learning to explore a common latent space shared for
+incomplete multi-modal physiological signals and multi-dimensional emotional
+labels, thereby mitigating the impact of missing information and mining
+consensus information. Two most popular multi-modal physiological emotion
+datasets (DEAP and DREAMER) with multi-dimensional emotional labels were
+utilized to compare the performance between compare ASLSL and seventeen feature
+selection methods. Comprehensive experimental results on these datasets
+demonstrate the effectiveness of ASLSL.</p></br><a href="http://arxiv.org/pdf/2508.05705v1" target="_blank"><h2>A Physiologically-Constrained Neural Network Digital Twin Framework for
+  Replicating Glucose Dynamics in Type 1 Diabetes</h2></a><strong><u>Authors:</u></strong>  Valentina Roquemen-Echeverri, Taisa Kushner, Peter G. Jacobs, Clara Mosquera-Lopez</br><strong><u>Categories:</u></strong> q-bio.QM, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Simulating glucose dynamics in individuals with type 1 diabetes (T1D) is
+critical for developing personalized treatments and supporting data-driven
+clinical decisions. Existing models often miss key physiological aspects and
+are difficult to individualize. Here, we introduce physiologically-constrained
+neural network (NN) digital twins to simulate glucose dynamics in T1D. To
+ensure interpretability and physiological consistency, we first build a
+population-level NN state-space model aligned with a set of ordinary
+differential equations (ODEs) describing glucose regulation. This model is
+formally verified to conform to known T1D dynamics. Digital twins are then
+created by augmenting the population model with individual-specific models,
+which include personal data, such as glucose management and contextual
+information, capturing both inter- and intra-individual variability. We
+validate our approach using real-world data from the T1D Exercise Initiative
+study. Two weeks of data per participant were split into 5-hour sequences and
+simulated glucose profiles were compared to observed ones. Clinically relevant
+outcomes were used to assess similarity via paired equivalence t-tests with
+predefined clinical equivalence margins. Across 394 digital twins, glucose
+outcomes were equivalent between simulated and observed data: time in range
+(70-180 mg/dL) was 75.1$\pm$21.2% (simulated) vs. 74.4$\pm$15.4% (real;
+P<0.001); time below range (<70 mg/dL) 2.5$\pm$5.2% vs. 3.0$\pm$3.3% (P=0.022);
+and time above range (>180 mg/dL) 22.4$\pm$22.0% vs. 22.6$\pm$15.9% (P<0.001).
+Our framework can incorporate unmodeled factors like sleep and activity while
+preserving key dynamics. This approach enables personalized in silico testing
+of treatments, supports insulin optimization, and integrates physics-based and
+data-driven modeling. Code: https://github.com/mosqueralopez/T1DSim_AI</p></br><a href="http://arxiv.org/pdf/2508.06034v1" target="_blank"><h2>Adaptive Heterogeneous Graph Neural Networks: Bridging Heterophily and
+  Heterogeneity</h2></a><strong><u>Authors:</u></strong>  Qin Chen, Guojie Song</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted tp CIKM 2025</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Heterogeneous graphs (HGs) are common in real-world scenarios and often
+exhibit heterophily. However, most existing studies focus on either
+heterogeneity or heterophily in isolation, overlooking the prevalence of
+heterophilic HGs in practical applications. Such ignorance leads to their
+performance degradation. In this work, we first identify two main challenges in
+modeling heterophily HGs: (1) varying heterophily distributions across hops and
+meta-paths; (2) the intricate and often heterophily-driven diversity of
+semantic information across different meta-paths. Then, we propose the Adaptive
+Heterogeneous Graph Neural Network (AHGNN) to tackle these challenges. AHGNN
+employs a heterophily-aware convolution that accounts for heterophily
+distributions specific to both hops and meta-paths. It then integrates messages
+from diverse semantic spaces using a coarse-to-fine attention mechanism, which
+filters out noise and emphasizes informative signals. Experiments on seven
+real-world graphs and twenty baselines demonstrate the superior performance of
+AHGNN, particularly in high-heterophily situations.</p></br><a href="http://arxiv.org/pdf/2508.05068v1" target="_blank"><h2>Automatic Image Colorization with Convolutional Neural Networks and
+  Generative Adversarial Networks</h2></a><strong><u>Authors:</u></strong>  Ruiyu Li, Changyuan Qiu, Hangrui Cao, Qihan Ren, Yuqing Qiu</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, eess.IV</br><strong><u>Comments:</u></strong> 5 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (title), neural network (title), multi-modal (abstract)</br><p><strong><u>Abstract:</u></strong> Image colorization, the task of adding colors to grayscale images, has been
+the focus of significant research efforts in computer vision in recent years
+for its various application areas such as color restoration and automatic
+animation colorization [15, 1]. The colorization problem is challenging as it
+is highly ill-posed with two out of three image dimensions lost, resulting in
+large degrees of freedom. However, semantics of the scene as well as the
+surface texture could provide important cues for colors: the sky is typically
+blue, the clouds are typically white and the grass is typically green, and
+there are huge amounts of training data available for learning such priors
+since any colored image could serve as a training data point [20].
+  Colorization is initially formulated as a regression task[5], which ignores
+the multi-modal nature of color prediction. In this project, we explore
+automatic image colorization via classification and adversarial learning. We
+will build our models on prior works, apply modifications for our specific
+scenario and make comparisons.</p></br><a href="http://arxiv.org/pdf/2508.05433v1" target="_blank"><h2>Discovering Interpretable Programmatic Policies via Multimodal
+  LLM-assisted Evolutionary Search</h2></a><strong><u>Authors:</u></strong>  Qinglong Hu, Xialiang Tong, Mingxuan Yuan, Fei Liu, Zhichao Lu, Qingfu Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.NE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Interpretability and high performance are essential goals in designing
+control policies, particularly for safety-critical tasks. Deep reinforcement
+learning has greatly enhanced performance, yet its inherent lack of
+interpretability often undermines trust and hinders real-world deployment. This
+work addresses these dual challenges by introducing a novel approach for
+programmatic policy discovery, called Multimodal Large Language Model-assisted
+Evolutionary Search (MLES). MLES utilizes multimodal large language models as
+policy generators, combining them with evolutionary mechanisms for automatic
+policy optimization. It integrates visual feedback-driven behavior analysis
+within the policy generation process to identify failure patterns and
+facilitate targeted improvements, enhancing the efficiency of policy discovery
+and producing adaptable, human-aligned policies. Experimental results show that
+MLES achieves policy discovery capabilities and efficiency comparable to
+Proximal Policy Optimization (PPO) across two control tasks, while offering
+transparent control logic and traceable design processes. This paradigm
+overcomes the limitations of predefined domain-specific languages, facilitates
+knowledge transfer and reuse, and is scalable across various control tasks.
+MLES shows promise as a leading approach for the next generation of
+interpretable control policy discovery.</p></br><a href="http://arxiv.org/pdf/2508.06066v1" target="_blank"><h2>Architecture-Aware Generalization Bounds for Temporal Networks: Theory
+  and Fair Comparison Methodology</h2></a><strong><u>Authors:</u></strong>  Barak Gahtan, Alex M. Bronstein</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), sequential data (abstract)</br><p><strong><u>Abstract:</u></strong> Deep temporal architectures such as Temporal Convolutional Networks (TCNs)
+achieve strong predictive performance on sequential data, yet theoretical
+understanding of their generalization remains limited. We address this gap by
+providing both the first non-vacuous, architecture-aware generalization bounds
+for deep temporal models and a principled evaluation methodology.
+  For exponentially $\beta$-mixing sequences, we derive bounds scaling as $
+O\!\Bigl(R\,\sqrt{\tfrac{D\,p\,n\,\log N}{N}}\Bigr), $ where $D$ is network
+depth, $p$ kernel size, $n$ input dimension, and $R$ weight norm. Our
+delayed-feedback blocking mechanism transforms dependent samples into
+effectively independent ones while discarding only $O(1/\log N)$ of the data,
+yielding $\sqrt{D}$ scaling instead of exponential, implying that doubling
+depth requires approximately quadrupling the training data.
+  We also introduce a fair-comparison methodology that fixes the effective
+sample size to isolate the effect of temporal structure from information
+content. Under $N_{\text{eff}}=2{,}000$, strongly dependent sequences
+($\rho=0.8$) exhibit $\approx76\%$ smaller generalization gaps than weakly
+dependent ones ($\rho=0.2$), challenging the intuition that dependence is
+purely detrimental. Yet convergence rates diverge from theory: weak
+dependencies follow $N_{\text{eff}}^{-1.21}$ scaling and strong dependencies
+follow $N_{\text{eff}}^{-0.89}$, both steeper than the predicted $N^{-0.5}$.
+These findings reveal that temporal dependence can enhance learning under fixed
+information budgets, while highlighting gaps between theory and practice that
+motivate future research.</p></br><a href="http://arxiv.org/pdf/2508.05287v1" target="_blank"><h2>FlowState: Sampling Rate Invariant Time Series Forecasting</h2></a><strong><u>Authors:</u></strong>  Lars Graf, Thomas Ortner, Stanisław Woźniak, Angeliki Pantazi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Currently under review at AAAI 2026</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Foundation models (FMs) have transformed natural language processing, but
+their success has not yet translated to time series forecasting. Existing time
+series foundation models (TSFMs), often based on transformer variants, struggle
+with generalization across varying context and target lengths, lack
+adaptability to different sampling rates, and are computationally inefficient.
+We introduce FlowState, a novel TSFM architecture that addresses these
+challenges through two key innovations: a state space model (SSM) based encoder
+and a functional basis decoder. This design enables continuous-time modeling
+and dynamic time-scale adjustment, allowing FlowState to inherently generalize
+across all possible temporal resolutions, and dynamically adjust the
+forecasting horizons. In contrast to other state-of-the-art TSFMs, which
+require training data across all possible sampling rates to memorize patterns
+at each scale, FlowState inherently adapts its internal dynamics to the input
+scale, enabling smaller models, reduced data requirements, and improved
+efficiency. We further propose an efficient pretraining strategy that improves
+robustness and accelerates training. Despite being the smallest model,
+FlowState outperforms all other models and is state-of-the-art for the GIFT-ZS
+and the Chronos-ZS benchmarks. Ablation studies confirm the effectiveness of
+its components, and we demonstrate its unique ability to adapt online to
+varying input sampling rates.</p></br><a href="http://arxiv.org/pdf/2508.05492v1" target="_blank"><h2>MoMA: A Mixture-of-Multimodal-Agents Architecture for Enhancing Clinical
+  Prediction Modelling</h2></a><strong><u>Authors:</u></strong>  Jifan Gao, Mahmudur Rahman, John Caskey, Madeline Oguss, Ann O'Rourke, Randy Brown, Anne Stey, Anoop Mayampurath, Matthew M. Churpek, Guanhua Chen, Majid Afshar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.MA</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal electronic health record (EHR) data provide richer, complementary
+insights into patient health compared to single-modality data. However,
+effectively integrating diverse data modalities for clinical prediction
+modeling remains challenging due to the substantial data requirements. We
+introduce a novel architecture, Mixture-of-Multimodal-Agents (MoMA), designed
+to leverage multiple large language model (LLM) agents for clinical prediction
+tasks using multimodal EHR data. MoMA employs specialized LLM agents
+("specialist agents") to convert non-textual modalities, such as medical images
+and laboratory results, into structured textual summaries. These summaries,
+together with clinical notes, are combined by another LLM ("aggregator agent")
+to generate a unified multimodal summary, which is then used by a third LLM
+("predictor agent") to produce clinical predictions. Evaluating MoMA on three
+prediction tasks using real-world datasets with different modality combinations
+and prediction settings, MoMA outperforms current state-of-the-art methods,
+highlighting its enhanced accuracy and flexibility across various tasks.</p></br><a href="http://arxiv.org/pdf/2508.05185v1" target="_blank"><h2>Bianchi Type I Model Cannot Explain the Observed CMB Angular Acoustic
+  Scale Directional Variation</h2></a><strong><u>Authors:</u></strong>  Boris Hoi-Lun Ng, Ming-Chung Chu</br><strong><u>Categories:</u></strong> astro-ph.CO</br><strong><u>Comments:</u></strong> 8 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Anisotropic cosmological models have been gaining attention due to various
+observational hints of large-scale anisotropies. One of the most surprising
+evidences for the latter is the discovery of a dipole-like directional
+variation in cosmological parameters extracted from the Cosmic Microwave
+Background (CMB) data. In this work, we show that the directional variation of
+the CMB angular acoustic angle calculated with the fully asymmetric Bianchi
+Type I metric, a simple extension of the standard
+Friedmann-Lema\^itre-Robertson-Walker metric, cannot account for the observed
+dipole-like anisotropy.</p></br><a href="http://arxiv.org/pdf/2508.05454v1" target="_blank"><h2>EnergyPatchTST: Multi-scale Time Series Transformers with Uncertainty
+  Estimation for Energy Forecasting</h2></a><strong><u>Authors:</u></strong>  Wei Li, Zixin Wang, Qizheng Sun, Qixiang Gao, Fenglei Yang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted for publication at the International Conference on Intelligent Computing (ICIC 2025). 12 pages. The final authenticated version is published in the Lecture Notes in Computer Science (LNCS) series, vol 15860, and is available online. This is the author's version of the work submitted for peer review</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate and reliable energy time series prediction is of great significance
+for power generation planning and allocation. At present, deep learning time
+series prediction has become the mainstream method. However, the multi-scale
+time dynamics and the irregularity of real data lead to the limitations of the
+existing methods. Therefore, we propose EnergyPatchTST, which is an extension
+of the Patch Time Series Transformer specially designed for energy forecasting.
+The main innovations of our method are as follows: (1) multi-scale feature
+extraction mechanism to capture patterns with different time resolutions; (2)
+probability prediction framework to estimate uncertainty through Monte Carlo
+elimination; (3) integration path of future known variables (such as
+temperature and wind conditions); And (4) Pre-training and Fine-tuning examples
+to enhance the performance of limited energy data sets. A series of experiments
+on common energy data sets show that EnergyPatchTST is superior to other
+commonly used methods, the prediction error is reduced by 7-12%, and reliable
+uncertainty estimation is provided, which provides an important reference for
+time series prediction in the energy field.</p></br><a href="http://arxiv.org/pdf/2508.05791v1" target="_blank"><h2>From Imperfect Signals to Trustworthy Structure: Confidence-Aware
+  Inference from Heterogeneous and Reliability-Varying Utility Data</h2></a><strong><u>Authors:</u></strong>  Haoran Li, Lihao Mai, Muhao Guo, Jiaqi Wu, Yang Weng, Yannan Sun, Ce Jimmy Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate distribution grid topology is essential for reliable modern grid
+operations. However, real-world utility data originates from multiple sources
+with varying characteristics and levels of quality. In this work, developed in
+collaboration with Oncor Electric Delivery, we propose a scalable framework
+that reconstructs a trustworthy grid topology by systematically integrating
+heterogeneous data. We observe that distribution topology is fundamentally
+governed by two complementary dimensions: the spatial layout of physical
+infrastructure (e.g., GIS and asset metadata) and the dynamic behavior of the
+system in the signal domain (e.g., voltage time series). When jointly
+leveraged, these dimensions support a complete and physically coherent
+reconstruction of network connectivity. To address the challenge of uneven data
+quality without compromising observability, we introduce a confidence-aware
+inference mechanism that preserves structurally informative yet imperfect
+inputs, while quantifying the reliability of each inferred connection for
+operator interpretation. This soft handling of uncertainty is tightly coupled
+with hard enforcement of physical feasibility: we embed operational
+constraints, such as transformer capacity limits and radial topology
+requirements, directly into the learning process. Together, these components
+ensure that inference is both uncertainty-aware and structurally valid,
+enabling rapid convergence to actionable, trustworthy topologies under
+real-world deployment conditions. The proposed framework is validated using
+data from over 8000 meters across 3 feeders in Oncor's service territory,
+demonstrating over 95% accuracy in topology reconstruction and substantial
+improvements in confidence calibration and computational efficiency relative to
+baseline methods.</p></br><a href="http://arxiv.org/pdf/2508.06204v1" target="_blank"><h2>Classification is a RAG problem: A case study on hate speech detection</h2></a><strong><u>Authors:</u></strong>  Richard Willats, Josh Pennington, Aravind Mohan, Bertie Vidgen</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract)</br><p><strong><u>Abstract:</u></strong> Robust content moderation requires classification systems that can quickly
+adapt to evolving policies without costly retraining. We present classification
+using Retrieval-Augmented Generation (RAG), which shifts traditional
+classification tasks from determining the correct category in accordance with
+pre-trained parameters to evaluating content in relation to contextual
+knowledge retrieved at inference. In hate speech detection, this transforms the
+task from "is this hate speech?" to "does this violate the hate speech policy?"
+  Our Contextual Policy Engine (CPE) - an agentic RAG system - demonstrates
+this approach and offers three key advantages: (1) robust classification
+accuracy comparable to leading commercial systems, (2) inherent explainability
+via retrieved policy segments, and (3) dynamic policy updates without model
+retraining. Through three experiments, we demonstrate strong baseline
+performance and show that the system can apply fine-grained policy control by
+correctly adjusting protection for specific identity groups without requiring
+retraining or compromising overall performance. These findings establish that
+RAG can transform classification into a more flexible, transparent, and
+adaptable process for content moderation and wider classification problems.</p></br><a href="http://arxiv.org/pdf/2508.06337v1" target="_blank"><h2>Decorrelated feature importance from local sample weighting</h2></a><strong><u>Authors:</u></strong>  Benedikt Fröhlich, Alison Durst, Merle Behr</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, stat.ME</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Feature importance (FI) statistics provide a prominent and valuable method of
+insight into the decision process of machine learning (ML) models, but their
+effectiveness has well-known limitations when correlation is present among the
+features in the training data. In this case, the FI often tends to be
+distributed among all features which are in correlation with the
+response-generating signal features. Even worse, if multiple signal features
+are in strong correlation with a noise feature, while being only modestly
+correlated with one another, this can result in a noise feature having a
+distinctly larger FI score than any signal feature. Here we propose local
+sample weighting (losaw) which can flexibly be integrated into many ML
+algorithms to improve FI scores in the presence of feature correlation in the
+training data. Our approach is motivated from inverse probability weighting in
+causal inference and locally, within the ML model, uses a sample weighting
+scheme to decorrelate a target feature from the remaining features. This
+reduces model bias locally, whenever the effect of a potential signal feature
+is evaluated and compared to others. Moreover, losaw comes with a natural
+tuning parameter, the minimum effective sample size of the weighted population,
+which corresponds to an interpretation-prediction-tradeoff, analog to a
+bias-variance-tradeoff as for classical ML tuning parameters. We demonstrate
+how losaw can be integrated within decision tree-based ML methods and within
+mini-batch training of neural networks. We investigate losaw for random forest
+and convolutional neural networks in a simulation study on settings showing
+diverse correlation patterns. We found that losaw improves FI consistently.
+Moreover, it often improves prediction accuracy for out-of-distribution, while
+maintaining a similar accuracy for in-distribution test data.</p></br><a href="http://arxiv.org/pdf/2508.06401v1" target="_blank"><h2>A Systematic Literature Review of Retrieval-Augmented Generation:
+  Techniques, Metrics, and Challenges</h2></a><strong><u>Authors:</u></strong>  Andrew Brown, Muhammad Roman, Barry Devereux</br><strong><u>Categories:</u></strong> cs.DL, cs.AI, cs.CL, cs.IR</br><strong><u>Comments:</u></strong> 58 pages</br><strong><u>Matching Keywords:</u></strong> literature review (title)</br><p><strong><u>Abstract:</u></strong> This systematic review of the research literature on retrieval-augmented
+generation (RAG) provides a focused analysis of the most highly cited studies
+published between 2020 and May 2025. A total of 128 articles met our inclusion
+criteria. The records were retrieved from ACM Digital Library, IEEE Xplore,
+Scopus, ScienceDirect, and the Digital Bibliography and Library Project (DBLP).
+RAG couples a neural retriever with a generative language model, grounding
+output in up-to-date, non-parametric memory while retaining the semantic
+generalisation stored in model weights. Guided by the PRISMA 2020 framework, we
+(i) specify explicit inclusion and exclusion criteria based on citation count
+and research questions, (ii) catalogue datasets, architectures, and evaluation
+practices, and (iii) synthesise empirical evidence on the effectiveness and
+limitations of RAG. To mitigate citation-lag bias, we applied a lower
+citation-count threshold to papers published in 2025 so that emerging
+breakthroughs with naturally fewer citations were still captured. This review
+clarifies the current research landscape, highlights methodological gaps, and
+charts priority directions for future research.</p></br><a href="http://arxiv.org/pdf/2508.05463v1" target="_blank"><h2>Task complexity shapes internal representations and robustness in neural
+  networks</h2></a><strong><u>Authors:</u></strong>  Robert Jankowski, Filippo Radicchi, M. Ángeles Serrano, Marián Boguñá, Santo Fortunato</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, physics.soc-ph</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Neural networks excel across a wide range of tasks, yet remain black boxes.
+In particular, how their internal representations are shaped by the complexity
+of the input data and the problems they solve remains obscure. In this work, we
+introduce a suite of five data-agnostic probes-pruning, binarization, noise
+injection, sign flipping, and bipartite network randomization-to quantify how
+task difficulty influences the topology and robustness of representations in
+multilayer perceptrons (MLPs). MLPs are represented as signed, weighted
+bipartite graphs from a network science perspective. We contrast easy and hard
+classification tasks on the MNIST and Fashion-MNIST datasets. We show that
+binarizing weights in hard-task models collapses accuracy to chance, whereas
+easy-task models remain robust. We also find that pruning low-magnitude edges
+in binarized hard-task models reveals a sharp phase-transition in performance.
+Moreover, moderate noise injection can enhance accuracy, resembling a
+stochastic-resonance effect linked to optimal sign flips of small-magnitude
+weights. Finally, preserving only the sign structure-instead of precise weight
+magnitudes-through bipartite network randomizations suffices to maintain high
+accuracy. These phenomena define a model- and modality-agnostic measure of task
+complexity: the performance gap between full-precision and binarized or
+shuffled neural network performance. Our findings highlight the crucial role of
+signed bipartite topology in learned representations and suggest practical
+strategies for model compression and interpretability that align with task
+complexity.</p></br><a href="http://arxiv.org/pdf/2508.06208v1" target="_blank"><h2>Graph Federated Learning for Personalized Privacy Recommendation</h2></a><strong><u>Authors:</u></strong>  Ce Na, Kai Yang, Dengzhao Fang, Yu Li, Jingtong Gao, Chengcheng Zhu, Jiale Zhang, Xiaobing Sun, Yi Chang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Federated recommendation systems (FedRecs) have gained significant attention
+for providing privacy-preserving recommendation services. However, existing
+FedRecs assume that all users have the same requirements for privacy
+protection, i.e., they do not upload any data to the server. The approaches
+overlook the potential to enhance the recommendation service by utilizing
+publicly available user data. In real-world applications, users can choose to
+be private or public. Private users' interaction data is not shared, while
+public users' interaction data can be shared. Inspired by the issue, this paper
+proposes a novel Graph Federated Learning for Personalized Privacy
+Recommendation (GFed-PP) that adapts to different privacy requirements while
+improving recommendation performance. GFed-PP incorporates the interaction data
+of public users to build a user-item interaction graph, which is then used to
+form a user relationship graph. A lightweight graph convolutional network (GCN)
+is employed to learn each user's user-specific personalized item embedding. To
+protect user privacy, each client learns the user embedding and the scoring
+function locally. Additionally, GFed-PP achieves optimization of the federated
+recommendation framework through the initialization of item embedding on
+clients and the aggregation of the user relationship graph on the server.
+Experimental results demonstrate that GFed-PP significantly outperforms
+existing methods for five datasets, offering superior recommendation accuracy
+without compromising privacy. This framework provides a practical solution for
+accommodating varying privacy preferences in federated recommendation systems.</p></br><a href="http://arxiv.org/pdf/2508.05427v1" target="_blank"><h2>Large Language Models Transform Organic Synthesis From Reaction
+  Prediction to Automation</h2></a><strong><u>Authors:</u></strong>  Kartar Kumar Lohana Tharwani, Rajesh Kumar, Sumita, Numan Ahmed, Yong Tang</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Large language models (LLMs) are beginning to reshape how chemists plan and
+run reactions in organic synthesis. Trained on millions of reported
+transformations, these text-based models can propose synthetic routes, forecast
+reaction outcomes and even instruct robots that execute experiments without
+human supervision. Here we survey the milestones that turned LLMs from
+speculative tools into practical lab partners. We show how coupling LLMs with
+graph neural networks, quantum calculations and real-time spectroscopy shrinks
+discovery cycles and supports greener, data-driven chemistry. We discuss
+limitations, including biased datasets, opaque reasoning and the need for
+safety gates that prevent unintentional hazards. Finally, we outline community
+initiatives open benchmarks, federated learning and explainable interfaces that
+aim to democratize access while keeping humans firmly in control. These
+advances chart a path towards rapid, reliable and inclusive molecular
+innovation powered by artificial intelligence and automation.</p></br><a href="http://arxiv.org/pdf/2508.05248v1" target="_blank"><h2>Salt-Rock Creep Deformation Forecasting Using Deep Neural Networks and
+  Analytical Models for Subsurface Energy Storage Applications</h2></a><strong><u>Authors:</u></strong>  Pradeep Kumar Shukla, Tanujit Chakraborty, Mustafa Sari, Joel Sarout, Partha Pratim Mandal</br><strong><u>Categories:</u></strong> physics.geo-ph, cs.ET, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (title, abstract), transformer (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> This study provides an in-depth analysis of time series forecasting methods
+to predict the time-dependent deformation trend (also known as creep) of salt
+rock under varying confining pressure conditions. Creep deformation assessment
+is essential for designing and operating underground storage facilities for
+nuclear waste, hydrogen energy, or radioactive materials. Salt rocks, known for
+their mechanical properties like low porosity, low permeability, high
+ductility, and exceptional creep and self-healing capacities, were examined
+using multi-stage triaxial (MSTL) creep data. After resampling, axial strain
+datasets were recorded at 5--10 second intervals under confining pressure
+levels ranging from 5 to 35 MPa over 5.8--21 days. Initial analyses, including
+Seasonal-Trend Decomposition (STL) and Granger causality tests, revealed
+minimal seasonality and causality between axial strain and temperature data.
+Further statistical tests, such as the Augmented Dickey-Fuller (ADF) test,
+confirmed the stationarity of the data with p-values less than 0.05, and
+wavelet coherence plot (WCP) analysis indicated repeating trends. A suite of
+deep neural network (DNN) models (Neural Basis Expansion Analysis for Time
+Series (N-BEATS), Temporal Convolutional Networks (TCN), Recurrent Neural
+Networks (RNN), and Transformers (TF)) was utilized and compared against
+statistical baseline models. Predictive performance was evaluated using Root
+Mean Square Error (RMSE), Mean Absolute Error (MAE), Mean Absolute Percentage
+Error (MAPE), and Symmetric Mean Absolute Percentage Error (SMAPE). Results
+demonstrated that N-BEATS and TCN models outperformed others across various
+stress levels, respectively. DNN models, particularly N-BEATS and TCN, showed a
+15--20\% improvement in accuracy over traditional analytical models,
+effectively capturing complex temporal dependencies and patterns.</p></br><a href="http://arxiv.org/pdf/2508.05430v1" target="_blank"><h2>Explaining Similarity in Vision-Language Encoders with Weighted Banzhaf
+  Interactions</h2></a><strong><u>Authors:</u></strong>  Hubert Baniecki, Maximilian Muschalik, Fabian Fumagalli, Barbara Hammer, Eyke Hüllermeier, Przemyslaw Biecek</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Preprint</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Language-image pre-training (LIP) enables the development of vision-language
+models capable of zero-shot classification, localization, multimodal retrieval,
+and semantic understanding. Various explanation methods have been proposed to
+visualize the importance of input image-text pairs on the model's similarity
+outputs. However, popular saliency maps are limited by capturing only
+first-order attributions, overlooking the complex cross-modal interactions
+intrinsic to such encoders. We introduce faithful interaction explanations of
+LIP models (FIxLIP) as a unified approach to decomposing the similarity in
+vision-language encoders. FIxLIP is rooted in game theory, where we analyze how
+using the weighted Banzhaf interaction index offers greater flexibility and
+improves computational efficiency over the Shapley interaction quantification
+framework. From a practical perspective, we propose how to naturally extend
+explanation evaluation metrics, like the pointing game and area between the
+insertion/deletion curves, to second-order interaction explanations.
+Experiments on MS COCO and ImageNet-1k benchmarks validate that second-order
+methods like FIxLIP outperform first-order attribution methods. Beyond
+delivering high-quality explanations, we demonstrate the utility of FIxLIP in
+comparing different models like CLIP vs. SigLIP-2 and ViT-B/32 vs. ViT-L/16.</p></br><a href="http://arxiv.org/pdf/2508.06251v1" target="_blank"><h2>Synthetic Data Generation and Differential Privacy using Tensor
+  Networks' Matrix Product States (MPS)</h2></a><strong><u>Authors:</u></strong>  Alejandro Moreno R., Desale Fentaw, Samuel Palmer, Raúl Salles de Padua, Ninad Dixit, Samuel Mugel, Roman Orús, Manuel Radons, Josef Menter, Ali Abedi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR, quant-ph</br><strong><u>Comments:</u></strong> 10 pages</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Synthetic data generation is a key technique in modern artificial
+intelligence, addressing data scarcity, privacy constraints, and the need for
+diverse datasets in training robust models. In this work, we propose a method
+for generating privacy-preserving high-quality synthetic tabular data using
+Tensor Networks, specifically Matrix Product States (MPS). We benchmark the
+MPS-based generative model against state-of-the-art models such as CTGAN, VAE,
+and PrivBayes, focusing on both fidelity and privacy-preserving capabilities.
+To ensure differential privacy (DP), we integrate noise injection and gradient
+clipping during training, enabling privacy guarantees via R\'enyi Differential
+Privacy accounting. Across multiple metrics analyzing data fidelity and
+downstream machine learning task performance, our results show that MPS
+outperforms classical models, particularly under strict privacy constraints.
+This work highlights MPS as a promising tool for privacy-aware synthetic data
+generation. By combining the expressive power of tensor network representations
+with formal privacy mechanisms, the proposed approach offers an interpretable
+and scalable alternative for secure data sharing. Its structured design
+facilitates integration into sensitive domains where both data quality and
+confidentiality are critical.</p></br><a href="http://arxiv.org/pdf/2508.05537v1" target="_blank"><h2>Tractable Sharpness-Aware Learning of Probabilistic Circuits</h2></a><strong><u>Authors:</u></strong>  Hrithik Suresh, Sahil Sidheekh, Vishnu Shreeram M. P, Sriraam Natarajan, Narayanan C. Krishnan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Probabilistic Circuits (PCs) are a class of generative models that allow
+exact and tractable inference for a wide range of queries. While recent
+developments have enabled the learning of deep and expressive PCs, this
+increased capacity can often lead to overfitting, especially when data is
+limited. We analyze PC overfitting from a log-likelihood-landscape perspective
+and show that it is often caused by convergence to sharp optima that generalize
+poorly. Inspired by sharpness aware minimization in neural networks, we propose
+a Hessian-based regularizer for training PCs. As a key contribution, we show
+that the trace of the Hessian of the log-likelihood-a sharpness proxy that is
+typically intractable in deep neural networks-can be computed efficiently for
+PCs. Minimizing this Hessian trace induces a gradient-norm-based regularizer
+that yields simple closed-form parameter updates for EM, and integrates
+seamlessly with gradient based learning methods. Experiments on synthetic and
+real-world datasets demonstrate that our method consistently guides PCs toward
+flatter minima, improves generalization performance.</p></br><a href="http://arxiv.org/pdf/2508.05411v1" target="_blank"><h2>MolSnap: Snap-Fast Molecular Generation with Latent Variational Mean
+  Flow</h2></a><strong><u>Authors:</u></strong>  Md Atik Ahamed, Qiang Ye, Qiang Cheng</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> Molecular generation conditioned on textual descriptions is a fundamental
+task in computational chemistry and drug discovery. Existing methods often
+struggle to simultaneously ensure high-quality, diverse generation and fast
+inference. In this work, we propose a novel causality-aware framework that
+addresses these challenges through two key innovations. First, we introduce a
+Causality-Aware Transformer (CAT) that jointly encodes molecular graph tokens
+and text instructions while enforcing causal dependencies during generation.
+Second, we develop a Variational Mean Flow (VMF) framework that generalizes
+existing flow-based methods by modeling the latent space as a mixture of
+Gaussians, enhancing expressiveness beyond unimodal priors. VMF enables
+efficient one-step inference while maintaining strong generation quality and
+diversity. Extensive experiments on four standard molecular benchmarks
+demonstrate that our model outperforms state-of-the-art baselines, achieving
+higher novelty (up to 74.5\%), diversity (up to 70.3\%), and 100\% validity
+across all datasets. Moreover, VMF requires only one number of function
+evaluation (NFE) during conditional generation and up to five NFEs for
+unconditional generation, offering substantial computational efficiency over
+diffusion-based methods.</p></br><a href="http://arxiv.org/pdf/2508.06199v1" target="_blank"><h2>Benchmarking Pretrained Molecular Embedding Models For Molecular
+  Representation Learning</h2></a><strong><u>Authors:</u></strong>  Mateusz Praski, Jakub Adamczyk, Wojciech Czech</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Pretrained neural networks have attracted significant interest in chemistry
+and small molecule drug design. Embeddings from these models are widely used
+for molecular property prediction, virtual screening, and small data learning
+in molecular chemistry. This study presents the most extensive comparison of
+such models to date, evaluating 25 models across 25 datasets. Under a fair
+comparison framework, we assess models spanning various modalities,
+architectures, and pretraining strategies. Using a dedicated hierarchical
+Bayesian statistical testing model, we arrive at a surprising result: nearly
+all neural models show negligible or no improvement over the baseline ECFP
+molecular fingerprint. Only the CLAMP model, which is also based on molecular
+fingerprints, performs statistically significantly better than the
+alternatives. These findings raise concerns about the evaluation rigor in
+existing studies. We discuss potential causes, propose solutions, and offer
+practical recommendations.</p></br><a href="http://arxiv.org/pdf/2508.06244v1" target="_blank"><h2>Membership Inference Attack with Partial Features</h2></a><strong><u>Authors:</u></strong>  Xurun Wang, Guangrui Liu, Xinjie Li, Haoyu He, Lin Yao, Weizhe Zhang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Machine learning models have been shown to be susceptible to membership
+inference attack, which can be used to determine whether a given sample appears
+in the training data. Existing membership inference methods commonly assume
+that the adversary has full access to the features of the target sample. This
+assumption, however, does not hold in many real-world scenarios where only
+partial features information is available, thereby limiting the applicability
+of these methods. In this work, we study an inference scenario where the
+adversary observes only partial features of each sample and aims to infer
+whether this observed subset was present in the training set of the target
+model. We define this problem as Partial Feature Membership Inference (PFMI).
+To address this problem, we propose MRAD (Memory-guided Reconstruction and
+Anomaly Detection), a two-stage attack framework. In the first stage, MRAD
+optimizes the unknown feature values to minimize the loss of the sample. In the
+second stage, it measures the deviation between the reconstructed sample and
+the training distribution using anomaly detection. Empirical results
+demonstrate that MRAD is effective across a range of datasets, and maintains
+compatibility with various off-the-shelf anomaly detection techniques. For
+example, on STL-10, our attack achieves an AUC of around 0.6 even with 40% of
+the missing features.</p></br><a href="http://arxiv.org/pdf/2508.05077v1" target="_blank"><h2>Analyzing the Impact of Multimodal Perception on Sample Complexity and
+  Optimization Landscapes in Imitation Learning</h2></a><strong><u>Authors:</u></strong>  Luai Abuelsamen, Temitope Lukman Adebanjo</br><strong><u>Categories:</u></strong> cs.LG, cs.RO, 68T05, 62C10, 68T45, I.2.9; I.2.6; I.5.4</br><strong><u>Comments:</u></strong> 9 pages, 1 figure, 1 table, theoretical analysis with empirical validation on PerAct implementation in MuJoCo simulation environment</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper examines the theoretical foundations of multimodal imitation
+learning through the lens of statistical learning theory. We analyze how
+multimodal perception (RGB-D, proprioception, language) affects sample
+complexity and optimization landscapes in imitation policies. Building on
+recent advances in multimodal learning theory, we show that properly integrated
+multimodal policies can achieve tighter generalization bounds and more
+favorable optimization landscapes than their unimodal counterparts. We provide
+a comprehensive review of theoretical frameworks that explain why multimodal
+architectures like PerAct and CLIPort achieve superior performance, connecting
+these empirical results to fundamental concepts in Rademacher complexity, PAC
+learning, and information theory.</p></br><a href="http://arxiv.org/pdf/2508.05190v1" target="_blank"><h2>Physics-Informed Time-Integrated DeepONet: Temporal Tangent Space
+  Operator Learning for High-Accuracy Inference</h2></a><strong><u>Authors:</u></strong>  Luis Mandl, Dibyajyoti Nayak, Tim Ricken, Somdatta Goswami</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 17 pages, 16 figures, 3 tables</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> Accurately modeling and inferring solutions to time-dependent partial
+differential equations (PDEs) over extended horizons remains a core challenge
+in scientific machine learning. Traditional full rollout (FR) methods, which
+predict entire trajectories in one pass, often fail to capture the causal
+dependencies and generalize poorly outside the training time horizon.
+Autoregressive (AR) approaches, evolving the system step by step, suffer from
+error accumulation, limiting long-term accuracy. These shortcomings limit the
+long-term accuracy and reliability of both strategies. To address these issues,
+we introduce the Physics-Informed Time-Integrated Deep Operator Network
+(PITI-DeepONet), a dual-output architecture trained via fully physics-informed
+or hybrid physics- and data-driven objectives to ensure stable, accurate
+long-term evolution well beyond the training horizon. Instead of forecasting
+future states, the network learns the time-derivative operator from the current
+state, integrating it using classical time-stepping schemes to advance the
+solution in time. Additionally, the framework can leverage residual monitoring
+during inference to estimate prediction quality and detect when the system
+transitions outside the training domain. Applied to benchmark problems,
+PITI-DeepONet shows improved accuracy over extended inference time horizons
+when compared to traditional methods. Mean relative $\mathcal{L}_2$ errors
+reduced by 84% (vs. FR) and 79% (vs. AR) for the one-dimensional heat equation;
+by 87% (vs. FR) and 98% (vs. AR) for the one-dimensional Burgers equation; and
+by 42% (vs. FR) and 89% (vs. AR) for the two-dimensional Allen-Cahn equation.
+By moving beyond classic FR and AR schemes, PITI-DeepONet paves the way for
+more reliable, long-term integration of complex, time-dependent PDEs.</p></br><a href="http://arxiv.org/pdf/2508.06021v1" target="_blank"><h2>Improved Sub-Visible Particle Classification in Flow Imaging Microscopy
+  via Generative AI-Based Image Synthesis</h2></a><strong><u>Authors:</u></strong>  Utku Ozbulak, Michaela Cohrs, Hristo L. Svilenov, Joris Vankerschaver, Wesley De Neve</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Sub-visible particle analysis using flow imaging microscopy combined with
+deep learning has proven effective in identifying particle types, enabling the
+distinction of harmless components such as silicone oil from protein particles.
+However, the scarcity of available data and severe imbalance between particle
+types within datasets remain substantial hurdles when applying multi-class
+classifiers to such problems, often forcing researchers to rely on less
+effective methods. The aforementioned issue is particularly challenging for
+particle types that appear unintentionally and in lower numbers, such as
+silicone oil and air bubbles, as opposed to protein particles, where obtaining
+large numbers of images through controlled settings is comparatively
+straightforward. In this work, we develop a state-of-the-art diffusion model to
+address data imbalance by generating high-fidelity images that can augment
+training datasets, enabling the effective training of multi-class deep neural
+networks. We validate this approach by demonstrating that the generated samples
+closely resemble real particle images in terms of visual quality and structure.
+To assess the effectiveness of using diffusion-generated images in training
+datasets, we conduct large-scale experiments on a validation dataset comprising
+500,000 protein particle images and demonstrate that this approach improves
+classification performance with no negligible downside. Finally, to promote
+open research and reproducibility, we publicly release both our diffusion
+models and the trained multi-class deep neural network classifiers, along with
+a straightforward interface for easy integration into future studies, at
+https://github.com/utkuozbulak/svp-generative-ai.</p></br><a href="http://arxiv.org/pdf/2508.06352v1" target="_blank"><h2>From Explainable to Explanatory Artificial Intelligence: Toward a New
+  Paradigm for Human-Centered Explanations through Generative AI</h2></a><strong><u>Authors:</u></strong>  Christian Meske, Justin Brenne, Erdi Uenal, Sabahat Oelcer, Ayseguel Doganguen</br><strong><u>Categories:</u></strong> cs.AI, cs.HC</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Current explainable AI (XAI) approaches prioritize algorithmic transparency
+and present explanations in abstract, non-adaptive formats that often fail to
+support meaningful end-user understanding. This paper introduces "Explanatory
+AI" as a complementary paradigm that leverages generative AI capabilities to
+serve as explanatory partners for human understanding rather than providers of
+algorithmic transparency. While XAI reveals algorithmic decision processes for
+model validation, Explanatory AI addresses contextual reasoning to support
+human decision-making in sociotechnical contexts. We develop a definition and
+systematic eight-dimensional conceptual model distinguishing Explanatory AI
+through narrative communication, adaptive personalization, and progressive
+disclosure principles. Empirical validation through Rapid Contextual Design
+methodology with healthcare professionals demonstrates that users consistently
+prefer context-sensitive, multimodal explanations over technical transparency.
+Our findings reveal the practical urgency for AI systems designed for human
+comprehension rather than algorithmic introspection, establishing a
+comprehensive research agenda for advancing user-centered AI explanation
+approaches across diverse domains and cultural contexts.</p></br></body>

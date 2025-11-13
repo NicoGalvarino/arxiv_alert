@@ -1,0 +1,143 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 15 Jul 2025 to 17 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.11620v1" target="_blank"><h2>Learning Representations of Event Time Series with Sparse Autoencoders
+  for Anomaly Detection, Similarity Search, and Unsupervised Classification</h2></a><strong><u>Authors:</u></strong>  Steven Dillmann, Juan Rafael Martínez-Galarza</br><strong><u>Categories:</u></strong> cs.LG, astro-ph.HE, astro-ph.IM, cs.AI</br><strong><u>Comments:</u></strong> Accepted at the 2025 ICML Workshop on Machine Learning for Astrophysics, Code available at:this https URL</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Event time series are sequences of discrete events occurring at irregular
+time intervals, each associated with a domain-specific observational modality.
+They are common in domains such as high-energy astrophysics, computational
+social science, cybersecurity, finance, healthcare, neuroscience, and
+seismology. Their unstructured and irregular structure poses significant
+challenges for extracting meaningful patterns and identifying salient phenomena
+using conventional techniques. We propose novel two- and three-dimensional
+tensor representations for event time series, coupled with sparse autoencoders
+that learn physically meaningful latent representations. These embeddings
+support a variety of downstream tasks, including anomaly detection,
+similarity-based retrieval, semantic clustering, and unsupervised
+classification. We demonstrate our approach on a real-world dataset from X-ray
+astronomy, showing that these representations successfully capture temporal and
+spectral signatures and isolate diverse classes of X-ray transients. Our
+framework offers a flexible, scalable, and generalizable solution for analyzing
+complex, irregular event time series across scientific and industrial domains.</p></br><a href="http://arxiv.org/pdf/2507.12262v1" target="_blank"><h2>A Framework for Nonstationary Gaussian Processes with Neural Network
+  Parameters</h2></a><strong><u>Authors:</u></strong>  Zachary James, Joseph Guinness</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ME, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Gaussian processes have become a popular tool for nonparametric regression
+because of their flexibility and uncertainty quantification. However, they
+often use stationary kernels, which limit the expressiveness of the model and
+may be unsuitable for many datasets. We propose a framework that uses
+nonstationary kernels whose parameters vary across the feature space, modeling
+these parameters as the output of a neural network that takes the features as
+input. The neural network and Gaussian process are trained jointly using the
+chain rule to calculate derivatives. Our method clearly describes the behavior
+of the nonstationary parameters and is compatible with approximation methods
+for scaling to large datasets. It is flexible and easily adapts to different
+nonstationary kernels without needing to redesign the optimization procedure.
+Our methods are implemented with the GPyTorch library and can be readily
+modified. We test a nonstationary variance and noise variant of our method on
+several machine learning datasets and find that it achieves better accuracy and
+log-score than both a stationary model and a hierarchical model approximated
+with variational inference. Similar results are observed for a model with only
+nonstationary variance. We also demonstrate our approach's ability to recover
+the nonstationary parameters of a spatial dataset.</p></br><a href="http://arxiv.org/pdf/2507.12108v1" target="_blank"><h2>Multimodal Coordinated Online Behavior: Trade-offs and Strategies</h2></a><strong><u>Authors:</u></strong>  Lorenzo Mannocci, Stefano Cresci, Matteo Magnani, Anna Monreale, Maurizio Tesconi</br><strong><u>Categories:</u></strong> cs.SI, cs.AI, cs.CY, cs.HC, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multimodality (abstract)</br><p><strong><u>Abstract:</u></strong> Coordinated online behavior, which spans from beneficial collective actions
+to harmful manipulation such as disinformation campaigns, has become a key
+focus in digital ecosystem analysis. Traditional methods often rely on
+monomodal approaches, focusing on single types of interactions like co-retweets
+or co-hashtags, or consider multiple modalities independently of each other.
+However, these approaches may overlook the complex dynamics inherent in
+multimodal coordination. This study compares different ways of operationalizing
+the detection of multimodal coordinated behavior. It examines the trade-off
+between weakly and strongly integrated multimodal models, highlighting the
+balance between capturing broader coordination patterns and identifying tightly
+coordinated behavior. By comparing monomodal and multimodal approaches, we
+assess the unique contributions of different data modalities and explore how
+varying implementations of multimodality impact detection outcomes. Our
+findings reveal that not all the modalities provide distinct insights, but that
+with a multimodal approach we can get a more comprehensive understanding of
+coordination dynamics. This work enhances the ability to detect and analyze
+coordinated online behavior, offering new perspectives for safeguarding the
+integrity of digital platforms.</p></br><a href="http://arxiv.org/pdf/2507.11570v1" target="_blank"><h2>SurgeryLSTM: A Time-Aware Neural Model for Accurate and Explainable
+  Length of Stay Prediction After Spine Surgery</h2></a><strong><u>Authors:</u></strong>  Ha Na Cho, Sairam Sutari, Alexander Lopez, Hansen Bow, Kai Zheng</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, eess.IV</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Objective: To develop and evaluate machine learning (ML) models for
+predicting length of stay (LOS) in elective spine surgery, with a focus on the
+benefits of temporal modeling and model interpretability. Materials and
+Methods: We compared traditional ML models (e.g., linear regression, random
+forest, support vector machine (SVM), and XGBoost) with our developed model,
+SurgeryLSTM, a masked bidirectional long short-term memory (BiLSTM) with an
+attention, using structured perioperative electronic health records (EHR) data.
+Performance was evaluated using the coefficient of determination (R2), and key
+predictors were identified using explainable AI. Results: SurgeryLSTM achieved
+the highest predictive accuracy (R2=0.86), outperforming XGBoost (R2 = 0.85)
+and baseline models. The attention mechanism improved interpretability by
+dynamically identifying influential temporal segments within preoperative
+clinical sequences, allowing clinicians to trace which events or features most
+contributed to each LOS prediction. Key predictors of LOS included bone
+disorder, chronic kidney disease, and lumbar fusion identified as the most
+impactful predictors of LOS. Discussion: Temporal modeling with attention
+mechanisms significantly improves LOS prediction by capturing the sequential
+nature of patient data. Unlike static models, SurgeryLSTM provides both higher
+accuracy and greater interpretability, which are critical for clinical
+adoption. These results highlight the potential of integrating attention-based
+temporal models into hospital planning workflows. Conclusion: SurgeryLSTM
+presents an effective and interpretable AI solution for LOS prediction in
+elective spine surgery. Our findings support the integration of temporal,
+explainable ML approaches into clinical decision support systems to enhance
+discharge readiness and individualized patient care.</p></br><a href="http://arxiv.org/pdf/2507.11638v1" target="_blank"><h2>Interpretable Prediction of Lymph Node Metastasis in Rectal Cancer MRI
+  Using Variational Autoencoders</h2></a><strong><u>Authors:</u></strong>  Benjamin Keel, Aaron Quyn, David Jayne, Maryam Mohsin, Samuel D. Relton</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Published in Medical Image Understanding and Analysis (MIUA) 2025</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title, abstract), VAE (abstract), convolutional (abstract), latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Effective treatment for rectal cancer relies on accurate lymph node
+metastasis (LNM) staging. However, radiological criteria based on lymph node
+(LN) size, shape and texture morphology have limited diagnostic accuracy. In
+this work, we investigate applying a Variational Autoencoder (VAE) as a feature
+encoder model to replace the large pre-trained Convolutional Neural Network
+(CNN) used in existing approaches. The motivation for using a VAE is that the
+generative model aims to reconstruct the images, so it directly encodes visual
+features and meaningful patterns across the data. This leads to a disentangled
+and structured latent space which can be more interpretable than a CNN. Models
+are deployed on an in-house MRI dataset with 168 patients who did not undergo
+neo-adjuvant treatment. The post-operative pathological N stage was used as the
+ground truth to evaluate model predictions. Our proposed model 'VAE-MLP'
+achieved state-of-the-art performance on the MRI dataset, with cross-validated
+metrics of AUC 0.86 +/- 0.05, Sensitivity 0.79 +/- 0.06, and Specificity 0.85
++/- 0.05. Code is available at:
+https://github.com/benkeel/Lymph_Node_Classification_MIUA.</p></br><a href="http://arxiv.org/pdf/2507.11400v1" target="_blank"><h2>The model is the message: Lightweight convolutional autoencoders applied
+  to noisy imaging data for planetary science and astrobiology</h2></a><strong><u>Authors:</u></strong>  Caleb Scharf</br><strong><u>Categories:</u></strong> astro-ph.EP, astro-ph.IM, cs.LG</br><strong><u>Comments:</u></strong> 28 pages, 8 figures, accepted for publication in Icarus</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> The application of convolutional autoencoder deep learning to imaging data
+for planetary science and astrobiological use is briefly reviewed and explored
+with a focus on the need to understand algorithmic rationale, process, and
+results when machine learning is utilized. Successful autoencoders train to
+build a model that captures the features of data in a dimensionally reduced
+form (the latent representation) that can then be used to recreate the original
+input. One application is the reconstruction of incomplete or noisy data. Here
+a baseline, lightweight convolutional autoencoder is used to examine the
+utility for planetary image reconstruction or inpainting in situations where
+there is destructive random noise (i.e., either luminance noise with zero
+returned data in some image pixels, or color noise with random additive levels
+across pixel channels). It is shown that, in certain use cases, multi-color
+image reconstruction can be usefully applied even with extensive random
+destructive noise with 90% areal coverage and higher. This capability is
+discussed in the context of intentional masking to reduce data bandwidth, or
+situations with low-illumination levels and other factors that obscure image
+data (e.g., sensor degradation or atmospheric conditions). It is further
+suggested that for some scientific use cases the model latent space and
+representations have more utility than large raw imaging datasets.</p></br><a href="http://arxiv.org/pdf/2507.11789v1" target="_blank"><h2>Enforcing Latent Euclidean Geometry in Single-Cell VAEs for Manifold
+  Interpolation</h2></a><strong><u>Authors:</u></strong>  Alessandro Palma, Sergei Rybakov, Leon Hetzel, Stephan Günnemann, Fabian J. Theis</br><strong><u>Categories:</u></strong> cs.LG, q-bio.QM</br><strong><u>Comments:</u></strong> 31 pages, 14 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title), latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Latent space interpolations are a powerful tool for navigating deep
+generative models in applied settings. An example is single-cell RNA
+sequencing, where existing methods model cellular state transitions as latent
+space interpolations with variational autoencoders, often assuming linear
+shifts and Euclidean geometry. However, unless explicitly enforced, linear
+interpolations in the latent space may not correspond to geodesic paths on the
+data manifold, limiting methods that assume Euclidean geometry in the data
+representations. We introduce FlatVI, a novel training framework that
+regularises the latent manifold of discrete-likelihood variational autoencoders
+towards Euclidean geometry, specifically tailored for modelling single-cell
+count data. By encouraging straight lines in the latent space to approximate
+geodesic interpolations on the decoded single-cell manifold, FlatVI enhances
+compatibility with downstream approaches that assume Euclidean latent geometry.
+Experiments on synthetic data support the theoretical soundness of our
+approach, while applications to time-resolved single-cell RNA sequencing data
+demonstrate improved trajectory reconstruction and manifold interpolation.</p></br></body>

@@ -1,0 +1,248 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 23 Sep 2025 to 25 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.20184v1" target="_blank"><h2>An Improved Time Series Anomaly Detection by Applying Structural
+  Similarity</h2></a><strong><u>Authors:</u></strong>  Tiejun Wang, Rui Wang, Xudong Mou, Mengyuan Ma, Tianyu Wo, Renyu Yang, Xudong Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Effective anomaly detection in time series is pivotal for modern industrial
+applications and financial systems. Due to the scarcity of anomaly labels and
+the high cost of manual labeling, reconstruction-based unsupervised approaches
+have garnered considerable attention. However, accurate anomaly detection
+remains an unsettled challenge, since the optimization objectives of
+reconstruction-based methods merely rely on point-by-point distance measures,
+ignoring the potential structural characteristics of time series and thus
+failing to tackle complex pattern-wise anomalies. In this paper, we propose
+StrAD, a novel structure-enhanced anomaly detection approach to enrich the
+optimization objective by incorporating structural information hidden in the
+time series and steering the data reconstruction procedure to better capture
+such structural features. StrAD accommodates the trend, seasonality, and shape
+in the optimization objective of the reconstruction model to learn latent
+structural characteristics and capture the intrinsic pattern variation of time
+series. The proposed structure-aware optimization objective mechanism can
+assure the alignment between the original data and the reconstructed data in
+terms of structural features, thereby keeping consistency in global fluctuation
+and local characteristics. The mechanism is pluggable and applicable to any
+reconstruction-based methods, enhancing the model sensitivity to both
+point-wise anomalies and pattern-wise anomalies. Experimental results show that
+StrAD improves the performance of state-of-the-art reconstruction-based models
+across five real-world anomaly detection datasets.</p></br><a href="http://arxiv.org/pdf/2509.20113v1" target="_blank"><h2>Discovering Association Rules in High-Dimensional Small Tabular Data</h2></a><strong><u>Authors:</u></strong>  Erkan Karabulut, Daniel Daza, Paul Groth, Victoria Degeler</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> This paper was accepted at ECAI 2025 Workshop: 1st International Workshop on Advanced Neuro-Symbolic Applications (ANSyA)</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Association Rule Mining (ARM) aims to discover patterns between features in
+datasets in the form of propositional rules, supporting both knowledge
+discovery and interpretable machine learning in high-stakes decision-making.
+However, in high-dimensional settings, rule explosion and computational
+overhead render popular algorithmic approaches impractical without effective
+search space reduction, challenges that propagate to downstream tasks.
+Neurosymbolic methods, such as Aerial+, have recently been proposed to address
+the rule explosion in ARM. While they tackle the high dimensionality of the
+data, they also inherit limitations of neural networks, particularly reduced
+performance in low-data regimes.
+  This paper makes three key contributions to association rule discovery in
+high-dimensional tabular data. First, we empirically show that Aerial+ scales
+one to two orders of magnitude better than state-of-the-art algorithmic and
+neurosymbolic baselines across five real-world datasets. Second, we introduce
+the novel problem of ARM in high-dimensional, low-data settings, such as gene
+expression data from the biomedicine domain with around 18k features and 50
+samples. Third, we propose two fine-tuning approaches to Aerial+ using tabular
+foundation models. Our proposed approaches are shown to significantly improve
+rule quality on five real-world datasets, demonstrating their effectiveness in
+low-data, high-dimensional scenarios.</p></br><a href="http://arxiv.org/pdf/2509.20311v1" target="_blank"><h2>Graph Variate Neural Networks</h2></a><strong><u>Authors:</u></strong>  Om Roy, Yashar Moshfeghi, Keith Smith</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Modelling dynamically evolving spatio-temporal signals is a prominent
+challenge in the Graph Neural Network (GNN) literature. Notably, GNNs assume an
+existing underlying graph structure. While this underlying structure may not
+always exist or is derived independently from the signal, a temporally evolving
+functional network can always be constructed from multi-channel data. Graph
+Variate Signal Analysis (GVSA) defines a unified framework consisting of a
+network tensor of instantaneous connectivity profiles against a stable support
+usually constructed from the signal itself. Building on GVSA and tools from
+graph signal processing, we introduce Graph-Variate Neural Networks (GVNNs):
+layers that convolve spatio-temporal signals with a signal-dependent
+connectivity tensor combining a stable long-term support with instantaneous,
+data-driven interactions. This design captures dynamic statistical
+interdependencies at each time step without ad hoc sliding windows and admits
+an efficient implementation with linear complexity in sequence length. Across
+forecasting benchmarks, GVNNs consistently outperform strong graph-based
+baselines and are competitive with widely used sequence models such as LSTMs
+and Transformers. On EEG motor-imagery classification, GVNNs achieve strong
+accuracy highlighting their potential for brain-computer interface
+applications.</p></br><a href="http://arxiv.org/pdf/2509.19985v1" target="_blank"><h2>Pi-Transformer: A Physics-informed Attention Mechanism for Time Series
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Sepehr Maleki, Negar Pourmoazemi</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), anomaly detection (title, abstract), transformer (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomalies in multivariate time series often arise from temporal context and
+cross-channel coordination rather than isolated outliers. We present
+Pi-Transformer, a physics-informed transformer with two attention pathways: a
+data-driven series attention and a smoothly evolving prior attention that
+encodes temporal invariants such as scale-related self-similarity and phase
+synchrony. The prior acts as a stable reference that calibrates reconstruction
+error. During training, we pair a reconstruction objective with a divergence
+term that encourages agreement between the two attentions while keeping them
+meaningfully distinct; the prior is regularised to evolve smoothly and is
+lightly distilled towards dataset-level statistics. At inference, the model
+combines an alignment-weighted reconstruction signal (Energy) with a mismatch
+signal that highlights timing and phase disruptions, and fuses them into a
+single score for detection. Across five benchmarks (SMD, MSL, SMAP, SWaT, and
+PSM), Pi-Transformer achieves state-of-the-art or highly competitive F1, with
+particular strength on timing and phase-breaking anomalies. Case analyses show
+complementary behaviour of the two streams and interpretable detections around
+regime changes. Embedding physics-informed priors into attention yields a
+calibrated and robust approach to anomaly detection in complex multivariate
+systems. Code is publicly available at this GitHub
+repository\footnote{https://github.com/sepehr-m/Pi-Transformer}.</p></br><a href="http://arxiv.org/pdf/2509.19633v1" target="_blank"><h2>Mamba Modulation: On the Length Generalization of Mamba</h2></a><strong><u>Authors:</u></strong>  Peng Lu, Jerry Huang, Qiuhao Zeng, Xinyu Wang, Boxing Wang, Philippe Langlais, Yufei Cui</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Accepted to The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS) 2025. First two authors contributed equally</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The quadratic complexity of the attention mechanism in Transformer models has
+motivated the development of alternative architectures with sub-quadratic
+scaling, such as state-space models. Among these, Mamba has emerged as a
+leading architecture, achieving state-of-the-art results across a range of
+language modeling tasks. However, Mamba's performance significantly
+deteriorates when applied to contexts longer than those seen during
+pre-training, revealing a sharp sensitivity to context length extension.
+Through detailed analysis, we attribute this limitation to the
+out-of-distribution behaviour of its state-space dynamics, particularly within
+the parameterization of the state transition matrix $\mathbf{A}$. Unlike recent
+works which attribute this sensitivity to the vanished accumulation of
+discretization time steps, $\exp(-\sum_{t=1}^N\Delta_t)$, we establish a
+connection between state convergence behavior as the input length approaches
+infinity and the spectrum of the transition matrix $\mathbf{A}$, offering a
+well-founded explanation of its role in length extension. Next, to overcome
+this challenge, we propose an approach that applies spectrum scaling to
+pre-trained Mamba models to enable robust long-context generalization by
+selectively modulating the spectrum of $\mathbf{A}$ matrices in each layer. We
+show that this can significantly improve performance in settings where simply
+modulating $\Delta_t$ fails, validating our insights and providing avenues for
+better length generalization of state-space models with structured transition
+matrices.</p></br><a href="http://arxiv.org/pdf/2509.19930v1" target="_blank"><h2>How deep is your network? Deep vs. shallow learning of transfer
+  operators</h2></a><strong><u>Authors:</u></strong>  Mohammad Tabish, Benedict Leimkuhler, Stefan Klus</br><strong><u>Categories:</u></strong> cs.LG, math.DS, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a randomized neural network approach called RaNNDy for learning
+transfer operators and their spectral decompositions from data. The weights of
+the hidden layers of the neural network are randomly selected and only the
+output layer is trained. The main advantage is that without a noticeable
+reduction in accuracy, this approach significantly reduces the training time
+and resources while avoiding common problems associated with deep learning such
+as sensitivity to hyperparameters and slow convergence. Additionally, the
+proposed framework allows us to compute a closed-form solution for the output
+layer which directly represents the eigenfunctions of the operator. Moreover,
+it is possible to estimate uncertainties associated with the computed spectral
+properties via ensemble learning. We present results for different dynamical
+operators, including Koopman and Perron-Frobenius operators, which have
+important applications in analyzing the behavior of complex dynamical systems,
+and the Schr\"odinger operator. The numerical examples, which highlight the
+strengths but also weaknesses of the proposed framework, include several
+stochastic dynamical systems, protein folding processes, and the quantum
+harmonic oscillator.</p></br><a href="http://arxiv.org/pdf/2509.19787v1" target="_blank"><h2>Radio Galaxy Zoo EMU: Harnessing Citizen Science and AI to Advance Open
+  Science Catalogues</h2></a><strong><u>Authors:</u></strong>  Eleni Vardoulaki, Hongming Tang, Micah Bowles, Gary Segal, Soheb Mandhai, Emma L. Alexander, Wendy Williams, Yan Luo, Lawrence Rudnick, Andrew M. Hopkins, O. Ivy Wong, Stanislav S. Shabala, the RGZ EMU collaboration</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> 4 pages, 2 figures, proceedings IAU397 Symposium UniversAI Exploring the Universe with Artificial Intelligence (editors Liodakis, Efthymiou)</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Over the past decades, significant efforts have been devoted to developing
+sophisticated algorithms for automatically identifying and classifying radio
+sources in large surveys. However, even the most advanced methods face
+challenges in recognising complex radio structures and accurately associating
+radio emission with their host galaxies. Leveraging data from the ASKAP
+telescope and the Evolutionary Map of the Universe (EMU) survey, Radio Galaxy
+Zoo EMU (RGZ EMU) was created to generate high-quality radio source
+classifications for training deep learning models and cataloging millions of
+radio sources in the southern sky. By integrating novel machine learning
+techniques, including anomaly detection and natural language processing, our
+workflow actively engages citizen scientists to enhance classification
+accuracy. We present results from Phase I of the project and discuss how these
+data will contribute to improving open science catalogues like EMUCAT.</p></br><a href="http://arxiv.org/pdf/2509.19638v1" target="_blank"><h2>TIMED: Adversarial and Autoregressive Refinement of Diffusion-Based Time
+  Series Generation</h2></a><strong><u>Authors:</u></strong>  MohammadReza EskandariNasab, Shah Muhammad Hamdi, Soukaina Filali Boubrahimi</br><strong><u>Categories:</u></strong> cs.LG, cs.CV</br><strong><u>Comments:</u></strong> Accepted to the IEEE International Conference on Data Mining (ICDM) 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Generating high-quality synthetic time series is a fundamental yet
+challenging task across domains such as forecasting and anomaly detection,
+where real data can be scarce, noisy, or costly to collect. Unlike static data
+generation, synthesizing time series requires modeling both the marginal
+distribution of observations and the conditional temporal dependencies that
+govern sequential dynamics. We propose TIMED, a unified generative framework
+that integrates a denoising diffusion probabilistic model (DDPM) to capture
+global structure via a forward-reverse diffusion process, a supervisor network
+trained with teacher forcing to learn autoregressive dependencies through
+next-step prediction, and a Wasserstein critic that provides adversarial
+feedback to ensure temporal smoothness and fidelity. To further align the real
+and synthetic distributions in feature space, TIMED incorporates a Maximum Mean
+Discrepancy (MMD) loss, promoting both diversity and sample quality. All
+components are built using masked attention architectures optimized for
+sequence modeling and are trained jointly to effectively capture both
+unconditional and conditional aspects of time series data. Experimental results
+across diverse multivariate time series benchmarks demonstrate that TIMED
+generates more realistic and temporally coherent sequences than
+state-of-the-art generative models.</p></br><a href="http://arxiv.org/pdf/2509.19838v1" target="_blank"><h2>Attention U-Net for all-sky continuous gravitational wave searches</h2></a><strong><u>Authors:</u></strong>  Damon H. T. Cheung</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.IM, physics.ins-det</br><strong><u>Comments:</u></strong> 10 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Detecting continuous gravitational waves is challenging due to the high
+computational cost of template-based searches across large parameter spaces,
+particularly for all-sky searches. Machine learning offers a promising solution
+to perform these searches with reasonable computational resources. In this
+study, we trained an attention U-Net, a convolutional neural network, on
+$\approx$ 10.67 days of simulated data with Gaussian noise for all-sky searches
+at different frequencies within the 20-1000 Hz band. Our model trained at 20 Hz
+achieves the best sensitivity, with a 90% detection efficiency sensitivity
+depth $D^{90\%} = 29.97 \pm 0.24\,\mathrm{Hz}^{-1/2}$ with a 1% false alarm
+rate per 50 mHz, while the model trained on the entire 20-1000 Hz band yields
+$D^{90\%} = 18.63 \pm 0.24\,\mathrm{Hz}^{-1/2}$. The sensitivities achieved are
+comparable to state-of-the-art results using deep learning approaches, with
+less than 50% of the training time and data. We find that sensitivity scales as
+$T^{0.28 \pm 0.01}$ with total observation time for the attention U-Net trained
+at 20 Hz, similar to semi-coherent search methods. The neural network
+demonstrates robustness on datasets with time gaps, with sensitivity dependence
+on duty factor analyzed. We also investigated the sensitivity dependence of the
+trained attention U-Net models on sky location. Our findings show that
+attention U-Net is a scalable and effective approach for all-sky continuous
+gravitational wave searches.</p></br><a href="http://arxiv.org/pdf/2509.20048v1" target="_blank"><h2>Diffusion-Augmented Contrastive Learning: A Noise-Robust Encoder for
+  Biosignal Representations</h2></a><strong><u>Authors:</u></strong>  Rami Zewail</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, eess.SP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract), transformer (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Learning robust representations for biosignals is often hampered by the
+challenge of designing effective data augmentations.Traditional methods can
+fail to capture the complex variations inherent in physiological data. Within
+this context, we propose a novel hybrid framework, Diffusion-Augmented
+Contrastive Learning (DACL), that fuses concepts from diffusion models and
+supervised contrastive learning. The DACL framework operates on a latent space
+created by a lightweight Variational Autoencoder (VAE) trained on our novel
+Scattering Transformer (ST) features [12]. It utilizes the diffusion forward
+process as a principled data augmentation technique to generate multiple noisy
+views of these latent embeddings. A U-Net style encoder is then trained with a
+supervised contrastive objective to learn a representation that balances class
+discrimination with robustness to noise across various diffusion time steps. We
+evaluated this proof-of-concept method on the PhysioNet 2017 ECG dataset,
+achieving a competitive AUROC of 0.7815. This work establishes a new paradigm
+for representation learning by using the diffusion process itself to drive the
+contrastive objective, creating noise-invariant embeddings that demonstrate a
+strong foundation for class separability.</p></br><a href="http://arxiv.org/pdf/2509.20240v1" target="_blank"><h2>A HyperGraphMamba-Based Multichannel Adaptive Model for ncRNA
+  Classification</h2></a><strong><u>Authors:</u></strong>  Xin An, Ruijie Li, Qiao Ning, Hui Li, Qian Ma, Shikai Guo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 9 pages, 17 figures (including subfigures), 1 table. Xin An and Ruijie Li contributed equally to this work and should be considered co-first authors</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Non-coding RNAs (ncRNAs) play pivotal roles in gene expression regulation and
+the pathogenesis of various diseases. Accurate classification of ncRNAs is
+essential for functional annotation and disease diagnosis. To address existing
+limitations in feature extraction depth and multimodal fusion, we propose
+HGMamba-ncRNA, a HyperGraphMamba-based multichannel adaptive model, which
+integrates sequence, secondary structure, and optionally available expression
+features of ncRNAs to enhance classification performance. Specifically, the
+sequence of ncRNA is modeled using a parallel Multi-scale Convolution and LSTM
+architecture (MKC-L) to capture both local patterns and long-range dependencies
+of nucleotides. The structure modality employs a multi-scale graph transformer
+(MSGraphTransformer) to represent the multi-level topological characteristics
+of ncRNA secondary structures. The expression modality utilizes a Chebyshev
+Polynomial-based Kolmogorov-Arnold Network (CPKAN) to effectively model and
+interpret high-dimensional expression profiles. Finally, by incorporating
+virtual nodes to facilitate efficient and comprehensive multimodal interaction,
+HyperGraphMamba is proposed to adaptively align and integrate multichannel
+heterogeneous modality features. Experiments conducted on three public datasets
+demonstrate that HGMamba-ncRNA consistently outperforms state-of-the-art
+methods in terms of accuracy and other metrics. Extensive empirical studies
+further confirm the model's robustness, effectiveness, and strong
+transferability, offering a novel and reliable strategy for complex ncRNA
+functional classification. Code and datasets are available at
+https://anonymous.4open.science/r/HGMamba-ncRNA-94D0.</p></br><a href="http://arxiv.org/pdf/2509.20049v1" target="_blank"><h2>Projective Kolmogorov Arnold Neural Networks (P-KANs): Entropy-Driven
+  Functional Space Discovery for Interpretable Machine Learning</h2></a><strong><u>Authors:</u></strong>  Alastair Poole, Stig McArthur, Saravan Kumar</br><strong><u>Categories:</u></strong> cs.NE, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> Kolmogorov-Arnold Networks (KANs) relocate learnable nonlinearities from
+nodes to edges, demonstrating remarkable capabilities in scientific machine
+learning and interpretable modeling. However, current KAN implementations
+suffer from fundamental inefficiencies due to redundancy in high-dimensional
+spline parameter spaces, where numerous distinct parameterisations yield
+functionally equivalent behaviors. This redundancy manifests as a "nuisance
+space" in the model's Jacobian, leading to susceptibility to overfitting and
+poor generalization. We introduce Projective Kolmogorov-Arnold Networks
+(P-KANs), a novel training framework that guides edge function discovery
+towards interpretable functional representations through entropy-minimisation
+techniques from signal analysis and sparse dictionary learning. Rather than
+constraining functions to predetermined spaces, our approach maintains spline
+space flexibility while introducing "gravitational" terms that encourage
+convergence towards optimal functional representations. Our key insight
+recognizes that optimal representations can be identified through entropy
+analysis of projection coefficients, compressing edge functions to
+lower-parameter projective spaces (Fourier, Chebyshev, Bessel). P-KANs
+demonstrate superior performance across multiple domains, achieving up to 80%
+parameter reduction while maintaining representational capacity, significantly
+improved robustness to noise compared to standard KANs, and successful
+application to industrial automated fiber placement prediction. Our approach
+enables automatic discovery of mixed functional representations where different
+edges converge to different optimal spaces, providing both compression benefits
+and enhanced interpretability for scientific machine learning applications.</p></br></body>

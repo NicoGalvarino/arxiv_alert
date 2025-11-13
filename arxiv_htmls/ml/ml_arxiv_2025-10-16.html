@@ -1,0 +1,191 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 14 Oct 2025 to 16 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.12958v1" target="_blank"><h2>Simulation-Based Pretraining and Domain Adaptation for Astronomical Time
+  Series with Minimal Labeled Data</h2></a><strong><u>Authors:</u></strong>  Rithwik Gupta, Daniel Muthukrishna, Jeroen Audenaert</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.HE, astro-ph.SR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), domain adaptation (title)</br><p><strong><u>Abstract:</u></strong> Astronomical time-series analysis faces a critical limitation: the scarcity
+of labeled observational data. We present a pre-training approach that
+leverages simulations, significantly reducing the need for labeled examples
+from real observations. Our models, trained on simulated data from multiple
+astronomical surveys (ZTF and LSST), learn generalizable representations that
+transfer effectively to downstream tasks. Using classifier-based architectures
+enhanced with contrastive and adversarial objectives, we create domain-agnostic
+models that demonstrate substantial performance improvements over baseline
+methods in classification, redshift estimation, and anomaly detection when
+fine-tuned with minimal real data. Remarkably, our models exhibit effective
+zero-shot transfer capabilities, achieving comparable performance on future
+telescope (LSST) simulations when trained solely on existing telescope (ZTF)
+data. Furthermore, they generalize to very different astronomical phenomena
+(namely variable stars from NASA's \textit{Kepler} telescope) despite being
+trained on transient events, demonstrating cross-domain capabilities. Our
+approach provides a practical solution for building general models when labeled
+data is scarce, but domain knowledge can be encoded in simulations.</p></br><a href="http://arxiv.org/pdf/2510.12957v1" target="_blank"><h2>A Multimodal XAI Framework for Trustworthy CNNs and Bias Detection in
+  Deep Representation Learning</h2></a><strong><u>Authors:</u></strong>  Noor Islam S. Mohammad</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (abstract), neural network (abstract), multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Standard benchmark datasets, such as MNIST, often fail to expose latent
+biases and multimodal feature complexities, limiting the trustworthiness of
+deep neural networks in high-stakes applications. We propose a novel multimodal
+Explainable AI (XAI) framework that unifies attention-augmented feature fusion,
+Grad-CAM++-based local explanations, and a Reveal-to-Revise feedback loop for
+bias detection and mitigation. Evaluated on multimodal extensions of MNIST, our
+approach achieves 93.2% classification accuracy, 91.6% F1-score, and 78.1%
+explanation fidelity (IoU-XAI), outperforming unimodal and non-explainable
+baselines. Ablation studies demonstrate that integrating interpretability with
+bias-aware learning enhances robustness and human alignment. Our work bridges
+the gap between performance, transparency, and fairness, highlighting a
+practical pathway for trustworthy AI in sensitive domains.</p></br><a href="http://arxiv.org/pdf/2510.13311v1" target="_blank"><h2>Isolation-based Spherical Ensemble Representations for Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Yang Cao, Sikun Yang, Hao Tian, Kai He, Lianyong Qi, Ming Liu, Yujiu Yang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection is a critical task in data mining and management with
+applications spanning fraud detection, network security, and log monitoring.
+Despite extensive research, existing unsupervised anomaly detection methods
+still face fundamental challenges including conflicting distributional
+assumptions, computational inefficiency, and difficulty handling different
+anomaly types. To address these problems, we propose ISER (Isolation-based
+Spherical Ensemble Representations) that extends existing isolation-based
+methods by using hypersphere radii as proxies for local density characteristics
+while maintaining linear time and constant space complexity. ISER constructs
+ensemble representations where hypersphere radii encode density information:
+smaller radii indicate dense regions while larger radii correspond to sparse
+areas. We introduce a novel similarity-based scoring method that measures
+pattern consistency by comparing ensemble representations against a theoretical
+anomaly reference pattern. Additionally, we enhance the performance of
+Isolation Forest by using ISER and adapting the scoring function to address
+axis-parallel bias and local anomaly detection limitations. Comprehensive
+experiments on 22 real-world datasets demonstrate ISER's superior performance
+over 11 baseline methods.</p></br><a href="http://arxiv.org/pdf/2510.13205v1" target="_blank"><h2>CleverCatch: A Knowledge-Guided Weak Supervision Model for Fraud
+  Detection</h2></a><strong><u>Authors:</u></strong>  Amirhossein Mozafari, Kourosh Hashemi, Erfan Shafagh, Soroush Motamedi, Azar Taheri Tayebi, Mohammad A. Tayebi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Healthcare fraud detection remains a critical challenge due to limited
+availability of labeled data, constantly evolving fraud tactics, and the high
+dimensionality of medical records. Traditional supervised methods are
+challenged by extreme label scarcity, while purely unsupervised approaches
+often fail to capture clinically meaningful anomalies. In this work, we
+introduce CleverCatch, a knowledge-guided weak supervision model designed to
+detect fraudulent prescription behaviors with improved accuracy and
+interpretability. Our approach integrates structured domain expertise into a
+neural architecture that aligns rules and data samples within a shared
+embedding space. By training encoders jointly on synthetic data representing
+both compliance and violation, CleverCatch learns soft rule embeddings that
+generalize to complex, real-world datasets. This hybrid design enables
+data-driven learning to be enhanced by domain-informed constraints, bridging
+the gap between expert heuristics and machine learning. Experiments on the
+large-scale real-world dataset demonstrate that CleverCatch outperforms four
+state-of-the-art anomaly detection baselines, yielding average improvements of
+1.3\% in AUC and 3.4\% in recall. Our ablation study further highlights the
+complementary role of expert rules, confirming the adaptability of the
+framework. The results suggest that embedding expert rules into the learning
+process not only improves detection accuracy but also increases transparency,
+offering an interpretable approach for high-stakes domains such as healthcare
+fraud detection.</p></br><a href="http://arxiv.org/pdf/2510.13665v1" target="_blank"><h2>Axial Neural Networks for Dimension-Free Foundation Models</h2></a><strong><u>Authors:</u></strong>  Hyunsu Kim, Jonggeon Park, Joan Bruna, Hongseok Yang, Juho Lee</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> The advent of foundation models in AI has significantly advanced
+general-purpose learning, enabling remarkable capabilities in zero-shot
+inference and in-context learning. However, training such models on physics
+data, including solutions to partial differential equations (PDEs), poses a
+unique challenge due to varying dimensionalities across different systems.
+Traditional approaches either fix a maximum dimension or employ separate
+encoders for different dimensionalities, resulting in inefficiencies. To
+address this, we propose a dimension-agnostic neural network architecture, the
+Axial Neural Network (XNN), inspired by parameter-sharing structures such as
+Deep Sets and Graph Neural Networks. XNN generalizes across varying tensor
+dimensions while maintaining computational efficiency. We convert existing PDE
+foundation models into axial neural networks and evaluate their performance
+across three training scenarios: training from scratch, pretraining on multiple
+PDEs, and fine-tuning on a single PDE. Our experiments show that XNNs perform
+competitively with original models and exhibit superior generalization to
+unseen dimensions, highlighting the importance of multidimensional pretraining
+for foundation models.</p></br><a href="http://arxiv.org/pdf/2510.12860v1" target="_blank"><h2>Spatial Variations of Polarized Synchrotron Emission in the QUIJOTE MFI
+  Data</h2></a><strong><u>Authors:</u></strong>  J. M. Casas, L. Bonavera, J. González-Nuevo, J. A. Rubiño-Martín, R. T. Génova-Santos, R. B. Barreiro, M. M. Cueli, D. Crespo, R. Fernández-Fernández, J. A. Cano</br><strong><u>Categories:</u></strong> astro-ph.GA, astro-ph.CO</br><strong><u>Comments:</u></strong> Submitted to Astronomy & Astrophysics</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Polarized synchrotron emission from ultra-relativistic electrons spiraling
+the Galactic magnetic field has become one of the most relevant emissions in
+the Interstellar medium these last years due to the improvement in the quality
+of low-frequency observations. One of the recent experiments designed to
+explore this emission is the QUIJOTE experiment.
+  We aim to study the spatial variations of the synchrotron emission in the
+QUIJOTE MFI data, by dividing the sky into physically separated regions. For
+such task, we firstly use a novel component separation method based on
+artificial neural networks to clean the synchrotron maps. After training the
+network with simulations, we fit both $EE$ and $BB$ spectra by assuming a
+power-law model. Then, we give estimations for the index $\alpha_{S}$, the
+amplitude, and the ratio between $B$ and $E$ amplitudes.
+  When analyzing the real data, we found a clear spatial variation of the
+synchrotron properties along the sky at 11 GHz, obtaining a steeper index in
+the Galactic plane of $\alpha_{S}^{EE} = -3.1 \pm 0.3$ and $\alpha_{S}^{BB} =
+-3.1 \pm 0.4$ and a flatter one at high Galactic latitudes of $\alpha_{S}^{EE}
+= -3.05 \pm 0.2$ and $\alpha_{S}^{B} = -2.98 \pm 0.27$. We found average values
+at all sky of $\alpha_{S}^{EE} = -3.04 \pm 0.21$ and $\alpha_{S}^{BB} = -3.00
+\pm 0.34$. Furthermore, after obtaining an average value of $A_{S}^{EE} = 3.31
+\pm 0.08$ $\mu K^{2}$ and $A_{S}^{BB} = 0.93 \pm 0.02$ $\mu K^{2}$, we estimate
+a ratio between $B$ and $E$ amplitudes of $A_{S}^{BB}/A_{S}^{EE} = 0.28 \pm
+0.08$.
+  Based on the results we conclude that, although neural networks seem to be
+valuable methods to apply on real ISM observations, combined analyses with
+Planck, WMAP and/or CBASS data are mandatory to reduce the contamination from
+QUIJOTE maps and then improve the accuracy of the estimations.</p></br><a href="http://arxiv.org/pdf/2510.13368v1" target="_blank"><h2>Contrastive Learning-Based Dependency Modeling for Anomaly Detection in
+  Cloud Services</h2></a><strong><u>Authors:</u></strong>  Yue Xing, Yingnan Deng, Heyao Liu, Ming Wang, Yun Zi, Xiaoxuan Sun</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper addresses the challenges of complex dependencies and diverse
+anomaly patterns in cloud service environments by proposing a dependency
+modeling and anomaly detection method that integrates contrastive learning. The
+method abstracts service interactions into a dependency graph, extracts
+temporal and structural features through embedding functions, and employs a
+graph convolution mechanism to aggregate neighborhood information for
+context-aware service representations. A contrastive learning framework is then
+introduced, constructing positive and negative sample pairs to enhance the
+separability of normal and abnormal patterns in the representation space.
+Furthermore, a temporal consistency constraint is designed to maintain
+representation stability across time steps and reduce the impact of short-term
+fluctuations and noise. The overall optimization combines contrastive loss and
+temporal consistency loss to ensure stable and reliable detection across
+multi-dimensional features. Experiments on public datasets systematically
+evaluate the method from hyperparameter, environmental, and data sensitivity
+perspectives. Results show that the proposed approach significantly outperforms
+existing methods on key metrics such as Precision, Recall, F1-Score, and AUC,
+while maintaining robustness under conditions of sparse labeling, monitoring
+noise, and traffic fluctuations. This study verifies the effectiveness of
+integrating dependency modeling with contrastive learning, provides a complete
+technical solution for cloud service anomaly detection, and demonstrates strong
+adaptability and stability in complex environments.</p></br><a href="http://arxiv.org/pdf/2510.13765v1" target="_blank"><h2>Optimizing Supernova Classification with Interpretable Machine Learning
+  Models</h2></a><strong><u>Authors:</u></strong>  Anurag Garg</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> 9 pages, 6 figures. Accepted for publication in Journal of Astrophysics and Astronomy (JAA), Ref: JOAA-D-25-00085R1. Usesthis http URLclass file</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Photometric classification of Type Ia supernovae (SNe Ia) is critical for
+cosmological studies but remains difficult due to class imbalance and
+observational noise. While deep learning models have been explored, they are
+often resource-intensive and lack interpretability. We present a
+computationally efficient and interpretable classification framework that
+maintains high performance on imbalanced datasets. We emphasize the use of
+PR-AUC and F1-score as more informative metrics than ROC-AUC in severely
+imbalanced settings. Using an XGBoost ensemble optimized via Bayesian
+hyperparameter tuning, we classified light curves from the Supernova
+Photometric Classification Challenge (SPCC), comprising 21,318 events with a
+3.19 imbalance ratio (non-Ia to Ia). Our model achieved a PR-AUC of
+$0.993^{+0.03}_{-0.02}$, an F1-score of $0.923 \pm 0.008$, and a ROC-AUC of
+$0.976 \pm 0.004$, matching or exceeding deep learning performance on
+precision-recall trade-offs while using fewer resources. Despite slightly lower
+overall accuracy, our method balances false positives and false negatives,
+improving the efficiency of spectroscopic follow-up. We show that optimized
+ensemble models offer a reproducible and lightweight alternative to complex
+architectures, particularly for large-scale surveys such as the Legacy Survey
+of Space and Time (LSST) where transparency and efficiency are essential.</p></br><a href="http://arxiv.org/pdf/2510.12932v1" target="_blank"><h2>Strategy for identifying Vera C. Rubin Observatory kilonova candidates
+  for targeted gravitational-wave searches</h2></a><strong><u>Authors:</u></strong>  Simon Stevenson, Anais Möller, Jade Powell</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.CO</br><strong><u>Comments:</u></strong> Submitted to ApJ</br><strong><u>Matching Keywords:</u></strong> VAE (abstract)</br><p><strong><u>Abstract:</u></strong> Since the observation of the binary neutron star merger GW170817 and the
+associated kilonova AT2017gfo, the next joint gravitational-wave/optical
+kilonova has been highly anticipated. Overlapping observations between the Vera
+C. Rubin Observatory and the international gravitational-wave detector network
+are expected soon. Wide-field survey facilities, such as Rubin, can serve dual
+roles in gravitational-wave astronomy: conducting dedicated optical counterpart
+searches following gravitational-wave triggers and, through surveys such as the
+Legacy Survey of Space and Time (LSST), providing opportunities for fortuitous
+kilonova discoveries during routine operations. We use simulations to develop a
+strategy for identifying kilonova candidates observed by Rubin and processed by
+the Fink broker. These candidates can be used as astrophysical triggers for a
+targeted gravitational-wave search. We simulate kilonovae light-curves for the
+first year of Rubin with the latest observing strategy for the Wide-Fast-Deep
+and the Deep Drilling Fields. Assuming a kilonova rate of 250 Gpc$^{-3}$
+yr$^{-1}$, we find that Rubin brokers should observe $\sim 4$ kilonovae per
+year with at least one alert above a signal-to-noise ratio of 5 within the
+gravitational-wave detector horizon ($\sim 350$ Mpc). Most of these will be
+faint, and detected 1-2 days following the neutron star merger. Photometric and
+spectroscopic follow-up will be limited to large telescopes. Using archival
+data from the Zwicky Transient Facility (ZTF) and our proposed selection
+criteria, we estimate a minimum contamination of at least 30 events per month
+from other transients and variables, even under our strictest selection
+criteria. A deep gravitational-wave search targeting Rubin kilonova candidates
+may lead to the next multi-messenger discovery.</p></br></body>

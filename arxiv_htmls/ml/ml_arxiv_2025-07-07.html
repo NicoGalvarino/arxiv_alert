@@ -1,0 +1,443 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 03 Jul 2025 to 07 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.02248v1" target="_blank"><h2>Transfer Learning for Matrix Completion</h2></a><strong><u>Authors:</u></strong>  Dali Liu, Haolei Weng</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, 15A83, I.2.6; G.3</br><strong><u>Comments:</u></strong> 37 pages, 1 figure</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> In this paper, we explore the knowledge transfer under the setting of matrix
+completion, which aims to enhance the estimation of a low-rank target matrix
+with auxiliary data available. We propose a transfer learning procedure given
+prior information on which source datasets are favorable. We study its
+convergence rates and prove its minimax optimality. Our analysis reveals that
+with the source matrices close enough to the target matrix, out method
+outperforms the traditional method using the single target data. In particular,
+we leverage the advanced sharp concentration inequalities introduced in
+\cite{brailovskaya2024universality} to eliminate a logarithmic factor in the
+convergence rate, which is crucial for proving the minimax optimality. When the
+relevance of source datasets is unknown, we develop an efficient detection
+procedure to identify informative sources and establish its selection
+consistency. Simulations and real data analysis are conducted to support the
+validity of our methodology.</p></br><a href="http://arxiv.org/pdf/2507.02827v1" target="_blank"><h2>USAD: An Unsupervised Data Augmentation Spatio-Temporal Attention
+  Diffusion Network</h2></a><strong><u>Authors:</u></strong>  Ying Yu, Hang Xiao, Siyao Li, Jiarui Li, Haotian Tang, Hanyu Liu, Chao Li</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), sequential data (abstract), attention (title, abstract), data augmentation (title, abstract)</br><p><strong><u>Abstract:</u></strong> The primary objective of human activity recognition (HAR) is to infer ongoing
+human actions from sensor data, a task that finds broad applications in health
+monitoring, safety protection, and sports analysis. Despite proliferating
+research, HAR still faces key challenges, including the scarcity of labeled
+samples for rare activities, insufficient extraction of high-level features,
+and suboptimal model performance on lightweight devices. To address these
+issues, this paper proposes a comprehensive optimization approach centered on
+multi-attention interaction mechanisms. First, an unsupervised,
+statistics-guided diffusion model is employed to perform data augmentation,
+thereby alleviating the problems of labeled data scarcity and severe class
+imbalance. Second, a multi-branch spatio-temporal interaction network is
+designed, which captures multi-scale features of sequential data through
+parallel residual branches with 3*3, 5*5, and 7*7 convolutional kernels.
+Simultaneously, temporal attention mechanisms are incorporated to identify
+critical time points, while spatial attention enhances inter-sensor
+interactions. A cross-branch feature fusion unit is further introduced to
+improve the overall feature representation capability. Finally, an adaptive
+multi-loss function fusion strategy is integrated, allowing for dynamic
+adjustment of loss weights and overall model optimization. Experimental results
+on three public datasets, WISDM, PAMAP2, and OPPORTUNITY, demonstrate that the
+proposed unsupervised data augmentation spatio-temporal attention diffusion
+network (USAD) achieves accuracies of 98.84%, 93.81%, and 80.92% respectively,
+significantly outperforming existing approaches. Furthermore, practical
+deployment on embedded devices verifies the efficiency and feasibility of the
+proposed method.</p></br><a href="http://arxiv.org/pdf/2507.02443v1" target="_blank"><h2>Red grape detection with accelerated artificial neural networks in the
+  FPGA's programmable logic</h2></a><strong><u>Authors:</u></strong>  Sandro Costa Magalhães, Marco Almeida, Filipe Neves dos Santos, António Paulo Moreira, Jorge Dias</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.DC, cs.LG, cs.RO</br><strong><u>Comments:</u></strong> Submitted to ROBOT'2025</br><strong><u>Matching Keywords:</u></strong> neural network (title), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Robots usually slow down for canning to detect objects while moving.
+Additionally, the robot's camera is configured with a low framerate to track
+the velocity of the detection algorithms. This would be constrained while
+executing tasks and exploring, making robots increase the task execution time.
+AMD has developed the Vitis-AI framework to deploy detection algorithms into
+FPGAs. However, this tool does not fully use the FPGAs' PL. In this work, we
+use the FINN architecture to deploy three ANNs, MobileNet v1 with 4-bit
+quantisation, CNV with 2-bit quantisation, and CNV with 1-bit quantisation
+(BNN), inside an FPGA's PL. The models were trained on the RG2C dataset. This
+is a self-acquired dataset released in open access. MobileNet v1 performed
+better, reaching a success rate of 98 % and an inference speed of 6611 FPS. In
+this work, we proved that we can use FPGAs to speed up ANNs and make them
+suitable for attention mechanisms.</p></br><a href="http://arxiv.org/pdf/2507.02754v1" target="_blank"><h2>Fast and Simplex: 2-Simplicial Attention in Triton</h2></a><strong><u>Authors:</u></strong>  Aurko Roy, Timothy Chou, Sai Surya Duvvuri, Sijia Chen, Jiecao Yu, Xiaodong Wang, Manzil Zaheer, Rohan Anil</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, with appendix 25 pages</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recent work has shown that training loss scales as a power law with both
+model size and the number of tokens, and that achieving compute-optimal models
+requires scaling model size and token count together. However, these scaling
+laws assume an infinite supply of data and apply primarily in compute-bound
+settings. As modern large language models increasingly rely on massive
+internet-scale datasets, the assumption that they are compute-bound is becoming
+less valid. This shift highlights the need for architectures that prioritize
+token efficiency.
+  In this work, we investigate the use of the 2-simplicial Transformer, an
+architecture that generalizes standard dot-product attention to trilinear
+functions through an efficient Triton kernel implementation. We demonstrate
+that the 2-simplicial Transformer achieves better token efficiency than
+standard Transformers: for a fixed token budget, similarly sized models
+outperform their dot-product counterparts on tasks involving mathematics,
+coding, reasoning, and logic. We quantify these gains by demonstrating that
+$2$-simplicial attention changes the exponent in the scaling laws for knowledge
+and reasoning tasks compared to dot product attention.</p></br><a href="http://arxiv.org/pdf/2507.02322v1" target="_blank"><h2>Neural Network-based Study for Rice Leaf Disease Recognition and
+  Classification: A Comparative Analysis Between Feature-based Model and Direct
+  Imaging Model</h2></a><strong><u>Authors:</u></strong>  Farida Siddiqi Prity, Mirza Raquib, Saydul Akbar Murad, Md. Jubayar Alam Rafi, Md. Khairul Bashar Bhuiyan, Anupam Kumar Bairagi</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> dimensionality reduction (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Rice leaf diseases significantly reduce productivity and cause economic
+losses, highlighting the need for early detection to enable effective
+management and improve yields. This study proposes Artificial Neural Network
+(ANN)-based image-processing techniques for timely classification and
+recognition of rice diseases. Despite the prevailing approach of directly
+inputting images of rice leaves into ANNs, there is a noticeable absence of
+thorough comparative analysis between the Feature Analysis Detection Model
+(FADM) and Direct Image-Centric Detection Model (DICDM), specifically when it
+comes to evaluating the effectiveness of Feature Extraction Algorithms (FEAs).
+Hence, this research presents initial experiments on the Feature Analysis
+Detection Model, utilizing various image Feature Extraction Algorithms,
+Dimensionality Reduction Algorithms (DRAs), Feature Selection Algorithms
+(FSAs), and Extreme Learning Machine (ELM). The experiments are carried out on
+datasets encompassing bacterial leaf blight, brown spot, leaf blast, leaf
+scald, Sheath blight rot, and healthy leaf, utilizing 10-fold Cross-Validation
+method. A Direct Image-Centric Detection Model is established without the
+utilization of any FEA, and the evaluation of classification performance relies
+on different metrics. Ultimately, an exhaustive contrast is performed between
+the achievements of the Feature Analysis Detection Model and Direct
+Image-Centric Detection Model in classifying rice leaf diseases. The results
+reveal that the highest performance is attained using the Feature Analysis
+Detection Model. The adoption of the proposed Feature Analysis Detection Model
+for detecting rice leaf diseases holds excellent potential for improving crop
+health, minimizing yield losses, and enhancing overall productivity and
+sustainability of rice farming.</p></br><a href="http://arxiv.org/pdf/2507.02550v1" target="_blank"><h2>Position: A Theory of Deep Learning Must Include Compositional Sparsity</h2></a><strong><u>Authors:</u></strong>  David A. Danhofer, Davide D'Ascenzo, Rafael Dubach, Tomaso Poggio</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Overparametrized Deep Neural Networks (DNNs) have demonstrated remarkable
+success in a wide variety of domains too high-dimensional for classical shallow
+networks subject to the curse of dimensionality. However, open questions about
+fundamental principles, that govern the learning dynamics of DNNs, remain. In
+this position paper we argue that it is the ability of DNNs to exploit the
+compositionally sparse structure of the target function driving their success.
+As such, DNNs can leverage the property that most practically relevant
+functions can be composed from a small set of constituent functions, each of
+which relies only on a low-dimensional subset of all inputs. We show that this
+property is shared by all efficiently Turing-computable functions and is
+therefore highly likely present in all current learning problems. While some
+promising theoretical insights on questions concerned with approximation and
+generalization exist in the setting of compositionally sparse functions,
+several important questions on the learnability and optimization of DNNs
+remain. Completing the picture of the role of compositional sparsity in deep
+learning is essential to a comprehensive theory of artificial, and even
+general, intelligence.</p></br><a href="http://arxiv.org/pdf/2507.02671v1" target="_blank"><h2>Embedding-Based Federated Data Sharing via Differentially Private
+  Conditional VAEs</h2></a><strong><u>Authors:</u></strong>  Francesco Di Salvo, Hanh Huyen My Nguyen, Christian Ledig</br><strong><u>Categories:</u></strong> cs.LG, cs.CV, eess.IV</br><strong><u>Comments:</u></strong> Accepted to MICCAI 2025</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract)</br><p><strong><u>Abstract:</u></strong> Deep Learning (DL) has revolutionized medical imaging, yet its adoption is
+constrained by data scarcity and privacy regulations, limiting access to
+diverse datasets. Federated Learning (FL) enables decentralized training but
+suffers from high communication costs and is often restricted to a single
+downstream task, reducing flexibility. We propose a data-sharing method via
+Differentially Private (DP) generative models. By adopting foundation models,
+we extract compact, informative embeddings, reducing redundancy and lowering
+computational overhead. Clients collaboratively train a Differentially Private
+Conditional Variational Autoencoder (DP-CVAE) to model a global, privacy-aware
+data distribution, supporting diverse downstream tasks. Our approach, validated
+across multiple feature extractors, enhances privacy, scalability, and
+efficiency, outperforming traditional FL classifiers while ensuring
+differential privacy. Additionally, DP-CVAE produces higher-fidelity embeddings
+than DP-CGAN while requiring $5{\times}$ fewer parameters.</p></br><a href="http://arxiv.org/pdf/2507.02320v1" target="_blank"><h2>Transformer-based EEG Decoding: A Survey</h2></a><strong><u>Authors:</u></strong>  Haodong Zhang, Hongqi Li</br><strong><u>Categories:</u></strong> cs.LG, cs.HC</br><strong><u>Comments:</u></strong> Submitted to IEEE Journals</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), sequential data (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Electroencephalography (EEG) is one of the most common signals used to
+capture the electrical activity of the brain, and the decoding of EEG, to
+acquire the user intents, has been at the forefront of brain-computer/machine
+interfaces (BCIs/BMIs) research. Compared to traditional EEG analysis methods
+with machine learning, the advent of deep learning approaches have gradually
+revolutionized the field by providing an end-to-end long-cascaded architecture,
+which can learn more discriminative features automatically. Among these,
+Transformer is renowned for its strong handling capability of sequential data
+by the attention mechanism, and the application of Transformers in various EEG
+processing tasks is increasingly prevalent. This article delves into a relevant
+survey, summarizing the latest application of Transformer models in EEG
+decoding since it appeared. The evolution of the model architecture is followed
+to sort and organize the related advances, in which we first elucidate the
+fundamentals of the Transformer that benefits EEG decoding and its direct
+application. Then, the common hybrid architectures by integrating basic
+Transformer with other deep learning techniques
+(convolutional/recurrent/graph/spiking neural netwo-rks, generative adversarial
+networks, diffusion models, etc.) is overviewed in detail. The research
+advances of applying the modified intrinsic structures of customized
+Transformer have also been introduced. Finally, the current challenges and
+future development prospects in this rapidly evolving field are discussed. This
+paper aims to help readers gain a clear understanding of the current state of
+Transformer applications in EEG decoding and to provide valuable insights for
+future research endeavors.</p></br><a href="http://arxiv.org/pdf/2507.02748v1" target="_blank"><h2>Linear Attention with Global Context: A Multipole Attention Mechanism
+  for Vision and Physics</h2></a><strong><u>Authors:</u></strong>  Alex Colagrande, Paul Caillon, Eva Feillet, Alexandre Allauzen</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted at ECLR Workshop at ICCV 2025</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformers have become the de facto standard for a wide range of tasks,
+from image classification to physics simulations. Despite their impressive
+performance, the quadratic complexity of standard Transformers in both memory
+and time with respect to the input length makes them impractical for processing
+high-resolution inputs. Therefore, several variants have been proposed, the
+most successful relying on patchification, downsampling, or coarsening
+techniques, often at the cost of losing the finest-scale details. In this work,
+we take a different approach. Inspired by state-of-the-art techniques in
+$n$-body numerical simulations, we cast attention as an interaction problem
+between grid points. We introduce the Multipole Attention Neural Operator
+(MANO), which computes attention in a distance-based multiscale fashion. MANO
+maintains, in each attention head, a global receptive field and achieves linear
+time and memory complexity with respect to the number of grid points. Empirical
+results on image classification and Darcy flows demonstrate that MANO rivals
+state-of-the-art models such as ViT and Swin Transformer, while reducing
+runtime and peak memory usage by orders of magnitude. We open source our code
+for reproducibility at https://github.com/AlexColagrande/MANO.</p></br><a href="http://arxiv.org/pdf/2507.02409v1" target="_blank"><h2>S2FGL: Spatial Spectral Federated Graph Learning</h2></a><strong><u>Authors:</u></strong>  Zihan Tan, Suyuan Huang, Guancheng Wan, Wenke Huang, He Li, Mang Ye</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Federated Graph Learning (FGL) combines the privacy-preserving capabilities
+of federated learning (FL) with the strong graph modeling capability of Graph
+Neural Networks (GNNs). Current research addresses subgraph-FL only from the
+structural perspective, neglecting the propagation of graph signals on spatial
+and spectral domains of the structure. From a spatial perspective, subgraph-FL
+introduces edge disconnections between clients, leading to disruptions in label
+signals and a degradation in the class knowledge of the global GNN. From a
+spectral perspective, spectral heterogeneity causes inconsistencies in signal
+frequencies across subgraphs, which makes local GNNs overfit the local signal
+propagation schemes. As a result, spectral client drifts occur, undermining
+global generalizability. To tackle the challenges, we propose a global
+knowledge repository to mitigate label signal disruption and a frequency
+alignment to address spectral client drifts. The combination of spatial and
+spectral strategies forms our framework S2FGL. Extensive experiments on
+multiple datasets demonstrate the superiority of S2FGL. The code is available
+at https://github.com/Wonder7racer/S2FGL.git.</p></br><a href="http://arxiv.org/pdf/2507.02494v1" target="_blank"><h2>MC-INR: Efficient Encoding of Multivariate Scientific Simulation Data
+  using Meta-Learning and Clustered Implicit Neural Representations</h2></a><strong><u>Authors:</u></strong>  Hyunsoo Son, Jeonghyun Noh, Suemin Jeon, Chaoli Wang, Won-Ki Jeong</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> 5 pages</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Implicit Neural Representations (INRs) are widely used to encode data as
+continuous functions, enabling the visualization of large-scale multivariate
+scientific simulation data with reduced memory usage. However, existing
+INR-based methods face three main limitations: (1) inflexible representation of
+complex structures, (2) primarily focusing on single-variable data, and (3)
+dependence on structured grids. Thus, their performance degrades when applied
+to complex real-world datasets. To address these limitations, we propose a
+novel neural network-based framework, MC-INR, which handles multivariate data
+on unstructured grids. It combines meta-learning and clustering to enable
+flexible encoding of complex structures. To further improve performance, we
+introduce a residual-based dynamic re-clustering mechanism that adaptively
+partitions clusters based on local error. We also propose a branched layer to
+leverage multivariate data through independent branches simultaneously.
+Experimental results demonstrate that MC-INR outperforms existing methods on
+scientific data encoding tasks.</p></br><a href="http://arxiv.org/pdf/2507.02302v1" target="_blank"><h2>DoMIX: An Efficient Framework for Exploiting Domain Knowledge in
+  Fine-Tuning</h2></a><strong><u>Authors:</u></strong>  Dohoon Kim, Donghun Kang, Taesup Moon</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.CV, cs.LG</br><strong><u>Comments:</u></strong> 22 pages, 5 figures, ACL 2025 Main</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Domain-Adaptive Pre-training (DAP) has recently gained attention for its
+effectiveness in fine-tuning pre-trained models. Building on this, continual
+DAP has been explored to develop pre-trained models capable of incrementally
+incorporating different domain datasets. However, existing continual DAP
+methods face several limitations: (1) high computational cost and GPU memory
+usage during training; (2) sensitivity to incremental data order; and (3)
+providing a single, generalized model for all end tasks, which contradicts the
+essence of DAP. In this paper, we propose DoMIX, a novel approach that
+addresses these challenges by leveraging LoRA modules, a representative
+parameter-efficient fine-tuning (PEFT) method. Our approach enables efficient
+and parallel domain-adaptive pre-training that is robust to domain order and
+effectively utilizes accumulated knowledge to provide tailored pre-trained
+models for specific tasks. We also demonstrate that our method can be extended
+beyond the DAP setting to standard LLM fine-tuning scenarios. Code is available
+at https://github.com/dohoonkim-ai/DoMIX.</p></br><a href="http://arxiv.org/pdf/2507.02264v1" target="_blank"><h2>NLP4Neuro: Sequence-to-sequence learning for neural population decoding</h2></a><strong><u>Authors:</u></strong>  Jacob J. Morra, Kaitlyn E. Fouke, Kexin Hang, Zichen He, Owen Traubert, Timothy W. Dunn, Eva A. Naumann</br><strong><u>Categories:</u></strong> q-bio.NC, cs.LG</br><strong><u>Comments:</u></strong> 17 pages, 6 figures</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Delineating how animal behavior arises from neural activity is a foundational
+goal of neuroscience. However, as the computations underlying behavior unfold
+in networks of thousands of individual neurons across the entire brain, this
+presents challenges for investigating neural roles and computational mechanisms
+in large, densely wired mammalian brains during behavior. Transformers, the
+backbones of modern large language models (LLMs), have become powerful tools
+for neural decoding from smaller neural populations. These modern LLMs have
+benefited from extensive pre-training, and their sequence-to-sequence learning
+has been shown to generalize to novel tasks and data modalities, which may also
+confer advantages for neural decoding from larger, brain-wide activity
+recordings. Here, we present a systematic evaluation of off-the-shelf LLMs to
+decode behavior from brain-wide populations, termed NLP4Neuro, which we used to
+test LLMs on simultaneous calcium imaging and behavior recordings in larval
+zebrafish exposed to visual motion stimuli. Through NLP4Neuro, we found that
+LLMs become better at neural decoding when they use pre-trained weights learned
+from textual natural language data. Moreover, we found that a recent
+mixture-of-experts LLM, DeepSeek Coder-7b, significantly improved behavioral
+decoding accuracy, predicted tail movements over long timescales, and provided
+anatomically consistent highly interpretable readouts of neuron salience.
+NLP4Neuro demonstrates that LLMs are highly capable of informing brain-wide
+neural circuit dissection.</p></br><a href="http://arxiv.org/pdf/2507.02690v1" target="_blank"><h2>RLHGNN: Reinforcement Learning-driven Heterogeneous Graph Neural Network
+  for Next Activity Prediction in Business Processes</h2></a><strong><u>Authors:</u></strong>  Jiaxing Wang, Yifeng Yu, Jiahan Song, Bin Cao, Jing Fan, Ji Zhang</br><strong><u>Categories:</u></strong> cs.SE, cs.LG</br><strong><u>Comments:</u></strong> 15 pages, 7 figures. Business process prediction using reinforcement learning and heterogeneous graph neural networks</br><strong><u>Matching Keywords:</u></strong> neural network (title)</br><p><strong><u>Abstract:</u></strong> Next activity prediction represents a fundamental challenge for optimizing
+business processes in service-oriented architectures such as microservices
+environments, distributed enterprise systems, and cloud-native platforms, which
+enables proactive resource allocation and dynamic service composition. Despite
+the prevalence of sequence-based methods, these approaches fail to capture
+non-sequential relationships that arise from parallel executions and
+conditional dependencies. Even though graph-based approaches address structural
+preservation, they suffer from homogeneous representations and static
+structures that apply uniform modeling strategies regardless of individual
+process complexity characteristics. To address these limitations, we introduce
+RLHGNN, a novel framework that transforms event logs into heterogeneous process
+graphs with three distinct edge types grounded in established process mining
+theory. Our approach creates four flexible graph structures by selectively
+combining these edges to accommodate different process complexities, and
+employs reinforcement learning formulated as a Markov Decision Process to
+automatically determine the optimal graph structure for each specific process
+instance. RLHGNN then applies heterogeneous graph convolution with
+relation-specific aggregation strategies to effectively predict the next
+activity. This adaptive methodology enables precise modeling of both sequential
+and non-sequential relationships in service interactions. Comprehensive
+evaluation on six real-world datasets demonstrates that RLHGNN consistently
+outperforms state-of-the-art approaches. Furthermore, it maintains an inference
+latency of approximately 1 ms per prediction, representing a highly practical
+solution suitable for real-time business process monitoring applications. The
+source code is available at https://github.com/Joker3993/RLHGNN.</p></br><a href="http://arxiv.org/pdf/2507.02599v1" target="_blank"><h2>Padé Approximant Neural Networks for Enhanced Electric Motor Fault
+  Diagnosis Using Vibration and Acoustic Data</h2></a><strong><u>Authors:</u></strong>  Sertac Kilickaya, Levent Eren</br><strong><u>Categories:</u></strong> cs.LG, cs.SD, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> Submitted to the Journal of Vibration Engineering & Technologies</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Purpose: The primary aim of this study is to enhance fault diagnosis in
+induction machines by leveraging the Pad\'e Approximant Neuron (PAON) model.
+While accelerometers and microphones are standard in motor condition
+monitoring, deep learning models with nonlinear neuron architectures offer
+promising improvements in diagnostic performance. This research addresses the
+question: Can Pad\'e Approximant Neural Networks (Pad\'eNets) outperform
+conventional Convolutional Neural Networks (CNNs) and Self-Organized
+Operational Neural Networks (Self-ONNs) in diagnosing electrical and mechanical
+faults using vibration and acoustic data?
+  Methods: We evaluate and compare the diagnostic capabilities of three deep
+learning architectures: one-dimensional CNNs, Self-ONNs, and Pad\'eNets. These
+models are tested on the University of Ottawa's publicly available
+constant-speed induction motor datasets, which include both vibration and
+acoustic sensor data. The Pad\'eNet model is designed to introduce enhanced
+nonlinearity and is compatible with unbounded activation functions such as
+Leaky ReLU.
+  Results and Conclusion: Pad\'eNets consistently outperformed the baseline
+models, achieving diagnostic accuracies of 99.96%, 98.26%, 97.61%, and 98.33%
+for accelerometers 1, 2, 3, and the acoustic sensor, respectively. The enhanced
+nonlinearity of Pad\'eNets, together with their compatibility with unbounded
+activation functions, significantly improves fault diagnosis performance in
+induction motor condition monitoring.</p></br><a href="http://arxiv.org/pdf/2507.02510v1" target="_blank"><h2>TFOC-Net: A Short-time Fourier Transform-based Deep Learning Approach
+  for Enhancing Cross-Subject Motor Imagery Classification</h2></a><strong><u>Authors:</u></strong>  Ahmed G. Habashi, Ahmed M. Azab, Seif Eldawlatly, Gamal M. Aly</br><strong><u>Categories:</u></strong> cs.LG, cs.HC, cs.NE</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Cross-subject motor imagery (CS-MI) classification in brain-computer
+interfaces (BCIs) is a challenging task due to the significant variability in
+Electroencephalography (EEG) patterns across different individuals. This
+variability often results in lower classification accuracy compared to
+subject-specific models, presenting a major barrier to developing
+calibration-free BCIs suitable for real-world applications. In this paper, we
+introduce a novel approach that significantly enhances cross-subject MI
+classification performance through optimized preprocessing and deep learning
+techniques. Our approach involves direct classification of Short-Time Fourier
+Transform (STFT)-transformed EEG data, optimized STFT parameters, and a
+balanced batching strategy during training of a Convolutional Neural Network
+(CNN). This approach is uniquely validated across four different datasets,
+including three widely-used benchmark datasets leading to substantial
+improvements in cross-subject classification, achieving 67.60% on the BCI
+Competition IV Dataset 1 (IV-1), 65.96% on Dataset 2A (IV-2A), and 80.22% on
+Dataset 2B (IV-2B), outperforming state-of-the-art techniques. Additionally, we
+systematically investigate the classification performance using MI windows
+ranging from the full 4-second window to 1-second windows. These results
+establish a new benchmark for generalizable, calibration-free MI classification
+in addition to contributing a robust open-access dataset to advance research in
+this domain.</p></br><a href="http://arxiv.org/pdf/2507.02824v1" target="_blank"><h2>DNN-Based Precoding in RIS-Aided mmWave MIMO Systems With Practical
+  Phase Shift</h2></a><strong><u>Authors:</u></strong>  Po-Heng Chou, Ching-Wen Chen, Wan-Jen Huang, Walid Saad, Yu Tsao, Ronald Y. Chang</br><strong><u>Categories:</u></strong> eess.SP, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 5 pages, 4 figures, 2 tables, accepted by IEEE Globecom 2024 Workshops</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> In this paper, the precoding design is investigated for maximizing the
+throughput of millimeter wave (mmWave) multiple-input multiple-output (MIMO)
+systems with obstructed direct communication paths. In particular, a
+reconfigurable intelligent surface (RIS) is employed to enhance MIMO
+transmissions, considering mmWave characteristics related to line-of-sight
+(LoS) and multipath effects. The traditional exhaustive search (ES) for optimal
+codewords in the continuous phase shift is computationally intensive and
+time-consuming. To reduce computational complexity, permuted discrete Fourier
+transform (DFT) vectors are used for finding codebook design, incorporating
+amplitude responses for practical or ideal RIS systems. However, even if the
+discrete phase shift is adopted in the ES, it results in significant
+computation and is time-consuming. Instead, the trained deep neural network
+(DNN) is developed to facilitate faster codeword selection. Simulation results
+show that the DNN maintains sub-optimal spectral efficiency even as the
+distance between the end-user and the RIS has variations in the testing phase.
+These results highlight the potential of DNN in advancing RIS-aided systems.</p></br><a href="http://arxiv.org/pdf/2507.02349v1" target="_blank"><h2>Two-Steps Neural Networks for an Automated Cerebrovascular Landmark
+  Detection</h2></a><strong><u>Authors:</u></strong>  Rafic Nader, Vincent L'Allinec, Romain Bourcier, Florent Autrusseau</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Intracranial aneurysms (ICA) commonly occur in specific segments of the
+Circle of Willis (CoW), primarily, onto thirteen major arterial bifurcations.
+An accurate detection of these critical landmarks is necessary for a prompt and
+efficient diagnosis. We introduce a fully automated landmark detection approach
+for CoW bifurcations using a two-step neural networks process. Initially, an
+object detection network identifies regions of interest (ROIs) proximal to the
+landmark locations. Subsequently, a modified U-Net with deep supervision is
+exploited to accurately locate the bifurcations. This two-step method reduces
+various problems, such as the missed detections caused by two landmarks being
+close to each other and having similar visual characteristics, especially when
+processing the complete MRA Time-of-Flight (TOF). Additionally, it accounts for
+the anatomical variability of the CoW, which affects the number of detectable
+landmarks per scan. We assessed the effectiveness of our approach using two
+cerebral MRA datasets: our In-House dataset which had varying numbers of
+landmarks, and a public dataset with standardized landmark configuration. Our
+experimental results demonstrate that our method achieves the highest level of
+performance on a bifurcation detection task.</p></br><a href="http://arxiv.org/pdf/2507.02687v1" target="_blank"><h2>APT: Adaptive Personalized Training for Diffusion Models with Limited
+  Data</h2></a><strong><u>Authors:</u></strong>  JungWoo Chae, Jiyoon Kim, JaeWoong Choi, Kyungyul Kim, Sangheum Hwang</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, 60J60, 68T07, I.2.6; I.2.10; I.4.9</br><strong><u>Comments:</u></strong> CVPR 2025 camera ready. Project page:this https URL</br><strong><u>Matching Keywords:</u></strong> attention (abstract), data augmentation (abstract)</br><p><strong><u>Abstract:</u></strong> Personalizing diffusion models using limited data presents significant
+challenges, including overfitting, loss of prior knowledge, and degradation of
+text alignment. Overfitting leads to shifts in the noise prediction
+distribution, disrupting the denoising trajectory and causing the model to lose
+semantic coherence. In this paper, we propose Adaptive Personalized Training
+(APT), a novel framework that mitigates overfitting by employing adaptive
+training strategies and regularizing the model's internal representations
+during fine-tuning. APT consists of three key components: (1) Adaptive Training
+Adjustment, which introduces an overfitting indicator to detect the degree of
+overfitting at each time step bin and applies adaptive data augmentation and
+adaptive loss weighting based on this indicator; (2)Representation
+Stabilization, which regularizes the mean and variance of intermediate feature
+maps to prevent excessive shifts in noise prediction; and (3) Attention
+Alignment for Prior Knowledge Preservation, which aligns the cross-attention
+maps of the fine-tuned model with those of the pretrained model to maintain
+prior knowledge and semantic coherence. Through extensive experiments, we
+demonstrate that APT effectively mitigates overfitting, preserves prior
+knowledge, and outperforms existing methods in generating high-quality, diverse
+images with limited reference data.</p></br><a href="http://arxiv.org/pdf/2507.02403v1" target="_blank"><h2>Wildlife Target Re-Identification Using Self-supervised Learning in
+  Non-Urban Settings</h2></a><strong><u>Authors:</u></strong>  Mufhumudzi Muthivhi, Terence L. van Zyl</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted for publication in IEEE Xplore and ISIF FUSION 2025 proceedings:</br><strong><u>Matching Keywords:</u></strong> transfer learning (abstract)</br><p><strong><u>Abstract:</u></strong> Wildlife re-identification aims to match individuals of the same species
+across different observations. Current state-of-the-art (SOTA) models rely on
+class labels to train supervised models for individual classification. This
+dependence on annotated data has driven the curation of numerous large-scale
+wildlife datasets. This study investigates self-supervised learning
+Self-Supervised Learning (SSL) for wildlife re-identification. We automatically
+extract two distinct views of an individual using temporal image pairs from
+camera trap data without supervision. The image pairs train a self-supervised
+model from a potentially endless stream of video data. We evaluate the learnt
+representations against supervised features on open-world scenarios and
+transfer learning in various wildlife downstream tasks. The analysis of the
+experimental results shows that self-supervised models are more robust even
+with limited data. Moreover, self-supervised features outperform supervision
+across all downstream tasks. The code is available here
+https://github.com/pxpana/SSLWildlife.</p></br><a href="http://arxiv.org/pdf/2507.02390v1" target="_blank"><h2>Evaluating Language Models For Threat Detection in IoT Security Logs</h2></a><strong><u>Authors:</u></strong>  Jorge J. Tejero-Fernández, Alfonso Sánchez-Macián</br><strong><u>Categories:</u></strong> cs.CR, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Log analysis is a relevant research field in cybersecurity as they can
+provide a source of information for the detection of threats to networks and
+systems. This paper presents a pipeline to use fine-tuned Large Language Models
+(LLMs) for anomaly detection and mitigation recommendation using IoT security
+logs. Utilizing classical machine learning classifiers as a baseline, three
+open-source LLMs are compared for binary and multiclass anomaly detection, with
+three strategies: zero-shot, few-shot prompting and fine-tuning using an IoT
+dataset. LLMs give better results on multi-class attack classification than the
+corresponding baseline models. By mapping detected threats to MITRE CAPEC,
+defining a set of IoT-specific mitigation actions, and fine-tuning the models
+with those actions, the models are able to provide a combined detection and
+recommendation guidance.</p></br><a href="http://arxiv.org/pdf/2507.02634v1" target="_blank"><h2>High-Order Deep Meta-Learning with Category-Theoretic Interpretation</h2></a><strong><u>Authors:</u></strong>  David H. Mguni</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a new hierarchical deep learning framework for recursive
+higher-order meta-learning that enables neural networks (NNs) to construct,
+solve, and generalise across hierarchies of tasks. Central to this approach is
+a generative mechanism that creates \emph{virtual tasks} -- synthetic problem
+instances designed to enable the meta-learner to learn \emph{soft constraints}
+and unknown generalisable rules across related tasks. Crucially, this enables
+the framework to generate its own informative, task-grounded datasets thereby
+freeing machine learning (ML) training from the limitations of relying entirely
+on human-generated data. By actively exploring the virtual point landscape and
+seeking out tasks lower-level learners find difficult, the meta-learner
+iteratively refines constraint regions. This enhances inductive biases,
+regularises the adaptation process, and produces novel, unanticipated tasks and
+constraints required for generalisation. Each meta-level of the hierarchy
+corresponds to a progressively abstracted generalisation of problems solved at
+lower levels, enabling a structured and interpretable learning progression. By
+interpreting meta-learners as category-theoretic \emph{functors} that generate
+and condition a hierarchy of subordinate learners, we establish a compositional
+structure that supports abstraction and knowledge transfer across progressively
+generalised tasks. The category-theoretic perspective unifies existing
+meta-learning models and reveals how learning processes can be transformed and
+compared through functorial relationships, while offering practical design
+principles for structuring meta-learning. We speculate this architecture may
+underpin the next generation of NNs capable of autonomously generating novel,
+instructive tasks and their solutions, thereby advancing ML towards general
+artificial intelligence.</p></br><a href="http://arxiv.org/pdf/2507.02227v1" target="_blank"><h2>PhysicsCorrect: A Training-Free Approach for Stable Neural PDE
+  Simulations</h2></a><strong><u>Authors:</u></strong>  Xinquan Huang, Paris Perdikaris</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Neural networks have emerged as powerful surrogates for solving partial
+differential equations (PDEs), offering significant computational speedups over
+traditional methods. However, these models suffer from a critical limitation:
+error accumulation during long-term rollouts, where small inaccuracies compound
+exponentially, eventually causing complete divergence from physically valid
+solutions. We present PhysicsCorrect, a training-free correction framework that
+enforces PDE consistency at each prediction step by formulating correction as a
+linearized inverse problem based on PDE residuals. Our key innovation is an
+efficient caching strategy that precomputes the Jacobian and its pseudoinverse
+during an offline warm-up phase, reducing computational overhead by two orders
+of magnitude compared to standard correction approaches. Across three
+representative PDE systems -- Navier-Stokes fluid dynamics, wave equations, and
+the chaotic Kuramoto-Sivashinsky equation -- PhysicsCorrect reduces prediction
+errors by up to 100x while adding negligible inference time (under 5\%). The
+framework integrates seamlessly with diverse architectures including Fourier
+Neural Operators, UNets, and Vision Transformers, effectively transforming
+unstable neural surrogates into reliable simulation tools that bridge the gap
+between deep learning's computational efficiency and the physical fidelity
+demanded by practical scientific applications.</p></br><a href="http://arxiv.org/pdf/2507.02259v1" target="_blank"><h2>MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory
+  Agent</h2></a><strong><u>Authors:</u></strong>  Hongli Yu, Tinghong Chen, Jiangtao Feng, Jiangjie Chen, Weinan Dai, Qiying Yu, Ya-Qin Zhang, Wei-Ying Ma, Jingjing Liu, Mingxuan Wang, Hao Zhou</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Project Page:this https URL</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Despite improvements by length extrapolation, efficient attention and memory
+modules, handling infinitely long documents with linear complexity without
+performance degradation during extrapolation remains the ultimate challenge in
+long-text processing. We directly optimize for long-text tasks in an end-to-end
+fashion and introduce a novel agent workflow, MemAgent, which reads text in
+segments and updates the memory using an overwrite strategy. We extend the DAPO
+algorithm to facilitate training via independent-context multi-conversation
+generation. MemAgent has demonstrated superb long-context capabilities, being
+able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task
+with performance loss < 5% and achieves 95%+ in 512K RULER test.</p></br></body>

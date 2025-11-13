@@ -1,0 +1,227 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 12 Aug 2025 to 14 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.09401v1" target="_blank"><h2>Graph Neural Network and Transformer Integration for Unsupervised System
+  Anomaly Discovery</h2></a><strong><u>Authors:</u></strong>  Yun Zi, Ming Gong, Zhihao Xue, Yujun Zou, Nia Qi, Yingnan Deng</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (title), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> This study proposes an unsupervised anomaly detection method for distributed
+backend service systems, addressing practical challenges such as complex
+structural dependencies, diverse behavioral evolution, and the absence of
+labeled data. The method constructs a dynamic graph based on service invocation
+relationships and applies graph convolution to extract high-order structural
+representations from multi-hop topologies. A Transformer is used to model the
+temporal behavior of each node, capturing long-term dependencies and local
+fluctuations. During the feature fusion stage, a learnable joint embedding
+mechanism integrates structural and behavioral representations into a unified
+anomaly vector. A nonlinear mapping is then applied to compute anomaly scores,
+enabling an end-to-end detection process without supervision. Experiments on
+real-world cloud monitoring data include sensitivity analyses across different
+graph depths, sequence lengths, and data perturbations. Results show that the
+proposed method outperforms existing models on several key metrics,
+demonstrating stronger expressiveness and stability in capturing anomaly
+propagation paths and modeling dynamic behavior sequences, with high potential
+for practical deployment.</p></br><a href="http://arxiv.org/pdf/2508.09715v1" target="_blank"><h2>NEURAL: Attention-Guided Pruning for Unified Multimodal
+  Resource-Constrained Clinical Evaluation</h2></a><strong><u>Authors:</u></strong>  Devvrat Joshi, Islem Rekik</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> The rapid growth of multimodal medical imaging data presents significant
+storage and transmission challenges, particularly in resource-constrained
+clinical settings. We propose NEURAL, a novel framework that addresses this by
+using semantics-guided data compression. Our approach repurposes
+cross-attention scores between the image and its radiological report from a
+fine-tuned generative vision-language model to structurally prune chest X-rays,
+preserving only diagnostically critical regions. This process transforms the
+image into a highly compressed, graph representation. This unified graph-based
+representation fuses the pruned visual graph with a knowledge graph derived
+from the clinical report, creating a universal data structure that simplifies
+downstream modeling. Validated on the MIMIC-CXR and CheXpert Plus dataset for
+pneumonia detection, NEURAL achieves a 93.4-97.7\% reduction in image data size
+while maintaining a high diagnostic performance of 0.88-0.95 AUC, outperforming
+other baseline models that use uncompressed data. By creating a persistent,
+task-agnostic data asset, NEURAL resolves the trade-off between data size and
+clinical utility, enabling efficient workflows and teleradiology without
+sacrificing performance. Our NEURAL code is available at
+https://github.com/basiralab/NEURAL.</p></br><a href="http://arxiv.org/pdf/2508.09721v1" target="_blank"><h2>Structured Kernel Regression VAE: A Computationally Efficient Surrogate
+  for GP-VAEs in ICA</h2></a><strong><u>Authors:</u></strong>  Yuan-Hao Wei, Fu-Hao Deng, Lin-Yong Cui, Yan-Jie Sun</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract)</br><p><strong><u>Abstract:</u></strong> The interpretability of generative models is considered a key factor in
+demonstrating their effectiveness and controllability. The generated data are
+believed to be determined by latent variables that are not directly observable.
+Therefore, disentangling, decoupling, decomposing, causal inference, or
+performing Independent Component Analysis (ICA) in the latent variable space
+helps uncover the independent factors that influence the attributes or features
+affecting the generated outputs, thereby enhancing the interpretability of
+generative models. As a generative model, Variational Autoencoders (VAEs)
+combine with variational Bayesian inference algorithms. Using VAEs, the inverse
+process of ICA can be equivalently framed as a variational inference process.
+In some studies, Gaussian processes (GPs) have been introduced as priors for
+each dimension of latent variables in VAEs, structuring and separating each
+dimension from temporal or spatial perspectives, and encouraging different
+dimensions to control various attributes of the generated data. However, GPs
+impose a significant computational burden, resulting in substantial resource
+consumption when handling large datasets. Essentially, GPs model different
+temporal or spatial structures through various kernel functions. Structuring
+the priors of latent variables via kernel functions-so that different kernel
+functions model the correlations among sequence points within different latent
+dimensions-is at the core of achieving disentanglement in VAEs. The proposed
+Structured Kernel Regression VAE (SKR-VAE) leverages this core idea in a more
+efficient way, avoiding the costly kernel matrix inversion required in GPs.
+This research demonstrates that, while maintaining ICA performance, SKR-VAE
+achieves greater computational efficiency and significantly reduced
+computational burden compared to GP-VAE.</p></br><a href="http://arxiv.org/pdf/2508.09504v1" target="_blank"><h2>Causal Graph Profiling via Structural Divergence for Robust Anomaly
+  Detection in Cyber-Physical Systems</h2></a><strong><u>Authors:</u></strong>  Arun Vignesh Malarkkan, Haoyue Bai, Dongjie Wang, Yanjie Fu</br><strong><u>Categories:</u></strong> cs.LG, cs.CR</br><strong><u>Comments:</u></strong> 7 Pages, 5 figures, Submission for ACM TKDD</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> With the growing complexity of cyberattacks targeting critical
+infrastructures such as water treatment networks, there is a pressing need for
+robust anomaly detection strategies that account for both system
+vulnerabilities and evolving attack patterns. Traditional methods --
+statistical, density-based, and graph-based models struggle with distribution
+shifts and class imbalance in multivariate time series, often leading to high
+false positive rates. To address these challenges, we propose CGAD, a Causal
+Graph-based Anomaly Detection framework designed for reliable cyberattack
+detection in public infrastructure systems. CGAD follows a two-phase supervised
+framework -- causal profiling and anomaly scoring. First, it learns causal
+invariant graph structures representing the system's behavior under "Normal"
+and "Attack" states using Dynamic Bayesian Networks. Second, it employs
+structural divergence to detect anomalies via causal graph comparison by
+evaluating topological deviations in causal graphs over time. By leveraging
+causal structures, CGAD achieves superior adaptability and accuracy in
+non-stationary and imbalanced time series environments compared to conventional
+machine learning approaches. By uncovering causal structures beneath volatile
+sensor data, our framework not only detects cyberattacks with markedly higher
+precision but also redefines robustness in anomaly detection, proving
+resilience where traditional models falter under imbalance and drift. Our
+framework achieves substantial gains in F1 and ROC-AUC scores over
+best-performing baselines across four industrial datasets, demonstrating robust
+detection of delayed and structurally complex anomalies.</p></br><a href="http://arxiv.org/pdf/2508.09362v1" target="_blank"><h2>FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal
+  Networks for Multimodal Sign Language Recognition</h2></a><strong><u>Authors:</u></strong>  Md. Milon Islam, Md Rezwanul Haque, S M Taslim Uddin Raju, Fakhri Karray</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted for the IEEE/CVF International Conference on Computer Vision (ICCV), Honolulu, Hawaii, USA. 1st MSLR Workshop 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate recognition of sign language in healthcare communication poses a
+significant challenge, requiring frameworks that can accurately interpret
+complex multimodal gestures. To deal with this, we propose FusionEnsemble-Net,
+a novel attention-based ensemble of spatiotemporal networks that dynamically
+fuses visual and motion data to enhance recognition accuracy. The proposed
+approach processes RGB video and range Doppler map radar modalities
+synchronously through four different spatiotemporal networks. For each network,
+features from both modalities are continuously fused using an attention-based
+fusion module before being fed into an ensemble of classifiers. Finally, the
+outputs of these four different fused channels are combined in an ensemble
+classification head, thereby enhancing the model's robustness. Experiments
+demonstrate that FusionEnsemble-Net outperforms state-of-the-art approaches
+with a test accuracy of 99.44% on the large-scale MultiMeDaLIS dataset for
+Italian Sign Language. Our findings indicate that an ensemble of diverse
+spatiotemporal networks, unified by attention-based fusion, yields a robust and
+accurate framework for complex, multimodal isolated gesture recognition tasks.
+The source code is available at:
+https://github.com/rezwanh001/Multimodal-Isolated-Italian-Sign-Language-Recognition.</p></br><a href="http://arxiv.org/pdf/2508.09660v1" target="_blank"><h2>Anomaly Detection for IoT Global Connectivity</h2></a><strong><u>Authors:</u></strong>  Jesus Omaña Iglesias, Carlos Segura Perales, Stefan Geißler, Diego Perino, Andra Lutu</br><strong><u>Categories:</u></strong> cs.NI, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Internet of Things (IoT) application providers rely on Mobile Network
+Operators (MNOs) and roaming infrastructures to deliver their services
+globally. In this complex ecosystem, where the end-to-end communication path
+traverses multiple entities, it has become increasingly challenging to
+guarantee communication availability and reliability. Further, most platform
+operators use a reactive approach to communication issues, responding to user
+complaints only after incidents have become severe, compromising service
+quality. This paper presents our experience in the design and deployment of
+ANCHOR -- an unsupervised anomaly detection solution for the IoT connectivity
+service of a large global roaming platform. ANCHOR assists engineers by
+filtering vast amounts of data to identify potential problematic clients (i.e.,
+those with connectivity issues affecting several of their IoT devices),
+enabling proactive issue resolution before the service is critically impacted.
+We first describe the IoT service, infrastructure, and network visibility of
+the IoT connectivity provider we operate. Second, we describe the main
+challenges and operational requirements for designing an unsupervised anomaly
+detection solution on this platform. Following these guidelines, we propose
+different statistical rules, and machine- and deep-learning models for IoT
+verticals anomaly detection based on passive signaling traffic. We describe the
+steps we followed working with the operational teams on the design and
+evaluation of our solution on the operational platform, and report an
+evaluation on operational IoT customers.</p></br><a href="http://arxiv.org/pdf/2508.09801v1" target="_blank"><h2>Explainable Ensemble Learning for Graph-Based Malware Detection</h2></a><strong><u>Authors:</u></strong>  Hossein Shokouhinejad, Roozbeh Razavi-Far, Griffin Higgins, Ali A Ghorbani</br><strong><u>Categories:</u></strong> cs.CR, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title), neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Malware detection in modern computing environments demands models that are
+not only accurate but also interpretable and robust to evasive techniques.
+Graph neural networks (GNNs) have shown promise in this domain by modeling rich
+structural dependencies in graph-based program representations such as control
+flow graphs (CFGs). However, single-model approaches may suffer from limited
+generalization and lack interpretability, especially in high-stakes security
+applications. In this paper, we propose a novel stacking ensemble framework for
+graph-based malware detection and explanation. Our method dynamically extracts
+CFGs from portable executable (PE) files and encodes their basic blocks through
+a two-step embedding strategy. A set of diverse GNN base learners, each with a
+distinct message-passing mechanism, is used to capture complementary behavioral
+features. Their prediction outputs are aggregated by a meta-learner implemented
+as an attention-based multilayer perceptron, which both classifies malware
+instances and quantifies the contribution of each base model. To enhance
+explainability, we introduce an ensemble-aware post-hoc explanation technique
+that leverages edge-level importance scores generated by a GNN explainer and
+fuses them using the learned attention weights. This produces interpretable,
+model-agnostic explanations aligned with the final ensemble decision.
+Experimental results demonstrate that our framework improves classification
+performance while providing insightful interpretations of malware behavior.</p></br><a href="http://arxiv.org/pdf/2508.09894v1" target="_blank"><h2>Rare anomalies require large datasets: About proving the existence of
+  anomalies</h2></a><strong><u>Authors:</u></strong>  Simon Klüttermann, Emmanuel Müller</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 13 pages, 8 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Detecting whether any anomalies exist within a dataset is crucial for
+effective anomaly detection, yet it remains surprisingly underexplored in
+anomaly detection literature. This paper presents a comprehensive study that
+addresses the fundamental question: When can we conclusively determine that
+anomalies are present? Through extensive experimentation involving over three
+million statistical tests across various anomaly detection tasks and
+algorithms, we identify a relationship between the dataset size, contamination
+rate, and an algorithm-dependent constant $ \alpha_{\text{algo}} $. Our results
+demonstrate that, for an unlabeled dataset of size $ N $ and contamination rate
+$ \nu $, the condition $ N \ge \frac{\alpha_{\text{algo}}}{\nu^2} $ represents
+a lower bound on the number of samples required to confirm anomaly existence.
+This threshold implies a limit to how rare anomalies can be before proving
+their existence becomes infeasible.</p></br><a href="http://arxiv.org/pdf/2508.09630v1" target="_blank"><h2>TimeMKG: Knowledge-Infused Causal Reasoning for Multivariate Time Series
+  Modeling</h2></a><strong><u>Authors:</u></strong>  Yifei Sun, Junming Liu, Ding Wang, Yirong Chen, Xuefeng Yan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multivariate time series data typically comprises two distinct modalities:
+variable semantics and sampled numerical observations. Traditional time series
+models treat variables as anonymous statistical signals, overlooking the rich
+semantic information embedded in variable names and data descriptions. However,
+these textual descriptors often encode critical domain knowledge that is
+essential for robust and interpretable modeling. Here we present TimeMKG, a
+multimodal causal reasoning framework that elevates time series modeling from
+low-level signal processing to knowledge informed inference. TimeMKG employs
+large language models to interpret variable semantics and constructs structured
+Multivariate Knowledge Graphs that capture inter-variable relationships. A
+dual-modality encoder separately models the semantic prompts, generated from
+knowledge graph triplets, and the statistical patterns from historical time
+series. Cross-modality attention aligns and fuses these representations at the
+variable level, injecting causal priors into downstream tasks such as
+forecasting and classification, providing explicit and interpretable priors to
+guide model reasoning. The experiment in diverse datasets demonstrates that
+incorporating variable-level knowledge significantly improves both predictive
+performance and generalization.</p></br><a href="http://arxiv.org/pdf/2508.09264v1" target="_blank"><h2>Detection of Odor Presence via Deep Neural Networks</h2></a><strong><u>Authors:</u></strong>  Matin Hassanloo, Ali Zareh, Mehmet Kemal Özdemir</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (title), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Odor detection underpins food safety, environmental monitoring, medical
+diagnostics, and many more fields. The current artificial sensors developed for
+odor detection struggle with complex mixtures while non-invasive recordings
+lack reliable single-trial fidelity. To develop a general system for odor
+detection, in this study we present a preliminary work where we aim to test two
+hypotheses: (i) that spectral features of local field potentials (LFPs) are
+sufficient for robust single-trial odor detection and (ii) that signals from
+the olfactory bulb alone are adequate. To test two hypotheses, we propose an
+ensemble of complementary one-dimensional convolutional networks (ResCNN and
+AttentionCNN) that decodes the presence of odor from multichannel olfactory
+bulb LFPs. Tested on 2,349 trials from seven awake mice, our final ensemble
+model supports both hypotheses, achieving a mean accuracy of 86.6%, an F1-score
+of 81.0%, and an AUC of 0.9247, substantially outperforming previous
+benchmarks. In addition, the t-SNE visualization confirms that our framework
+captures biologically significant signatures. These findings establish the
+feasibility of robust single-trial detection of the presence of odor from
+extracellular LFPs, as well as demonstrate the potential of deep learning
+models to provide a deeper understanding of olfactory representations.</p></br><a href="http://arxiv.org/pdf/2508.08762v1" target="_blank"><h2>Bio-Inspired Artificial Neural Networks based on Predictive Coding</h2></a><strong><u>Authors:</u></strong>  Davide Casnici, Charlotte Frenkel, Justin Dauwels</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Backpropagation (BP) of errors is the backbone training algorithm for
+artificial neural networks (ANNs). It updates network weights through gradient
+descent to minimize a loss function representing the mismatch between
+predictions and desired outputs. BP uses the chain rule to propagate the loss
+gradient backward through the network hierarchy, allowing efficient weight
+updates. However, this process requires weight updates at every layer to rely
+on a global error signal generated at the network's output.
+  In contrast, the Hebbian model of synaptic plasticity states that weight
+updates are local, depending only on the activity of pre- and post-synaptic
+neurons. This suggests biological brains likely do not implement BP directly.
+Recently, Predictive Coding (PC) has gained interest as a biologically
+plausible alternative that updates weights using only local information.
+Originating from 1950s work on signal compression, PC was later proposed as a
+model of the visual cortex and formalized under the free energy principle,
+linking it to Bayesian inference and dynamical systems. PC weight updates rely
+solely on local information and provide theoretical advantages such as
+automatic scaling of gradients based on uncertainty.
+  This lecture notes column offers a novel, tutorial-style introduction to PC,
+focusing on its formulation, derivation, and connections to well-known
+optimization and signal processing algorithms such as BP and the Kalman Filter
+(KF). It aims to support existing literature by guiding readers from the
+mathematical foundations of PC to practical implementation, including Python
+examples using PyTorch.</p></br></body>

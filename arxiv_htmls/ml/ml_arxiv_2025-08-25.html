@@ -1,0 +1,294 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 21 Aug 2025 to 25 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.15281v1" target="_blank"><h2>MMQ: Multimodal Mixture-of-Quantization Tokenization for Semantic ID
+  Generation and User Behavioral Adaptation</h2></a><strong><u>Authors:</u></strong>  Yi Xu, Moyu Zhang, Chenxuan Li, Zhihao Liao, Haibo Xing, Hao Deng, Jinxin Hu, Yu Zhang, Xiaoyi Zeng, Jing Zhang</br><strong><u>Categories:</u></strong> cs.IR, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recommender systems traditionally represent items using unique identifiers
+(ItemIDs), but this approach struggles with large, dynamic item corpora and
+sparse long-tail data, limiting scalability and generalization. Semantic IDs,
+derived from multimodal content such as text and images, offer a promising
+alternative by mapping items into a shared semantic space, enabling knowledge
+transfer and improving recommendations for new or rare items. However, existing
+methods face two key challenges: (1) balancing cross-modal synergy with
+modality-specific uniqueness, and (2) bridging the semantic-behavioral gap,
+where semantic representations may misalign with actual user preferences. To
+address these challenges, we propose Multimodal Mixture-of-Quantization (MMQ),
+a two-stage framework that trains a novel multimodal tokenizer. First, a
+shared-specific tokenizer leverages a multi-expert architecture with
+modality-specific and modality-shared experts, using orthogonal regularization
+to capture comprehensive multimodal information. Second, behavior-aware
+fine-tuning dynamically adapts semantic IDs to downstream recommendation
+objectives while preserving modality information through a multimodal
+reconstruction loss. Extensive offline experiments and online A/B tests
+demonstrate that MMQ effectively unifies multimodal synergy, specificity, and
+behavioral adaptation, providing a scalable and versatile solution for both
+generative retrieval and discriminative ranking tasks.</p></br><a href="http://arxiv.org/pdf/2508.15766v1" target="_blank"><h2>Discovering Hidden Algebraic Structures via Transformers with Rank-Aware
+  Beam GRPO</h2></a><strong><u>Authors:</u></strong>  Jaeha Lee, Gio Huh, Ning Su, Tony Yue YU</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recent efforts have extended the capabilities of transformers in logical
+reasoning and symbolic computations. In this work, we investigate their
+capacity for non-linear latent pattern discovery in the context of functional
+decomposition, focusing on the challenging algebraic task of multivariate
+polynomial decomposition. This problem, with widespread applications in science
+and engineering, is proved to be NP-hard, and demands both precision and
+insight. Our contributions are threefold: First, we develop a synthetic data
+generation pipeline providing fine-grained control over problem complexity.
+Second, we train transformer models via supervised learning and evaluate them
+across four key dimensions involving scaling behavior and generalizability.
+Third, we propose Beam Grouped Relative Policy Optimization (BGRPO), a
+rank-aware reinforcement learning method suitable for hard algebraic problems.
+Finetuning with BGRPO improves accuracy while reducing beam width by up to
+half, resulting in approximately 75% lower inference compute. Additionally, our
+model demonstrates competitive performance in polynomial simplification,
+outperforming Mathematica in various cases.</p></br><a href="http://arxiv.org/pdf/2508.15678v1" target="_blank"><h2>Tree-like Pairwise Interaction Networks</h2></a><strong><u>Authors:</u></strong>  Ronald Richman, Salvatore Scognamiglio, Mario V. Wüthrich</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, stat.AP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Modeling feature interactions in tabular data remains a key challenge in
+predictive modeling, for example, as used for insurance pricing. This paper
+proposes the Tree-like Pairwise Interaction Network (PIN), a novel neural
+network architecture that explicitly captures pairwise feature interactions
+through a shared feed-forward neural network architecture that mimics the
+structure of decision trees. PIN enables intrinsic interpretability by design,
+allowing for direct inspection of interaction effects. Moreover, it allows for
+efficient SHapley's Additive exPlanation (SHAP) computations because it only
+involves pairwise interactions. We highlight connections between PIN and
+established models such as GA2Ms, gradient boosting machines, and graph neural
+networks. Empirical results on the popular French motor insurance dataset show
+that PIN outperforms both traditional and modern neural networks benchmarks in
+predictive accuracy, while also providing insight into how features interact
+with each another and how they contribute to the predictions.</p></br><a href="http://arxiv.org/pdf/2508.16027v1" target="_blank"><h2>Optimal Dynamic Regret by Transformers for Non-Stationary Reinforcement
+  Learning</h2></a><strong><u>Authors:</u></strong>  Baiyuan Chen, Shinji Ito, Masaaki Imaizumi</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 28 pages</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformers have demonstrated exceptional performance across a wide range of
+domains. While their ability to perform reinforcement learning in-context has
+been established both theoretically and empirically, their behavior in
+non-stationary environments remains less understood. In this study, we address
+this gap by showing that transformers can achieve nearly optimal dynamic regret
+bounds in non-stationary settings. We prove that transformers are capable of
+approximating strategies used to handle non-stationary environments and can
+learn the approximator in the in-context learning setup. Our experiments
+further show that transformers can match or even outperform existing expert
+algorithms in such environments.</p></br><a href="http://arxiv.org/pdf/2508.16129v1" target="_blank"><h2>Bridging the Gap in Ophthalmic AI: MM-Retinal-Reason Dataset and
+  OphthaReason Model toward Dynamic Multimodal Reasoning</h2></a><strong><u>Authors:</u></strong>  Ruiqi Wu, Yuang Yao, Tengfei Ma, Chenran Zhang, Na Su, Tao Zhou, Geng Chen, Wen Fan, Yi Zhou</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal large language models (MLLMs) have recently demonstrated
+remarkable reasoning abilities with reinforcement learning paradigm. Although
+several multimodal reasoning models have been explored in the medical domain,
+most of them focus exclusively on basic reasoning, which refers to shallow
+inference based on visual feature matching. However, real-world clinical
+diagnosis extends beyond basic reasoning, demanding reasoning processes that
+integrate heterogeneous clinical information (such as chief complaints and
+medical history) with multimodal medical imaging data. To bridge this gap, we
+introduce MM-Retinal-Reason, the first ophthalmic multimodal dataset with the
+full spectrum of perception and reasoning. It encompasses both basic reasoning
+tasks and complex reasoning tasks, aiming to enhance visual-centric fundamental
+reasoning capabilities and emulate realistic clinical thinking patterns.
+Building upon MM-Retinal-Reason, we propose OphthaReason, the first
+ophthalmology-specific multimodal reasoning model with step-by-step reasoning
+traces. To enable flexible adaptation to both basic and complex reasoning
+tasks, we specifically design a novel method called Uncertainty-Aware Dynamic
+Thinking (UADT), which estimates sample-level uncertainty via entropy and
+dynamically modulates the model's exploration depth using a shaped advantage
+mechanism. Comprehensive experiments demonstrate that our model achieves
+state-of-the-art performance on both basic and complex reasoning tasks,
+outperforming general-purpose MLLMs, medical MLLMs, RL-based medical MLLMs, and
+ophthalmic MLLMs by at least 24.92\%, 15.00\%, 21.20\%, and 17.66\%. Project
+Page: \href{https://github.com/lxirich/OphthaReason}{link}.</p></br><a href="http://arxiv.org/pdf/2508.16161v1" target="_blank"><h2>STA-GANN: A Valid and Generalizable Spatio-Temporal Kriging Approach</h2></a><strong><u>Authors:</u></strong>  Yujie Li, Zezhi Shao, Chengqing Yu, Tangwen Qian, Zhao Zhang, Yifan Du, Shaoming He, Fei Wang, Yongjun Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), transfer learning (abstract)</br><p><strong><u>Abstract:</u></strong> Spatio-temporal tasks often encounter incomplete data arising from missing or
+inaccessible sensors, making spatio-temporal kriging crucial for inferring the
+completely missing temporal information. However, current models struggle with
+ensuring the validity and generalizability of inferred spatio-temporal
+patterns, especially in capturing dynamic spatial dependencies and temporal
+shifts, and optimizing the generalizability of unknown sensors. To overcome
+these limitations, we propose Spatio-Temporal Aware Graph Adversarial Neural
+Network (STA-GANN), a novel GNN-based kriging framework that improves
+spatio-temporal pattern validity and generalization. STA-GANN integrates (i)
+Decoupled Phase Module that senses and adjusts for timestamp shifts. (ii)
+Dynamic Data-Driven Metadata Graph Modeling to update spatial relationships
+using temporal data and metadata; (iii) An adversarial transfer learning
+strategy to ensure generalizability. Extensive validation across nine datasets
+from four fields and theoretical evidence both demonstrate the superior
+performance of STA-GANN.</p></br><a href="http://arxiv.org/pdf/2508.16313v1" target="_blank"><h2>Retrieval Enhanced Feedback via In-context Neural Error-book</h2></a><strong><u>Authors:</u></strong>  Jongyeop Hyun, Bumsoo Kim</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL</br><strong><u>Comments:</u></strong> Accepted at EMNLP 2025 main conference</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Recent advancements in Large Language Models (LLMs) have significantly
+improved reasoning capabilities, with in-context learning (ICL) emerging as a
+key technique for adaptation without retraining. While previous works have
+focused on leveraging correct examples, recent research highlights the
+importance of learning from errors to enhance performance. However, existing
+methods lack a structured framework for analyzing and mitigating errors,
+particularly in Multimodal Large Language Models (MLLMs), where integrating
+visual and textual inputs adds complexity. To address this issue, we propose
+REFINE: Retrieval-Enhanced Feedback via In-context Neural Error-book, a
+teacher-student framework that systematically structures errors and provides
+targeted feedback. REFINE introduces three systematic queries to construct
+structured feedback -- Feed-Target, Feed-Check, and Feed-Path -- to enhance
+multimodal reasoning by prioritizing relevant visual information, diagnosing
+critical failure points, and formulating corrective actions. Unlike prior
+approaches that rely on redundant retrievals, REFINE optimizes structured
+feedback retrieval, improving inference efficiency, token usage, and
+scalability. Our results demonstrate substantial speedup, reduced computational
+costs, and successful generalization, highlighting REFINE's potential for
+enhancing multimodal reasoning.</p></br><a href="http://arxiv.org/pdf/2508.16300v1" target="_blank"><h2>A Multimodal-Multitask Framework with Cross-modal Relation and
+  Hierarchical Interactive Attention for Semantic Comprehension</h2></a><strong><u>Authors:</u></strong>  Mohammad Zia Ur Rehman, Devraj Raghuvanshi, Umang Jain, Shubhi Bansal, Nagendra Kumar</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> Published in Information Fusion</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> A major challenge in multimodal learning is the presence of noise within
+individual modalities. This noise inherently affects the resulting multimodal
+representations, especially when these representations are obtained through
+explicit interactions between different modalities. Moreover, the multimodal
+fusion techniques while aiming to achieve a strong joint representation, can
+neglect valuable discriminative information within the individual modalities.
+To this end, we propose a Multimodal-Multitask framework with crOss-modal
+Relation and hIErarchical iNteractive aTtention (MM-ORIENT) that is effective
+for multiple tasks. The proposed approach acquires multimodal representations
+cross-modally without explicit interaction between different modalities,
+reducing the noise effect at the latent stage. To achieve this, we propose
+cross-modal relation graphs that reconstruct monomodal features to acquire
+multimodal representations. The features are reconstructed based on the node
+neighborhood, where the neighborhood is decided by the features of a different
+modality. We also propose Hierarchical Interactive Monomadal Attention (HIMA)
+to focus on pertinent information within a modality. While cross-modal relation
+graphs help comprehend high-order relationships between two modalities, HIMA
+helps in multitasking by learning discriminative features of individual
+modalities before late-fusing them. Finally, extensive experimental evaluation
+on three datasets demonstrates that the proposed approach effectively
+comprehends multimodal content for multiple tasks.</p></br><a href="http://arxiv.org/pdf/2508.15883v1" target="_blank"><h2>Beyond Imaging: Vision Transformer Digital Twin Surrogates for 3D+T
+  Biological Tissue Dynamics</h2></a><strong><u>Authors:</u></strong>  Kaan Berke Ugurlar, Joaquín de Navascués, Michael Taynnan Barros</br><strong><u>Categories:</u></strong> eess.IV, cs.AI, cs.LG, q-bio.TO</br><strong><u>Comments:</u></strong> Submitted for journal publication</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Understanding the dynamic organization and homeostasis of living tissues
+requires high-resolution, time-resolved imaging coupled with methods capable of
+extracting interpretable, predictive insights from complex datasets. Here, we
+present the Vision Transformer Digital Twin Surrogate Network (VT-DTSN), a deep
+learning framework for predictive modeling of 3D+T imaging data from biological
+tissue. By leveraging Vision Transformers pretrained with DINO
+(Self-Distillation with NO Labels) and employing a multi-view fusion strategy,
+VT-DTSN learns to reconstruct high-fidelity, time-resolved dynamics of a
+Drosophila midgut while preserving morphological and feature-level integrity
+across imaging depths. The model is trained with a composite loss prioritizing
+pixel-level accuracy, perceptual structure, and feature-space alignment,
+ensuring biologically meaningful outputs suitable for in silico experimentation
+and hypothesis testing. Evaluation across layers and biological replicates
+demonstrates VT-DTSN's robustness and consistency, achieving low error rates
+and high structural similarity while maintaining efficient inference through
+model optimization. This work establishes VT-DTSN as a feasible, high-fidelity
+surrogate for cross-timepoint reconstruction and for studying tissue dynamics,
+enabling computational exploration of cellular behaviors and homeostasis to
+complement time-resolved imaging studies in biological research.</p></br><a href="http://arxiv.org/pdf/2508.16035v1" target="_blank"><h2>Time Series Based Network Intrusion Detection using MTF-Aided
+  Transformer</h2></a><strong><u>Authors:</u></strong>  Poorvi Joshi, Mohan Gurusamy</br><strong><u>Categories:</u></strong> cs.NI, cs.AI</br><strong><u>Comments:</u></strong> 7 pages, 3 figures. Accepted and presented at The Fifth Intelligent Cybersecurity Conference (ICSC 2025), nominated for Best Paper Award</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper introduces a novel approach to time series classification using a
+Markov Transition Field (MTF)-aided Transformer model, specifically designed
+for Software-Defined Networks (SDNs). The proposed model integrates the
+temporal dependency modeling strengths of MTFs with the sophisticated pattern
+recognition capabilities of Transformer architectures. We evaluate the model's
+performance using the InSDN dataset, demonstrating that our model outperforms
+baseline classification models, particularly in data-constrained environments
+commonly encountered in SDN applications. We also highlight the relationship
+between the MTF and Transformer components, which leads to better performance,
+even with limited data. Furthermore, our approach achieves competitive training
+and inference times, making it an efficient solution for real-world SDN
+applications. These findings establish the potential of MTF-aided Transformers
+to address the challenges of time series classification in SDNs, offering a
+promising path for reliable and scalable analysis in scenarios with sparse
+data.</p></br><a href="http://arxiv.org/pdf/2508.16051v1" target="_blank"><h2>MMAPG: A Training-Free Framework for Multimodal Multi-hop Question
+  Answering via Adaptive Planning Graphs</h2></a><strong><u>Authors:</u></strong>  Yiheng Hu, Xiaoyang Wang, Qing Liu, Xiwei Xu, Qian Fu, Wenjie Zhang, Liming Zhu</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal Multi-hop question answering requires integrating information from
+diverse sources, such as images and texts, to derive answers. Existing methods
+typically rely on sequential retrieval and reasoning, where each step builds on
+the previous output. However, this single-path paradigm makes them vulnerable
+to errors due to misleading intermediate steps. Moreover, developing multimodal
+models can be computationally expensive, often requiring extensive training. To
+address these limitations, we propose a training-free framework guided by an
+Adaptive Planning Graph, which consists of planning, retrieval and reasoning
+modules. The planning module analyzes the current state of the Adaptive
+Planning Graph, determines the next action and where to expand the graph, which
+enables dynamic and flexible exploration of reasoning paths. To handle
+retrieval of text to unspecified target modalities, we devise modality-specific
+strategies that dynamically adapt to distinct data types. Our approach
+preserves the characteristics of multimodal information without costly
+task-specific training, enabling seamless integration with up-to-date models.
+Finally, the experiments on MultimodalQA and WebQA show that our approach
+matches or outperforms existing models that rely on training.</p></br><a href="http://arxiv.org/pdf/2508.15710v1" target="_blank"><h2>End-to-End Analysis of Charge Stability Diagrams with Transformers</h2></a><strong><u>Authors:</u></strong>  Rahul Marchand, Lucas Schorling, Cornelius Carlsson, Jonas Schuff, Barnaby van Straaten, Taylor L. Patti, Federico Fedele, Joshua Ziegler, Parth Girdhar, Pranav Vaidhyanathan, Natalia Ares</br><strong><u>Categories:</u></strong> cond-mat.mes-hall, cond-mat.mtrl-sci, cs.LG, quant-ph</br><strong><u>Comments:</u></strong> 8 pages, 2 figures, RM and LS contributed equally</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transformer models and end-to-end learning frameworks are rapidly
+revolutionizing the field of artificial intelligence. In this work, we apply
+object detection transformers to analyze charge stability diagrams in
+semiconductor quantum dot arrays, a key task for achieving scalability with
+spin-based quantum computing. Specifically, our model identifies triple points
+and their connectivity, which is crucial for virtual gate calibration, charge
+state initialization, drift correction, and pulse sequencing. We show that it
+surpasses convolutional neural networks in performance on three different spin
+qubit architectures, all without the need for retraining. In contrast to
+existing approaches, our method significantly reduces complexity and runtime,
+while enhancing generalizability. The results highlight the potential of
+transformer-based end-to-end learning frameworks as a foundation for a
+scalable, device- and architecture-agnostic tool for control and tuning of
+quantum dot devices.</p></br><a href="http://arxiv.org/pdf/2508.16237v1" target="_blank"><h2>A XAI-based Framework for Frequency Subband Characterization of Cough
+  Spectrograms in Chronic Respiratory Disease</h2></a><strong><u>Authors:</u></strong>  Patricia Amado-Caballero, Luis M. San-José-Revuelta, Xinheng Wang, José Ramón Garmendia-Leiza, Carlos Alberola-López, Pablo Casaseca-de-la-Higuera</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, eess.AS, eess.SP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> This paper presents an explainable artificial intelligence (XAI)-based
+framework for the spectral analysis of cough sounds associated with chronic
+respiratory diseases, with a particular focus on Chronic Obstructive Pulmonary
+Disease (COPD). A Convolutional Neural Network (CNN) is trained on
+time-frequency representations of cough signals, and occlusion maps are used to
+identify diagnostically relevant regions within the spectrograms. These
+highlighted areas are subsequently decomposed into five frequency subbands,
+enabling targeted spectral feature extraction and analysis. The results reveal
+that spectral patterns differ across subbands and disease groups, uncovering
+complementary and compensatory trends across the frequency spectrum.
+Noteworthy, the approach distinguishes COPD from other respiratory conditions,
+and chronic from non-chronic patient groups, based on interpretable spectral
+markers. These findings provide insight into the underlying pathophysiological
+characteristics of cough acoustics and demonstrate the value of
+frequency-resolved, XAI-enhanced analysis for biomedical signal interpretation
+and translational respiratory disease diagnostics.</p></br><a href="http://arxiv.org/pdf/2508.15198v1" target="_blank"><h2>Frequency-adaptive tensor neural networks for high-dimensional
+  multi-scale problems</h2></a><strong><u>Authors:</u></strong>  Jizu Huang, Rukang You, Tao Zhou</br><strong><u>Categories:</u></strong> cs.LG, math-ph, math.MP</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Tensor neural networks (TNNs) have demonstrated their superiority in solving
+high-dimensional problems. However, similar to conventional neural networks,
+TNNs are also influenced by the Frequency Principle, which limits their ability
+to accurately capture high-frequency features of the solution. In this work, we
+analyze the training dynamics of TNNs by Fourier analysis and enhance their
+expressivity for high-dimensional multi-scale problems by incorporating random
+Fourier features. Leveraging the inherent tensor structure of TNNs, we further
+propose a novel approach to extract frequency features of high-dimensional
+functions by performing the Discrete Fourier Transform to one-dimensional
+component functions. This strategy effectively mitigates the curse of
+dimensionality. Building on this idea, we propose a frequency-adaptive TNNs
+algorithm, which significantly improves the ability of TNNs in solving complex
+multi-scale problems. Extensive numerical experiments are performed to validate
+the effectiveness and robustness of the proposed frequency-adaptive TNNs
+algorithm.</p></br><a href="http://arxiv.org/pdf/2508.16157v1" target="_blank"><h2>Beyond Human-prompting: Adaptive Prompt Tuning with Semantic Alignment
+  for Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Pi-Wei Chen, Jerry Chun-Wei Lin, Wei-Han Chen, Jia Ji, Zih-Ching Chen, Feng-Hao Yeh, Chao-Chun Chen</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Pre-trained Vision-Language Models (VLMs) have recently shown promise in
+detecting anomalies. However, previous approaches are fundamentally limited by
+their reliance on human-designed prompts and the lack of accessible anomaly
+samples, leading to significant gaps in context-specific anomaly understanding.
+In this paper, we propose \textbf{A}daptive \textbf{P}rompt \textbf{T}uning
+with semantic alignment for anomaly detection (APT), a groundbreaking prior
+knowledge-free, few-shot framework and overcomes the limitations of traditional
+prompt-based approaches. APT uses self-generated anomaly samples with noise
+perturbations to train learnable prompts that capture context-dependent
+anomalies in different scenarios. To prevent overfitting to synthetic noise, we
+propose a Self-Optimizing Meta-prompt Guiding Scheme (SMGS) that iteratively
+aligns the prompts with general anomaly semantics while incorporating diverse
+synthetic anomaly. Our system not only advances pixel-wise anomaly detection,
+but also achieves state-of-the-art performance on multiple benchmark datasets
+without requiring prior knowledge for prompt crafting, establishing a robust
+and versatile solution for real-world anomaly detection.</p></br><a href="http://arxiv.org/pdf/2508.16521v1" target="_blank"><h2>Guiding Diffusion Models with Reinforcement Learning for Stable Molecule
+  Generation</h2></a><strong><u>Authors:</u></strong>  Zhijian Zhou, Junyi An, Zongkai Liu, Yunfei Shi, Xuan Zhang, Fenglei Cao, Chao Qu, Yuan Qi</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Generating physically realistic 3D molecular structures remains a core
+challenge in molecular generative modeling. While diffusion models equipped
+with equivariant neural networks have made progress in capturing molecular
+geometries, they often struggle to produce equilibrium structures that adhere
+to physical principles such as force field consistency. To bridge this gap, we
+propose Reinforcement Learning with Physical Feedback (RLPF), a novel framework
+that extends Denoising Diffusion Policy Optimization to 3D molecular
+generation. RLPF formulates the task as a Markov decision process and applies
+proximal policy optimization to fine-tune equivariant diffusion models.
+Crucially, RLPF introduces reward functions derived from force-field
+evaluations, providing direct physical feedback to guide the generation toward
+energetically stable and physically meaningful structures. Experiments on the
+QM9 and GEOM-drug datasets demonstrate that RLPF significantly improves
+molecular stability compared to existing methods. These results highlight the
+value of incorporating physics-based feedback into generative modeling. The
+code is available at: https://github.com/ZhijianZhou/RLPF/tree/verl_diffusion.</p></br><a href="http://arxiv.org/pdf/2508.15719v1" target="_blank"><h2>Tutorial on the Probabilistic Unification of Estimation Theory, Machine
+  Learning, and Generative AI</h2></a><strong><u>Authors:</u></strong>  Mohammed Elmusrati</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Extracting meaning from uncertain, noisy data is a fundamental problem across
+time series analysis, pattern recognition, and language modeling. This survey
+presents a unified mathematical framework that connects classical estimation
+theory, statistical inference, and modern machine learning, including deep
+learning and large language models. By analyzing how techniques such as maximum
+likelihood estimation, Bayesian inference, and attention mechanisms address
+uncertainty, the paper illustrates that many AI methods are rooted in shared
+probabilistic principles. Through illustrative scenarios including system
+identification, image classification, and language generation, we show how
+increasingly complex models build upon these foundations to tackle practical
+challenges like overfitting, data sparsity, and interpretability. In other
+words, the work demonstrates that maximum likelihood, MAP estimation, Bayesian
+classification, and deep learning all represent different facets of a shared
+goal: inferring hidden causes from noisy and/or biased observations. It serves
+as both a theoretical synthesis and a practical guide for students and
+researchers navigating the evolving landscape of machine learning.</p></br></body>

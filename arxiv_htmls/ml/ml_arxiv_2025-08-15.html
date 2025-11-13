@@ -1,0 +1,181 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 13 Aug 2025 to 15 Aug 2025</em></font><a href="http://arxiv.org/pdf/2508.10785v1" target="_blank"><h2>Enhancing Fairness in Autoencoders for Node-Level Graph Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Shouju Wang, Yuchen Song, Sheng'en Li, Dongmian Zou</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> Accepted in ECAI-2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph anomaly detection (GAD) has become an increasingly important task
+across various domains. With the rapid development of graph neural networks
+(GNNs), GAD methods have achieved significant performance improvements.
+However, fairness considerations in GAD remain largely underexplored. Indeed,
+GNN-based GAD models can inherit and amplify biases present in training data,
+potentially leading to unfair outcomes. While existing efforts have focused on
+developing fair GNNs, most approaches target node classification tasks, where
+models often rely on simple layer architectures rather than autoencoder-based
+structures, which are the most widely used architecturs for anomaly detection.
+To address fairness in autoencoder-based GAD models, we propose
+\textbf{D}is\textbf{E}ntangled \textbf{C}ounterfactual \textbf{A}dversarial
+\textbf{F}air (DECAF)-GAD, a framework that alleviates bias while preserving
+GAD performance. Specifically, we introduce a structural causal model (SCM) to
+disentangle sensitive attributes from learned representations. Based on this
+causal framework, we formulate a specialized autoencoder architecture along
+with a fairness-guided loss function. Through extensive experiments on both
+synthetic and real-world datasets, we demonstrate that DECAF-GAD not only
+achieves competitive anomaly detection performance but also significantly
+enhances fairness metrics compared to baseline GAD methods. Our code is
+available at https://github.com/Tlhey/decaf_code.</p></br><a href="http://arxiv.org/pdf/2508.11752v1" target="_blank"><h2>The Wrath of KAN: Enabling Fast, Accurate, and Transparent Emulation of
+  the Global 21 cm Cosmology Signal</h2></a><strong><u>Authors:</u></strong>  J. Dorigo Jones, B. Reyes, D. Rapetti, Shah Mohammad Bahauddin, J. O. Burns, D. W. Barker</br><strong><u>Categories:</u></strong> astro-ph.CO, astro-ph.GA, astro-ph.IM</br><strong><u>Comments:</u></strong> 20 pages, 13 figures, 3 tables. Accepted by ApJ. Code available atthis https URL</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Based on the Kolmogorov-Arnold Network (KAN), we present a novel emulator of
+the global 21 cm cosmology signal, $\texttt{21cmKAN}$, that provides extremely
+fast training speed while achieving nearly equivalent accuracy to the most
+accurate emulator to date, $\texttt{21cmLSTM}$. The combination of enhanced
+speed and accuracy facilitated by $\texttt{21cmKAN}$ enables rapid and highly
+accurate physical parameter estimation analyses of multiple 21 cm models, which
+is needed to fully characterize the complex feature space across models and
+produce robust constraints on the early universe. Rather than using static
+functions to model complex relationships like traditional fully-connected
+neural networks do, KANs learn expressive transformations that can perform
+significantly better for low-dimensional physical problems. $\texttt{21cmKAN}$
+predicts a given signal for two well-known models in the community in 3.7 ms on
+average and trains about 75 times faster than $\texttt{21cmLSTM}$, when
+utilizing the same typical GPU. $\texttt{21cmKAN}$ is able to achieve these
+speeds because of its learnable, data-driven transformations and its relatively
+small number of trainable parameters compared to a memory-based emulator. We
+show that $\texttt{21cmKAN}$ required less than 30 minutes to train and fit
+these simulated signals and obtain unbiased posterior distributions. We find
+that the transparent architecture of $\texttt{21cmKAN}$ allows us to
+conveniently interpret and further validate its emulation results in terms of
+the sensitivity of the 21 cm signal to each physical parameter. This work
+demonstrates the effectiveness of KANs and their ability to more quickly and
+accurately mimic expensive physical simulations in comparison to other types of
+neural networks.</p></br><a href="http://arxiv.org/pdf/2508.11711v1" target="_blank"><h2>Enhancing GraphQL Security by Detecting Malicious Queries Using Large
+  Language Models, Sentence Transformers, and Convolutional Neural Networks</h2></a><strong><u>Authors:</u></strong>  Irash Perera, Hiranya Abeyrathne, Sanjeewa Malalgoda, Arshardh Ifthikar</br><strong><u>Categories:</u></strong> cs.CR, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> GraphQL's flexibility, while beneficial for efficient data fetching,
+introduces unique security vulnerabilities that traditional API security
+mechanisms often fail to address. Malicious GraphQL queries can exploit the
+language's dynamic nature, leading to denial-of-service attacks, data
+exfiltration through injection, and other exploits. Existing solutions, such as
+static analysis, rate limiting, and general-purpose Web Application Firewalls,
+offer limited protection against sophisticated, context-aware attacks. This
+paper presents a novel, AI-driven approach for real-time detection of malicious
+GraphQL queries. Our method combines static analysis with machine learning
+techniques, including Large Language Models (LLMs) for dynamic schema-based
+configuration, Sentence Transformers (SBERT and Doc2Vec) for contextual
+embedding of query payloads, and Convolutional Neural Networks (CNNs), Random
+Forests, and Multilayer Perceptrons for classification. We detail the system
+architecture, implementation strategies optimized for production environments
+(including ONNX Runtime optimization and parallel processing), and evaluate the
+performance of our detection models and the overall system under load. Results
+demonstrate high accuracy in detecting various threats, including SQL
+injection, OS command injection, and XSS exploits, alongside effective
+mitigation of DoS and SSRF attempts. This research contributes a robust and
+adaptable solution for enhancing GraphQL API security.</p></br><a href="http://arxiv.org/pdf/2508.14088v1" target="_blank"><h2>CoBAD: Modeling Collective Behaviors for Human Mobility Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Haomin Wen, Shurui Cao, Leman Akoglu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.SI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Detecting anomalies in human mobility is essential for applications such as
+public safety and urban planning. While traditional anomaly detection methods
+primarily focus on individual movement patterns (e.g., a child should stay at
+home at night), collective anomaly detection aims to identify irregularities in
+collective mobility behaviors across individuals (e.g., a child is at home
+alone while the parents are elsewhere) and remains an underexplored challenge.
+Unlike individual anomalies, collective anomalies require modeling
+spatiotemporal dependencies between individuals, introducing additional
+complexity. To address this gap, we propose CoBAD, a novel model designed to
+capture Collective Behaviors for human mobility Anomaly Detection. We first
+formulate the problem as unsupervised learning over Collective Event Sequences
+(CES) with a co-occurrence event graph, where CES represents the event
+sequences of related individuals. CoBAD then employs a two-stage attention
+mechanism to model both the individual mobility patterns and the interactions
+across multiple individuals. Pre-trained on large-scale collective behavior
+data through masked event and link reconstruction tasks, CoBAD is able to
+detect two types of collective anomalies: unexpected co-occurrence anomalies
+and absence anomalies, the latter of which has been largely overlooked in prior
+work. Extensive experiments on large-scale mobility datasets demonstrate that
+CoBAD significantly outperforms existing anomaly detection baselines, achieving
+an improvement of 13%-18% in AUCROC and 19%-70% in AUCPR. All source code is
+available at https://github.com/wenhaomin/CoBAD.</p></br><a href="http://arxiv.org/pdf/2508.10147v1" target="_blank"><h2>rETF-semiSL: Semi-Supervised Learning for Neural Collapse in Temporal
+  Data</h2></a><strong><u>Authors:</u></strong>  Yuhan Xie, William Cappelletti, Mahsa Shoaran, Pascal Frossard</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07</br><strong><u>Comments:</u></strong> 12 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Deep neural networks for time series must capture complex temporal patterns,
+to effectively represent dynamic data. Self- and semi-supervised learning
+methods show promising results in pre-training large models, which -- when
+finetuned for classification -- often outperform their counterparts trained
+from scratch. Still, the choice of pretext training tasks is often heuristic
+and their transferability to downstream classification is not granted, thus we
+propose a novel semi-supervised pre-training strategy to enforce latent
+representations that satisfy the Neural Collapse phenomenon observed in
+optimally trained neural classifiers. We use a rotational equiangular tight
+frame-classifier and pseudo-labeling to pre-train deep encoders with few
+labeled samples. Furthermore, to effectively capture temporal dynamics while
+enforcing embedding separability, we integrate generative pretext tasks with
+our method, and we define a novel sequential augmentation strategy. We show
+that our method significantly outperforms previous pretext tasks when applied
+to LSTMs, transformers, and state-space models on three multivariate time
+series classification datasets. These results highlight the benefit of aligning
+pre-training objectives with theoretically grounded embedding geometry.</p></br><a href="http://arxiv.org/pdf/2508.11513v1" target="_blank"><h2>Towards Faithful Class-level Self-explainability in Graph Neural
+  Networks by Subgraph Dependencies</h2></a><strong><u>Authors:</u></strong>  Fanzhen Liu, Xiaoxiao Ma, Jian Yang, Alsharif Abuadbba, Kristen Moore, Surya Nepal, Cecile Paris, Quan Z. Sheng, Jia Wu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 14 pages, 12 figures</br><strong><u>Matching Keywords:</u></strong> explainability (title, abstract), explainable (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Enhancing the interpretability of graph neural networks (GNNs) is crucial to
+ensure their safe and fair deployment. Recent work has introduced
+self-explainable GNNs that generate explanations as part of training, improving
+both faithfulness and efficiency. Some of these models, such as ProtGNN and
+PGIB, learn class-specific prototypes, offering a potential pathway toward
+class-level explanations. However, their evaluations focus solely on
+instance-level explanations, leaving open the question of whether these
+prototypes meaningfully generalize across instances of the same class. In this
+paper, we introduce GraphOracle, a novel self-explainable GNN framework
+designed to generate and evaluate class-level explanations for GNNs. Our model
+jointly learns a GNN classifier and a set of structured, sparse subgraphs that
+are discriminative for each class. We propose a novel integrated training that
+captures graph$\unicode{x2013}$subgraph$\unicode{x2013}$prediction dependencies
+efficiently and faithfully, validated through a masking-based evaluation
+strategy. This strategy enables us to retroactively assess whether prior
+methods like ProtGNN and PGIB deliver effective class-level explanations. Our
+results show that they do not. In contrast, GraphOracle achieves superior
+fidelity, explainability, and scalability across a range of graph
+classification tasks. We further demonstrate that GraphOracle avoids the
+computational bottlenecks of previous methods$\unicode{x2014}$like Monte Carlo
+Tree Search$\unicode{x2014}$by using entropy-regularized subgraph selection and
+lightweight random walk extraction, enabling faster and more scalable training.
+These findings position GraphOracle as a practical and principled solution for
+faithful class-level self-explainability in GNNs.</p></br><a href="http://arxiv.org/pdf/2508.10210v3" target="_blank"><h2>An Explainable AI based approach for Monitoring Animal Health</h2></a><strong><u>Authors:</u></strong>  Rahul Jana, Shubham Dixit, Mrityunjay Sharma, Ritesh Kumar</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Monitoring cattle health and optimizing yield are key challenges faced by
+dairy farmers due to difficulties in tracking all animals on the farm. This
+work aims to showcase modern data-driven farming practices based on explainable
+machine learning(ML) methods that explain the activity and behaviour of dairy
+cattle (cows). Continuous data collection of 3-axis accelerometer sensors and
+usage of robust ML methodologies and algorithms, provide farmers and
+researchers with actionable information on cattle activity, allowing farmers to
+make informed decisions and incorporate sustainable practices. This study
+utilizes Bluetooth-based Internet of Things (IoT) devices and 4G networks for
+seamless data transmission, immediate analysis, inference generation, and
+explains the models performance with explainability frameworks. Special
+emphasis is put on the pre-processing of the accelerometers time series data,
+including the extraction of statistical characteristics, signal processing
+techniques, and lag-based features using the sliding window technique. Various
+hyperparameter-optimized ML models are evaluated across varying window lengths
+for activity classification. The k-nearest neighbour Classifier achieved the
+best performance, with AUC of mean 0.98 and standard deviation of 0.0026 on the
+training set and 0.99 on testing set). In order to ensure transparency,
+Explainable AI based frameworks such as SHAP is used to interpret feature
+importance that can be understood and used by practitioners. A detailed
+comparison of the important features, along with the stability analysis of
+selected features, supports development of explainable and practical ML models
+for sustainable livestock management.</p></br><a href="http://arxiv.org/pdf/2508.10594v2" target="_blank"><h2>FreeGAD: A Training-Free yet Effective Approach for Graph Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Yunfeng Zhao, Yixin Liu, Shiyuan Li, Qingfeng Chen, Yu Zheng, Shirui Pan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted by ClKM 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Graph Anomaly Detection (GAD) aims to identify nodes that deviate from the
+majority within a graph, playing a crucial role in applications such as social
+networks and e-commerce. Despite the current advancements in deep
+learning-based GAD, existing approaches often suffer from high deployment costs
+and poor scalability due to their complex and resource-intensive training
+processes. Surprisingly, our empirical findings suggest that the training phase
+of deep GAD methods, commonly perceived as crucial, may actually contribute
+less to anomaly detection performance than expected. Inspired by this, we
+propose FreeGAD, a novel training-free yet effective GAD method. Specifically,
+it leverages an affinity-gated residual encoder to generate anomaly-aware
+representations. Meanwhile, FreeGAD identifies anchor nodes as pseudo-normal
+and anomalous guides, followed by calculating anomaly scores through
+anchor-guided statistical deviations. Extensive experiments demonstrate that
+FreeGAD achieves superior anomaly detection performance, efficiency, and
+scalability on multiple benchmark datasets from diverse domains, without any
+training or iterative optimization.</p></br></body>

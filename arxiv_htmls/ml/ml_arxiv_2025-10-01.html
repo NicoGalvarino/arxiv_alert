@@ -1,0 +1,130 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 29 Sep 2025 to 01 Oct 2025</em></font><a href="http://arxiv.org/pdf/2509.25612v1" target="_blank"><h2>Unsupervised Detection of Spatiotemporal Anomalies in PMU Data Using
+  Transformer-Based BiGAN</h2></a><strong><u>Authors:</u></strong>  Muhammad Imran Hossain, Jignesh Solanki, Sarika Khushlani Solanki</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.SY, eess.SY</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Ensuring power grid resilience requires the timely and unsupervised detection
+of anomalies in synchrophasor data streams. We introduce T-BiGAN, a novel
+framework that integrates window-attention Transformers within a bidirectional
+Generative Adversarial Network (BiGAN) to address this challenge. Its
+self-attention encoder-decoder architecture captures complex spatio-temporal
+dependencies across the grid, while a joint discriminator enforces cycle
+consistency to align the learned latent space with the true data distribution.
+Anomalies are flagged in real-time using an adaptive score that combines
+reconstruction error, latent space drift, and discriminator confidence.
+Evaluated on a realistic hardware-in-the-loop PMU benchmark, T-BiGAN achieves
+an ROC-AUC of 0.95 and an average precision of 0.996, significantly
+outperforming leading supervised and unsupervised methods. It shows particular
+strength in detecting subtle frequency and voltage deviations, demonstrating
+its practical value for live, wide-area monitoring without relying on manually
+labeled fault data.</p></br><a href="http://arxiv.org/pdf/2509.26507v1" target="_blank"><h2>The Dragon Hatchling: The Missing Link between the Transformer and
+  Models of the Brain</h2></a><strong><u>Authors:</u></strong>  Adrian Kosowski, Przemysław Uznański, Jan Chorowski, Zuzanna Stamirowska, Michał Bartoszkiewicz</br><strong><u>Categories:</u></strong> cs.NE, cs.AI, cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Code available at:this https URLAccompanying blog:this https URL</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The relationship between computing systems and the brain has served as
+motivation for pioneering theoreticians since John von Neumann and Alan Turing.
+Uniform, scale-free biological networks, such as the brain, have powerful
+properties, including generalizing over time, which is the main barrier for
+Machine Learning on the path to Universal Reasoning Models.
+  We introduce `Dragon Hatchling' (BDH), a new Large Language Model
+architecture based on a scale-free biologically inspired network of \$n\$
+locally-interacting neuron particles. BDH couples strong theoretical
+foundations and inherent interpretability without sacrificing Transformer-like
+performance.
+  BDH is a practical, performant state-of-the-art attention-based state space
+sequence learning architecture. In addition to being a graph model, BDH admits
+a GPU-friendly formulation. It exhibits Transformer-like scaling laws:
+empirically BDH rivals GPT2 performance on language and translation tasks, at
+the same number of parameters (10M to 1B), for the same training data.
+  BDH can be represented as a brain model. The working memory of BDH during
+inference entirely relies on synaptic plasticity with Hebbian learning using
+spiking neurons. We confirm empirically that specific, individual synapses
+strengthen connection whenever BDH hears or reasons about a specific concept
+while processing language inputs. The neuron interaction network of BDH is a
+graph of high modularity with heavy-tailed degree distribution. The BDH model
+is biologically plausible, explaining one possible mechanism which human
+neurons could use to achieve speech.
+  BDH is designed for interpretability. Activation vectors of BDH are sparse
+and positive. We demonstrate monosemanticity in BDH on language tasks.
+Interpretability of state, which goes beyond interpretability of neurons and
+model parameters, is an inherent feature of the BDH architecture.</p></br><a href="http://arxiv.org/pdf/2509.25278v1" target="_blank"><h2>MAESTRO : Adaptive Sparse Attention and Robust Learning for Multimodal
+  Dynamic Time Series</h2></a><strong><u>Authors:</u></strong>  Payal Mohapatra, Yueyuan Sui, Akash Pandey, Stephen Xia, Qi Zhu</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Accepted to Neurips 2025 (Spotlight)</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> From clinical healthcare to daily living, continuous sensor monitoring across
+multiple modalities has shown great promise for real-world intelligent
+decision-making but also faces various challenges. In this work, we introduce
+MAESTRO, a novel framework that overcomes key limitations of existing
+multimodal learning approaches: (1) reliance on a single primary modality for
+alignment, (2) pairwise modeling of modalities, and (3) assumption of complete
+modality observations. These limitations hinder the applicability of these
+approaches in real-world multimodal time-series settings, where primary
+modality priors are often unclear, the number of modalities can be large
+(making pairwise modeling impractical), and sensor failures often result in
+arbitrary missing observations. At its core, MAESTRO facilitates dynamic intra-
+and cross-modal interactions based on task relevance, and leverages symbolic
+tokenization and adaptive attention budgeting to construct long multimodal
+sequences, which are processed via sparse cross-modal attention. The resulting
+cross-modal tokens are routed through a sparse Mixture-of-Experts (MoE)
+mechanism, enabling black-box specialization under varying modality
+combinations. We evaluate MAESTRO against 10 baselines on four diverse datasets
+spanning three applications, and observe average relative improvements of 4%
+and 8% over the best existing multimodal and multivariate approaches,
+respectively, under complete observations. Under partial observations -- with
+up to 40% of missing modalities -- MAESTRO achieves an average 9% improvement.
+Further analysis also demonstrates the robustness and efficiency of MAESTRO's
+sparse, modality-aware design for learning from dynamic time series.</p></br><a href="http://arxiv.org/pdf/2509.26371v1" target="_blank"><h2>Vector-Valued Reproducing Kernel Banach Spaces for Neural Networks and
+  Operators</h2></a><strong><u>Authors:</u></strong>  Sven Dummer, Tjeerd Jan Heeringa, José A. Iglesias</br><strong><u>Categories:</u></strong> math.FA, cs.AI, cs.LG, stat.ML, 46E15, 68T07, 46G10, 46E22, 46B10, 26B40, G.1.2; G.1.6; I.5.1; I.2.6</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Recently, there has been growing interest in characterizing the function
+spaces underlying neural networks. While shallow and deep scalar-valued neural
+networks have been linked to scalar-valued reproducing kernel Banach spaces
+(RKBS), $\R^d$-valued neural networks and neural operator models remain less
+understood in the RKBS setting. To address this gap, we develop a general
+definition of vector-valued RKBS (vv-RKBS), which inherently includes the
+associated reproducing kernel. Our construction extends existing definitions by
+avoiding restrictive assumptions such as symmetric kernel domains,
+finite-dimensional output spaces, reflexivity, or separability, while still
+recovering familiar properties of vector-valued reproducing kernel Hilbert
+spaces (vv-RKHS). We then show that shallow $\R^d$-valued neural networks are
+elements of a specific vv-RKBS, namely an instance of the integral and neural
+vv-RKBS. To also explore the functional structure of neural operators, we
+analyze the DeepONet and Hypernetwork architectures and demonstrate that they
+too belong to an integral and neural vv-RKBS. In all cases, we establish a
+Representer Theorem, showing that optimization over these function spaces
+recovers the corresponding neural architectures.</p></br><a href="http://arxiv.org/pdf/2509.25647v1" target="_blank"><h2>BaB-prob: Branch and Bound with Preactivation Splitting for
+  Probabilistic Verification of Neural Networks</h2></a><strong><u>Authors:</u></strong>  Fangji Wang, Panagiotis Tsiotras</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Branch-and-bound with preactivation splitting has been shown highly effective
+for deterministic verification of neural networks. In this paper, we extend
+this framework to the probabilistic setting. We propose BaB-prob that
+iteratively divides the original problem into subproblems by splitting
+preactivations and leverages linear bounds computed by linear bound propagation
+to bound the probability for each subproblem. We prove soundness and
+completeness of BaB-prob for feedforward-ReLU neural networks. Furthermore, we
+introduce the notion of uncertainty level and design two efficient strategies
+for preactivation splitting, yielding BaB-prob-ordered and BaB+BaBSR-prob. We
+evaluate BaB-prob on untrained networks, MNIST and CIFAR-10 models,
+respectively, and VNN-COMP 2025 benchmarks. Across these settings, our approach
+consistently outperforms state-of-the-art approaches in medium- to
+high-dimensional input problems.</p></br><a href="http://arxiv.org/pdf/2509.25153v1" target="_blank"><h2>High-Dimensional Analysis of Single-Layer Attention for Sparse-Token
+  Classification</h2></a><strong><u>Authors:</u></strong>  Nicholas Barnfield, Hugo Cui, Yue M. Lu</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> When and how can an attention mechanism learn to selectively attend to
+informative tokens, thereby enabling detection of weak, rare, and sparsely
+located features? We address these questions theoretically in a sparse-token
+classification model in which positive samples embed a weak signal vector in a
+randomly chosen subset of tokens, whereas negative samples are pure noise. In
+the long-sequence limit, we show that a simple single-layer attention
+classifier can in principle achieve vanishing test error when the signal
+strength grows only logarithmically in the sequence length $L$, whereas linear
+classifiers require $\sqrt{L}$ scaling. Moving from representational power to
+learnability, we study training at finite $L$ in a high-dimensional regime,
+where sample size and embedding dimension grow proportionally. We prove that
+just two gradient updates suffice for the query weight vector of the attention
+classifier to acquire a nontrivial alignment with the hidden signal, inducing
+an attention map that selectively amplifies informative tokens. We further
+derive an exact asymptotic expression for the test error and training loss of
+the trained attention-based classifier, and quantify its capacity -- the
+largest dataset size that is typically perfectly separable -- thereby
+explaining the advantage of adaptive token selection over nonadaptive linear
+baselines.</p></br></body>

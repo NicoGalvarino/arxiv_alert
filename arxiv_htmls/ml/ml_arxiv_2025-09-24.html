@@ -1,0 +1,174 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 22 Sep 2025 to 24 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.18386v1" target="_blank"><h2>Graph Enhanced Trajectory Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Jonathan Kabala Mbuya, Dieter Pfoser, Antonios Anastasopoulos</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Trajectory anomaly detection is essential for identifying unusual and
+unexpected movement patterns in applications ranging from intelligent
+transportation systems to urban safety and fraud prevention.
+  Existing methods only consider limited aspects of the trajectory nature and
+its movement space by treating trajectories as sequences of sampled locations,
+with sampling determined by positioning technology, e.g., GPS, or by high-level
+abstractions such as staypoints. Trajectories are analyzed in Euclidean space,
+neglecting the constraints and connectivity information of the underlying
+movement network, e.g., road or transit networks.
+  The proposed Graph Enhanced Trajectory Anomaly Detection (GETAD) framework
+tightly integrates road network topology, segment semantics, and historical
+travel patterns to model trajectory data. GETAD uses a Graph Attention Network
+to learn road-aware embeddings that capture both physical attributes and
+transition behavior, and augments these with graph-based positional encodings
+that reflect the spatial layout of the road network.
+  A Transformer-based decoder models sequential movement, while a
+multiobjective loss function combining autoregressive prediction and supervised
+link prediction ensures realistic and structurally coherent representations.
+  To improve the robustness of anomaly detection, we introduce Confidence
+Weighted Negative Log Likelihood (CW NLL), an anomaly scoring function that
+emphasizes high-confidence deviations.
+  Experiments on real-world and synthetic datasets demonstrate that GETAD
+achieves consistent improvements over existing methods, particularly in
+detecting subtle anomalies in road-constrained environments. These results
+highlight the benefits of incorporating graph structure and contextual
+semantics into trajectory modeling, enabling more precise and context-aware
+anomaly detection.</p></br><a href="http://arxiv.org/pdf/2509.18568v1" target="_blank"><h2>Explainable Graph Neural Networks: Understanding Brain Connectivity and
+  Biomarkers in Dementia</h2></a><strong><u>Authors:</u></strong>  Niharika Tewari, Nguyen Linh Dan Le, Mujie Liu, Jing Ren, Ziqi Xu, Tabinda Sarwar, Veeky Baths, Feng Xia</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Dementia is a progressive neurodegenerative disorder with multiple
+etiologies, including Alzheimer's disease, Parkinson's disease, frontotemporal
+dementia, and vascular dementia. Its clinical and biological heterogeneity
+makes diagnosis and subtype differentiation highly challenging. Graph Neural
+Networks (GNNs) have recently shown strong potential in modeling brain
+connectivity, but their limited robustness, data scarcity, and lack of
+interpretability constrain clinical adoption. Explainable Graph Neural Networks
+(XGNNs) have emerged to address these barriers by combining graph-based
+learning with interpretability, enabling the identification of disease-relevant
+biomarkers, analysis of brain network disruptions, and provision of transparent
+insights for clinicians. This paper presents the first comprehensive review
+dedicated to XGNNs in dementia research. We examine their applications across
+Alzheimer's disease, Parkinson's disease, mild cognitive impairment, and
+multi-disease diagnosis. A taxonomy of explainability methods tailored for
+dementia-related tasks is introduced, alongside comparisons of existing models
+in clinical scenarios. We also highlight challenges such as limited
+generalizability, underexplored domains, and the integration of Large Language
+Models (LLMs) for early detection. By outlining both progress and open
+problems, this review aims to guide future work toward trustworthy, clinically
+meaningful, and scalable use of XGNNs in dementia research.</p></br><a href="http://arxiv.org/pdf/2509.18354v1" target="_blank"><h2>A Single Image Is All You Need: Zero-Shot Anomaly Localization Without
+  Training Data</h2></a><strong><u>Authors:</u></strong>  Mehrdad Moradi, Shengzhe Chen, Hao Yan, Kamran Paynabar</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, eess.IV, 62H35, 68T07, 62M40, 68T45, I.2.6; I.2.10; I.4.6; I.4.8; I.5.1; I.5.4</br><strong><u>Comments:</u></strong> 12 pages, 10 figures, 1 table. Preprint submitted to a CVF conference</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in images is typically addressed by learning from
+collections of training data or relying on reference samples. In many
+real-world scenarios, however, such training data may be unavailable, and only
+the test image itself is provided. We address this zero-shot setting by
+proposing a single-image anomaly localization method that leverages the
+inductive bias of convolutional neural networks, inspired by Deep Image Prior
+(DIP). Our method is named Single Shot Decomposition Network (SSDnet). Our key
+assumption is that natural images often exhibit unified textures and patterns,
+and that anomalies manifest as localized deviations from these repetitive or
+stochastic patterns. To learn the deep image prior, we design a patch-based
+training framework where the input image is fed directly into the network for
+self-reconstruction, rather than mapping random noise to the image as done in
+DIP. To avoid the model simply learning an identity mapping, we apply masking,
+patch shuffling, and small Gaussian noise. In addition, we use a perceptual
+loss based on inner-product similarity to capture structure beyond pixel
+fidelity. Our approach needs no external training data, labels, or references,
+and remains robust in the presence of noise or missing pixels. SSDnet achieves
+0.99 AUROC and 0.60 AUPRC on MVTec-AD and 0.98 AUROC and 0.67 AUPRC on the
+fabric dataset, outperforming state-of-the-art methods. The implementation code
+will be released at https://github.com/mehrdadmoradi124/SSDnet</p></br><a href="http://arxiv.org/pdf/2509.18221v1" target="_blank"><h2>Multimodal Health Risk Prediction System for Chronic Diseases via
+  Vision-Language Fusion and Large Language Models</h2></a><strong><u>Authors:</u></strong>  Dingxin Lu, Shurui Wu, Xinyi Huang</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> With the rising global burden of chronic diseases and the multimodal and
+heterogeneous clinical data (medical imaging, free-text recordings, wearable
+sensor streams, etc.), there is an urgent need for a unified multimodal AI
+framework that can proactively predict individual health risks. We propose
+VL-RiskFormer, a hierarchical stacked visual-language multimodal Transformer
+with a large language model (LLM) inference head embedded in its top layer. The
+system builds on the dual-stream architecture of existing visual-linguistic
+models (e.g., PaLM-E, LLaVA) with four key innovations: (i) pre-training with
+cross-modal comparison and fine-grained alignment of radiological images,
+fundus maps, and wearable device photos with corresponding clinical narratives
+using momentum update encoders and debiased InfoNCE losses; (ii) a time fusion
+block that integrates irregular visit sequences into the causal Transformer
+decoder through adaptive time interval position coding; (iii) a disease
+ontology map adapter that injects ICD-10 codes into visual and textual channels
+in layers and infers comorbid patterns with the help of a graph attention
+mechanism. On the MIMIC-IV longitudinal cohort, VL-RiskFormer achieved an
+average AUROC of 0.90 with an expected calibration error of 2.7 percent.</p></br><a href="http://arxiv.org/pdf/2509.18469v1" target="_blank"><h2>Probabilistic Geometric Principal Component Analysis with application to
+  neural data</h2></a><strong><u>Authors:</u></strong>  Han-Lin Hsieh, Maryam M. Shanechi</br><strong><u>Categories:</u></strong> cs.LG, q-bio.NC, stat.ML</br><strong><u>Comments:</u></strong> Published at the International Conference on Learning Representations (ICLR) 2025. Code is available at GitHubthis https URL</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), dimensionality reduction (abstract)</br><p><strong><u>Abstract:</u></strong> Dimensionality reduction is critical across various domains of science
+including neuroscience. Probabilistic Principal Component Analysis (PPCA) is a
+prominent dimensionality reduction method that provides a probabilistic
+approach unlike the deterministic approach of PCA and serves as a connection
+between PCA and Factor Analysis (FA). Despite their power, PPCA and its
+extensions are mainly based on linear models and can only describe the data in
+a Euclidean coordinate system. However, in many neuroscience applications, data
+may be distributed around a nonlinear geometry (i.e., manifold) rather than
+lying in the Euclidean space. We develop Probabilistic Geometric Principal
+Component Analysis (PGPCA) for such datasets as a new dimensionality reduction
+algorithm that can explicitly incorporate knowledge about a given nonlinear
+manifold that is first fitted from these data. Further, we show how in addition
+to the Euclidean coordinate system, a geometric coordinate system can be
+derived for the manifold to capture the deviations of data from the manifold
+and noise. We also derive a data-driven EM algorithm for learning the PGPCA
+model parameters. As such, PGPCA generalizes PPCA to better describe data
+distributions by incorporating a nonlinear manifold geometry. In simulations
+and brain data analyses, we show that PGPCA can effectively model the data
+distribution around various given manifolds and outperforms PPCA for such data.
+Moreover, PGPCA provides the capability to test whether the new geometric
+coordinate system better describes the data than the Euclidean one. Finally,
+PGPCA can perform dimensionality reduction and learn the data distribution both
+around and on the manifold. These capabilities make PGPCA valuable for
+enhancing the efficacy of dimensionality reduction for analysis of
+high-dimensional data that exhibit noise and are distributed around a nonlinear
+manifold.</p></br><a href="http://arxiv.org/pdf/2509.18744v1" target="_blank"><h2>Theory of periodic convolutional neural network</h2></a><strong><u>Authors:</u></strong>  Yuqing Liu</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We introduce a novel convolutional neural network architecture, termed the
+\emph{periodic CNN}, which incorporates periodic boundary conditions into the
+convolutional layers. Our main theoretical contribution is a rigorous
+approximation theorem: periodic CNNs can approximate ridge functions depending
+on $d-1$ linear variables in a $d$-dimensional input space, while such
+approximation is impossible in lower-dimensional ridge settings ($d-2$ or fewer
+variables). This result establishes a sharp characterization of the expressive
+power of periodic CNNs. Beyond the theory, our findings suggest that periodic
+CNNs are particularly well-suited for problems where data naturally admits a
+ridge-like structure of high intrinsic dimension, such as image analysis on
+wrapped domains, physics-informed learning, and materials science. The work
+thus both expands the mathematical foundation of CNN approximation theory and
+highlights a class of architectures with surprising and practically relevant
+approximation capabilities.</p></br><a href="http://arxiv.org/pdf/2509.19112v1" target="_blank"><h2>Towards Practical Multi-label Causal Discovery in High-Dimensional Event
+  Sequences via One-Shot Graph Aggregation</h2></a><strong><u>Authors:</u></strong>  Hugo Math, Rainer Lienhart</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted at NeuRIPS2025 Workshop on Structured Probabilistic Inference and Generative Modeling</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding causality in event sequences where outcome labels such as
+diseases or system failures arise from preceding events like symptoms or error
+codes is critical. Yet remains an unsolved challenge across domains like
+healthcare or vehicle diagnostics. We introduce CARGO, a scalable multi-label
+causal discovery method for sparse, high-dimensional event sequences comprising
+of thousands of unique event types. Using two pretrained causal Transformers as
+domain-specific foundation models for event sequences. CARGO infers in
+parallel, per sequence one-shot causal graphs and aggregates them using an
+adaptive frequency fusion to reconstruct the global Markov boundaries of
+labels. This two-stage approach enables efficient probabilistic reasoning at
+scale while bypassing the intractable cost of full-dataset conditional
+independence testing. Our results on a challenging real-world automotive fault
+prediction dataset with over 29,100 unique event types and 474 imbalanced
+labels demonstrate CARGO's ability to perform structured reasoning.</p></br><a href="http://arxiv.org/pdf/2509.18484v1" target="_blank"><h2>Estimating Heterogeneous Causal Effect on Networks via Orthogonal
+  Learning</h2></a><strong><u>Authors:</u></strong>  Yuanchen Wu, Yubai Yuan</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Estimating causal effects on networks is important for both scientific
+research and practical applications. Unlike traditional settings that assume
+the Stable Unit Treatment Value Assumption (SUTVA), interference allows an
+intervention/treatment on one unit to affect the outcomes of others.
+Understanding both direct and spillover effects is critical in fields such as
+epidemiology, political science, and economics. Causal inference on networks
+faces two main challenges. First, causal effects are typically heterogeneous,
+varying with unit features and local network structure. Second, connected units
+often exhibit dependence due to network homophily, creating confounding between
+structural correlations and causal effects. In this paper, we propose a
+two-stage method to estimate heterogeneous direct and spillover effects on
+networks. The first stage uses graph neural networks to estimate nuisance
+components that depend on the complex network topology. In the second stage, we
+adjust for network confounding using these estimates and infer causal effects
+through a novel attention-based interference model. Our approach balances
+expressiveness and interpretability, enabling downstream tasks such as
+identifying influential neighborhoods and recovering the sign of spillover
+effects. We integrate the two stages using Neyman orthogonalization and
+cross-fitting, which ensures that errors from nuisance estimation contribute
+only at higher order. As a result, our causal effect estimates are robust to
+bias and misspecification in modeling causal effects under network
+dependencies.</p></br></body>

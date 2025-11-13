@@ -1,0 +1,149 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 06 Oct 2025 to 08 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.05919v1" target="_blank"><h2>An Attention-Augmented VAE-BiLSTM Framework for Anomaly Detection in
+  12-Lead ECG Signals</h2></a><strong><u>Authors:</u></strong>  Marc Garreta Basora, Mehmet Oguz Mulayim</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 14 pages, 11 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (title, abstract), convolutional (abstract), anomaly detection (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in 12-lead electrocardiograms (ECGs) is critical for
+identifying deviations associated with cardiovascular disease. This work
+presents a comparative analysis of three autoencoder-based architectures:
+convolutional autoencoder (CAE), variational autoencoder with bidirectional
+long short-term memory (VAE-BiLSTM), and VAE-BiLSTM with multi-head attention
+(VAE-BiLSTM-MHA), for unsupervised anomaly detection in ECGs. To the best of
+our knowledge, this study reports the first application of a VAE-BiLSTM-MHA
+architecture to ECG anomaly detection. All models are trained on normal ECG
+samples to reconstruct non-anomalous cardiac morphology and detect deviations
+indicative of disease. Using a unified preprocessing and evaluation pipeline on
+the public China Physiological Signal Challenge (CPSC) dataset, the
+attention-augmented VAE achieves the best performance, with an AUPRC of 0.81
+and a recall of 0.85 on the held-out test set, outperforming the other
+architectures. To support clinical triage, this model is further integrated
+into an interactive dashboard that visualizes anomaly localization. In
+addition, a performance comparison with baseline models from the literature is
+provided.</p></br><a href="http://arxiv.org/pdf/2510.05235v1" target="_blank"><h2>Interpreting anomaly detection of SDSS spectra</h2></a><strong><u>Authors:</u></strong>  Edgar Ortiz Manrique, Médéric Boquien</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.GA</br><strong><u>Comments:</u></strong> 15 pages, 14 figures, accepted for publication in Astronomy & Astrophysics. The software is publicly available atthis https URL</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> The increasing use of ML in astronomy introduces important questions about
+interpretability. Due to their complexity and non-linear nature, it can be
+challenging to understand their decision-making process. While these models can
+effectively identify unusual spectra, interpreting the physical nature of the
+flagged outliers remains a major challenge. We aim to bridge the gap between
+anomaly detection and physical understanding by combining deep learning with
+interpretable ML (iML) techniques to identify and explain anomalous galaxy
+spectra from SDSS data. We present a flexible framework that uses a variational
+autoencoder to compute multiple anomaly scores, including physically-motivated
+variants of the mean squared error. We adapt the iML LIME algorithm to
+spectroscopic data, systematically explore segmentation and perturbation
+strategies, and compute explanation weights that identify the features most
+responsible for each detection. To uncover population-level trends, we
+normalize the LIME weights and apply clustering to the top 1\% most anomalous
+spectra. Our approach successfully separates instrumental artifacts from
+physically meaningful outliers and groups anomalous spectra into
+astrophysically coherent categories. These include dusty, metal-rich
+starbursts; chemically-enriched H\,II regions with moderate excitation; and
+extreme emission-line galaxies with low metallicity and hard ionizing spectra.
+The explanation weights align with established emission-line diagnostics,
+enabling a physically-grounded taxonomy of spectroscopic anomalies. Our work
+shows that interpretable anomaly detection provides a scalable, transparent,
+and physically meaningful approach to exploring large spectroscopic datasets.
+Our framework opens the door for incorporating interpretability tools into
+quality control, follow-up targeting, and discovery pipelines in current and
+future surveys.</p></br><a href="http://arxiv.org/pdf/2510.05683v1" target="_blank"><h2>QGraphLIME - Explaining Quantum Graph Neural Networks</h2></a><strong><u>Authors:</u></strong>  Haribandhu Jena, Jyotirmaya Shivottam, Subhankar Mishra</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T05, 68T07, 68Q12, I.2.6</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Quantum graph neural networks offer a powerful paradigm for learning on
+graph-structured data, yet their explainability is complicated by
+measurement-induced stochasticity and the combinatorial nature of graph
+structure. In this paper, we introduce QuantumGraphLIME (QGraphLIME), a
+model-agnostic, post-hoc framework that treats model explanations as
+distributions over local surrogates fit on structure-preserving perturbations
+of a graph. By aggregating surrogate attributions together with their
+dispersion, QGraphLIME yields uncertainty-aware node and edge importance
+rankings for quantum graph models. The framework further provides a
+distribution-free, finite-sample guarantee on the size of the surrogate
+ensemble: a Dvoretzky-Kiefer-Wolfowitz bound ensures uniform approximation of
+the induced distribution of a binary class probability at target accuracy and
+confidence under standard independence assumptions. Empirical studies on
+controlled synthetic graphs with known ground truth demonstrate accurate and
+stable explanations, with ablations showing clear benefits of nonlinear
+surrogate modeling and highlighting sensitivity to perturbation design.
+Collectively, these results establish a principled, uncertainty-aware, and
+structure-sensitive approach to explaining quantum graph neural networks, and
+lay the groundwork for scaling to broader architectures and real-world
+datasets, as quantum resources mature. Code is available at
+https://github.com/smlab-niser/qglime.</p></br><a href="http://arxiv.org/pdf/2510.05949v1" target="_blank"><h2>Gaussian Embeddings: How JEPAs Secretly Learn Your Data Density</h2></a><strong><u>Authors:</u></strong>  Randall Balestriero, Nicolas Ballas, Mike Rabbat, Yann LeCun</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Joint Embedding Predictive Architectures (JEPAs) learn representations able
+to solve numerous downstream tasks out-of-the-box. JEPAs combine two
+objectives: (i) a latent-space prediction term, i.e., the representation of a
+slightly perturbed sample must be predictable from the original sample's
+representation, and (ii) an anti-collapse term, i.e., not all samples should
+have the same representation. While (ii) is often considered as an obvious
+remedy to representation collapse, we uncover that JEPAs' anti-collapse term
+does much more--it provably estimates the data density. In short, any
+successfully trained JEPA can be used to get sample probabilities, e.g., for
+data curation, outlier detection, or simply for density estimation. Our
+theoretical finding is agnostic of the dataset and architecture used--in any
+case one can compute the learned probabilities of sample $x$ efficiently and in
+closed-form using the model's Jacobian matrix at $x$. Our findings are
+empirically validated across datasets (synthetic, controlled, and Imagenet) and
+across different Self Supervised Learning methods falling under the JEPA family
+(I-JEPA and DINOv2) and on multimodal models, such as MetaCLIP. We denote the
+method extracting the JEPA learned density as {\bf JEPA-SCORE}.</p></br><a href="http://arxiv.org/pdf/2510.05840v1" target="_blank"><h2>Multimodal Trajectory Representation Learning for Travel Time Estimation</h2></a><strong><u>Authors:</u></strong>  Zhi Liu, Xuyuan Hu, Xiao Han, Zhehao Dai, Zhaolin Deng, Guojiang Shen, Xiangjie Kong</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate travel time estimation (TTE) plays a crucial role in intelligent
+transportation systems. However, it remains challenging due to heterogeneous
+data sources and complex traffic dynamics. Moreover, conventional approaches
+typically convert trajectories into fixed-length representations, neglecting
+the inherent variability of real-world trajectories, which often leads to
+information loss or feature redundancy. To address these challenges, this paper
+introduces the Multimodal Dynamic Trajectory Integration (MDTI) framework--a
+novel multimodal trajectory representation learning approach that integrates
+GPS sequences, grid trajectories, and road network constraints to enhance TTE
+accuracy. MDTI employs modality-specific encoders and a cross-modal interaction
+module to capture complementary spatial, temporal, and topological semantics,
+while a dynamic trajectory modeling mechanism adaptively regulates information
+density for trajectories of varying lengths. Two self-supervised pretraining
+objectives, named contrastive alignment and masked language modeling, further
+strengthen multimodal consistency and contextual understanding. Extensive
+experiments on three real-world datasets demonstrate that MDTI consistently
+outperforms state-of-the-art baselines, confirming its robustness and strong
+generalization abilities. The code is publicly available at:
+https://github.com/freshhxy/MDTI/</p></br><a href="http://arxiv.org/pdf/2510.05329v1" target="_blank"><h2>Tensor-on-tensor Regression Neural Networks for Process Modeling with
+  High-dimensional Data</h2></a><strong><u>Authors:</u></strong>  Qian Wang, Mohammad N. Bisheh, Kamran Paynabar</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Modern sensing and metrology systems now stream terabytes of heterogeneous,
+high-dimensional (HD) data profiles, images, and dense point clouds, whose
+natural representation is multi-way tensors. Understanding such data requires
+regression models that preserve tensor geometry, yet remain expressive enough
+to capture the pronounced nonlinear interactions that dominate many industrial
+and mechanical processes. Existing tensor-based regressors meet the first
+requirement but remain essentially linear. Conversely, conventional neural
+networks offer nonlinearity only after flattening, thereby discarding spatial
+structure and incurring prohibitive parameter counts. This paper introduces a
+Tensor-on-Tensor Regression Neural Network (TRNN) that unifies these two
+paradigms.</p></br><a href="http://arxiv.org/pdf/2510.05562v1" target="_blank"><h2>Generative Dynamic Graph Representation Learning for Conspiracy Spoofing
+  Detection</h2></a><strong><u>Authors:</u></strong>  Sheng Xiang, Yidong Jiang, Yunting Chen, Dawei Cheng, Guoping Zhao, Changjun Jiang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 10 pages, 5 figures, ACM the web conference 2025</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Spoofing detection in financial trading is crucial, especially for
+identifying complex behaviors such as conspiracy spoofing. Traditional
+machine-learning approaches primarily focus on isolated node features, often
+overlooking the broader context of interconnected nodes. Graph-based
+techniques, particularly Graph Neural Networks (GNNs), have advanced the field
+by leveraging relational information effectively. However, in real-world
+spoofing detection datasets, trading behaviors exhibit dynamic, irregular
+patterns. Existing spoofing detection methods, though effective in some
+scenarios, struggle to capture the complexity of dynamic and diverse, evolving
+inter-node relationships. To address these challenges, we propose a novel
+framework called the Generative Dynamic Graph Model (GDGM), which models
+dynamic trading behaviors and the relationships among nodes to learn
+representations for conspiracy spoofing detection. Specifically, our approach
+incorporates the generative dynamic latent space to capture the temporal
+patterns and evolving market conditions. Raw trading data is first converted
+into time-stamped sequences. Then we model trading behaviors using the neural
+ordinary differential equations and gated recurrent units, to generate the
+representation incorporating temporal dynamics of spoofing patterns.
+Furthermore, pseudo-label generation and heterogeneous aggregation techniques
+are employed to gather relevant information and enhance the detection
+performance for conspiratorial spoofing behaviors. Experiments conducted on
+spoofing detection datasets demonstrate that our approach outperforms
+state-of-the-art models in detection accuracy. Additionally, our spoofing
+detection system has been successfully deployed in one of the largest global
+trading markets, further validating the practical applicability and performance
+of the proposed method.</p></br></body>

@@ -1,0 +1,542 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 26 Sep 2025 to 30 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.22889v1" target="_blank"><h2>Convolutional Set Transformer</h2></a><strong><u>Authors:</u></strong>  Federico Chinello, Giacomo Boracchi</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), anomaly detection (abstract), explainability (abstract), transfer learning (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> We introduce the Convolutional Set Transformer (CST), a novel neural
+architecture designed to process image sets of arbitrary cardinality that are
+visually heterogeneous yet share high-level semantics - such as a common
+category, scene, or concept. Existing set-input networks, e.g., Deep Sets and
+Set Transformer, are limited to vector inputs and cannot directly handle 3D
+image tensors. As a result, they must be cascaded with a feature extractor,
+typically a CNN, which encodes images into embeddings before the set-input
+network can model inter-image relationships. In contrast, CST operates directly
+on 3D image tensors, performing feature extraction and contextual modeling
+simultaneously, thereby enabling synergies between the two processes. This
+design yields superior performance in tasks such as Set Classification and Set
+Anomaly Detection and further provides native compatibility with CNN
+explainability methods such as Grad-CAM, unlike competing approaches that
+remain opaque. Finally, we show that CSTs can be pre-trained on large-scale
+datasets and subsequently adapted to new domains and tasks through standard
+Transfer Learning schemes. To support further research, we release CST-15, a
+CST backbone pre-trained on ImageNet
+(https://github.com/chinefed/convolutional-set-transformer).</p></br><a href="http://arxiv.org/pdf/2509.23548v1" target="_blank"><h2>Disentanglement of Variations with Multimodal Generative Modeling</h2></a><strong><u>Authors:</u></strong>  Yijie Zhang, Yiyang Shen, Weiran Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 22 pages, 14 figures, 7 tables</br><strong><u>Matching Keywords:</u></strong> VAE (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal data are prevalent across various domains, and learning robust
+representations of such data is paramount to enhancing generation quality and
+downstream task performance. To handle heterogeneity and interconnections among
+different modalities, recent multimodal generative models extract shared and
+private (modality-specific) information with two separate variables. Despite
+attempts to enforce disentanglement between these two variables, these methods
+struggle with challenging datasets where the likelihood model is insufficient.
+In this paper, we propose Information-disentangled Multimodal VAE (IDMVAE) to
+explicitly address this issue, with rigorous mutual information-based
+regularizations, including cross-view mutual information maximization for
+extracting shared variables, and a cycle-consistency style loss for redundancy
+removal using generative augmentations. We further introduce diffusion models
+to improve the capacity of latent priors. These newly proposed components are
+complementary to each other. Compared to existing approaches, IDMVAE shows a
+clean separation between shared and private information, demonstrating superior
+generation quality and semantic coherence on challenging datasets.</p></br><a href="http://arxiv.org/pdf/2509.24378v1" target="_blank"><h2>AXIS: Explainable Time Series Anomaly Detection with Large Language
+  Models</h2></a><strong><u>Authors:</u></strong>  Tian Lan, Hao Duong Le, Jinbo Li, Wenjun He, Meng Wang, Chenghao Liu, Chen Zhang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Time-series anomaly detection (TSAD) increasingly demands explanations that
+articulate not only if an anomaly occurred, but also what pattern it exhibits
+and why it is anomalous. Leveraging the impressive explanatory capabilities of
+Large Language Models (LLMs), recent works have attempted to treat time series
+as text for explainable TSAD. However, this approach faces a fundamental
+challenge: LLMs operate on discrete tokens and struggle to directly process
+long, continuous signals. Consequently, naive time-to-text serialization
+suffers from a lack of contextual grounding and representation alignment
+between the two modalities. To address this gap, we introduce AXIS, a framework
+that conditions a frozen LLM for nuanced time-series understanding. Instead of
+direct serialization, AXIS enriches the LLM's input with three complementary
+hints derived from the series: (i) a symbolic numeric hint for numerical
+grounding, (ii) a context-integrated, step-aligned hint distilled from a
+pretrained time-series encoder to capture fine-grained dynamics, and (iii) a
+task-prior hint that encodes global anomaly characteristics. Furthermore, to
+facilitate robust evaluation of explainability, we introduce a new benchmark
+featuring multi-format questions and rationales that supervise contextual
+grounding and pattern-level semantics. Extensive experiments, including both
+LLM-based and human evaluations, demonstrate that AXIS yields explanations of
+significantly higher quality and achieves competitive detection accuracy
+compared to general-purpose LLMs, specialized time-series LLMs, and time-series
+Vision Language Models.</p></br><a href="http://arxiv.org/pdf/2509.23901v1" target="_blank"><h2>Interpreting deep learning-based stellar mass estimation via causal
+  analysis and mutual information decomposition</h2></a><strong><u>Authors:</u></strong>  Wei Zhang, Qiufan Lin, Yuan-Sen Ting, Shupei Chen, Hengxin Ruan, Song Li, Yifan Wang</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.GA, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> Accepted at Astronomy & Astrophysics; 23 + 12 pages; 8 + 16 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract)</br><p><strong><u>Abstract:</u></strong> End-to-end deep learning models fed with multi-band galaxy images are
+powerful data-driven tools used to estimate galaxy physical properties in the
+absence of spectroscopy. However, due to a lack of interpretability and the
+associational nature of such models, it is difficult to understand how the
+information additional to integrated photometry (e.g., morphology) contributes
+to the estimation task. Improving our understanding in this field would enable
+further advances into unraveling the physical connections among galaxy
+properties and optimizing data exploitation. Therefore, our work is aimed at
+interpreting the deep learning-based estimation of stellar mass via two
+interpretability techniques: causal analysis and mutual information
+decomposition. The former reveals the causal paths between multiple variables
+beyond nondirectional statistical associations, while the latter quantifies the
+multicomponent contributions (i.e., redundant, unique, and synergistic) of
+different input data to the stellar mass estimation. Using data from the Sloan
+Digital Sky Survey (SDSS) and the Wide-field Infrared Survey Explorer (WISE),
+we obtained meaningful results that provide physical interpretations for
+image-based models. Our work demonstrates the gains from combining deep
+learning with interpretability techniques, and holds promise in promoting more
+data-driven astrophysical research (e.g., astrophysical parameter estimations
+and investigations on complex multivariate physical processes).</p></br><a href="http://arxiv.org/pdf/2509.24716v1" target="_blank"><h2>Discrete Variational Autoencoding via Policy Search</h2></a><strong><u>Authors:</u></strong>  Michael Drolet, Firas Al-Hafez, Aditya Bhatt, Jan Peters, Oleg Arenz</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.RO</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), latent space (abstract), multimodal (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Discrete latent bottlenecks in variational autoencoders (VAEs) offer high bit
+efficiency and can be modeled with autoregressive discrete distributions,
+enabling parameter-efficient multimodal search with transformers. However,
+discrete random variables do not allow for exact differentiable
+parameterization; therefore, discrete VAEs typically rely on approximations,
+such as Gumbel-Softmax reparameterization or straight-through gradient
+estimates, or employ high-variance gradient-free methods such as REINFORCE that
+have had limited success on high-dimensional tasks such as image
+reconstruction. Inspired by popular techniques in policy search, we propose a
+training framework for discrete VAEs that leverages the natural gradient of a
+non-parametric encoder to update the parametric encoder without requiring
+reparameterization. Our method, combined with automatic step size adaptation
+and a transformer-based encoder, scales to challenging datasets such as
+ImageNet and outperforms both approximate reparameterization methods and
+quantization-based discrete autoencoders in reconstructing high-dimensional
+data from compact latent spaces, achieving a 20% improvement on FID Score for
+ImageNet 256.</p></br><a href="http://arxiv.org/pdf/2509.24414v1" target="_blank"><h2>ScatterAD: Temporal-Topological Scattering Mechanism for Time Series
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Tao Yin, Xiaohong Zhang, Shaochen Fu, Zhibin Zhang, Li Huang, Yiyuan Yang, Kaixiang Yang, Meng Yan</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 39th Conference on Neural Information Processing Systems (NeurIPS 2025)</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> One main challenge in time series anomaly detection for industrial IoT lies
+in the complex spatio-temporal couplings within multivariate data. However,
+traditional anomaly detection methods focus on modeling spatial or temporal
+dependencies independently, resulting in suboptimal representation learning and
+limited sensitivity to anomalous dispersion in high-dimensional spaces. In this
+work, we conduct an empirical analysis showing that both normal and anomalous
+samples tend to scatter in high-dimensional space, especially anomalous samples
+are markedly more dispersed. We formalize this dispersion phenomenon as
+scattering, quantified by the mean pairwise distance among sample
+representations, and leverage it as an inductive signal to enhance
+spatio-temporal anomaly detection. Technically, we propose ScatterAD to model
+representation scattering across temporal and topological dimensions. ScatterAD
+incorporates a topological encoder for capturing graph-structured scattering
+and a temporal encoder for constraining over-scattering through mean squared
+error minimization between neighboring time steps. We introduce a contrastive
+fusion mechanism to ensure the complementarity of the learned temporal and
+topological representations. Additionally, we theoretically show that
+maximizing the conditional mutual information between temporal and topological
+views improves cross-view consistency and enhances more discriminative
+representations. Extensive experiments on multiple public benchmarks show that
+ScatterAD achieves state-of-the-art performance on multivariate time series
+anomaly detection. Code is available at this repository:
+https://github.com/jk-sounds/ScatterAD.</p></br><a href="http://arxiv.org/pdf/2509.22761v1" target="_blank"><h2>MILR: Improving Multimodal Image Generation via Test-Time Latent
+  Reasoning</h2></a><strong><u>Authors:</u></strong>  Yapeng Mi, Hengli Li, Yanpeng Zhao, Chenxi Li, Huimin Wu, Xiaojian Ma, Song-Chun Zhu, Ying Nian Wu, Qing Li</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> 21 pages,13 figures,7 tables</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Reasoning-augmented machine learning systems have shown improved performance
+in various domains, including image generation. However, existing
+reasoning-based methods for image generation either restrict reasoning to a
+single modality (image or text) or rely on high-quality reasoning data for
+fine-tuning. To tackle these limitations, we propose MILR, a test-time method
+that jointly reasons over image and text in a unified latent vector space.
+Reasoning in MILR is performed by searching through vector representations of
+discrete image and text tokens. Practically, this is implemented via the policy
+gradient method, guided by an image quality critic. We instantiate MILR within
+the unified multimodal understanding and generation (MUG) framework that
+natively supports language reasoning before image synthesis and thus
+facilitates cross-modal reasoning. The intermediate model outputs, which are to
+be optimized, serve as the unified latent space, enabling MILR to operate
+entirely at test time. We evaluate MILR on GenEval, T2I-CompBench, and WISE,
+achieving state-of-the-art results on all benchmarks. Notably, on
+knowledge-intensive WISE, MILR attains an overall score of 0.63, improving over
+the baseline by 80%. Our further analysis indicates that joint reasoning in the
+unified latent space is the key to its strong performance. Moreover, our
+qualitative studies reveal MILR's non-trivial ability in temporal and cultural
+reasoning, highlighting the efficacy of our reasoning method.</p></br><a href="http://arxiv.org/pdf/2509.24134v1" target="_blank"><h2>ASTROCO: Self-Supervised Conformer-Style Transformers for Light-Curve
+  Embeddings</h2></a><strong><u>Authors:</u></strong>  Antony Tan, Pavlos Protopapas, Martina Cádiz-Leyton, Guillermo Cabrera-Vives, Cristobal Donoso-Oliva, Ignacio Becker</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted at the NeurIPS 2025 Workshop on Machine Learning and the Physical Sciences (ML4PS), camera-ready version in progress</br><strong><u>Matching Keywords:</u></strong> time-domain (abstract), transformer (title), attention (abstract)</br><p><strong><u>Abstract:</u></strong> We present AstroCo, a Conformer-style encoder for irregular stellar light
+curves. By combining attention with depthwise convolutions and gating, AstroCo
+captures both global dependencies and local features. On MACHO R-band, AstroCo
+outperforms Astromer v1 and v2, yielding 70 percent and 61 percent lower error
+respectively and a relative macro-F1 gain of about 7 percent, while producing
+embeddings that transfer effectively to few-shot classification. These results
+highlight AstroCo's potential as a strong and label-efficient foundation for
+time-domain astronomy.</p></br><a href="http://arxiv.org/pdf/2509.24882v1" target="_blank"><h2>Scaling Laws and Spectra of Shallow Neural Networks in the Feature
+  Learning Regime</h2></a><strong><u>Authors:</u></strong>  Leonardo Defilippis, Yizhou Xu, Julius Girardin, Emanuele Troiani, Vittorio Erba, Lenka Zdeborová, Bruno Loureiro, Florent Krzakala</br><strong><u>Categories:</u></strong> cs.LG, cond-mat.dis-nn, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Neural scaling laws underlie many of the recent advances in deep learning,
+yet their theoretical understanding remains largely confined to linear models.
+In this work, we present a systematic analysis of scaling laws for quadratic
+and diagonal neural networks in the feature learning regime. Leveraging
+connections with matrix compressed sensing and LASSO, we derive a detailed
+phase diagram for the scaling exponents of the excess risk as a function of
+sample complexity and weight decay. This analysis uncovers crossovers between
+distinct scaling regimes and plateau behaviors, mirroring phenomena widely
+reported in the empirical neural scaling literature. Furthermore, we establish
+a precise link between these regimes and the spectral properties of the trained
+network weights, which we characterize in detail. As a consequence, we provide
+a theoretical validation of recent empirical observations connecting the
+emergence of power-law tails in the weight spectrum with network generalization
+performance, yielding an interpretation from first principles.</p></br><a href="http://arxiv.org/pdf/2509.24425v1" target="_blank"><h2>BiHDTrans: binary hyperdimensional transformer for efficient
+  multivariate time series classification</h2></a><strong><u>Authors:</u></strong>  Jingtao Zhang, Yi Liu, Qi Shen, Changhong Wang</br><strong><u>Categories:</u></strong> cs.LG, cs.AR</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The proliferation of Internet-of-Things (IoT) devices has led to an
+unprecedented volume of multivariate time series (MTS) data, requiring
+efficient and accurate processing for timely decision-making in
+resource-constrained edge environments. Hyperdimensional (HD) computing, with
+its inherent efficiency and parallelizability, has shown promise in
+classification tasks but struggles to capture complex temporal patterns, while
+Transformers excel at sequence modeling but incur high computational and memory
+overhead. We introduce BiHDTrans, an efficient neurosymbolic binary
+hyperdimensional Transformer that integrates self-attention into the HD
+computing paradigm, unifying the representational efficiency of HD computing
+with the temporal modeling power of Transformers. Empirically, BiHDTrans
+outperforms state-of-the-art (SOTA) HD computing models by at least 14.47% and
+achieves 6.67% higher accuracy on average than SOTA binary Transformers. With
+hardware acceleration on FPGA, our pipelined implementation leverages the
+independent and identically distributed properties of high-dimensional
+representations, delivering 39.4 times lower inference latency than SOTA binary
+Transformers. Theoretical analysis shows that binarizing in holographic
+high-dimensional space incurs significantly less information distortion than
+directly binarizing neural networks, explaining BiHDTrans's superior accuracy.
+Furthermore, dimensionality experiments confirm that BiHDTrans remains
+competitive even with a 64% reduction in hyperspace dimensionality, surpassing
+SOTA binary Transformers by 1-2% in accuracy with 4.4 times less model size, as
+well as further reducing the latency by 49.8% compare to the full-dimensional
+baseline. Together, these contributions bridge the gap between the
+expressiveness of Transformers and the efficiency of HD computing, enabling
+accurate, scalable, and low-latency MTS classification.</p></br><a href="http://arxiv.org/pdf/2509.23552v1" target="_blank"><h2>Fusing Sequence Motifs and Pan-Genomic Features: Antimicrobial
+  Resistance Prediction using an Explainable Lightweight 1D CNN-XGBoost
+  Ensemble</h2></a><strong><u>Authors:</u></strong>  Md. Saiful Bari Siddiqui, Nowshin Tarannum</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, q-bio.GN, q-bio.QM</br><strong><u>Comments:</u></strong> Submitted to SCA/HPCAsia 2026. This preprint version has been prepared for open-access distribution and may differ in formatting from the official proceedings. Also available on bioRxiv for visibility to the life sciences community</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainable (title), neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Antimicrobial Resistance (AMR) is a rapidly escalating global health crisis.
+While genomic sequencing enables rapid prediction of resistance phenotypes,
+current computational methods have limitations. Standard machine learning
+models treat the genome as an unordered collection of features, ignoring the
+sequential context of Single Nucleotide Polymorphisms (SNPs). State-of-the-art
+sequence models like Transformers are often too data-hungry and computationally
+expensive for the moderately-sized datasets that are typical in this domain. To
+address these challenges, we propose AMR-EnsembleNet, an ensemble framework
+that synergistically combines sequence-based and feature-based learning. We
+developed a lightweight, custom 1D Convolutional Neural Network (CNN) to
+efficiently learn predictive sequence motifs from high-dimensional SNP data.
+This sequence-aware model was ensembled with an XGBoost model, a powerful
+gradient boosting system adept at capturing complex, non-local feature
+interactions. We trained and evaluated our framework on a benchmark dataset of
+809 E. coli strains, predicting resistance across four antibiotics with varying
+class imbalance. Our 1D CNN-XGBoost ensemble consistently achieved top-tier
+performance across all the antibiotics, reaching a Matthews Correlation
+Coefficient (MCC) of 0.926 for Ciprofloxacin (CIP) and the highest Macro
+F1-score of 0.691 for the challenging Gentamicin (GEN) AMR prediction. We also
+show that our model consistently focuses on SNPs within well-known AMR genes
+like fusA and parC, confirming it learns the correct genetic signals for
+resistance. Our work demonstrates that fusing a sequence-aware 1D CNN with a
+feature-based XGBoost model creates a powerful ensemble, overcoming the
+limitations of using either an order-agnostic or a standalone sequence model.</p></br><a href="http://arxiv.org/pdf/2509.24789v1" target="_blank"><h2>Fidel-TS: A High-Fidelity Benchmark for Multimodal Time Series
+  Forecasting</h2></a><strong><u>Authors:</u></strong>  Zhijian Xu, Wanxu Cai, Xilin Dai, Zhaorong Deng, Qiang Xu</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> The evaluation of time series forecasting models is hindered by a critical
+lack of high-quality benchmarks, leading to a potential illusion of progress.
+Existing datasets suffer from issues ranging from pre-training data
+contamination in the age of LLMs to the causal and description leakage
+prevalent in early multimodal designs. To address this, we formalize the core
+principles of high-fidelity benchmarking, focusing on data sourcing integrity,
+strict causal soundness, and structural clarity. We introduce Fidel-TS, a new
+large-scale benchmark built from the ground up on these principles by sourcing
+data from live APIs. Our extensive experiments validate this approach by
+exposing the critical biases and design limitations of prior benchmarks.
+Furthermore, we conclusively demonstrate that the causal relevance of textual
+information is the key factor in unlocking genuine performance gains in
+multimodal forecasting.</p></br><a href="http://arxiv.org/pdf/2509.23946v1" target="_blank"><h2>Explore-Execute Chain: Towards an Efficient Structured Reasoning
+  Paradigm</h2></a><strong><u>Authors:</u></strong>  Kaisen Yang, Lixuan He, Rushi Shah, Kaicheng Yang, Qinwei Ma, Dianbo Liu, Alex Lamb</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CL, stat.ML</br><strong><u>Comments:</u></strong> Under review ICLR 2026</br><strong><u>Matching Keywords:</u></strong> domain adaptation (abstract)</br><p><strong><u>Abstract:</u></strong> Chain-of-Thought (CoT) and its variants have markedly advanced the reasoning
+abilities of Large Language Models (LLMs), yet their monolithic and
+auto-regressive architecture inherently conflates high-level strategic planning
+with low-level step-by-step execution, leading to computational inefficiency,
+limited exploration of reasoning paths, and reduced interpretability. To
+overcome these issues, we propose the Explore-Execute Chain ($E^2C$), a
+structured reasoning framework that decouples reasoning into two distinct
+phases: an exploratory phase that stochastically generates succinct high-level
+plans, followed by an execution phase that deterministically carries out the
+chosen plan. Our approach incorporates a two-stage training methodology, which
+combines Supervised Fine-Tuning (SFT) - augmented by a novel data generation
+algorithm enforcing strict plan adherence - with a subsequent Reinforcement
+Learning (RL) stage that capitalizes on the informativeness of exploration and
+reinforces the determinism of execution.This decomposition enables an efficient
+test-time scaling strategy: on AIME'2024, $E^2C$ Test Time Scaling reaches
+58.1% accuracy using <10% of the decoding tokens required by comparable methods
+(e.g., Forest-of-Thought), sharply cutting self-consistency overhead. For
+cross-domain adaptation, our Exploration-Focused SFT (EF-SFT) fine-tunes with
+only 3.5% of the tokens used by standard SFT yet yields up to 14.5% higher
+accuracy than standard SFT on medical benchmarks, delivering state-of-the-art
+performance, strong generalization, and greater interpretability by separating
+planning from execution. The code and pre-trained models for the project are
+available at: https://github.com/yks23/Explore-Execute-Chain.git</p></br><a href="http://arxiv.org/pdf/2509.23544v1" target="_blank"><h2>End-to-End Deep Learning for Predicting Metric Space-Valued Outputs</h2></a><strong><u>Authors:</u></strong>  Yidong Zhou, Su I Iao, Hans-Georg Müller</br><strong><u>Categories:</u></strong> stat.ML, cs.AI, cs.LG, stat.ME</br><strong><u>Comments:</u></strong> 45 pages, 2 figures, 7 tables</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Many modern applications involve predicting structured, non-Euclidean outputs
+such as probability distributions, networks, and symmetric positive-definite
+matrices. These outputs are naturally modeled as elements of general metric
+spaces, where classical regression techniques that rely on vector space
+structure no longer apply. We introduce E2M (End-to-End Metric regression), a
+deep learning framework for predicting metric space-valued outputs. E2M
+performs prediction via a weighted Fr\'echet means over training outputs, where
+the weights are learned by a neural network conditioned on the input. This
+construction provides a principled mechanism for geometry-aware prediction that
+avoids surrogate embeddings and restrictive parametric assumptions, while fully
+preserving the intrinsic geometry of the output space. We establish theoretical
+guarantees, including a universal approximation theorem that characterizes the
+expressive capacity of the model and a convergence analysis of the
+entropy-regularized training objective. Through extensive simulations involving
+probability distributions, networks, and symmetric positive-definite matrices,
+we show that E2M consistently achieves state-of-the-art performance, with its
+advantages becoming more pronounced at larger sample sizes. Applications to
+human mortality distributions and New York City taxi networks further
+demonstrate the flexibility and practical utility of the framework.</p></br><a href="http://arxiv.org/pdf/2509.23494v1" target="_blank"><h2>Revisiting Multivariate Time Series Forecasting with Missing Values</h2></a><strong><u>Authors:</u></strong>  Jie Yang, Yifan Hu, Kexin Zhang, Luyang Niu, Yushun Dong, Philip S. Yu, Kaize Ding</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Missing values are common in real-world time series, and multivariate time
+series forecasting with missing values (MTSF-M) has become a crucial area of
+research for ensuring reliable predictions. To address the challenge of missing
+data, current approaches have developed an imputation-then-prediction framework
+that uses imputation modules to fill in missing values, followed by forecasting
+on the imputed data. However, this framework overlooks a critical issue: there
+is no ground truth for the missing values, making the imputation process
+susceptible to errors that can degrade prediction accuracy. In this paper, we
+conduct a systematic empirical study and reveal that imputation without direct
+supervision can corrupt the underlying data distribution and actively degrade
+prediction accuracy. To address this, we propose a paradigm shift that moves
+away from imputation and directly predicts from the partially observed time
+series. We introduce Consistency-Regularized Information Bottleneck (CRIB), a
+novel framework built on the Information Bottleneck principle. CRIB combines a
+unified-variate attention mechanism with a consistency regularization scheme to
+learn robust representations that filter out noise introduced by missing values
+while preserving essential predictive signals. Comprehensive experiments on
+four real-world datasets demonstrate the effectiveness of CRIB, which predicts
+accurately even under high missing rates. Our code is available in
+https://github.com/Muyiiiii/CRIB.</p></br><a href="http://arxiv.org/pdf/2509.24527v1" target="_blank"><h2>Training Agents Inside of Scalable World Models</h2></a><strong><u>Authors:</u></strong>  Danijar Hafner, Wilson Yan, Timothy Lillicrap</br><strong><u>Categories:</u></strong> cs.AI, cs.LG, cs.RO, stat.ML</br><strong><u>Comments:</u></strong> Website:this https URL</br><strong><u>Matching Keywords:</u></strong> transformer (abstract)</br><p><strong><u>Abstract:</u></strong> World models learn general knowledge from videos and simulate experience for
+training behaviors in imagination, offering a path towards intelligent agents.
+However, previous world models have been unable to accurately predict object
+interactions in complex environments. We introduce Dreamer 4, a scalable agent
+that learns to solve control tasks by reinforcement learning inside of a fast
+and accurate world model. In the complex video game Minecraft, the world model
+accurately predicts object interactions and game mechanics, outperforming
+previous world models by a large margin. The world model achieves real-time
+interactive inference on a single GPU through a shortcut forcing objective and
+an efficient transformer architecture. Moreover, the world model learns general
+action conditioning from only a small amount of data, allowing it to extract
+the majority of its knowledge from diverse unlabeled videos. We propose the
+challenge of obtaining diamonds in Minecraft from only offline data, aligning
+with practical applications such as robotics where learning from environment
+interaction can be unsafe and slow. This task requires choosing sequences of
+over 20,000 mouse and keyboard actions from raw pixels. By learning behaviors
+in imagination, Dreamer 4 is the first agent to obtain diamonds in Minecraft
+purely from offline data, without environment interaction. Our work provides a
+scalable recipe for imagination training, marking a step towards intelligent
+agents.</p></br><a href="http://arxiv.org/pdf/2509.22881v1" target="_blank"><h2>From Noise to Knowledge: A Comparative Study of Acoustic Anomaly
+  Detection Models in Pumped-storage Hydropower Plants</h2></a><strong><u>Authors:</u></strong>  Karim Khamaisi, Nicolas Keller, Stefan Krummenacher, Valentin Huber, Bernhard Fässler, Bruno Rodrigues</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> In the context of industrial factories and energy producers, unplanned
+outages are highly costly and difficult to service. However, existing
+acoustic-anomaly detection studies largely rely on generic industrial or
+synthetic datasets, with few focused on hydropower plants due to limited
+access. This paper presents a comparative analysis of acoustic-based anomaly
+detection methods, as a way to improve predictive maintenance in hydropower
+plants. We address key challenges in the acoustic preprocessing under highly
+noisy conditions before extracting time- and frequency-domain features. Then,
+we benchmark three machine learning models: LSTM AE, K-Means, and OC-SVM, which
+are tested on two real-world datasets from the Rodundwerk II pumped-storage
+plant in Austria, one with induced anomalies and one with real-world
+conditions. The One-Class SVM achieved the best trade-off of accuracy (ROC AUC
+0.966-0.998) and minimal training time, while the LSTM autoencoder delivered
+strong detection (ROC AUC 0.889-0.997) at the expense of higher computational
+cost.</p></br><a href="http://arxiv.org/pdf/2509.23101v1" target="_blank"><h2>Towards Quantum-Ready Blockchain Fraud Detection via Ensemble Graph
+  Neural Networks</h2></a><strong><u>Authors:</u></strong>  M. Z. Haider, Tayyaba Noreen, M. Salman</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CR, cs.DC</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Blockchain Business applications and cryptocurrencies such as enable secure,
+decentralized value transfer, yet their pseudonymous nature creates
+opportunities for illicit activity, challenging regulators and exchanges in
+anti money laundering (AML) enforcement. Detecting fraudulent transactions in
+blockchain networks requires models that can capture both structural and
+temporal dependencies while remaining resilient to noise, imbalance, and
+adversarial behavior. In this work, we propose an ensemble framework that
+integrates Graph Convolutional Networks (GCN), Graph Attention Networks (GAT),
+and Graph Isomorphism Networks (GIN) to enhance blockchain fraud detection.
+Using the real-world Elliptic dataset, our tuned soft voting ensemble achieves
+high recall of illicit transactions while maintaining a false positive rate
+below 1%, beating individual GNN models and baseline methods. The modular
+architecture incorporates quantum-ready design hooks, allowing seamless future
+integration of quantum feature mappings and hybrid quantum classical graph
+neural networks. This ensures scalability, robustness, and long-term
+adaptability as quantum computing technologies mature. Our findings highlight
+ensemble GNNs as a practical and forward-looking solution for real-time
+cryptocurrency monitoring, providing both immediate AML utility and a pathway
+toward quantum-enhanced financial security analytics.</p></br><a href="http://arxiv.org/pdf/2509.24298v1" target="_blank"><h2>Bridging the behavior-neural gap: A multimodal AI reveals the brain's
+  geometry of emotion more accurately than human self-reports</h2></a><strong><u>Authors:</u></strong>  Changde Du, Yizhuo Lu, Zhongyu Huang, Yi Sun, Zisen Zhou, Shaozheng Qin, Huiguang He</br><strong><u>Categories:</u></strong> cs.HC, cs.AI, cs.CL, cs.CY, cs.MM</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> The ability to represent emotion plays a significant role in human cognition
+and social interaction, yet the high-dimensional geometry of this affective
+space and its neural underpinnings remain debated. A key challenge, the
+`behavior-neural gap,' is the limited ability of human self-reports to predict
+brain activity. Here we test the hypothesis that this gap arises from the
+constraints of traditional rating scales and that large-scale similarity
+judgments can more faithfully capture the brain's affective geometry. Using AI
+models as `cognitive agents,' we collected millions of triplet odd-one-out
+judgments from a multimodal large language model (MLLM) and a language-only
+model (LLM) in response to 2,180 emotionally evocative videos. We found that
+the emergent 30-dimensional embeddings from these models are highly
+interpretable and organize emotion primarily along categorical lines, yet in a
+blended fashion that incorporates dimensional properties. Most remarkably, the
+MLLM's representation predicted neural activity in human emotion-processing
+networks with the highest accuracy, outperforming not only the LLM but also,
+counterintuitively, representations derived directly from human behavioral
+ratings. This result supports our primary hypothesis and suggests that sensory
+grounding--learning from rich visual data--is critical for developing a truly
+neurally-aligned conceptual framework for emotion. Our findings provide
+compelling evidence that MLLMs can autonomously develop rich, neurally-aligned
+affective representations, offering a powerful paradigm to bridge the gap
+between subjective experience and its neural substrates. Project page:
+https://reedonepeck.github.io/ai-emotion.github.io/.</p></br><a href="http://arxiv.org/pdf/2509.23811v1" target="_blank"><h2>AnveshanaAI: A Multimodal Platform for Adaptive AI/ML Education through
+  Automated Question Generation and Interactive Assessment</h2></a><strong><u>Authors:</u></strong>  Rakesh Thakur, Diksha Khandelwal, Shreya Tiwari</br><strong><u>Categories:</u></strong> cs.AI</br><strong><u>Comments:</u></strong> 11 pages, 12 figures. Under review as a conference paper at ICLR 2026. Preprint version posted on arXiv</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), explainable (abstract), multimodal (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> We propose AnveshanaAI, an application-based learning platform for artificial
+intelligence. With AnveshanaAI, learners are presented with a personalized
+dashboard featuring streaks, levels, badges, and structured navigation across
+domains such as data science, machine learning, deep learning, transformers,
+generative AI, large language models, and multimodal AI, with scope to include
+more in the future. The platform incorporates gamified tracking with points and
+achievements to enhance engagement and learning, while switching between
+Playground, Challenges, Simulator, Dashboard, and Community supports
+exploration and collaboration. Unlike static question repositories used in
+existing platforms, AnveshanaAI ensures balanced learning progression through a
+dataset grounded in Bloom's taxonomy, with semantic similarity checks and
+explainable AI techniques improving transparency and reliability. Adaptive,
+automated, and domain-aware assessment methods are also employed. Experiments
+demonstrate broad dataset coverage, stable fine-tuning with reduced perplexity,
+and measurable gains in learner engagement. Together, these features illustrate
+how AnveshanaAI integrates adaptivity, gamification, interactivity, and
+explainability to support next-generation AI education.</p></br><a href="http://arxiv.org/pdf/2509.23267v1" target="_blank"><h2>Learning Regional Monsoon Patterns with a Multimodal Attention U-Net</h2></a><strong><u>Authors:</u></strong>  Swaib Ilias Mazumder, Manish Kumar, Aparajita Khan</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted in Geospatial AI and Applications with Foundation Models (GAIA) 2025, INSAIT and ELLIS Unit Sofia, Bulgaria</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate monsoon rainfall prediction is vital for India's agriculture, water
+management, and climate risk planning, yet remains challenging due to sparse
+ground observations and complex regional variability. We present a multimodal
+deep learning framework for high-resolution precipitation classification that
+leverages satellite and Earth observation data. Unlike previous rainfall
+prediction models based on coarse 5-50 km grids, we curate a new 1 km
+resolution dataset for five Indian states, integrating seven key geospatial
+modalities: land surface temperature, vegetation (NDVI), soil moisture,
+relative humidity, wind speed, elevation, and land use, covering the
+June-September 2024 monsoon season. Our approach uses an attention-guided U-Net
+architecture to capture spatial patterns and temporal dependencies across
+modalities, combined with focal and dice loss functions to handle rainfall
+class imbalance defined by the India Meteorological Department (IMD).
+Experiments demonstrate that our multimodal framework consistently outperforms
+unimodal baselines and existing deep learning methods, especially in extreme
+rainfall categories. This work contributes a scalable framework, benchmark
+dataset, and state-of-the-art results for regional monsoon forecasting, climate
+resilience, and geospatial AI applications in India.</p></br><a href="http://arxiv.org/pdf/2509.24662v1" target="_blank"><h2>Community detection robustness of graph neural networks</h2></a><strong><u>Authors:</u></strong>  Jaidev Goel, Pablo Moriano, Ramakrishnan Kannan, Yulia R. Gel</br><strong><u>Categories:</u></strong> cs.SI, cs.AI, physics.soc-ph, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph neural networks (GNNs) are increasingly widely used for community
+detection in attributed networks. They combine structural topology with node
+attributes through message passing and pooling. However, their robustness or
+lack of thereof with respect to different perturbations and targeted attacks in
+conjunction with community detection tasks is not well understood. To shed
+light into latent mechanisms behind GNN sensitivity on community detection
+tasks, we conduct a systematic computational evaluation of six widely adopted
+GNN architectures: GCN, GAT, Graph-SAGE, DiffPool, MinCUT, and DMoN. The
+analysis covers three perturbation categories: node attribute manipulations,
+edge topology distortions, and adversarial attacks. We use element-centric
+similarity as the evaluation metric on synthetic benchmarks and real-world
+citation networks. Our findings indicate that supervised GNNs tend to achieve
+higher baseline accuracy, while unsupervised methods, particularly DMoN,
+maintain stronger resilience under targeted and adversarial perturbations.
+Furthermore, robustness appears to be strongly influenced by community
+strength, with well-defined communities reducing performance loss. Across all
+models, node attribute perturbations associated with targeted edge deletions
+and shift in attribute distributions tend to cause the largest degradation in
+community recovery. These findings highlight important trade-offs between
+accuracy and robustness in GNN-based community detection and offer new insights
+into selecting architectures resilient to noise and adversarial attacks.</p></br><a href="http://arxiv.org/pdf/2509.24793v1" target="_blank"><h2>Sparse Autoencoders Make Audio Foundation Models more Explainable</h2></a><strong><u>Authors:</u></strong>  Théo Mariotte, Martin Lebourdais, Antonio Almudévar, Marie Tahon, Alfonso Ortega, Nicolas Dugué</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> 5 pages, 5 figures, 1 table, submitted to ICASSP 2026</br><strong><u>Matching Keywords:</u></strong> explainable (title)</br><p><strong><u>Abstract:</u></strong> Audio pretrained models are widely employed to solve various tasks in speech
+processing, sound event detection, or music information retrieval. However, the
+representations learned by these models are unclear, and their analysis mainly
+restricts to linear probing of the hidden representations. In this work, we
+explore the use of Sparse Autoencoders (SAEs) to analyze the hidden
+representations of pretrained models, focusing on a case study in singing
+technique classification. We first demonstrate that SAEs retain both
+information about the original representations and class labels, enabling their
+internal structure to provide insights into self-supervised learning systems.
+Furthermore, we show that SAEs enhance the disentanglement of vocal attributes,
+establishing them as an effective tool for identifying the underlying factors
+encoded in the representations.</p></br><a href="http://arxiv.org/pdf/2509.23213v1" target="_blank"><h2>One-Shot Multi-Label Causal Discovery in High-Dimensional Event
+  Sequences</h2></a><strong><u>Authors:</u></strong>  Hugo Math, Robin Schön, Rainer Lienhart</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted at NeuRIPS2025 Workshop CauScien: Discovering Causality in Science. arXiv admin note: substantial text overlap witharXiv:2509.19112</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding causality in event sequences with thousands of sparse event
+types is critical in domains such as healthcare, cybersecurity, or vehicle
+diagnostics, yet current methods fail to scale. We present OSCAR, a one-shot
+causal autoregressive method that infers per-sequence Markov Boundaries using
+two pretrained Transformers as density estimators. This enables efficient,
+parallel causal discovery without costly global CI testing. On a real-world
+automotive dataset with 29,100 events and 474 labels, OSCAR recovers
+interpretable causal structures in minutes, while classical methods fail to
+scale, enabling practical scientific diagnostics at production scale.</p></br><a href="http://arxiv.org/pdf/2509.22994v1" target="_blank"><h2>Analysis of Variational Autoencoders</h2></a><strong><u>Authors:</u></strong>  Zachary Baker, Yuxiao Li</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 15 pages, 11 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (title), latent space (abstract), neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Sparse Autoencoders (SAEs) have emerged as a promising approach for
+interpreting neural network representations by learning sparse,
+human-interpretable features from dense activations. We investigate whether
+incorporating variational methods into SAE architectures can improve feature
+organization and interpretability. We introduce the variational Sparse
+Autoencoder (vSAE), which replaces deterministic ReLU gating with stochastic
+sampling from learned Gaussian posteriors and incorporates KL divergence
+regularization toward a standard normal prior. Our hypothesis is that this
+probabilistic sampling creates dispersive pressure, causing features to
+organize more coherently in the latent space while avoiding overlap. We
+evaluate a Topk vSAE against a standard TopK SAE on Pythia-70M transformer
+residual steam activations using comprehensive benchmarks including SAE Bench,
+individual feature interpretability analysis, and global latent space
+visualization through t-SNE. The vSAE underperforms standard SAE across core
+evaluation metrics, though excels at feature independence and ablation metrics.
+The KL divergence term creates excessive regularization pressure that
+substantially reduces the fraction of living features, leading to observed
+performance degradation. While vSAE features demonstrate improved robustness,
+they exhibit many more dead features than baseline. Our findings suggest that
+naive application of variational methods to SAEs does not improve feature
+organization or interpretability.</p></br><a href="http://arxiv.org/pdf/2509.24728v1" target="_blank"><h2>Beyond Softmax: A Natural Parameterization for Categorical Random
+  Variables</h2></a><strong><u>Authors:</u></strong>  Alessandro Manenti, Cesare Alippi</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Latent categorical variables are frequently found in deep learning
+architectures. They can model actions in discrete reinforcement-learning
+environments, represent categories in latent-variable models, or express
+relations in graph neural networks. Despite their widespread use, their
+discrete nature poses significant challenges to gradient-descent learning
+algorithms. While a substantial body of work has offered improved gradient
+estimation techniques, we take a complementary approach. Specifically, we: 1)
+revisit the ubiquitous $\textit{softmax}$ function and demonstrate its
+limitations from an information-geometric perspective; 2) replace the
+$\textit{softmax}$ with the $\textit{catnat}$ function, a function composed of
+a sequence of hierarchical binary splits; we prove that this choice offers
+significant advantages to gradient descent due to the resulting diagonal Fisher
+Information Matrix. A rich set of experiments - including graph structure
+learning, variational autoencoders, and reinforcement learning - empirically
+show that the proposed function improves the learning efficiency and yields
+models characterized by consistently higher test performance. $\textit{Catnat}$
+is simple to implement and seamlessly integrates into existing codebases.
+Moreover, it remains compatible with standard training stabilization techniques
+and, as such, offers a better alternative to the $\textit{softmax}$ function.</p></br><a href="http://arxiv.org/pdf/2509.24914v1" target="_blank"><h2>Inductive Bias and Spectral Properties of Single-Head Attention in High
+  Dimensions</h2></a><strong><u>Authors:</u></strong>  Fabrizio Boncoraglio, Vittorio Erba, Emanuele Troiani, Florent Krzakala, Lenka Zdeborová</br><strong><u>Categories:</u></strong> stat.ML, cond-mat.dis-nn, cs.IT, cs.LG, math.IT</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> We study empirical risk minimization in a single-head tied-attention layer
+trained on synthetic high-dimensional sequence tasks, given by the recently
+introduced attention-indexed model. Using tools from random matrix theory,
+spin-glass physics, and approximate message passing, we derive sharp
+asymptotics for training and test errors, locate interpolation and recovery
+thresholds, and characterize the limiting spectral distribution of the learned
+weights. Weight decay induces an implicit nuclear-norm regularization, favoring
+low-rank query and key matrices. Leveraging this, we compare the standard
+factorized training of query and key matrices with a direct parameterization in
+which their product is trained element-wise, revealing the inductive bias
+introduced by the factorized form. Remarkably, the predicted spectral
+distribution echoes empirical trends reported in large-scale transformers,
+offering a theoretical perspective consistent with these phenomena.</p></br><a href="http://arxiv.org/pdf/2509.24935v1" target="_blank"><h2>Scalable GANs with Transformers</h2></a><strong><u>Authors:</u></strong>  Sangeek Hyun, MinKyu Lee, Jae-Pil Heo</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), latent space (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Scalability has driven recent advances in generative modeling, yet its
+principles remain underexplored for adversarial learning. We investigate the
+scalability of Generative Adversarial Networks (GANs) through two design
+choices that have proven to be effective in other types of generative models:
+training in a compact Variational Autoencoder latent space and adopting purely
+transformer-based generators and discriminators. Training in latent space
+enables efficient computation while preserving perceptual fidelity, and this
+efficiency pairs naturally with plain transformers, whose performance scales
+with computational budget. Building on these choices, we analyze failure modes
+that emerge when naively scaling GANs. Specifically, we find issues as
+underutilization of early layers in the generator and optimization instability
+as the network scales. Accordingly, we provide simple and scale-friendly
+solutions as lightweight intermediate supervision and width-aware learning-rate
+adjustment. Our experiments show that GAT, a purely transformer-based and
+latent-space GANs, can be easily trained reliably across a wide range of
+capacities (S through XL). Moreover, GAT-XL/2 achieves state-of-the-art
+single-step, class-conditional generation performance (FID of 2.96) on
+ImageNet-256 in just 40 epochs, 6x fewer epochs than strong baselines.</p></br><a href="http://arxiv.org/pdf/2509.24734v1" target="_blank"><h2>A TRIANGLE Enables Multimodal Alignment Beyond Cosine Similarity</h2></a><strong><u>Authors:</u></strong>  Giordano Cicchetti, Eleonora Grassucci, Danilo Comminiello</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.CV</br><strong><u>Comments:</u></strong> NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal learning plays a pivotal role in advancing artificial intelligence
+systems by incorporating information from multiple modalities to build a more
+comprehensive representation. Despite its importance, current state-of-the-art
+models still suffer from severe limitations that prevent the successful
+development of a fully multimodal model. Such methods may not provide
+indicators that all the involved modalities are effectively aligned. As a
+result, some modalities may not be aligned, undermining the effectiveness of
+the model in downstream tasks where multiple modalities should provide
+additional information that the model fails to exploit. In this paper, we
+present TRIANGLE: TRI-modAl Neural Geometric LEarning, the novel proposed
+similarity measure that is directly computed in the higher-dimensional space
+spanned by the modality embeddings. TRIANGLE improves the joint alignment of
+three modalities via a triangle-area similarity, avoiding additional fusion
+layers or pairwise similarities. When incorporated in contrastive losses
+replacing cosine similarity, TRIANGLE significantly boosts the performance of
+multimodal modeling, while yielding interpretable alignment rationales.
+Extensive evaluation in three-modal tasks such as video-text and audio-text
+retrieval or audio-video classification, demonstrates that TRIANGLE achieves
+state-of-the-art results across different datasets improving the performance of
+cosine-based methods up to 9 points of Recall@1.</p></br><a href="http://arxiv.org/pdf/2509.24076v1" target="_blank"><h2>A Family of Kernelized Matrix Costs for Multiple-Output Mixture Neural
+  Networks</h2></a><strong><u>Authors:</u></strong>  Bo Hu, José C. Príncipe</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Pairwise distance-based costs are crucial for self-supervised and contrastive
+feature learning. Mixture Density Networks (MDNs) are a widely used approach
+for generative models and density approximation, using neural networks to
+produce multiple centers that define a Gaussian mixture. By combining MDNs with
+contrastive costs, this paper proposes data density approximation using four
+types of kernelized matrix costs: the scalar cost, the vector-matrix cost, the
+matrix-matrix cost (the trace of Schur complement), and the SVD cost (the
+nuclear norm), for learning multiple centers required to define a mixture
+density.</p></br></body>

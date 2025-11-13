@@ -1,0 +1,194 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 20 Oct 2025 to 22 Oct 2025</em></font><a href="http://arxiv.org/pdf/2510.18328v1" target="_blank"><h2>Scalable, Explainable and Provably Robust Anomaly Detection with
+  One-Step Flow Matching</h2></a><strong><u>Authors:</u></strong>  Zhong Li, Qi Huang, Yuxuan Zhu, Lincen Yang, Mohammad Mohammadi Amiri, Niki van Stein, Matthijs van Leeuwen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Paper accepted by NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), explainability (abstract), explainable (title)</br><p><strong><u>Abstract:</u></strong> We introduce Time-Conditioned Contraction Matching (TCCM), a novel method for
+semi-supervised anomaly detection in tabular data. TCCM is inspired by flow
+matching, a recent generative modeling framework that learns velocity fields
+between probability distributions and has shown strong performance compared to
+diffusion models and generative adversarial networks. Instead of directly
+applying flow matching as originally formulated, TCCM builds on its core idea
+-- learning velocity fields between distributions -- but simplifies the
+framework by predicting a time-conditioned contraction vector toward a fixed
+target (the origin) at each sampled time step. This design offers three key
+advantages: (1) a lightweight and scalable training objective that removes the
+need for solving ordinary differential equations during training and inference;
+(2) an efficient scoring strategy called one time-step deviation, which
+quantifies deviation from expected contraction behavior in a single forward
+pass, addressing the inference bottleneck of existing continuous-time models
+such as DTE (a diffusion-based model with leading anomaly detection accuracy
+but heavy inference cost); and (3) explainability and provable robustness, as
+the learned velocity field operates directly in input space, making the anomaly
+score inherently feature-wise attributable; moreover, the score function is
+Lipschitz-continuous with respect to the input, providing theoretical
+guarantees under small perturbations. Extensive experiments on the ADBench
+benchmark show that TCCM strikes a favorable balance between detection accuracy
+and inference cost, outperforming state-of-the-art methods -- especially on
+high-dimensional and large-scale datasets. The source code is available at our
+GitHub repository.</p></br><a href="http://arxiv.org/pdf/2510.18193v1" target="_blank"><h2>FST.ai 2.0: An Explainable AI Ecosystem for Fair, Fast, and Inclusive
+  Decision-Making in Olympic and Paralympic Taekwondo</h2></a><strong><u>Authors:</u></strong>  Keivan Shariatmadar, Ahmad Osman, Ramin Ray, Usman Dildar, Kisam Kim</br><strong><u>Categories:</u></strong> cs.AI, cs.CV, cs.LG, stat.ML, 68T01, I.2.8</br><strong><u>Comments:</u></strong> 23 pages, 12 figures</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), convolutional (abstract), explainability (abstract), explainable (title, abstract)</br><p><strong><u>Abstract:</u></strong> Fair, transparent, and explainable decision-making remains a critical
+challenge in Olympic and Paralympic combat sports. This paper presents
+\emph{FST.ai 2.0}, an explainable AI ecosystem designed to support referees,
+coaches, and athletes in real time during Taekwondo competitions and training.
+The system integrates {pose-based action recognition} using graph convolutional
+networks (GCNs), {epistemic uncertainty modeling} through credal sets, and
+{explainability overlays} for visual decision support. A set of {interactive
+dashboards} enables human--AI collaboration in referee evaluation, athlete
+performance analysis, and Para-Taekwondo classification. Beyond automated
+scoring, FST.ai~2.0 incorporates modules for referee training, fairness
+monitoring, and policy-level analytics within the World Taekwondo ecosystem.
+Experimental validation on competition data demonstrates an {85\% reduction in
+decision review time} and {93\% referee trust} in AI-assisted decisions. The
+framework thus establishes a transparent and extensible pipeline for
+trustworthy, data-driven officiating and athlete assessment. By bridging
+real-time perception, explainable inference, and governance-aware design,
+FST.ai~2.0 represents a step toward equitable, accountable, and human-aligned
+AI in sports.</p></br><a href="http://arxiv.org/pdf/2510.18636v1" target="_blank"><h2>C-SWAP: Explainability-Aware Structured Pruning for Efficient Neural
+  Networks Compression</h2></a><strong><u>Authors:</u></strong>  Baptiste Bauvin, Loïc Baret, Ola Ahmad</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG, cs.RO</br><strong><u>Comments:</u></strong> 10 pages, BMVC2025</br><strong><u>Matching Keywords:</u></strong> explainability (title), explainable (abstract), neural network (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Neural network compression has gained increasing attention in recent years,
+particularly in computer vision applications, where the need for model
+reduction is crucial for overcoming deployment constraints. Pruning is a widely
+used technique that prompts sparsity in model structures, e.g. weights,
+neurons, and layers, reducing size and inference costs. Structured pruning is
+especially important as it allows for the removal of entire structures, which
+further accelerates inference time and reduces memory overhead. However, it can
+be computationally expensive, requiring iterative retraining and optimization.
+To overcome this problem, recent methods considered one-shot setting, which
+applies pruning directly at post-training. Unfortunately, they often lead to a
+considerable drop in performance. In this paper, we focus on this issue by
+proposing a novel one-shot pruning framework that relies on explainable deep
+learning. First, we introduce a causal-aware pruning approach that leverages
+cause-effect relations between model predictions and structures in a
+progressive pruning process. It allows us to efficiently reduce the size of the
+network, ensuring that the removed structures do not deter the performance of
+the model. Then, through experiments conducted on convolution neural network
+and vision transformer baselines, pre-trained on classification tasks, we
+demonstrate that our method consistently achieves substantial reductions in
+model size, with minimal impact on performance, and without the need for
+fine-tuning. Overall, our approach outperforms its counterparts, offering the
+best trade-off. Our code is available on GitHub.</p></br><a href="http://arxiv.org/pdf/2510.17959v1" target="_blank"><h2>Universal Spectral Tokenization via Self-Supervised Panchromatic
+  Representation Learning</h2></a><strong><u>Authors:</u></strong>  Jeff Shen, Francois Lanusse, Liam Holden Parker, Ollie Liu, Tom Hehir, Leopoldo Sarra, Lucas Meyer, Micah Bowles, Sebastian Wagner-Carena, Sebastian Wagner-Carena, Helen Qu, Siavash Golkar, Alberto Bietti, Hatim Bourfoune, Nathan Cassereau, Pierre Cornette, Keiya Hirashima, Geraud Krawezik, Ruben Ohana, Nicholas Lourie, Michael McCabe, Rudy Morel, Payel Mukhopadhyay, Mariel Pettee, Bruno Régaldo-Saint Blancard, Kyunghyun Cho, Miles Cranmer, Shirley Ho</br><strong><u>Categories:</u></strong> astro-ph.IM, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Accepted at NeurIPS 2025 Machine Learning and the Physical Sciences Workshop</br><strong><u>Matching Keywords:</u></strong> sequential data (abstract)</br><p><strong><u>Abstract:</u></strong> Sequential scientific data span many resolutions and domains, and unifying
+them into a common representation is a key step toward developing foundation
+models for the sciences. Astronomical spectra exemplify this challenge: massive
+surveys have collected millions of spectra across a wide range of wavelengths
+and resolutions, yet analyses remain fragmented across spectral domains (e.g.,
+optical vs. infrared) and object types (e.g., stars vs. galaxies), limiting the
+ability to pool information across datasets. We present a deep learning model
+that jointly learns from heterogeneous spectra in a self-supervised manner. Our
+universal spectral tokenizer processes spectra from a variety of object types
+and resolutions directly on their native wavelength grids, producing
+intrinsically aligned, homogeneous, and physically meaningful representations
+that can be efficiently adapted to achieve competitive performance across a
+range of downstream tasks. For the first time, we demonstrate that a single
+model can unify spectral data across resolutions and domains, suggesting that
+our model can serve as a powerful building block for foundation models in
+astronomy -- and potentially extend to other scientific domains with
+heterogeneous sequential data, such as climate and healthcare.</p></br><a href="http://arxiv.org/pdf/2510.18120v1" target="_blank"><h2>Generalization Below the Edge of Stability: The Role of Data Geometry</h2></a><strong><u>Authors:</u></strong>  Tongtong Liang, Alexander Cloninger, Rahul Parhi, Yu-Xiang Wang</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> Under Review. Comments welcome!</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Understanding generalization in overparameterized neural networks hinges on
+the interplay between the data geometry, neural architecture, and training
+dynamics. In this paper, we theoretically explore how data geometry controls
+this implicit bias. This paper presents theoretical results for
+overparameterized two-layer ReLU networks trained below the edge of stability.
+First, for data distributions supported on a mixture of low-dimensional balls,
+we derive generalization bounds that provably adapt to the intrinsic dimension.
+Second, for a family of isotropic distributions that vary in how strongly
+probability mass concentrates toward the unit sphere, we derive a spectrum of
+bounds showing that rates deteriorate as the mass concentrates toward the
+sphere. These results instantiate a unifying principle: When the data is harder
+to "shatter" with respect to the activation thresholds of the ReLU neurons,
+gradient descent tends to learn representations that capture shared patterns
+and thus finds solutions that generalize well. On the other hand, for data that
+is easily shattered (e.g., data supported on the sphere) gradient descent
+favors memorization. Our theoretical results consolidate disparate empirical
+findings that have appeared in the literature.</p></br><a href="http://arxiv.org/pdf/2510.18004v1" target="_blank"><h2>Attention-Guided Deep Adversarial Temporal Subspace Clustering (A-DATSC)
+  Model for multivariate spatiotemporal data</h2></a><strong><u>Authors:</u></strong>  Francis Ndikum Nji, Vandana Janeja, Jianwu Wang</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 9 pages, under review submitted to ICLR 2025</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), transformer (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Deep subspace clustering models are vital for applications such as snowmelt
+detection, sea ice tracking, crop health monitoring, infectious disease
+modeling, network load prediction, and land-use planning, where multivariate
+spatiotemporal data exhibit complex temporal dependencies and reside on
+multiple nonlinear manifolds beyond the capability of traditional clustering
+methods. These models project data into a latent space where samples lie in
+linear subspaces and exploit the self-expressiveness property to uncover
+intrinsic relationships. Despite their success, existing methods face major
+limitations: they use shallow autoencoders that ignore clustering errors,
+emphasize global features while neglecting local structure, fail to model
+long-range dependencies and positional information, and are rarely applied to
+4D spatiotemporal data. To address these issues, we propose A-DATSC
+(Attention-Guided Deep Adversarial Temporal Subspace Clustering), a model
+combining a deep subspace clustering generator and a quality-verifying
+discriminator. The generator, inspired by U-Net, preserves spatial and temporal
+integrity through stacked TimeDistributed ConvLSTM2D layers, reducing
+parameters and enhancing generalization. A graph attention transformer based
+self-expressive network captures local spatial relationships, global
+dependencies, and both short- and long-range correlations. Experiments on three
+real-world multivariate spatiotemporal datasets show that A-DATSC achieves
+substantially superior clustering performance compared to state-of-the-art deep
+subspace clustering models.</p></br><a href="http://arxiv.org/pdf/2510.17960v1" target="_blank"><h2>AION-1: Omnimodal Foundation Model for Astronomical Sciences</h2></a><strong><u>Authors:</u></strong>  Liam Parker, Francois Lanusse, Jeff Shen, Ollie Liu, Tom Hehir, Leopoldo Sarra, Lucas Meyer, Micah Bowles, Sebastian Wagner-Carena, Helen Qu, Siavash Golkar, Alberto Bietti, Hatim Bourfoune, Nathan Casserau, Pierre Cornette, Keiya Hirashima, Geraud Krawezik, Ruben Ohana, Nicholas Lourie, Michael McCabe, Rudy Morel, Payel Mukhopadhyay, Mariel Pettee, Bruno Regaldo-Saint Blancard, Kyunghyun Cho, Miles Cranmer, Shirley Ho</br><strong><u>Categories:</u></strong> astro-ph.IM, astro-ph.CO</br><strong><u>Comments:</u></strong> Accepted at Neural Information Processing Systems (2025)</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> While foundation models have shown promise across a variety of fields,
+astronomy still lacks a unified framework for joint modeling across its highly
+diverse data modalities. In this paper, we present AION-1, a family of
+large-scale multimodal foundation models for astronomy. AION-1 integrates
+heterogeneous imaging, spectroscopic, and scalar data using a two-stage
+architecture: modality-specific tokenization followed by transformer-based
+masked modeling of cross-modal token sequences. The model is pretrained on five
+large-scale surveys: Legacy Survey, Hyper Suprime-Cam (HSC), Sloan Digital Sky
+Survey (SDSS), Dark Energy Spectroscopic Instrument (DESI), and Gaia. These
+span more than 200 million observations of stars, galaxies, and quasars. With a
+single frozen encoder, AION-1 achieves strong results on a broad suite of
+downstream tasks, including galaxy and stellar property estimation, galaxy
+morphology classification, similarity-based retrieval, galaxy image
+segmentation, and spectral super-resolution. We release AION-1 model variants
+ranging from 300 M to 3.1 B parameters. Beyond astronomy, AION-1 provides a
+scalable blueprint for multimodal scientific foundation models that can
+seamlessly integrate noisy, instrument-specific observations. All code,
+tokenizers, pretrained weights, and a lightweight evaluation suite are released
+under an open-source license.</p></br><a href="http://arxiv.org/pdf/2510.18184v1" target="_blank"><h2>ActivationReasoning: Logical Reasoning in Latent Activation Spaces</h2></a><strong><u>Authors:</u></strong>  Lukas Helff, Ruben Härle, Wolfgang Stammer, Felix Friedrich, Manuel Brack, Antonia Wüst, Hikaru Shindo, Patrick Schramowski, Kristian Kersting</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Large language models (LLMs) excel at generating fluent text, but their
+internal reasoning remains opaque and difficult to control. Sparse autoencoders
+(SAEs) make hidden activations more interpretable by exposing latent features
+that often align with human concepts. Yet, these features are fragile and
+passive, offering no mechanism for systematic reasoning or model control. To
+address this, we introduce ActivationReasoning (AR), a framework that embeds
+explicit logical reasoning into the latent space of LLMs. It proceeds in three
+stages: (1) Finding latent representations, first latent concept
+representations are identified (e.g., via SAEs) and organized into a
+dictionary; (2) Activating propositions, at inference time AR detects
+activating concepts and maps them to logical propositions; and (3)Logical
+reasoning, applying logical rules over these propositions to infer higher-order
+structures, compose new concepts, and steer model behavior. We evaluate AR on
+multi-hop reasoning (PrOntoQA), abstraction and robustness to indirect concept
+cues (Rail2Country), reasoning over natural and diverse language (ProverQA),
+and context-sensitive safety (BeaverTails). Across all tasks, AR scales
+robustly with reasoning complexity, generalizes to abstract and
+context-sensitive tasks, and transfers across model backbones. These results
+demonstrate that grounding logical structure in latent activations not only
+improves transparency but also enables structured reasoning, reliable control,
+and alignment with desired behaviors, providing a path toward more reliable and
+auditable AI.</p></br><a href="http://arxiv.org/pdf/2510.18075v1" target="_blank"><h2>Batch Distillation Data for Developing Machine Learning Anomaly
+  Detection Methods</h2></a><strong><u>Authors:</u></strong>  Justus Arweiler, Indra Jungjohann, Aparna Muraleedharan, Heike Leitte, Jakob Burger, Kerstin Münnemann, Fabian Jirasek, Hans Hasse</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), explainable (abstract)</br><p><strong><u>Abstract:</u></strong> Machine learning (ML) holds great potential to advance anomaly detection (AD)
+in chemical processes. However, the development of ML-based methods is hindered
+by the lack of openly available experimental data. To address this gap, we have
+set up a laboratory-scale batch distillation plant and operated it to generate
+an extensive experimental database, covering fault-free experiments and
+experiments in which anomalies were intentionally induced, for training
+advanced ML-based AD methods. In total, 119 experiments were conducted across a
+wide range of operating conditions and mixtures. Most experiments containing
+anomalies were paired with a corresponding fault-free one. The database that we
+provide here includes time-series data from numerous sensors and actuators,
+along with estimates of measurement uncertainty. In addition, unconventional
+data sources -- such as concentration profiles obtained via online benchtop NMR
+spectroscopy and video and audio recordings -- are provided. Extensive metadata
+and expert annotations of all experiments are included. The anomaly annotations
+are based on an ontology developed in this work. The data are organized in a
+structured database and made freely available via
+doi.org/10.5281/zenodo.17395544. This new database paves the way for the
+development of advanced ML-based AD methods. As it includes information on the
+causes of anomalies, it further enables the development of interpretable and
+explainable ML approaches, as well as methods for anomaly mitigation.</p></br></body>

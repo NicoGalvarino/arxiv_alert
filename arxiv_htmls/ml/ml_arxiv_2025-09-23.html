@@ -1,0 +1,389 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 19 Sep 2025 to 23 Sep 2025</em></font><a href="http://arxiv.org/pdf/2509.16936v1" target="_blank"><h2>Adaptive Graph Convolution and Semantic-Guided Attention for Multimodal
+  Risk Detection in Social Networks</h2></a><strong><u>Authors:</u></strong>  Cuiqianhe Du, Chia-En Chiang, Tianyi Huang, Zikun Cui</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract), multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> This paper focuses on the detection of potentially dangerous tendencies of
+social media users in an innovative multimodal way. We integrate Natural
+Language Processing (NLP) and Graph Neural Networks (GNNs) together. Firstly,
+we apply NLP on the user-generated text and conduct semantic analysis,
+sentiment recognition and keyword extraction to get subtle risk signals from
+social media posts. Meanwhile, we build a heterogeneous user relationship graph
+based on social interaction and propose a novel relational graph convolutional
+network to model user relationship, attention relationship and content
+dissemination path to discover some important structural information and user
+behaviors. Finally, we combine textual features extracted from these two models
+above with graph structural information, which provides a more robust and
+effective way to discover at-risk users. Our experiments on real social media
+datasets from different platforms show that our model can achieve significant
+improvement over single-modality methods.</p></br><a href="http://arxiv.org/pdf/2509.17784v1" target="_blank"><h2>Revealing Multimodal Causality with Large Language Models</h2></a><strong><u>Authors:</u></strong>  Jin Li, Shoujin Wang, Qi Zhang, Feng Liu, Tongliang Liu, Longbing Cao, Shui Yu, Fang Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted at NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), causality (title)</br><p><strong><u>Abstract:</u></strong> Uncovering cause-and-effect mechanisms from data is fundamental to scientific
+progress. While large language models (LLMs) show promise for enhancing causal
+discovery (CD) from unstructured data, their application to the increasingly
+prevalent multimodal setting remains a critical challenge. Even with the advent
+of multimodal LLMs (MLLMs), their efficacy in multimodal CD is hindered by two
+primary limitations: (1) difficulty in exploring intra- and inter-modal
+interactions for comprehensive causal variable identification; and (2)
+insufficiency to handle structural ambiguities with purely observational data.
+To address these challenges, we propose MLLM-CD, a novel framework for
+multimodal causal discovery from unstructured data. It consists of three key
+components: (1) a novel contrastive factor discovery module to identify genuine
+multimodal factors based on the interactions explored from contrastive sample
+pairs; (2) a statistical causal structure discovery module to infer causal
+relationships among discovered factors; and (3) an iterative multimodal
+counterfactual reasoning module to refine the discovery outcomes iteratively by
+incorporating the world knowledge and reasoning capabilities of MLLMs.
+Extensive experiments on both synthetic and real-world datasets demonstrate the
+effectiveness of MLLM-CD in revealing genuine factors and causal relationships
+among them from multimodal unstructured data.</p></br><a href="http://arxiv.org/pdf/2509.17752v1" target="_blank"><h2>GEM-T: Generative Tabular Data via Fitting Moments</h2></a><strong><u>Authors:</u></strong>  Miao Li, Phuc Nguyen, Christopher Tam, Alexandra Morgan, Kenneth Ge, Rahul Bansal, Linzi Yu, Rima Arnaout, Ramy Arnaout</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> 18 pages, 4 figures</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Tabular data dominates data science but poses challenges for generative
+models, especially when the data is limited or sensitive. We present a novel
+approach to generating synthetic tabular data based on the principle of maximum
+entropy -- MaxEnt -- called GEM-T, for ``generative entropy maximization for
+tables.'' GEM-T directly captures nth-order interactions -- pairwise,
+third-order, etc. -- among columns of training data. In extensive testing,
+GEM-T matches or exceeds deep neural network approaches previously regarded as
+state-of-the-art in 23 of 34 publicly available datasets representing diverse
+subject domains (68\%). Notably, GEM-T involves orders-of-magnitude fewer
+trainable parameters, demonstrating that much of the information in real-world
+data resides in low-dimensional, potentially human-interpretable correlations,
+provided that the input data is appropriately transformed first. Furthermore,
+MaxEnt better handles heterogeneous data types (continuous vs. discrete vs.
+categorical), lack of local structure, and other features of tabular data.
+GEM-T represents a promising direction for light-weight high-performance
+generative models for structured data.</p></br><a href="http://arxiv.org/pdf/2509.17472v1" target="_blank"><h2>Periodic Graph-Enhanced Multivariate Time Series Anomaly Detector</h2></a><strong><u>Authors:</u></strong>  Jia Li, Shiyu Long, Ye Yuan</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Multivariate time series (MTS) anomaly detection commonly encounters in
+various domains like finance, healthcare, and industrial monitoring. However,
+existing MTS anomaly detection methods are mostly defined on the static graph
+structure, which fails to perform an accurate representation of complex
+spatio-temporal correlations in MTS. To address this issue, this study proposes
+a Periodic Graph-Enhanced Multivariate Time Series Anomaly Detector (PGMA) with
+the following two-fold ideas: a) designing a periodic time-slot allocation
+strategy based Fast Fourier Transform (FFT), which enables the graph structure
+to reflect dynamic changes in MTS; b) utilizing graph neural network and
+temporal extension convolution to accurate extract the complex spatio-temporal
+correlations from the reconstructed periodic graphs. Experiments on four real
+datasets from real applications demonstrate that the proposed PGMA outperforms
+state-of-the-art models in MTS anomaly detection.</p></br><a href="http://arxiv.org/pdf/2509.17235v1" target="_blank"><h2>Prospective Multi-Graph Cohesion for Multivariate Time Series Anomaly
+  Detection</h2></a><strong><u>Authors:</u></strong>  Jiazhen Chen, Mingbin Feng, Tony S. Wirjanto</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> Accepted by the 18th ACM International Conference on Web Search and Data Mining (ACM WSDM 2025)</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in high-dimensional time series data is pivotal for
+numerous industrial applications. Recent advances in multivariate time series
+anomaly detection (TSAD) have increasingly leveraged graph structures to model
+inter-variable relationships, typically employing Graph Neural Networks (GNNs).
+Despite their promising results, existing methods often rely on a single graph
+representation, which are insufficient for capturing the complex, diverse
+relationships inherent in multivariate time series. To address this, we propose
+the Prospective Multi-Graph Cohesion (PMGC) framework for multivariate TSAD.
+PMGC exploits spatial correlations by integrating a long-term static graph with
+a series of short-term instance-wise dynamic graphs, regulated through a graph
+cohesion loss function. Our theoretical analysis shows that this loss function
+promotes diversity among dynamic graphs while aligning them with the stable
+long-term relationships encapsulated by the static graph. Additionally, we
+introduce a "prospective graphing" strategy to mitigate the limitations of
+traditional forecasting-based TSAD methods, which often struggle with
+unpredictable future variations. This strategy allows the model to accurately
+reflect concurrent inter-series relationships under normal conditions, thereby
+enhancing anomaly detection efficacy. Empirical evaluations on real-world
+datasets demonstrate the superior performance of our method compared to
+existing TSAD techniques.</p></br><a href="http://arxiv.org/pdf/2509.16395v1" target="_blank"><h2>Low-Rank Adaptation of Evolutionary Deep Neural Networks for Efficient
+  Learning of Time-Dependent PDEs</h2></a><strong><u>Authors:</u></strong>  Jiahao Zhang, Shiheng Zhang, Guang Lin</br><strong><u>Categories:</u></strong> stat.ML, cs.LG</br><strong><u>Comments:</u></strong> 17 pages</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> We study the Evolutionary Deep Neural Network (EDNN) framework for
+accelerating numerical solvers of time-dependent partial differential equations
+(PDEs). We introduce a Low-Rank Evolutionary Deep Neural Network (LR-EDNN),
+which constrains parameter evolution to a low-rank subspace, thereby reducing
+the effective dimensionality of training while preserving solution accuracy.
+The low-rank tangent subspace is defined layer-wise by the singular value
+decomposition (SVD) of the current network weights, and the resulting update is
+obtained by solving a well-posed, tractable linear system within this subspace.
+This design augments the underlying numerical solver with a parameter efficient
+EDNN component without requiring full fine-tuning of all network weights. We
+evaluate LR-EDNN on representative PDE problems and compare it against
+corresponding baselines. Across cases, LR-EDNN achieves comparable accuracy
+with substantially fewer trainable parameters and reduced computational cost.
+These results indicate that low-rank constraints on parameter velocities,
+rather than full-space updates, provide a practical path toward scalable,
+efficient, and reproducible scientific machine learning for PDEs.</p></br><a href="http://arxiv.org/pdf/2509.16699v1" target="_blank"><h2>Knowledge Distillation for Variational Quantum Convolutional Neural
+  Networks on Heterogeneous Data</h2></a><strong><u>Authors:</u></strong>  Kai Yu, Binbin Cai, Song Lin</br><strong><u>Categories:</u></strong> quant-ph, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract)</br><p><strong><u>Abstract:</u></strong> Distributed quantum machine learning faces significant challenges due to
+heterogeneous client data and variations in local model structures, which
+hinder global model aggregation. To address these challenges, we propose a
+knowledge distillation framework for variational quantum convolutional neural
+networks on heterogeneous data. The framework features a quantum gate number
+estimation mechanism based on client data, which guides the construction of
+resource-adaptive VQCNN circuits. Particle swarm optimization is employed to
+efficiently generate personalized quantum models tailored to local data
+characteristics. During aggregation, a knowledge distillation strategy
+integrating both soft-label and hard-label supervision consolidates knowledge
+from heterogeneous clients using a public dataset, forming a global model while
+avoiding parameter exposure and privacy leakage. Theoretical analysis shows
+that proposed framework benefits from quantum high-dimensional representation,
+offering advantages over classical approaches, and minimizes communication by
+exchanging only model indices and test outputs. Extensive simulations on the
+PennyLane platform validate the effectiveness of the gate number estimation and
+distillation-based aggregation. Experimental results demonstrate that the
+aggregated global model achieves accuracy close to fully supervised centralized
+training. These results shown that proposed methods can effectively handle
+heterogeneity, reduce resource consumption, and maintain performance,
+highlighting its potential for scalable and privacy-preserving distributed
+quantum learning.</p></br><a href="http://arxiv.org/pdf/2509.17943v1" target="_blank"><h2>Can multimodal representation learning by alignment preserve
+  modality-specific information?</h2></a><strong><u>Authors:</u></strong>  Romain Thoreau, Jessie Levillain, Dawa Derksen</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> Accepted as a workshop paper at MACLEAN - ECML/PKDD 2025</br><strong><u>Matching Keywords:</u></strong> latent space (abstract), neural network (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Combining multimodal data is a key issue in a wide range of machine learning
+tasks, including many remote sensing problems. In Earth observation, early
+multimodal data fusion methods were based on specific neural network
+architectures and supervised learning. Ever since, the scarcity of labeled data
+has motivated self-supervised learning techniques. State-of-the-art multimodal
+representation learning techniques leverage the spatial alignment between
+satellite data from different modalities acquired over the same geographic area
+in order to foster a semantic alignment in the latent space. In this paper, we
+investigate how this methods can preserve task-relevant information that is not
+shared across modalities. First, we show, under simplifying assumptions, when
+alignment strategies fundamentally lead to an information loss. Then, we
+support our theoretical insight through numerical experiments in more realistic
+settings. With those theoretical and empirical evidences, we hope to support
+new developments in contrastive learning for the combination of multimodal
+satellite data. Our code and data is publicly available at
+https://github.com/Romain3Ch216/alg_maclean_25.</p></br><a href="http://arxiv.org/pdf/2509.16648v1" target="_blank"><h2>FESTA: Functionally Equivalent Sampling for Trust Assessment of
+  Multimodal LLMs</h2></a><strong><u>Authors:</u></strong>  Debarpan Bhattacharya, Apoorva Kulkarni, Sriram Ganapathy</br><strong><u>Categories:</u></strong> cs.AI, cs.CL, cs.LG</br><strong><u>Comments:</u></strong> Accepted in the Findings of EMNLP, 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), multi-modal (abstract)</br><p><strong><u>Abstract:</u></strong> The accurate trust assessment of multimodal large language models (MLLMs)
+generated predictions, which can enable selective prediction and improve user
+confidence, is challenging due to the diverse multi-modal input paradigms. We
+propose Functionally Equivalent Sampling for Trust Assessment (FESTA), a
+multimodal input sampling technique for MLLMs, that generates an uncertainty
+measure based on the equivalent and complementary input samplings. The proposed
+task-preserving sampling approach for uncertainty quantification expands the
+input space to probe the consistency (through equivalent samples) and
+sensitivity (through complementary samples) of the model. FESTA uses only
+input-output access of the model (black-box), and does not require ground truth
+(unsupervised). The experiments are conducted with various off-the-shelf
+multi-modal LLMs, on both visual and audio reasoning tasks. The proposed FESTA
+uncertainty estimate achieves significant improvement (33.3% relative
+improvement for vision-LLMs and 29.6% relative improvement for audio-LLMs) in
+selective prediction performance, based on
+area-under-receiver-operating-characteristic curve (AUROC) metric in detecting
+mispredictions. The code implementation is open-sourced.</p></br><a href="http://arxiv.org/pdf/2509.17621v1" target="_blank"><h2>SeqBattNet: A Discrete-State Physics-Informed Neural Network with Aging
+  Adaptation for Battery Modeling</h2></a><strong><u>Authors:</u></strong>  Khoa Tran, Hung-Cuong Trinh, Vy-Rin Nguyen, T. Nguyen-Thoi, Vin Nguyen-Thai</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Accurate battery modeling is essential for reliable state estimation in
+modern applications, such as predicting the remaining discharge time and
+remaining discharge energy in battery management systems. Existing approaches
+face several limitations: model-based methods require a large number of
+parameters; data-driven methods rely heavily on labeled datasets; and current
+physics-informed neural networks (PINNs) often lack aging adaptation, or still
+depend on many parameters, or continuously regenerate states. In this work, we
+propose SeqBattNet, a discrete-state PINN with built-in aging adaptation for
+battery modeling, to predict terminal voltage during the discharge process.
+SeqBattNet consists of two components: (i) an encoder, implemented as the
+proposed HRM-GRU deep learning module, which generates cycle-specific aging
+adaptation parameters; and (ii) a decoder, based on the equivalent circuit
+model (ECM) combined with deep learning, which uses these parameters together
+with the input current to predict voltage. The model requires only three basic
+battery parameters and, when trained on data from a single cell, still achieves
+robust performance. Extensive evaluations across three benchmark datasets (TRI,
+RT-Batt, and NASA) demonstrate that SeqBattNet significantly outperforms
+classical sequence models and PINN baselines, achieving consistently lower RMSE
+while maintaining computational efficiency.</p></br><a href="http://arxiv.org/pdf/2509.17670v1" target="_blank"><h2>Tailored Transformation Invariance for Industrial Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Mariette Schönfeld, Wannes Meert, Hendrik Blockeel</br><strong><u>Categories:</u></strong> cs.CV, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Industrial Anomaly Detection (IAD) is a subproblem within Computer Vision
+Anomaly Detection that has been receiving increasing amounts of attention due
+to its applicability to real-life scenarios. Recent research has focused on how
+to extract the most informative features, contrasting older kNN-based methods
+that use only pretrained features. These recent methods are much more expensive
+to train however and could complicate real-life application. Careful study of
+related work with regards to transformation invariance leads to the idea that
+popular benchmarks require robustness to only minor translations. With this
+idea we then formulate LWinNN, a local window based approach that creates a
+middle ground between kNN based methods that have either complete or no
+translation invariance. Our experiments demonstrate that this small change
+increases accuracy considerably, while simultaneously decreasing both train and
+test time. This teaches us two things: first, the gap between kNN-based
+approaches and more complex state-of-the-art methodology can still be narrowed
+by effective usage of the limited data available. Second, our assumption of
+requiring only limited translation invariance highlights potential areas of
+interest for future work and the need for more spatially diverse benchmarks,
+for which our method can hopefully serve as a new baseline. Our code can be
+found at https://github.com/marietteschonfeld/LWinNN .</p></br><a href="http://arxiv.org/pdf/2509.17987v1" target="_blank"><h2>Budgeted Adversarial Attack against Graph-Based Anomaly Detection in
+  Sensor Networks</h2></a><strong><u>Authors:</u></strong>  Sanju Xaviar, Omid Ardakanian</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 12 pages</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have emerged as powerful models for anomaly
+detection in sensor networks, particularly when analyzing multivariate time
+series. In this work, we introduce BETA, a novel grey-box evasion attack
+targeting such GNN-based detectors, where the attacker is constrained to
+perturb sensor readings from a limited set of nodes, excluding the target
+sensor, with the goal of either suppressing a true anomaly or triggering a
+false alarm at the target node. BETA identifies the sensors most influential to
+the target node's classification and injects carefully crafted adversarial
+perturbations into their features, all while maintaining stealth and respecting
+the attacker's budget. Experiments on three real-world sensor network datasets
+show that BETA reduces the detection accuracy of state-of-the-art GNN-based
+detectors by 30.62 to 39.16% on average, and significantly outperforms baseline
+attack strategies, while operating within realistic constraints.</p></br><a href="http://arxiv.org/pdf/2509.16926v1" target="_blank"><h2>Cross-Attention with Confidence Weighting for Multi-Channel Audio
+  Alignment</h2></a><strong><u>Authors:</u></strong>  Ragib Amin Nihal, Benjamin Yen, Takeshi Ashizawa, Kazuhiro Nakadai</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, cs.LG, eess.AS</br><strong><u>Comments:</u></strong> Accepted on Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE 2025)</br><strong><u>Matching Keywords:</u></strong> attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multi-channel audio alignment is a key requirement in bioacoustic monitoring,
+spatial audio systems, and acoustic localization. However, existing methods
+often struggle to address nonlinear clock drift and lack mechanisms for
+quantifying uncertainty. Traditional methods like Cross-correlation and Dynamic
+Time Warping assume simple drift patterns and provide no reliability measures.
+Meanwhile, recent deep learning models typically treat alignment as a binary
+classification task, overlooking inter-channel dependencies and uncertainty
+estimation. We introduce a method that combines cross-attention mechanisms with
+confidence-weighted scoring to improve multi-channel audio synchronization. We
+extend BEATs encoders with cross-attention layers to model temporal
+relationships between channels. We also develop a confidence-weighted scoring
+function that uses the full prediction distribution instead of binary
+thresholding. Our method achieved first place in the BioDCASE 2025 Task 1
+challenge with 0.30 MSE average across test datasets, compared to 0.58 for the
+deep learning baseline. On individual datasets, we achieved 0.14 MSE on ARU
+data (77% reduction) and 0.45 MSE on zebra finch data (18% reduction). The
+framework supports probabilistic temporal alignment, moving beyond point
+estimates. While validated in a bioacoustic context, the approach is applicable
+to a broader range of multi-channel audio tasks where alignment confidence is
+critical. Code available on: https://github.com/Ragib-Amin-Nihal/BEATsCA</p></br><a href="http://arxiv.org/pdf/2509.16625v1" target="_blank"><h2>Self-Supervised Learning of Graph Representations for Network Intrusion
+  Detection</h2></a><strong><u>Authors:</u></strong>  Lorenzo Guerra, Thomas Chapuis, Guillaume Duc, Pavlo Mozharovskyi, Van-Tam Nguyen</br><strong><u>Categories:</u></strong> cs.LG, cs.CR</br><strong><u>Comments:</u></strong> Accepted at NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), neural network (abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Detecting intrusions in network traffic is a challenging task, particularly
+under limited supervision and constantly evolving attack patterns. While recent
+works have leveraged graph neural networks for network intrusion detection,
+they often decouple representation learning from anomaly detection, limiting
+the utility of the embeddings for identifying attacks. We propose GraphIDS, a
+self-supervised intrusion detection model that unifies these two stages by
+learning local graph representations of normal communication patterns through a
+masked autoencoder. An inductive graph neural network embeds each flow with its
+local topological context to capture typical network behavior, while a
+Transformer-based encoder-decoder reconstructs these embeddings, implicitly
+learning global co-occurrence patterns via self-attention without requiring
+explicit positional information. During inference, flows with unusually high
+reconstruction errors are flagged as potential intrusions. This end-to-end
+framework ensures that embeddings are directly optimized for the downstream
+task, facilitating the recognition of malicious traffic. On diverse NetFlow
+benchmarks, GraphIDS achieves up to 99.98% PR-AUC and 99.61% macro F1-score,
+outperforming baselines by 5-25 percentage points.</p></br><a href="http://arxiv.org/pdf/2509.17400v1" target="_blank"><h2>Robust Anomaly Detection Under Normality Distribution Shift in Dynamic
+  Graphs</h2></a><strong><u>Authors:</u></strong>  Xiaoyang Xu, Xiaofeng Lin, Koh Takeuchi, Kyohei Atarashi, Hisashi Kashima</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in dynamic graphs is a critical task with broad real-world
+applications, including social networks, e-commerce, and cybersecurity. Most
+existing methods assume that normal patterns remain stable over time; however,
+this assumption often fails in practice due to the phenomenon we refer to as
+normality distribution shift (NDS), where normal behaviors evolve over time.
+Ignoring NDS can lead models to misclassify shifted normal instances as
+anomalies, degrading detection performance. To tackle this issue, we propose
+WhENDS, a novel unsupervised anomaly detection method that aligns normal edge
+embeddings across time by estimating distributional statistics and applying
+whitening transformations. Extensive experiments on four widely-used dynamic
+graph datasets show that WhENDS consistently outperforms nine strong baselines,
+achieving state-of-the-art results and underscoring the importance of
+addressing NDS in dynamic graph anomaly detection.</p></br><a href="http://arxiv.org/pdf/2509.16743v1" target="_blank"><h2>A Hybrid PCA-PR-Seq2Seq-Adam-LSTM Framework for Time-Series Power Outage
+  Prediction</h2></a><strong><u>Authors:</u></strong>  Subhabrata Das, Bodruzzaman Khan, Xiao-Yang Liu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Accurately forecasting power outages is a complex task influenced by diverse
+factors such as weather conditions [1], vegetation, wildlife, and load
+fluctuations. These factors introduce substantial variability and noise into
+outage data, making reliable prediction challenging. Long Short-Term Memory
+(LSTM) networks, a type of Recurrent Neural Network (RNN), are particularly
+effective for modeling nonlinear and dynamic time-series data, with proven
+applications in stock price forecasting [2], energy demand prediction, demand
+response [3], and traffic flow management [4]. This paper introduces a hybrid
+deep learning framework, termed PCA-PR-Seq2Seq-Adam-LSTM, that integrates
+Principal Component Analysis (PCA), Poisson Regression (PR), a
+Sequence-to-Sequence (Seq2Seq) architecture, and an Adam-optimized LSTM. PCA is
+employed to reduce dimensionality and stabilize data variance, while Poisson
+Regression effectively models discrete outage events. The Seq2Seq-Adam-LSTM
+component enhances temporal feature learning through efficient gradient
+optimization and long-term dependency capture. The framework is evaluated using
+real-world outage records from Michigan, and results indicate that the proposed
+approach significantly improves forecasting accuracy and robustness compared to
+existing methods.</p></br><a href="http://arxiv.org/pdf/2509.16629v1" target="_blank"><h2>Causality-Induced Positional Encoding for Transformer-Based
+  Representation Learning of Non-Sequential Features</h2></a><strong><u>Authors:</u></strong>  Kaichen Xu, Yihang Du, Mianpeng Liu, Zimu Yu, Xiaobo Sun</br><strong><u>Categories:</u></strong> cs.LG, q-bio.QM</br><strong><u>Comments:</u></strong> Accepted by NeurIPS 2025</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract), causality (title, abstract)</br><p><strong><u>Abstract:</u></strong> Positional encoding is essential for supplementing transformer with
+positional information of tokens. Existing positional encoding methods demand
+predefined token/feature order, rendering them unsuitable for real-world data
+with non-sequential yet causally-related features. To address this limitation,
+we propose CAPE, a novel method that identifies underlying causal structure
+over non-sequential features as a weighted directed acyclic graph (DAG) using
+generalized structural equation modeling. The DAG is then embedded in
+hyperbolic space where its geometric structure is well-preserved using a
+hyperboloid model-based approach that effectively captures two important causal
+graph properties (causal strength & causal specificity). This step yields
+causality-aware positional encodings for the features, which are converted into
+their rotary form for integrating with transformer's self-attention mechanism.
+Theoretical analysis reveals that CAPE-generated rotary positional encodings
+possess three valuable properties for enhanced self-attention, including causal
+distance-induced attenuation, causal generality-induced attenuation, and
+robustness to positional disturbances. We evaluate CAPE over both synthetic and
+real-word datasets, empirically demonstrating its theoretical properties and
+effectiveness in enhancing transformer for data with non-sequential features.
+Our code is available at https://github.com/Catchxu/CAPE.</p></br><a href="http://arxiv.org/pdf/2509.16788v1" target="_blank"><h2>Domain-Adaptive Pre-Training for Arabic Aspect-Based Sentiment Analysis:
+  A Comparative Study of Domain Adaptation and Fine-Tuning Strategies</h2></a><strong><u>Authors:</u></strong>  Salha Alyami, Amani Jamal, Areej Alhothali</br><strong><u>Categories:</u></strong> cs.CL, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 26 excluding bibliography , journal article</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), domain adaptation (title)</br><p><strong><u>Abstract:</u></strong> Aspect-based sentiment analysis (ABSA) in natural language processing enables
+organizations to understand customer opinions on specific product aspects.
+While deep learning models are widely used for English ABSA, their application
+in Arabic is limited due to the scarcity of labeled data. Researchers have
+attempted to tackle this issue by using pre-trained contextualized language
+models such as BERT. However, these models are often based on fact-based data,
+which can introduce bias in domain-specific tasks like ABSA. To our knowledge,
+no studies have applied adaptive pre-training with Arabic contextualized models
+for ABSA. This research proposes a novel approach using domain-adaptive
+pre-training for aspect-sentiment classification (ASC) and opinion target
+expression (OTE) extraction. We examine fine-tuning strategies - feature
+extraction, full fine-tuning, and adapter-based methods - to enhance
+performance and efficiency, utilizing multiple adaptation corpora and
+contextualized models. Our results show that in-domain adaptive pre-training
+yields modest improvements. Adapter-based fine-tuning is a computationally
+efficient method that achieves competitive results. However, error analyses
+reveal issues with model predictions and dataset labeling. In ASC, common
+problems include incorrect sentiment labeling, misinterpretation of contrastive
+markers, positivity bias for early terms, and challenges with conflicting
+opinions and subword tokenization. For OTE, issues involve mislabeling targets,
+confusion over syntactic roles, difficulty with multi-word expressions, and
+reliance on shallow heuristics. These findings underscore the need for syntax-
+and semantics-aware models, such as graph convolutional networks, to more
+effectively capture long-distance relations and complex aspect-based opinion
+alignments.</p></br><a href="http://arxiv.org/pdf/2509.17446v1" target="_blank"><h2>MVCL-DAF++: Enhancing Multimodal Intent Recognition via Prototype-Aware
+  Contrastive Alignment and Coarse-to-Fine Dynamic Attention Fusion</h2></a><strong><u>Authors:</u></strong>  Haofeng Huang, Yifei Han, Long Zhang, Bin Li, Yangfan He</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Submitted to ICASSP 2026</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal intent recognition (MMIR) suffers from weak semantic grounding and
+poor robustness under noisy or rare-class conditions. We propose MVCL-DAF++,
+which extends MVCL-DAF with two key modules: (1) Prototype-aware contrastive
+alignment, aligning instances to class-level prototypes to enhance semantic
+consistency; and (2) Coarse-to-fine attention fusion, integrating global
+modality summaries with token-level features for hierarchical cross-modal
+interaction. On MIntRec and MIntRec2.0, MVCL-DAF++ achieves new
+state-of-the-art results, improving rare-class recognition by +1.05\% and
++4.18\% WF1, respectively. These results demonstrate the effectiveness of
+prototype-guided learning and coarse-to-fine fusion for robust multimodal
+understanding. The source code is available at
+https://github.com/chr1s623/MVCL-DAF-PlusPlus.</p></br><a href="http://arxiv.org/pdf/2509.17543v1" target="_blank"><h2>Bilateral Distribution Compression: Reducing Both Data Size and
+  Dimensionality</h2></a><strong><u>Authors:</u></strong>  Dominic Broadbent, Nick Whiteley, Robert Allison, Tom Lovett</br><strong><u>Categories:</u></strong> stat.ML, cs.LG, stat.ME</br><strong><u>Comments:</u></strong> 43 pages, 20 figures</br><strong><u>Matching Keywords:</u></strong> latent space (abstract)</br><p><strong><u>Abstract:</u></strong> Existing distribution compression methods reduce dataset size by minimising
+the Maximum Mean Discrepancy (MMD) between original and compressed sets, but
+modern datasets are often large in both sample size and dimensionality. We
+propose Bilateral Distribution Compression (BDC), a two-stage framework that
+compresses along both axes while preserving the underlying distribution, with
+overall linear time and memory complexity in dataset size and dimension.
+Central to BDC is the Decoded MMD (DMMD), which quantifies the discrepancy
+between the original data and a compressed set decoded from a low-dimensional
+latent space. BDC proceeds by (i) learning a low-dimensional projection using
+the Reconstruction MMD (RMMD), and (ii) optimising a latent compressed set with
+the Encoded MMD (EMMD). We show that this procedure minimises the DMMD,
+guaranteeing that the compressed set faithfully represents the original
+distribution. Experiments show that across a variety of scenarios BDC can
+achieve comparable or superior performance to ambient-space compression at
+substantially lower cost.</p></br><a href="http://arxiv.org/pdf/2509.17153v1" target="_blank"><h2>Flow-Induced Diagonal Gaussian Processes</h2></a><strong><u>Authors:</u></strong>  Moule Lin, Andrea Patane, Weipeng Jing, Shuhao Guan, Goetz Botterweck</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 15 pages</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We present Flow-Induced Diagonal Gaussian Processes (FiD-GP), a compression
+framework that incorporates a compact inducing weight matrix to project a
+neural network's weight uncertainty into a lower-dimensional subspace.
+Critically, FiD-GP relies on normalising-flow priors and spectral
+regularisations to augment its expressiveness and align the inducing subspace
+with feature-gradient geometry through a numerically stable projection
+mechanism objective. Furthermore, we demonstrate how the prediction framework
+in FiD-GP can help to design a single-pass projection for Out-of-Distribution
+(OoD) detection. Our analysis shows that FiD-GP improves uncertainty estimation
+ability on various tasks compared with SVGP-based baselines, satisfies tight
+spectral residual bounds with theoretically guaranteed OoD detection, and
+significantly compresses the neural network's storage requirements at the cost
+of increased inference computation dependent on the number of inducing weights
+employed. Specifically, in a comprehensive empirical study spanning regression,
+image classification, semantic segmentation, and out-of-distribution detection
+benchmarks, it cuts Bayesian training cost by several orders of magnitude,
+compresses parameters by roughly 51%, reduces model size by about 75%, and
+matches state-of-the-art accuracy and uncertainty estimation.</p></br><a href="http://arxiv.org/pdf/2509.16547v1" target="_blank"><h2>Checking extracted rules in Neural Networks</h2></a><strong><u>Authors:</u></strong>  Adrian Wurm</br><strong><u>Categories:</u></strong> cs.AI, cs.LG</br><strong><u>Comments:</u></strong> 7 pages, one figure</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In this paper we investigate formal verification of extracted rules for
+Neural Networks under a complexity theoretic point of view. A rule is a global
+property or a pattern concerning a large portion of the input space of a
+network. These rules are algorithmically extracted from networks in an effort
+to better understand their inner way of working. Here, three problems will be
+in the focus: Does a given set of rules apply to a given network? Is a given
+set of rules consistent or do the rules contradict themselves? Is a given set
+of rules exhaustive in the sense that for every input the output is determined?
+Finding algorithms that extract such rules out of networks has been
+investigated over the last 30 years, however, to the author's current
+knowledge, no attempt in verification was made until now. A lot of attempts of
+extracting rules use heuristics involving randomness and over-approximation, so
+it might be beneficial to know whether knowledge obtained in that way can
+actually be trusted.
+  We investigate the above questions for neural networks with ReLU-activation
+as well as for Boolean networks, each for several types of rules. We
+demonstrate how these problems can be reduced to each other and show that most
+of them are co-NP-complete.</p></br></body>

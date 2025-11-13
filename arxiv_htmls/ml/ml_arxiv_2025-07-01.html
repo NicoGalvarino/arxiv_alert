@@ -1,0 +1,511 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 27 Jun 2025 to 01 Jul 2025</em></font><a href="http://arxiv.org/pdf/2506.23681v1" target="_blank"><h2>Multi-Model Framework for Reconstructing Gamma-Ray Burst Light Curves</h2></a><strong><u>Authors:</u></strong>  A. Kaushal, A. Manchanda, M. G. Dainotti, K. Gupta, Z. Nogala, A. Madhan, S. Naqi, Ritik Kumar, V. Oad, N. Indoriya, Krishnanjan Sil, D. H. Hartmann, M. Bogdan, A. Pollo, JX. Prochaska, N. Fraija</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.CO, astro-ph.IM</br><strong><u>Comments:</u></strong> 19 pages, 9 figures, 46 panels, 5 Tables. Submitted to JHEAPS. Comments are welcome</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Mitigating data gaps in Gamma-ray bursts (GRBs) light curves (LCs) holds
+immense value for its application in cosmological research because it provides
+more precise measurements of the parameter of interest of the two-dimensional
+Dainotti relation which is a relation among the end time of the plateau
+emission, Ta, its respective luminosity, La which is calculated from the fluxes
+at the end of the plateau, Fa. This study extends the work done by
+arXiv:2305.12126; arXiv:2412.20091v4 on the 545 GRB sample by introducing six
+different models: Deep Gaussian Process (DGP), Temporal Convolutional Network
+(TCN), Hybrid model of Convolutional Neural Network with Long Short-Term Memory
+(CNN-LSTM), Bayesian Neural Network (BNN), Polynomial Curve Fitting and
+Isotonic Regression. Our findings demonstrate that Isotonic Regression achieves
+the highest uncertainty reduction for all three parameters (36.3% for log Ta,
+36.1% for log Fa, and 43.6% for {\alpha}) outperforming all the other models.
+The CNN- LSTM model shows consistent improvements across all GRB parameters
+with the lowest outlier rate for {\alpha} (0.550%), surpassing the performance
+of the LSTM model in arXiv:2412.20091v4. The DGP model offers reliable
+uncertainty reduction across all parameters and improves upon the single-layer
+GP baseline. These advancements are essential for using GRBs as theoretical
+model discriminators via the parameters of their LCs and standard candles in
+cosmology, investigating theoretical models, and predicting GRB redshifts
+through recent cutting-edge machine-learning analysis
+(arXiv:2411.10736,arXiv:2405.02263; arXiv:2410.13985).</p></br><a href="http://arxiv.org/pdf/2506.23595v1" target="_blank"><h2>Searching for quasinormal modes from Binary Black Hole mergers</h2></a><strong><u>Authors:</u></strong>  A. Królak, O. Dorosh</br><strong><u>Categories:</u></strong> gr-qc, astro-ph.CO, astro-ph.HE, astro-ph.IM</br><strong><u>Comments:</u></strong> Contribution to the 2025 Gravitation session of the 59th Rencontres de Moriond</br><strong><u>Matching Keywords:</u></strong> time-domain (abstract)</br><p><strong><u>Abstract:</u></strong> We present a new method to search for gravitational waves from quasinormal
+modes in the ringdowns of the remnants of the mergers of the binary black hole
+systems. The method is based on maximum likelihood estimation. We derive a
+time-domain matched-filtering statistic that can be used to search for any
+number of modes in the data. The parameters of the modes can be estimated and
+the modes present in the data can be reconstructed. We perform Monte Carlo
+simulations of the method by injecting the quasinormal mode waveforms to noise.
+We analyze performance of the method for searches of quasinormal modes in the
+advanced detectors data like LIGO and Virgo, in the third generation of
+detectors like Einstein Telescope and Cosmic Explorer and in the space detector
+LISA data. We analyze ringdown of publicly available GW190521 event and we
+compare our results with analysis by other methods.</p></br><a href="http://arxiv.org/pdf/2506.23270v1" target="_blank"><h2>Token Activation Map to Visually Explain Multimodal LLMs</h2></a><strong><u>Authors:</u></strong>  Yi Li, Hualiang Wang, Xinpeng Ding, Haonan Wang, Xiaomeng Li</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> ICCV2025 Accepted</br><strong><u>Matching Keywords:</u></strong> explainability (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal large language models (MLLMs) are broadly empowering various
+fields. Despite their advancements, the explainability of MLLMs remains less
+explored, hindering deeper understanding, model credibility, and effective
+visualization. Unlike conventional vision models (e.g., CNNs, ViTs, CLIP) that
+produce a single output, MLLMs generate sequences of tokens progressively,
+where each generated token depends on the previous context. Therefore, earlier
+context tokens can introduce redundant activations that interfere with the
+explanation of later tokens beyond their original information. Existing studies
+often overlook this issue, but our observations reveal that these redundant
+correlations can significantly hurt the reliability of explanations. To address
+this, we propose an estimated causal inference method to mitigate the
+interference of context to achieve high-quality MLLM explanation, with a novel
+rank Gaussian filter to further reduce activation noises. We term this method
+Token Activation Map (TAM) to highlight the consideration of interactions
+between tokens. TAM also indicates that it excels at explaining multiple tokens
+of MLLM, which is different from the Class Activation Map (CAM) for a single
+prediction. Our TAM method significantly outperforms existing SoTA methods,
+showcasing high-quality visualization results that can be utilized for various
+scenarios, such as object localization, failure case analysis, video
+visualization, MLLMs visual comparison, and model understanding (e.g., color,
+shape, action, location, visual reasoning, multi-turn conversation, etc). The
+code is available atgithub.com/xmed-lab/TAM.</p></br><a href="http://arxiv.org/pdf/2506.23885v1" target="_blank"><h2>Modeling blazar broadband emission with convolutional neural networks --
+  III. proton synchrotron and hybrid models</h2></a><strong><u>Authors:</u></strong>  N. Sahakyan, D. Bégué, A. Casotto, H. Dereli-Bégué, V. Vardanyan, M. Khachatryan, P. Giommi, A. Pe'er</br><strong><u>Categories:</u></strong> astro-ph.HE, astro-ph.GA</br><strong><u>Comments:</u></strong> submitted to ApJ</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Modeling the broadband emission of blazars has become increasingly
+challenging with the advent of multimessenger observations. Building upon
+previous successes in applying convolutional neural networks (CNNs) to leptonic
+emission scenarios, we present an efficient CNN-based approach for modeling
+blazar emission under proton synchrotron and hybrid lepto-hadronic frameworks.
+Our CNN is trained on extensive numerical simulations generated by SOPRANO,
+which span a comprehensive parameter space accounting for the injection and all
+significant cooling processes of electrons and protons. The trained CNN
+captures complex interactions involving both primary and secondary particles,
+effectively reproducing electromagnetic and neutrino emissions. This allows for
+rapid and thorough exploration of the parameter space characteristic of
+hadronic and hybrid emission scenarios. The effectiveness of the trained CNN is
+demonstrated through fitting the spectral energy distributions of two prominent
+blazars, TXS 0506+059 and PKS 0735+178, both associated with IceCube neutrino
+detections. The modeling is conducted under assumptions of constant neutrino
+flux across distinct energy ranges, as well as by adopting a fitting that
+incorporates the expected neutrino event count through a Poisson likelihood
+method. The trained CNN is integrated into the Markarian Multiwavelength Data
+Center (MMDC; https://www.mmdc.am), offering a robust tool for the
+astrophysical community to explore blazar jet physics within a hadronic
+framework.</p></br><a href="http://arxiv.org/pdf/2506.24120v1" target="_blank"><h2>Data Uniformity Improves Training Efficiency and More, with a
+  Convergence Framework Beyond the NTK Regime</h2></a><strong><u>Authors:</u></strong>  Yuqing Wang, Shangding Gu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, math.OC, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> data-driven (abstract), neural network (abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> Data selection plays a crucial role in data-driven decision-making, including
+in large language models (LLMs), and is typically task-dependent. Properties
+such as data quality and diversity have been extensively studied and are known
+to enhance model performance. However, it remains unclear whether there exist
+other quantitative and general principles of data selection that can
+consistently improve performance, especially for complex tasks with limited
+prior knowledge. In this paper, we demonstrate that selecting more uniformly
+distributed data can improve training efficiency while enhancing performance.
+Specifically, we establish that more uniform (less biased) distribution leads
+to a larger minimum pairwise distance between data points, denoted by
+$h_{\min}$, and prove that a smaller $h_{\min}$ can slow down the training
+dynamics of gradient descent (GD). Moreover, we theoretically show that the
+approximation error of neural networks decreases as $h_{\min}$ increases. Our
+analysis introduces a convergence framework for GD beyond the Neural Tangent
+Kernel (NTK) regime, applicable to a broad class of architectures, including
+transformers, without requiring Lipschitz smoothness. This framework further
+provides theoretical justification for the use of residual connections and
+function compositions in deep neural architectures. In the end, we conduct
+comprehensive experiments for supervised fine-tuning across various settings,
+including different optimization strategies, model sizes, and training
+datasets. The results consistently demonstrate that selecting data by
+maximizing pairwise distance significantly accelerates training and achieves
+comparable or better performance in LLMs across diverse datasets. Code and
+Datasets are available at the link:
+https://github.com/SafeRL-Lab/data-uniformity.</p></br><a href="http://arxiv.org/pdf/2506.23629v1" target="_blank"><h2>A Nonlinear Low-rank Representation Model with Convolutional Neural
+  Network for Imputing Water Quality Data</h2></a><strong><u>Authors:</u></strong>  Xin Liao, Bing Yang, Cai Yu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, 68T07(Primary) 62M10, 65C60 (Secondary), I.2.7</br><strong><u>Comments:</u></strong> 7 pages, 2 figures, conference</br><strong><u>Matching Keywords:</u></strong> convolutional (title, abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The integrity of Water Quality Data (WQD) is critical in environmental
+monitoring for scientific decision-making and ecological protection. However,
+water quality monitoring systems are often challenged by large amounts of
+missing data due to unavoidable problems such as sensor failures and
+communication delays, which further lead to water quality data becoming
+High-Dimensional and Sparse (HDS). Traditional data imputation methods are
+difficult to depict the potential dynamics and fail to capture the deep data
+features, resulting in unsatisfactory imputation performance. To effectively
+address the above issues, this paper proposes a Nonlinear Low-rank
+Representation model (NLR) with Convolutional Neural Networks (CNN) for
+imputing missing WQD, which utilizes CNNs to implement two ideas: a) fusing
+temporal features to model the temporal dependence of data between time slots,
+and b) Extracting nonlinear interactions and local patterns to mine
+higher-order relationships features and achieve deep fusion of multidimensional
+information. Experimental studies on three real water quality datasets
+demonstrate that the proposed model significantly outperforms existing
+state-of-the-art data imputation models in terms of estimation accuracy. It
+provides an effective approach for handling water quality monitoring data in
+complex dynamic environments.</p></br><a href="http://arxiv.org/pdf/2506.22837v1" target="_blank"><h2>xLSTMAD: A Powerful xLSTM-based Method for Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Kamil Faber, Marcin Pietroń, Dominik Żurek, Roberto Corizzo</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), transformer (abstract)</br><p><strong><u>Abstract:</u></strong> The recently proposed xLSTM is a powerful model that leverages expressive
+multiplicative gating and residual connections, providing the temporal capacity
+needed for long-horizon forecasting and representation learning. This
+architecture has demonstrated success in time series forecasting, lossless
+compression, and even large-scale language modeling tasks, where its linear
+memory footprint and fast inference make it a viable alternative to
+Transformers. Despite its growing popularity, no prior work has explored xLSTM
+for anomaly detection. In this work, we fill this gap by proposing xLSTMAD, the
+first anomaly detection method that integrates a full encoder-decoder xLSTM
+architecture, purpose-built for multivariate time series data. Our encoder
+processes input sequences to capture historical context, while the decoder is
+devised in two separate variants of the method. In the forecasting approach,
+the decoder iteratively generates forecasted future values xLSTMAD-F, while the
+reconstruction approach reconstructs the input time series from its encoded
+counterpart xLSTMAD-R. We investigate the performance of two loss functions:
+Mean Squared Error (MSE), and Soft Dynamic Time Warping (SoftDTW) to consider
+local reconstruction fidelity and global sequence alignment, respectively. We
+evaluate our method on the comprehensive TSB-AD-M benchmark, which spans 17
+real-world datasets, using state-of-the-art challenging metrics such as VUS-PR.
+In our results, xLSTM showcases state-of-the-art accuracy, outperforming 23
+popular anomaly detection baselines. Our paper is the first work revealing the
+powerful modeling capabilities of xLSTM for anomaly detection, paving the way
+for exciting new developments on this subject. Our code is available at:
+https://github.com/Nyderx/xlstmad</p></br><a href="http://arxiv.org/pdf/2506.22668v1" target="_blank"><h2>DistShap: Scalable GNN Explanations with Distributed Shapley Values</h2></a><strong><u>Authors:</u></strong>  Selahattin Akkas, Aditya Devarakonda, Ariful Azad</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.DC, stat.ML</br><strong><u>Comments:</u></strong> 12 pages</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> With the growing adoption of graph neural networks (GNNs), explaining their
+predictions has become increasingly important. However, attributing predictions
+to specific edges or features remains computationally expensive. For example,
+classifying a node with 100 neighbors using a 3-layer GNN may involve
+identifying important edges from millions of candidates contributing to the
+prediction. To address this challenge, we propose DistShap, a parallel
+algorithm that distributes Shapley value-based explanations across multiple
+GPUs. DistShap operates by sampling subgraphs in a distributed setting,
+executing GNN inference in parallel across GPUs, and solving a distributed
+least squares problem to compute edge importance scores. DistShap outperforms
+most existing GNN explanation methods in accuracy and is the first to scale to
+GNN models with millions of features by using up to 128 GPUs on the NERSC
+Perlmutter supercomputer.</p></br><a href="http://arxiv.org/pdf/2506.22984v1" target="_blank"><h2>Cybersecurity-Focused Anomaly Detection in Connected Autonomous Vehicles
+  Using Machine Learning</h2></a><strong><u>Authors:</u></strong>  Prathyush Kumar Reddy Lebaku, Lu Gao, Yunpeng Zhang, Zhixia Li, Yongxin Liu, Tanvir Arafin</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract), sequential data (abstract)</br><p><strong><u>Abstract:</u></strong> Anomaly detection in connected autonomous vehicles (CAVs) is crucial for
+maintaining safe and reliable transportation networks, as CAVs can be
+susceptible to sensor malfunctions, cyber-attacks, and unexpected environmental
+disruptions. This study explores an anomaly detection approach by simulating
+vehicle behavior, generating a dataset that represents typical and atypical
+vehicular interactions. The dataset includes time-series data of position,
+speed, and acceleration for multiple connected autonomous vehicles. We utilized
+machine learning models to effectively identify abnormal driving patterns.
+First, we applied a stacked Long Short-Term Memory (LSTM) model to capture
+temporal dependencies and sequence-based anomalies. The stacked LSTM model
+processed the sequential data to learn standard driving behaviors.
+Additionally, we deployed a Random Forest model to support anomaly detection by
+offering ensemble-based predictions, which enhanced model interpretability and
+performance. The Random Forest model achieved an R2 of 0.9830, MAE of 5.746,
+and a 95th percentile anomaly threshold of 14.18, while the stacked LSTM model
+attained an R2 of 0.9998, MAE of 82.425, and a 95th percentile anomaly
+threshold of 265.63. These results demonstrate the models' effectiveness in
+accurately predicting vehicle trajectories and detecting anomalies in
+autonomous driving scenarios.</p></br><a href="http://arxiv.org/pdf/2506.23462v1" target="_blank"><h2>Can We Predict the Unpredictable? Leveraging DisasterNet-LLM for
+  Multimodal Disaster Classification</h2></a><strong><u>Authors:</u></strong>  Manaswi Kulahara, Gautam Siddharth Kashyap, Nipun Joshi, Arpita Soni</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> Accepted in the 2025 IEEE International Geoscience and Remote Sensing Symposium (IGARSS 2025), scheduled for 3 - 8 August 2025 in Brisbane, Australia</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), transformer (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Effective disaster management requires timely and accurate insights, yet
+traditional methods struggle to integrate multimodal data such as images,
+weather records, and textual reports. To address this, we propose
+DisasterNet-LLM, a specialized Large Language Model (LLM) designed for
+comprehensive disaster analysis. By leveraging advanced pretraining,
+cross-modal attention mechanisms, and adaptive transformers, DisasterNet-LLM
+excels in disaster classification. Experimental results demonstrate its
+superiority over state-of-the-art models, achieving higher accuracy of 89.5%,
+an F1 score of 88.0%, AUC of 0.92%, and BERTScore of 0.88% in multimodal
+disaster classification tasks.</p></br><a href="http://arxiv.org/pdf/2506.22578v1" target="_blank"><h2>The Hidden Link Between RLHF and Contrastive Learning</h2></a><strong><u>Authors:</u></strong>  Xufei Lv, Haoyuan Sun, Xuefeng Bai, Min Zhang, Houde Liu, Kehai Chen</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> attention (abstract)</br><p><strong><u>Abstract:</u></strong> Alignment of large language models (LLMs) with human values has recently
+garnered significant attention, with prominent examples including the canonical
+yet costly Reinforcement Learning from Human Feedback (RLHF) and the simple
+Direct Preference Optimization (DPO). In this work, we demonstrate that both
+RLHF and DPO can be interpreted from the perspective of mutual information (MI)
+maximization, uncovering a profound connection to contrastive learning. Within
+this framework, both RLHF and DPO can be viewed as methods that perform
+contrastive learning based on the positive and negative samples derived from
+the base model, leveraging the Donsker-Varadhan (DV) lower bound on MI
+(equivalently, the MINE estimator). This paradigm further explains why RLHF may
+not intrinsically incentivize reasoning capacities in LLMs beyond what is
+already present in the base model. Building on this perspective, we replace the
+DV/MINE bound with the Jensen-Shannon MI estimator and propose Mutual
+Information Optimization (MIO). Comprehensive theoretical analysis and
+extensive empirical evaluations demonstrate that MIO mitigates the late-stage
+decline in chosen-likelihood observed in DPO, achieving competitive or superior
+performance across various challenging reasoning and mathematical benchmarks.
+We will release the model and code upon acceptance.</p></br><a href="http://arxiv.org/pdf/2506.22901v1" target="_blank"><h2>Missing-Modality-Aware Graph Neural Network for Cancer Classification</h2></a><strong><u>Authors:</u></strong>  Sina Tabakhi, Haiping Lu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, q-bio.BM, q-bio.GN</br><strong><u>Comments:</u></strong> 15 pages, 7 figures</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract), multimodal (abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> A key challenge in learning from multimodal biological data is missing
+modalities, where all data from some modalities are missing for some patients.
+Current fusion methods address this by excluding patients with missing
+modalities, imputing missing modalities, or making predictions directly with
+partial modalities. However, they often struggle with diverse missing-modality
+patterns and the exponential growth of the number of such patterns as the
+number of modalities increases. To address these limitations, we propose MAGNET
+(Missing-modality-Aware Graph neural NETwork) for direct prediction with
+partial modalities, which introduces a patient-modality multi-head attention
+mechanism to fuse lower-dimensional modality embeddings based on their
+importance and missingness. MAGNET's complexity increases linearly with the
+number of modalities while adapting to missing-pattern variability. To generate
+predictions, MAGNET further constructs a patient graph with fused multimodal
+embeddings as node features and the connectivity determined by the modality
+missingness, followed by a conventional graph neural network. Experiments on
+three public multiomics datasets for cancer classification, with real-world
+instead of artificial missingness, show that MAGNET outperforms the
+state-of-the-art fusion methods. The data and code are available at
+https://github.com/SinaTabakhi/MAGNET.</p></br><a href="http://arxiv.org/pdf/2506.22712v1" target="_blank"><h2>Generalized Linear Mode Connectivity for Transformers</h2></a><strong><u>Authors:</u></strong>  Alexander Theus, Alessandro Cabodi, Sotiris Anagnostidis, Antonio Orvieto, Sidak Pal Singh, Valentina Boeva</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Understanding the geometry of neural network loss landscapes is a central
+question in deep learning, with implications for generalization and
+optimization. A striking phenomenon is linear mode connectivity (LMC), where
+independently trained models can be connected by low- or zero-loss paths,
+despite appearing to lie in separate loss basins. However, this is often
+obscured by symmetries in parameter space -- such as neuron permutations --
+which make functionally equivalent models appear dissimilar. Prior work has
+predominantly focused on neuron re-ordering through permutations, but such
+approaches are limited in scope and fail to capture the richer symmetries
+exhibited by modern architectures such as Transformers. In this work, we
+introduce a unified framework that captures four symmetry classes:
+permutations, semi-permutations, orthogonal transformations, and general
+invertible maps -- broadening the set of valid reparameterizations and
+subsuming many previous approaches as special cases. Crucially, this
+generalization enables, for the first time, the discovery of low- and
+zero-barrier linear interpolation paths between independently trained Vision
+Transformers and GPT-2 models. These results reveal deeper structure in the
+loss landscape and underscore the importance of symmetry-aware analysis for
+understanding model space geometry.</p></br><a href="http://arxiv.org/pdf/2506.23469v1" target="_blank"><h2>Reconciling Attribute and Structural Anomalies for Improved Graph
+  Anomaly Detection</h2></a><strong><u>Authors:</u></strong>  Chunjing Xiao, Jiahui Lu, Xovee Xu, Fan Zhou, Tianshu Xie, Wei Lu, Lifeng Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.SI</br><strong><u>Comments:</u></strong> Accepted by IEEE Transactions on Neural Networks and Learning Systems (TNNLS); DOI:this https URL</br><strong><u>Matching Keywords:</u></strong> anomaly detection (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph anomaly detection is critical in domains such as healthcare and
+economics, where identifying deviations can prevent substantial losses.
+Existing unsupervised approaches strive to learn a single model capable of
+detecting both attribute and structural anomalies. However, they confront the
+tug-of-war problem between two distinct types of anomalies, resulting in
+suboptimal performance. This work presents TripleAD, a mutual
+distillation-based triple-channel graph anomaly detection framework. It
+includes three estimation modules to identify the attribute, structural, and
+mixed anomalies while mitigating the interference between different types of
+anomalies. In the first channel, we design a multiscale attribute estimation
+module to capture extensive node interactions and ameliorate the over-smoothing
+issue. To better identify structural anomalies, we introduce a link-enhanced
+structure estimation module in the second channel that facilitates information
+flow to topologically isolated nodes. The third channel is powered by an
+attribute-mixed curvature, a new indicator that encapsulates both attribute and
+structural information for discriminating mixed anomalies. Moreover, a mutual
+distillation strategy is introduced to encourage communication and
+collaboration between the three channels. Extensive experiments demonstrate the
+effectiveness of the proposed TripleAD model against strong baselines.</p></br><a href="http://arxiv.org/pdf/2506.23437v1" target="_blank"><h2>From Large-scale Audio Tagging to Real-Time Explainable Emergency
+  Vehicle Sirens Detection</h2></a><strong><u>Authors:</u></strong>  Stefano Giacomelli, Marco Giordano, Claudia Rinaldi, Fabio Graziosi</br><strong><u>Categories:</u></strong> cs.SD, cs.AI, eess.AS, 68T07, E.1; H.1; I.2; I.5; J.2; K.4; C.4</br><strong><u>Comments:</u></strong> pre-print (submitted to the IEEE/ACM Transactions on Audio, Speech, and Language Processing)</br><strong><u>Matching Keywords:</u></strong> convolutional (abstract), explainable (title), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Accurate recognition of Emergency Vehicle (EV) sirens is critical for the
+integration of intelligent transportation systems, smart city monitoring
+systems, and autonomous driving technologies. Modern automatic solutions are
+limited by the lack of large scale, curated datasets and by the computational
+demands of state of the art sound event detection models. This work introduces
+E2PANNs (Efficient Emergency Pre trained Audio Neural Networks), a lightweight
+Convolutional Neural Network architecture derived from the PANNs framework,
+specifically optimized for binary EV siren detection. Leveraging our dedicated
+subset of AudioSet (AudioSet EV) we fine-tune and evaluate E2PANNs across
+multiple reference datasets and test its viability on embedded hardware. The
+experimental campaign includes ablation studies, cross-domain benchmarking, and
+real-time inference deployment on edge device. Interpretability analyses
+exploiting Guided Backpropagation and ScoreCAM algorithms provide insights into
+the model internal representations and validate its ability to capture distinct
+spectrotemporal patterns associated with different types of EV sirens. Real
+time performance is assessed through frame wise and event based detection
+metrics, as well as a detailed analysis of false positive activations. Results
+demonstrate that E2PANNs establish a new state of the art in this research
+domain, with high computational efficiency, and suitability for edge-based
+audio monitoring and safety-critical applications.</p></br><a href="http://arxiv.org/pdf/2506.23446v1" target="_blank"><h2>Enhancing Insider Threat Detection Using User-Based Sequencing and
+  Transformer Encoders</h2></a><strong><u>Authors:</u></strong>  Mohamed Elbasheer, Adewale Akinfaderin</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), transformer (title, abstract)</br><p><strong><u>Abstract:</u></strong> Insider threat detection presents unique challenges due to the authorized
+status of malicious actors and the subtlety of anomalous behaviors. Existing
+machine learning methods often treat user activity as isolated events, thereby
+failing to leverage sequential dependencies in user behavior. In this study, we
+propose a User-Based Sequencing (UBS) methodology, transforming the CERT
+insider threat dataset into structured temporal sequences suitable for deep
+sequential modeling. We deploy a Transformer Encoder architecture to model
+benign user activity and employ its reconstruction errors as anomaly scores.
+These scores are subsequently evaluated using three unsupervised outlier
+detection algorithms: One-Class SVM (OCSVM), Local Outlier Factor (LOF), and
+Isolation Forest (iForest). Across four rigorously designed test sets,
+including combinations of multiple CERT dataset releases, our UBS-Transformer
+pipeline consistently achieves state-of-the-art performance - notably 96.61%
+accuracy, 99.43% recall, 96.38% F1-score, 95.00% AUROC, and exceptionally low
+false negative (0.0057) and false positive (0.0571) rates. Comparative analyses
+demonstrate that our approach substantially outperforms tabular and
+conventional autoencoder baselines, underscoring the efficacy of sequential
+user modeling and advanced anomaly detection in the insider threat domain.</p></br><a href="http://arxiv.org/pdf/2506.23802v1" target="_blank"><h2>Adaptive Out-of-Control Point Pattern Detection in Sequential Random
+  Finite Set Observations</h2></a><strong><u>Authors:</u></strong>  Konstantinos Bourazas, Savvas Papaioannou, Panayiotis Kolios</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 23rd European Control Conference (ECC 2025), Thessaloniki, Greece, 24-27 June 2025</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> In this work we introduce a novel adaptive anomaly detection framework
+specifically designed for monitoring sequential random finite set (RFS)
+observations. Our approach effectively distinguishes between In-Control data
+(normal) and Out-Of-Control data (anomalies) by detecting deviations from the
+expected statistical behavior of the process. The primary contributions of this
+study include the development of an innovative RFS-based framework that not
+only learns the normal behavior of the data-generating process online but also
+dynamically adapts to behavioral shifts to accurately identify abnormal point
+patterns. To achieve this, we introduce a new class of RFS-based posterior
+distributions, named Power Discounting Posteriors (PD), which facilitate
+adaptation to systematic changes in data while enabling anomaly detection of
+point pattern data through a novel predictive posterior density function. The
+effectiveness of the proposed approach is demonstrated by extensive qualitative
+and quantitative simulation experiments.</p></br><a href="http://arxiv.org/pdf/2506.22994v1" target="_blank"><h2>Kernel Outlier Detection</h2></a><strong><u>Authors:</u></strong>  Can Hakan Dağıdır, Mia Hubert, Peter J. Rousseeuw</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> A new anomaly detection method called kernel outlier detection (KOD) is
+proposed. It is designed to address challenges of outlier detection in
+high-dimensional settings. The aim is to overcome limitations of existing
+methods, such as dependence on distributional assumptions or on hyperparameters
+that are hard to tune. KOD starts with a kernel transformation, followed by a
+projection pursuit approach. Its novelties include a new ensemble of directions
+to search over, and a new way to combine results of different direction types.
+This provides a flexible and lightweight approach for outlier detection. Our
+empirical evaluations illustrate the effectiveness of KOD on three small
+datasets with challenging structures, and on four large benchmark datasets.</p></br><a href="http://arxiv.org/pdf/2506.24081v1" target="_blank"><h2>SQUASH: A SWAP-Based Quantum Attack to Sabotage Hybrid Quantum Neural
+  Networks</h2></a><strong><u>Authors:</u></strong>  Rahul Kumar, Wenqi Wei, Ying Mao, Junaid Farooq, Ying Wang, Juntao Chen</br><strong><u>Categories:</u></strong> quant-ph, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> Keywords: Quantum Machine Learning, Hybrid Quantum Neural Networks, SWAP Test, Fidelity, Circuit-level Attack</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a circuit-level attack, SQUASH, a SWAP-Based Quantum Attack to
+sabotage Hybrid Quantum Neural Networks (HQNNs) for classification tasks.
+SQUASH is executed by inserting SWAP gate(s) into the variational quantum
+circuit of the victim HQNN. Unlike conventional noise-based or adversarial
+input attacks, SQUASH directly manipulates the circuit structure, leading to
+qubit misalignment and disrupting quantum state evolution. This attack is
+highly stealthy, as it does not require access to training data or introduce
+detectable perturbations in input states. Our results demonstrate that SQUASH
+significantly degrades classification performance, with untargeted SWAP attacks
+reducing accuracy by up to 74.08\% and targeted SWAP attacks reducing target
+class accuracy by up to 79.78\%. These findings reveal a critical vulnerability
+in HQNN implementations, underscoring the need for more resilient architectures
+against circuit-level adversarial interventions.</p></br><a href="http://arxiv.org/pdf/2506.23964v1" target="_blank"><h2>Learning Constraints Directly from Network Data</h2></a><strong><u>Authors:</u></strong>  Hongyu Hè, Minhao Jin, Maria Apostolaki</br><strong><u>Categories:</u></strong> cs.NI, cs.LG, C.2.3; I.2.6; I.2.3</br><strong><u>Comments:</u></strong> 13 pages, 15 figures</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract)</br><p><strong><u>Abstract:</u></strong> Network data conforms to a wide range of rules that arise from protocols,
+design principles, and deployment decisions (e.g., a packet's queuing delay
+must be less than its end-to-end delay). Formalizing such rules as logic
+constraints can (i) improve the quality of synthetic data, (ii) reduce the
+brittleness of machine learning (ML) models, and (iii) improve semantic
+understanding of network measurements. However, these benefits remain out of
+reach if rule extraction is manual or solely reliant on ML, as both approaches
+yield incomplete, unreliable, and/or inaccurate rules.
+  This paper formulates rule extraction as a constraint modeling problem and
+introduces NetNomos that learns propositional logic constraints directly from
+raw network measurements. Constraint modeling in this domain is uniquely
+challenging due to the scale of the data, the inherent learning complexity and
+passive environment, and the lack of ground truth supervision. NetNomos
+addresses these challenges via a lattice-based search structured by constraint
+specificity and succinctness. Our approach reduces learning complexity from
+superquadratic to logarithmic and enables efficient traversal in combinatorial
+search space.
+  Our evaluations on diverse network datasets show that NetNomos learns all
+benchmark rules, including those associated with as little as 0.01% of data
+points, in under three hours. In contrast, baseline methods discover less than
+25% of the rules and require several days to run. Through three case studies,
+we show that: NetNomos (i) finds rule violations in the outputs of all seven
+synthetic traffic generators, hence can be used to assess and guide their
+generation process; (ii) detects semantic differences in traffic, hence can be
+used for anomaly detection; and (iii) automatically finds rules used for
+telemetry imputation, hence can support monitoring through inference.</p></br><a href="http://arxiv.org/pdf/2506.22845v1" target="_blank"><h2>Quantum Neural Networks for Wind Energy Forecasting: A Comparative Study
+  of Performance and Scalability with Classical Models</h2></a><strong><u>Authors:</u></strong>  Batuhan Hangun, Oguz Altun, Onder Eyecioglu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, cs.PF</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Quantum Neural Networks (QNNs), a prominent approach in Quantum Machine
+Learning (QML), are emerging as a powerful alternative to classical machine
+learning methods. Recent studies have focused on the applicability of QNNs to
+various tasks, such as time-series forecasting, prediction, and classification,
+across a wide range of applications, including cybersecurity and medical
+imaging. With the increased use of smart grids driven by the integration of
+renewable energy systems, machine learning plays an important role in
+predicting power demand and detecting system disturbances. This study provides
+an in-depth investigation of QNNs for predicting the power output of a wind
+turbine. We assess the predictive performance and simulation time of six QNN
+configurations that are based on the Z Feature Map for data encoding and
+varying ansatz structures. Through detailed cross-validation experiments and
+tests on an unseen hold-out dataset, we experimentally demonstrate that QNNs
+can achieve predictive performance that is competitive with, and in some cases
+marginally better than, the benchmarked classical approaches. Our results also
+reveal the effects of dataset size and circuit complexity on predictive
+performance and simulation time. We believe our findings will offer valuable
+insights for researchers in the energy domain who wish to incorporate quantum
+machine learning into their work.</p></br><a href="http://arxiv.org/pdf/2506.23767v1" target="_blank"><h2>Explainable AI for Comprehensive Risk Assessment for Financial Reports:
+  A Lightweight Hierarchical Transformer Network Approach</h2></a><strong><u>Authors:</u></strong>  Xue Wen Tan, Stanley Kok</br><strong><u>Categories:</u></strong> q-fin.RM, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title, abstract), transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Every publicly traded U.S. company files an annual 10-K report containing
+critical insights into financial health and risk. We propose Tiny eXplainable
+Risk Assessor (TinyXRA), a lightweight and explainable transformer-based model
+that automatically assesses company risk from these reports. Unlike prior work
+that relies solely on the standard deviation of excess returns (adjusted for
+the Fama-French model), which indiscriminately penalizes both upside and
+downside risk, TinyXRA incorporates skewness, kurtosis, and the Sortino ratio
+for more comprehensive risk assessment. We leverage TinyBERT as our encoder to
+efficiently process lengthy financial documents, coupled with a novel dynamic,
+attention-based word cloud mechanism that provides intuitive risk visualization
+while filtering irrelevant terms. This lightweight design ensures scalable
+deployment across diverse computing environments with real-time processing
+capabilities for thousands of financial documents which is essential for
+production systems with constrained computational resources. We employ triplet
+loss for risk quartile classification, improving over pairwise loss approaches
+in existing literature by capturing both the direction and magnitude of risk
+differences. Our TinyXRA achieves state-of-the-art predictive accuracy across
+seven test years on a dataset spanning 2013-2024, while providing transparent
+and interpretable risk assessments. We conduct comprehensive ablation studies
+to evaluate our contributions and assess model explanations both quantitatively
+by systematically removing highly attended words and sentences, and
+qualitatively by examining explanation coherence. The paper concludes with
+findings, practical implications, limitations, and future research directions.</p></br><a href="http://arxiv.org/pdf/2506.23782v1" target="_blank"><h2>Calibrating Graph Neural Networks with Wavelet-Aware Temperature Scaling</h2></a><strong><u>Authors:</u></strong>  Xiaoyang Li, Linwei Tao, Haohui Lu, Minjing Dong, Junbin Gao, Chang Xu</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have demonstrated strong predictive performance
+on relational data; however, their confidence estimates often misalign with
+actual predictive correctness, posing significant limitations for deployment in
+safety-critical settings. While existing graph-aware calibration methods seek
+to mitigate this limitation, they primarily depend on coarse one-hop
+statistics, such as neighbor-predicted confidence, or latent node embeddings,
+thereby neglecting the fine-grained structural heterogeneity inherent in graph
+topology. In this work, we propose Wavelet-Aware Temperature Scaling (WATS), a
+post-hoc calibration framework that assigns node-specific temperatures based on
+tunable heat-kernel graph wavelet features. Specifically, WATS harnesses the
+scalability and topology sensitivity of graph wavelets to refine confidence
+estimates, all without necessitating model retraining or access to neighboring
+logits or predictions. Extensive evaluations across seven benchmark datasets
+with varying graph structures and two GNN backbones demonstrate that WATS
+achieves the lowest Expected Calibration Error (ECE) among all compared
+methods, outperforming both classical and graph-specific baselines by up to
+42.3\% in ECE and reducing calibration variance by 17.24\% on average compared
+with graph-specific methods. Moreover, WATS remains computationally efficient,
+scaling well across graphs of diverse sizes and densities. Code will be
+released based on publication.</p></br><a href="http://arxiv.org/pdf/2506.23757v1" target="_blank"><h2>Training of Spiking Neural Networks with Expectation-Propagation</h2></a><strong><u>Authors:</u></strong>  Dan Yao, Steve McLaughlin, Yoann Altmann</br><strong><u>Categories:</u></strong> cs.LG, stat.ME, stat.ML</br><strong><u>Comments:</u></strong> 10 pages</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> In this paper, we propose a unifying message-passing framework for training
+spiking neural networks (SNNs) using Expectation-Propagation. Our gradient-free
+method is capable of learning the marginal distributions of network parameters
+and simultaneously marginalizes nuisance parameters, such as the outputs of
+hidden layers. This framework allows for the first time, training of discrete
+and continuous weights, for deterministic and stochastic spiking networks,
+using batches of training samples. Although its convergence is not ensured, the
+algorithm converges in practice faster than gradient-based methods, without
+requiring a large number of passes through the training data. The
+classification and regression results presented pave the way for new efficient
+training methods for deep Bayesian networks.</p></br><a href="http://arxiv.org/pdf/2506.22851v1" target="_blank"><h2>Deep neural networks can provably solve Bellman equations for Markov
+  decision processes without the curse of dimensionality</h2></a><strong><u>Authors:</u></strong>  Arnulf Jentzen, Konrad Kleinberg, Thomas Kruse</br><strong><u>Categories:</u></strong> math.OC, cs.LG, cs.NA, math.NA, math.PR, stat.ML, 90C40, 90C39, 60J05, 93E20, 65C05, 68T07</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (title, abstract)</br><p><strong><u>Abstract:</u></strong> Discrete time stochastic optimal control problems and Markov decision
+processes (MDPs) are fundamental models for sequential decision-making under
+uncertainty and as such provide the mathematical framework underlying
+reinforcement learning theory. A central tool for solving MDPs is the Bellman
+equation and its solution, the so-called $Q$-function. In this article, we
+construct deep neural network (DNN) approximations for $Q$-functions associated
+to MDPs with infinite time horizon and finite control set $A$. More
+specifically, we show that if the the payoff function and the random transition
+dynamics of the MDP can be suitably approximated by DNNs with leaky rectified
+linear unit (ReLU) activation, then the solutions $Q_d\colon \mathbb R^d\to
+\mathbb R^{|A|}$, $d\in \mathbb{N}$, of the associated Bellman equations can
+also be approximated in the $L^2$-sense by DNNs with leaky ReLU activation
+whose numbers of parameters grow at most polynomially in both the dimension
+$d\in \mathbb{N}$ of the state space and the reciprocal $1/\varepsilon$ of the
+prescribed error $\varepsilon\in (0,1)$. Our proof relies on the recently
+introduced full-history recursive multilevel fixed-point (MLFP) approximation
+scheme.</p></br><a href="http://arxiv.org/pdf/2506.24093v1" target="_blank"><h2>Development of Hybrid Artificial Intelligence Training on Real and
+  Synthetic Data: Benchmark on Two Mixed Training Strategies</h2></a><strong><u>Authors:</u></strong>  Paul Wachter, Lukas Niehaus, Julius Schöning</br><strong><u>Categories:</u></strong> cs.LG, cs.AI, I.2.1; I.2.0; F.2.3</br><strong><u>Comments:</u></strong> 21pages, 14 figures, 2 tables</br><strong><u>Matching Keywords:</u></strong> neural network (abstract)</br><p><strong><u>Abstract:</u></strong> Synthetic data has emerged as a cost-effective alternative to real data for
+training artificial neural networks (ANN). However, the disparity between
+synthetic and real data results in a domain gap. That gap leads to poor
+performance and generalization of the trained ANN when applied to real-world
+scenarios. Several strategies have been developed to bridge this gap, which
+combine synthetic and real data, known as mixed training using hybrid datasets.
+While these strategies have been shown to mitigate the domain gap, a systematic
+evaluation of their generalizability and robustness across various tasks and
+architectures remains underexplored. To address this challenge, our study
+comprehensively analyzes two widely used mixing strategies on three prevalent
+architectures and three distinct hybrid datasets. From these datasets, we
+sample subsets with varying proportions of synthetic to real data to
+investigate the impact of synthetic and real components. The findings of this
+paper provide valuable insights into optimizing the use of synthetic data in
+the training process of any ANN, contributing to enhancing robustness and
+efficacy.</p></br><a href="http://arxiv.org/pdf/2506.23247v1" target="_blank"><h2>Aggregating Local Saliency Maps for Semi-Global Explainable Image
+  Classification</h2></a><strong><u>Authors:</u></strong>  James Hinns, David Martens</br><strong><u>Categories:</u></strong> cs.CV, cs.AI, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> explainable (title)</br><p><strong><u>Abstract:</u></strong> Deep learning dominates image classification tasks, yet understanding how
+models arrive at predictions remains a challenge. Much research focuses on
+local explanations of individual predictions, such as saliency maps, which
+visualise the influence of specific pixels on a model's prediction. However,
+reviewing many of these explanations to identify recurring patterns is
+infeasible, while global methods often oversimplify and miss important local
+behaviours. To address this, we propose Segment Attribution Tables (SATs), a
+method for summarising local saliency explanations into (semi-)global insights.
+SATs take image segments (such as "eyes" in Chihuahuas) and leverage saliency
+maps to quantify their influence. These segments highlight concepts the model
+relies on across instances and reveal spurious correlations, such as reliance
+on backgrounds or watermarks, even when out-of-distribution test performance
+sees little change. SATs can explain any classifier for which a form of
+saliency map can be produced, using segmentation maps that provide named
+segments. SATs bridge the gap between oversimplified global summaries and
+overly detailed local explanations, offering a practical tool for analysing and
+debugging image classifiers.</p></br><a href="http://arxiv.org/pdf/2506.22602v1" target="_blank"><h2>Are Fast Methods Stable in Adversarially Robust Transfer Learning?</h2></a><strong><u>Authors:</u></strong>  Joshua C. Zhao, Saurabh Bagchi</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> 13 pages</br><strong><u>Matching Keywords:</u></strong> transfer learning (title, abstract)</br><p><strong><u>Abstract:</u></strong> Transfer learning is often used to decrease the computational cost of model
+training, as fine-tuning a model allows a downstream task to leverage the
+features learned from the pre-training dataset and quickly adapt them to a new
+task. This is particularly useful for achieving adversarial robustness, as
+adversarially training models from scratch is very computationally expensive.
+However, high robustness in transfer learning still requires adversarial
+training during the fine-tuning phase, which requires up to an order of
+magnitude more time than standard fine-tuning. In this work, we revisit the use
+of the fast gradient sign method (FGSM) in robust transfer learning to improve
+the computational cost of adversarial fine-tuning. We surprisingly find that
+FGSM is much more stable in adversarial fine-tuning than when training from
+scratch. In particular, FGSM fine-tuning does not suffer from any issues with
+catastrophic overfitting at standard perturbation budgets of $\varepsilon=4$ or
+$\varepsilon=8$. This stability is further enhanced with parameter-efficient
+fine-tuning methods, where FGSM remains stable even up to $\varepsilon=32$ for
+linear probing. We demonstrate how this stability translates into performance
+across multiple datasets. Compared to fine-tuning with the more commonly used
+method of projected gradient descent (PGD), on average, FGSM only loses 0.39%
+and 1.39% test robustness for $\varepsilon=4$ and $\varepsilon=8$ while using
+$4\times$ less training time. Surprisingly, FGSM may not only be a
+significantly more efficient alternative to PGD in adversarially robust
+transfer learning but also a well-performing one.</p></br></body>

@@ -1,0 +1,169 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"]
+        }
+    });
+    </script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <style>     body {font-family: 'Montserrat'; background: #F3F3F3; width: 740px; margin: 0 auto; line-height: 150%; margin-top: 50px; font-size: 15px}         h1 {font-size: 70px}         a {color: #45ABC2}         em {font-size: 120%} </style><h1><center>ArXiv Alert</center></h1><font color='#DDAD5C'><em>Update: from 23 Jul 2025 to 25 Jul 2025</em></font><a href="http://arxiv.org/pdf/2507.17796v1" target="_blank"><h2>CoCAI: Copula-based Conformal Anomaly Identification for Multivariate
+  Time-Series</h2></a><strong><u>Authors:</u></strong>  Nicholas A. Pearson, Francesca Zanello, Davide Russo, Luca Bortolussi, Francesca Cairoli</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> Accepted for Presentation at Runtime Verification 25</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), dimensionality reduction (abstract)</br><p><strong><u>Abstract:</u></strong> We propose a novel framework that harnesses the power of generative
+artificial intelligence and copula-based modeling to address two critical
+challenges in multivariate time-series analysis: delivering accurate
+predictions and enabling robust anomaly detection. Our method, Copula-based
+Conformal Anomaly Identification for Multivariate Time-Series (CoCAI),
+leverages a diffusion-based model to capture complex dependencies within the
+data, enabling high quality forecasting. The model's outputs are further
+calibrated using a conformal prediction technique, yielding predictive regions
+which are statistically valid, i.e., cover the true target values with a
+desired confidence level. Starting from these calibrated forecasts, robust
+outlier detection is performed by combining dimensionality reduction techniques
+with copula-based modeling, providing a statistically grounded anomaly score.
+CoCAI benefits from an offline calibration phase that allows for minimal
+overhead during deployment and delivers actionable results rooted in
+established theoretical foundations. Empirical tests conducted on real
+operational data derived from water distribution and sewerage systems confirm
+CoCAI's effectiveness in accurately forecasting target sequences of data and in
+identifying anomalous segments within them.</p></br><a href="http://arxiv.org/pdf/2507.18512v1" target="_blank"><h2>Explaining How Visual, Textual and Multimodal Encoders Share Concepts</h2></a><strong><u>Authors:</u></strong>  Clément Cornet, Romaric Besançon, Hervé Le Borgne</br><strong><u>Categories:</u></strong> cs.CV, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Sparse autoencoders (SAEs) have emerged as a powerful technique for
+extracting human-interpretable features from neural networks activations.
+Previous works compared different models based on SAE-derived features but
+those comparisons have been restricted to models within the same modality. We
+propose a novel indicator allowing quantitative comparison of models across SAE
+features, and use it to conduct a comparative study of visual, textual and
+multimodal encoders. We also propose to quantify the Comparative Sharedness of
+individual features between different classes of models. With these two new
+tools, we conduct several studies on 21 encoders of the three types, with two
+significantly different sizes, and considering generalist and domain specific
+datasets. The results allow to revisit previous studies at the light of
+encoders trained in a multimodal context and to quantify to which extent all
+these models share some representations or features. They also suggest that
+visual features that are specific to VLMs among vision encoders are shared with
+text encoders, highlighting the impact of text pretraining. The code is
+available at https://github.com/CEA-LIST/SAEshareConcepts</p></br><a href="http://arxiv.org/pdf/2507.17792v1" target="_blank"><h2>Causal Mechanism Estimation in Multi-Sensor Systems Across Multiple
+  Domains</h2></a><strong><u>Authors:</u></strong>  Jingyi Yu, Tim Pychynski, Marco F. Huber</br><strong><u>Categories:</u></strong> cs.LG, stat.ML</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> transfer learning (abstract), causality (abstract)</br><p><strong><u>Abstract:</u></strong> To gain deeper insights into a complex sensor system through the lens of
+causality, we present common and individual causal mechanism estimation
+(CICME), a novel three-step approach to inferring causal mechanisms from
+heterogeneous data collected across multiple domains. By leveraging the
+principle of Causal Transfer Learning (CTL), CICME is able to reliably detect
+domain-invariant causal mechanisms when provided with sufficient samples. The
+identified common causal mechanisms are further used to guide the estimation of
+the remaining causal mechanisms in each domain individually. The performance of
+CICME is evaluated on linear Gaussian models under scenarios inspired from a
+manufacturing process. Building upon existing continuous optimization-based
+causal discovery methods, we show that CICME leverages the benefits of applying
+causal discovery on the pooled data and repeatedly on data from individual
+domains, and it even outperforms both baseline methods under certain scenarios.</p></br><a href="http://arxiv.org/pdf/2507.17907v1" target="_blank"><h2>Deep learning-aided inverse design of porous metamaterials</h2></a><strong><u>Authors:</u></strong>  Phu Thien Nguyen, Yousef Heider, Dennis M. Kochmann, Fadi Aldakheel</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 31 pages, 29 figures</br><strong><u>Matching Keywords:</u></strong> variational autoencoder (abstract), VAE (abstract), convolutional (abstract), latent space (abstract), neural network (abstract)</br><p><strong><u>Abstract:</u></strong> The ultimate aim of the study is to explore the inverse design of porous
+metamaterials using a deep learning-based generative framework. Specifically,
+we develop a property-variational autoencoder (pVAE), a variational autoencoder
+(VAE) augmented with a regressor, to generate structured metamaterials with
+tailored hydraulic properties, such as porosity and permeability. While this
+work uses the lattice Boltzmann method (LBM) to generate intrinsic permeability
+tensor data for limited porous microstructures, a convolutional neural network
+(CNN) is trained using a bottom-up approach to predict effective hydraulic
+properties. This significantly reduces the computational cost compared to
+direct LBM simulations. The pVAE framework is trained on two datasets: a
+synthetic dataset of artificial porous microstructures and CT-scan images of
+volume elements from real open-cell foams. The encoder-decoder architecture of
+the VAE captures key microstructural features, mapping them into a compact and
+interpretable latent space for efficient structure-property exploration. The
+study provides a detailed analysis and interpretation of the latent space,
+demonstrating its role in structure-property mapping, interpolation, and
+inverse design. This approach facilitates the generation of new metamaterials
+with desired properties. The datasets and codes used in this study will be made
+open-access to support further research.</p></br><a href="http://arxiv.org/pdf/2507.18320v1" target="_blank"><h2>State of Health Estimation of Batteries Using a Time-Informed Dynamic
+  Sequence-Inverted Transformer</h2></a><strong><u>Authors:</u></strong>  Janak M. Patel, Milad Ramezankhani, Anirudh Deodhar, Dagnachew Birru</br><strong><u>Categories:</u></strong> cs.LG</br><strong><u>Comments:</u></strong> 11 pages, 3 figures</br><strong><u>Matching Keywords:</u></strong> transformer (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> The rapid adoption of battery-powered vehicles and energy storage systems
+over the past decade has made battery health monitoring increasingly critical.
+Batteries play a central role in the efficiency and safety of these systems,
+yet they inevitably degrade over time due to repeated charge-discharge cycles.
+This degradation leads to reduced energy efficiency and potential overheating,
+posing significant safety concerns. Accurate estimation of a State of Health
+(SoH) of battery is therefore essential for ensuring operational reliability
+and safety. Several machine learning architectures, such as LSTMs,
+transformers, and encoder-based models, have been proposed to estimate SoH from
+discharge cycle data. However, these models struggle with the irregularities
+inherent in real-world measurements: discharge readings are often recorded at
+non-uniform intervals, and the lengths of discharge cycles vary significantly.
+To address this, most existing approaches extract features from the sequences
+rather than processing them in full, which introduces information loss and
+compromises accuracy. To overcome these challenges, we propose a novel
+architecture: Time-Informed Dynamic Sequence Inverted Transformer (TIDSIT).
+TIDSIT incorporates continuous time embeddings to effectively represent
+irregularly sampled data and utilizes padded sequences with temporal attention
+mechanisms to manage variable-length inputs without discarding sequence
+information. Experimental results on the NASA battery degradation dataset show
+that TIDSIT significantly outperforms existing models, achieving over 50%
+reduction in prediction error and maintaining an SoH prediction error below
+0.58%. Furthermore, the architecture is generalizable and holds promise for
+broader applications in health monitoring tasks involving irregular time-series
+data.</p></br><a href="http://arxiv.org/pdf/2507.18252v1" target="_blank"><h2>Multimodal Behavioral Patterns Analysis with Eye-Tracking and LLM-Based
+  Reasoning</h2></a><strong><u>Authors:</u></strong>  Dongyang Guo, Yasmeen Abdrabou, Enkeleda Thaqi, Enkelejda Kasneci</br><strong><u>Categories:</u></strong> cs.HC, cs.AI, cs.CL, cs.LG</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> anomaly detection (abstract), multimodal (title, abstract)</br><p><strong><u>Abstract:</u></strong> Eye-tracking data reveals valuable insights into users' cognitive states but
+is difficult to analyze due to its structured, non-linguistic nature. While
+large language models (LLMs) excel at reasoning over text, they struggle with
+temporal and numerical data. This paper presents a multimodal human-AI
+collaborative framework designed to enhance cognitive pattern extraction from
+eye-tracking signals. The framework includes: (1) a multi-stage pipeline using
+horizontal and vertical segmentation alongside LLM reasoning to uncover latent
+gaze patterns; (2) an Expert-Model Co-Scoring Module that integrates expert
+judgment with LLM output to generate trust scores for behavioral
+interpretations; and (3) a hybrid anomaly detection module combining LSTM-based
+temporal modeling with LLM-driven semantic analysis. Our results across several
+LLMs and prompt strategies show improvements in consistency, interpretability,
+and performance, with up to 50% accuracy in difficulty prediction tasks. This
+approach offers a scalable, interpretable solution for cognitive modeling and
+has broad potential in adaptive learning, human-computer interaction, and
+educational analytics.</p></br><a href="http://arxiv.org/pdf/2507.18562v1" target="_blank"><h2>GIIFT: Graph-guided Inductive Image-free Multimodal Machine Translation</h2></a><strong><u>Authors:</u></strong>  Jiafeng Xiong, Yuting Zhao</br><strong><u>Categories:</u></strong> cs.CL, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> multimodal (title, abstract), attention (abstract)</br><p><strong><u>Abstract:</u></strong> Multimodal Machine Translation (MMT) has demonstrated the significant help of
+visual information in machine translation. However, existing MMT methods face
+challenges in leveraging the modality gap by enforcing rigid visual-linguistic
+alignment whilst being confined to inference within their trained multimodal
+domains. In this work, we construct novel multimodal scene graphs to preserve
+and integrate modality-specific information and introduce GIIFT, a two-stage
+Graph-guided Inductive Image-Free MMT framework that uses a cross-modal Graph
+Attention Network adapter to learn multimodal knowledge in a unified fused
+space and inductively generalize it to broader image-free translation domains.
+Experimental results on the Multi30K dataset of English-to-French and
+English-to-German tasks demonstrate that our GIIFT surpasses existing
+approaches and achieves the state-of-the-art, even without images during
+inference. Results on the WMT benchmark show significant improvements over the
+image-free translation baselines, demonstrating the strength of GIIFT towards
+inductive image-free inference.</p></br><a href="http://arxiv.org/pdf/2507.17787v1" target="_blank"><h2>Hyperbolic Deep Learning for Foundation Models: A Survey</h2></a><strong><u>Authors:</u></strong>  Neil He, Hiren Madhu, Ngoc Bui, Menglin Yang, Rex Ying</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> 11 Pages, SIGKDD 2025</br><strong><u>Matching Keywords:</u></strong> multimodal (abstract)</br><p><strong><u>Abstract:</u></strong> Foundation models pre-trained on massive datasets, including large language
+models (LLMs), vision-language models (VLMs), and large multimodal models, have
+demonstrated remarkable success in diverse downstream tasks. However, recent
+studies have shown fundamental limitations of these models: (1) limited
+representational capacity, (2) lower adaptability, and (3) diminishing
+scalability. These shortcomings raise a critical question: is Euclidean
+geometry truly the optimal inductive bias for all foundation models, or could
+incorporating alternative geometric spaces enable models to better align with
+the intrinsic structure of real-world data and improve reasoning processes?
+Hyperbolic spaces, a class of non-Euclidean manifolds characterized by
+exponential volume growth with respect to distance, offer a mathematically
+grounded solution. These spaces enable low-distortion embeddings of
+hierarchical structures (e.g., trees, taxonomies) and power-law distributions
+with substantially fewer dimensions compared to Euclidean counterparts. Recent
+advances have leveraged these properties to enhance foundation models,
+including improving LLMs' complex reasoning ability, VLMs' zero-shot
+generalization, and cross-modal semantic alignment, while maintaining parameter
+efficiency. This paper provides a comprehensive review of hyperbolic neural
+networks and their recent development for foundation models. We further outline
+key challenges and research directions to advance the field.</p></br><a href="http://arxiv.org/pdf/2507.18521v1" target="_blank"><h2>GLANCE: Graph Logic Attention Network with Cluster Enhancement for
+  Heterophilous Graph Representation Learning</h2></a><strong><u>Authors:</u></strong>  Zhongtian Sun, Anoushka Harit, Alexandra Cristea, Christl A. Donnelly, Pietro Liò</br><strong><u>Categories:</u></strong> cs.LG, cs.AI</br><strong><u>Comments:</u></strong> No comments</br><strong><u>Matching Keywords:</u></strong> neural network (abstract), attention (title, abstract)</br><p><strong><u>Abstract:</u></strong> Graph Neural Networks (GNNs) have demonstrated significant success in
+learning from graph-structured data but often struggle on heterophilous graphs,
+where connected nodes differ in features or class labels. This limitation
+arises from indiscriminate neighbor aggregation and insufficient incorporation
+of higher-order structural patterns. To address these challenges, we propose
+GLANCE (Graph Logic Attention Network with Cluster Enhancement), a novel
+framework that integrates logic-guided reasoning, dynamic graph refinement, and
+adaptive clustering to enhance graph representation learning. GLANCE combines a
+logic layer for interpretable and structured embeddings, multi-head
+attention-based edge pruning for denoising graph structures, and clustering
+mechanisms for capturing global patterns. Experimental results in benchmark
+datasets, including Cornell, Texas, and Wisconsin, demonstrate that GLANCE
+achieves competitive performance, offering robust and interpretable solutions
+for heterophilous graph scenarios. The proposed framework is lightweight,
+adaptable, and uniquely suited to the challenges of heterophilous graphs.</p></br></body>
