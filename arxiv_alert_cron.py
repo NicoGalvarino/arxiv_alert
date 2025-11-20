@@ -24,14 +24,14 @@ def get_current_date():
 
 # Set up logging
 logging.basicConfig(
-    filename='/Users/nguerrav/Documents/arxiv/arxiv_alert.log', 
+    filename='/Users/nguerrav/Documents/arxiv_alert/arxiv_alert.log', 
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 def load_processed_papers():
     """Load the list of previously processed paper IDs"""
-    processed_file = '/Users/nguerrav/Documents/arxiv/processed_papers.json'
+    processed_file = '/Users/nguerrav/Documents/arxiv_alert/processed_papers.json'
     try:
         with open(processed_file, 'r') as f:
             return set(json.load(f))
@@ -40,7 +40,7 @@ def load_processed_papers():
 
 def save_processed_papers(processed_papers):
     """Save the list of processed paper IDs"""
-    processed_file = '/Users/nguerrav/Documents/arxiv/processed_papers.json'
+    processed_file = '/Users/nguerrav/Documents/arxiv_alert/processed_papers.json'
     with open(processed_file, 'w') as f:
         json.dump(list(processed_papers), f)
 
@@ -151,18 +151,17 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
             search_query += 'au:%s+OR+' % urllib.parse.quote(author)
 
     search_query = search_query[:-4] + '%29'
-        # 3rd step : when --> 1 week from 8pm to 8pm
+        # 3rd step : when --> specify date range
     today = get_current_date()
-    # yesterday = date.today() - timedelta(1)
-    dby = today - timedelta(amount_of_days + 1)
+    # Calculate start date: go back amount_of_days from yesterday
+    yesterday = today - timedelta(1)
+    dby = yesterday - timedelta(amount_of_days + 1)
     start_date = dby.strftime("%Y%m%d") + "0000"
     # Use yesterday as end date to avoid timezone issues with "today"
-    yesterday = today - timedelta(1)
     end_date = yesterday.strftime("%Y%m%d") + "2000"
-    # end_date = today.strftime("%Y%m%d") + "2000"
     
-    # search_query += f'+lastUpdatedDate:[{start_date}+TO+{end_date}]'
-    search_query += f'+AND+submittedDate:[{start_date}+TO+{end_date}]'
+    search_query += f'+lastUpdatedDate:[{start_date}+TO+{end_date}]'
+    # search_query += f'+submittedDate:[{start_date}+TO+{end_date}]'
     
     # Define numbers of results we want to show
     min_results = 0
@@ -230,13 +229,17 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
     no_keywords_count = 0  # Count papers filtered due to no matching keywords
 
     for entry in feed.entries:
+
+        # print('\n \n ----------', entry)
+        # print('\n entry.links:', entry.links)
+
         arxiv_id = entry.id.split('/abs/')[-1]
 
         # Only new papers
         base_arxiv_id = arxiv_id.split('v')[0] if 'v' in arxiv_id else arxiv_id
         # # Skip if this paper was already processed
-        if base_arxiv_id in processed_papers:
-            continue
+        # if base_arxiv_id in processed_papers:
+            # continue
 
             # Get all categories for this paper
         all_categories = [t['term'] for t in entry.tags]
@@ -264,9 +267,12 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
 
         pdf_link = ''
         for link in entry.links:
+            # print('-----\n', link)
             if link.rel == 'alternate':
+                # print('in if link.rel == alternate')
                 continue
             elif link.title == 'pdf':
+                # print('in elif link.title == pdf')
                 pdf_link = link.href  # Pdf link in the title
         
         comments = get_paper_comments(arxiv_id)
@@ -310,7 +316,7 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
 
     
     # Set path to be absolute for cron job
-    output_dir = '/Users/nguerrav/Documents/arxiv/arxiv_htmls'
+    output_dir = '/Users/nguerrav/Documents/arxiv_alert/arxiv_htmls'
     os.makedirs(output_dir, exist_ok=True)
     
     my_path = os.path.join(output_dir, html_name + '.html')
@@ -392,9 +398,9 @@ def run_daily_task():
         html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), 3, categories_astroph, keywords_astroph, excluded_categories=excluded_astro_categories)
         html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), 3, categories_ml, keywords_ml)
     else:
-        # Use longer lookback period to ensure we find papers
-        html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), 2, categories_astroph, keywords_astroph, excluded_categories=excluded_astro_categories)
-        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), 2, categories_ml, keywords_ml)
+        # Regular daily lookback
+        html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), 1, categories_astroph, keywords_astroph, excluded_categories=excluded_astro_categories)
+        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), 1, categories_ml, keywords_ml)
     
     logging.info(f"Daily task completed for {today}")
 

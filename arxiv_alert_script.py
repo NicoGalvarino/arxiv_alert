@@ -207,32 +207,47 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
     #     open_new_tab(filename)
     # except:
     #     ""
-
-categories_astroph = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he', 'astro-ph.im']
+categories_astroph = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he'
+                        ]
 keywords_astroph = [
-    'ALMA', 'ALMACAL', 'JWST', '4MOST', 'DESI', 'Euclid', 'SDSS', 
+    'ALMA', #'"ALMA"', 
+    'ALMACAL', #'"ALMACAL"', 
+    'MUSE', 'MUSE-ALMA', #'"MUSE"', '"MUSE-ALMA"', 
+    'JWST', #'"JWST"', 
+    'James Webb Space Telescope', 
+    '4MOST', 'DESI', 'Euclid', 'SDSS', #'"4MOST"', '"DESI"', '"Euclid"', '"SDSS"', 
     'galaxy evolution', 'galaxy formation', 'galactic chemical evolution', 'galaxy chemical evolution', 
+    'galactic outlflows', 'galactic outlflow', 'outflows', 'outflow', 
+    'dust', 'dust evolution', 'stellar mass function', 'quiescent galaxies', 'atomic hydrogen', 
     'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas', 
     'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics', 
-    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 
+    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', 'MgII absorbers', 
     'high z', 'high redshift', 
-    'AGN', 'active galactic nuclei', 'QSO', 'quasar', 
-    'BAL QSO', 'broad absorption line quasar', 'broad absorption line QSO', 
-    'AGN variability', 'active galactic nuclei variability', 'blazar variability', 
-    'CGM', 'circumgalactic medium', 'IGM', 'intergalactic medium', 
-    'damped lyman-alpha system', 'DLA'
+    'feedback', 'stellar feedback', 
+    'AGN', 'AGN feedback', #'"AGN"', 
+    'active galactic nuclei', 'QSO', #'"QSO"', 
+    'quasar', 
+    'BAL QSO', #'"BAL QSO"', 
+    'broad absorption line quasar', 'broad absorption line QSO', 
+    'AGN variability', 'active galactic nuclei variability', 'blazar variability', 'time-domain', 'time domain', 
+    'CGM', #'"CGM"', 
+    'circumgalactic medium', 'IGM', #'"IGM"', 
+    'intergalactic medium', 'halo', 'haloes', 
+    'damped lyman alpha system', 'DLA', #'"DLA"', 
+    'lyman limit system', 'LLS'
 ]
-html_file_astro = arxiv_alert('astro_arxiv_' + str(date.today()), 1, categories_astroph, keywords_astroph)
+excluded_astro_categories = ['astro-ph.EP', 'astro-ph.SR']
+
 
 categories_ml = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he', 'astro-ph.im', 
-                 "cs.ai",   # AI
-                 "cs.gl",   # general literature
-                 "cs.lg",   # machine learning
-                 "stat.ml"  # machine learning
-                 ]
+                    "cs.ai",   # AI
+                    "cs.gl",   # general literature
+                    "cs.lg",   # machine learning
+                    "stat.ml"  # machine learning
+                    ]
 keywords_ml = [
     'astroinformatics', 'astro-informatics', 'data-driven', 
-    'variational autoencoder', 'VAE', 
+    'variational autoencoder', 'VAE', #'"VAE"', 
     'convolutional', 
     'anomaly detection', 'contextual anomaly detection', 
     'dimensionality reduction', 'dimension reduction', 'latent space', 
@@ -248,18 +263,29 @@ keywords_ml = [
     'causality', 'causation', 
     'literature review', 'literature discovery'
 ]
-html_file_ml = arxiv_alert('ml_arxiv_' + str(date.today()), 1, categories_ml, keywords_ml)
 
 # List of email recipients
-recipients = ['nicolas.guerravaras@eso.org']
+# recipients = ['nicolas.guerravaras@eso.org']
 
 def run_daily_task():
     """Function to run the arXiv alert and send emails"""
     print(f"Running arXiv alerts for {date.today()}")
+
+    today = date.today()
+    # logging.info(f"Running arXiv alerts for {today}")
+    
+    if today.weekday() == 0 or today.weekday() == 1:  # monday, tuesday
+        # Use longer lookback period to ensure we find papers
+        html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), 3, categories_astroph, keywords_astroph, excluded_categories=excluded_astro_categories)
+        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), 3, categories_ml, keywords_ml)
+    else:
+        # Use longer lookback period to ensure we find papers
+        # html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), 2, categories_astroph, keywords_astroph, excluded_categories=excluded_astro_categories)
+        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), 2, categories_ml, keywords_ml)
     
     # Generate the HTML files
-    html_file_astro = arxiv_alert('astro_arxiv_' + str(date.today()), 1, categories_astroph, keywords_astroph)
-    html_file_ml = arxiv_alert('ml_arxiv_' + str(date.today()), 1, categories_ml, keywords_ml)
+    # html_file_astro = arxiv_alert('astro_arxiv_' + str(date.today()), 1, categories_astroph, keywords_astroph)
+    # html_file_ml = arxiv_alert('ml_arxiv_' + str(date.today()), 1, categories_ml, keywords_ml)
     
     # Send emails with the generated HTML files
     # today = date.today().strftime('%Y-%m-%d')
