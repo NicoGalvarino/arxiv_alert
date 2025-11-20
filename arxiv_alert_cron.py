@@ -158,10 +158,11 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
     dby = yesterday - timedelta(amount_of_days + 1)
     start_date = dby.strftime("%Y%m%d") + "0000"
     # Use yesterday as end date to avoid timezone issues with "today"
-    end_date = yesterday.strftime("%Y%m%d") + "2000"
+    # end_date = yesterday.strftime("%Y%m%d") + "2000"
+    end_date = today.strftime("%Y%m%d") + "0000"
     
-    search_query += f'+lastUpdatedDate:[{start_date}+TO+{end_date}]'
-    # search_query += f'+submittedDate:[{start_date}+TO+{end_date}]'
+    # search_query += f'+AND+lastUpdatedDate:[{start_date}+TO+{end_date}]'
+    search_query += f'+AND+submittedDate:[{start_date}+TO+{end_date}]'
     
     # Define numbers of results we want to show
     min_results = 0
@@ -239,7 +240,7 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
         base_arxiv_id = arxiv_id.split('v')[0] if 'v' in arxiv_id else arxiv_id
         # # Skip if this paper was already processed
         # if base_arxiv_id in processed_papers:
-            # continue
+        #     continue
 
             # Get all categories for this paper
         all_categories = [t['term'] for t in entry.tags]
@@ -363,10 +364,10 @@ excluded_astro_categories = ['astro-ph.EP', 'astro-ph.SR']
 
 
 categories_ml = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he', 'astro-ph.im', 
-                    "cs.ai",   # AI
-                    "cs.gl",   # general literature
-                    "cs.lg",   # machine learning
-                    "stat.ml"  # machine learning
+                    # "cs.ai",   # AI
+                    # "cs.gl",   # general literature
+                    # "cs.lg",   # machine learning
+                    # "stat.ml"  # machine learning
                     ]
 keywords_ml = [
     'astroinformatics', 'astro-informatics', 'data-driven', 
