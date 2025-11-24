@@ -559,7 +559,8 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
         if is_already_processed:
             new_badge = ' <span style="color: #999; font-size: 0.8em;">(seen before)</span>'
         else:
-            new_badge = ' <span style="color: #45ABC2; font-size: 0.8em; font-weight: bold;">[NEW]</span>'
+            # new_badge = ' <span style="color: #45ABC2; font-size: 0.8em; font-weight: bold;">[NEW]</span>'
+            new_badge = ''
 
         body += f'<a href="{pdf_link}" target="_blank"><h2>{entry.title}{new_badge}</h2></a>'
 
@@ -702,7 +703,7 @@ def run_daily_task():
 
     if today.weekday() == 0 or today.weekday() == 1:  # Monday, Tuesday
         # Use longer lookback period to ensure we find papers
-        days_to_search = 8  # Can be changed to 2, 5, 7, etc.
+        days_to_search = 3
         html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_astroph,
                                       excluded_categories=excluded_astro_categories)
@@ -710,7 +711,7 @@ def run_daily_task():
                                    categories_ml, keywords_ml)
     else:
         # Regular daily lookback
-        days_to_search = 8  # Can be changed to 2, 5, 7, etc.
+        days_to_search = 1
         html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_astroph,
                                       excluded_categories=excluded_astro_categories)
