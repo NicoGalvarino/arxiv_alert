@@ -13,6 +13,7 @@ from datetime import date, timedelta, datetime
 from bs4 import BeautifulSoup
 import requests
 import os
+import re
 import logging
 import json
 from pathlib import Path
@@ -81,6 +82,7 @@ def test_simple_query():
 def find_matching_keywords(title, abstract, keywords):
     """
     Find which keywords from the search list are present in the title or abstract
+    Uses word boundary matching for acronyms (all caps) to avoid false matches
     """
     matching_keywords = []
     title_lower = title.lower()
@@ -88,14 +90,29 @@ def find_matching_keywords(title, abstract, keywords):
 
     for keyword in keywords:
         # Remove quotes from keywords for matching
-        clean_keyword = keyword.strip('"').lower()
+        clean_keyword = keyword.strip('"')
+        clean_keyword_lower = clean_keyword.lower()
 
-        if clean_keyword in title_lower or clean_keyword in abstract_lower:
+        # Check if keyword is an acronym (all uppercase letters, no spaces)
+        is_acronym = clean_keyword.isupper() and clean_keyword.replace('-', '').isalpha()
+
+        # For acronyms, use word boundary matching to avoid false matches in other words
+        if is_acronym:
+            # Create pattern with word boundaries
+            pattern = r'\b' + re.escape(clean_keyword_lower) + r'\b'
+            title_match = bool(re.search(pattern, title_lower))
+            abstract_match = bool(re.search(pattern, abstract_lower))
+        else:
+            # For regular keywords (phrases), use simple substring matching
+            title_match = clean_keyword_lower in title_lower
+            abstract_match = clean_keyword_lower in abstract_lower
+
+        if title_match or abstract_match:
             # Indicate where the keyword was found
             found_in = []
-            if clean_keyword in title_lower:
+            if title_match:
                 found_in.append("title")
-            if clean_keyword in abstract_lower:
+            if abstract_match:
                 found_in.append("abstract")
 
             matching_keywords.append(f"{keyword} ({', '.join(found_in)})")
@@ -653,7 +670,7 @@ keywords_astroph = [
     'galaxy evolution', 'galaxy formation', 'galactic chemical evolution', 'galaxy chemical evolution',
     'galactic outlflows', 'galactic outlflow', 'outflows', 'outflow',
     'dust', 'dust evolution', 'stellar mass function', 'quiescent galaxies', 'atomic hydrogen',
-    'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas',
+    'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas', 'fast radio burst',
     'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics',
     'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', 'MgII absorbers',
     'high z', 'high redshift',
@@ -667,9 +684,11 @@ keywords_astroph = [
     'lyman limit system', 'LLS'
 ]
 excluded_astro_categories = ['astro-ph.EP', 'astro-ph.SR']
+excluded_astro_keywords = ['gamma-ray burst', 'gravitational wave']
 
 categories_ml = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he', 'astro-ph.im',
-                  "cs.ai", "cs.gl", "cs.lg", "stat.ml"]
+                #   "cs.ai", "cs.gl", "cs.lg", "stat.ml"
+                  ]
 keywords_ml = [
     'astroinformatics', 'astro-informatics', 'data-driven',
     'variational autoencoder', 'VAE',
@@ -711,7 +730,7 @@ def run_daily_task():
                                    categories_ml, keywords_ml)
     else:
         # Regular daily lookback
-        days_to_search = 1
+        days_to_search = 20
         html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_astroph,
                                       excluded_categories=excluded_astro_categories)
