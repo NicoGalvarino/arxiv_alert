@@ -730,7 +730,7 @@ def run_daily_task():
                                    categories_ml, keywords_ml)
     else:
         # Regular daily lookback
-        days_to_search = 20
+        days_to_search = 3
         html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_astroph,
                                       excluded_categories=excluded_astro_categories)
