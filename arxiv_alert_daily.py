@@ -297,6 +297,7 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
 
     logging.info(f"Date range for filtering: {start_window.strftime('%Y-%m-%d')} to {yesterday.strftime('%Y-%m-%d')}")
     logging.info(f"Date range for API query: {api_start_window.strftime('%Y-%m-%d')} to {yesterday.strftime('%Y-%m-%d')} (extended to account for UTC)")
+    print(f'\nSearching papers for {html_name.split("/")[0]} arxiv alert')
     print(f"Date range: {start_window.strftime('%Y-%m-%d')} to {yesterday.strftime('%Y-%m-%d')}")
 
     # Set max results per API call (arXiv API limit is 2000, but we use smaller chunks for pagination)
@@ -543,13 +544,15 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
                 logging.info(f"Filtered out paper {arxiv_id} due to excluded categories: {excluded_found}")
                 continue
 
-        # Check keywords
+        # Check keywords - require at least 2 matches
         matching_keywords = []
         if keywords is not None:
             matching_keywords = find_matching_keywords(entry.title, entry.summary, keywords)
-            if not matching_keywords:
+            if len(matching_keywords) < 2:
+            # if len(matching_keywords) == 0:
                 no_keywords_count += 1
-                logging.info(f"Filtered out paper {arxiv_id} due to no matching keywords")
+                logging.info(f"Filtered out paper {arxiv_id} due to insufficient keyword matches ({len(matching_keywords)} < 2)")
+                # logging.info(f"Filtered out paper {arxiv_id} due to insufficient keyword matches ({len(matching_keywords)} < 1)")
                 continue
 
         # Add to processed papers only if it's new
@@ -662,26 +665,65 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
 
 # Categories and keywords definitions
 categories_astroph = ['astro-ph.co', 'astro-ph.ga', 'astro-ph.he']
-keywords_astroph = [
-    'ALMA', 'ALMACAL',
+keywords_extragal = [
+    'ALMA', 'ALMACAL', 'Atacama Large Millimeter/submillimeter Array', 
     'MUSE', 'MUSE-ALMA',
-    'JWST', 'James Webb Space Telescope',
+    'JWST', #'James Webb Space Telescope',
     '4MOST', 'DESI', 'Euclid', 'SDSS',
     'galaxy evolution', 'galaxy formation', 'galactic chemical evolution', 'galaxy chemical evolution',
-    'galactic outlflows', 'galactic outlflow', 'outflows', 'outflow',
-    'dust', 'dust evolution', 'stellar mass function', 'quiescent galaxies', 'atomic hydrogen',
+    # 'galactic outlflows', 
+    'galactic outlflow', #'outflows', 
+    'outflow',
+    # 'dust', 
+    'dust evolution', 
+    'stellar mass function', 'quiescent galaxies', 'atomic hydrogen', 'star formation rate', 'star formation', 'morphology', 
     'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas', 'fast radio burst',
-    'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics',
-    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', 'MgII absorbers',
+    'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics', 'neutral hydrogen', 
+    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', #'MgII absorbers',
     'high z', 'high redshift',
-    'feedback', 'stellar feedback',
-    'AGN', 'AGN feedback',
-    'active galactic nuclei', 'QSO', 'quasar',
-    'BAL QSO', 'broad absorption line quasar', 'broad absorption line QSO',
-    'AGN variability', 'active galactic nuclei variability', 'blazar variability', 'time-domain', 'time domain',
-    'CGM', 'circumgalactic medium', 'IGM', 'intergalactic medium', 'halo', 'haloes',
-    'damped lyman alpha system', 'DLA',
+    'cluster', 
+    #'feedback', 
+    'stellar feedback',
+    # 'AGN', 
+    'AGN feedback',
+    # 'active galactic nuclei', 
+    'QSO', 'quasar',
+    'little red dots', 
+    # 'BAL QSO', #'broad absorption line quasar', 'broad absorption line QSO',
+    # 'AGN variability', 'active galactic nuclei variability', 'blazar variability', 'time-domain', 'time domain',
+    'CGM', 'circumgalactic medium', 'IGM', 'intergalactic medium', 'halo', 'dark matter halo', 
     'lyman limit system', 'LLS'
+]
+excluded_astro_categories = ['astro-ph.EP', 'astro-ph.SR']
+excluded_astro_keywords = ['gamma-ray burst', 'gravitational wave']
+
+keywords_agn = [
+    # 'ALMA', 'ALMACAL',
+    # 'MUSE', 'MUSE-ALMA',
+    # 'JWST', #'James Webb Space Telescope',
+    '4MOST', 'DESI', 'Euclid', 'SDSS', 'LSST', 'ZTF', 
+    'galaxy evolution', #'galaxy formation', 'galactic chemical evolution', 'galaxy chemical evolution',
+    # 'galactic outlflows', 
+    'galactic outlflow', #'outflows', 
+    'outflow',
+    # 'dust', 'dust evolution', 
+    # 'stellar mass function', 'quiescent galaxies', 'atomic hydrogen',
+    # 'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas', 'fast radio burst',
+    # 'atomic gas', 'molecular gas', 'interstellar dust', 
+    'ISM', 'kinematics',
+    # 'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', #'MgII absorbers',
+    'high z', 'high redshift',
+    #'feedback', 
+    # 'stellar feedback',
+    'little red dots', 
+    'AGN', 'AGN feedback',
+    'active galactic nuclei', 
+    'QSO', 'quasar',
+    'BAL QSO', #'broad absorption line quasar', 'broad absorption line QSO',
+    'AGN variability', 'active galactic nuclei variability', 'blazar variability', 'time-domain', 'time domain',
+    'tidal disruption event', 'TDE', 
+    # 'CGM', 'circumgalactic medium', 'IGM', 'intergalactic medium', 'halo', 'dark matter halo', 
+    # 'lyman limit system', 'LLS'
 ]
 excluded_astro_categories = ['astro-ph.EP', 'astro-ph.SR']
 excluded_astro_keywords = ['gamma-ray burst', 'gravitational wave']
@@ -723,16 +765,22 @@ def run_daily_task():
     if today.weekday() == 0 or today.weekday() == 1:  # Monday, Tuesday
         # Use longer lookback period to ensure we find papers
         days_to_search = 3
-        html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_astroph,
+        html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
+                                      categories_astroph, keywords_extragal,
+                                      excluded_categories=excluded_astro_categories)
+        html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
+                                      categories_astroph, keywords_agn,
                                       excluded_categories=excluded_astro_categories)
         html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
                                    categories_ml, keywords_ml)
     else:
         # Regular daily lookback
-        days_to_search = 2
-        html_file_astro = arxiv_alert('astro/astro_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_astroph,
+        days_to_search = 3
+        html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
+                                      categories_astroph, keywords_extragal,
+                                      excluded_categories=excluded_astro_categories)
+        html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
+                                      categories_astroph, keywords_agn,
                                       excluded_categories=excluded_astro_categories)
         html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
                                    categories_ml, keywords_ml)
