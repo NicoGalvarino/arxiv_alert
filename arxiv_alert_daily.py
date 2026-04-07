@@ -681,7 +681,7 @@ keywords_extragal = [
     'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics', 'neutral hydrogen', 
     'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', #'MgII absorbers',
     'high z', 'high redshift',
-    'cluster', 
+    # 'cluster', 
     #'feedback', 
     'stellar feedback',
     # 'AGN', 
@@ -764,7 +764,7 @@ def run_daily_task():
 
     if today.weekday() == 0 or today.weekday() == 1:  # Monday, Tuesday
         # Use longer lookback period to ensure we find papers
-        days_to_search = 3
+        days_to_search = 7
         html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_extragal,
                                       excluded_categories=excluded_astro_categories)
@@ -775,7 +775,7 @@ def run_daily_task():
                                    categories_ml, keywords_ml)
     else:
         # Regular daily lookback
-        days_to_search = 3
+        days_to_search = 2
         html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
                                       categories_astroph, keywords_extragal,
                                       excluded_categories=excluded_astro_categories)
