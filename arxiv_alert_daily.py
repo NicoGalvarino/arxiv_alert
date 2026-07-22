@@ -17,6 +17,7 @@ import re
 import logging
 import json
 from pathlib import Path
+import argparse
 
 # Override date for testing - set to None to use actual date
 OVERRIDE_DATE = None
@@ -274,7 +275,7 @@ def fetch_arxiv_batch(categories=None, keywords_batch=None, authors=None, start_
         logging.warning(f"Error fetching batch: {e}")
         return None
 
-def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, authors=None, excluded_categories=None):
+def arxiv_alert(html_name, amount_of_days, start_date=None, categories=None, keywords=None, authors=None, excluded_categories=None):
     """
     Main function to fetch arXiv papers and generate HTML alert
     Splits large keyword queries into batches to avoid API errors
@@ -287,7 +288,10 @@ def arxiv_alert(html_name, amount_of_days, categories=None, keywords=None, autho
     if amount_of_days < 1:
         amount_of_days = 1
 
-    yesterday = today - timedelta(days=1)
+    if start_date is not None:
+        yesterday = start_date - timedelta(days=1)
+    else:
+        yesterday = today - timedelta(days=1)
     start_window = yesterday - timedelta(days=amount_of_days - 1)
     
     # Note: arXiv API uses UTC timezone. To ensure we capture all articles from start_date,
@@ -752,6 +756,11 @@ keywords_ml = [
 
 def run_daily_task():
     """Function to run the arXiv alert and generate HTML files"""
+
+    parser = argparse.ArgumentParser(description='Arxiv notice')
+    parser.add_argument('--days', type=int, default=None, help='Lookback days')
+    args = parser.parse_args()
+    
     today = get_current_date()
     logging.info(f"Running arXiv alerts for {today}")
 
@@ -762,28 +771,24 @@ def run_daily_task():
     # - 3 = last 3 days
     # - 7 = last week
 
-    if today.weekday() == 0 or today.weekday() == 1:  # Monday, Tuesday
-        # Use longer lookback period to ensure we find papers
-        days_to_search = 4
-        html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_extragal,
-                                      excluded_categories=excluded_astro_categories)
-        html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_agn,
-                                      excluded_categories=excluded_astro_categories)
-        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
-                                   categories_ml, keywords_ml)
+    if args.days is not None:
+        days_to_search = args.days
     else:
-        # Regular daily lookback
-        days_to_search = 2
-        html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_extragal,
-                                      excluded_categories=excluded_astro_categories)
-        html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
-                                      categories_astroph, keywords_agn,
-                                      excluded_categories=excluded_astro_categories)
-        html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
-                                   categories_ml, keywords_ml)
+        if today.weekday() == 0 or today.weekday() == 1:  # Monday, Tuesday
+            # Use longer lookback period to ensure we find papers
+            days_to_search = 3
+        else:
+            # Regular daily lookback
+            days_to_search = 2
+
+    html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
+                                    categories=categories_astroph, keywords=keywords_extragal,
+                                    excluded_categories=excluded_astro_categories)
+    html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
+                                    categories=categories_astroph, keywords=keywords_agn,
+                                    excluded_categories=excluded_astro_categories)
+    html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
+                                categories=categories_ml, keywords=keywords_ml)
 
     logging.info(f"Daily task completed for {today}")
 
