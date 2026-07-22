@@ -419,28 +419,9 @@ def arxiv_alert(html_name, amount_of_days, start_date=None, categories=None, key
         body += f'<p>Tried {len(keyword_batches)} batch(es) of queries.</p>'
         body += "</body></html>"
 
-        # Save HTML file with timestamp
-        home_dir = os.path.expanduser('~')
-        output_dir = os.path.join(home_dir, 'Documents', 'arxiv_alert', 'arxiv_htmls')
-        os.makedirs(output_dir, exist_ok=True)
-        subdir = os.path.dirname(html_name)
-        if subdir:
-            full_output_dir = os.path.join(output_dir, subdir)
-            os.makedirs(full_output_dir, exist_ok=True)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            my_path = os.path.join(full_output_dir, os.path.basename(html_name) + '_' + timestamp + '.html')
-        else:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            my_path = os.path.join(output_dir, html_name + '_' + timestamp + '.html')
-
-        try:
-            with open(my_path, 'w', encoding='utf-8') as f:
-                f.write(body)
-            logging.info(f"Created HTML file: {my_path}")
-            return my_path
-        except Exception as save_error:
-            logging.error(f"Error writing HTML file: {save_error}")
-            return None
+        logging.info("No papers found, skipping HTML file creation.")
+        print("No papers found, skipping HTML file creation")
+        return None
 
     # Process all entries
     logging.info(f"Total unique entries found: {len(all_entries)}")
@@ -641,6 +622,11 @@ def arxiv_alert(html_name, amount_of_days, start_date=None, categories=None, key
     logging.info(f"Found {total_papers_count} total papers")
     logging.info(f"Already processed: {already_processed_count}, Filtered: {date_filtered_count} by date, {filtered_papers_count} by excluded categories, {no_keywords_count} by keywords")
     logging.info(f"Showing {shown_papers_count} papers in HTML ({new_papers_count} new, {shown_papers_count - new_papers_count} seen before)")
+
+    if shown_papers_count == 0:
+        logging.info("No papers to show, skipping HTML file creation.")
+        print("No papers found, skipping HTML file creation")
+        return None
 
     # Save HTML file
     home_dir = os.path.expanduser('~')
