@@ -669,7 +669,8 @@ keywords_extragal = [
     'stellar mass function', 'quiescent galaxies', 'atomic hydrogen', 'star formation rate', 'star formation', 'morphology', 
     'baryon cycle', 'baryon budget', 'metal budget', 'baryon density', 'cosmic abundance', 'cosmic evolution', 'cosmic gas', 'fast radio burst',
     'atomic gas', 'molecular gas', 'interstellar dust', 'ISM', 'kinematics', 'neutral hydrogen', 
-    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', #'MgII absorbers',
+    'quasar absorption lines', 'QSO absorption lines', 'QSO absorber', 'quasar absorber', 'MgII absorber', 'absorption line', 'absorption lines', 'metal absorption line', #'MgII absorbers',
+    'quasar spectra', 
     'high z', 'high redshift',
     # 'cluster', 
     #'feedback', 
@@ -770,9 +771,9 @@ def run_daily_task():
     html_file_extragal = arxiv_alert('extragal/extragal_arxiv_' + str(today), days_to_search,
                                     categories=categories_astroph, keywords=keywords_extragal,
                                     excluded_categories=excluded_astro_categories)
-    html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
-                                    categories=categories_astroph, keywords=keywords_agn,
-                                    excluded_categories=excluded_astro_categories)
+    # html_file_agn = arxiv_alert('agn/agn_arxiv_' + str(today), days_to_search,
+    #                                 categories=categories_astroph, keywords=keywords_agn,
+    #                                 excluded_categories=excluded_astro_categories)
     html_file_ml = arxiv_alert('ml/ml_arxiv_' + str(today), days_to_search,
                                 categories=categories_ml, keywords=keywords_ml)
 
