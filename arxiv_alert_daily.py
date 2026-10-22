@@ -153,7 +153,16 @@ def is_date_in_range(entry, start_date, end_date):
         if '/' in entry_id:
             entry_id = entry_id.split('/abs/')[-1]
 
-        # Priority 1: Check arxiv_updated (usually matches submittedDate from query)
+        # Priority 1: Check published date (v1 submission date, matches submittedDate from query)
+        if hasattr(entry, 'published') and entry.published:
+            published_date = parse_arxiv_date(entry.published)
+            if published_date:
+                in_range = start_date <= published_date <= end_date
+                if not in_range:
+                    logging.info(f"Paper {entry_id} published {published_date} outside range {start_date} to {end_date}")
+                return in_range
+
+        # Priority 2: Check arxiv_updated
         if hasattr(entry, 'arxiv_updated') and entry.arxiv_updated:
             updated_date = parse_arxiv_date(entry.arxiv_updated)
             if updated_date:
@@ -162,22 +171,13 @@ def is_date_in_range(entry, start_date, end_date):
                     logging.info(f"Paper {entry_id} arxiv_updated {updated_date} outside range {start_date} to {end_date}")
                 return in_range
 
-        # Priority 2: Check updated field (also often matches submittedDate)
+        # Priority 3: Check updated field (date of the latest version)
         if hasattr(entry, 'updated') and entry.updated:
             updated_date = parse_arxiv_date(entry.updated)
             if updated_date:
                 in_range = start_date <= updated_date <= end_date
                 if not in_range:
                     logging.info(f"Paper {entry_id} updated {updated_date} outside range {start_date} to {end_date}")
-                return in_range
-
-        # Priority 3: Check published date
-        if hasattr(entry, 'published') and entry.published:
-            published_date = parse_arxiv_date(entry.published)
-            if published_date:
-                in_range = start_date <= published_date <= end_date
-                if not in_range:
-                    logging.info(f"Paper {entry_id} published {published_date} outside range {start_date} to {end_date}")
                 return in_range
 
         # Priority 4: Fallback to arxiv:created if available (from arxiv namespace)
@@ -226,11 +226,13 @@ def build_arxiv_query(categories=None, keywords=None, authors=None, start_date=N
     if start_date and end_date:
         start_str = start_date.strftime("%Y%m%d") + "0000"
         end_str = end_date.strftime("%Y%m%d") + "2359"
-        query_parts.append(f"submittedDate:[{start_str}+TO+{end_str}]")
+        # Use real spaces: urlencode turns them into '+', while a literal '+' would be
+        # encoded as '%2B' and arXiv would silently ignore the date range and the ANDs
+        query_parts.append(f"submittedDate:[{start_str} TO {end_str}]")
 
     # Combine all parts with AND
     if query_parts:
-        full_query = '+AND+'.join(query_parts)
+        full_query = ' AND '.join(query_parts)
     else:
         full_query = '*'
 
@@ -475,34 +477,16 @@ def arxiv_alert(html_name, amount_of_days, start_date=None, categories=None, key
         arxiv_id = entry.id.split('/abs/')[-1]
         base_arxiv_id = arxiv_id.split('v')[0] if 'v' in arxiv_id else arxiv_id
 
+        # Local date filtering: the API window is extended by a day, so drop anything
+        # submitted outside the requested range (is_date_in_range keeps entries with no parseable date)
+        if not is_date_in_range(entry, start_window, yesterday):
+            date_filtered_count += 1
+            continue
+
         # Check if already processed (but still show it in HTML)
         is_already_processed = base_arxiv_id in processed_papers
         if is_already_processed:
             already_processed_count += 1
-
-        # Additional date filtering (double-check, but be lenient since API already filtered)
-        # Log date information for debugging
-        entry_date_info = []
-        if hasattr(entry, 'arxiv_updated') and entry.arxiv_updated:
-            date_val = parse_arxiv_date(entry.arxiv_updated)
-            if date_val:
-                entry_date_info.append(f"arxiv_updated={date_val}")
-        if hasattr(entry, 'updated') and entry.updated:
-            date_val = parse_arxiv_date(entry.updated)
-            if date_val:
-                entry_date_info.append(f"updated={date_val}")
-        if hasattr(entry, 'published') and entry.published:
-            date_val = parse_arxiv_date(entry.published)
-            if date_val:
-                entry_date_info.append(f"published={date_val}")
-        
-        date_check = is_date_in_range(entry, start_window, yesterday)
-        if not date_check and entry_date_info:
-            # Log but don't filter out - API already filtered by submittedDate
-            logging.info(f"Paper {arxiv_id} date check: {', '.join(entry_date_info)} vs range {start_window} to {yesterday} - including anyway")
-        elif not date_check:
-            # If no date info at all, still include (API already filtered)
-            logging.info(f"Paper {arxiv_id} - no date info found, including anyway (API already filtered)")
 
         # Get all categories
         all_categories = [t['term'] for t in entry.tags]
